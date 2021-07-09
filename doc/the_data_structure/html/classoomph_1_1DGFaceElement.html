@@ -1288,7 +1288,7 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class for Discontinuous Galerkin Faces. These are responsible for calculating the normal fluxes that provide the communication between the discontinuous elements. </p>
 
-<p class="definition">Definition at line <a class="el" href="dg__elements_8h_source.html#l00053">53</a> of file <a class="el" href="dg__elements_8h_source.html">dg_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dg__elements_8h_source.html#l00049">49</a> of file <a class="el" href="dg__elements_8h_source.html">dg_elements.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a6cfed44ec658ef834a27228a4b75e2fe"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6cfed44ec658ef834a27228a4b75e2fe">&#9670;&nbsp;</a></span>DGFaceElement()</h2>
@@ -1315,7 +1315,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Empty Constructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="dg__elements_8h_source.html#l00081">81</a> of file <a class="el" href="dg__elements_8h_source.html">dg_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dg__elements_8h_source.html#l00077">77</a> of file <a class="el" href="dg__elements_8h_source.html">dg_elements.h</a>.</p>
 
 </div>
 </div>
@@ -1344,7 +1344,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Empty Destructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="dg__elements_8h_source.html#l00084">84</a> of file <a class="el" href="dg__elements_8h_source.html">dg_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dg__elements_8h_source.html#l00080">80</a> of file <a class="el" href="dg__elements_8h_source.html">dg_elements.h</a>.</p>
 
 </div>
 </div>
@@ -1384,11 +1384,11 @@ Additional Inherited Members</h2></td></tr>
 <p>Add the contribution from integrating the numerical flux. </p>
 <p>Calculate the integrated (numerical) flux out of the face and add it to the residuals vector </p>
 
-<p class="definition">Definition at line <a class="el" href="dg__elements_8cc_source.html#l00392">392</a> of file <a class="el" href="dg__elements_8cc_source.html">dg_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dg__elements_8cc_source.html#l00388">388</a> of file <a class="el" href="dg__elements_8cc_source.html">dg_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l04604">oomph::FaceElement::bulk_element_pt()</a>, <a class="el" href="elements_8h_source.html#l04673">oomph::FaceElement::bulk_node_number()</a>, <a class="el" href="elements_8h_source.html#l02499">oomph::FiniteElement::dim()</a>, <a class="el" href="elements_8h_source.html#l00313">oomph::GeneralisedElement::external_local_eqn()</a>, <a class="el" href="octree_8h_source.html#l00059">oomph::OcTreeNames::F</a>, <a class="el" href="dg__elements_8h_source.html#l00073">flux_index()</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="elements_8h_source.html#l01925">oomph::FiniteElement::integral_pt()</a>, <a class="el" href="elements_8cc_source.html#l05204">oomph::FaceElement::J_eulerian_at_knot()</a>, <a class="el" href="dg__elements_8h_source.html#l00067">Neighbour_external_data</a>, <a class="el" href="dg__elements_8h_source.html#l00056">Neighbour_face_pt</a>, <a class="el" href="elements_8h_source.html#l02163">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l01403">oomph::FiniteElement::nodal_local_eqn()</a>, <a class="el" href="dg__elements_8cc_source.html#l00242">numerical_flux_at_knot()</a>, <a class="el" href="classoomph_1_1Integral.html#a1a270de9d99a1fcf1d25a6c1017f65fa">oomph::Integral::nweight()</a>, <a class="el" href="dg__elements_8h_source.html#l00076">required_nflux()</a>, <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>, <a class="el" href="elements_8cc_source.html#l03160">oomph::FiniteElement::shape_at_knot()</a>, <a class="el" href="quadtree_8h_source.html#l00060">oomph::QuadTreeNames::W</a>, and <a class="el" href="classoomph_1_1Integral.html#ac65335e2aab120b285b3d6c294507b06">oomph::Integral::weight()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l04600">oomph::FaceElement::bulk_element_pt()</a>, <a class="el" href="elements_8h_source.html#l04669">oomph::FaceElement::bulk_node_number()</a>, <a class="el" href="elements_8h_source.html#l02495">oomph::FiniteElement::dim()</a>, <a class="el" href="elements_8h_source.html#l00309">oomph::GeneralisedElement::external_local_eqn()</a>, <a class="el" href="octree_8h_source.html#l00055">oomph::OcTreeNames::F</a>, <a class="el" href="dg__elements_8h_source.html#l00069">flux_index()</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="elements_8h_source.html#l01921">oomph::FiniteElement::integral_pt()</a>, <a class="el" href="elements_8cc_source.html#l05200">oomph::FaceElement::J_eulerian_at_knot()</a>, <a class="el" href="dg__elements_8h_source.html#l00063">Neighbour_external_data</a>, <a class="el" href="dg__elements_8h_source.html#l00052">Neighbour_face_pt</a>, <a class="el" href="elements_8h_source.html#l02159">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l01399">oomph::FiniteElement::nodal_local_eqn()</a>, <a class="el" href="dg__elements_8cc_source.html#l00238">numerical_flux_at_knot()</a>, <a class="el" href="classoomph_1_1Integral.html#a1a270de9d99a1fcf1d25a6c1017f65fa">oomph::Integral::nweight()</a>, <a class="el" href="dg__elements_8h_source.html#l00072">required_nflux()</a>, <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>, <a class="el" href="elements_8cc_source.html#l03156">oomph::FiniteElement::shape_at_knot()</a>, <a class="el" href="quadtree_8h_source.html#l00056">oomph::QuadTreeNames::W</a>, and <a class="el" href="classoomph_1_1Integral.html#ac65335e2aab120b285b3d6c294507b06">oomph::Integral::weight()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="dg__elements_8h_source.html#l00380">oomph::DGElement::add_flux_contributions_to_residuals()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="dg__elements_8h_source.html#l00376">oomph::DGElement::add_flux_contributions_to_residuals()</a>.</p>
 
 </div>
 </div>
@@ -1446,11 +1446,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Calculate the derivative of the normal flux, which is the dot product of our approximation to the flux with the outer unit normal, with respect to the interior and exterior variables Default is to use finite differences. </p>
 
-<p class="definition">Definition at line <a class="el" href="dg__elements_8cc_source.html#l00314">314</a> of file <a class="el" href="dg__elements_8cc_source.html">dg_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dg__elements_8cc_source.html#l00310">310</a> of file <a class="el" href="dg__elements_8cc_source.html">dg_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l01181">oomph::GeneralisedElement::Default_fd_jacobian_step</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, <a class="el" href="dg__elements_8h_source.html#l00119">numerical_flux()</a>, and <a class="el" href="dg__elements_8h_source.html#l00076">required_nflux()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l01177">oomph::GeneralisedElement::Default_fd_jacobian_step</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, <a class="el" href="dg__elements_8h_source.html#l00115">numerical_flux()</a>, and <a class="el" href="dg__elements_8h_source.html#l00072">required_nflux()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="dg__elements_8cc_source.html#l00242">numerical_flux_at_knot()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="dg__elements_8cc_source.html#l00238">numerical_flux_at_knot()</a>.</p>
 
 </div>
 </div>
@@ -1480,11 +1480,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Return the index at which the i-th unknown flux is stored. </p>
 
-<p class="definition">Definition at line <a class="el" href="dg__elements_8h_source.html#l00073">73</a> of file <a class="el" href="dg__elements_8h_source.html">dg_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dg__elements_8h_source.html#l00069">69</a> of file <a class="el" href="dg__elements_8h_source.html">dg_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="dg__elements_8cc_source.html#l00392">add_flux_contributions()</a>, <a class="el" href="dg__elements_8cc_source.html#l00179">interpolated_u()</a>, and <a class="el" href="dg__elements_8cc_source.html#l00242">numerical_flux_at_knot()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="dg__elements_8cc_source.html#l00388">add_flux_contributions()</a>, <a class="el" href="dg__elements_8cc_source.html#l00175">interpolated_u()</a>, and <a class="el" href="dg__elements_8cc_source.html#l00238">numerical_flux_at_knot()</a>.</p>
 
 </div>
 </div>
@@ -1515,11 +1515,11 @@ Additional Inherited Members</h2></td></tr>
 <p>Get the data that are used to interpolate the unkowns in the element. These must be returned in order. </p>
 <p>Add all the data that are used to interpolate the unknowns. This must be consistent with the interpolated_u function above and the default implementation assumes pure nodal interpolaton. </p>
 
-<p class="definition">Definition at line <a class="el" href="dg__elements_8cc_source.html#l00219">219</a> of file <a class="el" href="dg__elements_8cc_source.html">dg_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dg__elements_8cc_source.html#l00215">215</a> of file <a class="el" href="dg__elements_8cc_source.html">dg_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, <a class="el" href="elements_8h_source.html#l02163">oomph::FiniteElement::nnode()</a>, and <a class="el" href="elements_8h_source.html#l02126">oomph::FiniteElement::node_pt()</a>.</p>
+<p class="reference">References <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, <a class="el" href="elements_8h_source.html#l02159">oomph::FiniteElement::nnode()</a>, and <a class="el" href="elements_8h_source.html#l02122">oomph::FiniteElement::node_pt()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="dg__elements_8cc_source.html#l00046">setup_neighbour_info()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="dg__elements_8cc_source.html#l00042">setup_neighbour_info()</a>.</p>
 
 </div>
 </div>
@@ -1561,11 +1561,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="classoomph_1_1DGEulerFaceReflectionElement.html#a288fa54f9022aac4bf060ca19a0c8a67">oomph::DGEulerFaceReflectionElement&lt; ELEMENT &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="dg__elements_8cc_source.html#l00179">179</a> of file <a class="el" href="dg__elements_8cc_source.html">dg_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dg__elements_8cc_source.html#l00175">175</a> of file <a class="el" href="dg__elements_8cc_source.html">dg_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="dg__elements_8h_source.html#l00073">flux_index()</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, <a class="el" href="elements_8h_source.html#l02163">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l02126">oomph::FiniteElement::node_pt()</a>, <a class="el" href="dg__elements_8h_source.html#l00076">required_nflux()</a>, <a class="el" href="classoomph_1_1FiniteElement.html#a58a25b6859ddd43b7bfe64a19fee5023">oomph::FiniteElement::shape()</a>, <a class="el" href="the__data__structure_8txt.html#aaa5287b1cf3ca06b3f413cb95bd1ec60">u()</a>, and <a class="el" href="nodes_8cc_source.html#l02328">oomph::Node::value()</a>.</p>
+<p class="reference">References <a class="el" href="dg__elements_8h_source.html#l00069">flux_index()</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, <a class="el" href="elements_8h_source.html#l02159">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l02122">oomph::FiniteElement::node_pt()</a>, <a class="el" href="dg__elements_8h_source.html#l00072">required_nflux()</a>, <a class="el" href="classoomph_1_1FiniteElement.html#a58a25b6859ddd43b7bfe64a19fee5023">oomph::FiniteElement::shape()</a>, <a class="el" href="the__data__structure_8txt.html#aaa5287b1cf3ca06b3f413cb95bd1ec60">u()</a>, and <a class="el" href="nodes_8cc_source.html#l02324">oomph::Node::value()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="euler__elements_8h_source.html#l00697">oomph::DGEulerFaceReflectionElement&lt; ELEMENT &gt;::interpolated_u()</a>, and <a class="el" href="dg__elements_8cc_source.html#l00242">numerical_flux_at_knot()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="euler__elements_8h_source.html#l00693">oomph::DGEulerFaceReflectionElement&lt; ELEMENT &gt;::interpolated_u()</a>, and <a class="el" href="dg__elements_8cc_source.html#l00238">numerical_flux_at_knot()</a>.</p>
 
 </div>
 </div>
@@ -1595,9 +1595,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Access function for neighbouring face information. </p>
 
-<p class="definition">Definition at line <a class="el" href="dg__elements_8h_source.html#l00087">87</a> of file <a class="el" href="dg__elements_8h_source.html">dg_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dg__elements_8h_source.html#l00083">83</a> of file <a class="el" href="dg__elements_8h_source.html">dg_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, and <a class="el" href="dg__elements_8h_source.html#l00056">Neighbour_face_pt</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, and <a class="el" href="dg__elements_8h_source.html#l00052">Neighbour_face_pt</a>.</p>
 
 </div>
 </div>
@@ -1651,9 +1651,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="classoomph_1_1DGEulerFaceElement.html#a44655910de79b442bfffaefe0152f776">oomph::DGEulerFaceElement&lt; ELEMENT &gt;</a>, and <a class="el" href="classoomph_1_1DGScalarAdvectionFaceElement.html#afdbb802744c914451223b5664bb589e4">oomph::DGScalarAdvectionFaceElement&lt; ELEMENT &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="dg__elements_8h_source.html#l00119">119</a> of file <a class="el" href="dg__elements_8h_source.html">dg_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dg__elements_8h_source.html#l00115">115</a> of file <a class="el" href="dg__elements_8h_source.html">dg_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="dg__elements_8cc_source.html#l00314">dnumerical_flux_du()</a>, and <a class="el" href="dg__elements_8cc_source.html#l00242">numerical_flux_at_knot()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="dg__elements_8cc_source.html#l00310">dnumerical_flux_du()</a>, and <a class="el" href="dg__elements_8cc_source.html#l00238">numerical_flux_at_knot()</a>.</p>
 
 </div>
 </div>
@@ -1718,11 +1718,11 @@ Additional Inherited Members</h2></td></tr>
 <p>Calculate the normal numerical flux at the integration point. This is the most general interface that can be overloaded if desired. </p>
 <p>Calculate the numerical flux at the knot point ipt. This is the most general interface than can be overloaded if desired. The shape functions at the knot point will be passed into this function. </p>
 
-<p class="definition">Definition at line <a class="el" href="dg__elements_8cc_source.html#l00242">242</a> of file <a class="el" href="dg__elements_8cc_source.html">dg_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dg__elements_8cc_source.html#l00238">238</a> of file <a class="el" href="dg__elements_8cc_source.html">dg_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="dg__elements_8cc_source.html#l00314">dnumerical_flux_du()</a>, <a class="el" href="dg__elements_8h_source.html#l00073">flux_index()</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="dg__elements_8cc_source.html#l00179">interpolated_u()</a>, <a class="el" href="dg__elements_8h_source.html#l00056">Neighbour_face_pt</a>, <a class="el" href="dg__elements_8h_source.html#l00059">Neighbour_local_coordinate</a>, <a class="el" href="elements_8h_source.html#l02163">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l02387">oomph::FiniteElement::nodal_dimension()</a>, <a class="el" href="elements_8h_source.html#l02487">oomph::FiniteElement::nodal_value()</a>, <a class="el" href="dg__elements_8h_source.html#l00119">numerical_flux()</a>, <a class="el" href="elements_8cc_source.html#l05876">oomph::FaceElement::outer_unit_normal()</a>, and <a class="el" href="dg__elements_8h_source.html#l00076">required_nflux()</a>.</p>
+<p class="reference">References <a class="el" href="dg__elements_8cc_source.html#l00310">dnumerical_flux_du()</a>, <a class="el" href="dg__elements_8h_source.html#l00069">flux_index()</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="dg__elements_8cc_source.html#l00175">interpolated_u()</a>, <a class="el" href="dg__elements_8h_source.html#l00052">Neighbour_face_pt</a>, <a class="el" href="dg__elements_8h_source.html#l00055">Neighbour_local_coordinate</a>, <a class="el" href="elements_8h_source.html#l02159">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l02383">oomph::FiniteElement::nodal_dimension()</a>, <a class="el" href="elements_8h_source.html#l02483">oomph::FiniteElement::nodal_value()</a>, <a class="el" href="dg__elements_8h_source.html#l00115">numerical_flux()</a>, <a class="el" href="elements_8cc_source.html#l05872">oomph::FaceElement::outer_unit_normal()</a>, and <a class="el" href="dg__elements_8h_source.html#l00072">required_nflux()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="dg__elements_8cc_source.html#l00392">add_flux_contributions()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="dg__elements_8cc_source.html#l00388">add_flux_contributions()</a>.</p>
 
 </div>
 </div>
@@ -1743,11 +1743,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Output information about the present element and its neighbour. </p>
 
-<p class="definition">Definition at line <a class="el" href="dg__elements_8cc_source.html#l00120">120</a> of file <a class="el" href="dg__elements_8cc_source.html">dg_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dg__elements_8cc_source.html#l00116">116</a> of file <a class="el" href="dg__elements_8cc_source.html">dg_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l02499">oomph::FiniteElement::dim()</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="elements_8h_source.html#l01925">oomph::FiniteElement::integral_pt()</a>, <a class="el" href="elements_8h_source.html#l04411">oomph::FaceElement::interpolated_x()</a>, <a class="el" href="classoomph_1_1Integral.html#a1a2122f99a87c18649bafdd9ed739758">oomph::Integral::knot()</a>, <a class="el" href="dg__elements_8h_source.html#l00056">Neighbour_face_pt</a>, <a class="el" href="dg__elements_8h_source.html#l00059">Neighbour_local_coordinate</a>, <a class="el" href="elements_8h_source.html#l02163">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l02387">oomph::FiniteElement::nodal_dimension()</a>, <a class="el" href="classoomph_1_1Integral.html#a1a270de9d99a1fcf1d25a6c1017f65fa">oomph::Integral::nweight()</a>, <a class="el" href="oomph__definitions_8cc_source.html#l00326">oomph::oomph_info</a>, and <a class="el" href="cfortran_8h_source.html#l00572">s</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l02495">oomph::FiniteElement::dim()</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="elements_8h_source.html#l01921">oomph::FiniteElement::integral_pt()</a>, <a class="el" href="elements_8h_source.html#l04407">oomph::FaceElement::interpolated_x()</a>, <a class="el" href="classoomph_1_1Integral.html#a1a2122f99a87c18649bafdd9ed739758">oomph::Integral::knot()</a>, <a class="el" href="dg__elements_8h_source.html#l00052">Neighbour_face_pt</a>, <a class="el" href="dg__elements_8h_source.html#l00055">Neighbour_local_coordinate</a>, <a class="el" href="elements_8h_source.html#l02159">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l02383">oomph::FiniteElement::nodal_dimension()</a>, <a class="el" href="classoomph_1_1Integral.html#a1a270de9d99a1fcf1d25a6c1017f65fa">oomph::Integral::nweight()</a>, <a class="el" href="oomph__definitions_8cc_source.html#l00322">oomph::oomph_info</a>, and <a class="el" href="cfortran_8h_source.html#l00568">s</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="dg__elements_8h_source.html#l00367">oomph::DGElement::setup_face_neighbour_info()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="dg__elements_8h_source.html#l00363">oomph::DGElement::setup_face_neighbour_info()</a>.</p>
 
 </div>
 </div>
@@ -1778,9 +1778,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="classoomph_1_1DGEulerFaceReflectionElement.html#a51f6048bc1f1c033933c65430dd0c323">oomph::DGEulerFaceReflectionElement&lt; ELEMENT &gt;</a>, <a class="el" href="classoomph_1_1DGEulerFaceElement.html#aa20647527c6e5dc1febb13e575d971bb">oomph::DGEulerFaceElement&lt; ELEMENT &gt;</a>, and <a class="el" href="classoomph_1_1DGScalarAdvectionFaceElement.html#ae3c10d2af6a6aae42ced528040a4d530">oomph::DGScalarAdvectionFaceElement&lt; ELEMENT &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="dg__elements_8h_source.html#l00076">76</a> of file <a class="el" href="dg__elements_8h_source.html">dg_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dg__elements_8h_source.html#l00072">72</a> of file <a class="el" href="dg__elements_8h_source.html">dg_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="dg__elements_8cc_source.html#l00392">add_flux_contributions()</a>, <a class="el" href="dg__elements_8cc_source.html#l00314">dnumerical_flux_du()</a>, <a class="el" href="dg__elements_8cc_source.html#l00179">interpolated_u()</a>, and <a class="el" href="dg__elements_8cc_source.html#l00242">numerical_flux_at_knot()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="dg__elements_8cc_source.html#l00388">add_flux_contributions()</a>, <a class="el" href="dg__elements_8cc_source.html#l00310">dnumerical_flux_du()</a>, <a class="el" href="dg__elements_8cc_source.html#l00175">interpolated_u()</a>, and <a class="el" href="dg__elements_8cc_source.html#l00238">numerical_flux_at_knot()</a>.</p>
 
 </div>
 </div>
@@ -1802,11 +1802,11 @@ Additional Inherited Members</h2></td></tr>
 <p>Setup information from the neighbouring face, return a set of nodes (as data) in the neighour. The boolean flag is used to determine whether the data in the neighbour are added as external data to the bulk element &mdash; required when computing the jacobian of the system</p>
 <p>Find pointers to neighbouring faces and the local coordinates in those faces that correspond to the integration points in the present face. This is achieved by moving up to the bulk element and thence the mesh which MUST have implemented a neighbour finding scheme </p>
 
-<p class="definition">Definition at line <a class="el" href="dg__elements_8cc_source.html#l00046">46</a> of file <a class="el" href="dg__elements_8cc_source.html">dg_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dg__elements_8cc_source.html#l00042">42</a> of file <a class="el" href="dg__elements_8cc_source.html">dg_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8cc_source.html#l00293">oomph::GeneralisedElement::add_external_data()</a>, <a class="el" href="elements_8h_source.html#l04604">oomph::FaceElement::bulk_element_pt()</a>, <a class="el" href="elements_8h_source.html#l02499">oomph::FiniteElement::dim()</a>, <a class="el" href="elements_8h_source.html#l04501">oomph::FaceElement::face_index()</a>, <a class="el" href="dg__elements_8cc_source.html#l00219">get_interpolation_data()</a>, <a class="el" href="elements_8cc_source.html#l06245">oomph::FaceElement::get_local_coordinate_in_bulk()</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="elements_8h_source.html#l01925">oomph::FiniteElement::integral_pt()</a>, <a class="el" href="classoomph_1_1Integral.html#a1a2122f99a87c18649bafdd9ed739758">oomph::Integral::knot()</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, <a class="el" href="dg__elements_8h_source.html#l00067">Neighbour_external_data</a>, <a class="el" href="dg__elements_8h_source.html#l00056">Neighbour_face_pt</a>, <a class="el" href="dg__elements_8h_source.html#l00059">Neighbour_local_coordinate</a>, <a class="el" href="classoomph_1_1Integral.html#a1a270de9d99a1fcf1d25a6c1017f65fa">oomph::Integral::nweight()</a>, and <a class="el" href="cfortran_8h_source.html#l00572">s</a>.</p>
+<p class="reference">References <a class="el" href="elements_8cc_source.html#l00289">oomph::GeneralisedElement::add_external_data()</a>, <a class="el" href="elements_8h_source.html#l04600">oomph::FaceElement::bulk_element_pt()</a>, <a class="el" href="elements_8h_source.html#l02495">oomph::FiniteElement::dim()</a>, <a class="el" href="elements_8h_source.html#l04497">oomph::FaceElement::face_index()</a>, <a class="el" href="dg__elements_8cc_source.html#l00215">get_interpolation_data()</a>, <a class="el" href="elements_8cc_source.html#l06241">oomph::FaceElement::get_local_coordinate_in_bulk()</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="elements_8h_source.html#l01921">oomph::FiniteElement::integral_pt()</a>, <a class="el" href="classoomph_1_1Integral.html#a1a2122f99a87c18649bafdd9ed739758">oomph::Integral::knot()</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, <a class="el" href="dg__elements_8h_source.html#l00063">Neighbour_external_data</a>, <a class="el" href="dg__elements_8h_source.html#l00052">Neighbour_face_pt</a>, <a class="el" href="dg__elements_8h_source.html#l00055">Neighbour_local_coordinate</a>, <a class="el" href="classoomph_1_1Integral.html#a1a270de9d99a1fcf1d25a6c1017f65fa">oomph::Integral::nweight()</a>, and <a class="el" href="cfortran_8h_source.html#l00568">s</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="dg__elements_8h_source.html#l00367">oomph::DGElement::setup_face_neighbour_info()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="dg__elements_8h_source.html#l00363">oomph::DGElement::setup_face_neighbour_info()</a>.</p>
 
 </div>
 </div>
@@ -1832,9 +1832,9 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p><a class="el" href="classoomph_1_1Vector.html">Vector</a> of the vectors that will store the number of the bulk external data that correspond to the dofs in the neighbouring face This is only used if we are using implict timestepping and wish to assemble the jacobian matrix. In order that the data be correctly set up <a class="el" href="classoomph_1_1DGMesh.html#ac8839d6d15a037536217b84e32dd2ae3">DGMesh::setup_face_neighbour_info()</a> must be called with the boolean flag set to true. </p>
 
-<p class="definition">Definition at line <a class="el" href="dg__elements_8h_source.html#l00067">67</a> of file <a class="el" href="dg__elements_8h_source.html">dg_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dg__elements_8h_source.html#l00063">63</a> of file <a class="el" href="dg__elements_8h_source.html">dg_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="dg__elements_8cc_source.html#l00392">add_flux_contributions()</a>, and <a class="el" href="dg__elements_8cc_source.html#l00046">setup_neighbour_info()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="dg__elements_8cc_source.html#l00388">add_flux_contributions()</a>, and <a class="el" href="dg__elements_8cc_source.html#l00042">setup_neighbour_info()</a>.</p>
 
 </div>
 </div>
@@ -1860,9 +1860,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p><a class="el" href="classoomph_1_1Vector.html">Vector</a> of neighbouring face elements at the integration points. </p>
 
-<p class="definition">Definition at line <a class="el" href="dg__elements_8h_source.html#l00056">56</a> of file <a class="el" href="dg__elements_8h_source.html">dg_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dg__elements_8h_source.html#l00052">52</a> of file <a class="el" href="dg__elements_8h_source.html">dg_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="dg__elements_8cc_source.html#l00392">add_flux_contributions()</a>, <a class="el" href="dg__elements_8h_source.html#l00087">neighbour_face_pt()</a>, <a class="el" href="dg__elements_8cc_source.html#l00242">numerical_flux_at_knot()</a>, <a class="el" href="dg__elements_8cc_source.html#l00120">report_info()</a>, and <a class="el" href="dg__elements_8cc_source.html#l00046">setup_neighbour_info()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="dg__elements_8cc_source.html#l00388">add_flux_contributions()</a>, <a class="el" href="dg__elements_8h_source.html#l00083">neighbour_face_pt()</a>, <a class="el" href="dg__elements_8cc_source.html#l00238">numerical_flux_at_knot()</a>, <a class="el" href="dg__elements_8cc_source.html#l00116">report_info()</a>, and <a class="el" href="dg__elements_8cc_source.html#l00042">setup_neighbour_info()</a>.</p>
 
 </div>
 </div>
@@ -1888,9 +1888,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p><a class="el" href="classoomph_1_1Vector.html">Vector</a> of neighbouring local coordinates at the integration points. </p>
 
-<p class="definition">Definition at line <a class="el" href="dg__elements_8h_source.html#l00059">59</a> of file <a class="el" href="dg__elements_8h_source.html">dg_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dg__elements_8h_source.html#l00055">55</a> of file <a class="el" href="dg__elements_8h_source.html">dg_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="dg__elements_8cc_source.html#l00242">numerical_flux_at_knot()</a>, <a class="el" href="dg__elements_8cc_source.html#l00120">report_info()</a>, and <a class="el" href="dg__elements_8cc_source.html#l00046">setup_neighbour_info()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="dg__elements_8cc_source.html#l00238">numerical_flux_at_knot()</a>, <a class="el" href="dg__elements_8cc_source.html#l00116">report_info()</a>, and <a class="el" href="dg__elements_8cc_source.html#l00042">setup_neighbour_info()</a>.</p>
 
 </div>
 </div>
@@ -1926,7 +1926,7 @@ Additional Inherited Members</h2></td></tr>
     <footer>
       <div class="container">
         <div class="text-muted" style="float:right;">Generated by <a href="http://www.doxygen.org/index.html">
-          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Tue Jul 6 2021 22:56:03
+          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Fri Jul 9 2021 20:51:20
         </div>
       </div>
     </footer>

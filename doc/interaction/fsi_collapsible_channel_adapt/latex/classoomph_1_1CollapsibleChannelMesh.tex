@@ -58,7 +58,7 @@ class oomph\+::\+Collapsible\+Channel\+Mesh$<$ E\+L\+E\+M\+E\+N\+T $>$}
 
 Basic collapsible channel mesh. The mesh is derived from the {\ttfamily \mbox{\hyperlink{classoomph_1_1SimpleRectangularQuadMesh}{Simple\+Rectangular\+Quad\+Mesh}}} so it\textquotesingle{}s node and element numbering scheme is the same as in that mesh. Only the boundaries are numbered differently to allow the easy identification of the \char`\"{}collapsible\char`\"{} segment. Boundary coordinates are set up for all nodes located on boundary 3 (the collapsible segment). The curvilinear (\char`\"{}collapsible\char`\"{}) segment is defined by a {\ttfamily Geom\+Object}. 
 
-Definition at line 70 of file collapsible\+\_\+channel\+\_\+mesh.\+template.\+h.
+Definition at line 66 of file collapsible\+\_\+channel\+\_\+mesh.\+template.\+h.
 
 
 
@@ -78,7 +78,7 @@ Constructor\+: Pass number of elements in upstream/collapsible/ downstream segme
 Constructor\+: Pass number of elements in upstream/collapsible/downstream segment and across the channel; lengths of upstream/collapsible/downstream segments and width of channel, pointer to Geom\+Object that defines the collapsible segment and pointer to Time\+Stepper (defaults to the default timestepper, Steady). ~\newline
  
 
-Definition at line 48 of file collapsible\+\_\+channel\+\_\+mesh.\+template.\+cc.
+Definition at line 44 of file collapsible\+\_\+channel\+\_\+mesh.\+template.\+cc.
 
 
 
@@ -97,7 +97,7 @@ destructor
 
 
 
-Definition at line 93 of file collapsible\+\_\+channel\+\_\+mesh.\+template.\+h.
+Definition at line 89 of file collapsible\+\_\+channel\+\_\+mesh.\+template.\+h.
 
 
 
@@ -123,7 +123,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1AlgebraicCollapsibleChannelMesh_
 
 
 
-Definition at line 132 of file collapsible\+\_\+channel\+\_\+mesh.\+template.\+h.
+Definition at line 128 of file collapsible\+\_\+channel\+\_\+mesh.\+template.\+h.
 
 
 
@@ -142,7 +142,7 @@ Function pointer for function that redistributes the elements in the axial direc
 
 
 
-Definition at line 140 of file collapsible\+\_\+channel\+\_\+mesh.\+template.\+h.
+Definition at line 136 of file collapsible\+\_\+channel\+\_\+mesh.\+template.\+h.
 
 
 
@@ -165,7 +165,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1AlgebraicCollapsibleChannelMesh_
 
 
 
-Definition at line 111 of file collapsible\+\_\+channel\+\_\+mesh.\+template.\+h.
+Definition at line 107 of file collapsible\+\_\+channel\+\_\+mesh.\+template.\+h.
 
 
 
@@ -184,7 +184,7 @@ Function pointer for function that squashes the mesh near the walls. Default tri
 
 
 
-Definition at line 121 of file collapsible\+\_\+channel\+\_\+mesh.\+template.\+h.
+Definition at line 117 of file collapsible\+\_\+channel\+\_\+mesh.\+template.\+h.
 
 
 
@@ -203,7 +203,7 @@ Access function to domain.
 
 
 
-Definition at line 102 of file collapsible\+\_\+channel\+\_\+mesh.\+template.\+h.
+Definition at line 98 of file collapsible\+\_\+channel\+\_\+mesh.\+template.\+h.
 
 
 
@@ -226,7 +226,7 @@ Access function to Geom\+Object representing wall.
 
 
 
-Definition at line 99 of file collapsible\+\_\+channel\+\_\+mesh.\+template.\+h.
+Definition at line 95 of file collapsible\+\_\+channel\+\_\+mesh.\+template.\+h.
 
 
 
@@ -252,7 +252,7 @@ Pointer to domain.
 
 
 
-Definition at line 150 of file collapsible\+\_\+channel\+\_\+mesh.\+template.\+h.
+Definition at line 146 of file collapsible\+\_\+channel\+\_\+mesh.\+template.\+h.
 
 
 
@@ -271,7 +271,7 @@ Number of element columns in collapsible part.
 
 
 
-Definition at line 156 of file collapsible\+\_\+channel\+\_\+mesh.\+template.\+h.
+Definition at line 152 of file collapsible\+\_\+channel\+\_\+mesh.\+template.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1CollapsibleChannelMesh_acd1b5ea7597a079b4321d3658f2e03f4}\label{classoomph_1_1CollapsibleChannelMesh_acd1b5ea7597a079b4321d3658f2e03f4}} 
 \index{oomph::CollapsibleChannelMesh$<$ ELEMENT $>$@{oomph::CollapsibleChannelMesh$<$ ELEMENT $>$}!Ndown@{Ndown}}
@@ -286,7 +286,7 @@ Number of element columns in downstream part.
 
 
 
-Definition at line 159 of file collapsible\+\_\+channel\+\_\+mesh.\+template.\+h.
+Definition at line 155 of file collapsible\+\_\+channel\+\_\+mesh.\+template.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1CollapsibleChannelMesh_aafd1c6d21bb891f1188ba6eed1705a45}\label{classoomph_1_1CollapsibleChannelMesh_aafd1c6d21bb891f1188ba6eed1705a45}} 
 \index{oomph::CollapsibleChannelMesh$<$ ELEMENT $>$@{oomph::CollapsibleChannelMesh$<$ ELEMENT $>$}!Nup@{Nup}}
@@ -301,7 +301,7 @@ Number of element columns in upstream part.
 
 
 
-Definition at line 153 of file collapsible\+\_\+channel\+\_\+mesh.\+template.\+h.
+Definition at line 149 of file collapsible\+\_\+channel\+\_\+mesh.\+template.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1CollapsibleChannelMesh_afa8d1dceef1cafeb166794d9275a30a3}\label{classoomph_1_1CollapsibleChannelMesh_afa8d1dceef1cafeb166794d9275a30a3}} 
 \index{oomph::CollapsibleChannelMesh$<$ ELEMENT $>$@{oomph::CollapsibleChannelMesh$<$ ELEMENT $>$}!Ny@{Ny}}
@@ -316,7 +316,7 @@ Number of element rows across channel.
 
 
 
-Definition at line 162 of file collapsible\+\_\+channel\+\_\+mesh.\+template.\+h.
+Definition at line 158 of file collapsible\+\_\+channel\+\_\+mesh.\+template.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1CollapsibleChannelMesh_a2457ac1492c962b0a3d962b13b51ea6e}\label{classoomph_1_1CollapsibleChannelMesh_a2457ac1492c962b0a3d962b13b51ea6e}} 
 \index{oomph::CollapsibleChannelMesh$<$ ELEMENT $>$@{oomph::CollapsibleChannelMesh$<$ ELEMENT $>$}!Wall\_pt@{Wall\_pt}}
@@ -331,7 +331,7 @@ Pointer to geometric object that represents the moving wall.
 
 
 
-Definition at line 165 of file collapsible\+\_\+channel\+\_\+mesh.\+template.\+h.
+Definition at line 161 of file collapsible\+\_\+channel\+\_\+mesh.\+template.\+h.
 
 
 

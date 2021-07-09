@@ -46,7 +46,7 @@ class \mbox{\hyperlink{classoomph_1_1DoubleVectorHaloScheme_acae5914031232d05e22
 \doxysubsection{Detailed Description}
 A class that stores the halo/haloed entries required when using a \mbox{\hyperlink{classoomph_1_1DoubleVectorWithHaloEntries}{Double\+Vector\+With\+Halo\+Entries}}. This is a separate class so thay many different Vectors can share the same object. The constructor requires the distribution of the \mbox{\hyperlink{classoomph_1_1DoubleVector}{Double\+Vector}} (if you pass in a different distribution things will go badly wrong) and a vector that specifies which G\+L\+O\+B\+AL eqn numbers are required on each processor. 
 
-Definition at line 55 of file double\+\_\+vector\+\_\+with\+\_\+halo.\+h.
+Definition at line 51 of file double\+\_\+vector\+\_\+with\+\_\+halo.\+h.
 
 
 
@@ -63,7 +63,7 @@ Constructor that sets up the required information communicating between all proc
 
 
 
-Definition at line 41 of file double\+\_\+vector\+\_\+with\+\_\+halo.\+cc.
+Definition at line 37 of file double\+\_\+vector\+\_\+with\+\_\+halo.\+cc.
 
 
 
@@ -84,7 +84,7 @@ Return the pointer to the distirbution used to setup the halo information.
 
 
 
-Definition at line 108 of file double\+\_\+vector\+\_\+with\+\_\+halo.\+h.
+Definition at line 104 of file double\+\_\+vector\+\_\+with\+\_\+halo.\+h.
 
 
 
@@ -106,7 +106,7 @@ Return the local index associated with the global equation.
 
 
 
-Definition at line 117 of file double\+\_\+vector\+\_\+with\+\_\+halo.\+h.
+Definition at line 113 of file double\+\_\+vector\+\_\+with\+\_\+halo.\+h.
 
 
 
@@ -128,7 +128,7 @@ Return the number of halo values.
 
 
 
-Definition at line 104 of file double\+\_\+vector\+\_\+with\+\_\+halo.\+h.
+Definition at line 100 of file double\+\_\+vector\+\_\+with\+\_\+halo.\+h.
 
 
 
@@ -146,7 +146,7 @@ Function that sets up a vector of pointers to halo data, index using the scheme 
 
 Function that sets up a vector of pointers to halo data, index using the scheme in Local\+\_\+index. The first arguement is a map of pointers to all halo data index by the global equation number. 
 
-Definition at line 210 of file double\+\_\+vector\+\_\+with\+\_\+halo.\+cc.
+Definition at line 206 of file double\+\_\+vector\+\_\+with\+\_\+halo.\+cc.
 
 
 
@@ -171,7 +171,7 @@ The \mbox{\hyperlink{classoomph_1_1DoubleVectorWithHaloEntries}{Double\+Vector\+
 
 
 
-Definition at line 59 of file double\+\_\+vector\+\_\+with\+\_\+halo.\+h.
+Definition at line 55 of file double\+\_\+vector\+\_\+with\+\_\+halo.\+h.
 
 
 
@@ -188,7 +188,7 @@ Store the distribution that was used to setup the halo scheme.
 
 
 
-Definition at line 92 of file double\+\_\+vector\+\_\+with\+\_\+halo.\+h.
+Definition at line 88 of file double\+\_\+vector\+\_\+with\+\_\+halo.\+h.
 
 
 
@@ -206,7 +206,7 @@ Storage for the offsets of the processor data in the receive buffer.
 
 
 
-Definition at line 88 of file double\+\_\+vector\+\_\+with\+\_\+halo.\+h.
+Definition at line 84 of file double\+\_\+vector\+\_\+with\+\_\+halo.\+h.
 
 
 
@@ -224,7 +224,7 @@ Storage for all the entries that are to be received from other processors (recei
 
 
 
-Definition at line 80 of file double\+\_\+vector\+\_\+with\+\_\+halo.\+h.
+Definition at line 76 of file double\+\_\+vector\+\_\+with\+\_\+halo.\+h.
 
 
 
@@ -242,7 +242,7 @@ Storage for the number of entries to be received from each other processor.
 
 
 
-Definition at line 84 of file double\+\_\+vector\+\_\+with\+\_\+halo.\+h.
+Definition at line 80 of file double\+\_\+vector\+\_\+with\+\_\+halo.\+h.
 
 
 
@@ -260,7 +260,7 @@ Storage for the offsets of the haloed entries for each processor in the packed H
 
 
 
-Definition at line 75 of file double\+\_\+vector\+\_\+with\+\_\+halo.\+h.
+Definition at line 71 of file double\+\_\+vector\+\_\+with\+\_\+halo.\+h.
 
 
 
@@ -278,7 +278,7 @@ The haloed entries that will be sent in a format compatible with M\+P\+I\+\_\+\+
 
 
 
-Definition at line 67 of file double\+\_\+vector\+\_\+with\+\_\+halo.\+h.
+Definition at line 63 of file double\+\_\+vector\+\_\+with\+\_\+halo.\+h.
 
 
 
@@ -296,7 +296,7 @@ Storage for the number of haloed entries to be sent to each processor.
 
 
 
-Definition at line 71 of file double\+\_\+vector\+\_\+with\+\_\+halo.\+h.
+Definition at line 67 of file double\+\_\+vector\+\_\+with\+\_\+halo.\+h.
 
 
 
@@ -314,7 +314,7 @@ Storage for the translation scheme from global unknown to local index in the add
 
 
 
-Definition at line 63 of file double\+\_\+vector\+\_\+with\+\_\+halo.\+h.
+Definition at line 59 of file double\+\_\+vector\+\_\+with\+\_\+halo.\+h.
 
 
 

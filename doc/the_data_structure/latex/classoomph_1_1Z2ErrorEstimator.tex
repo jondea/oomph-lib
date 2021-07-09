@@ -107,7 +107,7 @@ We repeat this procedure for every patch. For nodes that are part of multiple pa
  
 \end{DoxyEnumerate}
 
-Definition at line 313 of file error\+\_\+estimator.\+h.
+Definition at line 309 of file error\+\_\+estimator.\+h.
 
 
 
@@ -124,7 +124,7 @@ Function pointer to combined error estimator function.
 
 
 
-Definition at line 319 of file error\+\_\+estimator.\+h.
+Definition at line 315 of file error\+\_\+estimator.\+h.
 
 
 
@@ -141,7 +141,7 @@ Constructor\+: Set order of recovery shape functions.
 
 
 
-Definition at line 322 of file error\+\_\+estimator.\+h.
+Definition at line 318 of file error\+\_\+estimator.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1Z2ErrorEstimator_a35186eeb792bf2b948239d19b2697ca0}\label{classoomph_1_1Z2ErrorEstimator_a35186eeb792bf2b948239d19b2697ca0}} 
 \index{oomph::Z2ErrorEstimator@{oomph::Z2ErrorEstimator}!Z2ErrorEstimator@{Z2ErrorEstimator}}
@@ -155,7 +155,7 @@ Constructor\+: Leave order of recovery shape functions open for now -- they will
 
 
 
-Definition at line 331 of file error\+\_\+estimator.\+h.
+Definition at line 327 of file error\+\_\+estimator.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1Z2ErrorEstimator_a4eb88b73062ae5dd42c597569179aeae}\label{classoomph_1_1Z2ErrorEstimator_a4eb88b73062ae5dd42c597569179aeae}} 
 \index{oomph::Z2ErrorEstimator@{oomph::Z2ErrorEstimator}!Z2ErrorEstimator@{Z2ErrorEstimator}}
@@ -169,7 +169,7 @@ Broken copy constructor.
 
 
 
-Definition at line 337 of file error\+\_\+estimator.\+h.
+Definition at line 333 of file error\+\_\+estimator.\+h.
 
 
 
@@ -187,7 +187,7 @@ Empty virtual destructor.
 
 
 
-Definition at line 349 of file error\+\_\+estimator.\+h.
+Definition at line 345 of file error\+\_\+estimator.\+h.
 
 
 
@@ -204,7 +204,7 @@ Access function\+: Pointer to combined error estimate function.
 
 
 
-Definition at line 379 of file error\+\_\+estimator.\+h.
+Definition at line 375 of file error\+\_\+estimator.\+h.
 
 
 
@@ -222,7 +222,7 @@ Access function\+: Pointer to combined error estimate function. Const version.
 
 
 
-Definition at line 384 of file error\+\_\+estimator.\+h.
+Definition at line 380 of file error\+\_\+estimator.\+h.
 
 
 
@@ -240,7 +240,7 @@ Doc flux and recovered flux.
 
 Doc FE and recovered flux. 
 
-Definition at line 1739 of file error\+\_\+estimator.\+cc.
+Definition at line 1735 of file error\+\_\+estimator.\+cc.
 
 
 
@@ -262,7 +262,7 @@ Return a combined error estimate from all compound errors.
 
 Return a combined error estimate from all compound flux errors The default is to return the maximum of the compound flux errors which will always force refinment if any field is above the single mesh error threshold and unrefinement if both are below the lower limit. Any other fancy combinations can be selected by specifying a user-\/defined combined estimate by setting a function pointer. 
 
-Definition at line 422 of file error\+\_\+estimator.\+cc.
+Definition at line 418 of file error\+\_\+estimator.\+cc.
 
 
 
@@ -285,7 +285,7 @@ Compute the elemental error measures for a given mesh and store them in a vector
 
 
 
-Definition at line 353 of file error\+\_\+estimator.\+h.
+Definition at line 349 of file error\+\_\+estimator.\+h.
 
 
 
@@ -320,7 +320,7 @@ Implements \mbox{\hyperlink{classoomph_1_1ErrorEstimator_a77e85262d309d6e7da0ca7
 
 
 
-Definition at line 901 of file error\+\_\+estimator.\+cc.
+Definition at line 897 of file error\+\_\+estimator.\+cc.
 
 
 
@@ -338,7 +338,7 @@ Given the vector of elements that make up a patch, the number of recovery and fl
 
 Given the vector of elements that make up a patch, the number of recovery and flux terms, and the spatial dimension of the problem, compute the matrix of recovered flux coefficients and return a pointer to it. 
 
-Definition at line 618 of file error\+\_\+estimator.\+cc.
+Definition at line 614 of file error\+\_\+estimator.\+cc.
 
 
 
@@ -366,7 +366,7 @@ Find order of recovery shape functions
 
 Find order of recovery shape functions
 
-Definition at line 256 of file error\+\_\+estimator.\+cc.
+Definition at line 252 of file error\+\_\+estimator.\+cc.
 
 
 
@@ -388,7 +388,7 @@ Return number of coefficients for expansion of recovered fluxes for given spatia
 
 Number of coefficients for expansion of recovered fluxes for given spatial dimension of elements. Use complete polynomial of given order for recovery 
 
-Definition at line 762 of file error\+\_\+estimator.\+cc.
+Definition at line 758 of file error\+\_\+estimator.\+cc.
 
 
 
@@ -410,7 +410,7 @@ Broken assignment operator.
 
 
 
-Definition at line 343 of file error\+\_\+estimator.\+h.
+Definition at line 339 of file error\+\_\+estimator.\+h.
 
 
 
@@ -428,7 +428,7 @@ Access function for order of recovery polynomials.
 
 
 
-Definition at line 373 of file error\+\_\+estimator.\+h.
+Definition at line 369 of file error\+\_\+estimator.\+h.
 
 
 
@@ -450,7 +450,7 @@ Access function for order of recovery polynomials (const version)
 
 
 
-Definition at line 376 of file error\+\_\+estimator.\+h.
+Definition at line 372 of file error\+\_\+estimator.\+h.
 
 
 
@@ -469,7 +469,7 @@ Access function for prescribed reference flux norm ~\newline
 
 
 
-Definition at line 397 of file error\+\_\+estimator.\+h.
+Definition at line 393 of file error\+\_\+estimator.\+h.
 
 
 
@@ -487,7 +487,7 @@ Access function for prescribed reference flux norm (const. version)
 
 
 
-Definition at line 400 of file error\+\_\+estimator.\+h.
+Definition at line 396 of file error\+\_\+estimator.\+h.
 
 
 
@@ -505,7 +505,7 @@ Setup patches\+: For each vertex node pointed to by nod\+\_\+pt, adjacent\+\_\+e
 
 Setup patches\+: For each vertex node pointed to by nod\+\_\+pt, adjacent\+\_\+elements\+\_\+pt\mbox{[}nod\+\_\+pt\mbox{]} contains the pointer to the vector that contains the pointers to the elements that the node is part of. Also returns a \mbox{\hyperlink{classoomph_1_1Vector}{Vector}} of vertex nodes for use in get\+\_\+element\+\_\+errors. 
 
-Definition at line 463 of file error\+\_\+estimator.\+cc.
+Definition at line 459 of file error\+\_\+estimator.\+cc.
 
 
 
@@ -533,7 +533,7 @@ Find order of recovery shape functions
 
 Find order of recovery shape functions
 
-Definition at line 50 of file error\+\_\+estimator.\+cc.
+Definition at line 46 of file error\+\_\+estimator.\+cc.
 
 
 
@@ -558,7 +558,7 @@ Function pointer to combined error estimator function.
 
 
 
-Definition at line 456 of file error\+\_\+estimator.\+h.
+Definition at line 452 of file error\+\_\+estimator.\+h.
 
 
 
@@ -576,7 +576,7 @@ Order of recovery polynomials.
 
 
 
-Definition at line 439 of file error\+\_\+estimator.\+h.
+Definition at line 435 of file error\+\_\+estimator.\+h.
 
 
 
@@ -590,7 +590,7 @@ Referenced by get\+\_\+element\+\_\+errors(), nrecovery\+\_\+terms(), and recove
 
 Bool to indicate if recovery order is to be read out from first element in mesh or set globally 
 
-Definition at line 443 of file error\+\_\+estimator.\+h.
+Definition at line 439 of file error\+\_\+estimator.\+h.
 
 
 
@@ -608,7 +608,7 @@ Prescribed reference flux norm.
 
 
 
-Definition at line 453 of file error\+\_\+estimator.\+h.
+Definition at line 449 of file error\+\_\+estimator.\+h.
 
 
 

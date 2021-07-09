@@ -131,7 +131,7 @@ void \mbox{\hyperlink{classoomph_1_1SolidNode_a0c5b916610af540ccc98a09584b8f34f}
 A Class for nodes that deform elastically (i.\+e. position is an unknown in the problem). The idea is that the Eulerian positions are stored in a \mbox{\hyperlink{classoomph_1_1Data}{Data}} object and the Lagrangian coordinates are stored in addition. The pointer that addresses the Eulerian positions is set to the pointer to Value in the \mbox{\hyperlink{classoomph_1_1Data}{Data}} object. Hence, \mbox{\hyperlink{classoomph_1_1SolidNode}{Solid\+Node}} uses knowledge of the internal structure of \mbox{\hyperlink{classoomph_1_1Data}{Data}} and must be a friend of the \mbox{\hyperlink{classoomph_1_1Data}{Data}} class. In order to allow a mesh to deform via an elastic-\/style equation in deforming-\/domain problems, the positions are stored separately from the values, so that elastic problems may be combined with any other type of problem. ~\newline
  
 
-Definition at line 1568 of file nodes.\+h.
+Definition at line 1564 of file nodes.\+h.
 
 
 
@@ -148,7 +148,7 @@ Default Constructor.
 
 
 
-Definition at line 1594 of file nodes.\+h.
+Definition at line 1590 of file nodes.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1SolidNode_ad8f4ed97c7124e7e55f1089bab99b9d7}\label{classoomph_1_1SolidNode_ad8f4ed97c7124e7e55f1089bab99b9d7}} 
 \index{oomph::SolidNode@{oomph::SolidNode}!SolidNode@{SolidNode}}
@@ -162,7 +162,7 @@ Definition at line 1594 of file nodes.\+h.
 
 \mbox{\hyperlink{classoomph_1_1Steady}{Steady}} constructor. The node has N\+Lgrangian Lagrangian coordinates of n\+\_\+lagrangian\+\_\+type types (1 for Lagrange elements, 2 for 1D Hermite etc.). The Eulerian dimension of the \mbox{\hyperlink{classoomph_1_1Node}{Node}} is n\+\_\+dim and we have n\+\_\+position\+\_\+type (generalised) Eulerian coordinates. There are initial\+\_\+n\+\_\+value values stored at this node and N\+Additional\+\_\+solid additional values associated with the solid equations are stored in a separate \mbox{\hyperlink{classoomph_1_1Data}{Data}} object at the node. 
 
-Definition at line 3255 of file nodes.\+cc.
+Definition at line 3251 of file nodes.\+cc.
 
 
 
@@ -184,7 +184,7 @@ Unsteady constructor. ~\newline
  Allocates storage for initial\+\_\+n\+\_\+value nodal values with history values as required by timestepper. The node has N\+Lgrangian Lagrangian coordinates of n\+\_\+lagrangian\+\_\+type types (1 for Lagrange elements, 2 for 1D Hermite etc.)/ The Eulerian dimension of the \mbox{\hyperlink{classoomph_1_1Node}{Node}} is n\+\_\+dim and we have n\+\_\+position\+\_\+type generalised Eulerian coordinates. ~\newline
  
 
-Definition at line 3287 of file nodes.\+cc.
+Definition at line 3283 of file nodes.\+cc.
 
 
 
@@ -202,7 +202,7 @@ Destructor that cleans up the additional memory allocated in Solid\+Nodes.
 
 Destructor to clean up the memory allocated for nodal positions and additional solid variables 
 
-Definition at line 3315 of file nodes.\+cc.
+Definition at line 3311 of file nodes.\+cc.
 
 
 
@@ -220,7 +220,7 @@ Broken copy constructor.
 
 
 
-Definition at line 1627 of file nodes.\+h.
+Definition at line 1623 of file nodes.\+h.
 
 
 
@@ -245,7 +245,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1Data_a1d3f7c4200506d11fea3c647
 
 
 
-Definition at line 3695 of file nodes.\+cc.
+Definition at line 3691 of file nodes.\+cc.
 
 
 
@@ -267,7 +267,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1Data_a314ae9723424aa30d1275ab2
 
 
 
-Definition at line 3589 of file nodes.\+cc.
+Definition at line 3585 of file nodes.\+cc.
 
 
 
@@ -289,7 +289,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1Node_a11400682e1fd2851777234a7
 
 
 
-Definition at line 3603 of file nodes.\+cc.
+Definition at line 3599 of file nodes.\+cc.
 
 
 
@@ -315,7 +315,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1Node_a5f727227a1c8fdc7d5d42249
 
 
 
-Definition at line 3546 of file nodes.\+cc.
+Definition at line 3542 of file nodes.\+cc.
 
 
 
@@ -337,7 +337,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1Node_a8758650a2e6d7312ad070bb8
 
 
 
-Definition at line 1726 of file nodes.\+h.
+Definition at line 1722 of file nodes.\+h.
 
 
 
@@ -355,7 +355,7 @@ Copy nodal positions and associated data from specified node object.
 
 Copy nodal positions and associated data from specified node object 
 
-Definition at line 3330 of file nodes.\+cc.
+Definition at line 3326 of file nodes.\+cc.
 
 
 
@@ -381,7 +381,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1Data_a2dae16e2dcff9a40029f834c
 
 
 
-Definition at line 3565 of file nodes.\+cc.
+Definition at line 3561 of file nodes.\+cc.
 
 
 
@@ -407,7 +407,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1Node_ab5d4bea7ffc69a82fde5720a
 
 
 
-Definition at line 3473 of file nodes.\+cc.
+Definition at line 3469 of file nodes.\+cc.
 
 
 
@@ -429,7 +429,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1Node_acd8bb142619d639d9bbfe813
 
 
 
-Definition at line 3370 of file nodes.\+cc.
+Definition at line 3366 of file nodes.\+cc.
 
 
 
@@ -447,7 +447,7 @@ Return lagrangian coordinate either directly or via hanging node representation.
 
 Return lagrangian coordinate either directly or via hanging node representation. 
 
-Definition at line 3487 of file nodes.\+cc.
+Definition at line 3483 of file nodes.\+cc.
 
 
 
@@ -469,7 +469,7 @@ Return generalised lagrangian coordinate either directly or via hanging node rep
 
 Return generalised lagrangian coordinate either directly or via hanging node representation. 
 
-Definition at line 3516 of file nodes.\+cc.
+Definition at line 3512 of file nodes.\+cc.
 
 
 
@@ -487,7 +487,7 @@ Return number of lagrangian coordinates.
 
 
 
-Definition at line 1733 of file nodes.\+h.
+Definition at line 1729 of file nodes.\+h.
 
 
 
@@ -509,7 +509,7 @@ Number of types of Lagrangian coordinates used to interpolate the Lagrangian coo
 
 
 
-Definition at line 1737 of file nodes.\+h.
+Definition at line 1733 of file nodes.\+h.
 
 
 
@@ -535,7 +535,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1Node_aecf8c979266300d3609de2b4
 
 
 
-Definition at line 1838 of file nodes.\+h.
+Definition at line 1834 of file nodes.\+h.
 
 
 
@@ -553,7 +553,7 @@ Broken assignment operator.
 
 
 
-Definition at line 1633 of file nodes.\+h.
+Definition at line 1629 of file nodes.\+h.
 
 
 
@@ -575,7 +575,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1Node_a3f0d0e77ba866ce8ad3c5c01
 
 
 
-Definition at line 1711 of file nodes.\+h.
+Definition at line 1707 of file nodes.\+h.
 
 
 
@@ -593,7 +593,7 @@ Pin the nodal position.
 
 
 
-Definition at line 1693 of file nodes.\+h.
+Definition at line 1689 of file nodes.\+h.
 
 
 
@@ -615,7 +615,7 @@ Pin the generalised nodal position. `Type'\+: k; Coordinate direction\+: i.
 
 
 
-Definition at line 1698 of file nodes.\+h.
+Definition at line 1694 of file nodes.\+h.
 
 
 
@@ -634,7 +634,7 @@ Return the equation number for generalised Eulerian coordinate\+: type of coordi
 
 
 
-Definition at line 1679 of file nodes.\+h.
+Definition at line 1675 of file nodes.\+h.
 
 
 
@@ -660,7 +660,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1Node_a80fe9192b35baa5321e8d0ff
 
 
 
-Definition at line 1671 of file nodes.\+h.
+Definition at line 1667 of file nodes.\+h.
 
 
 
@@ -682,7 +682,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1Node_a0e1ad244c2b109fb54a2fa64
 
 
 
-Definition at line 1674 of file nodes.\+h.
+Definition at line 1670 of file nodes.\+h.
 
 
 
@@ -700,7 +700,7 @@ Test whether the i-\/th coordinate is pinned, 0\+: false; 1\+: true.
 
 
 
-Definition at line 1684 of file nodes.\+h.
+Definition at line 1680 of file nodes.\+h.
 
 
 
@@ -722,7 +722,7 @@ Test whether the k-\/th type of the i-\/th coordinate is pinned 0\+: false; 1\+:
 
 
 
-Definition at line 1689 of file nodes.\+h.
+Definition at line 1685 of file nodes.\+h.
 
 
 
@@ -740,7 +740,7 @@ Read nodal positions (variable and fixed) and associated data from file for rest
 
 Read nodal positions and associated data to file for restart. 
 
-Definition at line 3390 of file nodes.\+cc.
+Definition at line 3386 of file nodes.\+cc.
 
 
 
@@ -766,7 +766,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1Data_ae958e52df6ede2a08f957db4
 
 
 
-Definition at line 3707 of file nodes.\+cc.
+Definition at line 3703 of file nodes.\+cc.
 
 
 
@@ -788,7 +788,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1Node_accb033ab8ed4f96331014f7c
 
 
 
-Definition at line 3650 of file nodes.\+cc.
+Definition at line 3646 of file nodes.\+cc.
 
 
 
@@ -810,7 +810,7 @@ Set the variable position data from an external data object.
 
 Set the variable position data from an external source. This is mainly used when setting periodic solid problems. 
 
-Definition at line 3435 of file nodes.\+cc.
+Definition at line 3431 of file nodes.\+cc.
 
 
 
@@ -832,7 +832,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1Node_a15d3962d66d92de44e32edc9
 
 
 
-Definition at line 3451 of file nodes.\+cc.
+Definition at line 3447 of file nodes.\+cc.
 
 
 
@@ -854,7 +854,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1Node_ac23aaa36891269f3c9a83261
 
 
 
-Definition at line 1730 of file nodes.\+h.
+Definition at line 1726 of file nodes.\+h.
 
 
 
@@ -876,7 +876,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1Node_a8ef38470acf00f344c9567bc
 
 
 
-Definition at line 1718 of file nodes.\+h.
+Definition at line 1714 of file nodes.\+h.
 
 
 
@@ -894,7 +894,7 @@ Unpin the nodal position.
 
 
 
-Definition at line 1702 of file nodes.\+h.
+Definition at line 1698 of file nodes.\+h.
 
 
 
@@ -916,7 +916,7 @@ Unpin the generalised nodal position. `Type'\+: k; Coordinate direction\+: i.
 
 
 
-Definition at line 1707 of file nodes.\+h.
+Definition at line 1703 of file nodes.\+h.
 
 
 
@@ -934,7 +934,7 @@ Return the variable\+\_\+position data (const version)
 
 
 
-Definition at line 1651 of file nodes.\+h.
+Definition at line 1647 of file nodes.\+h.
 
 
 
@@ -952,7 +952,7 @@ Pointer to variable\+\_\+position data (const version)
 
 
 
-Definition at line 1654 of file nodes.\+h.
+Definition at line 1650 of file nodes.\+h.
 
 
 
@@ -974,7 +974,7 @@ Reference to i-\/th Lagrangian position.
 
 
 
-Definition at line 1740 of file nodes.\+h.
+Definition at line 1736 of file nodes.\+h.
 
 
 
@@ -996,7 +996,7 @@ Reference to i-\/th Lagrangian position (const version)
 
 
 
-Definition at line 1749 of file nodes.\+h.
+Definition at line 1745 of file nodes.\+h.
 
 
 
@@ -1014,7 +1014,7 @@ Reference to the generalised Lagrangian position. `Type'\+: k; \textquotesingle{
 
 
 
-Definition at line 1759 of file nodes.\+h.
+Definition at line 1755 of file nodes.\+h.
 
 
 
@@ -1036,7 +1036,7 @@ Reference to the generalised Lagrangian position. `Type'\+: k; \textquotesingle{
 
 
 
-Definition at line 1769 of file nodes.\+h.
+Definition at line 1765 of file nodes.\+h.
 
 
 
@@ -1054,7 +1054,7 @@ Private function to check that the arguments to the position functions are in ra
 
 Private function to check that the argument is within the range of stored Lagrangain coordinates and position types. 
 
-Definition at line 3216 of file nodes.\+cc.
+Definition at line 3212 of file nodes.\+cc.
 
 
 
@@ -1079,7 +1079,7 @@ Number of Lagrangian coordinates of the node.
 
 
 
-Definition at line 1579 of file nodes.\+h.
+Definition at line 1575 of file nodes.\+h.
 
 
 
@@ -1097,7 +1097,7 @@ Number of types of Lagrangian coordinates used to interpolate the Lagrangian coo
 
 
 
-Definition at line 1583 of file nodes.\+h.
+Definition at line 1579 of file nodes.\+h.
 
 
 
@@ -1115,7 +1115,7 @@ Pointer to data that will hold variable positions in elastic nodes.
 
 
 
-Definition at line 1586 of file nodes.\+h.
+Definition at line 1582 of file nodes.\+h.
 
 
 
@@ -1133,7 +1133,7 @@ Storage for the Lagrangian positions.
 
 
 
-Definition at line 1589 of file nodes.\+h.
+Definition at line 1585 of file nodes.\+h.
 
 
 

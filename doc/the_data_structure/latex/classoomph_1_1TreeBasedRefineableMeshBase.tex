@@ -143,7 +143,7 @@ unsigned \mbox{\hyperlink{classoomph_1_1TreeBasedRefineableMeshBase_abd9b33d333c
 \doxysubsection{Detailed Description}
 Base class for tree-\/based refineable meshes. 
 
-Definition at line 345 of file refineable\+\_\+mesh.\+h.
+Definition at line 341 of file refineable\+\_\+mesh.\+h.
 
 
 
@@ -160,7 +160,7 @@ Constructor.
 
 
 
-Definition at line 351 of file refineable\+\_\+mesh.\+h.
+Definition at line 347 of file refineable\+\_\+mesh.\+h.
 
 
 
@@ -178,7 +178,7 @@ Broken copy constructor.
 
 
 
-Definition at line 377 of file refineable\+\_\+mesh.\+h.
+Definition at line 373 of file refineable\+\_\+mesh.\+h.
 
 
 
@@ -196,7 +196,7 @@ Empty Destructor\+:
 
 
 
-Definition at line 389 of file refineable\+\_\+mesh.\+h.
+Definition at line 385 of file refineable\+\_\+mesh.\+h.
 
 
 
@@ -233,7 +233,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1RefineableQuadFromTriangleMesh_a
 
 
 
-Definition at line 315 of file refineable\+\_\+mesh.\+cc.
+Definition at line 311 of file refineable\+\_\+mesh.\+cc.
 
 
 
@@ -255,7 +255,7 @@ Perform the actual tree-\/based mesh adaptation. A simple wrapper to call the fu
 
 
 
-Definition at line 477 of file refineable\+\_\+mesh.\+h.
+Definition at line 473 of file refineable\+\_\+mesh.\+h.
 
 
 
@@ -331,7 +331,7 @@ can be viewed with
 \end{DoxyItemize}
 \end{DoxyItemize}Update the boundary element info -- this can be a costly procedure and for this reason the mesh writer might have decided not to set up this scheme. If so, we won\textquotesingle{}t change this and suppress its creation...
 
-Definition at line 898 of file refineable\+\_\+mesh.\+cc.
+Definition at line 894 of file refineable\+\_\+mesh.\+cc.
 
 
 
@@ -363,7 +363,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1Mesh_af2a6ebabea8704acadffb735
 
 
 
-Definition at line 657 of file refineable\+\_\+mesh.\+h.
+Definition at line 653 of file refineable\+\_\+mesh.\+h.
 
 
 
@@ -381,7 +381,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1Mesh_a595cfa652d75d9fbfc72a825
 
 
 
-Definition at line 595 of file refineable\+\_\+mesh.\+h.
+Definition at line 591 of file refineable\+\_\+mesh.\+h.
 
 
 
@@ -403,7 +403,7 @@ Complete the hanging node scheme recursively.
 
 Complete the hanging node scheme recursively. After the initial markup scheme, hanging nodes can depend on other hanging nodes ---$>$ A\+A\+A\+A\+A\+A\+A\+A\+A\+R\+G\+H! Need to translate this into a scheme where all hanging nodes only depend on non-\/hanging nodes... 
 
-Definition at line 2232 of file refineable\+\_\+mesh.\+cc.
+Definition at line 2228 of file refineable\+\_\+mesh.\+cc.
 
 
 
@@ -425,7 +425,7 @@ Auxiliary routine for recursive hanging node completion.
 
 Given a node, return a vector of pointers to master nodes and a vector of the associated weights. This is done recursively, so if a node is not hanging, the node is regarded as its own master node which has weight 1.\+0. 
 
-Definition at line 2174 of file refineable\+\_\+mesh.\+cc.
+Definition at line 2170 of file refineable\+\_\+mesh.\+cc.
 
 
 
@@ -451,7 +451,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1RefineableMeshBase_a9f54bbde6f
 
 
 
-Definition at line 441 of file refineable\+\_\+mesh.\+h.
+Definition at line 437 of file refineable\+\_\+mesh.\+h.
 
 
 
@@ -469,7 +469,7 @@ Dump refinement pattern to allow for rebuild.
 
 Dump refinement pattern to allow for rebuild 
 
-Definition at line 223 of file refineable\+\_\+mesh.\+cc.
+Definition at line 219 of file refineable\+\_\+mesh.\+cc.
 
 
 
@@ -487,7 +487,7 @@ Return pointer to the Forest represenation of the mesh.
 
 
 
-Definition at line 437 of file refineable\+\_\+mesh.\+h.
+Definition at line 433 of file refineable\+\_\+mesh.\+h.
 
 
 
@@ -509,7 +509,7 @@ Extract the elements at a particular refinement level in the refinement pattern 
 
 Extract the elements at a particular refinement level in the refinement pattern (used in Mesh\+::redistribute or whatever it\textquotesingle{}s going to be called (Refineable\+Mesh\+Base\+::reduce\+\_\+halo\+\_\+layers or something) 
 
-Definition at line 118 of file refineable\+\_\+mesh.\+cc.
+Definition at line 114 of file refineable\+\_\+mesh.\+cc.
 
 
 
@@ -531,7 +531,7 @@ Get max/min refinement levels in mesh.
 
 Get max/min refinement level. 
 
-Definition at line 801 of file refineable\+\_\+mesh.\+cc.
+Definition at line 797 of file refineable\+\_\+mesh.\+cc.
 
 
 
@@ -553,7 +553,7 @@ Extract refinement pattern\+: Consider the hypothetical mesh obtained by truncat
 
 Get refinement pattern of mesh\+: Consider the hypothetical mesh obtained by truncating the refinement of the current mesh to a given level (where {\ttfamily level=0} is the un-\/refined base mesh). To advance to the next refinement level, we need to refine (split) the {\ttfamily to\+\_\+be\+\_\+refined}\mbox{[}level\mbox{]}.size() elements identified by the element numbers contained in {\ttfamily vector} to\+\_\+be\+\_\+refined\mbox{[}level\mbox{]}\mbox{[}...\mbox{]} 
 
-Definition at line 55 of file refineable\+\_\+mesh.\+cc.
+Definition at line 51 of file refineable\+\_\+mesh.\+cc.
 
 
 
@@ -575,7 +575,7 @@ Access fct for max. permissible p-\/refinement level (relative to base mesh)
 
 
 
-Definition at line 466 of file refineable\+\_\+mesh.\+h.
+Definition at line 462 of file refineable\+\_\+mesh.\+h.
 
 
 
@@ -597,7 +597,7 @@ Access fct for max. permissible refinement level (relative to base mesh)
 
 
 
-Definition at line 460 of file refineable\+\_\+mesh.\+h.
+Definition at line 456 of file refineable\+\_\+mesh.\+h.
 
 
 
@@ -619,7 +619,7 @@ Access fct for min. permissible p-\/refinement level (relative to base mesh)
 
 
 
-Definition at line 469 of file refineable\+\_\+mesh.\+h.
+Definition at line 465 of file refineable\+\_\+mesh.\+h.
 
 
 
@@ -637,7 +637,7 @@ Access fct for min. permissible refinement level (relative to base mesh)
 
 
 
-Definition at line 463 of file refineable\+\_\+mesh.\+h.
+Definition at line 459 of file refineable\+\_\+mesh.\+h.
 
 
 
@@ -659,7 +659,7 @@ Broken assignment operator.
 
 
 
-Definition at line 383 of file refineable\+\_\+mesh.\+h.
+Definition at line 379 of file refineable\+\_\+mesh.\+h.
 
 
 
@@ -686,7 +686,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1RefineableMeshBase_a03222065e7
 
 
 
-Definition at line 3833 of file refineable\+\_\+mesh.\+cc.
+Definition at line 3829 of file refineable\+\_\+mesh.\+cc.
 
 
 
@@ -704,7 +704,7 @@ Perform the actual tree-\/based mesh p-\/adaptation. A simple wrapper to call th
 
 
 
-Definition at line 493 of file refineable\+\_\+mesh.\+h.
+Definition at line 489 of file refineable\+\_\+mesh.\+h.
 
 
 
@@ -776,7 +776,7 @@ can be viewed with
 \end{DoxyItemize}
 \end{DoxyItemize}Update the boundary element info -- this can be a costly procedure and for this reason the mesh writer might have decided not to set up this scheme. If so, we won\textquotesingle{}t change this and suppress its creation...
 
-Definition at line 4292 of file refineable\+\_\+mesh.\+cc.
+Definition at line 4288 of file refineable\+\_\+mesh.\+cc.
 
 
 
@@ -812,7 +812,7 @@ p-\/refine mesh by refining the elements identified by their pointers.
 
 
 
-Definition at line 5129 of file refineable\+\_\+mesh.\+cc.
+Definition at line 5125 of file refineable\+\_\+mesh.\+cc.
 
 
 
@@ -830,7 +830,7 @@ p-\/refine mesh by refining the elements identified by their numbers.
 
 
 
-Definition at line 5087 of file refineable\+\_\+mesh.\+cc.
+Definition at line 5083 of file refineable\+\_\+mesh.\+cc.
 
 
 
@@ -852,7 +852,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1RefineableMeshBase_a648a6fd1b1
 
 
 
-Definition at line 420 of file refineable\+\_\+mesh.\+h.
+Definition at line 416 of file refineable\+\_\+mesh.\+h.
 
 
 
@@ -874,7 +874,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1RefineableMeshBase_a443bfce758
 
 
 
-Definition at line 1741 of file refineable\+\_\+mesh.\+cc.
+Definition at line 1737 of file refineable\+\_\+mesh.\+cc.
 
 
 
@@ -892,7 +892,7 @@ p-\/unrefine mesh uniformly
 
 p-\/unrefine mesh uniformly Unlike in h-\/refinement, we can simply p-\/unrefine each element in the mesh 
 
-Definition at line 5063 of file refineable\+\_\+mesh.\+cc.
+Definition at line 5059 of file refineable\+\_\+mesh.\+cc.
 
 
 
@@ -910,7 +910,7 @@ Read refinement pattern to allow for rebuild.
 
 Read refinement pattern to allow for rebuild 
 
-Definition at line 256 of file refineable\+\_\+mesh.\+cc.
+Definition at line 252 of file refineable\+\_\+mesh.\+cc.
 
 
 
@@ -932,7 +932,7 @@ Refine mesh according to refinement pattern in restart file.
 
 Refine base mesh according to refinement pattern in restart file. 
 
-Definition at line 206 of file refineable\+\_\+mesh.\+cc.
+Definition at line 202 of file refineable\+\_\+mesh.\+cc.
 
 
 
@@ -950,7 +950,7 @@ Refine mesh once so that its topology etc becomes that of the (finer!) reference
 
 Refine mesh once so that its topology etc becomes that of the (finer!) reference mesh -- if possible! Useful for meshes in multigrid hierarchies. If the meshes are too different and the conversion cannot be performed, the code dies (provided P\+A\+R\+A\+N\+O\+ID is enabled). 
 
-Definition at line 1902 of file refineable\+\_\+mesh.\+cc.
+Definition at line 1898 of file refineable\+\_\+mesh.\+cc.
 
 
 
@@ -968,7 +968,7 @@ Refine base mesh according to specified refinement pattern.
 
 Refine original, unrefined mesh according to specified refinement pattern (relative to original, unrefined mesh). 
 
-Definition at line 144 of file refineable\+\_\+mesh.\+cc.
+Definition at line 140 of file refineable\+\_\+mesh.\+cc.
 
 
 
@@ -990,7 +990,7 @@ Refine base mesh to same degree as reference mesh (relative to original unrefine
 
 Refine to same degree as the reference mesh. 
 
-Definition at line 1840 of file refineable\+\_\+mesh.\+cc.
+Definition at line 1836 of file refineable\+\_\+mesh.\+cc.
 
 
 
@@ -1008,7 +1008,7 @@ Refine base mesh to same degree as reference mesh minus one level of refinement 
 
 Refine to same degree as the reference mesh minus one. Useful function for multigrid solvers; allows the easy copy of a mesh to the level of refinement just below the current one. Returns a boolean variable which indicates if the reference mesh has not been refined at all. 
 
-Definition at line 1862 of file refineable\+\_\+mesh.\+cc.
+Definition at line 1858 of file refineable\+\_\+mesh.\+cc.
 
 
 
@@ -1026,7 +1026,7 @@ Refine mesh by splitting the elements identified by their pointers.
 
 Refine mesh by splitting the elements identified by their pointers 
 
-Definition at line 1805 of file refineable\+\_\+mesh.\+cc.
+Definition at line 1801 of file refineable\+\_\+mesh.\+cc.
 
 
 
@@ -1044,7 +1044,7 @@ Refine mesh by splitting the elements identified by their numbers.
 
 Refine mesh by splitting the elements identified by their numbers. 
 
-Definition at line 1767 of file refineable\+\_\+mesh.\+cc.
+Definition at line 1763 of file refineable\+\_\+mesh.\+cc.
 
 
 
@@ -1074,7 +1074,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1RefineableQuadFromTriangleMesh_a
 
 
 
-Definition at line 411 of file refineable\+\_\+mesh.\+h.
+Definition at line 407 of file refineable\+\_\+mesh.\+h.
 
 
 
@@ -1100,7 +1100,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1RefineableQuadFromTriangleMesh_a
 
 
 
-Definition at line 1722 of file refineable\+\_\+mesh.\+cc.
+Definition at line 1718 of file refineable\+\_\+mesh.\+cc.
 
 
 
@@ -1158,7 +1158,7 @@ Synchronise the hanging nodes if the mesh is distributed.
 
 Deal with nodes that are hanging on one process but not another (i.\+e. the hanging status of the haloed and halo layers disagrees) 
 
-Definition at line 2337 of file refineable\+\_\+mesh.\+cc.
+Definition at line 2333 of file refineable\+\_\+mesh.\+cc.
 
 
 
@@ -1176,7 +1176,7 @@ Referenced by classify\+\_\+halo\+\_\+and\+\_\+haloed\+\_\+nodes().
 
 Synchronise the positions of non-\/hanging nodes that depend on non-\/existent neighbours (e.\+g. h-\/refinement of neighbouring elements with different p-\/orders where the shared edge is on the outer edge of the halo layer) 
 
-Definition at line 3563 of file refineable\+\_\+mesh.\+cc.
+Definition at line 3559 of file refineable\+\_\+mesh.\+cc.
 
 
 
@@ -1198,7 +1198,7 @@ Level to which the mesh was uniformly refined when it was pruned.
 
 
 
-Definition at line 585 of file refineable\+\_\+mesh.\+h.
+Definition at line 581 of file refineable\+\_\+mesh.\+h.
 
 
 
@@ -1216,7 +1216,7 @@ Level to which the mesh was uniformly refined when it was pruned (const version)
 
 
 
-Definition at line 578 of file refineable\+\_\+mesh.\+h.
+Definition at line 574 of file refineable\+\_\+mesh.\+h.
 
 
 
@@ -1242,7 +1242,7 @@ Implements \mbox{\hyperlink{classoomph_1_1RefineableMeshBase_a5bbd5c85e7c5c9e75c
 
 
 
-Definition at line 2107 of file refineable\+\_\+mesh.\+cc.
+Definition at line 2103 of file refineable\+\_\+mesh.\+cc.
 
 
 
@@ -1267,7 +1267,7 @@ Forest representation of the mesh.
 
 
 
-Definition at line 727 of file refineable\+\_\+mesh.\+h.
+Definition at line 723 of file refineable\+\_\+mesh.\+h.
 
 
 
@@ -1285,7 +1285,7 @@ Max. permissible p-\/refinement level (relative to base mesh)
 
 
 
-Definition at line 721 of file refineable\+\_\+mesh.\+h.
+Definition at line 717 of file refineable\+\_\+mesh.\+h.
 
 
 
@@ -1303,7 +1303,7 @@ Max. permissible refinement level (relative to base mesh)
 
 
 
-Definition at line 715 of file refineable\+\_\+mesh.\+h.
+Definition at line 711 of file refineable\+\_\+mesh.\+h.
 
 
 
@@ -1321,7 +1321,7 @@ Min. permissible p-\/refinement level (relative to base mesh)
 
 
 
-Definition at line 724 of file refineable\+\_\+mesh.\+h.
+Definition at line 720 of file refineable\+\_\+mesh.\+h.
 
 
 
@@ -1339,7 +1339,7 @@ Min. permissible refinement level (relative to base mesh)
 
 
 
-Definition at line 718 of file refineable\+\_\+mesh.\+h.
+Definition at line 714 of file refineable\+\_\+mesh.\+h.
 
 
 
@@ -1357,7 +1357,7 @@ Level to which the mesh was uniformly refined when it was pruned.
 
 
 
-Definition at line 712 of file refineable\+\_\+mesh.\+h.
+Definition at line 708 of file refineable\+\_\+mesh.\+h.
 
 
 

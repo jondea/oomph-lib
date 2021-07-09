@@ -1217,7 +1217,7 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A policy class that serves to establish the common interfaces for elements that contain moving nodes. This class provides storage for the geometric data that affect the update of all the nodes of the element, i.e. USUALLY all data that are using during a call to the Element's <a class="el" href="classoomph_1_1FiniteElement.html#ac27d707cb4f7c1429793c0fdb2fd093b" title="Update the positions of all nodes in the element using each node update function. The default impleme...">node_update()</a> function. In some cases (e.g. FluidInterfaceEdge elements), <a class="el" href="classoomph_1_1FiniteElement.html#ac27d707cb4f7c1429793c0fdb2fd093b" title="Update the positions of all nodes in the element using each node update function. The default impleme...">node_update()</a> is overloaded to perform an update of the bulk element, in which case the additional bulk geometric data become external data of the element and the function GeneralisedElement::update_in_external_fd(i) is overloaded to also perform the bulk node update. The storage is populated during the assignment of the equation numbers via the <a class="el" href="classoomph_1_1ElementWithMovingNodes.html#a6d2fa178f36d4b8413a9ce4f24e9c87e" title="Construct the vector of (unique) geometric data.">complete_setup_of_dependencies()</a> function and then local equations numbers are assigned to these data, accessible via geometric_data_local_eqn(n,i). Finally, a function is provided that calculates the terms in the jacobian matrix by due to these geometric data by finite differences. </p>
 
-<p class="definition">Definition at line <a class="el" href="element__with__moving__nodes_8h_source.html#l00075">75</a> of file <a class="el" href="element__with__moving__nodes_8h_source.html">element_with_moving_nodes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="element__with__moving__nodes_8h_source.html#l00071">71</a> of file <a class="el" href="element__with__moving__nodes_8h_source.html">element_with_moving_nodes.h</a>.</p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="a95a2aba98758542cd165867776c9ff4f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a95a2aba98758542cd165867776c9ff4f">&#9670;&nbsp;</a></span>anonymous enum</h2>
@@ -1238,7 +1238,7 @@ Additional Inherited Members</h2></td></tr>
 <tr><td class="fieldname"><a id="a95a2aba98758542cd165867776c9ff4fab237a41e2e8fe3d86cb23ea50f377da5"></a>Shape_derivs_by_fastest_method&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="element__with__moving__nodes_8h_source.html#l00080">80</a> of file <a class="el" href="element__with__moving__nodes_8h_source.html">element_with_moving_nodes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="element__with__moving__nodes_8h_source.html#l00076">76</a> of file <a class="el" href="element__with__moving__nodes_8h_source.html">element_with_moving_nodes.h</a>.</p>
 
 </div>
 </div>
@@ -1268,7 +1268,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Constructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="element__with__moving__nodes_8h_source.html#l00085">85</a> of file <a class="el" href="element__with__moving__nodes_8h_source.html">element_with_moving_nodes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="element__with__moving__nodes_8h_source.html#l00081">81</a> of file <a class="el" href="element__with__moving__nodes_8h_source.html">element_with_moving_nodes.h</a>.</p>
 
 </div>
 </div>
@@ -1298,9 +1298,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Broken copy constructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="element__with__moving__nodes_8h_source.html#l00100">100</a> of file <a class="el" href="element__with__moving__nodes_8h_source.html">element_with_moving_nodes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="element__with__moving__nodes_8h_source.html#l00096">96</a> of file <a class="el" href="element__with__moving__nodes_8h_source.html">element_with_moving_nodes.h</a>.</p>
 
-<p class="reference">References <a class="el" href="oomph__utilities_8cc_source.html#l00218">oomph::BrokenCopy::broken_copy()</a>.</p>
+<p class="reference">References <a class="el" href="oomph__utilities_8cc_source.html#l00214">oomph::BrokenCopy::broken_copy()</a>.</p>
 
 </div>
 </div>
@@ -1329,9 +1329,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Virtual destructor (clean up and allocated memory) </p>
 
-<p class="definition">Definition at line <a class="el" href="element__with__moving__nodes_8h_source.html#l00123">123</a> of file <a class="el" href="element__with__moving__nodes_8h_source.html">element_with_moving_nodes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="element__with__moving__nodes_8h_source.html#l00119">119</a> of file <a class="el" href="element__with__moving__nodes_8h_source.html">element_with_moving_nodes.h</a>.</p>
 
-<p class="reference">References <a class="el" href="element__with__moving__nodes_8h_source.html#l00346">Geometric_data_local_eqn</a>.</p>
+<p class="reference">References <a class="el" href="element__with__moving__nodes_8h_source.html#l00342">Geometric_data_local_eqn</a>.</p>
 
 </div>
 </div>
@@ -1361,9 +1361,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Return whether shape derivatives are evaluated by fd. </p>
 
-<p class="definition">Definition at line <a class="el" href="element__with__moving__nodes_8h_source.html#l00198">198</a> of file <a class="el" href="element__with__moving__nodes_8h_source.html">element_with_moving_nodes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="element__with__moving__nodes_8h_source.html#l00194">194</a> of file <a class="el" href="element__with__moving__nodes_8h_source.html">element_with_moving_nodes.h</a>.</p>
 
-<p class="reference">References <a class="el" href="element__with__moving__nodes_8h_source.html#l00360">Evaluate_dresidual_dnodal_coordinates_by_fd</a>.</p>
+<p class="reference">References <a class="el" href="element__with__moving__nodes_8h_source.html#l00356">Evaluate_dresidual_dnodal_coordinates_by_fd</a>.</p>
 
 </div>
 </div>
@@ -1386,11 +1386,11 @@ Additional Inherited Members</h2></td></tr>
 <p>Return a set of all geometric data associated with the element. </p>
 <p>Return a set of all geometric data associated with the element's node update function </p>
 
-<p class="definition">Definition at line <a class="el" href="element__with__moving__nodes_8cc_source.html#l00048">48</a> of file <a class="el" href="element__with__moving__nodes_8cc_source.html">element_with_moving_nodes.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="element__with__moving__nodes_8cc_source.html#l00044">44</a> of file <a class="el" href="element__with__moving__nodes_8cc_source.html">element_with_moving_nodes.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="nodes_8h_source.html#l01523">oomph::Node::all_geom_data_pt()</a>, <a class="el" href="nodes_8h_source.html#l01531">oomph::Node::all_geom_object_pt()</a>, <a class="el" href="geom__objects_8h_source.html#l00230">oomph::GeomObject::geom_data_pt()</a>, <a class="el" href="nodes_8h_source.html#l01147">oomph::Node::hanging_pt()</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="nodes_8h_source.html#l01206">oomph::Node::is_hanging()</a>, <a class="el" href="nodes_8h_source.html#l00735">oomph::HangInfo::master_node_pt()</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, <a class="el" href="geom__objects_8h_source.html#l00208">oomph::GeomObject::ngeom_data()</a>, <a class="el" href="nodes_8h_source.html#l01519">oomph::Node::ngeom_data()</a>, <a class="el" href="nodes_8h_source.html#l01527">oomph::Node::ngeom_object()</a>, <a class="el" href="nodes_8h_source.html#l00732">oomph::HangInfo::nmaster()</a>, <a class="el" href="elements_8h_source.html#l02163">oomph::FiniteElement::nnode()</a>, and <a class="el" href="elements_8h_source.html#l02126">oomph::FiniteElement::node_pt()</a>.</p>
+<p class="reference">References <a class="el" href="nodes_8h_source.html#l01519">oomph::Node::all_geom_data_pt()</a>, <a class="el" href="nodes_8h_source.html#l01527">oomph::Node::all_geom_object_pt()</a>, <a class="el" href="geom__objects_8h_source.html#l00226">oomph::GeomObject::geom_data_pt()</a>, <a class="el" href="nodes_8h_source.html#l01143">oomph::Node::hanging_pt()</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="nodes_8h_source.html#l01202">oomph::Node::is_hanging()</a>, <a class="el" href="nodes_8h_source.html#l00731">oomph::HangInfo::master_node_pt()</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, <a class="el" href="geom__objects_8h_source.html#l00204">oomph::GeomObject::ngeom_data()</a>, <a class="el" href="nodes_8h_source.html#l01515">oomph::Node::ngeom_data()</a>, <a class="el" href="nodes_8h_source.html#l01523">oomph::Node::ngeom_object()</a>, <a class="el" href="nodes_8h_source.html#l00728">oomph::HangInfo::nmaster()</a>, <a class="el" href="elements_8h_source.html#l02159">oomph::FiniteElement::nnode()</a>, and <a class="el" href="elements_8h_source.html#l02122">oomph::FiniteElement::node_pt()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="element__with__moving__nodes_8cc_source.html#l00141">complete_setup_of_dependencies()</a>, and <a class="el" href="specific__node__update__interface__elements_8h_source.html#l00320">oomph::SpineUpdateFluidInterfaceElement&lt; FluidInterfaceElement, LineDerivatives, ELEMENT &gt;::make_bounding_element()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="element__with__moving__nodes_8cc_source.html#l00137">complete_setup_of_dependencies()</a>, and <a class="el" href="specific__node__update__interface__elements_8h_source.html#l00316">oomph::SpineUpdateFluidInterfaceElement&lt; FluidInterfaceElement, LineDerivatives, ELEMENT &gt;::make_bounding_element()</a>.</p>
 
 </div>
 </div>
@@ -1424,11 +1424,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="classoomph_1_1ElementWithSpecificMovingNodes.html#a82531e83f80254735130558f0562cdff">oomph::ElementWithSpecificMovingNodes&lt; ELEMENT, NODE_TYPE &gt;</a>, <a class="el" href="classoomph_1_1ElementWithSpecificMovingNodes.html#a82531e83f80254735130558f0562cdff">oomph::ElementWithSpecificMovingNodes&lt; ELEMENT, SpineNode &gt;</a>, <a class="el" href="classoomph_1_1ElementWithSpecificMovingNodes.html#a82531e83f80254735130558f0562cdff">oomph::ElementWithSpecificMovingNodes&lt; FaceGeometry&lt; ELEMENT &gt;, SpineNode &gt;</a>, <a class="el" href="classoomph_1_1ElementWithSpecificMovingNodes.html#a82531e83f80254735130558f0562cdff">oomph::ElementWithSpecificMovingNodes&lt; FaceGeometry&lt; FaceGeometry&lt; ELEMENT &gt; &gt;, SpineNode &gt;</a>, <a class="el" href="classoomph_1_1ElementWithSpecificMovingNodes.html#a82531e83f80254735130558f0562cdff">oomph::ElementWithSpecificMovingNodes&lt; ELEMENT, AlgebraicNode &gt;</a>, and <a class="el" href="classoomph_1_1ElementWithSpecificMovingNodes.html#a82531e83f80254735130558f0562cdff">oomph::ElementWithSpecificMovingNodes&lt; ELEMENT, MacroElementNodeUpdateNode &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="element__with__moving__nodes_8cc_source.html#l00199">199</a> of file <a class="el" href="element__with__moving__nodes_8cc_source.html">element_with_moving_nodes.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="element__with__moving__nodes_8cc_source.html#l00195">195</a> of file <a class="el" href="element__with__moving__nodes_8cc_source.html">element_with_moving_nodes.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8cc_source.html#l00149">oomph::GeneralisedElement::add_global_eqn_numbers()</a>, <a class="el" href="elements_8h_source.html#l00232">oomph::GeneralisedElement::Dof_pt_deque</a>, <a class="el" href="nodes_8h_source.html#l00365">oomph::Data::eqn_number()</a>, <a class="el" href="elements_8h_source.html#l00709">oomph::GeneralisedElement::eqn_number()</a>, <a class="el" href="element__with__moving__nodes_8h_source.html#l00334">Geom_data_pt</a>, <a class="el" href="element__with__moving__nodes_8h_source.html#l00346">Geometric_data_local_eqn</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="nodes_8h_source.html#l00192">oomph::Data::Is_pinned</a>, <a class="el" href="nodes_8h_source.html#l00201">oomph::Data::Is_unclassified</a>, <a class="el" href="elements_8h_source.html#l00731">oomph::GeneralisedElement::local_eqn_number()</a>, <a class="el" href="elements_8h_source.html#l00834">oomph::GeneralisedElement::ndof()</a>, <a class="el" href="element__with__moving__nodes_8h_source.html#l00340">ngeom_data()</a>, <a class="el" href="element__with__moving__nodes_8h_source.html#l00350">Ngeom_dof</a>, <a class="el" href="nodes_8h_source.html#l00448">oomph::Data::nvalue()</a>, and <a class="el" href="nodes_8h_source.html#l00322">oomph::Data::value_pt()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8cc_source.html#l00145">oomph::GeneralisedElement::add_global_eqn_numbers()</a>, <a class="el" href="elements_8h_source.html#l00228">oomph::GeneralisedElement::Dof_pt_deque</a>, <a class="el" href="nodes_8h_source.html#l00361">oomph::Data::eqn_number()</a>, <a class="el" href="elements_8h_source.html#l00705">oomph::GeneralisedElement::eqn_number()</a>, <a class="el" href="element__with__moving__nodes_8h_source.html#l00330">Geom_data_pt</a>, <a class="el" href="element__with__moving__nodes_8h_source.html#l00342">Geometric_data_local_eqn</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="nodes_8h_source.html#l00188">oomph::Data::Is_pinned</a>, <a class="el" href="nodes_8h_source.html#l00197">oomph::Data::Is_unclassified</a>, <a class="el" href="elements_8h_source.html#l00727">oomph::GeneralisedElement::local_eqn_number()</a>, <a class="el" href="elements_8h_source.html#l00830">oomph::GeneralisedElement::ndof()</a>, <a class="el" href="element__with__moving__nodes_8h_source.html#l00336">ngeom_data()</a>, <a class="el" href="element__with__moving__nodes_8h_source.html#l00346">Ngeom_dof</a>, <a class="el" href="nodes_8h_source.html#l00444">oomph::Data::nvalue()</a>, and <a class="el" href="nodes_8h_source.html#l00318">oomph::Data::value_pt()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="element__with__moving__nodes_8h_source.html#l00493">oomph::ElementWithSpecificMovingNodes&lt; ELEMENT, MacroElementNodeUpdateNode &gt;::assign_all_generic_local_eqn_numbers()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="element__with__moving__nodes_8h_source.html#l00489">oomph::ElementWithSpecificMovingNodes&lt; ELEMENT, MacroElementNodeUpdateNode &gt;::assign_all_generic_local_eqn_numbers()</a>.</p>
 
 </div>
 </div>
@@ -1461,11 +1461,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="classoomph_1_1ElementWithSpecificMovingNodes.html#ae54ee1d8772757d72d9df3e7229d8ecf">oomph::ElementWithSpecificMovingNodes&lt; ELEMENT, NODE_TYPE &gt;</a>, <a class="el" href="classoomph_1_1ElementWithSpecificMovingNodes.html#ae54ee1d8772757d72d9df3e7229d8ecf">oomph::ElementWithSpecificMovingNodes&lt; ELEMENT, SpineNode &gt;</a>, <a class="el" href="classoomph_1_1ElementWithSpecificMovingNodes.html#ae54ee1d8772757d72d9df3e7229d8ecf">oomph::ElementWithSpecificMovingNodes&lt; FaceGeometry&lt; ELEMENT &gt;, SpineNode &gt;</a>, <a class="el" href="classoomph_1_1ElementWithSpecificMovingNodes.html#ae54ee1d8772757d72d9df3e7229d8ecf">oomph::ElementWithSpecificMovingNodes&lt; FaceGeometry&lt; FaceGeometry&lt; ELEMENT &gt; &gt;, SpineNode &gt;</a>, <a class="el" href="classoomph_1_1ElementWithSpecificMovingNodes.html#ae54ee1d8772757d72d9df3e7229d8ecf">oomph::ElementWithSpecificMovingNodes&lt; ELEMENT, AlgebraicNode &gt;</a>, <a class="el" href="classoomph_1_1ElementWithSpecificMovingNodes.html#ae54ee1d8772757d72d9df3e7229d8ecf">oomph::ElementWithSpecificMovingNodes&lt; ELEMENT, MacroElementNodeUpdateNode &gt;</a>, <a class="el" href="classoomph_1_1SpineElement.html#a867b5e4eb64d60da9585f8a791fbac36">oomph::SpineElement&lt; ELEMENT &gt;</a>, <a class="el" href="classoomph_1_1SpineElement.html#a867b5e4eb64d60da9585f8a791fbac36">oomph::SpineElement&lt; FaceGeometry&lt; FaceGeometry&lt; ELEMENT &gt; &gt; &gt;</a>, and <a class="el" href="classoomph_1_1SpineElement.html#a867b5e4eb64d60da9585f8a791fbac36">oomph::SpineElement&lt; FaceGeometry&lt; ELEMENT &gt; &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="element__with__moving__nodes_8cc_source.html#l00141">141</a> of file <a class="el" href="element__with__moving__nodes_8cc_source.html">element_with_moving_nodes.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="element__with__moving__nodes_8cc_source.html#l00137">137</a> of file <a class="el" href="element__with__moving__nodes_8cc_source.html">element_with_moving_nodes.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="element__with__moving__nodes_8cc_source.html#l00048">assemble_set_of_all_geometric_data()</a>, and <a class="el" href="element__with__moving__nodes_8h_source.html#l00334">Geom_data_pt</a>.</p>
+<p class="reference">References <a class="el" href="element__with__moving__nodes_8cc_source.html#l00044">assemble_set_of_all_geometric_data()</a>, and <a class="el" href="element__with__moving__nodes_8h_source.html#l00330">Geom_data_pt</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="element__with__moving__nodes_8h_source.html#l00480">oomph::ElementWithSpecificMovingNodes&lt; ELEMENT, MacroElementNodeUpdateNode &gt;::complete_setup_of_dependencies()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="element__with__moving__nodes_8h_source.html#l00476">oomph::ElementWithSpecificMovingNodes&lt; ELEMENT, MacroElementNodeUpdateNode &gt;::complete_setup_of_dependencies()</a>.</p>
 
 </div>
 </div>
@@ -1510,11 +1510,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="classoomph_1_1ElementWithSpecificMovingNodes.html#abbcb617eac0cb1d5763fae6ff81cb154">oomph::ElementWithSpecificMovingNodes&lt; ELEMENT, NODE_TYPE &gt;</a>, <a class="el" href="classoomph_1_1ElementWithSpecificMovingNodes.html#abbcb617eac0cb1d5763fae6ff81cb154">oomph::ElementWithSpecificMovingNodes&lt; ELEMENT, SpineNode &gt;</a>, <a class="el" href="classoomph_1_1ElementWithSpecificMovingNodes.html#abbcb617eac0cb1d5763fae6ff81cb154">oomph::ElementWithSpecificMovingNodes&lt; FaceGeometry&lt; ELEMENT &gt;, SpineNode &gt;</a>, <a class="el" href="classoomph_1_1ElementWithSpecificMovingNodes.html#abbcb617eac0cb1d5763fae6ff81cb154">oomph::ElementWithSpecificMovingNodes&lt; FaceGeometry&lt; FaceGeometry&lt; ELEMENT &gt; &gt;, SpineNode &gt;</a>, <a class="el" href="classoomph_1_1ElementWithSpecificMovingNodes.html#abbcb617eac0cb1d5763fae6ff81cb154">oomph::ElementWithSpecificMovingNodes&lt; ELEMENT, AlgebraicNode &gt;</a>, and <a class="el" href="classoomph_1_1ElementWithSpecificMovingNodes.html#abbcb617eac0cb1d5763fae6ff81cb154">oomph::ElementWithSpecificMovingNodes&lt; ELEMENT, MacroElementNodeUpdateNode &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="element__with__moving__nodes_8cc_source.html#l00173">173</a> of file <a class="el" href="element__with__moving__nodes_8cc_source.html">element_with_moving_nodes.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="element__with__moving__nodes_8cc_source.html#l00169">169</a> of file <a class="el" href="element__with__moving__nodes_8cc_source.html">element_with_moving_nodes.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="nodes_8cc_source.html#l00905">oomph::Data::describe_dofs()</a>, <a class="el" href="elements_8cc_source.html#l01682">oomph::FiniteElement::describe_local_dofs()</a>, <a class="el" href="element__with__moving__nodes_8h_source.html#l00334">Geom_data_pt</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="element__with__moving__nodes_8h_source.html#l00340">ngeom_data()</a>, and <a class="el" href="oomph__definitions_8cc_source.html#l00293">oomph::Global_string_for_annotation::string()</a>.</p>
+<p class="reference">References <a class="el" href="nodes_8cc_source.html#l00901">oomph::Data::describe_dofs()</a>, <a class="el" href="elements_8cc_source.html#l01678">oomph::FiniteElement::describe_local_dofs()</a>, <a class="el" href="element__with__moving__nodes_8h_source.html#l00330">Geom_data_pt</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="element__with__moving__nodes_8h_source.html#l00336">ngeom_data()</a>, and <a class="el" href="oomph__definitions_8cc_source.html#l00289">oomph::Global_string_for_annotation::string()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="element__with__moving__nodes_8h_source.html#l00387">oomph::ElementWithSpecificMovingNodes&lt; ELEMENT, MacroElementNodeUpdateNode &gt;::describe_local_dofs()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="element__with__moving__nodes_8h_source.html#l00383">oomph::ElementWithSpecificMovingNodes&lt; ELEMENT, MacroElementNodeUpdateNode &gt;::describe_local_dofs()</a>.</p>
 
 </div>
 </div>
@@ -1543,9 +1543,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Insist that shape derivatives are always evaluated using the overloaded version of this function that may have been implemented in a derived class. (The default behaviour will still be finite differences unless the function has actually been overloaded. </p>
 
-<p class="definition">Definition at line <a class="el" href="element__with__moving__nodes_8h_source.html#l00211">211</a> of file <a class="el" href="element__with__moving__nodes_8h_source.html">element_with_moving_nodes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="element__with__moving__nodes_8h_source.html#l00207">207</a> of file <a class="el" href="element__with__moving__nodes_8h_source.html">element_with_moving_nodes.h</a>.</p>
 
-<p class="reference">References <a class="el" href="element__with__moving__nodes_8h_source.html#l00360">Evaluate_dresidual_dnodal_coordinates_by_fd</a>.</p>
+<p class="reference">References <a class="el" href="element__with__moving__nodes_8h_source.html#l00356">Evaluate_dresidual_dnodal_coordinates_by_fd</a>.</p>
 
 </div>
 </div>
@@ -1574,9 +1574,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Do not bypass the call to fill_in_jacobian_from_geometric_data. </p>
 
-<p class="definition">Definition at line <a class="el" href="element__with__moving__nodes_8h_source.html#l00278">278</a> of file <a class="el" href="element__with__moving__nodes_8h_source.html">element_with_moving_nodes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="element__with__moving__nodes_8h_source.html#l00274">274</a> of file <a class="el" href="element__with__moving__nodes_8h_source.html">element_with_moving_nodes.h</a>.</p>
 
-<p class="reference">References <a class="el" href="element__with__moving__nodes_8h_source.html#l00354">Bypass_fill_in_jacobian_from_geometric_data</a>.</p>
+<p class="reference">References <a class="el" href="element__with__moving__nodes_8h_source.html#l00350">Bypass_fill_in_jacobian_from_geometric_data</a>.</p>
 
 </div>
 </div>
@@ -1605,9 +1605,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Insist that shape derivatives are always evaluated by fd (using <a class="el" href="classoomph_1_1FiniteElement.html#ae4b85a31a983a52d3010930f9e0851b8" title="Compute derivatives of elemental residual vector with respect to nodal coordinates....">FiniteElement::get_dresidual_dnodal_coordinates()</a>) </p>
 
-<p class="definition">Definition at line <a class="el" href="element__with__moving__nodes_8h_source.html#l00203">203</a> of file <a class="el" href="element__with__moving__nodes_8h_source.html">element_with_moving_nodes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="element__with__moving__nodes_8h_source.html#l00199">199</a> of file <a class="el" href="element__with__moving__nodes_8h_source.html">element_with_moving_nodes.h</a>.</p>
 
-<p class="reference">References <a class="el" href="element__with__moving__nodes_8h_source.html#l00360">Evaluate_dresidual_dnodal_coordinates_by_fd</a>.</p>
+<p class="reference">References <a class="el" href="element__with__moving__nodes_8h_source.html#l00356">Evaluate_dresidual_dnodal_coordinates_by_fd</a>.</p>
 
 </div>
 </div>
@@ -1636,11 +1636,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Bypass the call to fill_in_jacobian_from_geometric_data. </p>
 
-<p class="definition">Definition at line <a class="el" href="element__with__moving__nodes_8h_source.html#l00274">274</a> of file <a class="el" href="element__with__moving__nodes_8h_source.html">element_with_moving_nodes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="element__with__moving__nodes_8h_source.html#l00270">270</a> of file <a class="el" href="element__with__moving__nodes_8h_source.html">element_with_moving_nodes.h</a>.</p>
 
-<p class="reference">References <a class="el" href="element__with__moving__nodes_8h_source.html#l00354">Bypass_fill_in_jacobian_from_geometric_data</a>.</p>
+<p class="reference">References <a class="el" href="element__with__moving__nodes_8h_source.html#l00350">Bypass_fill_in_jacobian_from_geometric_data</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="refineable__brick__element_8cc_source.html#l01233">oomph::RefineableQElement&lt; 3 &gt;::build()</a>, <a class="el" href="refineable__line__element_8cc_source.html#l00208">oomph::RefineableQElement&lt; 1 &gt;::build()</a>, and <a class="el" href="refineable__quad__element_8cc_source.html#l00604">oomph::RefineableQElement&lt; 2 &gt;::build()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="refineable__brick__element_8cc_source.html#l01229">oomph::RefineableQElement&lt; 3 &gt;::build()</a>, <a class="el" href="refineable__line__element_8cc_source.html#l00204">oomph::RefineableQElement&lt; 1 &gt;::build()</a>, and <a class="el" href="refineable__quad__element_8cc_source.html#l00600">oomph::RefineableQElement&lt; 2 &gt;::build()</a>.</p>
 
 </div>
 </div>
@@ -1670,9 +1670,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Evaluate shape derivatives by chain rule. Currently disabled by default because it's broken; can re-enable use by setting optional boolean to true. </p>
 
-<p class="definition">Definition at line <a class="el" href="element__with__moving__nodes_8h_source.html#l00225">225</a> of file <a class="el" href="element__with__moving__nodes_8h_source.html">element_with_moving_nodes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="element__with__moving__nodes_8h_source.html#l00221">221</a> of file <a class="el" href="element__with__moving__nodes_8h_source.html">element_with_moving_nodes.h</a>.</p>
 
-<p class="reference">References <a class="el" href="element__with__moving__nodes_8h_source.html#l00364">Method_for_shape_derivs</a>, and <a class="el" href="element__with__moving__nodes_8h_source.html#l00080">Shape_derivs_by_chain_rule</a>.</p>
+<p class="reference">References <a class="el" href="element__with__moving__nodes_8h_source.html#l00360">Method_for_shape_derivs</a>, and <a class="el" href="element__with__moving__nodes_8h_source.html#l00076">Shape_derivs_by_chain_rule</a>.</p>
 
 </div>
 </div>
@@ -1701,9 +1701,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Evaluate shape derivatives by direct finite differencing. </p>
 
-<p class="definition">Definition at line <a class="el" href="element__with__moving__nodes_8h_source.html#l00215">215</a> of file <a class="el" href="element__with__moving__nodes_8h_source.html">element_with_moving_nodes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="element__with__moving__nodes_8h_source.html#l00211">211</a> of file <a class="el" href="element__with__moving__nodes_8h_source.html">element_with_moving_nodes.h</a>.</p>
 
-<p class="reference">References <a class="el" href="element__with__moving__nodes_8h_source.html#l00364">Method_for_shape_derivs</a>, and <a class="el" href="element__with__moving__nodes_8h_source.html#l00081">Shape_derivs_by_direct_fd</a>.</p>
+<p class="reference">References <a class="el" href="element__with__moving__nodes_8h_source.html#l00360">Method_for_shape_derivs</a>, and <a class="el" href="element__with__moving__nodes_8h_source.html#l00077">Shape_derivs_by_direct_fd</a>.</p>
 
 </div>
 </div>
@@ -1733,9 +1733,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Evaluate shape derivatives by (anticipated) fastest method. Currently disabled by default because it's broken; can re-enable use by setting optional boolean to true. </p>
 
-<p class="definition">Definition at line <a class="el" href="element__with__moving__nodes_8h_source.html#l00249">249</a> of file <a class="el" href="element__with__moving__nodes_8h_source.html">element_with_moving_nodes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="element__with__moving__nodes_8h_source.html#l00245">245</a> of file <a class="el" href="element__with__moving__nodes_8h_source.html">element_with_moving_nodes.h</a>.</p>
 
-<p class="reference">References <a class="el" href="element__with__moving__nodes_8h_source.html#l00364">Method_for_shape_derivs</a>, and <a class="el" href="element__with__moving__nodes_8h_source.html#l00082">Shape_derivs_by_fastest_method</a>.</p>
+<p class="reference">References <a class="el" href="element__with__moving__nodes_8h_source.html#l00360">Method_for_shape_derivs</a>, and <a class="el" href="element__with__moving__nodes_8h_source.html#l00078">Shape_derivs_by_fastest_method</a>.</p>
 
 </div>
 </div>
@@ -1764,9 +1764,9 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Calculate the contributions to the Jacobian matrix from the geometric data. This version computes the residuals vector before calculating the Jacobian terms </p>
 
-<p class="definition">Definition at line <a class="el" href="element__with__moving__nodes_8h_source.html#l00314">314</a> of file <a class="el" href="element__with__moving__nodes_8h_source.html">element_with_moving_nodes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="element__with__moving__nodes_8h_source.html#l00310">310</a> of file <a class="el" href="element__with__moving__nodes_8h_source.html">element_with_moving_nodes.h</a>.</p>
 
-<p class="reference">References <a class="el" href="element__with__moving__nodes_8h_source.html#l00354">Bypass_fill_in_jacobian_from_geometric_data</a>, <a class="el" href="element__with__moving__nodes_8cc_source.html#l00318">fill_in_jacobian_from_geometric_data()</a>, <a class="el" href="elements_8h_source.html#l00977">oomph::GeneralisedElement::get_residuals()</a>, <a class="el" href="elements_8h_source.html#l00834">oomph::GeneralisedElement::ndof()</a>, and <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>.</p>
+<p class="reference">References <a class="el" href="element__with__moving__nodes_8h_source.html#l00350">Bypass_fill_in_jacobian_from_geometric_data</a>, <a class="el" href="element__with__moving__nodes_8cc_source.html#l00314">fill_in_jacobian_from_geometric_data()</a>, <a class="el" href="elements_8h_source.html#l00973">oomph::GeneralisedElement::get_residuals()</a>, <a class="el" href="elements_8h_source.html#l00830">oomph::GeneralisedElement::ndof()</a>, and <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>.</p>
 
 </div>
 </div>
@@ -1807,11 +1807,11 @@ Additional Inherited Members</h2></td></tr>
 <p>Calculate the contributions to the Jacobian matrix from the geometric data. This version assumes that the (full) residuals vector has already been calculated and is passed in as the first argument &ndash; needed in case the derivatives are computed by FD. </p>
 <p>Calculate the node-update&ndash;related entries in the Jacobian. The vector passed in residuals has to contain the nonlinear residuals, evaluated for the current values of the unknowns, in case FDing is used to computed the derivatives. </p>
 
-<p class="definition">Definition at line <a class="el" href="element__with__moving__nodes_8cc_source.html#l00318">318</a> of file <a class="el" href="element__with__moving__nodes_8cc_source.html">element_with_moving_nodes.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="element__with__moving__nodes_8cc_source.html#l00314">314</a> of file <a class="el" href="element__with__moving__nodes_8cc_source.html">element_with_moving_nodes.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="element__with__moving__nodes_8h_source.html#l00354">Bypass_fill_in_jacobian_from_geometric_data</a>, <a class="el" href="elements_8h_source.html#l01181">oomph::GeneralisedElement::Default_fd_jacobian_step</a>, <a class="el" href="element__with__moving__nodes_8h_source.html#l00360">Evaluate_dresidual_dnodal_coordinates_by_fd</a>, <a class="el" href="element__with__moving__nodes_8h_source.html#l00334">Geom_data_pt</a>, <a class="el" href="element__with__moving__nodes_8h_source.html#l00137">geometric_data_local_eqn()</a>, <a class="el" href="element__with__moving__nodes_8cc_source.html#l00543">get_dnodal_coordinates_dgeom_dofs()</a>, <a class="el" href="elements_8cc_source.html#l03666">oomph::FiniteElement::get_dresidual_dnodal_coordinates()</a>, <a class="el" href="elements_8h_source.html#l00977">oomph::GeneralisedElement::get_residuals()</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="element__with__moving__nodes_8h_source.html#l00364">Method_for_shape_derivs</a>, <a class="el" href="nodes_8h_source.html#l00991">oomph::Node::ndim()</a>, <a class="el" href="elements_8h_source.html#l00834">oomph::GeneralisedElement::ndof()</a>, <a class="el" href="element__with__moving__nodes_8h_source.html#l00340">ngeom_data()</a>, <a class="el" href="element__with__moving__nodes_8h_source.html#l00350">Ngeom_dof</a>, <a class="el" href="elements_8h_source.html#l02163">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l02126">oomph::FiniteElement::node_pt()</a>, <a class="el" href="elements_8cc_source.html#l04948">oomph::FiniteElement::node_update()</a>, <a class="el" href="refineable__elements_8h_source.html#l00547">oomph::RefineableElement::nshape_controlling_nodes()</a>, <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>, <a class="el" href="element__with__moving__nodes_8h_source.html#l00080">Shape_derivs_by_chain_rule</a>, <a class="el" href="element__with__moving__nodes_8h_source.html#l00081">Shape_derivs_by_direct_fd</a>, and <a class="el" href="element__with__moving__nodes_8h_source.html#l00082">Shape_derivs_by_fastest_method</a>.</p>
+<p class="reference">References <a class="el" href="element__with__moving__nodes_8h_source.html#l00350">Bypass_fill_in_jacobian_from_geometric_data</a>, <a class="el" href="elements_8h_source.html#l01177">oomph::GeneralisedElement::Default_fd_jacobian_step</a>, <a class="el" href="element__with__moving__nodes_8h_source.html#l00356">Evaluate_dresidual_dnodal_coordinates_by_fd</a>, <a class="el" href="element__with__moving__nodes_8h_source.html#l00330">Geom_data_pt</a>, <a class="el" href="element__with__moving__nodes_8h_source.html#l00133">geometric_data_local_eqn()</a>, <a class="el" href="element__with__moving__nodes_8cc_source.html#l00539">get_dnodal_coordinates_dgeom_dofs()</a>, <a class="el" href="elements_8cc_source.html#l03662">oomph::FiniteElement::get_dresidual_dnodal_coordinates()</a>, <a class="el" href="elements_8h_source.html#l00973">oomph::GeneralisedElement::get_residuals()</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="element__with__moving__nodes_8h_source.html#l00360">Method_for_shape_derivs</a>, <a class="el" href="nodes_8h_source.html#l00987">oomph::Node::ndim()</a>, <a class="el" href="elements_8h_source.html#l00830">oomph::GeneralisedElement::ndof()</a>, <a class="el" href="element__with__moving__nodes_8h_source.html#l00336">ngeom_data()</a>, <a class="el" href="element__with__moving__nodes_8h_source.html#l00346">Ngeom_dof</a>, <a class="el" href="elements_8h_source.html#l02159">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l02122">oomph::FiniteElement::node_pt()</a>, <a class="el" href="elements_8cc_source.html#l04944">oomph::FiniteElement::node_update()</a>, <a class="el" href="refineable__elements_8h_source.html#l00543">oomph::RefineableElement::nshape_controlling_nodes()</a>, <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>, <a class="el" href="element__with__moving__nodes_8h_source.html#l00076">Shape_derivs_by_chain_rule</a>, <a class="el" href="element__with__moving__nodes_8h_source.html#l00077">Shape_derivs_by_direct_fd</a>, and <a class="el" href="element__with__moving__nodes_8h_source.html#l00078">Shape_derivs_by_fastest_method</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="specific__node__update__interface__elements_8h_source.html#l00269">oomph::SpineUpdateFluidInterfaceElement&lt; FluidInterfaceElement, LineDerivatives, ELEMENT &gt;::fill_in_contribution_to_jacobian()</a>, <a class="el" href="specific__node__update__interface__elements_8h_source.html#l00412">oomph::SpinePointFluidInterfaceBoundingElement&lt; ELEMENT &gt;::fill_in_contribution_to_jacobian()</a>, <a class="el" href="constrained__volume__elements_8h_source.html#l00456">oomph::SpineLineVolumeConstraintBoundingElement&lt; ELEMENT &gt;::fill_in_contribution_to_jacobian()</a>, <a class="el" href="specific__node__update__interface__elements_8h_source.html#l00466">oomph::SpineLineFluidInterfaceBoundingElement&lt; ELEMENT &gt;::fill_in_contribution_to_jacobian()</a>, <a class="el" href="constrained__volume__elements_8h_source.html#l00690">oomph::SpineAxisymmetricVolumeConstraintBoundingElement&lt; ELEMENT &gt;::fill_in_contribution_to_jacobian()</a>, <a class="el" href="constrained__volume__elements_8h_source.html#l00853">oomph::SpineSurfaceVolumeConstraintBoundingElement&lt; ELEMENT &gt;::fill_in_contribution_to_jacobian()</a>, <a class="el" href="element__with__moving__nodes_8h_source.html#l00314">fill_in_jacobian_from_geometric_data()</a>, <a class="el" href="element__with__moving__nodes_8h_source.html#l00502">oomph::ElementWithSpecificMovingNodes&lt; ELEMENT, MacroElementNodeUpdateNode &gt;::get_jacobian()</a>, and <a class="el" href="element__with__moving__nodes_8h_source.html#l00513">oomph::ElementWithSpecificMovingNodes&lt; ELEMENT, MacroElementNodeUpdateNode &gt;::get_jacobian_and_mass_matrix()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="specific__node__update__interface__elements_8h_source.html#l00265">oomph::SpineUpdateFluidInterfaceElement&lt; FluidInterfaceElement, LineDerivatives, ELEMENT &gt;::fill_in_contribution_to_jacobian()</a>, <a class="el" href="specific__node__update__interface__elements_8h_source.html#l00408">oomph::SpinePointFluidInterfaceBoundingElement&lt; ELEMENT &gt;::fill_in_contribution_to_jacobian()</a>, <a class="el" href="constrained__volume__elements_8h_source.html#l00452">oomph::SpineLineVolumeConstraintBoundingElement&lt; ELEMENT &gt;::fill_in_contribution_to_jacobian()</a>, <a class="el" href="specific__node__update__interface__elements_8h_source.html#l00462">oomph::SpineLineFluidInterfaceBoundingElement&lt; ELEMENT &gt;::fill_in_contribution_to_jacobian()</a>, <a class="el" href="constrained__volume__elements_8h_source.html#l00686">oomph::SpineAxisymmetricVolumeConstraintBoundingElement&lt; ELEMENT &gt;::fill_in_contribution_to_jacobian()</a>, <a class="el" href="constrained__volume__elements_8h_source.html#l00849">oomph::SpineSurfaceVolumeConstraintBoundingElement&lt; ELEMENT &gt;::fill_in_contribution_to_jacobian()</a>, <a class="el" href="element__with__moving__nodes_8h_source.html#l00310">fill_in_jacobian_from_geometric_data()</a>, <a class="el" href="element__with__moving__nodes_8h_source.html#l00498">oomph::ElementWithSpecificMovingNodes&lt; ELEMENT, MacroElementNodeUpdateNode &gt;::get_jacobian()</a>, and <a class="el" href="element__with__moving__nodes_8h_source.html#l00509">oomph::ElementWithSpecificMovingNodes&lt; ELEMENT, MacroElementNodeUpdateNode &gt;::get_jacobian_and_mass_matrix()</a>.</p>
 
 </div>
 </div>
@@ -1851,11 +1851,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Return the local equation number corresponding to the i-th value at the n-th geometric data object. </p>
 
-<p class="definition">Definition at line <a class="el" href="element__with__moving__nodes_8h_source.html#l00137">137</a> of file <a class="el" href="element__with__moving__nodes_8h_source.html">element_with_moving_nodes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="element__with__moving__nodes_8h_source.html#l00133">133</a> of file <a class="el" href="element__with__moving__nodes_8h_source.html">element_with_moving_nodes.h</a>.</p>
 
-<p class="reference">References <a class="el" href="element__with__moving__nodes_8h_source.html#l00334">Geom_data_pt</a>, <a class="el" href="element__with__moving__nodes_8h_source.html#l00346">Geometric_data_local_eqn</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, and <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>.</p>
+<p class="reference">References <a class="el" href="element__with__moving__nodes_8h_source.html#l00330">Geom_data_pt</a>, <a class="el" href="element__with__moving__nodes_8h_source.html#l00342">Geometric_data_local_eqn</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, and <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="element__with__moving__nodes_8cc_source.html#l00318">fill_in_jacobian_from_geometric_data()</a>, <a class="el" href="element__with__moving__nodes_8cc_source.html#l00543">get_dnodal_coordinates_dgeom_dofs()</a>, and <a class="el" href="spines_8h_source.html#l00467">oomph::SpineElement&lt; FaceGeometry&lt; ELEMENT &gt; &gt;::spine_local_eqn()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="element__with__moving__nodes_8cc_source.html#l00314">fill_in_jacobian_from_geometric_data()</a>, <a class="el" href="element__with__moving__nodes_8cc_source.html#l00539">get_dnodal_coordinates_dgeom_dofs()</a>, and <a class="el" href="spines_8h_source.html#l00463">oomph::SpineElement&lt; FaceGeometry&lt; ELEMENT &gt; &gt;::spine_local_eqn()</a>.</p>
 
 </div>
 </div>
@@ -1885,11 +1885,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Compute derivatives of the nodal coordinates w.r.t. to the geometric dofs. Default implementation by FD can be overwritten for specific elements. dnodal_coordinates_dgeom_dofs(l,i,j) = dX_{ij} / d s_l. </p>
 
-<p class="definition">Definition at line <a class="el" href="element__with__moving__nodes_8cc_source.html#l00543">543</a> of file <a class="el" href="element__with__moving__nodes_8cc_source.html">element_with_moving_nodes.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="element__with__moving__nodes_8cc_source.html#l00539">539</a> of file <a class="el" href="element__with__moving__nodes_8cc_source.html">element_with_moving_nodes.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l01181">oomph::GeneralisedElement::Default_fd_jacobian_step</a>, <a class="el" href="element__with__moving__nodes_8h_source.html#l00334">Geom_data_pt</a>, <a class="el" href="element__with__moving__nodes_8h_source.html#l00137">geometric_data_local_eqn()</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="nodes_8h_source.html#l00991">oomph::Node::ndim()</a>, <a class="el" href="element__with__moving__nodes_8h_source.html#l00340">ngeom_data()</a>, <a class="el" href="elements_8h_source.html#l02163">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l02126">oomph::FiniteElement::node_pt()</a>, <a class="el" href="elements_8cc_source.html#l04948">oomph::FiniteElement::node_update()</a>, <a class="el" href="refineable__elements_8h_source.html#l00547">oomph::RefineableElement::nshape_controlling_nodes()</a>, <a class="el" href="nodes_8cc_source.html#l02413">oomph::Node::position()</a>, and <a class="el" href="refineable__elements_8h_source.html#l00556">oomph::RefineableElement::shape_controlling_node_lookup()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l01177">oomph::GeneralisedElement::Default_fd_jacobian_step</a>, <a class="el" href="element__with__moving__nodes_8h_source.html#l00330">Geom_data_pt</a>, <a class="el" href="element__with__moving__nodes_8h_source.html#l00133">geometric_data_local_eqn()</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="nodes_8h_source.html#l00987">oomph::Node::ndim()</a>, <a class="el" href="element__with__moving__nodes_8h_source.html#l00336">ngeom_data()</a>, <a class="el" href="elements_8h_source.html#l02159">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l02122">oomph::FiniteElement::node_pt()</a>, <a class="el" href="elements_8cc_source.html#l04944">oomph::FiniteElement::node_update()</a>, <a class="el" href="refineable__elements_8h_source.html#l00543">oomph::RefineableElement::nshape_controlling_nodes()</a>, <a class="el" href="nodes_8cc_source.html#l02409">oomph::Node::position()</a>, and <a class="el" href="refineable__elements_8h_source.html#l00552">oomph::RefineableElement::shape_controlling_node_lookup()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="element__with__moving__nodes_8cc_source.html#l00318">fill_in_jacobian_from_geometric_data()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="element__with__moving__nodes_8cc_source.html#l00314">fill_in_jacobian_from_geometric_data()</a>.</p>
 
 </div>
 </div>
@@ -1921,9 +1921,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1FiniteElement.html#a0eea5ad6500576d7874e471248026c8a">oomph::FiniteElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="element__with__moving__nodes_8h_source.html#l00187">187</a> of file <a class="el" href="element__with__moving__nodes_8h_source.html">element_with_moving_nodes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="element__with__moving__nodes_8h_source.html#l00183">183</a> of file <a class="el" href="element__with__moving__nodes_8h_source.html">element_with_moving_nodes.h</a>.</p>
 
-<p class="reference">References <a class="el" href="element__with__moving__nodes_8h_source.html#l00334">Geom_data_pt</a>, and <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>.</p>
+<p class="reference">References <a class="el" href="element__with__moving__nodes_8h_source.html#l00330">Geom_data_pt</a>, and <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>.</p>
 
 </div>
 </div>
@@ -1952,9 +1952,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Test whether the call to fill_in_jacobian_from_geometric_data is bypassed. </p>
 
-<p class="definition">Definition at line <a class="el" href="element__with__moving__nodes_8h_source.html#l00282">282</a> of file <a class="el" href="element__with__moving__nodes_8h_source.html">element_with_moving_nodes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="element__with__moving__nodes_8h_source.html#l00278">278</a> of file <a class="el" href="element__with__moving__nodes_8h_source.html">element_with_moving_nodes.h</a>.</p>
 
-<p class="reference">References <a class="el" href="element__with__moving__nodes_8h_source.html#l00354">Bypass_fill_in_jacobian_from_geometric_data</a>.</p>
+<p class="reference">References <a class="el" href="element__with__moving__nodes_8h_source.html#l00350">Bypass_fill_in_jacobian_from_geometric_data</a>.</p>
 
 </div>
 </div>
@@ -1983,11 +1983,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Access to method (enumerated flag) for determination of shape derivs. </p>
 
-<p class="definition">Definition at line <a class="el" href="element__with__moving__nodes_8h_source.html#l00271">271</a> of file <a class="el" href="element__with__moving__nodes_8h_source.html">element_with_moving_nodes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="element__with__moving__nodes_8h_source.html#l00267">267</a> of file <a class="el" href="element__with__moving__nodes_8h_source.html">element_with_moving_nodes.h</a>.</p>
 
-<p class="reference">References <a class="el" href="element__with__moving__nodes_8h_source.html#l00364">Method_for_shape_derivs</a>.</p>
+<p class="reference">References <a class="el" href="element__with__moving__nodes_8h_source.html#l00360">Method_for_shape_derivs</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="refineable__brick__element_8cc_source.html#l01233">oomph::RefineableQElement&lt; 3 &gt;::build()</a>, <a class="el" href="refineable__line__element_8cc_source.html#l00208">oomph::RefineableQElement&lt; 1 &gt;::build()</a>, and <a class="el" href="refineable__quad__element_8cc_source.html#l00604">oomph::RefineableQElement&lt; 2 &gt;::build()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="refineable__brick__element_8cc_source.html#l01229">oomph::RefineableQElement&lt; 3 &gt;::build()</a>, <a class="el" href="refineable__line__element_8cc_source.html#l00204">oomph::RefineableQElement&lt; 1 &gt;::build()</a>, and <a class="el" href="refineable__quad__element_8cc_source.html#l00600">oomph::RefineableQElement&lt; 2 &gt;::build()</a>.</p>
 
 </div>
 </div>
@@ -2018,11 +2018,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1GeomObject.html#a19d325347e19964e127fe124df56f251">oomph::GeomObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="element__with__moving__nodes_8h_source.html#l00340">340</a> of file <a class="el" href="element__with__moving__nodes_8h_source.html">element_with_moving_nodes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="element__with__moving__nodes_8h_source.html#l00336">336</a> of file <a class="el" href="element__with__moving__nodes_8h_source.html">element_with_moving_nodes.h</a>.</p>
 
-<p class="reference">References <a class="el" href="element__with__moving__nodes_8h_source.html#l00334">Geom_data_pt</a>.</p>
+<p class="reference">References <a class="el" href="element__with__moving__nodes_8h_source.html#l00330">Geom_data_pt</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="element__with__moving__nodes_8cc_source.html#l00199">assign_all_generic_local_eqn_numbers()</a>, <a class="el" href="element__with__moving__nodes_8cc_source.html#l00173">describe_local_dofs()</a>, <a class="el" href="element__with__moving__nodes_8cc_source.html#l00318">fill_in_jacobian_from_geometric_data()</a>, <a class="el" href="element__with__moving__nodes_8cc_source.html#l00543">get_dnodal_coordinates_dgeom_dofs()</a>, and <a class="el" href="spines_8h_source.html#l00467">oomph::SpineElement&lt; FaceGeometry&lt; ELEMENT &gt; &gt;::spine_local_eqn()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="element__with__moving__nodes_8cc_source.html#l00195">assign_all_generic_local_eqn_numbers()</a>, <a class="el" href="element__with__moving__nodes_8cc_source.html#l00169">describe_local_dofs()</a>, <a class="el" href="element__with__moving__nodes_8cc_source.html#l00314">fill_in_jacobian_from_geometric_data()</a>, <a class="el" href="element__with__moving__nodes_8cc_source.html#l00539">get_dnodal_coordinates_dgeom_dofs()</a>, and <a class="el" href="spines_8h_source.html#l00463">oomph::SpineElement&lt; FaceGeometry&lt; ELEMENT &gt; &gt;::spine_local_eqn()</a>.</p>
 
 </div>
 </div>
@@ -2051,9 +2051,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Number of geometric dofs. </p>
 
-<p class="definition">Definition at line <a class="el" href="element__with__moving__nodes_8h_source.html#l00133">133</a> of file <a class="el" href="element__with__moving__nodes_8h_source.html">element_with_moving_nodes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="element__with__moving__nodes_8h_source.html#l00129">129</a> of file <a class="el" href="element__with__moving__nodes_8h_source.html">element_with_moving_nodes.h</a>.</p>
 
-<p class="reference">References <a class="el" href="element__with__moving__nodes_8h_source.html#l00350">Ngeom_dof</a>.</p>
+<p class="reference">References <a class="el" href="element__with__moving__nodes_8h_source.html#l00346">Ngeom_dof</a>.</p>
 
 </div>
 </div>
@@ -2083,9 +2083,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Broken assignment operator. </p>
 
-<p class="definition">Definition at line <a class="el" href="element__with__moving__nodes_8h_source.html#l00106">106</a> of file <a class="el" href="element__with__moving__nodes_8h_source.html">element_with_moving_nodes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="element__with__moving__nodes_8h_source.html#l00102">102</a> of file <a class="el" href="element__with__moving__nodes_8h_source.html">element_with_moving_nodes.h</a>.</p>
 
-<p class="reference">References <a class="el" href="oomph__utilities_8cc_source.html#l00201">oomph::BrokenCopy::broken_assign()</a>.</p>
+<p class="reference">References <a class="el" href="oomph__utilities_8cc_source.html#l00197">oomph::BrokenCopy::broken_assign()</a>.</p>
 
 </div>
 </div>
@@ -2112,9 +2112,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Set flag to true to bypass calculation of Jacobain entries resulting from geometric data. </p>
 
-<p class="definition">Definition at line <a class="el" href="element__with__moving__nodes_8h_source.html#l00354">354</a> of file <a class="el" href="element__with__moving__nodes_8h_source.html">element_with_moving_nodes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="element__with__moving__nodes_8h_source.html#l00350">350</a> of file <a class="el" href="element__with__moving__nodes_8h_source.html">element_with_moving_nodes.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="element__with__moving__nodes_8h_source.html#l00278">disable_bypass_fill_in_jacobian_from_geometric_data()</a>, <a class="el" href="element__with__moving__nodes_8h_source.html#l00274">enable_bypass_fill_in_jacobian_from_geometric_data()</a>, <a class="el" href="element__with__moving__nodes_8cc_source.html#l00318">fill_in_jacobian_from_geometric_data()</a>, and <a class="el" href="element__with__moving__nodes_8h_source.html#l00282">is_fill_in_jacobian_from_geometric_data_bypassed()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="element__with__moving__nodes_8h_source.html#l00274">disable_bypass_fill_in_jacobian_from_geometric_data()</a>, <a class="el" href="element__with__moving__nodes_8h_source.html#l00270">enable_bypass_fill_in_jacobian_from_geometric_data()</a>, <a class="el" href="element__with__moving__nodes_8cc_source.html#l00314">fill_in_jacobian_from_geometric_data()</a>, and <a class="el" href="element__with__moving__nodes_8h_source.html#l00278">is_fill_in_jacobian_from_geometric_data_bypassed()</a>.</p>
 
 </div>
 </div>
@@ -2140,9 +2140,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Boolean to decide if shape derivatives are to be evaluated by fd (using <a class="el" href="classoomph_1_1FiniteElement.html#ae4b85a31a983a52d3010930f9e0851b8" title="Compute derivatives of elemental residual vector with respect to nodal coordinates....">FiniteElement::get_dresidual_dnodal_coordinates()</a>) or analytically, using the overloaded version of this function in this class. </p>
 
-<p class="definition">Definition at line <a class="el" href="element__with__moving__nodes_8h_source.html#l00360">360</a> of file <a class="el" href="element__with__moving__nodes_8h_source.html">element_with_moving_nodes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="element__with__moving__nodes_8h_source.html#l00356">356</a> of file <a class="el" href="element__with__moving__nodes_8h_source.html">element_with_moving_nodes.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="element__with__moving__nodes_8h_source.html#l00198">are_dresidual_dnodal_coordinates_always_evaluated_by_fd()</a>, <a class="el" href="element__with__moving__nodes_8h_source.html#l00211">disable_always_evaluate_dresidual_dnodal_coordinates_by_fd()</a>, <a class="el" href="element__with__moving__nodes_8h_source.html#l00203">enable_always_evaluate_dresidual_dnodal_coordinates_by_fd()</a>, and <a class="el" href="element__with__moving__nodes_8cc_source.html#l00318">fill_in_jacobian_from_geometric_data()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="element__with__moving__nodes_8h_source.html#l00194">are_dresidual_dnodal_coordinates_always_evaluated_by_fd()</a>, <a class="el" href="element__with__moving__nodes_8h_source.html#l00207">disable_always_evaluate_dresidual_dnodal_coordinates_by_fd()</a>, <a class="el" href="element__with__moving__nodes_8h_source.html#l00199">enable_always_evaluate_dresidual_dnodal_coordinates_by_fd()</a>, and <a class="el" href="element__with__moving__nodes_8cc_source.html#l00314">fill_in_jacobian_from_geometric_data()</a>.</p>
 
 </div>
 </div>
@@ -2168,9 +2168,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p><a class="el" href="classoomph_1_1Vector.html">Vector</a> that stores pointers to all <a class="el" href="classoomph_1_1Data.html" title="A class that represents a collection of data; each Data object may contain many different individual ...">Data</a> that affect the node update operations, i.e. the variables that can affect the position of the node. </p>
 
-<p class="definition">Definition at line <a class="el" href="element__with__moving__nodes_8h_source.html#l00334">334</a> of file <a class="el" href="element__with__moving__nodes_8h_source.html">element_with_moving_nodes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="element__with__moving__nodes_8h_source.html#l00330">330</a> of file <a class="el" href="element__with__moving__nodes_8h_source.html">element_with_moving_nodes.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="element__with__moving__nodes_8cc_source.html#l00199">assign_all_generic_local_eqn_numbers()</a>, <a class="el" href="element__with__moving__nodes_8cc_source.html#l00141">complete_setup_of_dependencies()</a>, <a class="el" href="element__with__moving__nodes_8cc_source.html#l00173">describe_local_dofs()</a>, <a class="el" href="element__with__moving__nodes_8cc_source.html#l00318">fill_in_jacobian_from_geometric_data()</a>, <a class="el" href="element__with__moving__nodes_8h_source.html#l00137">geometric_data_local_eqn()</a>, <a class="el" href="element__with__moving__nodes_8cc_source.html#l00543">get_dnodal_coordinates_dgeom_dofs()</a>, <a class="el" href="element__with__moving__nodes_8h_source.html#l00187">identify_geometric_data()</a>, and <a class="el" href="element__with__moving__nodes_8h_source.html#l00340">ngeom_data()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="element__with__moving__nodes_8cc_source.html#l00195">assign_all_generic_local_eqn_numbers()</a>, <a class="el" href="element__with__moving__nodes_8cc_source.html#l00137">complete_setup_of_dependencies()</a>, <a class="el" href="element__with__moving__nodes_8cc_source.html#l00169">describe_local_dofs()</a>, <a class="el" href="element__with__moving__nodes_8cc_source.html#l00314">fill_in_jacobian_from_geometric_data()</a>, <a class="el" href="element__with__moving__nodes_8h_source.html#l00133">geometric_data_local_eqn()</a>, <a class="el" href="element__with__moving__nodes_8cc_source.html#l00539">get_dnodal_coordinates_dgeom_dofs()</a>, <a class="el" href="element__with__moving__nodes_8h_source.html#l00183">identify_geometric_data()</a>, and <a class="el" href="element__with__moving__nodes_8h_source.html#l00336">ngeom_data()</a>.</p>
 
 </div>
 </div>
@@ -2196,9 +2196,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Array to hold local eqn number information for the geometric <a class="el" href="classoomph_1_1Data.html" title="A class that represents a collection of data; each Data object may contain many different individual ...">Data</a> variables. </p>
 
-<p class="definition">Definition at line <a class="el" href="element__with__moving__nodes_8h_source.html#l00346">346</a> of file <a class="el" href="element__with__moving__nodes_8h_source.html">element_with_moving_nodes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="element__with__moving__nodes_8h_source.html#l00342">342</a> of file <a class="el" href="element__with__moving__nodes_8h_source.html">element_with_moving_nodes.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="element__with__moving__nodes_8cc_source.html#l00199">assign_all_generic_local_eqn_numbers()</a>, <a class="el" href="element__with__moving__nodes_8h_source.html#l00137">geometric_data_local_eqn()</a>, and <a class="el" href="element__with__moving__nodes_8h_source.html#l00123">~ElementWithMovingNodes()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="element__with__moving__nodes_8cc_source.html#l00195">assign_all_generic_local_eqn_numbers()</a>, <a class="el" href="element__with__moving__nodes_8h_source.html#l00133">geometric_data_local_eqn()</a>, and <a class="el" href="element__with__moving__nodes_8h_source.html#l00119">~ElementWithMovingNodes()</a>.</p>
 
 </div>
 </div>
@@ -2224,9 +2224,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Choose method for evaluation of shape derivatives (this takes one of the values in the enumeration) </p>
 
-<p class="definition">Definition at line <a class="el" href="element__with__moving__nodes_8h_source.html#l00364">364</a> of file <a class="el" href="element__with__moving__nodes_8h_source.html">element_with_moving_nodes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="element__with__moving__nodes_8h_source.html#l00360">360</a> of file <a class="el" href="element__with__moving__nodes_8h_source.html">element_with_moving_nodes.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="element__with__moving__nodes_8h_source.html#l00225">evaluate_shape_derivs_by_chain_rule()</a>, <a class="el" href="element__with__moving__nodes_8h_source.html#l00215">evaluate_shape_derivs_by_direct_fd()</a>, <a class="el" href="element__with__moving__nodes_8h_source.html#l00249">evaluate_shape_derivs_by_fastest_method()</a>, <a class="el" href="element__with__moving__nodes_8cc_source.html#l00318">fill_in_jacobian_from_geometric_data()</a>, and <a class="el" href="element__with__moving__nodes_8h_source.html#l00271">method_for_shape_derivs()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="element__with__moving__nodes_8h_source.html#l00221">evaluate_shape_derivs_by_chain_rule()</a>, <a class="el" href="element__with__moving__nodes_8h_source.html#l00211">evaluate_shape_derivs_by_direct_fd()</a>, <a class="el" href="element__with__moving__nodes_8h_source.html#l00245">evaluate_shape_derivs_by_fastest_method()</a>, <a class="el" href="element__with__moving__nodes_8cc_source.html#l00314">fill_in_jacobian_from_geometric_data()</a>, and <a class="el" href="element__with__moving__nodes_8h_source.html#l00267">method_for_shape_derivs()</a>.</p>
 
 </div>
 </div>
@@ -2252,9 +2252,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Number of geometric dofs (computed on the fly when equation numbers are set up) </p>
 
-<p class="definition">Definition at line <a class="el" href="element__with__moving__nodes_8h_source.html#l00350">350</a> of file <a class="el" href="element__with__moving__nodes_8h_source.html">element_with_moving_nodes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="element__with__moving__nodes_8h_source.html#l00346">346</a> of file <a class="el" href="element__with__moving__nodes_8h_source.html">element_with_moving_nodes.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="element__with__moving__nodes_8cc_source.html#l00199">assign_all_generic_local_eqn_numbers()</a>, <a class="el" href="element__with__moving__nodes_8cc_source.html#l00318">fill_in_jacobian_from_geometric_data()</a>, and <a class="el" href="element__with__moving__nodes_8h_source.html#l00133">ngeom_dof()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="element__with__moving__nodes_8cc_source.html#l00195">assign_all_generic_local_eqn_numbers()</a>, <a class="el" href="element__with__moving__nodes_8cc_source.html#l00314">fill_in_jacobian_from_geometric_data()</a>, and <a class="el" href="element__with__moving__nodes_8h_source.html#l00129">ngeom_dof()</a>.</p>
 
 </div>
 </div>
@@ -2290,7 +2290,7 @@ Additional Inherited Members</h2></td></tr>
     <footer>
       <div class="container">
         <div class="text-muted" style="float:right;">Generated by <a href="http://www.doxygen.org/index.html">
-          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Tue Jul 6 2021 22:56:12
+          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Fri Jul 9 2021 20:51:30
         </div>
       </div>
     </footer>

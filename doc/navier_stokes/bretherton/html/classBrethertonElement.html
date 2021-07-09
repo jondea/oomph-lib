@@ -176,7 +176,7 @@ class BrethertonElement&lt; ELEMENT &gt;</h3>
 <p>"Bretherton element" is a fluid element (of type ELEMENT) for which the (inflow) velocity at those nodes that are located on a specified Mesh boundary is prescribed by Dirichlet boundary conditions. The key is that prescribed velocity profile can be a function of some external Data &ndash; this dependency must be taken into account when computing the element's Jacobian matrix.</p>
 <p>This element type is useful, for instance, in the Bretherton problem, where the parabolic "inflow" profile is a function of the film thickness (represented by Spine heights) at the "outflow". </p>
 
-<p class="definition">Definition at line <a class="el" href="bretherton_8cc_source.html#l00157">157</a> of file <a class="el" href="bretherton_8cc_source.html">bretherton.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bretherton_8cc_source.html#l00153">153</a> of file <a class="el" href="bretherton_8cc_source.html">bretherton.cc</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a313d868ce6fbd8df07b0360db25133ce"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a313d868ce6fbd8df07b0360db25133ce">&#9670;&nbsp;</a></span>InflowFctPt</h2>
@@ -194,7 +194,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Typedef for pointer (global) function that specifies the the inflow. </p>
 
-<p class="definition">Definition at line <a class="el" href="bretherton_8cc_source.html#l00164">164</a> of file <a class="el" href="bretherton_8cc_source.html">bretherton.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bretherton_8cc_source.html#l00160">160</a> of file <a class="el" href="bretherton_8cc_source.html">bretherton.cc</a>.</p>
 
 </div>
 </div>
@@ -226,7 +226,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Constructor: Call the constructor of the underlying element. </p>
 
-<p class="definition">Definition at line <a class="el" href="bretherton_8cc_source.html#l00167">167</a> of file <a class="el" href="bretherton_8cc_source.html">bretherton.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bretherton_8cc_source.html#l00163">163</a> of file <a class="el" href="bretherton_8cc_source.html">bretherton.cc</a>.</p>
 
 </div>
 </div>
@@ -275,7 +275,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Activate the dependency of the "inflow" on the external data. Pass the vector of pointers to the external Data that affects the inflow, the id of the boundary on which the inflow condition is to be applied and the function pointer to to the global function that defines the inflow. </p>
 
-<p class="definition">Definition at line <a class="el" href="bretherton_8cc_source.html#l00175">175</a> of file <a class="el" href="bretherton_8cc_source.html">bretherton.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bretherton_8cc_source.html#l00171">171</a> of file <a class="el" href="bretherton_8cc_source.html">bretherton.cc</a>.</p>
 
 </div>
 </div>
@@ -306,7 +306,7 @@ template&lt;class ELEMENT &gt; </div>
 </div><div class="memdoc">
 <p>short Overload assign local equation numbers: Add the dependency on the external Data that affects the inflow profile </p>
 
-<p class="definition">Definition at line <a class="el" href="bretherton_8cc_source.html#l00196">196</a> of file <a class="el" href="bretherton_8cc_source.html">bretherton.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bretherton_8cc_source.html#l00192">192</a> of file <a class="el" href="bretherton_8cc_source.html">bretherton.cc</a>.</p>
 
 </div>
 </div>
@@ -347,7 +347,7 @@ template&lt;class ELEMENT &gt; </div>
 </div><div class="memdoc">
 <p>Overloaded Jacobian computation: Computes the Jacobian of the underlying element and then adds the FD operations to evaluate the derivatives w.r.t. the Data values that affect the inflow. </p>
 
-<p class="definition">Definition at line <a class="el" href="bretherton_8cc_source.html#l00265">265</a> of file <a class="el" href="bretherton_8cc_source.html">bretherton.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bretherton_8cc_source.html#l00261">261</a> of file <a class="el" href="bretherton_8cc_source.html">bretherton.cc</a>.</p>
 
 </div>
 </div>
@@ -378,7 +378,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>For all nodes that are located on specified boundary re-assign the inflow velocity, using the function pointed to by the function pointer. </p>
 
-<p class="definition">Definition at line <a class="el" href="bretherton_8cc_source.html#l00343">343</a> of file <a class="el" href="bretherton_8cc_source.html">bretherton.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bretherton_8cc_source.html#l00339">339</a> of file <a class="el" href="bretherton_8cc_source.html">bretherton.cc</a>.</p>
 
 </div>
 </div>
@@ -407,7 +407,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Number of the inflow boundary in the global mesh. </p>
 
-<p class="definition">Definition at line <a class="el" href="bretherton_8cc_source.html#l00394">394</a> of file <a class="el" href="bretherton_8cc_source.html">bretherton.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bretherton_8cc_source.html#l00390">390</a> of file <a class="el" href="bretherton_8cc_source.html">bretherton.cc</a>.</p>
 
 </div>
 </div>
@@ -435,7 +435,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Storage for the external Data that affects the inflow. </p>
 
-<p class="definition">Definition at line <a class="el" href="bretherton_8cc_source.html#l00387">387</a> of file <a class="el" href="bretherton_8cc_source.html">bretherton.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bretherton_8cc_source.html#l00383">383</a> of file <a class="el" href="bretherton_8cc_source.html">bretherton.cc</a>.</p>
 
 </div>
 </div>
@@ -463,7 +463,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Storage for the local equation numbers associated the Data values that affect the inflow. </p>
 
-<p class="definition">Definition at line <a class="el" href="bretherton_8cc_source.html#l00391">391</a> of file <a class="el" href="bretherton_8cc_source.html">bretherton.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bretherton_8cc_source.html#l00387">387</a> of file <a class="el" href="bretherton_8cc_source.html">bretherton.cc</a>.</p>
 
 </div>
 </div>
@@ -491,7 +491,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Function pointer to the global function that specifies the inflow velocity profile on the global mesh boundary Inflow_boundary. </p>
 
-<p class="definition">Definition at line <a class="el" href="bretherton_8cc_source.html#l00398">398</a> of file <a class="el" href="bretherton_8cc_source.html">bretherton.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bretherton_8cc_source.html#l00394">394</a> of file <a class="el" href="bretherton_8cc_source.html">bretherton.cc</a>.</p>
 
 </div>
 </div>
@@ -526,7 +526,7 @@ template&lt;class ELEMENT &gt; </div>
     <footer>
       <div class="container">
         <div class="text-muted" style="float:right;">Generated by <a href="http://www.doxygen.org/index.html">
-          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Tue Jul 6 2021 23:08:12
+          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Fri Jul 9 2021 21:01:38
         </div>
       </div>
     </footer>

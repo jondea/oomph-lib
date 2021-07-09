@@ -1719,7 +1719,7 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Diag Hermite Kirchhoff Love shell "upgraded" to a <a class="el" href="classoomph_1_1FSIWallElement.html" title="This is a base class for all SolidFiniteElements that participate in FSI computations....">FSIWallElement</a> (and thus, by inheritance, a <a class="el" href="classoomph_1_1GeomObject.html">GeomObject</a>), so it can be used in FSI. </p>
 
-<p class="definition">Definition at line <a class="el" href="shell__elements_8h_source.html#l00411">411</a> of file <a class="el" href="shell__elements_8h_source.html">shell_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shell__elements_8h_source.html#l00407">407</a> of file <a class="el" href="shell__elements_8h_source.html">shell_elements.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a78392f4bffecd3fc7d03c6b6e9352735"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a78392f4bffecd3fc7d03c6b6e9352735">&#9670;&nbsp;</a></span>FSIDiagHermiteShellElement()</h2>
@@ -1746,9 +1746,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Constructor: Create shell element as <a class="el" href="classoomph_1_1FSIWallElement.html" title="This is a base class for all SolidFiniteElements that participate in FSI computations....">FSIWallElement</a> (and thus, by inheritance, a <a class="el" href="classoomph_1_1GeomObject.html">GeomObject</a>) with two Lagrangian coordinates and 3 Eulerian coordinates. By default, we assume that the normal vector computed by KirchhoffLoveShellEquations::get_normal(...) points into the fluid. If this is not the case, call the access function <a class="el" href="classoomph_1_1FSIDiagHermiteShellElement.html#a4c2485cc6e268e9201f914166852ca90" title="Set the normal computed by KirchhoffLoveShellEquations::get_normal(...) to point out of the fluid.">FSIDiagHermiteShellElement::set_normal_pointing_out_of_fluid()</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="shell__elements_8h_source.html#l00459">459</a> of file <a class="el" href="shell__elements_8h_source.html">shell_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shell__elements_8h_source.html#l00455">455</a> of file <a class="el" href="shell__elements_8h_source.html">shell_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="fsi_8cc_source.html#l00124">oomph::FSIWallElement::setup_fsi_wall_element()</a>.</p>
+<p class="reference">References <a class="el" href="fsi_8cc_source.html#l00120">oomph::FSIWallElement::setup_fsi_wall_element()</a>.</p>
 
 </div>
 </div>
@@ -1777,7 +1777,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Destructor: empty. </p>
 
-<p class="definition">Definition at line <a class="el" href="shell__elements_8h_source.html#l00469">469</a> of file <a class="el" href="shell__elements_8h_source.html">shell_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shell__elements_8h_source.html#l00465">465</a> of file <a class="el" href="shell__elements_8h_source.html">shell_elements.h</a>.</p>
 
 </div>
 </div>
@@ -1812,9 +1812,9 @@ Additional Inherited Members</h2></td></tr>
 <p>Lagrangian coordinates; evaluated at current time.</p>
 <p>Define the dposition function. This is used to set no-slip boundary conditions in some FSI problems. </p>
 
-<p class="definition">Definition at line <a class="el" href="shell__elements_8cc_source.html#l01295">1295</a> of file <a class="el" href="shell__elements_8cc_source.html">shell_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shell__elements_8cc_source.html#l01291">1291</a> of file <a class="el" href="shell__elements_8cc_source.html">shell_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8cc_source.html#l06567">oomph::SolidFiniteElement::dshape_lagrangian()</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="matrices_8h_source.html#l00523">oomph::DenseMatrix&lt; T &gt;::initialise()</a>, <a class="el" href="geom__objects_8h_source.html#l00185">oomph::GeomObject::ndim()</a>, <a class="el" href="geom__objects_8h_source.html#l00182">oomph::GeomObject::nlagrangian()</a>, <a class="el" href="elements_8h_source.html#l02369">oomph::FiniteElement::nnodal_position_type()</a>, <a class="el" href="elements_8h_source.html#l02163">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l02266">oomph::FiniteElement::nodal_position_gen()</a>, <a class="el" href="cfortran_8h_source.html#l00572">s</a>, and <a class="el" href="shell__elements_8h_source.html#l00110">oomph::KirchhoffLoveShellEquations::Undeformed_midplane_pt</a>.</p>
+<p class="reference">References <a class="el" href="elements_8cc_source.html#l06563">oomph::SolidFiniteElement::dshape_lagrangian()</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="matrices_8h_source.html#l00519">oomph::DenseMatrix&lt; T &gt;::initialise()</a>, <a class="el" href="geom__objects_8h_source.html#l00181">oomph::GeomObject::ndim()</a>, <a class="el" href="geom__objects_8h_source.html#l00178">oomph::GeomObject::nlagrangian()</a>, <a class="el" href="elements_8h_source.html#l02365">oomph::FiniteElement::nnodal_position_type()</a>, <a class="el" href="elements_8h_source.html#l02159">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l02262">oomph::FiniteElement::nodal_position_gen()</a>, <a class="el" href="cfortran_8h_source.html#l00568">s</a>, and <a class="el" href="shell__elements_8h_source.html#l00106">oomph::KirchhoffLoveShellEquations::Undeformed_midplane_pt</a>.</p>
 
 </div>
 </div>
@@ -1856,9 +1856,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1FSIWallElement.html#a7817d2662c24540d3757cb1a1194a635">oomph::FSIWallElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="shell__elements_8h_source.html#l00537">537</a> of file <a class="el" href="shell__elements_8h_source.html">shell_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shell__elements_8h_source.html#l00533">533</a> of file <a class="el" href="shell__elements_8h_source.html">shell_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="shell__elements_8cc_source.html#l00706">oomph::KirchhoffLoveShellEquations::fill_in_contribution_to_jacobian()</a>, <a class="el" href="element__with__external__element_8h_source.html#l00329">oomph::ElementWithExternalElement::fill_in_jacobian_from_external_interaction_by_fd()</a>, and <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>.</p>
+<p class="reference">References <a class="el" href="shell__elements_8cc_source.html#l00702">oomph::KirchhoffLoveShellEquations::fill_in_contribution_to_jacobian()</a>, <a class="el" href="element__with__external__element_8h_source.html#l00325">oomph::ElementWithExternalElement::fill_in_jacobian_from_external_interaction_by_fd()</a>, and <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>.</p>
 
 </div>
 </div>
@@ -1887,9 +1887,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Get integral of instantaneous rate of work done on the wall due to the fluid load returned by the function fluid_load_vector(...). </p>
 
-<p class="definition">Definition at line <a class="el" href="shell__elements_8h_source.html#l00489">489</a> of file <a class="el" href="shell__elements_8h_source.html">shell_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shell__elements_8h_source.html#l00485">485</a> of file <a class="el" href="shell__elements_8h_source.html">shell_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="shell__elements_8h_source.html#l00448">Compute_rate_of_work_by_load_with_fluid_load_only</a>, and <a class="el" href="shell__elements_8cc_source.html#l01036">oomph::KirchhoffLoveShellEquations::load_rate_of_work()</a>.</p>
+<p class="reference">References <a class="el" href="shell__elements_8h_source.html#l00444">Compute_rate_of_work_by_load_with_fluid_load_only</a>, and <a class="el" href="shell__elements_8cc_source.html#l01032">oomph::KirchhoffLoveShellEquations::load_rate_of_work()</a>.</p>
 
 </div>
 </div>
@@ -1922,9 +1922,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1GeneralisedElement.html#a069f59bfc3e607a5bebba52c6314d777">oomph::GeneralisedElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="shell__elements_8cc_source.html#l01362">1362</a> of file <a class="el" href="shell__elements_8cc_source.html">shell_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shell__elements_8cc_source.html#l01358">1358</a> of file <a class="el" href="shell__elements_8cc_source.html">shell_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l00709">oomph::GeneralisedElement::eqn_number()</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, <a class="el" href="elements_8h_source.html#l02369">oomph::FiniteElement::nnodal_position_type()</a>, <a class="el" href="elements_8h_source.html#l02163">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l02387">oomph::FiniteElement::nodal_dimension()</a>, and <a class="el" href="elements_8h_source.html#l04011">oomph::SolidFiniteElement::position_local_eqn()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l00705">oomph::GeneralisedElement::eqn_number()</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, <a class="el" href="elements_8h_source.html#l02365">oomph::FiniteElement::nnodal_position_type()</a>, <a class="el" href="elements_8h_source.html#l02159">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l02383">oomph::FiniteElement::nodal_dimension()</a>, and <a class="el" href="elements_8h_source.html#l04007">oomph::SolidFiniteElement::position_local_eqn()</a>.</p>
 
 </div>
 </div>
@@ -1984,11 +1984,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1KirchhoffLoveShellEquations.html#ad404001c9a8c9587ece41bc4ff8c1ce1">oomph::KirchhoffLoveShellEquations</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="shell__elements_8h_source.html#l00508">508</a> of file <a class="el" href="shell__elements_8h_source.html">shell_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shell__elements_8h_source.html#l00504">504</a> of file <a class="el" href="shell__elements_8h_source.html">shell_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="fsi_8cc_source.html#l00166">oomph::FSIWallElement::fluid_load_vector()</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="shell__elements_8h_source.html#l00102">oomph::KirchhoffLoveShellEquations::Load_vector_fct_pt</a>, <a class="el" href="quadtree_8h_source.html#l00060">oomph::QuadTreeNames::N</a>, and <a class="el" href="shell__elements_8h_source.html#l00444">Normal_points_into_fluid</a>.</p>
+<p class="reference">References <a class="el" href="fsi_8cc_source.html#l00162">oomph::FSIWallElement::fluid_load_vector()</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="shell__elements_8h_source.html#l00098">oomph::KirchhoffLoveShellEquations::Load_vector_fct_pt</a>, <a class="el" href="quadtree_8h_source.html#l00056">oomph::QuadTreeNames::N</a>, and <a class="el" href="shell__elements_8h_source.html#l00440">Normal_points_into_fluid</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="shell__elements_8h_source.html#l00424">load_vector_for_rate_of_work_computation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="shell__elements_8h_source.html#l00420">load_vector_for_rate_of_work_computation()</a>.</p>
 
 </div>
 </div>
@@ -2050,9 +2050,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1KirchhoffLoveShellEquations.html#ae565dc5fcdf60d733f6d19361e88d22d">oomph::KirchhoffLoveShellEquations</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="shell__elements_8h_source.html#l00424">424</a> of file <a class="el" href="shell__elements_8h_source.html">shell_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shell__elements_8h_source.html#l00420">420</a> of file <a class="el" href="shell__elements_8h_source.html">shell_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="shell__elements_8h_source.html#l00448">Compute_rate_of_work_by_load_with_fluid_load_only</a>, <a class="el" href="fsi_8cc_source.html#l00166">oomph::FSIWallElement::fluid_load_vector()</a>, <a class="el" href="shell__elements_8h_source.html#l00508">load_vector()</a>, and <a class="el" href="quadtree_8h_source.html#l00060">oomph::QuadTreeNames::N</a>.</p>
+<p class="reference">References <a class="el" href="shell__elements_8h_source.html#l00444">Compute_rate_of_work_by_load_with_fluid_load_only</a>, <a class="el" href="fsi_8cc_source.html#l00162">oomph::FSIWallElement::fluid_load_vector()</a>, <a class="el" href="shell__elements_8h_source.html#l00504">load_vector()</a>, and <a class="el" href="quadtree_8h_source.html#l00056">oomph::QuadTreeNames::N</a>.</p>
 
 </div>
 </div>
@@ -2083,7 +2083,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1GeneralisedElement.html#a0c6037a870597b35dcf1c780710b9a56">oomph::GeneralisedElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="shell__elements_8h_source.html#l00550">550</a> of file <a class="el" href="shell__elements_8h_source.html">shell_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shell__elements_8h_source.html#l00546">546</a> of file <a class="el" href="shell__elements_8h_source.html">shell_elements.h</a>.</p>
 
 </div>
 </div>
@@ -2112,9 +2112,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Set the normal computed by KirchhoffLoveShellEquations::get_normal(...) to point into the fluid. </p>
 
-<p class="definition">Definition at line <a class="el" href="shell__elements_8h_source.html#l00473">473</a> of file <a class="el" href="shell__elements_8h_source.html">shell_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shell__elements_8h_source.html#l00469">469</a> of file <a class="el" href="shell__elements_8h_source.html">shell_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="shell__elements_8h_source.html#l00444">Normal_points_into_fluid</a>.</p>
+<p class="reference">References <a class="el" href="shell__elements_8h_source.html#l00440">Normal_points_into_fluid</a>.</p>
 
 </div>
 </div>
@@ -2143,9 +2143,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Set the normal computed by KirchhoffLoveShellEquations::get_normal(...) to point out of the fluid. </p>
 
-<p class="definition">Definition at line <a class="el" href="shell__elements_8h_source.html#l00477">477</a> of file <a class="el" href="shell__elements_8h_source.html">shell_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shell__elements_8h_source.html#l00473">473</a> of file <a class="el" href="shell__elements_8h_source.html">shell_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="shell__elements_8h_source.html#l00444">Normal_points_into_fluid</a>.</p>
+<p class="reference">References <a class="el" href="shell__elements_8h_source.html#l00440">Normal_points_into_fluid</a>.</p>
 
 </div>
 </div>
@@ -2172,9 +2172,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Boolean flag to indicate if rate-of-work by load is to be based on the fluid traction only. </p>
 
-<p class="definition">Definition at line <a class="el" href="shell__elements_8h_source.html#l00448">448</a> of file <a class="el" href="shell__elements_8h_source.html">shell_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shell__elements_8h_source.html#l00444">444</a> of file <a class="el" href="shell__elements_8h_source.html">shell_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="shell__elements_8h_source.html#l00489">fluid_load_rate_of_work()</a>, and <a class="el" href="shell__elements_8h_source.html#l00424">load_vector_for_rate_of_work_computation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="shell__elements_8h_source.html#l00485">fluid_load_rate_of_work()</a>, and <a class="el" href="shell__elements_8h_source.html#l00420">load_vector_for_rate_of_work_computation()</a>.</p>
 
 </div>
 </div>
@@ -2200,9 +2200,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Boolean flag to indicate whether the normal is directed into the fluid. </p>
 
-<p class="definition">Definition at line <a class="el" href="shell__elements_8h_source.html#l00444">444</a> of file <a class="el" href="shell__elements_8h_source.html">shell_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shell__elements_8h_source.html#l00440">440</a> of file <a class="el" href="shell__elements_8h_source.html">shell_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="shell__elements_8h_source.html#l00508">load_vector()</a>, <a class="el" href="shell__elements_8h_source.html#l00473">set_normal_pointing_into_fluid()</a>, and <a class="el" href="shell__elements_8h_source.html#l00477">set_normal_pointing_out_of_fluid()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="shell__elements_8h_source.html#l00504">load_vector()</a>, <a class="el" href="shell__elements_8h_source.html#l00469">set_normal_pointing_into_fluid()</a>, and <a class="el" href="shell__elements_8h_source.html#l00473">set_normal_pointing_out_of_fluid()</a>.</p>
 
 </div>
 </div>
@@ -2238,7 +2238,7 @@ Additional Inherited Members</h2></td></tr>
     <footer>
       <div class="container">
         <div class="text-muted" style="float:right;">Generated by <a href="http://www.doxygen.org/index.html">
-          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Tue Jul 6 2021 22:57:23
+          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Fri Jul 9 2021 20:52:32
         </div>
       </div>
     </footer>

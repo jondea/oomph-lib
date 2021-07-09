@@ -81,7 +81,7 @@ The shape of a geometric object is usually determined by a number of parameters 
 
 The shape of a geometric object can have an explicit time-\/dependence, for instance in cases where a domain boundary is performing prescribed motions. We provide access to the `global' time by giving the object a pointer to a timestepping scheme. \mbox{[}Note that, within the overall FE code, time is only ever evaluated at discrete instants (which are accessible via the timestepper), never in continuous form\mbox{]}. The timestepper is also needed to evaluate time-\/derivatives if the geometric \mbox{\hyperlink{classoomph_1_1Data}{Data}} carries a time history. 
 
-Definition at line 105 of file geom\+\_\+objects.\+h.
+Definition at line 101 of file geom\+\_\+objects.\+h.
 
 
 
@@ -98,7 +98,7 @@ Default constructor.
 
 
 
-Definition at line 111 of file geom\+\_\+objects.\+h.
+Definition at line 107 of file geom\+\_\+objects.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1GeomObject_a56cd9cb7bb39ff2c30fb56039be83d31}\label{classoomph_1_1GeomObject_a56cd9cb7bb39ff2c30fb56039be83d31}} 
 \index{oomph::GeomObject@{oomph::GeomObject}!GeomObject@{GeomObject}}
@@ -112,7 +112,7 @@ Constructor\+: Pass dimension of geometric object (\# of Eulerian coords = \# of
 
 
 
-Definition at line 116 of file geom\+\_\+objects.\+h.
+Definition at line 112 of file geom\+\_\+objects.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1GeomObject_ae3fcf14b1bf5d2bc26f64156baecb7da}\label{classoomph_1_1GeomObject_ae3fcf14b1bf5d2bc26f64156baecb7da}} 
 \index{oomph::GeomObject@{oomph::GeomObject}!GeomObject@{GeomObject}}
@@ -126,7 +126,7 @@ Constructor\+: pass \# of Eulerian and Lagrangian coordinates. No time history a
 
 
 
-Definition at line 123 of file geom\+\_\+objects.\+h.
+Definition at line 119 of file geom\+\_\+objects.\+h.
 
 
 
@@ -144,7 +144,7 @@ Constructor\+: pass \# of Eulerian and Lagrangian coordinates and pointer to tim
 
 
 
-Definition at line 146 of file geom\+\_\+objects.\+h.
+Definition at line 142 of file geom\+\_\+objects.\+h.
 
 
 
@@ -162,7 +162,7 @@ Broken copy constructor.
 
 
 
-Definition at line 167 of file geom\+\_\+objects.\+h.
+Definition at line 163 of file geom\+\_\+objects.\+h.
 
 
 
@@ -180,7 +180,7 @@ References oomph\+::\+Broken\+Copy\+::broken\+\_\+copy().
 
 
 
-Definition at line 179 of file geom\+\_\+objects.\+h.
+Definition at line 175 of file geom\+\_\+objects.\+h.
 
 
 
@@ -201,7 +201,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1EllipticalTube_a8b64fd5235117356
 
 
 
-Definition at line 330 of file geom\+\_\+objects.\+h.
+Definition at line 326 of file geom\+\_\+objects.\+h.
 
 
 
@@ -223,7 +223,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1EllipticalTube_a2fe694a504750371
 
 
 
-Definition at line 346 of file geom\+\_\+objects.\+h.
+Definition at line 342 of file geom\+\_\+objects.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1GeomObject_a91cd59efcb15971a293914b7b9bd7f75}\label{classoomph_1_1GeomObject_a91cd59efcb15971a293914b7b9bd7f75}} 
 \index{oomph::GeomObject@{oomph::GeomObject}!dposition@{dposition}}
@@ -241,7 +241,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1Ellipse_af8caf51de734dff257fa3db
 
 
 
-Definition at line 316 of file geom\+\_\+objects.\+h.
+Definition at line 312 of file geom\+\_\+objects.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1GeomObject_aa46469e491d25eda8dbe213f07152974}\label{classoomph_1_1GeomObject_aa46469e491d25eda8dbe213f07152974}} 
 \index{oomph::GeomObject@{oomph::GeomObject}!dposition\_dt@{dposition\_dt}}
@@ -259,7 +259,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1FiniteElement_a1444cb95e415d363c
 
 
 
-Definition at line 288 of file geom\+\_\+objects.\+h.
+Definition at line 284 of file geom\+\_\+objects.\+h.
 
 
 
@@ -277,11 +277,11 @@ Return pointer to the j-\/th \mbox{\hyperlink{classoomph_1_1Data}{Data}} item th
 
 
 
-Reimplemented in \mbox{\hyperlink{classoomph_1_1SolidFiniteElement_a2457ad75b45257b536090d9b1a6f1331}{oomph\+::\+Solid\+Finite\+Element}}, \mbox{\hyperlink{classoomph_1_1FiniteElement_aa119a9aaad3d2ebb54ff085726c3708d}{oomph\+::\+Finite\+Element}}, \mbox{\hyperlink{classoomph_1_1Circle_ab48e086bc4f484e155ebb2edd6e90040}{oomph\+::\+Circle}}, \mbox{\hyperlink{classoomph_1_1RefineableSolidElement_a3f20de56e3a920644b01dac184f67ef1}{oomph\+::\+Refineable\+Solid\+Element}}, \mbox{\hyperlink{classoomph_1_1Ellipse_a99f443c61294d5cd12a1412a8a3b0b3e}{oomph\+::\+Ellipse}}, \mbox{\hyperlink{classoomph_1_1StraightLine_ad1e8c652c277e1f7649a5afb5711afc0}{oomph\+::\+Straight\+Line}}, \mbox{\hyperlink{classoomph_1_1FSIAxisymFoepplvonKarmanElement_a4aa016e0164dad96f66ff98af98889e6}{oomph\+::\+F\+S\+I\+Axisym\+Foepplvon\+Karman\+Element$<$ N\+N\+O\+D\+E\+\_\+1\+D, F\+L\+U\+I\+D\+\_\+\+E\+L\+E\+M\+E\+N\+T $>$}}, \mbox{\hyperlink{classoomph_1_1PseudoBucklingRing_a5f53b50c00bf2cf98db90a09dc65b410}{oomph\+::\+Pseudo\+Buckling\+Ring}}, \mbox{\hyperlink{classoomph_1_1ImmersedRigidBodyElement_adf0e61dfcf35f8be55dab30dd8e0ccb5}{oomph\+::\+Immersed\+Rigid\+Body\+Element}}, \mbox{\hyperlink{classoomph_1_1MeshAsGeomObject_a8d19ac59e6b236c61ffbcd434ad3b339}{oomph\+::\+Mesh\+As\+Geom\+Object}}, and \mbox{\hyperlink{classoomph_1_1FaceElementAsGeomObject_ac086288f59f368278b08894a00e990fa}{oomph\+::\+Face\+Element\+As\+Geom\+Object$<$ E\+L\+E\+M\+E\+N\+T $>$}}.
+Reimplemented in \mbox{\hyperlink{classoomph_1_1SolidFiniteElement_a2457ad75b45257b536090d9b1a6f1331}{oomph\+::\+Solid\+Finite\+Element}}, \mbox{\hyperlink{classoomph_1_1FiniteElement_aa119a9aaad3d2ebb54ff085726c3708d}{oomph\+::\+Finite\+Element}}, \mbox{\hyperlink{classoomph_1_1Circle_ab48e086bc4f484e155ebb2edd6e90040}{oomph\+::\+Circle}}, \mbox{\hyperlink{classoomph_1_1RefineableSolidElement_a3f20de56e3a920644b01dac184f67ef1}{oomph\+::\+Refineable\+Solid\+Element}}, \mbox{\hyperlink{classoomph_1_1Ellipse_a99f443c61294d5cd12a1412a8a3b0b3e}{oomph\+::\+Ellipse}}, \mbox{\hyperlink{classoomph_1_1StraightLine_ad1e8c652c277e1f7649a5afb5711afc0}{oomph\+::\+Straight\+Line}}, \mbox{\hyperlink{classoomph_1_1FSIAxisymFoepplvonKarmanElement_a4aa016e0164dad96f66ff98af98889e6}{oomph\+::\+F\+S\+I\+Axisym\+Foepplvon\+Karman\+Element$<$ N\+N\+O\+D\+E\+\_\+1\+D, F\+L\+U\+I\+D\+\_\+\+E\+L\+E\+M\+E\+N\+T $>$}}, \mbox{\hyperlink{classoomph_1_1PseudoBucklingRing_a5f53b50c00bf2cf98db90a09dc65b410}{oomph\+::\+Pseudo\+Buckling\+Ring}}, \mbox{\hyperlink{classoomph_1_1MeshAsGeomObject_a8d19ac59e6b236c61ffbcd434ad3b339}{oomph\+::\+Mesh\+As\+Geom\+Object}}, \mbox{\hyperlink{classoomph_1_1ImmersedRigidBodyElement_adf0e61dfcf35f8be55dab30dd8e0ccb5}{oomph\+::\+Immersed\+Rigid\+Body\+Element}}, and \mbox{\hyperlink{classoomph_1_1FaceElementAsGeomObject_ac086288f59f368278b08894a00e990fa}{oomph\+::\+Face\+Element\+As\+Geom\+Object$<$ E\+L\+E\+M\+E\+N\+T $>$}}.
 
 
 
-Definition at line 230 of file geom\+\_\+objects.\+h.
+Definition at line 226 of file geom\+\_\+objects.\+h.
 
 
 
@@ -303,7 +303,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1FiniteElement_a4407a4f0fb5bf5b88
 
 
 
-Definition at line 391 of file geom\+\_\+objects.\+h.
+Definition at line 387 of file geom\+\_\+objects.\+h.
 
 
 
@@ -325,7 +325,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1MeshAsGeomObject_a8a9fecb98d4e0a
 
 
 
-Definition at line 369 of file geom\+\_\+objects.\+h.
+Definition at line 365 of file geom\+\_\+objects.\+h.
 
 
 
@@ -347,7 +347,7 @@ Access function to \# of Eulerian coordinates.
 
 
 
-Definition at line 185 of file geom\+\_\+objects.\+h.
+Definition at line 181 of file geom\+\_\+objects.\+h.
 
 
 
@@ -369,11 +369,11 @@ How many items of \mbox{\hyperlink{classoomph_1_1Data}{Data}} does the shape of 
 
 
 
-Reimplemented in \mbox{\hyperlink{classoomph_1_1SolidFiniteElement_a73f387da7f31f233b79c2526e8cbc896}{oomph\+::\+Solid\+Finite\+Element}}, \mbox{\hyperlink{classoomph_1_1FiniteElement_ae09e3e0c01b6143d511f2626d2ee535c}{oomph\+::\+Finite\+Element}}, \mbox{\hyperlink{classoomph_1_1EllipticalTube_ad137810aac62250463273656db192ed7}{oomph\+::\+Elliptical\+Tube}}, \mbox{\hyperlink{classoomph_1_1Circle_a69d37777c2d4e7e13431a1a1e7f31ad5}{oomph\+::\+Circle}}, \mbox{\hyperlink{classoomph_1_1RefineableSolidElement_a690e24cdbd9308da1b9e705fd0340de8}{oomph\+::\+Refineable\+Solid\+Element}}, \mbox{\hyperlink{classoomph_1_1Ellipse_a7b89731ed0bbe563d323d0eb5e1e708c}{oomph\+::\+Ellipse}}, \mbox{\hyperlink{classoomph_1_1StraightLine_abcc547cb889a1447cac0827698d5c8ca}{oomph\+::\+Straight\+Line}}, \mbox{\hyperlink{classoomph_1_1FSIAxisymFoepplvonKarmanElement_ad3b508a8c906a3e175f9c058a0103023}{oomph\+::\+F\+S\+I\+Axisym\+Foepplvon\+Karman\+Element$<$ N\+N\+O\+D\+E\+\_\+1\+D, F\+L\+U\+I\+D\+\_\+\+E\+L\+E\+M\+E\+N\+T $>$}}, \mbox{\hyperlink{classoomph_1_1PseudoBucklingRing_a9e03780134886a9a2a19358519eca3be}{oomph\+::\+Pseudo\+Buckling\+Ring}}, \mbox{\hyperlink{classoomph_1_1ImmersedRigidBodyElement_a4c5bf4b09a19ea70edf9ec68b41bfd2a}{oomph\+::\+Immersed\+Rigid\+Body\+Element}}, \mbox{\hyperlink{classoomph_1_1MeshAsGeomObject_a47d0c877a05e1d84703052431396cd0c}{oomph\+::\+Mesh\+As\+Geom\+Object}}, \mbox{\hyperlink{classoomph_1_1ElementWithMovingNodes_acd9274afc02b66bb15b368e359c40a6f}{oomph\+::\+Element\+With\+Moving\+Nodes}}, and \mbox{\hyperlink{classoomph_1_1FaceElementAsGeomObject_aa4c65d845266c0fc60bbd0d75d2951bb}{oomph\+::\+Face\+Element\+As\+Geom\+Object$<$ E\+L\+E\+M\+E\+N\+T $>$}}.
+Reimplemented in \mbox{\hyperlink{classoomph_1_1SolidFiniteElement_a73f387da7f31f233b79c2526e8cbc896}{oomph\+::\+Solid\+Finite\+Element}}, \mbox{\hyperlink{classoomph_1_1FiniteElement_ae09e3e0c01b6143d511f2626d2ee535c}{oomph\+::\+Finite\+Element}}, \mbox{\hyperlink{classoomph_1_1EllipticalTube_ad137810aac62250463273656db192ed7}{oomph\+::\+Elliptical\+Tube}}, \mbox{\hyperlink{classoomph_1_1Circle_a69d37777c2d4e7e13431a1a1e7f31ad5}{oomph\+::\+Circle}}, \mbox{\hyperlink{classoomph_1_1RefineableSolidElement_a690e24cdbd9308da1b9e705fd0340de8}{oomph\+::\+Refineable\+Solid\+Element}}, \mbox{\hyperlink{classoomph_1_1Ellipse_a7b89731ed0bbe563d323d0eb5e1e708c}{oomph\+::\+Ellipse}}, \mbox{\hyperlink{classoomph_1_1StraightLine_abcc547cb889a1447cac0827698d5c8ca}{oomph\+::\+Straight\+Line}}, \mbox{\hyperlink{classoomph_1_1FSIAxisymFoepplvonKarmanElement_ad3b508a8c906a3e175f9c058a0103023}{oomph\+::\+F\+S\+I\+Axisym\+Foepplvon\+Karman\+Element$<$ N\+N\+O\+D\+E\+\_\+1\+D, F\+L\+U\+I\+D\+\_\+\+E\+L\+E\+M\+E\+N\+T $>$}}, \mbox{\hyperlink{classoomph_1_1PseudoBucklingRing_a9e03780134886a9a2a19358519eca3be}{oomph\+::\+Pseudo\+Buckling\+Ring}}, \mbox{\hyperlink{classoomph_1_1MeshAsGeomObject_a47d0c877a05e1d84703052431396cd0c}{oomph\+::\+Mesh\+As\+Geom\+Object}}, \mbox{\hyperlink{classoomph_1_1ImmersedRigidBodyElement_a4c5bf4b09a19ea70edf9ec68b41bfd2a}{oomph\+::\+Immersed\+Rigid\+Body\+Element}}, \mbox{\hyperlink{classoomph_1_1ElementWithMovingNodes_acd9274afc02b66bb15b368e359c40a6f}{oomph\+::\+Element\+With\+Moving\+Nodes}}, and \mbox{\hyperlink{classoomph_1_1FaceElementAsGeomObject_aa4c65d845266c0fc60bbd0d75d2951bb}{oomph\+::\+Face\+Element\+As\+Geom\+Object$<$ E\+L\+E\+M\+E\+N\+T $>$}}.
 
 
 
-Definition at line 208 of file geom\+\_\+objects.\+h.
+Definition at line 204 of file geom\+\_\+objects.\+h.
 
 
 
@@ -391,7 +391,7 @@ Access function to \# of Lagrangian coordinates.
 
 
 
-Definition at line 182 of file geom\+\_\+objects.\+h.
+Definition at line 178 of file geom\+\_\+objects.\+h.
 
 
 
@@ -413,7 +413,7 @@ Broken assignment operator.
 
 
 
-Definition at line 173 of file geom\+\_\+objects.\+h.
+Definition at line 169 of file geom\+\_\+objects.\+h.
 
 
 
@@ -431,7 +431,7 @@ Parametrised position on object\+: r(zeta). Evaluated at the continuous time val
 
 
 
-Definition at line 271 of file geom\+\_\+objects.\+h.
+Definition at line 267 of file geom\+\_\+objects.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1GeomObject_ad44a736d23dcd63af163a7d80b5c4dfa}\label{classoomph_1_1GeomObject_ad44a736d23dcd63af163a7d80b5c4dfa}} 
 \index{oomph::GeomObject@{oomph::GeomObject}!position@{position}}
@@ -445,11 +445,11 @@ Parametrised position on object\+: r(zeta). Evaluated at previous timestep. t=0\
 
 
 
-Reimplemented in \mbox{\hyperlink{classoomph_1_1FiniteElement_ad1c757b3ea99bfac2521244a977728ed}{oomph\+::\+Finite\+Element}}, \mbox{\hyperlink{classoomph_1_1EllipticalTube_a01c6372a901d28892cab9e43ba8b3530}{oomph\+::\+Elliptical\+Tube}}, \mbox{\hyperlink{classoomph_1_1Circle_a3d318d67e50a29d7d8916cacc741435b}{oomph\+::\+Circle}}, \mbox{\hyperlink{classoomph_1_1Ellipse_a862ce1f7d6ac7b2c5deb613b49caa30f}{oomph\+::\+Ellipse}}, \mbox{\hyperlink{classoomph_1_1FSIAxisymFoepplvonKarmanElement_a9c86ac02c60541d451ceb50eb49914ed}{oomph\+::\+F\+S\+I\+Axisym\+Foepplvon\+Karman\+Element$<$ N\+N\+O\+D\+E\+\_\+1\+D, F\+L\+U\+I\+D\+\_\+\+E\+L\+E\+M\+E\+N\+T $>$}}, \mbox{\hyperlink{classoomph_1_1StraightLine_adfa84ac4d8342089f0f69eb2efe1108f}{oomph\+::\+Straight\+Line}}, \mbox{\hyperlink{classoomph_1_1WarpedCircularDisk_afcc9e5e2c88d05b61006bd432e3aa31b}{oomph\+::\+Warped\+Circular\+Disk}}, \mbox{\hyperlink{classoomph_1_1PseudoBucklingRing_a027211cc7067efa849e605b456cb5462}{oomph\+::\+Pseudo\+Buckling\+Ring}}, \mbox{\hyperlink{classoomph_1_1MeshAsGeomObject_aab712c9f8a51d997c13c00eb1afaf9f4}{oomph\+::\+Mesh\+As\+Geom\+Object}}, \mbox{\hyperlink{classoomph_1_1ImmersedRigidBodyTriangleMeshPolygon_ad1bd014b31d75703384be201ab65e80f}{oomph\+::\+Immersed\+Rigid\+Body\+Triangle\+Mesh\+Polygon}}, and \mbox{\hyperlink{classoomph_1_1ImmersedRigidBodyElement_aca95759d96758c7a4fc81dece7768e9d}{oomph\+::\+Immersed\+Rigid\+Body\+Element}}.
+Reimplemented in \mbox{\hyperlink{classoomph_1_1FiniteElement_ad1c757b3ea99bfac2521244a977728ed}{oomph\+::\+Finite\+Element}}, \mbox{\hyperlink{classoomph_1_1EllipticalTube_a01c6372a901d28892cab9e43ba8b3530}{oomph\+::\+Elliptical\+Tube}}, \mbox{\hyperlink{classoomph_1_1Circle_a3d318d67e50a29d7d8916cacc741435b}{oomph\+::\+Circle}}, \mbox{\hyperlink{classoomph_1_1Ellipse_a862ce1f7d6ac7b2c5deb613b49caa30f}{oomph\+::\+Ellipse}}, \mbox{\hyperlink{classoomph_1_1FSIAxisymFoepplvonKarmanElement_a9c86ac02c60541d451ceb50eb49914ed}{oomph\+::\+F\+S\+I\+Axisym\+Foepplvon\+Karman\+Element$<$ N\+N\+O\+D\+E\+\_\+1\+D, F\+L\+U\+I\+D\+\_\+\+E\+L\+E\+M\+E\+N\+T $>$}}, \mbox{\hyperlink{classoomph_1_1StraightLine_adfa84ac4d8342089f0f69eb2efe1108f}{oomph\+::\+Straight\+Line}}, \mbox{\hyperlink{classoomph_1_1WarpedCircularDisk_afcc9e5e2c88d05b61006bd432e3aa31b}{oomph\+::\+Warped\+Circular\+Disk}}, \mbox{\hyperlink{classoomph_1_1MeshAsGeomObject_aab712c9f8a51d997c13c00eb1afaf9f4}{oomph\+::\+Mesh\+As\+Geom\+Object}}, \mbox{\hyperlink{classoomph_1_1PseudoBucklingRing_a027211cc7067efa849e605b456cb5462}{oomph\+::\+Pseudo\+Buckling\+Ring}}, \mbox{\hyperlink{classoomph_1_1ImmersedRigidBodyTriangleMeshPolygon_ad1bd014b31d75703384be201ab65e80f}{oomph\+::\+Immersed\+Rigid\+Body\+Triangle\+Mesh\+Polygon}}, and \mbox{\hyperlink{classoomph_1_1ImmersedRigidBodyElement_aca95759d96758c7a4fc81dece7768e9d}{oomph\+::\+Immersed\+Rigid\+Body\+Element}}.
 
 
 
-Definition at line 255 of file geom\+\_\+objects.\+h.
+Definition at line 251 of file geom\+\_\+objects.\+h.
 
 
 
@@ -485,7 +485,7 @@ Set \# of Lagrangian and Eulerian coordinates.
 
 
 
-Definition at line 188 of file geom\+\_\+objects.\+h.
+Definition at line 184 of file geom\+\_\+objects.\+h.
 
 
 
@@ -507,7 +507,7 @@ Access function for pointer to time stepper\+: Null if object is not time-\/depe
 
 
 
-Definition at line 197 of file geom\+\_\+objects.\+h.
+Definition at line 193 of file geom\+\_\+objects.\+h.
 
 
 
@@ -529,7 +529,7 @@ Access function for pointer to time stepper\+: Null if object is not time-\/depe
 
 
 
-Definition at line 201 of file geom\+\_\+objects.\+h.
+Definition at line 197 of file geom\+\_\+objects.\+h.
 
 
 
@@ -550,7 +550,7 @@ Timestepper (used to handle access to geometry at previous timesteps)
 
 
 
-Definition at line 424 of file geom\+\_\+objects.\+h.
+Definition at line 420 of file geom\+\_\+objects.\+h.
 
 
 
@@ -568,7 +568,7 @@ Number of Eulerian coordinates.
 
 
 
-Definition at line 420 of file geom\+\_\+objects.\+h.
+Definition at line 416 of file geom\+\_\+objects.\+h.
 
 
 
@@ -586,7 +586,7 @@ Number of Lagrangian (intrinsic) coordinates.
 
 
 
-Definition at line 417 of file geom\+\_\+objects.\+h.
+Definition at line 413 of file geom\+\_\+objects.\+h.
 
 
 

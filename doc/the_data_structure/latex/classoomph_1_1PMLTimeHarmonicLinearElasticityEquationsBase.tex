@@ -91,7 +91,7 @@ class oomph\+::\+P\+M\+L\+Time\+Harmonic\+Linear\+Elasticity\+Equations\+Base$<$
 
 A base class for elements that solve the equations of time-\/harmonic linear elasticity in Cartesian coordinates. Combines a few generic functions that are shared by \mbox{\hyperlink{classoomph_1_1PMLTimeHarmonicLinearElasticityEquations}{P\+M\+L\+Time\+Harmonic\+Linear\+Elasticity\+Equations}} and P\+M\+L\+Time\+Harmonic\+Linear\+Elasticity\+Equations\+With\+Pressure (Note\+: The latter don\textquotesingle{}t exist yet but will be written as soon as somebody needs them...) 
 
-Definition at line 83 of file pml\+\_\+time\+\_\+harmonic\+\_\+linear\+\_\+elasticity\+\_\+elements.\+h.
+Definition at line 79 of file pml\+\_\+time\+\_\+harmonic\+\_\+linear\+\_\+elasticity\+\_\+elements.\+h.
 
 
 
@@ -110,7 +110,7 @@ Function pointer to function that specifies the body force as a function of the 
 
 
 
-Definition at line 182 of file pml\+\_\+time\+\_\+harmonic\+\_\+linear\+\_\+elasticity\+\_\+elements.\+h.
+Definition at line 178 of file pml\+\_\+time\+\_\+harmonic\+\_\+linear\+\_\+elasticity\+\_\+elements.\+h.
 
 
 
@@ -128,7 +128,7 @@ Constructor\+: Set null pointers for constitutive law and for isotropic growth f
 
 
 
-Definition at line 91 of file pml\+\_\+time\+\_\+harmonic\+\_\+linear\+\_\+elasticity\+\_\+elements.\+h.
+Definition at line 87 of file pml\+\_\+time\+\_\+harmonic\+\_\+linear\+\_\+elasticity\+\_\+elements.\+h.
 
 
 
@@ -150,7 +150,7 @@ Evaluate body force at Eulerian coordinate x (returns zero vector if no body for
 
 
 
-Definition at line 227 of file pml\+\_\+time\+\_\+harmonic\+\_\+linear\+\_\+elasticity\+\_\+elements.\+h.
+Definition at line 223 of file pml\+\_\+time\+\_\+harmonic\+\_\+linear\+\_\+elasticity\+\_\+elements.\+h.
 
 
 
@@ -169,7 +169,7 @@ Access function\+: Pointer to body force function.
 
 
 
-Definition at line 209 of file pml\+\_\+time\+\_\+harmonic\+\_\+linear\+\_\+elasticity\+\_\+elements.\+h.
+Definition at line 205 of file pml\+\_\+time\+\_\+harmonic\+\_\+linear\+\_\+elasticity\+\_\+elements.\+h.
 
 
 
@@ -188,7 +188,7 @@ Access function\+: Pointer to body force function (const version)
 
 
 
-Definition at line 212 of file pml\+\_\+time\+\_\+harmonic\+\_\+linear\+\_\+elasticity\+\_\+elements.\+h.
+Definition at line 208 of file pml\+\_\+time\+\_\+harmonic\+\_\+linear\+\_\+elasticity\+\_\+elements.\+h.
 
 
 
@@ -213,7 +213,7 @@ The factors all default to 1.\+0 if the propagation medium is the physical domai
 
 Calculate the square of the non-\/dimensional wavenumber
 
-Definition at line 324 of file pml\+\_\+time\+\_\+harmonic\+\_\+linear\+\_\+elasticity\+\_\+elements.\+h.
+Definition at line 320 of file pml\+\_\+time\+\_\+harmonic\+\_\+linear\+\_\+elasticity\+\_\+elements.\+h.
 
 
 
@@ -232,7 +232,7 @@ Access function to the entries in the elasticity tensor.
 
 
 
-Definition at line 190 of file pml\+\_\+time\+\_\+harmonic\+\_\+linear\+\_\+elasticity\+\_\+elements.\+h.
+Definition at line 186 of file pml\+\_\+time\+\_\+harmonic\+\_\+linear\+\_\+elasticity\+\_\+elements.\+h.
 
 
 
@@ -251,7 +251,7 @@ Return the pointer to the elasticity\+\_\+tensor.
 
 
 
-Definition at line 186 of file pml\+\_\+time\+\_\+harmonic\+\_\+linear\+\_\+elasticity\+\_\+elements.\+h.
+Definition at line 182 of file pml\+\_\+time\+\_\+harmonic\+\_\+linear\+\_\+elasticity\+\_\+elements.\+h.
 
 
 
@@ -275,7 +275,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1GeneralisedElement_a069f59bfc3
 
 
 
-Definition at line 275 of file pml\+\_\+time\+\_\+harmonic\+\_\+linear\+\_\+elasticity\+\_\+elements.\+h.
+Definition at line 271 of file pml\+\_\+time\+\_\+harmonic\+\_\+linear\+\_\+elasticity\+\_\+elements.\+h.
 
 
 
@@ -294,7 +294,7 @@ Return the strain tensor.
 
 Compute the strain tensor at local coordinate s. Now fill in the entries of the strain tensor
 
-Definition at line 53 of file pml\+\_\+time\+\_\+harmonic\+\_\+linear\+\_\+elasticity\+\_\+elements.\+cc.
+Definition at line 49 of file pml\+\_\+time\+\_\+harmonic\+\_\+linear\+\_\+elasticity\+\_\+elements.\+cc.
 
 
 
@@ -332,7 +332,7 @@ Return FE interpolated displacement u\mbox{[}i\mbox{]} at local coordinate s.
 
 
 
-Definition at line 145 of file pml\+\_\+time\+\_\+harmonic\+\_\+linear\+\_\+elasticity\+\_\+elements.\+h.
+Definition at line 141 of file pml\+\_\+time\+\_\+harmonic\+\_\+linear\+\_\+elasticity\+\_\+elements.\+h.
 
 
 
@@ -351,7 +351,7 @@ Compute vector of FE interpolated displacement u at local coordinate s.
 
 
 
-Definition at line 109 of file pml\+\_\+time\+\_\+harmonic\+\_\+linear\+\_\+elasticity\+\_\+elements.\+h.
+Definition at line 105 of file pml\+\_\+time\+\_\+harmonic\+\_\+linear\+\_\+elasticity\+\_\+elements.\+h.
 
 
 
@@ -374,7 +374,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1GeneralisedElement_a0c6037a870
 
 
 
-Definition at line 264 of file pml\+\_\+time\+\_\+harmonic\+\_\+linear\+\_\+elasticity\+\_\+elements.\+h.
+Definition at line 260 of file pml\+\_\+time\+\_\+harmonic\+\_\+linear\+\_\+elasticity\+\_\+elements.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1PMLTimeHarmonicLinearElasticityEquationsBase_a5c28764330d0d42339c5c5f3044a66bf}\label{classoomph_1_1PMLTimeHarmonicLinearElasticityEquationsBase_a5c28764330d0d42339c5c5f3044a66bf}} 
 \index{oomph::PMLTimeHarmonicLinearElasticityEquationsBase$<$ DIM $>$@{oomph::PMLTimeHarmonicLinearElasticityEquationsBase$<$ DIM $>$}!nu@{nu}}
@@ -389,7 +389,7 @@ Access function to nu in the elasticity tensor.
 
 
 
-Definition at line 197 of file pml\+\_\+time\+\_\+harmonic\+\_\+linear\+\_\+elasticity\+\_\+elements.\+h.
+Definition at line 193 of file pml\+\_\+time\+\_\+harmonic\+\_\+linear\+\_\+elasticity\+\_\+elements.\+h.
 
 
 
@@ -412,7 +412,7 @@ Access function for square of non-\/dim frequency.
 
 
 
-Definition at line 203 of file pml\+\_\+time\+\_\+harmonic\+\_\+linear\+\_\+elasticity\+\_\+elements.\+h.
+Definition at line 199 of file pml\+\_\+time\+\_\+harmonic\+\_\+linear\+\_\+elasticity\+\_\+elements.\+h.
 
 
 
@@ -435,7 +435,7 @@ Access function for square of non-\/dim frequency.
 
 
 
-Definition at line 206 of file pml\+\_\+time\+\_\+harmonic\+\_\+linear\+\_\+elasticity\+\_\+elements.\+h.
+Definition at line 202 of file pml\+\_\+time\+\_\+harmonic\+\_\+linear\+\_\+elasticity\+\_\+elements.\+h.
 
 
 
@@ -454,7 +454,7 @@ Return a pointer to the P\+ML Mapping object.
 
 
 
-Definition at line 390 of file pml\+\_\+time\+\_\+harmonic\+\_\+linear\+\_\+elasticity\+\_\+elements.\+h.
+Definition at line 386 of file pml\+\_\+time\+\_\+harmonic\+\_\+linear\+\_\+elasticity\+\_\+elements.\+h.
 
 
 
@@ -473,7 +473,7 @@ Return a pointer to the P\+ML Mapping object (const version)
 
 
 
-Definition at line 393 of file pml\+\_\+time\+\_\+harmonic\+\_\+linear\+\_\+elasticity\+\_\+elements.\+h.
+Definition at line 389 of file pml\+\_\+time\+\_\+harmonic\+\_\+linear\+\_\+elasticity\+\_\+elements.\+h.
 
 
 
@@ -493,7 +493,7 @@ Return the index at which the i-\/th real or imag unknown displacement component
 
 
 
-Definition at line 103 of file pml\+\_\+time\+\_\+harmonic\+\_\+linear\+\_\+elasticity\+\_\+elements.\+h.
+Definition at line 99 of file pml\+\_\+time\+\_\+harmonic\+\_\+linear\+\_\+elasticity\+\_\+elements.\+h.
 
 
 
@@ -520,7 +520,7 @@ Implements \mbox{\hyperlink{classoomph_1_1PMLElementBase_ad63639f1966cd3191fad69
 
 
 
-Definition at line 251 of file pml\+\_\+time\+\_\+harmonic\+\_\+linear\+\_\+elasticity\+\_\+elements.\+h.
+Definition at line 247 of file pml\+\_\+time\+\_\+harmonic\+\_\+linear\+\_\+elasticity\+\_\+elements.\+h.
 
 
 
@@ -538,7 +538,7 @@ Pointer to body force function.
 
 
 
-Definition at line 408 of file pml\+\_\+time\+\_\+harmonic\+\_\+linear\+\_\+elasticity\+\_\+elements.\+h.
+Definition at line 404 of file pml\+\_\+time\+\_\+harmonic\+\_\+linear\+\_\+elasticity\+\_\+elements.\+h.
 
 
 
@@ -557,7 +557,7 @@ Static default value for square of frequency.
 
 
 
-Definition at line 411 of file pml\+\_\+time\+\_\+harmonic\+\_\+linear\+\_\+elasticity\+\_\+elements.\+h.
+Definition at line 407 of file pml\+\_\+time\+\_\+harmonic\+\_\+linear\+\_\+elasticity\+\_\+elements.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1PMLTimeHarmonicLinearElasticityEquationsBase_a6263e96014839467d26bf0680529bc9b}\label{classoomph_1_1PMLTimeHarmonicLinearElasticityEquationsBase_a6263e96014839467d26bf0680529bc9b}} 
 \index{oomph::PMLTimeHarmonicLinearElasticityEquationsBase$<$ DIM $>$@{oomph::PMLTimeHarmonicLinearElasticityEquationsBase$<$ DIM $>$}!Default\_pml\_mapping@{Default\_pml\_mapping}}
@@ -568,7 +568,7 @@ Definition at line 411 of file pml\+\_\+time\+\_\+harmonic\+\_\+linear\+\_\+elas
 
 Static so that the class doesn\textquotesingle{}t need to instantiate a new default everytime it uses it 
 
-Definition at line 397 of file pml\+\_\+time\+\_\+harmonic\+\_\+linear\+\_\+elasticity\+\_\+elements.\+h.
+Definition at line 393 of file pml\+\_\+time\+\_\+harmonic\+\_\+linear\+\_\+elasticity\+\_\+elements.\+h.
 
 
 
@@ -587,7 +587,7 @@ Pointer to the elasticity tensor.
 
 
 
-Definition at line 402 of file pml\+\_\+time\+\_\+harmonic\+\_\+linear\+\_\+elasticity\+\_\+elements.\+h.
+Definition at line 398 of file pml\+\_\+time\+\_\+harmonic\+\_\+linear\+\_\+elasticity\+\_\+elements.\+h.
 
 
 
@@ -606,7 +606,7 @@ Square of nondim frequency.
 
 
 
-Definition at line 405 of file pml\+\_\+time\+\_\+harmonic\+\_\+linear\+\_\+elasticity\+\_\+elements.\+h.
+Definition at line 401 of file pml\+\_\+time\+\_\+harmonic\+\_\+linear\+\_\+elasticity\+\_\+elements.\+h.
 
 
 
@@ -625,7 +625,7 @@ Pointer to class which holds the pml mapping function, also known as gamma.
 
 
 
-Definition at line 414 of file pml\+\_\+time\+\_\+harmonic\+\_\+linear\+\_\+elasticity\+\_\+elements.\+h.
+Definition at line 410 of file pml\+\_\+time\+\_\+harmonic\+\_\+linear\+\_\+elasticity\+\_\+elements.\+h.
 
 
 

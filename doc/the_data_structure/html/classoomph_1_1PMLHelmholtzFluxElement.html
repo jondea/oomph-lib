@@ -1283,7 +1283,7 @@ class oomph::PMLHelmholtzFluxElement&lt; ELEMENT &gt;</h3>
 
 <p>A class for elements that allow the imposition of an applied flux on the boundaries of PMLHelmholtz elements. The element geometry is obtained from the FaceGeometry&lt;ELEMENT&gt; policy class. </p>
 
-<p class="definition">Definition at line <a class="el" href="pml__helmholtz__flux__elements_8h_source.html#l00580">580</a> of file <a class="el" href="pml__helmholtz__flux__elements_8h_source.html">pml_helmholtz_flux_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pml__helmholtz__flux__elements_8h_source.html#l00576">576</a> of file <a class="el" href="pml__helmholtz__flux__elements_8h_source.html">pml_helmholtz_flux_elements.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="af376593418510a6fcbc23cc13f3d6b22"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af376593418510a6fcbc23cc13f3d6b22">&#9670;&nbsp;</a></span>PMLHelmholtzPrescribedFluxFctPt</h2>
@@ -1301,7 +1301,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Function pointer to the prescribed-flux function fct(x,f(x)) &ndash; x is a <a class="el" href="classoomph_1_1Vector.html">Vector</a> and the flux is a complex. NOTE THAT f(x) represents c^2 du/dn! </p>
 
-<p class="definition">Definition at line <a class="el" href="pml__helmholtz__flux__elements_8h_source.html#l00590">590</a> of file <a class="el" href="pml__helmholtz__flux__elements_8h_source.html">pml_helmholtz_flux_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pml__helmholtz__flux__elements_8h_source.html#l00586">586</a> of file <a class="el" href="pml__helmholtz__flux__elements_8h_source.html">pml_helmholtz_flux_elements.h</a>.</p>
 
 </div>
 </div>
@@ -1337,9 +1337,9 @@ template&lt;class ELEMENT &gt; </div>
 <p>Constructor, takes the pointer to the "bulk" element and the index of the face to which the element is attached. </p>
 <p>Constructor, takes the pointer to the "bulk" element, the index of the fixed local coordinate and its value represented by an integer (+/- 1), indicating that the face is located at the max. or min. value of the "fixed" local coordinate in the bulk element. </p>
 
-<p class="definition">Definition at line <a class="el" href="pml__helmholtz__flux__elements_8h_source.html#l00835">835</a> of file <a class="el" href="pml__helmholtz__flux__elements_8h_source.html">pml_helmholtz_flux_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pml__helmholtz__flux__elements_8h_source.html#l00831">831</a> of file <a class="el" href="pml__helmholtz__flux__elements_8h_source.html">pml_helmholtz_flux_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8cc_source.html#l05005">oomph::FiniteElement::build_face_element()</a>, <a class="el" href="pml__helmholtz__flux__elements_8h_source.html#l00815">oomph::PMLHelmholtzFluxElement&lt; ELEMENT &gt;::Dim</a>, <a class="el" href="elements_8h_source.html#l04501">oomph::FaceElement::face_index()</a>, <a class="el" href="pml__helmholtz__flux__elements_8h_source.html#l00812">oomph::PMLHelmholtzFluxElement&lt; ELEMENT &gt;::Flux_fct_pt</a>, <a class="el" href="elements_8h_source.html#l02373">oomph::FiniteElement::has_hanging_nodes()</a>, <a class="el" href="nodes_8h_source.html#l00991">oomph::Node::ndim()</a>, <a class="el" href="elements_8h_source.html#l02126">oomph::FiniteElement::node_pt()</a>, <a class="el" href="oomph__definitions_8cc_source.html#l00293">oomph::Global_string_for_annotation::string()</a>, <a class="el" href="pml__helmholtz__elements_8h_source.html#l00104">oomph::PMLHelmholtzEquations&lt; DIM &gt;::u_index_helmholtz()</a>, and <a class="el" href="pml__helmholtz__flux__elements_8h_source.html#l00800">oomph::PMLHelmholtzFluxElement&lt; ELEMENT &gt;::U_index_helmholtz</a>.</p>
+<p class="reference">References <a class="el" href="elements_8cc_source.html#l05001">oomph::FiniteElement::build_face_element()</a>, <a class="el" href="pml__helmholtz__flux__elements_8h_source.html#l00811">oomph::PMLHelmholtzFluxElement&lt; ELEMENT &gt;::Dim</a>, <a class="el" href="elements_8h_source.html#l04497">oomph::FaceElement::face_index()</a>, <a class="el" href="pml__helmholtz__flux__elements_8h_source.html#l00808">oomph::PMLHelmholtzFluxElement&lt; ELEMENT &gt;::Flux_fct_pt</a>, <a class="el" href="elements_8h_source.html#l02369">oomph::FiniteElement::has_hanging_nodes()</a>, <a class="el" href="nodes_8h_source.html#l00987">oomph::Node::ndim()</a>, <a class="el" href="elements_8h_source.html#l02122">oomph::FiniteElement::node_pt()</a>, <a class="el" href="oomph__definitions_8cc_source.html#l00289">oomph::Global_string_for_annotation::string()</a>, <a class="el" href="pml__helmholtz__elements_8h_source.html#l00100">oomph::PMLHelmholtzEquations&lt; DIM &gt;::u_index_helmholtz()</a>, and <a class="el" href="pml__helmholtz__flux__elements_8h_source.html#l00796">oomph::PMLHelmholtzFluxElement&lt; ELEMENT &gt;::U_index_helmholtz</a>.</p>
 
 </div>
 </div>
@@ -1370,7 +1370,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Broken empty constructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="pml__helmholtz__flux__elements_8h_source.html#l00598">598</a> of file <a class="el" href="pml__helmholtz__flux__elements_8h_source.html">pml_helmholtz_flux_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pml__helmholtz__flux__elements_8h_source.html#l00594">594</a> of file <a class="el" href="pml__helmholtz__flux__elements_8h_source.html">pml_helmholtz_flux_elements.h</a>.</p>
 
 </div>
 </div>
@@ -1402,9 +1402,9 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Broken copy constructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="pml__helmholtz__flux__elements_8h_source.html#l00607">607</a> of file <a class="el" href="pml__helmholtz__flux__elements_8h_source.html">pml_helmholtz_flux_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pml__helmholtz__flux__elements_8h_source.html#l00603">603</a> of file <a class="el" href="pml__helmholtz__flux__elements_8h_source.html">pml_helmholtz_flux_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="oomph__utilities_8cc_source.html#l00218">oomph::BrokenCopy::broken_copy()</a>.</p>
+<p class="reference">References <a class="el" href="oomph__utilities_8cc_source.html#l00214">oomph::BrokenCopy::broken_copy()</a>.</p>
 
 </div>
 </div>
@@ -1449,9 +1449,9 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1FiniteElement.html#a0ae7af222af38a0d53bf283dc85bdfea">oomph::FiniteElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="pml__helmholtz__flux__elements_8h_source.html#l00635">635</a> of file <a class="el" href="pml__helmholtz__flux__elements_8h_source.html">pml_helmholtz_flux_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pml__helmholtz__flux__elements_8h_source.html#l00631">631</a> of file <a class="el" href="pml__helmholtz__flux__elements_8h_source.html">pml_helmholtz_flux_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="pml__helmholtz__flux__elements_8h_source.html#l00990">oomph::PMLHelmholtzFluxElement&lt; ELEMENT &gt;::fill_in_generic_residual_contribution_helmholtz_flux()</a>, and <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>.</p>
+<p class="reference">References <a class="el" href="pml__helmholtz__flux__elements_8h_source.html#l00986">oomph::PMLHelmholtzFluxElement&lt; ELEMENT &gt;::fill_in_generic_residual_contribution_helmholtz_flux()</a>, and <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>.</p>
 
 </div>
 </div>
@@ -1485,9 +1485,9 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1GeneralisedElement.html#a310c97f515e8504a48179c0e72c550d7">oomph::GeneralisedElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="pml__helmholtz__flux__elements_8h_source.html#l00624">624</a> of file <a class="el" href="pml__helmholtz__flux__elements_8h_source.html">pml_helmholtz_flux_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pml__helmholtz__flux__elements_8h_source.html#l00620">620</a> of file <a class="el" href="pml__helmholtz__flux__elements_8h_source.html">pml_helmholtz_flux_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l00228">oomph::GeneralisedElement::Dummy_matrix</a>, <a class="el" href="pml__helmholtz__flux__elements_8h_source.html#l00990">oomph::PMLHelmholtzFluxElement&lt; ELEMENT &gt;::fill_in_generic_residual_contribution_helmholtz_flux()</a>, and <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l00224">oomph::GeneralisedElement::Dummy_matrix</a>, <a class="el" href="pml__helmholtz__flux__elements_8h_source.html#l00986">oomph::PMLHelmholtzFluxElement&lt; ELEMENT &gt;::fill_in_generic_residual_contribution_helmholtz_flux()</a>, and <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>.</p>
 
 </div>
 </div>
@@ -1536,11 +1536,11 @@ template&lt;class ELEMENT &gt; </div>
 <p>Add the element's contribution to its residual vector. flag=1(or 0): do (or don't) compute the contribution to the Jacobian as well. </p>
 <p>Compute the element's residual vector and the (zero) Jacobian matrix. </p>
 
-<p class="definition">Definition at line <a class="el" href="pml__helmholtz__flux__elements_8h_source.html#l00990">990</a> of file <a class="el" href="pml__helmholtz__flux__elements_8h_source.html">pml_helmholtz_flux_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pml__helmholtz__flux__elements_8h_source.html#l00986">986</a> of file <a class="el" href="pml__helmholtz__flux__elements_8h_source.html">pml_helmholtz_flux_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="multi__domain_8cc_source.html#l00066">oomph::Multi_domain_functions::Dim</a>, <a class="el" href="gen__axisym__advection__diffusion__elements_8h_source.html#l00377">oomph::get_flux()</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>, <a class="el" href="cfortran_8h_source.html#l00572">s</a>, and <a class="el" href="quadtree_8h_source.html#l00060">oomph::QuadTreeNames::W</a>.</p>
+<p class="reference">References <a class="el" href="multi__domain_8cc_source.html#l00062">oomph::Multi_domain_functions::Dim</a>, <a class="el" href="gen__axisym__advection__diffusion__elements_8h_source.html#l00373">oomph::get_flux()</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>, <a class="el" href="cfortran_8h_source.html#l00568">s</a>, and <a class="el" href="quadtree_8h_source.html#l00056">oomph::QuadTreeNames::W</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pml__helmholtz__flux__elements_8h_source.html#l00635">oomph::PMLHelmholtzFluxElement&lt; ELEMENT &gt;::fill_in_contribution_to_jacobian()</a>, and <a class="el" href="pml__helmholtz__flux__elements_8h_source.html#l00624">oomph::PMLHelmholtzFluxElement&lt; ELEMENT &gt;::fill_in_contribution_to_residuals()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pml__helmholtz__flux__elements_8h_source.html#l00631">oomph::PMLHelmholtzFluxElement&lt; ELEMENT &gt;::fill_in_contribution_to_jacobian()</a>, and <a class="el" href="pml__helmholtz__flux__elements_8h_source.html#l00620">oomph::PMLHelmholtzFluxElement&lt; ELEMENT &gt;::fill_in_contribution_to_residuals()</a>.</p>
 
 </div>
 </div>
@@ -1572,9 +1572,9 @@ template&lt;class ELEMENT &gt; </div>
 <p>Broken assignment operator. </p>
 <p>Access function for the prescribed-flux function pointer </p>
 
-<p class="definition">Definition at line <a class="el" href="pml__helmholtz__flux__elements_8h_source.html#l00620">620</a> of file <a class="el" href="pml__helmholtz__flux__elements_8h_source.html">pml_helmholtz_flux_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pml__helmholtz__flux__elements_8h_source.html#l00616">616</a> of file <a class="el" href="pml__helmholtz__flux__elements_8h_source.html">pml_helmholtz_flux_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="pml__helmholtz__flux__elements_8h_source.html#l00812">oomph::PMLHelmholtzFluxElement&lt; ELEMENT &gt;::Flux_fct_pt</a>.</p>
+<p class="reference">References <a class="el" href="pml__helmholtz__flux__elements_8h_source.html#l00808">oomph::PMLHelmholtzFluxElement&lt; ELEMENT &gt;::Flux_fct_pt</a>.</p>
 
 </div>
 </div>
@@ -1608,9 +1608,9 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1GeneralisedElement.html#a069f59bfc3e607a5bebba52c6314d777">oomph::GeneralisedElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="pml__helmholtz__flux__elements_8h_source.html#l00693">693</a> of file <a class="el" href="pml__helmholtz__flux__elements_8h_source.html">pml_helmholtz_flux_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pml__helmholtz__flux__elements_8h_source.html#l00689">689</a> of file <a class="el" href="pml__helmholtz__flux__elements_8h_source.html">pml_helmholtz_flux_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l00709">oomph::GeneralisedElement::eqn_number()</a>, <a class="el" href="elements_8h_source.html#l00731">oomph::GeneralisedElement::local_eqn_number()</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, <a class="el" href="elements_8h_source.html#l02163">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l01403">oomph::FiniteElement::nodal_local_eqn()</a>, and <a class="el" href="pml__helmholtz__flux__elements_8h_source.html#l00800">oomph::PMLHelmholtzFluxElement&lt; ELEMENT &gt;::U_index_helmholtz</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l00705">oomph::GeneralisedElement::eqn_number()</a>, <a class="el" href="elements_8h_source.html#l00727">oomph::GeneralisedElement::local_eqn_number()</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, <a class="el" href="elements_8h_source.html#l02159">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l01399">oomph::FiniteElement::nodal_local_eqn()</a>, and <a class="el" href="pml__helmholtz__flux__elements_8h_source.html#l00796">oomph::PMLHelmholtzFluxElement&lt; ELEMENT &gt;::U_index_helmholtz</a>.</p>
 
 </div>
 </div>
@@ -1651,9 +1651,9 @@ template&lt;class ELEMENT &gt; </div>
 </div><div class="memdoc">
 <p>Function to calculate the prescribed flux at a given spatial position </p>
 
-<p class="definition">Definition at line <a class="el" href="pml__helmholtz__flux__elements_8h_source.html#l00783">783</a> of file <a class="el" href="pml__helmholtz__flux__elements_8h_source.html">pml_helmholtz_flux_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pml__helmholtz__flux__elements_8h_source.html#l00779">779</a> of file <a class="el" href="pml__helmholtz__flux__elements_8h_source.html">pml_helmholtz_flux_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="pml__helmholtz__flux__elements_8h_source.html#l00812">oomph::PMLHelmholtzFluxElement&lt; ELEMENT &gt;::Flux_fct_pt</a>.</p>
+<p class="reference">References <a class="el" href="pml__helmholtz__flux__elements_8h_source.html#l00808">oomph::PMLHelmholtzFluxElement&lt; ELEMENT &gt;::Flux_fct_pt</a>.</p>
 
 </div>
 </div>
@@ -1686,7 +1686,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1GeneralisedElement.html#a0c6037a870597b35dcf1c780710b9a56">oomph::GeneralisedElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="pml__helmholtz__flux__elements_8h_source.html#l00682">682</a> of file <a class="el" href="pml__helmholtz__flux__elements_8h_source.html">pml_helmholtz_flux_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pml__helmholtz__flux__elements_8h_source.html#l00678">678</a> of file <a class="el" href="pml__helmholtz__flux__elements_8h_source.html">pml_helmholtz_flux_elements.h</a>.</p>
 
 </div>
 </div>
@@ -1719,9 +1719,9 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1FiniteElement.html#a72cddd09f8ddbee1a20a1ff404c6943e">oomph::FiniteElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="pml__helmholtz__flux__elements_8h_source.html#l00665">665</a> of file <a class="el" href="pml__helmholtz__flux__elements_8h_source.html">pml_helmholtz_flux_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pml__helmholtz__flux__elements_8h_source.html#l00661">661</a> of file <a class="el" href="pml__helmholtz__flux__elements_8h_source.html">pml_helmholtz_flux_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l02916">oomph::FiniteElement::output()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l02912">oomph::FiniteElement::output()</a>.</p>
 
 </div>
 </div>
@@ -1765,9 +1765,9 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1FiniteElement.html#adfaee690bb0608f03320eeb9d110d48c">oomph::FiniteElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="pml__helmholtz__flux__elements_8h_source.html#l00670">670</a> of file <a class="el" href="pml__helmholtz__flux__elements_8h_source.html">pml_helmholtz_flux_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pml__helmholtz__flux__elements_8h_source.html#l00666">666</a> of file <a class="el" href="pml__helmholtz__flux__elements_8h_source.html">pml_helmholtz_flux_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l02916">oomph::FiniteElement::output()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l02912">oomph::FiniteElement::output()</a>.</p>
 
 </div>
 </div>
@@ -1800,9 +1800,9 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1FiniteElement.html#a2ad98a3d2ef4999f1bef62c0ff13f2a7">oomph::FiniteElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="pml__helmholtz__flux__elements_8h_source.html#l00655">655</a> of file <a class="el" href="pml__helmholtz__flux__elements_8h_source.html">pml_helmholtz_flux_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pml__helmholtz__flux__elements_8h_source.html#l00651">651</a> of file <a class="el" href="pml__helmholtz__flux__elements_8h_source.html">pml_helmholtz_flux_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l02916">oomph::FiniteElement::output()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l02912">oomph::FiniteElement::output()</a>.</p>
 
 </div>
 </div>
@@ -1846,9 +1846,9 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1FiniteElement.html#afa9d9b2670f999b43e6679c9dd28c457">oomph::FiniteElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="pml__helmholtz__flux__elements_8h_source.html#l00659">659</a> of file <a class="el" href="pml__helmholtz__flux__elements_8h_source.html">pml_helmholtz_flux_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pml__helmholtz__flux__elements_8h_source.html#l00655">655</a> of file <a class="el" href="pml__helmholtz__flux__elements_8h_source.html">pml_helmholtz_flux_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l02916">oomph::FiniteElement::output()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l02912">oomph::FiniteElement::output()</a>.</p>
 
 </div>
 </div>
@@ -1896,9 +1896,9 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Function to compute the shape and test functions and to return the Jacobian of mapping between local and global (Eulerian) coordinates. </p>
 
-<p class="definition">Definition at line <a class="el" href="pml__helmholtz__flux__elements_8h_source.html#l00743">743</a> of file <a class="el" href="pml__helmholtz__flux__elements_8h_source.html">pml_helmholtz_flux_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pml__helmholtz__flux__elements_8h_source.html#l00739">739</a> of file <a class="el" href="pml__helmholtz__flux__elements_8h_source.html">pml_helmholtz_flux_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="elements_8cc_source.html#l05116">oomph::FaceElement::J_eulerian()</a>, <a class="el" href="elements_8h_source.html#l02163">oomph::FiniteElement::nnode()</a>, <a class="el" href="cfortran_8h_source.html#l00572">s</a>, and <a class="el" href="classoomph_1_1FiniteElement.html#a58a25b6859ddd43b7bfe64a19fee5023">oomph::FiniteElement::shape()</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="elements_8cc_source.html#l05112">oomph::FaceElement::J_eulerian()</a>, <a class="el" href="elements_8h_source.html#l02159">oomph::FiniteElement::nnode()</a>, <a class="el" href="cfortran_8h_source.html#l00568">s</a>, and <a class="el" href="classoomph_1_1FiniteElement.html#a58a25b6859ddd43b7bfe64a19fee5023">oomph::FiniteElement::shape()</a>.</p>
 
 </div>
 </div>
@@ -1946,9 +1946,9 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Function to compute the shape and test functions and to return the Jacobian of mapping between local and global (Eulerian) coordinates. </p>
 
-<p class="definition">Definition at line <a class="el" href="pml__helmholtz__flux__elements_8h_source.html#l00763">763</a> of file <a class="el" href="pml__helmholtz__flux__elements_8h_source.html">pml_helmholtz_flux_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pml__helmholtz__flux__elements_8h_source.html#l00759">759</a> of file <a class="el" href="pml__helmholtz__flux__elements_8h_source.html">pml_helmholtz_flux_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="elements_8cc_source.html#l05204">oomph::FaceElement::J_eulerian_at_knot()</a>, <a class="el" href="elements_8h_source.html#l02163">oomph::FiniteElement::nnode()</a>, and <a class="el" href="elements_8cc_source.html#l03160">oomph::FiniteElement::shape_at_knot()</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="elements_8cc_source.html#l05200">oomph::FaceElement::J_eulerian_at_knot()</a>, <a class="el" href="elements_8h_source.html#l02159">oomph::FiniteElement::nnode()</a>, and <a class="el" href="elements_8cc_source.html#l03156">oomph::FiniteElement::shape_at_knot()</a>.</p>
 
 </div>
 </div>
@@ -1979,9 +1979,9 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Return the index at which the unknown value is stored. </p>
 
-<p class="definition">Definition at line <a class="el" href="pml__helmholtz__flux__elements_8h_source.html#l00676">676</a> of file <a class="el" href="pml__helmholtz__flux__elements_8h_source.html">pml_helmholtz_flux_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pml__helmholtz__flux__elements_8h_source.html#l00672">672</a> of file <a class="el" href="pml__helmholtz__flux__elements_8h_source.html">pml_helmholtz_flux_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="pml__helmholtz__flux__elements_8h_source.html#l00800">oomph::PMLHelmholtzFluxElement&lt; ELEMENT &gt;::U_index_helmholtz</a>.</p>
+<p class="reference">References <a class="el" href="pml__helmholtz__flux__elements_8h_source.html#l00796">oomph::PMLHelmholtzFluxElement&lt; ELEMENT &gt;::U_index_helmholtz</a>.</p>
 
 </div>
 </div>
@@ -2031,9 +2031,9 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1FaceElement.html#a58c9f93705c7741f76c8487d152e68a6">oomph::FaceElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="pml__helmholtz__flux__elements_8h_source.html#l00648">648</a> of file <a class="el" href="pml__helmholtz__flux__elements_8h_source.html">pml_helmholtz_flux_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pml__helmholtz__flux__elements_8h_source.html#l00644">644</a> of file <a class="el" href="pml__helmholtz__flux__elements_8h_source.html">pml_helmholtz_flux_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, and <a class="el" href="elements_8h_source.html#l04381">oomph::FaceElement::zeta_nodal()</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, and <a class="el" href="elements_8h_source.html#l04377">oomph::FaceElement::zeta_nodal()</a>.</p>
 
 </div>
 </div>
@@ -2062,9 +2062,9 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>The spatial dimension of the problem. </p>
 
-<p class="definition">Definition at line <a class="el" href="pml__helmholtz__flux__elements_8h_source.html#l00815">815</a> of file <a class="el" href="pml__helmholtz__flux__elements_8h_source.html">pml_helmholtz_flux_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pml__helmholtz__flux__elements_8h_source.html#l00811">811</a> of file <a class="el" href="pml__helmholtz__flux__elements_8h_source.html">pml_helmholtz_flux_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pml__helmholtz__flux__elements_8h_source.html#l00835">oomph::PMLHelmholtzFluxElement&lt; ELEMENT &gt;::PMLHelmholtzFluxElement()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pml__helmholtz__flux__elements_8h_source.html#l00831">oomph::PMLHelmholtzFluxElement&lt; ELEMENT &gt;::PMLHelmholtzFluxElement()</a>.</p>
 
 </div>
 </div>
@@ -2092,9 +2092,9 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Function pointer to the (global) prescribed-flux function. </p>
 
-<p class="definition">Definition at line <a class="el" href="pml__helmholtz__flux__elements_8h_source.html#l00812">812</a> of file <a class="el" href="pml__helmholtz__flux__elements_8h_source.html">pml_helmholtz_flux_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pml__helmholtz__flux__elements_8h_source.html#l00808">808</a> of file <a class="el" href="pml__helmholtz__flux__elements_8h_source.html">pml_helmholtz_flux_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pml__helmholtz__flux__elements_8h_source.html#l00620">oomph::PMLHelmholtzFluxElement&lt; ELEMENT &gt;::flux_fct_pt()</a>, <a class="el" href="pml__helmholtz__flux__elements_8h_source.html#l00783">oomph::PMLHelmholtzFluxElement&lt; ELEMENT &gt;::get_flux()</a>, and <a class="el" href="pml__helmholtz__flux__elements_8h_source.html#l00835">oomph::PMLHelmholtzFluxElement&lt; ELEMENT &gt;::PMLHelmholtzFluxElement()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pml__helmholtz__flux__elements_8h_source.html#l00616">oomph::PMLHelmholtzFluxElement&lt; ELEMENT &gt;::flux_fct_pt()</a>, <a class="el" href="pml__helmholtz__flux__elements_8h_source.html#l00779">oomph::PMLHelmholtzFluxElement&lt; ELEMENT &gt;::get_flux()</a>, and <a class="el" href="pml__helmholtz__flux__elements_8h_source.html#l00831">oomph::PMLHelmholtzFluxElement&lt; ELEMENT &gt;::PMLHelmholtzFluxElement()</a>.</p>
 
 </div>
 </div>
@@ -2122,9 +2122,9 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>The index at which the real and imag part of the unknown is stored at the nodes. </p>
 
-<p class="definition">Definition at line <a class="el" href="pml__helmholtz__flux__elements_8h_source.html#l00800">800</a> of file <a class="el" href="pml__helmholtz__flux__elements_8h_source.html">pml_helmholtz_flux_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pml__helmholtz__flux__elements_8h_source.html#l00796">796</a> of file <a class="el" href="pml__helmholtz__flux__elements_8h_source.html">pml_helmholtz_flux_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pml__helmholtz__flux__elements_8h_source.html#l00693">oomph::PMLHelmholtzFluxElement&lt; ELEMENT &gt;::get_dof_numbers_for_unknowns()</a>, <a class="el" href="pml__helmholtz__flux__elements_8h_source.html#l00835">oomph::PMLHelmholtzFluxElement&lt; ELEMENT &gt;::PMLHelmholtzFluxElement()</a>, and <a class="el" href="pml__helmholtz__flux__elements_8h_source.html#l00676">oomph::PMLHelmholtzFluxElement&lt; ELEMENT &gt;::u_index_helmholtz()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pml__helmholtz__flux__elements_8h_source.html#l00689">oomph::PMLHelmholtzFluxElement&lt; ELEMENT &gt;::get_dof_numbers_for_unknowns()</a>, <a class="el" href="pml__helmholtz__flux__elements_8h_source.html#l00831">oomph::PMLHelmholtzFluxElement&lt; ELEMENT &gt;::PMLHelmholtzFluxElement()</a>, and <a class="el" href="pml__helmholtz__flux__elements_8h_source.html#l00672">oomph::PMLHelmholtzFluxElement&lt; ELEMENT &gt;::u_index_helmholtz()</a>.</p>
 
 </div>
 </div>
@@ -2159,7 +2159,7 @@ template&lt;class ELEMENT &gt; </div>
     <footer>
       <div class="container">
         <div class="text-muted" style="float:right;">Generated by <a href="http://www.doxygen.org/index.html">
-          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Tue Jul 6 2021 22:58:07
+          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Fri Jul 9 2021 20:53:10
         </div>
       </div>
     </footer>

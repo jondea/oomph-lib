@@ -869,7 +869,7 @@ class oomph::BackwardStepQuadMesh&lt; ELEMENT &gt;</h3>
 
 <p>Backward step mesh. </p>
 
-<p class="definition">Definition at line <a class="el" href="backward__step__mesh_8template_8h_source.html#l00051">51</a> of file <a class="el" href="backward__step__mesh_8template_8h_source.html">backward_step_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="backward__step__mesh_8template_8h_source.html#l00047">47</a> of file <a class="el" href="backward__step__mesh_8template_8h_source.html">backward_step_mesh.template.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae8374ae7d3646c00fec4fc9c2d604cf8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae8374ae7d3646c00fec4fc9c2d604cf8">&#9670;&nbsp;</a></span>BackwardStepQuadMesh()</h2>
@@ -939,9 +939,9 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Pass overall number of elements in the horizontal and vertical directions, nx and ny, and the corresponding dimensions, lx and ly. nx_cut_out and ny_cut_out elements are cut out from the lower right corner to create the (reversed) backward step geometry. Timestepper defaults to <a class="el" href="classoomph_1_1Steady.html">Steady</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="backward__step__mesh_8template_8h_source.html#l00063">63</a> of file <a class="el" href="backward__step__mesh_8template_8h_source.html">backward_step_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="backward__step__mesh_8template_8h_source.html#l00059">59</a> of file <a class="el" href="backward__step__mesh_8template_8h_source.html">backward_step_mesh.template.h</a>.</p>
 
-<p class="reference">References <a class="el" href="backward__step__mesh_8template_8cc_source.html#l00052">oomph::BackwardStepQuadMesh&lt; ELEMENT &gt;::build_mesh()</a>, <a class="el" href="rectangular__quadmesh_8template_8h_source.html#l00186">oomph::RectangularQuadMesh&lt; ELEMENT &gt;::nx()</a>, and <a class="el" href="rectangular__quadmesh_8template_8h_source.html#l00193">oomph::RectangularQuadMesh&lt; ELEMENT &gt;::ny()</a>.</p>
+<p class="reference">References <a class="el" href="backward__step__mesh_8template_8cc_source.html#l00048">oomph::BackwardStepQuadMesh&lt; ELEMENT &gt;::build_mesh()</a>, <a class="el" href="rectangular__quadmesh_8template_8h_source.html#l00182">oomph::RectangularQuadMesh&lt; ELEMENT &gt;::nx()</a>, and <a class="el" href="rectangular__quadmesh_8template_8h_source.html#l00189">oomph::RectangularQuadMesh&lt; ELEMENT &gt;::ny()</a>.</p>
 
 </div>
 </div>
@@ -972,7 +972,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Destructor: Empty. </p>
 
-<p class="definition">Definition at line <a class="el" href="backward__step__mesh_8template_8h_source.html#l00078">78</a> of file <a class="el" href="backward__step__mesh_8template_8h_source.html">backward_step_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="backward__step__mesh_8template_8h_source.html#l00074">74</a> of file <a class="el" href="backward__step__mesh_8template_8h_source.html">backward_step_mesh.template.h</a>.</p>
 
 </div>
 </div>
@@ -1040,11 +1040,11 @@ template&lt;class ELEMENT &gt; </div>
 <p>Actual build function. </p>
 <p>Actual build function. Pass overall number of elements in the horizontal and vertical directions, nx and ny, and the corresponding dimensions, lx and ly. nx_cut_out and ny_cut_out elements are cut out from the lower right corner to create the (reversed) backward step geometry. Timestepper defaults to <a class="el" href="classoomph_1_1Steady.html">Steady</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="backward__step__mesh_8template_8cc_source.html#l00052">52</a> of file <a class="el" href="backward__step__mesh_8template_8cc_source.html">backward_step_mesh.template.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="backward__step__mesh_8template_8cc_source.html#l00048">48</a> of file <a class="el" href="backward__step__mesh_8template_8cc_source.html">backward_step_mesh.template.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="the__data__structure_8txt_source.html#l00201">boundaries</a>, <a class="el" href="cfortran_8h_source.html#l00575">e</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="nodes_8h_source.html#l01289">oomph::Node::is_on_boundary()</a>, <a class="el" href="elements_8h_source.html#l02163">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l02168">oomph::FiniteElement::nnode_1d()</a>, and <a class="el" href="elements_8h_source.html#l02126">oomph::FiniteElement::node_pt()</a>.</p>
+<p class="reference">References <a class="el" href="the__data__structure_8txt_source.html#l00201">boundaries</a>, <a class="el" href="cfortran_8h_source.html#l00571">e</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="nodes_8h_source.html#l01285">oomph::Node::is_on_boundary()</a>, <a class="el" href="elements_8h_source.html#l02159">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l02164">oomph::FiniteElement::nnode_1d()</a>, and <a class="el" href="elements_8h_source.html#l02122">oomph::FiniteElement::node_pt()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="backward__step__mesh_8template_8h_source.html#l00063">oomph::BackwardStepQuadMesh&lt; ELEMENT &gt;::BackwardStepQuadMesh()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="backward__step__mesh_8template_8h_source.html#l00059">oomph::BackwardStepQuadMesh&lt; ELEMENT &gt;::BackwardStepQuadMesh()</a>.</p>
 
 </div>
 </div>
@@ -1080,7 +1080,7 @@ template&lt;class ELEMENT &gt; </div>
     <footer>
       <div class="container">
         <div class="text-muted" style="float:right;">Generated by <a href="http://www.doxygen.org/index.html">
-          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Tue Jul 6 2021 22:55:46
+          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Fri Jul 9 2021 20:51:04
         </div>
       </div>
     </footer>

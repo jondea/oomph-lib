@@ -201,7 +201,7 @@ For general usage, an underlying geometric object must passed to the constructor
 
 If added to a mesh in the \mbox{\hyperlink{classoomph_1_1Problem}{Problem}} (in its incarnation as a \mbox{\hyperlink{classoomph_1_1GeneralisedElement}{Generalised\+Element}}) the displacement/rotation of the body is computed in response to (i) user-\/specifiable applied forces and a torque and (ii) the net drag (and associated torque) from a mesh of elements that can exert a drag onto the body (typically Navier-\/\+Stokes Face\+Elements that apply a viscous drag to an immersed body, represented by the body.) 
 
-Definition at line 101 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
+Definition at line 97 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
 
 
 
@@ -218,7 +218,7 @@ Function pointer to function that specifies external force.
 
 
 
-Definition at line 108 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
+Definition at line 104 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1ImmersedRigidBodyElement_a455638a1d0e9547290d835513d00c40e}\label{classoomph_1_1ImmersedRigidBodyElement_a455638a1d0e9547290d835513d00c40e}} 
 \index{oomph::ImmersedRigidBodyElement@{oomph::ImmersedRigidBodyElement}!ExternalTorqueFctPt@{ExternalTorqueFctPt}}
@@ -232,7 +232,7 @@ Function pointer to function that specifies external torque.
 
 
 
-Definition at line 113 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
+Definition at line 109 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
 
 
 
@@ -249,7 +249,7 @@ Default constructor that intialises everything to zero. This is expected to be c
 
 
 
-Definition at line 122 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
+Definition at line 118 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
 
 
 
@@ -267,7 +267,7 @@ Constructor that takes an underlying geometric object\+: and timestepper.
 
 
 
-Definition at line 142 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
+Definition at line 138 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
 
 
 
@@ -285,7 +285,7 @@ Destuctor\+: Cleanup if required.
 
 
 
-Definition at line 200 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
+Definition at line 196 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
 
 
 
@@ -306,7 +306,7 @@ Helper function to adjust the position in response to changes in position and an
 
 
 
-Definition at line 417 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
+Definition at line 413 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
 
 
 
@@ -328,7 +328,7 @@ Pointer to \mbox{\hyperlink{classoomph_1_1Data}{Data}} for centre of gravity dis
 
 
 
-Definition at line 219 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
+Definition at line 215 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
 
 
 
@@ -346,7 +346,7 @@ Return the equation number associated with the i-\/th centre of gravity displacm
 
 
 
-Definition at line 457 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
+Definition at line 453 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
 
 
 
@@ -368,7 +368,7 @@ Get current centre of gravity.
 
 
 
-Definition at line 235 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
+Definition at line 231 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
 
 
 
@@ -386,7 +386,7 @@ rotation of centre of mass
 
 
 
-Definition at line 231 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
+Definition at line 227 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
 
 
 
@@ -404,7 +404,7 @@ x-\/displacement of centre of mass
 
 
 
-Definition at line 223 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
+Definition at line 219 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
 
 
 
@@ -422,7 +422,7 @@ y-\/displacement of centre of mass
 
 
 
-Definition at line 227 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
+Definition at line 223 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
 
 
 
@@ -440,7 +440,7 @@ Delete the storage for the external data formed from hijacked data.
 
 
 
-Definition at line 482 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
+Definition at line 478 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
 
 
 
@@ -462,7 +462,7 @@ Access function for the the density ratio.
 
 
 
-Definition at line 410 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
+Definition at line 406 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
 
 
 
@@ -484,7 +484,7 @@ Access function for the pointer to the density ratio.
 
 
 
-Definition at line 407 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
+Definition at line 403 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
 
 
 
@@ -506,7 +506,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1GeomObject_aa46469e491d25eda8d
 
 
 
-Definition at line 50 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+cc.
+Definition at line 46 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+cc.
 
 
 
@@ -524,7 +524,7 @@ Access fct to mesh containing face elements that allow the computation of the dr
 
 
 
-Definition at line 356 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
+Definition at line 352 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
 
 
 
@@ -546,7 +546,7 @@ Access to function pointer to function that specifies external force.
 
 
 
-Definition at line 348 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
+Definition at line 344 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
 
 
 
@@ -564,7 +564,7 @@ Access to function pointer to function that specifies external torque.
 
 
 
-Definition at line 352 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
+Definition at line 348 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
 
 
 
@@ -586,7 +586,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1GeneralisedElement_a6ae09fc0d6
 
 
 
-Definition at line 283 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
+Definition at line 279 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
 
 
 
@@ -608,7 +608,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1GeneralisedElement_a310c97f515
 
 
 
-Definition at line 274 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
+Definition at line 270 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
 
 
 
@@ -626,7 +626,7 @@ Function to clear the drag mesh and all associated external data.
 
 
 
-Definition at line 363 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
+Definition at line 359 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
 
 
 
@@ -644,7 +644,7 @@ Access function for gravity.
 
 
 
-Definition at line 385 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
+Definition at line 381 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
 
 
 
@@ -666,7 +666,7 @@ Access function to the direction of gravity.
 
 
 
-Definition at line 382 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
+Definition at line 378 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
 
 
 
@@ -688,7 +688,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1GeomObject_ae1940fc6a3050e645c
 
 
 
-Definition at line 378 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
+Definition at line 374 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
 
 
 
@@ -706,7 +706,7 @@ Get force and torque from specified fct pointers and drag mesh.
 
 Obtain the external force and torque on the body from specified function pointers and also from a drag mesh, if there is one 
 
-Definition at line 151 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+cc.
+Definition at line 147 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+cc.
 
 
 
@@ -728,7 +728,7 @@ Get residuals and/or Jacobian.
 
 Calculate the contributions to the residuals and the jacobian. 
 
-Definition at line 300 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+cc.
+Definition at line 296 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+cc.
 
 
 
@@ -750,7 +750,7 @@ Access function for the initial centre of mass.
 
 
 
-Definition at line 170 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
+Definition at line 166 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
 
 
 
@@ -768,7 +768,7 @@ Access function for the initial centre of mass (const version)
 
 
 
-Definition at line 174 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
+Definition at line 170 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
 
 
 
@@ -786,7 +786,7 @@ Access function for the initial angle.
 
 
 
-Definition at line 167 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
+Definition at line 163 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
 
 
 
@@ -804,7 +804,7 @@ Initialisation function.
 
 Initialise the internal data. 
 
-Definition at line 264 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+cc.
+Definition at line 260 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+cc.
 
 
 
@@ -822,7 +822,7 @@ Referenced by Immersed\+Rigid\+Body\+Element().
 
 Access to dimensionless \char`\"{}mass\char`\"{} shape parameter that must be set by hand for non polygonal shapes 
 
-Definition at line 212 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
+Definition at line 208 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
 
 
 
@@ -840,7 +840,7 @@ Access to dimensionless polar \char`\"{}moment of inertia\char`\"{} shape parame
 
 
 
-Definition at line 215 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
+Definition at line 211 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
 
 
 
@@ -862,7 +862,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1GeomObject_a19d325347e19964e12
 
 
 
-Definition at line 374 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
+Definition at line 370 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1ImmersedRigidBodyElement_af97075da52b4f7b4f01b849a30618ba7}\label{classoomph_1_1ImmersedRigidBodyElement_af97075da52b4f7b4f01b849a30618ba7}} 
 \index{oomph::ImmersedRigidBodyElement@{oomph::ImmersedRigidBodyElement}!node\_update\_adjacent\_fluid\_elements@{node\_update\_adjacent\_fluid\_elements}}
@@ -876,7 +876,7 @@ Update the positions of the nodes in fluid elements adjacent to the rigid body, 
 
 
 
-Definition at line 300 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
+Definition at line 296 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
 
 
 
@@ -898,7 +898,7 @@ Output position velocity and acceleration of centre of gravity.
 
 Output the position of the centre of gravity including velocities and accelerations 
 
-Definition at line 120 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+cc.
+Definition at line 116 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+cc.
 
 
 
@@ -916,7 +916,7 @@ Pin the i-\/th coordinate of the centre of mass.
 
 
 
-Definition at line 247 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
+Definition at line 243 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
 
 
 
@@ -934,7 +934,7 @@ Pin the rotation angle.
 
 
 
-Definition at line 259 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
+Definition at line 255 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
 
 
 
@@ -960,7 +960,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1ImmersedRigidBodyTriangleMeshPol
 
 
 
-Definition at line 186 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
+Definition at line 182 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
 
 
 
@@ -986,7 +986,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1ImmersedRigidBodyTriangleMeshPol
 
 
 
-Definition at line 178 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
+Definition at line 174 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
 
 
 
@@ -1008,7 +1008,7 @@ Access function for the fluid Reynolds number.
 
 
 
-Definition at line 391 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
+Definition at line 387 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
 
 
 
@@ -1030,7 +1030,7 @@ Access to the fluid inverse Froude number.
 
 
 
-Definition at line 404 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
+Definition at line 400 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
 
 
 
@@ -1052,7 +1052,7 @@ Access function for pointer to the fluid inverse Froude number (dimensionless gr
 
 
 
-Definition at line 401 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
+Definition at line 397 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
 
 
 
@@ -1070,7 +1070,7 @@ Access function for the pointer to the fluid Reynolds number.
 
 
 
-Definition at line 388 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
+Definition at line 384 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
 
 
 
@@ -1092,7 +1092,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1GeneralisedElement_a10210277ae
 
 
 
-Definition at line 326 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
+Definition at line 322 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
 
 
 
@@ -1114,7 +1114,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1GeneralisedElement_ab3e2e13d21
 
 
 
-Definition at line 337 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
+Definition at line 333 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
 
 
 
@@ -1136,7 +1136,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1GeneralisedElement_a027a9213e9
 
 
 
-Definition at line 323 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
+Definition at line 319 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1ImmersedRigidBodyElement_a6e1d1fa9a6808691d6c067d45d108d2e}\label{classoomph_1_1ImmersedRigidBodyElement_a6e1d1fa9a6808691d6c067d45d108d2e}} 
 \index{oomph::ImmersedRigidBodyElement@{oomph::ImmersedRigidBodyElement}!reset\_in\_internal\_fd@{reset\_in\_internal\_fd}}
@@ -1154,7 +1154,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1GeneralisedElement_a89c6c5cf8b
 
 
 
-Definition at line 334 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
+Definition at line 330 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1ImmersedRigidBodyElement_adae3a4896f45d1fd08f3cd40fad0fdf4}\label{classoomph_1_1ImmersedRigidBodyElement_adae3a4896f45d1fd08f3cd40fad0fdf4}} 
 \index{oomph::ImmersedRigidBodyElement@{oomph::ImmersedRigidBodyElement}!set\_drag\_mesh@{set\_drag\_mesh}}
@@ -1168,7 +1168,7 @@ Function to set the drag mesh and add the appropriate load and geometric data as
 
 Set the external drag mesh, which should consist of Navier\+Stokes\+Surface\+Drag\+Torque\+Elements and then read out the appropriate load and geometric data from those elements and set as external data for this element. 
 
-Definition at line 205 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+cc.
+Definition at line 201 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+cc.
 
 
 
@@ -1186,7 +1186,7 @@ Set the rotation of the object to be included.
 
 
 
-Definition at line 160 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
+Definition at line 156 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
 
 
 
@@ -1204,7 +1204,7 @@ Access function for the fluid Strouhal number.
 
 
 
-Definition at line 397 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
+Definition at line 393 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
 
 
 
@@ -1226,7 +1226,7 @@ Access function for the pointer to the fluid Strouhal number.
 
 
 
-Definition at line 394 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
+Definition at line 390 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
 
 
 
@@ -1244,7 +1244,7 @@ Unpin the i-\/th coordinate of the centre of mass.
 
 
 
-Definition at line 253 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
+Definition at line 249 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
 
 
 
@@ -1262,7 +1262,7 @@ Unpin the rotation angle.
 
 
 
-Definition at line 265 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
+Definition at line 261 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
 
 
 
@@ -1280,7 +1280,7 @@ Set the rotation of the object to be ignored (only really useful if you have a c
 
 
 
-Definition at line 164 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
+Definition at line 160 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
 
 
 
@@ -1302,7 +1302,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1GeneralisedElement_af740b8c507
 
 
 
-Definition at line 319 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
+Definition at line 315 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
 
 
 
@@ -1324,7 +1324,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1GeneralisedElement_a0c94ccb2ca
 
 
 
-Definition at line 330 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
+Definition at line 326 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
 
 
 
@@ -1345,7 +1345,7 @@ References node\+\_\+update\+\_\+adjacent\+\_\+fluid\+\_\+elements().
 
 
 
-Definition at line 512 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
+Definition at line 508 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
 
 
 
@@ -1363,7 +1363,7 @@ Static default value for gravity.
 
 Static default gravity direction vector. 
 
-Definition at line 553 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
+Definition at line 549 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1ImmersedRigidBodyElement_a2acb4ef1ef706dfda4d2600875419efc}\label{classoomph_1_1ImmersedRigidBodyElement_a2acb4ef1ef706dfda4d2600875419efc}} 
 \index{oomph::ImmersedRigidBodyElement@{oomph::ImmersedRigidBodyElement}!Default\_Physical\_Constant\_Value@{Default\_Physical\_Constant\_Value}}
@@ -1377,7 +1377,7 @@ Static default value for physical constants.
 
 Static default value for physical constants Zero gives instantaneous force and torque balances --- no solid intertia. 
 
-Definition at line 547 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
+Definition at line 543 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1ImmersedRigidBodyElement_af4a4c84c02fdcaebfc529a575ee57971}\label{classoomph_1_1ImmersedRigidBodyElement_af4a4c84c02fdcaebfc529a575ee57971}} 
 \index{oomph::ImmersedRigidBodyElement@{oomph::ImmersedRigidBodyElement}!Default\_Physical\_Ratio\_Value@{Default\_Physical\_Ratio\_Value}}
@@ -1391,7 +1391,7 @@ Static default value for physical ratios.
 
 Static default value for physical ratio. 
 
-Definition at line 550 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
+Definition at line 546 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1ImmersedRigidBodyElement_afbb9b7caffa3645d4d104611c4cf16df}\label{classoomph_1_1ImmersedRigidBodyElement_afbb9b7caffa3645d4d104611c4cf16df}} 
 \index{oomph::ImmersedRigidBodyElement@{oomph::ImmersedRigidBodyElement}!Density\_ratio\_pt@{Density\_ratio\_pt}}
@@ -1405,7 +1405,7 @@ Density ratio of the solid to the external fluid.
 
 
 
-Definition at line 544 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
+Definition at line 540 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
 
 
 
@@ -1423,7 +1423,7 @@ Boolean flag to indicate whether data is internal.
 
 
 
-Definition at line 560 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
+Definition at line 556 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
 
 
 
@@ -1441,7 +1441,7 @@ Referenced by centre\+\_\+displacement\+\_\+local\+\_\+eqn(), initialise(), and 
 
 
 
-Definition at line 529 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
+Definition at line 525 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
 
 
 
@@ -1459,7 +1459,7 @@ Function pointer to function that specifies external force.
 
 
 
-Definition at line 521 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
+Definition at line 517 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
 
 
 
@@ -1477,7 +1477,7 @@ Function pointer to function that specifies external torque.
 
 
 
-Definition at line 525 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
+Definition at line 521 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
 
 
 
@@ -1495,7 +1495,7 @@ The direction of gravity.
 
 
 
-Definition at line 532 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
+Definition at line 528 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
 
 
 
@@ -1513,7 +1513,7 @@ Underlying geometric object.
 
 
 
-Definition at line 517 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
+Definition at line 513 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
 
 
 
@@ -1527,7 +1527,7 @@ Referenced by dposition\+\_\+dt(), and position().
 
 Boolean to indicate that the rotation variable does not affect the boundary shape 
 
-Definition at line 564 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
+Definition at line 560 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
 
 
 
@@ -1545,7 +1545,7 @@ Index for the data (internal or external) that contains the centre-\/of-\/gravit
 
 
 
-Definition at line 557 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
+Definition at line 553 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
 
 
 
@@ -1563,7 +1563,7 @@ X-\/coordinate of initial centre of gravity.
 
 
 
-Definition at line 499 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
+Definition at line 495 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
 
 
 
@@ -1581,7 +1581,7 @@ Original rotation angle.
 
 
 
-Definition at line 502 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
+Definition at line 498 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
 
 
 
@@ -1595,7 +1595,7 @@ Referenced by oomph\+::\+Immersed\+Rigid\+Body\+Triangle\+Mesh\+Polygon\+::\+Imm
 
 Storage for the external data that is formed from hijacked data that must be deleted by this element 
 
-Definition at line 479 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
+Definition at line 475 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
 
 
 
@@ -1609,7 +1609,7 @@ Referenced by delete\+\_\+external\+\_\+hijacked\+\_\+data(), and set\+\_\+drag\
 
 
 
-Definition at line 505 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
+Definition at line 501 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
 
 
 
@@ -1627,7 +1627,7 @@ Polar moment of inertia of body.
 
 
 
-Definition at line 508 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
+Definition at line 504 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
 
 
 
@@ -1645,7 +1645,7 @@ Reynolds number of external fluid.
 
 
 
-Definition at line 535 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
+Definition at line 531 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
 
 
 
@@ -1663,7 +1663,7 @@ Reynolds number divided by Froude number of external fluid.
 
 
 
-Definition at line 541 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
+Definition at line 537 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
 
 
 
@@ -1681,7 +1681,7 @@ Strouhal number of external fluid.
 
 
 
-Definition at line 538 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
+Definition at line 534 of file immersed\+\_\+rigid\+\_\+body\+\_\+elements.\+h.
 
 
 

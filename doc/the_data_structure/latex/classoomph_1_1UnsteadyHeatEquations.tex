@@ -116,7 +116,7 @@ class oomph\+::\+Unsteady\+Heat\+Equations$<$ D\+I\+M $>$}
 
 A class for all isoparametric elements that solve the Unsteady\+Heat equations. \[ \frac{\partial^2 u}{\partial x_i^2}=\frac{\partial u}{\partial t}+f(t,x_j) \] This contains the generic maths. \mbox{\hyperlink{classoomph_1_1Shape}{Shape}} functions, geometric mapping etc. must get implemented in derived class. Note that this class assumes an isoparametric formulation, i.\+e. that the scalar unknown is interpolated using the same shape funcitons as the position. 
 
-Definition at line 78 of file unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 74 of file unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -135,7 +135,7 @@ Function pointer to source function fct(t,x,f(x,t)) -- x is a Vector! ~\newline
 
 
 
-Definition at line 85 of file unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 81 of file unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -153,7 +153,7 @@ Constructor\+: Initialises the Source\+\_\+fct\+\_\+pt to null and sets flag to 
 
 
 
-Definition at line 94 of file unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 90 of file unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -172,7 +172,7 @@ Broken copy constructor.
 
 
 
-Definition at line 103 of file unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 99 of file unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -194,7 +194,7 @@ Alpha parameter (thermal inertia)
 
 
 
-Definition at line 254 of file unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 250 of file unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -213,7 +213,7 @@ Pointer to Alpha parameter (thermal inertia)
 
 
 
-Definition at line 257 of file unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 253 of file unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -232,7 +232,7 @@ Beta parameter (thermal conductivity)
 
 
 
-Definition at line 261 of file unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 257 of file unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -251,7 +251,7 @@ Pointer to Beta parameter (thermal conductivity)
 
 
 
-Definition at line 264 of file unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 260 of file unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -276,7 +276,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1FiniteElement_a73c79a1f1e5b1d3
 
 
 
-Definition at line 502 of file unsteady\+\_\+heat\+\_\+elements.\+cc.
+Definition at line 498 of file unsteady\+\_\+heat\+\_\+elements.\+cc.
 
 
 
@@ -301,7 +301,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1FiniteElement_a7f67853506dc73f
 
 
 
-Definition at line 583 of file unsteady\+\_\+heat\+\_\+elements.\+cc.
+Definition at line 579 of file unsteady\+\_\+heat\+\_\+elements.\+cc.
 
 
 
@@ -324,7 +324,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1GeneralisedElement_af2025a472d
 
 
 
-Definition at line 224 of file unsteady\+\_\+heat\+\_\+elements.\+cc.
+Definition at line 220 of file unsteady\+\_\+heat\+\_\+elements.\+cc.
 
 
 
@@ -347,7 +347,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1FiniteElement_a625ea6d3f9baccf
 
 
 
-Definition at line 157 of file unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 153 of file unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -396,7 +396,7 @@ du/dt at local node n. Uses suitably interpolated value for hanging nodes.
 
 
 
-Definition at line 129 of file unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 125 of file unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -424,7 +424,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1FiniteElement_a92ef8967fa4e2d6
 
 
 
-Definition at line 167 of file unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 163 of file unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -447,7 +447,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1FiniteElement_a0ae7af222af38a0
 
 
 
-Definition at line 308 of file unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 304 of file unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -470,7 +470,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1GeneralisedElement_a310c97f515
 
 
 
-Definition at line 298 of file unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 294 of file unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -498,7 +498,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1RefineableUnsteadyHeatEquations_
 
 
 
-Definition at line 65 of file unsteady\+\_\+heat\+\_\+elements.\+cc.
+Definition at line 61 of file unsteady\+\_\+heat\+\_\+elements.\+cc.
 
 
 
@@ -521,7 +521,7 @@ Get flux\+: flux\mbox{[}i\mbox{]} = du/dx\+\_\+i.
 
 
 
-Definition at line 267 of file unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 263 of file unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -545,7 +545,7 @@ Get source term at continous time t and (Eulerian) position x. Virtual so it can
 
 
 
-Definition at line 239 of file unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 235 of file unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -564,7 +564,7 @@ Return FE representation of function value du/dt(s) at local coordinate s.
 
 
 
-Definition at line 375 of file unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 371 of file unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -583,7 +583,7 @@ Return FE representation of function value u(s) at local coordinate s at previou
 
 
 
-Definition at line 346 of file unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 342 of file unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -602,7 +602,7 @@ Return FE representation of function value u(s) at local coordinate s.
 
 
 
-Definition at line 317 of file unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 313 of file unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -629,7 +629,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1QUnsteadyHeatElement_a8fc87ff881
 
 
 
-Definition at line 188 of file unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 184 of file unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -660,7 +660,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1QUnsteadyHeatElement_af582182bc9
 
 
 
-Definition at line 347 of file unsteady\+\_\+heat\+\_\+elements.\+cc.
+Definition at line 343 of file unsteady\+\_\+heat\+\_\+elements.\+cc.
 
 
 
@@ -687,7 +687,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1QUnsteadyHeatElement_a50c15ed85f
 
 
 
-Definition at line 176 of file unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 172 of file unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -718,7 +718,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1QUnsteadyHeatElement_ae54ed4ee8b
 
 
 
-Definition at line 309 of file unsteady\+\_\+heat\+\_\+elements.\+cc.
+Definition at line 305 of file unsteady\+\_\+heat\+\_\+elements.\+cc.
 
 
 
@@ -749,7 +749,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1QUnsteadyHeatElement_acf12936a99
 
 
 
-Definition at line 444 of file unsteady\+\_\+heat\+\_\+elements.\+cc.
+Definition at line 440 of file unsteady\+\_\+heat\+\_\+elements.\+cc.
 
 
 
@@ -780,7 +780,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1QUnsteadyHeatElement_a4a9b973582
 
 
 
-Definition at line 388 of file unsteady\+\_\+heat\+\_\+elements.\+cc.
+Definition at line 384 of file unsteady\+\_\+heat\+\_\+elements.\+cc.
 
 
 
@@ -807,7 +807,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1FiniteElement_af94c5a5e22175d5
 
 
 
-Definition at line 276 of file unsteady\+\_\+heat\+\_\+elements.\+cc.
+Definition at line 272 of file unsteady\+\_\+heat\+\_\+elements.\+cc.
 
 
 
@@ -830,7 +830,7 @@ Implements \mbox{\hyperlink{classoomph_1_1UnsteadyHeatEquationsBase_a723b841dae0
 
 
 
-Definition at line 230 of file unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 226 of file unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -853,7 +853,7 @@ Access function\+: Pointer to source function. Const version.
 
 
 
-Definition at line 234 of file unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 230 of file unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -872,7 +872,7 @@ Broken assignment operator.
 
 Return the index at which the unknown value is stored. The default value, 0, is appropriate for single-\/physics problems, when there is only one variable, the value that satisfies the unsteady heat equation. In derived multi-\/physics elements, this function should be overloaded to reflect the chosen storage scheme. Note that these equations require that the unknown is always stored at the same index at each node. 
 
-Definition at line 125 of file unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 121 of file unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -894,7 +894,7 @@ Boolean flag to indicate if A\+LE formulation is disabled when time-\/derivative
 
 
 
-Definition at line 436 of file unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 432 of file unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -913,7 +913,7 @@ Pointer to Alpha parameter (thermal inertia)
 
 
 
-Definition at line 439 of file unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 435 of file unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -932,7 +932,7 @@ Pointer to Beta parameter (thermal conductivity)
 
 
 
-Definition at line 442 of file unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 438 of file unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -953,7 +953,7 @@ Static default value for the Alpha parameter\+: (thermal inertia)\+: One for nat
 
 Default value for Alpha parameter (thermal inertia) 
 
-Definition at line 448 of file unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 444 of file unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -972,7 +972,7 @@ Static default value for the Beta parameter (thermal conductivity)\+: One for na
 
 Default value for Beta parameter (thermal conductivity) 
 
-Definition at line 452 of file unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 448 of file unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -991,7 +991,7 @@ Pointer to source function\+:
 
 
 
-Definition at line 431 of file unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 427 of file unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 

@@ -1168,7 +1168,7 @@ class oomph::BellElementBase&lt; NNODE_1D &gt;</h3>
 
 <p>Empty base class for the subparametric Bellelements (created so that we can use dynamic_cast&lt;&gt;() to figure out if a an element is a C1Curvedelement). This element is sub-parametric which means the geometry will be parametrised by the linear Lagrange functions, while unknowns will be parametrised by two kinds of shape functions basis : denotes C1-interpolations for c1-variables basis_c0 : denotes C0-interpolations for c0-variables </p>
 
-<p class="definition">Definition at line <a class="el" href="Subparametric__Telements_8h_source.html#l03056">3056</a> of file <a class="el" href="Subparametric__Telements_8h_source.html">Subparametric_Telements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Subparametric__Telements_8h_source.html#l03052">3052</a> of file <a class="el" href="Subparametric__Telements_8h_source.html">Subparametric_Telements.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a79c5e60fb98c9e69b096ed84b3430376"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a79c5e60fb98c9e69b096ed84b3430376">&#9670;&nbsp;</a></span>BellElementBase()</h2>
@@ -1197,7 +1197,7 @@ template&lt;unsigned NNODE_1D&gt; </div>
 
 <p>Constructor: Call constructors for <a class="el" href="classoomph_1_1FiniteElement.html" title="A general Finite Element class.">FiniteElement</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="Subparametric__Telements_8h_source.html#l03060">3060</a> of file <a class="el" href="Subparametric__Telements_8h_source.html">Subparametric_Telements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Subparametric__Telements_8h_source.html#l03056">3056</a> of file <a class="el" href="Subparametric__Telements_8h_source.html">Subparametric_Telements.h</a>.</p>
 
 </div>
 </div>
@@ -1240,9 +1240,9 @@ template&lt;unsigned NNODE_1D&gt; </div>
 
 <p>Reimplemented in <a class="el" href="classoomph_1_1BellElement.html#a31a6dfd140d030104094a333d4331dbc">oomph::BellElement&lt; DIM, NNODE_1D &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="Subparametric__Telements_8h_source.html#l03063">3063</a> of file <a class="el" href="Subparametric__Telements_8h_source.html">Subparametric_Telements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Subparametric__Telements_8h_source.html#l03059">3059</a> of file <a class="el" href="Subparametric__Telements_8h_source.html">Subparametric_Telements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="Subparametric__Telements_8h_source.html#l03110">oomph::BellElementBase&lt; NNODE_1D &gt;::basis_at_knot()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="Subparametric__Telements_8h_source.html#l03106">oomph::BellElementBase&lt; NNODE_1D &gt;::basis_at_knot()</a>.</p>
 
 </div>
 </div>
@@ -1284,9 +1284,9 @@ template&lt;unsigned NNODE_1D&gt; </div>
 
 <p>Return the C1-basis function stored at the ipt-th integration point. </p>
 
-<p class="definition">Definition at line <a class="el" href="Subparametric__Telements_8h_source.html#l03110">3110</a> of file <a class="el" href="Subparametric__Telements_8h_source.html">Subparametric_Telements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Subparametric__Telements_8h_source.html#l03106">3106</a> of file <a class="el" href="Subparametric__Telements_8h_source.html">Subparametric_Telements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="Subparametric__Telements_8h_source.html#l03063">oomph::BellElementBase&lt; NNODE_1D &gt;::basis()</a>, <a class="el" href="elements_8h_source.html#l02499">oomph::FiniteElement::dim()</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="elements_8h_source.html#l01925">oomph::FiniteElement::integral_pt()</a>, <a class="el" href="classoomph_1_1Integral.html#a1a2122f99a87c18649bafdd9ed739758">oomph::Integral::knot()</a>, and <a class="el" href="cfortran_8h_source.html#l00572">s</a>.</p>
+<p class="reference">References <a class="el" href="Subparametric__Telements_8h_source.html#l03059">oomph::BellElementBase&lt; NNODE_1D &gt;::basis()</a>, <a class="el" href="elements_8h_source.html#l02495">oomph::FiniteElement::dim()</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="elements_8h_source.html#l01921">oomph::FiniteElement::integral_pt()</a>, <a class="el" href="classoomph_1_1Integral.html#a1a2122f99a87c18649bafdd9ed739758">oomph::Integral::knot()</a>, and <a class="el" href="cfortran_8h_source.html#l00568">s</a>.</p>
 
 </div>
 </div>
@@ -1328,9 +1328,9 @@ template&lt;unsigned NNODE_1D&gt; </div>
 
 <p>Reimplemented in <a class="el" href="classoomph_1_1BellElement.html#ad99554f0767e1d82e371ebce2219521b">oomph::BellElement&lt; DIM, NNODE_1D &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="Subparametric__Telements_8h_source.html#l03077">3077</a> of file <a class="el" href="Subparametric__Telements_8h_source.html">Subparametric_Telements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Subparametric__Telements_8h_source.html#l03073">3073</a> of file <a class="el" href="Subparametric__Telements_8h_source.html">Subparametric_Telements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="Subparametric__Telements_8h_source.html#l03164">oomph::BellElementBase&lt; NNODE_1D &gt;::basis_c0_at_knot()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="Subparametric__Telements_8h_source.html#l03160">oomph::BellElementBase&lt; NNODE_1D &gt;::basis_c0_at_knot()</a>.</p>
 
 </div>
 </div>
@@ -1372,9 +1372,9 @@ template&lt;unsigned NNODE_1D&gt; </div>
 
 <p>Return the C0-basis function stored at the ipt-th integration point. </p>
 
-<p class="definition">Definition at line <a class="el" href="Subparametric__Telements_8h_source.html#l03164">3164</a> of file <a class="el" href="Subparametric__Telements_8h_source.html">Subparametric_Telements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Subparametric__Telements_8h_source.html#l03160">3160</a> of file <a class="el" href="Subparametric__Telements_8h_source.html">Subparametric_Telements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="Subparametric__Telements_8h_source.html#l03077">oomph::BellElementBase&lt; NNODE_1D &gt;::basis_c0()</a>, <a class="el" href="elements_8h_source.html#l02499">oomph::FiniteElement::dim()</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="elements_8h_source.html#l01925">oomph::FiniteElement::integral_pt()</a>, <a class="el" href="classoomph_1_1Integral.html#a1a2122f99a87c18649bafdd9ed739758">oomph::Integral::knot()</a>, and <a class="el" href="cfortran_8h_source.html#l00572">s</a>.</p>
+<p class="reference">References <a class="el" href="Subparametric__Telements_8h_source.html#l03073">oomph::BellElementBase&lt; NNODE_1D &gt;::basis_c0()</a>, <a class="el" href="elements_8h_source.html#l02495">oomph::FiniteElement::dim()</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="elements_8h_source.html#l01921">oomph::FiniteElement::integral_pt()</a>, <a class="el" href="classoomph_1_1Integral.html#a1a2122f99a87c18649bafdd9ed739758">oomph::Integral::knot()</a>, and <a class="el" href="cfortran_8h_source.html#l00568">s</a>.</p>
 
 </div>
 </div>
@@ -1428,9 +1428,9 @@ template&lt;unsigned NNODE_1D&gt; </div>
 
 <p>Compute the c0-basis functions and also first and second derivatives w.r.t. local coordinates at ipt-th integration point. </p>
 
-<p class="definition">Definition at line <a class="el" href="Subparametric__Telements_8h_source.html#l03309">3309</a> of file <a class="el" href="Subparametric__Telements_8h_source.html">Subparametric_Telements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Subparametric__Telements_8h_source.html#l03305">3305</a> of file <a class="el" href="Subparametric__Telements_8h_source.html">Subparametric_Telements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="Subparametric__Telements_8h_source.html#l03085">oomph::BellElementBase&lt; NNODE_1D &gt;::d2basis_c0_local()</a>, <a class="el" href="elements_8h_source.html#l01972">oomph::FiniteElement::d2shape_local()</a>, <a class="el" href="elements_8h_source.html#l02499">oomph::FiniteElement::dim()</a>, <a class="el" href="Subparametric__Telements_8h_source.html#l03498">oomph::BellElementBase&lt; NNODE_1D &gt;::local_to_eulerian_mapping2()</a>, <a class="el" href="Subparametric__Telements_8h_source.html#l03646">oomph::BellElementBase&lt; NNODE_1D &gt;::myassemble_local_to_eulerian_jacobian2()</a>, <a class="el" href="elements_8h_source.html#l01457">oomph::FiniteElement::N2deriv</a>, <a class="el" href="cfortran_8h_source.html#l00572">s</a>, and <a class="el" href="elements_8cc_source.html#l03059">oomph::FiniteElement::transform_second_derivatives()</a>.</p>
+<p class="reference">References <a class="el" href="Subparametric__Telements_8h_source.html#l03081">oomph::BellElementBase&lt; NNODE_1D &gt;::d2basis_c0_local()</a>, <a class="el" href="elements_8h_source.html#l01968">oomph::FiniteElement::d2shape_local()</a>, <a class="el" href="elements_8h_source.html#l02495">oomph::FiniteElement::dim()</a>, <a class="el" href="Subparametric__Telements_8h_source.html#l03494">oomph::BellElementBase&lt; NNODE_1D &gt;::local_to_eulerian_mapping2()</a>, <a class="el" href="Subparametric__Telements_8h_source.html#l03642">oomph::BellElementBase&lt; NNODE_1D &gt;::myassemble_local_to_eulerian_jacobian2()</a>, <a class="el" href="elements_8h_source.html#l01453">oomph::FiniteElement::N2deriv</a>, <a class="el" href="cfortran_8h_source.html#l00568">s</a>, and <a class="el" href="elements_8cc_source.html#l03055">oomph::FiniteElement::transform_second_derivatives()</a>.</p>
 
 </div>
 </div>
@@ -1484,9 +1484,9 @@ template&lt;unsigned NNODE_1D&gt; </div>
 
 <p>Reimplemented in <a class="el" href="classoomph_1_1BellElement.html#a23f34f6479128e7e8c694fbcb72aae78">oomph::BellElement&lt; DIM, NNODE_1D &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="Subparametric__Telements_8h_source.html#l03085">3085</a> of file <a class="el" href="Subparametric__Telements_8h_source.html">Subparametric_Telements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Subparametric__Telements_8h_source.html#l03081">3081</a> of file <a class="el" href="Subparametric__Telements_8h_source.html">Subparametric_Telements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="Subparametric__Telements_8h_source.html#l03309">oomph::BellElementBase&lt; NNODE_1D &gt;::d2basis_c0_eulerian()</a>, and <a class="el" href="Subparametric__Telements_8h_source.html#l03200">oomph::BellElementBase&lt; NNODE_1D &gt;::d2basis_c0_local_at_knot()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="Subparametric__Telements_8h_source.html#l03305">oomph::BellElementBase&lt; NNODE_1D &gt;::d2basis_c0_eulerian()</a>, and <a class="el" href="Subparametric__Telements_8h_source.html#l03196">oomph::BellElementBase&lt; NNODE_1D &gt;::d2basis_c0_local_at_knot()</a>.</p>
 
 </div>
 </div>
@@ -1541,9 +1541,9 @@ template&lt;unsigned NNODE_1D&gt; </div>
 <br  />
  Numbering: </p>
 
-<p class="definition">Definition at line <a class="el" href="Subparametric__Telements_8h_source.html#l03200">3200</a> of file <a class="el" href="Subparametric__Telements_8h_source.html">Subparametric_Telements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Subparametric__Telements_8h_source.html#l03196">3196</a> of file <a class="el" href="Subparametric__Telements_8h_source.html">Subparametric_Telements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="Subparametric__Telements_8h_source.html#l03085">oomph::BellElementBase&lt; NNODE_1D &gt;::d2basis_c0_local()</a>, <a class="el" href="elements_8h_source.html#l02499">oomph::FiniteElement::dim()</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="elements_8h_source.html#l01925">oomph::FiniteElement::integral_pt()</a>, <a class="el" href="classoomph_1_1Integral.html#a1a2122f99a87c18649bafdd9ed739758">oomph::Integral::knot()</a>, and <a class="el" href="cfortran_8h_source.html#l00572">s</a>.</p>
+<p class="reference">References <a class="el" href="Subparametric__Telements_8h_source.html#l03081">oomph::BellElementBase&lt; NNODE_1D &gt;::d2basis_c0_local()</a>, <a class="el" href="elements_8h_source.html#l02495">oomph::FiniteElement::dim()</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="elements_8h_source.html#l01921">oomph::FiniteElement::integral_pt()</a>, <a class="el" href="classoomph_1_1Integral.html#a1a2122f99a87c18649bafdd9ed739758">oomph::Integral::knot()</a>, and <a class="el" href="cfortran_8h_source.html#l00568">s</a>.</p>
 
 </div>
 </div>
@@ -1597,9 +1597,9 @@ template&lt;unsigned NNODE_1D&gt; </div>
 
 <p>Compute the c1-basis functions and also first and second derivatives w.r.t. global coordinates at ipt-th integration point. </p>
 
-<p class="definition">Definition at line <a class="el" href="Subparametric__Telements_8h_source.html#l03386">3386</a> of file <a class="el" href="Subparametric__Telements_8h_source.html">Subparametric_Telements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Subparametric__Telements_8h_source.html#l03382">3382</a> of file <a class="el" href="Subparametric__Telements_8h_source.html">Subparametric_Telements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="Subparametric__Telements_8h_source.html#l03071">oomph::BellElementBase&lt; NNODE_1D &gt;::d2basis_local()</a>, <a class="el" href="elements_8h_source.html#l01972">oomph::FiniteElement::d2shape_local()</a>, <a class="el" href="elements_8h_source.html#l02499">oomph::FiniteElement::dim()</a>, <a class="el" href="Subparametric__Telements_8h_source.html#l03498">oomph::BellElementBase&lt; NNODE_1D &gt;::local_to_eulerian_mapping2()</a>, and <a class="el" href="cfortran_8h_source.html#l00572">s</a>.</p>
+<p class="reference">References <a class="el" href="Subparametric__Telements_8h_source.html#l03067">oomph::BellElementBase&lt; NNODE_1D &gt;::d2basis_local()</a>, <a class="el" href="elements_8h_source.html#l01968">oomph::FiniteElement::d2shape_local()</a>, <a class="el" href="elements_8h_source.html#l02495">oomph::FiniteElement::dim()</a>, <a class="el" href="Subparametric__Telements_8h_source.html#l03494">oomph::BellElementBase&lt; NNODE_1D &gt;::local_to_eulerian_mapping2()</a>, and <a class="el" href="cfortran_8h_source.html#l00568">s</a>.</p>
 
 </div>
 </div>
@@ -1653,9 +1653,9 @@ template&lt;unsigned NNODE_1D&gt; </div>
 
 <p>Reimplemented in <a class="el" href="classoomph_1_1BellElement.html#a58254e48913aa6428db33338b010a911">oomph::BellElement&lt; DIM, NNODE_1D &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="Subparametric__Telements_8h_source.html#l03071">3071</a> of file <a class="el" href="Subparametric__Telements_8h_source.html">Subparametric_Telements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Subparametric__Telements_8h_source.html#l03067">3067</a> of file <a class="el" href="Subparametric__Telements_8h_source.html">Subparametric_Telements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="Subparametric__Telements_8h_source.html#l03386">oomph::BellElementBase&lt; NNODE_1D &gt;::d2basis_eulerian()</a>, and <a class="el" href="Subparametric__Telements_8h_source.html#l03145">oomph::BellElementBase&lt; NNODE_1D &gt;::d2basis_local_at_knot()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="Subparametric__Telements_8h_source.html#l03382">oomph::BellElementBase&lt; NNODE_1D &gt;::d2basis_eulerian()</a>, and <a class="el" href="Subparametric__Telements_8h_source.html#l03141">oomph::BellElementBase&lt; NNODE_1D &gt;::d2basis_local_at_knot()</a>.</p>
 
 </div>
 </div>
@@ -1710,11 +1710,11 @@ template&lt;unsigned NNODE_1D&gt; </div>
 <br  />
  Numbering: </p>
 
-<p class="definition">Definition at line <a class="el" href="Subparametric__Telements_8h_source.html#l03145">3145</a> of file <a class="el" href="Subparametric__Telements_8h_source.html">Subparametric_Telements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Subparametric__Telements_8h_source.html#l03141">3141</a> of file <a class="el" href="Subparametric__Telements_8h_source.html">Subparametric_Telements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="Subparametric__Telements_8h_source.html#l03071">oomph::BellElementBase&lt; NNODE_1D &gt;::d2basis_local()</a>, <a class="el" href="elements_8h_source.html#l02499">oomph::FiniteElement::dim()</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="elements_8h_source.html#l01925">oomph::FiniteElement::integral_pt()</a>, <a class="el" href="classoomph_1_1Integral.html#a1a2122f99a87c18649bafdd9ed739758">oomph::Integral::knot()</a>, and <a class="el" href="cfortran_8h_source.html#l00572">s</a>.</p>
+<p class="reference">References <a class="el" href="Subparametric__Telements_8h_source.html#l03067">oomph::BellElementBase&lt; NNODE_1D &gt;::d2basis_local()</a>, <a class="el" href="elements_8h_source.html#l02495">oomph::FiniteElement::dim()</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="elements_8h_source.html#l01921">oomph::FiniteElement::integral_pt()</a>, <a class="el" href="classoomph_1_1Integral.html#a1a2122f99a87c18649bafdd9ed739758">oomph::Integral::knot()</a>, and <a class="el" href="cfortran_8h_source.html#l00568">s</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="Subparametric__Telements_8h_source.html#l03458">oomph::BellElementBase&lt; NNODE_1D &gt;::d2shape_and_d2test_eulerian_at_knot()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="Subparametric__Telements_8h_source.html#l03454">oomph::BellElementBase&lt; NNODE_1D &gt;::d2shape_and_d2test_eulerian_at_knot()</a>.</p>
 
 </div>
 </div>
@@ -1786,9 +1786,9 @@ template&lt;unsigned NNODE_1D&gt; </div>
 
 <p>Compute the c1-shape functions and also first and second derivatives w.r.t. global coordinates at ipt-th integration points Returns Jacobian of mapping from global to local coordinates. </p>
 
-<p class="definition">Definition at line <a class="el" href="Subparametric__Telements_8h_source.html#l03458">3458</a> of file <a class="el" href="Subparametric__Telements_8h_source.html">Subparametric_Telements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Subparametric__Telements_8h_source.html#l03454">3454</a> of file <a class="el" href="Subparametric__Telements_8h_source.html">Subparametric_Telements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="Subparametric__Telements_8h_source.html#l03145">oomph::BellElementBase&lt; NNODE_1D &gt;::d2basis_local_at_knot()</a>, <a class="el" href="Subparametric__Telements_8h_source.html#l03253">oomph::BellElementBase&lt; NNODE_1D &gt;::d2test_local_at_knot()</a>, <a class="el" href="elements_8h_source.html#l02499">oomph::FiniteElement::dim()</a>, <a class="el" href="elements_8cc_source.html#l03176">oomph::FiniteElement::dshape_local_at_knot()</a>, <a class="el" href="Subparametric__Telements_8h_source.html#l03498">oomph::BellElementBase&lt; NNODE_1D &gt;::local_to_eulerian_mapping2()</a>, <a class="el" href="elements_8h_source.html#l02163">oomph::FiniteElement::nnode()</a>, and <a class="el" href="Subparametric__Telements_8h_source.html#l03091">oomph::BellElementBase&lt; NNODE_1D &gt;::test()</a>.</p>
+<p class="reference">References <a class="el" href="Subparametric__Telements_8h_source.html#l03141">oomph::BellElementBase&lt; NNODE_1D &gt;::d2basis_local_at_knot()</a>, <a class="el" href="Subparametric__Telements_8h_source.html#l03249">oomph::BellElementBase&lt; NNODE_1D &gt;::d2test_local_at_knot()</a>, <a class="el" href="elements_8h_source.html#l02495">oomph::FiniteElement::dim()</a>, <a class="el" href="elements_8cc_source.html#l03172">oomph::FiniteElement::dshape_local_at_knot()</a>, <a class="el" href="Subparametric__Telements_8h_source.html#l03494">oomph::BellElementBase&lt; NNODE_1D &gt;::local_to_eulerian_mapping2()</a>, <a class="el" href="elements_8h_source.html#l02159">oomph::FiniteElement::nnode()</a>, and <a class="el" href="Subparametric__Telements_8h_source.html#l03087">oomph::BellElementBase&lt; NNODE_1D &gt;::test()</a>.</p>
 
 </div>
 </div>
@@ -1842,9 +1842,9 @@ template&lt;unsigned NNODE_1D&gt; </div>
 
 <p>Reimplemented in <a class="el" href="classoomph_1_1BellElement.html#a2d7e1df2f16e344721161ac2de099483">oomph::BellElement&lt; DIM, NNODE_1D &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="Subparametric__Telements_8h_source.html#l03099">3099</a> of file <a class="el" href="Subparametric__Telements_8h_source.html">Subparametric_Telements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Subparametric__Telements_8h_source.html#l03095">3095</a> of file <a class="el" href="Subparametric__Telements_8h_source.html">Subparametric_Telements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="Subparametric__Telements_8h_source.html#l03253">oomph::BellElementBase&lt; NNODE_1D &gt;::d2test_local_at_knot()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="Subparametric__Telements_8h_source.html#l03249">oomph::BellElementBase&lt; NNODE_1D &gt;::d2test_local_at_knot()</a>.</p>
 
 </div>
 </div>
@@ -1899,11 +1899,11 @@ template&lt;unsigned NNODE_1D&gt; </div>
 <br  />
  Numbering: </p>
 
-<p class="definition">Definition at line <a class="el" href="Subparametric__Telements_8h_source.html#l03253">3253</a> of file <a class="el" href="Subparametric__Telements_8h_source.html">Subparametric_Telements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Subparametric__Telements_8h_source.html#l03249">3249</a> of file <a class="el" href="Subparametric__Telements_8h_source.html">Subparametric_Telements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="Subparametric__Telements_8h_source.html#l03099">oomph::BellElementBase&lt; NNODE_1D &gt;::d2test_local()</a>, <a class="el" href="elements_8h_source.html#l02499">oomph::FiniteElement::dim()</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="elements_8h_source.html#l01925">oomph::FiniteElement::integral_pt()</a>, <a class="el" href="classoomph_1_1Integral.html#a1a2122f99a87c18649bafdd9ed739758">oomph::Integral::knot()</a>, and <a class="el" href="cfortran_8h_source.html#l00572">s</a>.</p>
+<p class="reference">References <a class="el" href="Subparametric__Telements_8h_source.html#l03095">oomph::BellElementBase&lt; NNODE_1D &gt;::d2test_local()</a>, <a class="el" href="elements_8h_source.html#l02495">oomph::FiniteElement::dim()</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="elements_8h_source.html#l01921">oomph::FiniteElement::integral_pt()</a>, <a class="el" href="classoomph_1_1Integral.html#a1a2122f99a87c18649bafdd9ed739758">oomph::Integral::knot()</a>, and <a class="el" href="cfortran_8h_source.html#l00568">s</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="Subparametric__Telements_8h_source.html#l03458">oomph::BellElementBase&lt; NNODE_1D &gt;::d2shape_and_d2test_eulerian_at_knot()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="Subparametric__Telements_8h_source.html#l03454">oomph::BellElementBase&lt; NNODE_1D &gt;::d2shape_and_d2test_eulerian_at_knot()</a>.</p>
 
 </div>
 </div>
@@ -1951,9 +1951,9 @@ template&lt;unsigned NNODE_1D&gt; </div>
 
 <p>Compute the curved-element shape functions and also first derivatives w.r.t. local coordinates at local coordinate s; Returns Jacobian of mapping from global to local coordinates. Most general form of the function, but may be over-loaded, if desired. </p>
 
-<p class="definition">Definition at line <a class="el" href="Subparametric__Telements_8h_source.html#l03273">3273</a> of file <a class="el" href="Subparametric__Telements_8h_source.html">Subparametric_Telements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Subparametric__Telements_8h_source.html#l03269">3269</a> of file <a class="el" href="Subparametric__Telements_8h_source.html">Subparametric_Telements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l01972">oomph::FiniteElement::d2shape_local()</a>, <a class="el" href="Subparametric__Telements_8h_source.html#l03081">oomph::BellElementBase&lt; NNODE_1D &gt;::dbasis_c0_local()</a>, <a class="el" href="elements_8h_source.html#l02499">oomph::FiniteElement::dim()</a>, <a class="el" href="Subparametric__Telements_8h_source.html#l03498">oomph::BellElementBase&lt; NNODE_1D &gt;::local_to_eulerian_mapping2()</a>, <a class="el" href="cfortran_8h_source.html#l00572">s</a>, and <a class="el" href="elements_8cc_source.html#l02764">oomph::FiniteElement::transform_derivatives()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l01968">oomph::FiniteElement::d2shape_local()</a>, <a class="el" href="Subparametric__Telements_8h_source.html#l03077">oomph::BellElementBase&lt; NNODE_1D &gt;::dbasis_c0_local()</a>, <a class="el" href="elements_8h_source.html#l02495">oomph::FiniteElement::dim()</a>, <a class="el" href="Subparametric__Telements_8h_source.html#l03494">oomph::BellElementBase&lt; NNODE_1D &gt;::local_to_eulerian_mapping2()</a>, <a class="el" href="cfortran_8h_source.html#l00568">s</a>, and <a class="el" href="elements_8cc_source.html#l02760">oomph::FiniteElement::transform_derivatives()</a>.</p>
 
 </div>
 </div>
@@ -2001,9 +2001,9 @@ template&lt;unsigned NNODE_1D&gt; </div>
 
 <p>Reimplemented in <a class="el" href="classoomph_1_1BellElement.html#a3a7b703738e3de182b26b299626d869a">oomph::BellElement&lt; DIM, NNODE_1D &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="Subparametric__Telements_8h_source.html#l03081">3081</a> of file <a class="el" href="Subparametric__Telements_8h_source.html">Subparametric_Telements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Subparametric__Telements_8h_source.html#l03077">3077</a> of file <a class="el" href="Subparametric__Telements_8h_source.html">Subparametric_Telements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="Subparametric__Telements_8h_source.html#l03273">oomph::BellElementBase&lt; NNODE_1D &gt;::dbasis_c0_eulerian()</a>, and <a class="el" href="Subparametric__Telements_8h_source.html#l03180">oomph::BellElementBase&lt; NNODE_1D &gt;::dbasis_c0_local_at_knot()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="Subparametric__Telements_8h_source.html#l03269">oomph::BellElementBase&lt; NNODE_1D &gt;::dbasis_c0_eulerian()</a>, and <a class="el" href="Subparametric__Telements_8h_source.html#l03176">oomph::BellElementBase&lt; NNODE_1D &gt;::dbasis_c0_local_at_knot()</a>.</p>
 
 </div>
 </div>
@@ -2051,11 +2051,11 @@ template&lt;unsigned NNODE_1D&gt; </div>
 
 <p>Return the C0-basis function and its derivatives w.r.t. the local coordinates at the ipt-th integration point. </p>
 
-<p class="definition">Definition at line <a class="el" href="Subparametric__Telements_8h_source.html#l03180">3180</a> of file <a class="el" href="Subparametric__Telements_8h_source.html">Subparametric_Telements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Subparametric__Telements_8h_source.html#l03176">3176</a> of file <a class="el" href="Subparametric__Telements_8h_source.html">Subparametric_Telements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="Subparametric__Telements_8h_source.html#l03081">oomph::BellElementBase&lt; NNODE_1D &gt;::dbasis_c0_local()</a>, <a class="el" href="elements_8h_source.html#l02499">oomph::FiniteElement::dim()</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="elements_8h_source.html#l01925">oomph::FiniteElement::integral_pt()</a>, <a class="el" href="classoomph_1_1Integral.html#a1a2122f99a87c18649bafdd9ed739758">oomph::Integral::knot()</a>, and <a class="el" href="cfortran_8h_source.html#l00572">s</a>.</p>
+<p class="reference">References <a class="el" href="Subparametric__Telements_8h_source.html#l03077">oomph::BellElementBase&lt; NNODE_1D &gt;::dbasis_c0_local()</a>, <a class="el" href="elements_8h_source.html#l02495">oomph::FiniteElement::dim()</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="elements_8h_source.html#l01921">oomph::FiniteElement::integral_pt()</a>, <a class="el" href="classoomph_1_1Integral.html#a1a2122f99a87c18649bafdd9ed739758">oomph::Integral::knot()</a>, and <a class="el" href="cfortran_8h_source.html#l00568">s</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="Subparametric__Telements_8h_source.html#l03421">oomph::BellElementBase&lt; NNODE_1D &gt;::dshape_and_dtest_eulerian_at_knot()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="Subparametric__Telements_8h_source.html#l03417">oomph::BellElementBase&lt; NNODE_1D &gt;::dshape_and_dtest_eulerian_at_knot()</a>.</p>
 
 </div>
 </div>
@@ -2103,9 +2103,9 @@ template&lt;unsigned NNODE_1D&gt; </div>
 
 <p>Compute the c1-basis functions and also first derivatives w.r.t. global coordinates at local coordinate s; Returns Jacobian of mapping from global to local coordinates. Most general form of the function, but may be over-loaded, if desired. </p>
 
-<p class="definition">Definition at line <a class="el" href="Subparametric__Telements_8h_source.html#l03353">3353</a> of file <a class="el" href="Subparametric__Telements_8h_source.html">Subparametric_Telements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Subparametric__Telements_8h_source.html#l03349">3349</a> of file <a class="el" href="Subparametric__Telements_8h_source.html">Subparametric_Telements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l01972">oomph::FiniteElement::d2shape_local()</a>, <a class="el" href="Subparametric__Telements_8h_source.html#l03067">oomph::BellElementBase&lt; NNODE_1D &gt;::dbasis_local()</a>, <a class="el" href="elements_8h_source.html#l02499">oomph::FiniteElement::dim()</a>, <a class="el" href="Subparametric__Telements_8h_source.html#l03498">oomph::BellElementBase&lt; NNODE_1D &gt;::local_to_eulerian_mapping2()</a>, and <a class="el" href="cfortran_8h_source.html#l00572">s</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l01968">oomph::FiniteElement::d2shape_local()</a>, <a class="el" href="Subparametric__Telements_8h_source.html#l03063">oomph::BellElementBase&lt; NNODE_1D &gt;::dbasis_local()</a>, <a class="el" href="elements_8h_source.html#l02495">oomph::FiniteElement::dim()</a>, <a class="el" href="Subparametric__Telements_8h_source.html#l03494">oomph::BellElementBase&lt; NNODE_1D &gt;::local_to_eulerian_mapping2()</a>, and <a class="el" href="cfortran_8h_source.html#l00568">s</a>.</p>
 
 </div>
 </div>
@@ -2153,9 +2153,9 @@ template&lt;unsigned NNODE_1D&gt; </div>
 
 <p>Reimplemented in <a class="el" href="classoomph_1_1BellElement.html#aeeceae57e24c50d838e993fd92c8bc68">oomph::BellElement&lt; DIM, NNODE_1D &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="Subparametric__Telements_8h_source.html#l03067">3067</a> of file <a class="el" href="Subparametric__Telements_8h_source.html">Subparametric_Telements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Subparametric__Telements_8h_source.html#l03063">3063</a> of file <a class="el" href="Subparametric__Telements_8h_source.html">Subparametric_Telements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="Subparametric__Telements_8h_source.html#l03353">oomph::BellElementBase&lt; NNODE_1D &gt;::dbasis_eulerian()</a>, and <a class="el" href="Subparametric__Telements_8h_source.html#l03126">oomph::BellElementBase&lt; NNODE_1D &gt;::dbasis_local_at_knot()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="Subparametric__Telements_8h_source.html#l03349">oomph::BellElementBase&lt; NNODE_1D &gt;::dbasis_eulerian()</a>, and <a class="el" href="Subparametric__Telements_8h_source.html#l03122">oomph::BellElementBase&lt; NNODE_1D &gt;::dbasis_local_at_knot()</a>.</p>
 
 </div>
 </div>
@@ -2203,9 +2203,9 @@ template&lt;unsigned NNODE_1D&gt; </div>
 
 <p>Return the C1-basis function and its derivatives w.r.t. the global coordinates at the ipt-th integration point. </p>
 
-<p class="definition">Definition at line <a class="el" href="Subparametric__Telements_8h_source.html#l03126">3126</a> of file <a class="el" href="Subparametric__Telements_8h_source.html">Subparametric_Telements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Subparametric__Telements_8h_source.html#l03122">3122</a> of file <a class="el" href="Subparametric__Telements_8h_source.html">Subparametric_Telements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="Subparametric__Telements_8h_source.html#l03067">oomph::BellElementBase&lt; NNODE_1D &gt;::dbasis_local()</a>, <a class="el" href="elements_8h_source.html#l02499">oomph::FiniteElement::dim()</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="elements_8h_source.html#l01925">oomph::FiniteElement::integral_pt()</a>, <a class="el" href="classoomph_1_1Integral.html#a1a2122f99a87c18649bafdd9ed739758">oomph::Integral::knot()</a>, and <a class="el" href="cfortran_8h_source.html#l00572">s</a>.</p>
+<p class="reference">References <a class="el" href="Subparametric__Telements_8h_source.html#l03063">oomph::BellElementBase&lt; NNODE_1D &gt;::dbasis_local()</a>, <a class="el" href="elements_8h_source.html#l02495">oomph::FiniteElement::dim()</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="elements_8h_source.html#l01921">oomph::FiniteElement::integral_pt()</a>, <a class="el" href="classoomph_1_1Integral.html#a1a2122f99a87c18649bafdd9ed739758">oomph::Integral::knot()</a>, and <a class="el" href="cfortran_8h_source.html#l00568">s</a>.</p>
 
 </div>
 </div>
@@ -2266,9 +2266,9 @@ template&lt;unsigned NNODE_1D&gt; </div>
 <br  />
  Numbering: </p>
 
-<p class="definition">Definition at line <a class="el" href="Subparametric__Telements_8h_source.html#l03421">3421</a> of file <a class="el" href="Subparametric__Telements_8h_source.html">Subparametric_Telements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Subparametric__Telements_8h_source.html#l03417">3417</a> of file <a class="el" href="Subparametric__Telements_8h_source.html">Subparametric_Telements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="Subparametric__Telements_8h_source.html#l03180">oomph::BellElementBase&lt; NNODE_1D &gt;::dbasis_c0_local_at_knot()</a>, <a class="el" href="elements_8h_source.html#l02499">oomph::FiniteElement::dim()</a>, <a class="el" href="elements_8cc_source.html#l03176">oomph::FiniteElement::dshape_local_at_knot()</a>, <a class="el" href="Subparametric__Telements_8h_source.html#l03235">oomph::BellElementBase&lt; NNODE_1D &gt;::dtest_local_at_knot()</a>, <a class="el" href="Subparametric__Telements_8h_source.html#l03498">oomph::BellElementBase&lt; NNODE_1D &gt;::local_to_eulerian_mapping2()</a>, <a class="el" href="Subparametric__Telements_8h_source.html#l03091">oomph::BellElementBase&lt; NNODE_1D &gt;::test()</a>, and <a class="el" href="elements_8cc_source.html#l02764">oomph::FiniteElement::transform_derivatives()</a>.</p>
+<p class="reference">References <a class="el" href="Subparametric__Telements_8h_source.html#l03176">oomph::BellElementBase&lt; NNODE_1D &gt;::dbasis_c0_local_at_knot()</a>, <a class="el" href="elements_8h_source.html#l02495">oomph::FiniteElement::dim()</a>, <a class="el" href="elements_8cc_source.html#l03172">oomph::FiniteElement::dshape_local_at_knot()</a>, <a class="el" href="Subparametric__Telements_8h_source.html#l03231">oomph::BellElementBase&lt; NNODE_1D &gt;::dtest_local_at_knot()</a>, <a class="el" href="Subparametric__Telements_8h_source.html#l03494">oomph::BellElementBase&lt; NNODE_1D &gt;::local_to_eulerian_mapping2()</a>, <a class="el" href="Subparametric__Telements_8h_source.html#l03087">oomph::BellElementBase&lt; NNODE_1D &gt;::test()</a>, and <a class="el" href="elements_8cc_source.html#l02760">oomph::FiniteElement::transform_derivatives()</a>.</p>
 
 </div>
 </div>
@@ -2316,9 +2316,9 @@ template&lt;unsigned NNODE_1D&gt; </div>
 
 <p>Reimplemented in <a class="el" href="classoomph_1_1BellElement.html#ae0b6d4d44df8a05a9dd1b8709c9f0247">oomph::BellElement&lt; DIM, NNODE_1D &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="Subparametric__Telements_8h_source.html#l03095">3095</a> of file <a class="el" href="Subparametric__Telements_8h_source.html">Subparametric_Telements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Subparametric__Telements_8h_source.html#l03091">3091</a> of file <a class="el" href="Subparametric__Telements_8h_source.html">Subparametric_Telements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="Subparametric__Telements_8h_source.html#l03235">oomph::BellElementBase&lt; NNODE_1D &gt;::dtest_local_at_knot()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="Subparametric__Telements_8h_source.html#l03231">oomph::BellElementBase&lt; NNODE_1D &gt;::dtest_local_at_knot()</a>.</p>
 
 </div>
 </div>
@@ -2366,11 +2366,11 @@ template&lt;unsigned NNODE_1D&gt; </div>
 
 <p>Return the test function and its derivatives w.r.t. the local coordinates at the ipt-th integration point. </p>
 
-<p class="definition">Definition at line <a class="el" href="Subparametric__Telements_8h_source.html#l03235">3235</a> of file <a class="el" href="Subparametric__Telements_8h_source.html">Subparametric_Telements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Subparametric__Telements_8h_source.html#l03231">3231</a> of file <a class="el" href="Subparametric__Telements_8h_source.html">Subparametric_Telements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l02499">oomph::FiniteElement::dim()</a>, <a class="el" href="Subparametric__Telements_8h_source.html#l03095">oomph::BellElementBase&lt; NNODE_1D &gt;::dtest_local()</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="elements_8h_source.html#l01925">oomph::FiniteElement::integral_pt()</a>, <a class="el" href="classoomph_1_1Integral.html#a1a2122f99a87c18649bafdd9ed739758">oomph::Integral::knot()</a>, and <a class="el" href="cfortran_8h_source.html#l00572">s</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l02495">oomph::FiniteElement::dim()</a>, <a class="el" href="Subparametric__Telements_8h_source.html#l03091">oomph::BellElementBase&lt; NNODE_1D &gt;::dtest_local()</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="elements_8h_source.html#l01921">oomph::FiniteElement::integral_pt()</a>, <a class="el" href="classoomph_1_1Integral.html#a1a2122f99a87c18649bafdd9ed739758">oomph::Integral::knot()</a>, and <a class="el" href="cfortran_8h_source.html#l00568">s</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="Subparametric__Telements_8h_source.html#l03421">oomph::BellElementBase&lt; NNODE_1D &gt;::dshape_and_dtest_eulerian_at_knot()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="Subparametric__Telements_8h_source.html#l03417">oomph::BellElementBase&lt; NNODE_1D &gt;::dshape_and_dtest_eulerian_at_knot()</a>.</p>
 
 </div>
 </div>
@@ -2402,9 +2402,9 @@ template&lt;unsigned NNODE_1D&gt; </div>
 
 <p>Calculate the Jacobian of the mapping between local and global coordinates at the position s. </p>
 
-<p class="definition">Definition at line <a class="el" href="Subparametric__Telements_8h_source.html#l03555">3555</a> of file <a class="el" href="Subparametric__Telements_8h_source.html">Subparametric_Telements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Subparametric__Telements_8h_source.html#l03551">3551</a> of file <a class="el" href="Subparametric__Telements_8h_source.html">Subparametric_Telements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8cc_source.html#l01724">oomph::FiniteElement::check_jacobian()</a>, <a class="el" href="elements_8h_source.html#l02499">oomph::FiniteElement::dim()</a>, <a class="el" href="elements_8h_source.html#l01939">oomph::FiniteElement::dshape_local()</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="elements_8h_source.html#l02387">oomph::FiniteElement::nodal_dimension()</a>, <a class="el" href="oomph__definitions_8cc_source.html#l00326">oomph::oomph_info</a>, and <a class="el" href="elements_8h_source.html#l02210">oomph::FiniteElement::raw_nodal_position_gen()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8cc_source.html#l01720">oomph::FiniteElement::check_jacobian()</a>, <a class="el" href="elements_8h_source.html#l02495">oomph::FiniteElement::dim()</a>, <a class="el" href="elements_8h_source.html#l01935">oomph::FiniteElement::dshape_local()</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="elements_8h_source.html#l02383">oomph::FiniteElement::nodal_dimension()</a>, <a class="el" href="oomph__definitions_8cc_source.html#l00322">oomph::oomph_info</a>, and <a class="el" href="elements_8h_source.html#l02206">oomph::FiniteElement::raw_nodal_position_gen()</a>.</p>
 
 </div>
 </div>
@@ -2446,11 +2446,11 @@ template&lt;unsigned NNODE_1D&gt; </div>
 
 <p>Calculate the mapping from local to Eulerian coordinates, given the derivatives of the shape functions w.r.t. local coordinates, Return only the determinant of the jacobian and the inverse of the mapping (ds/dx). </p>
 
-<p class="definition">Definition at line <a class="el" href="Subparametric__Telements_8h_source.html#l03498">3498</a> of file <a class="el" href="Subparametric__Telements_8h_source.html">Subparametric_Telements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Subparametric__Telements_8h_source.html#l03494">3494</a> of file <a class="el" href="Subparametric__Telements_8h_source.html">Subparametric_Telements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l02499">oomph::FiniteElement::dim()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l02495">oomph::FiniteElement::dim()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="Subparametric__Telements_8h_source.html#l03309">oomph::BellElementBase&lt; NNODE_1D &gt;::d2basis_c0_eulerian()</a>, <a class="el" href="Subparametric__Telements_8h_source.html#l03386">oomph::BellElementBase&lt; NNODE_1D &gt;::d2basis_eulerian()</a>, <a class="el" href="Subparametric__Telements_8h_source.html#l03458">oomph::BellElementBase&lt; NNODE_1D &gt;::d2shape_and_d2test_eulerian_at_knot()</a>, <a class="el" href="Subparametric__Telements_8h_source.html#l03273">oomph::BellElementBase&lt; NNODE_1D &gt;::dbasis_c0_eulerian()</a>, <a class="el" href="Subparametric__Telements_8h_source.html#l03353">oomph::BellElementBase&lt; NNODE_1D &gt;::dbasis_eulerian()</a>, and <a class="el" href="Subparametric__Telements_8h_source.html#l03421">oomph::BellElementBase&lt; NNODE_1D &gt;::dshape_and_dtest_eulerian_at_knot()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="Subparametric__Telements_8h_source.html#l03305">oomph::BellElementBase&lt; NNODE_1D &gt;::d2basis_c0_eulerian()</a>, <a class="el" href="Subparametric__Telements_8h_source.html#l03382">oomph::BellElementBase&lt; NNODE_1D &gt;::d2basis_eulerian()</a>, <a class="el" href="Subparametric__Telements_8h_source.html#l03454">oomph::BellElementBase&lt; NNODE_1D &gt;::d2shape_and_d2test_eulerian_at_knot()</a>, <a class="el" href="Subparametric__Telements_8h_source.html#l03269">oomph::BellElementBase&lt; NNODE_1D &gt;::dbasis_c0_eulerian()</a>, <a class="el" href="Subparametric__Telements_8h_source.html#l03349">oomph::BellElementBase&lt; NNODE_1D &gt;::dbasis_eulerian()</a>, and <a class="el" href="Subparametric__Telements_8h_source.html#l03417">oomph::BellElementBase&lt; NNODE_1D &gt;::dshape_and_dtest_eulerian_at_knot()</a>.</p>
 
 </div>
 </div>
@@ -2496,9 +2496,9 @@ template&lt;unsigned NNODE_1D&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Subparametric__Telements_8h_source.html#l03510">3510</a> of file <a class="el" href="Subparametric__Telements_8h_source.html">Subparametric_Telements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Subparametric__Telements_8h_source.html#l03506">3506</a> of file <a class="el" href="Subparametric__Telements_8h_source.html">Subparametric_Telements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l02499">oomph::FiniteElement::dim()</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="elements_8cc_source.html#l02139">oomph::FiniteElement::invert_jacobian_mapping()</a>, and <a class="el" href="elements_8h_source.html#l02210">oomph::FiniteElement::raw_nodal_position_gen()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l02495">oomph::FiniteElement::dim()</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="elements_8cc_source.html#l02135">oomph::FiniteElement::invert_jacobian_mapping()</a>, and <a class="el" href="elements_8h_source.html#l02206">oomph::FiniteElement::raw_nodal_position_gen()</a>.</p>
 
 </div>
 </div>
@@ -2540,9 +2540,9 @@ template&lt;unsigned NNODE_1D&gt; </div>
 
 <p>Return FE interpolated position x[] at local coordinate s as <a class="el" href="classoomph_1_1Vector.html">Vector</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="Subparametric__Telements_8h_source.html#l03688">3688</a> of file <a class="el" href="Subparametric__Telements_8h_source.html">Subparametric_Telements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Subparametric__Telements_8h_source.html#l03684">3684</a> of file <a class="el" href="Subparametric__Telements_8h_source.html">Subparametric_Telements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="elements_8h_source.html#l02387">oomph::FiniteElement::nodal_dimension()</a>, <a class="el" href="elements_8h_source.html#l02266">oomph::FiniteElement::nodal_position_gen()</a>, <a class="el" href="cfortran_8h_source.html#l00572">s</a>, and <a class="el" href="classoomph_1_1FiniteElement.html#a58a25b6859ddd43b7bfe64a19fee5023">oomph::FiniteElement::shape()</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="elements_8h_source.html#l02383">oomph::FiniteElement::nodal_dimension()</a>, <a class="el" href="elements_8h_source.html#l02262">oomph::FiniteElement::nodal_position_gen()</a>, <a class="el" href="cfortran_8h_source.html#l00568">s</a>, and <a class="el" href="classoomph_1_1FiniteElement.html#a58a25b6859ddd43b7bfe64a19fee5023">oomph::FiniteElement::shape()</a>.</p>
 
 </div>
 </div>
@@ -2584,11 +2584,11 @@ template&lt;unsigned NNODE_1D&gt; </div>
 <p>Internal function that is used to assemble the jacobian of second derivatives of the the mapping from local coordinates (s) to the eulerian coordinates (x), given the second derivatives of the shape functions. <br  />
  </p>
 
-<p class="definition">Definition at line <a class="el" href="Subparametric__Telements_8h_source.html#l03646">3646</a> of file <a class="el" href="Subparametric__Telements_8h_source.html">Subparametric_Telements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Subparametric__Telements_8h_source.html#l03642">3642</a> of file <a class="el" href="Subparametric__Telements_8h_source.html">Subparametric_Telements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l02499">oomph::FiniteElement::dim()</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="elements_8h_source.html#l01457">oomph::FiniteElement::N2deriv</a>, and <a class="el" href="elements_8h_source.html#l02210">oomph::FiniteElement::raw_nodal_position_gen()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l02495">oomph::FiniteElement::dim()</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="elements_8h_source.html#l01453">oomph::FiniteElement::N2deriv</a>, and <a class="el" href="elements_8h_source.html#l02206">oomph::FiniteElement::raw_nodal_position_gen()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="Subparametric__Telements_8h_source.html#l03309">oomph::BellElementBase&lt; NNODE_1D &gt;::d2basis_c0_eulerian()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="Subparametric__Telements_8h_source.html#l03305">oomph::BellElementBase&lt; NNODE_1D &gt;::d2basis_c0_eulerian()</a>.</p>
 
 </div>
 </div>
@@ -2630,9 +2630,9 @@ template&lt;unsigned NNODE_1D&gt; </div>
 
 <p>Reimplemented in <a class="el" href="classoomph_1_1BellElement.html#a99afdb504fee71cb9c557ecb5069cd95">oomph::BellElement&lt; DIM, NNODE_1D &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="Subparametric__Telements_8h_source.html#l03091">3091</a> of file <a class="el" href="Subparametric__Telements_8h_source.html">Subparametric_Telements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Subparametric__Telements_8h_source.html#l03087">3087</a> of file <a class="el" href="Subparametric__Telements_8h_source.html">Subparametric_Telements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="Subparametric__Telements_8h_source.html#l03458">oomph::BellElementBase&lt; NNODE_1D &gt;::d2shape_and_d2test_eulerian_at_knot()</a>, <a class="el" href="Subparametric__Telements_8h_source.html#l03421">oomph::BellElementBase&lt; NNODE_1D &gt;::dshape_and_dtest_eulerian_at_knot()</a>, and <a class="el" href="Subparametric__Telements_8h_source.html#l03219">oomph::BellElementBase&lt; NNODE_1D &gt;::test_at_knot()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="Subparametric__Telements_8h_source.html#l03454">oomph::BellElementBase&lt; NNODE_1D &gt;::d2shape_and_d2test_eulerian_at_knot()</a>, <a class="el" href="Subparametric__Telements_8h_source.html#l03417">oomph::BellElementBase&lt; NNODE_1D &gt;::dshape_and_dtest_eulerian_at_knot()</a>, and <a class="el" href="Subparametric__Telements_8h_source.html#l03215">oomph::BellElementBase&lt; NNODE_1D &gt;::test_at_knot()</a>.</p>
 
 </div>
 </div>
@@ -2674,9 +2674,9 @@ template&lt;unsigned NNODE_1D&gt; </div>
 
 <p>Return the test function stored at the ipt-th integration point. </p>
 
-<p class="definition">Definition at line <a class="el" href="Subparametric__Telements_8h_source.html#l03219">3219</a> of file <a class="el" href="Subparametric__Telements_8h_source.html">Subparametric_Telements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Subparametric__Telements_8h_source.html#l03215">3215</a> of file <a class="el" href="Subparametric__Telements_8h_source.html">Subparametric_Telements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l02499">oomph::FiniteElement::dim()</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="elements_8h_source.html#l01925">oomph::FiniteElement::integral_pt()</a>, <a class="el" href="classoomph_1_1Integral.html#a1a2122f99a87c18649bafdd9ed739758">oomph::Integral::knot()</a>, <a class="el" href="cfortran_8h_source.html#l00572">s</a>, and <a class="el" href="Subparametric__Telements_8h_source.html#l03091">oomph::BellElementBase&lt; NNODE_1D &gt;::test()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l02495">oomph::FiniteElement::dim()</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="elements_8h_source.html#l01921">oomph::FiniteElement::integral_pt()</a>, <a class="el" href="classoomph_1_1Integral.html#a1a2122f99a87c18649bafdd9ed739758">oomph::Integral::knot()</a>, <a class="el" href="cfortran_8h_source.html#l00568">s</a>, and <a class="el" href="Subparametric__Telements_8h_source.html#l03087">oomph::BellElementBase&lt; NNODE_1D &gt;::test()</a>.</p>
 
 </div>
 </div>
@@ -2711,7 +2711,7 @@ template&lt;unsigned NNODE_1D&gt; </div>
     <footer>
       <div class="container">
         <div class="text-muted" style="float:right;">Generated by <a href="http://www.doxygen.org/index.html">
-          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Tue Jul 6 2021 22:55:46
+          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Fri Jul 9 2021 20:51:05
         </div>
       </div>
     </footer>

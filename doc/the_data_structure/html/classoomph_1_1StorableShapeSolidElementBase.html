@@ -1435,7 +1435,7 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class for solid elements that allow storage of precomputed shape functions and their derivatives w.r.t to the local and global (Lagrangian) coordinates at the element's integration points. </p>
 
-<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00351">351</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00347">347</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a9e4afdd429dbaa37a9b20422250bc368"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9e4afdd429dbaa37a9b20422250bc368">&#9670;&nbsp;</a></span>StorableShapeSolidElementBase() <span class="overload">[1/2]</span></h2>
@@ -1462,7 +1462,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Constructor: Set defaults: Nothing is stored. </p>
 
-<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00375">375</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00371">371</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
 
 </div>
 </div>
@@ -1491,9 +1491,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Destructor to clean up any allocated memory. </p>
 
-<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00383">383</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00379">379</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="stored__shape__function__elements_8cc_source.html#l00876">delete_all_dshape_lagrangian_stored()</a>.</p>
+<p class="reference">References <a class="el" href="stored__shape__function__elements_8cc_source.html#l00872">delete_all_dshape_lagrangian_stored()</a>.</p>
 
 </div>
 </div>
@@ -1523,9 +1523,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Broken copy constructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00387">387</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00383">383</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="oomph__utilities_8cc_source.html#l00218">oomph::BrokenCopy::broken_copy()</a>.</p>
+<p class="reference">References <a class="el" href="oomph__utilities_8cc_source.html#l00214">oomph::BrokenCopy::broken_copy()</a>.</p>
 
 </div>
 </div>
@@ -1581,9 +1581,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1SolidFiniteElement.html#a69d17ec5fa308adae42e2f3171649bfe">oomph::SolidFiniteElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8cc_source.html#l01126">1126</a> of file <a class="el" href="stored__shape__function__elements_8cc_source.html">stored_shape_function_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8cc_source.html#l01122">1122</a> of file <a class="el" href="stored__shape__function__elements_8cc_source.html">stored_shape_function_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8cc_source.html#l06686">oomph::SolidFiniteElement::d2shape_lagrangian_at_knot()</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00362">D2Shape_lagrangian_stored_pt</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00366">Jacobian_lagrangian_stored_pt</a>, and <a class="el" href="stored__shape__function__elements_8h_source.html#l00170">oomph::StorableShapeElementBase::shape_stored_pt()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8cc_source.html#l06682">oomph::SolidFiniteElement::d2shape_lagrangian_at_knot()</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00358">D2Shape_lagrangian_stored_pt</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00362">Jacobian_lagrangian_stored_pt</a>, and <a class="el" href="stored__shape__function__elements_8h_source.html#l00166">oomph::StorableShapeElementBase::shape_stored_pt()</a>.</p>
 
 </div>
 </div>
@@ -1613,11 +1613,11 @@ Additional Inherited Members</h2></td></tr>
 <p>Return a pointer to the vector of pointers to the stored second derivatives of the shape functions w.r.t the global (eulerian) coordinates <br  />
  </p>
 
-<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00447">447</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00443">443</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00362">D2Shape_lagrangian_stored_pt</a>.</p>
+<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00358">D2Shape_lagrangian_stored_pt</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8cc_source.html#l01157">set_dshape_lagrangian_stored_from_element()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8cc_source.html#l01153">set_dshape_lagrangian_stored_from_element()</a>.</p>
 
 </div>
 </div>
@@ -1647,9 +1647,9 @@ Additional Inherited Members</h2></td></tr>
 <p>Return a pointer to the vector of pointers to the stored second derivatives of the shape functions w.r.t the global (eulerian) <br  />
  coordinates (const version) </p>
 
-<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00453">453</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00449">449</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00362">D2Shape_lagrangian_stored_pt</a>.</p>
+<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00358">D2Shape_lagrangian_stored_pt</a>.</p>
 
 </div>
 </div>
@@ -1671,11 +1671,11 @@ Additional Inherited Members</h2></td></tr>
 <p>Delete all the objects stored in the [...]_lagrangian_stored_pt vectors and delete the vectors themselves. </p>
 <p>Delete all the objects and storage associated with stored derivatives of shape functions with respect to Lagrangian coordinates </p>
 
-<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8cc_source.html#l00876">876</a> of file <a class="el" href="stored__shape__function__elements_8cc_source.html">stored_shape_function_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8cc_source.html#l00872">872</a> of file <a class="el" href="stored__shape__function__elements_8cc_source.html">stored_shape_function_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="stored__shape__function__elements_8cc_source.html#l00913">delete_d2shape_lagrangian_stored()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00888">delete_dshape_lagrangian_stored()</a>, and <a class="el" href="stored__shape__function__elements_8cc_source.html#l00937">delete_J_lagrangian_stored()</a>.</p>
+<p class="reference">References <a class="el" href="stored__shape__function__elements_8cc_source.html#l00909">delete_d2shape_lagrangian_stored()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00884">delete_dshape_lagrangian_stored()</a>, and <a class="el" href="stored__shape__function__elements_8cc_source.html#l00933">delete_J_lagrangian_stored()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8cc_source.html#l01157">set_dshape_lagrangian_stored_from_element()</a>, and <a class="el" href="stored__shape__function__elements_8h_source.html#l00383">~StorableShapeSolidElementBase()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8cc_source.html#l01153">set_dshape_lagrangian_stored_from_element()</a>, and <a class="el" href="stored__shape__function__elements_8h_source.html#l00379">~StorableShapeSolidElementBase()</a>.</p>
 
 </div>
 </div>
@@ -1697,11 +1697,11 @@ Additional Inherited Members</h2></td></tr>
 <p>Delete stored second derivatives of shape functions w.r.t. Lagrangian coordinates. </p>
 <p>Delete all the objects stored in the vectors: D2Shape_lagrangian_stored </p>
 
-<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8cc_source.html#l00913">913</a> of file <a class="el" href="stored__shape__function__elements_8cc_source.html">stored_shape_function_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8cc_source.html#l00909">909</a> of file <a class="el" href="stored__shape__function__elements_8cc_source.html">stored_shape_function_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00370">Can_delete_dshape_lagrangian_stored</a>, and <a class="el" href="stored__shape__function__elements_8h_source.html#l00362">D2Shape_lagrangian_stored_pt</a>.</p>
+<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00366">Can_delete_dshape_lagrangian_stored</a>, and <a class="el" href="stored__shape__function__elements_8h_source.html#l00358">D2Shape_lagrangian_stored_pt</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8cc_source.html#l00876">delete_all_dshape_lagrangian_stored()</a>, and <a class="el" href="stored__shape__function__elements_8cc_source.html#l01015">pre_compute_d2shape_lagrangian_at_knots()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8cc_source.html#l00872">delete_all_dshape_lagrangian_stored()</a>, and <a class="el" href="stored__shape__function__elements_8cc_source.html#l01011">pre_compute_d2shape_lagrangian_at_knots()</a>.</p>
 
 </div>
 </div>
@@ -1724,11 +1724,11 @@ Additional Inherited Members</h2></td></tr>
  </p>
 <p>Delete all the objects stored in the vectors: DShape_lagrangian_stored </p>
 
-<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8cc_source.html#l00888">888</a> of file <a class="el" href="stored__shape__function__elements_8cc_source.html">stored_shape_function_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8cc_source.html#l00884">884</a> of file <a class="el" href="stored__shape__function__elements_8cc_source.html">stored_shape_function_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00370">Can_delete_dshape_lagrangian_stored</a>, and <a class="el" href="stored__shape__function__elements_8h_source.html#l00358">DShape_lagrangian_stored_pt</a>.</p>
+<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00366">Can_delete_dshape_lagrangian_stored</a>, and <a class="el" href="stored__shape__function__elements_8h_source.html#l00354">DShape_lagrangian_stored_pt</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8cc_source.html#l00876">delete_all_dshape_lagrangian_stored()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l01015">pre_compute_d2shape_lagrangian_at_knots()</a>, and <a class="el" href="stored__shape__function__elements_8cc_source.html#l00953">pre_compute_dshape_lagrangian_at_knots()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8cc_source.html#l00872">delete_all_dshape_lagrangian_stored()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l01011">pre_compute_d2shape_lagrangian_at_knots()</a>, and <a class="el" href="stored__shape__function__elements_8cc_source.html#l00949">pre_compute_dshape_lagrangian_at_knots()</a>.</p>
 
 </div>
 </div>
@@ -1750,11 +1750,11 @@ Additional Inherited Members</h2></td></tr>
 <p>Delete stored Jaocbian of mapping between local and Lagrangian coordinates. </p>
 <p>Delete the stored Jacobian of the mapping between the Lagrangian and local coordinates. </p>
 
-<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8cc_source.html#l00937">937</a> of file <a class="el" href="stored__shape__function__elements_8cc_source.html">stored_shape_function_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8cc_source.html#l00933">933</a> of file <a class="el" href="stored__shape__function__elements_8cc_source.html">stored_shape_function_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00370">Can_delete_dshape_lagrangian_stored</a>, and <a class="el" href="stored__shape__function__elements_8h_source.html#l00366">Jacobian_lagrangian_stored_pt</a>.</p>
+<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00366">Can_delete_dshape_lagrangian_stored</a>, and <a class="el" href="stored__shape__function__elements_8h_source.html#l00362">Jacobian_lagrangian_stored_pt</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8cc_source.html#l00876">delete_all_dshape_lagrangian_stored()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l01015">pre_compute_d2shape_lagrangian_at_knots()</a>, and <a class="el" href="stored__shape__function__elements_8cc_source.html#l00953">pre_compute_dshape_lagrangian_at_knots()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8cc_source.html#l00872">delete_all_dshape_lagrangian_stored()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l01011">pre_compute_d2shape_lagrangian_at_knots()</a>, and <a class="el" href="stored__shape__function__elements_8cc_source.html#l00949">pre_compute_dshape_lagrangian_at_knots()</a>.</p>
 
 </div>
 </div>
@@ -1803,9 +1803,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1SolidFiniteElement.html#aa48b4880f69bb28d267ff27e7b1967e7">oomph::SolidFiniteElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8cc_source.html#l01101">1101</a> of file <a class="el" href="stored__shape__function__elements_8cc_source.html">stored_shape_function_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8cc_source.html#l01097">1097</a> of file <a class="el" href="stored__shape__function__elements_8cc_source.html">stored_shape_function_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8cc_source.html#l06592">oomph::SolidFiniteElement::dshape_lagrangian_at_knot()</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00358">DShape_lagrangian_stored_pt</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00366">Jacobian_lagrangian_stored_pt</a>, and <a class="el" href="stored__shape__function__elements_8h_source.html#l00170">oomph::StorableShapeElementBase::shape_stored_pt()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8cc_source.html#l06588">oomph::SolidFiniteElement::dshape_lagrangian_at_knot()</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00354">DShape_lagrangian_stored_pt</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00362">Jacobian_lagrangian_stored_pt</a>, and <a class="el" href="stored__shape__function__elements_8h_source.html#l00166">oomph::StorableShapeElementBase::shape_stored_pt()</a>.</p>
 
 </div>
 </div>
@@ -1835,11 +1835,11 @@ Additional Inherited Members</h2></td></tr>
 <p>Return a pointer to the vector of pointers to the stored first derivatives of the shape functions w.r.t the global (eulerian) coordinates <br  />
  </p>
 
-<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00435">435</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00431">431</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00358">DShape_lagrangian_stored_pt</a>.</p>
+<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00354">DShape_lagrangian_stored_pt</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8cc_source.html#l01157">set_dshape_lagrangian_stored_from_element()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8cc_source.html#l01153">set_dshape_lagrangian_stored_from_element()</a>.</p>
 
 </div>
 </div>
@@ -1868,9 +1868,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Return a pointer to the vector of pointers to the stored first derivatives of the shape functions w.r.t the global (eulerian) coordinates (const version) </p>
 
-<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00441">441</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00437">437</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00358">DShape_lagrangian_stored_pt</a>.</p>
+<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00354">DShape_lagrangian_stored_pt</a>.</p>
 
 </div>
 </div>
@@ -1899,11 +1899,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Return a pointer to the vector of Jacobians of the mapping between the local and global (eulerian) coordinates. </p>
 
-<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00458">458</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00454">454</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00366">Jacobian_lagrangian_stored_pt</a>.</p>
+<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00362">Jacobian_lagrangian_stored_pt</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8cc_source.html#l01157">set_dshape_lagrangian_stored_from_element()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8cc_source.html#l01153">set_dshape_lagrangian_stored_from_element()</a>.</p>
 
 </div>
 </div>
@@ -1932,9 +1932,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Return a pointer to the vector of Jacobians of the mapping between the local and global (eulerian) coordinates (const version) </p>
 
-<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00464">464</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00460">460</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00366">Jacobian_lagrangian_stored_pt</a>.</p>
+<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00362">Jacobian_lagrangian_stored_pt</a>.</p>
 
 </div>
 </div>
@@ -1964,9 +1964,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Broken assignment operator. </p>
 
-<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00393">393</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00389">389</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="oomph__utilities_8cc_source.html#l00201">oomph::BrokenCopy::broken_assign()</a>.</p>
+<p class="reference">References <a class="el" href="oomph__utilities_8cc_source.html#l00197">oomph::BrokenCopy::broken_assign()</a>.</p>
 
 </div>
 </div>
@@ -1988,11 +1988,11 @@ Additional Inherited Members</h2></td></tr>
 <p>Calculate the first and second derivatives of the shape functions w.r.t Lagrangian coordinates at the integration points and store the results internally. </p>
 <p>Calculate the values of the first and second derivatives of the shape functions at the integration points and store in the internal storage of the element </p>
 
-<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8cc_source.html#l01015">1015</a> of file <a class="el" href="stored__shape__function__elements_8cc_source.html">stored_shape_function_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8cc_source.html#l01011">1011</a> of file <a class="el" href="stored__shape__function__elements_8cc_source.html">stored_shape_function_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00370">Can_delete_dshape_lagrangian_stored</a>, <a class="el" href="elements_8cc_source.html#l06686">oomph::SolidFiniteElement::d2shape_lagrangian_at_knot()</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00362">D2Shape_lagrangian_stored_pt</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00913">delete_d2shape_lagrangian_stored()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00888">delete_dshape_lagrangian_stored()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00937">delete_J_lagrangian_stored()</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00358">DShape_lagrangian_stored_pt</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="elements_8h_source.html#l01925">oomph::FiniteElement::integral_pt()</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00366">Jacobian_lagrangian_stored_pt</a>, <a class="el" href="geom__objects_8h_source.html#l00182">oomph::GeomObject::nlagrangian()</a>, <a class="el" href="elements_8h_source.html#l02163">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l02126">oomph::FiniteElement::node_pt()</a>, <a class="el" href="classoomph_1_1Integral.html#a1a270de9d99a1fcf1d25a6c1017f65fa">oomph::Integral::nweight()</a>, <a class="el" href="oomph__definitions_8cc_source.html#l00326">oomph::oomph_info</a>, and <a class="el" href="stored__shape__function__elements_8cc_source.html#l00272">oomph::StorableShapeElementBase::pre_compute_shape_at_knots()</a>.</p>
+<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00366">Can_delete_dshape_lagrangian_stored</a>, <a class="el" href="elements_8cc_source.html#l06682">oomph::SolidFiniteElement::d2shape_lagrangian_at_knot()</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00358">D2Shape_lagrangian_stored_pt</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00909">delete_d2shape_lagrangian_stored()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00884">delete_dshape_lagrangian_stored()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00933">delete_J_lagrangian_stored()</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00354">DShape_lagrangian_stored_pt</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="elements_8h_source.html#l01921">oomph::FiniteElement::integral_pt()</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00362">Jacobian_lagrangian_stored_pt</a>, <a class="el" href="geom__objects_8h_source.html#l00178">oomph::GeomObject::nlagrangian()</a>, <a class="el" href="elements_8h_source.html#l02159">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l02122">oomph::FiniteElement::node_pt()</a>, <a class="el" href="classoomph_1_1Integral.html#a1a270de9d99a1fcf1d25a6c1017f65fa">oomph::Integral::nweight()</a>, <a class="el" href="oomph__definitions_8cc_source.html#l00322">oomph::oomph_info</a>, and <a class="el" href="stored__shape__function__elements_8cc_source.html#l00268">oomph::StorableShapeElementBase::pre_compute_shape_at_knots()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8h_source.html#l00416">set_integration_scheme()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8h_source.html#l00412">set_integration_scheme()</a>.</p>
 
 </div>
 </div>
@@ -2014,11 +2014,11 @@ Additional Inherited Members</h2></td></tr>
 <p>Calculate the first derivatives of the shape functions w.r.t Lagrangian coordinates at the integration points and store the results internally. </p>
 <p>Calculate the values of the derivatives of the shape functions at the integration points and store in the internal storage of the element </p>
 
-<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8cc_source.html#l00953">953</a> of file <a class="el" href="stored__shape__function__elements_8cc_source.html">stored_shape_function_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8cc_source.html#l00949">949</a> of file <a class="el" href="stored__shape__function__elements_8cc_source.html">stored_shape_function_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00370">Can_delete_dshape_lagrangian_stored</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00888">delete_dshape_lagrangian_stored()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00937">delete_J_lagrangian_stored()</a>, <a class="el" href="elements_8cc_source.html#l06592">oomph::SolidFiniteElement::dshape_lagrangian_at_knot()</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00358">DShape_lagrangian_stored_pt</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="elements_8h_source.html#l01925">oomph::FiniteElement::integral_pt()</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00366">Jacobian_lagrangian_stored_pt</a>, <a class="el" href="geom__objects_8h_source.html#l00182">oomph::GeomObject::nlagrangian()</a>, <a class="el" href="elements_8h_source.html#l02163">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l02126">oomph::FiniteElement::node_pt()</a>, <a class="el" href="classoomph_1_1Integral.html#a1a270de9d99a1fcf1d25a6c1017f65fa">oomph::Integral::nweight()</a>, and <a class="el" href="stored__shape__function__elements_8cc_source.html#l00272">oomph::StorableShapeElementBase::pre_compute_shape_at_knots()</a>.</p>
+<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00366">Can_delete_dshape_lagrangian_stored</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00884">delete_dshape_lagrangian_stored()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00933">delete_J_lagrangian_stored()</a>, <a class="el" href="elements_8cc_source.html#l06588">oomph::SolidFiniteElement::dshape_lagrangian_at_knot()</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00354">DShape_lagrangian_stored_pt</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="elements_8h_source.html#l01921">oomph::FiniteElement::integral_pt()</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00362">Jacobian_lagrangian_stored_pt</a>, <a class="el" href="geom__objects_8h_source.html#l00178">oomph::GeomObject::nlagrangian()</a>, <a class="el" href="elements_8h_source.html#l02159">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l02122">oomph::FiniteElement::node_pt()</a>, <a class="el" href="classoomph_1_1Integral.html#a1a270de9d99a1fcf1d25a6c1017f65fa">oomph::Integral::nweight()</a>, and <a class="el" href="stored__shape__function__elements_8cc_source.html#l00268">oomph::StorableShapeElementBase::pre_compute_shape_at_knots()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8h_source.html#l00416">set_integration_scheme()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8h_source.html#l00412">set_integration_scheme()</a>.</p>
 
 </div>
 </div>
@@ -2041,9 +2041,9 @@ Additional Inherited Members</h2></td></tr>
 <p>Set the derivatives of stored shape functions with respect to the lagrangian coordinates to be the same as those pointed to by the <a class="el" href="classoomph_1_1FiniteElement.html" title="A general Finite Element class.">FiniteElement</a> element_pt. Note that this function also calls set_shape_local_stored_from_element(element_pt). so that the local derivatives are also stored. Calling this function only makes sense for uniformly-spaced meshes with elements of equal sizes. </p>
 <p>Set the stored derivatives of shape functions w.r.t Lagrangian coordinates to be those stored in the <a class="el" href="classoomph_1_1StorableShapeElementBase.html">StorableShapeElementBase</a> pointed to by element_pt. Using this function will allow a saving in the storage required for integration schemes in the (most common) case when a large number of elements have the same integration scheme </p>
 
-<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8cc_source.html#l01157">1157</a> of file <a class="el" href="stored__shape__function__elements_8cc_source.html">stored_shape_function_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8cc_source.html#l01153">1153</a> of file <a class="el" href="stored__shape__function__elements_8cc_source.html">stored_shape_function_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00370">Can_delete_dshape_lagrangian_stored</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00362">D2Shape_lagrangian_stored_pt</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00447">d2shape_lagrangian_stored_pt()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00876">delete_all_dshape_lagrangian_stored()</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00358">DShape_lagrangian_stored_pt</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00435">dshape_lagrangian_stored_pt()</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00366">Jacobian_lagrangian_stored_pt</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00458">jacobian_lagrangian_stored_pt()</a>, and <a class="el" href="stored__shape__function__elements_8cc_source.html#l00799">oomph::StorableShapeElementBase::set_shape_local_stored_from_element()</a>.</p>
+<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00366">Can_delete_dshape_lagrangian_stored</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00358">D2Shape_lagrangian_stored_pt</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00443">d2shape_lagrangian_stored_pt()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00872">delete_all_dshape_lagrangian_stored()</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00354">DShape_lagrangian_stored_pt</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00431">dshape_lagrangian_stored_pt()</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00362">Jacobian_lagrangian_stored_pt</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00454">jacobian_lagrangian_stored_pt()</a>, and <a class="el" href="stored__shape__function__elements_8cc_source.html#l00795">oomph::StorableShapeElementBase::set_shape_local_stored_from_element()</a>.</p>
 
 </div>
 </div>
@@ -2075,11 +2075,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1StorableShapeElementBase.html#a1c20f4028654ec94f57037a3e3dc6582">oomph::StorableShapeElementBase</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00416">416</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00412">412</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00362">D2Shape_lagrangian_stored_pt</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00358">DShape_lagrangian_stored_pt</a>, <a class="el" href="elements_8h_source.html#l01925">oomph::FiniteElement::integral_pt()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l01015">pre_compute_d2shape_lagrangian_at_knots()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00953">pre_compute_dshape_lagrangian_at_knots()</a>, and <a class="el" href="stored__shape__function__elements_8cc_source.html#l00228">oomph::StorableShapeElementBase::set_integration_scheme()</a>.</p>
+<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00358">D2Shape_lagrangian_stored_pt</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00354">DShape_lagrangian_stored_pt</a>, <a class="el" href="elements_8h_source.html#l01921">oomph::FiniteElement::integral_pt()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l01011">pre_compute_d2shape_lagrangian_at_knots()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00949">pre_compute_dshape_lagrangian_at_knots()</a>, and <a class="el" href="stored__shape__function__elements_8cc_source.html#l00224">oomph::StorableShapeElementBase::set_integration_scheme()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8h_source.html#l00575">oomph::StorableShapeSolidElement&lt; ELEMENT &gt;::StorableShapeSolidElement()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8h_source.html#l00571">oomph::StorableShapeSolidElement&lt; ELEMENT &gt;::StorableShapeSolidElement()</a>.</p>
 
 </div>
 </div>
@@ -2106,9 +2106,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Boolean to determine whether the element can delete the stored shape function derivatives w.r.t. the Lagrangian coordinate. </p>
 
-<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00370">370</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00366">366</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8cc_source.html#l00913">delete_d2shape_lagrangian_stored()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00888">delete_dshape_lagrangian_stored()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00937">delete_J_lagrangian_stored()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l01015">pre_compute_d2shape_lagrangian_at_knots()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00953">pre_compute_dshape_lagrangian_at_knots()</a>, and <a class="el" href="stored__shape__function__elements_8cc_source.html#l01157">set_dshape_lagrangian_stored_from_element()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8cc_source.html#l00909">delete_d2shape_lagrangian_stored()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00884">delete_dshape_lagrangian_stored()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00933">delete_J_lagrangian_stored()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l01011">pre_compute_d2shape_lagrangian_at_knots()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00949">pre_compute_dshape_lagrangian_at_knots()</a>, and <a class="el" href="stored__shape__function__elements_8cc_source.html#l01153">set_dshape_lagrangian_stored_from_element()</a>.</p>
 
 </div>
 </div>
@@ -2134,9 +2134,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Pointer to storage for the pointers to the second derivatives of the shape functions w.r.t. Lagrangian coordinates at integration points. </p>
 
-<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00362">362</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00358">358</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8cc_source.html#l01126">d2shape_lagrangian_at_knot()</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00447">d2shape_lagrangian_stored_pt()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00913">delete_d2shape_lagrangian_stored()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l01015">pre_compute_d2shape_lagrangian_at_knots()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l01157">set_dshape_lagrangian_stored_from_element()</a>, and <a class="el" href="stored__shape__function__elements_8h_source.html#l00416">set_integration_scheme()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8cc_source.html#l01122">d2shape_lagrangian_at_knot()</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00443">d2shape_lagrangian_stored_pt()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00909">delete_d2shape_lagrangian_stored()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l01011">pre_compute_d2shape_lagrangian_at_knots()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l01153">set_dshape_lagrangian_stored_from_element()</a>, and <a class="el" href="stored__shape__function__elements_8h_source.html#l00412">set_integration_scheme()</a>.</p>
 
 </div>
 </div>
@@ -2162,9 +2162,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Pointer to storage for the pointers to the derivatives of the shape functions w.r.t. Lagrangian coordinates at integration points. </p>
 
-<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00358">358</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00354">354</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8cc_source.html#l00888">delete_dshape_lagrangian_stored()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l01101">dshape_lagrangian_at_knot()</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00435">dshape_lagrangian_stored_pt()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l01015">pre_compute_d2shape_lagrangian_at_knots()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00953">pre_compute_dshape_lagrangian_at_knots()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l01157">set_dshape_lagrangian_stored_from_element()</a>, and <a class="el" href="stored__shape__function__elements_8h_source.html#l00416">set_integration_scheme()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8cc_source.html#l00884">delete_dshape_lagrangian_stored()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l01097">dshape_lagrangian_at_knot()</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00431">dshape_lagrangian_stored_pt()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l01011">pre_compute_d2shape_lagrangian_at_knots()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00949">pre_compute_dshape_lagrangian_at_knots()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l01153">set_dshape_lagrangian_stored_from_element()</a>, and <a class="el" href="stored__shape__function__elements_8h_source.html#l00412">set_integration_scheme()</a>.</p>
 
 </div>
 </div>
@@ -2191,9 +2191,9 @@ Additional Inherited Members</h2></td></tr>
 <p>Pointer to storage for the Jacobian of the mapping between the local and the global Lagrangian coordinates <br  />
  </p>
 
-<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00366">366</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00362">362</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8cc_source.html#l01126">d2shape_lagrangian_at_knot()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00937">delete_J_lagrangian_stored()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l01101">dshape_lagrangian_at_knot()</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00458">jacobian_lagrangian_stored_pt()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l01015">pre_compute_d2shape_lagrangian_at_knots()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00953">pre_compute_dshape_lagrangian_at_knots()</a>, and <a class="el" href="stored__shape__function__elements_8cc_source.html#l01157">set_dshape_lagrangian_stored_from_element()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8cc_source.html#l01122">d2shape_lagrangian_at_knot()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00933">delete_J_lagrangian_stored()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l01097">dshape_lagrangian_at_knot()</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00454">jacobian_lagrangian_stored_pt()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l01011">pre_compute_d2shape_lagrangian_at_knots()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00949">pre_compute_dshape_lagrangian_at_knots()</a>, and <a class="el" href="stored__shape__function__elements_8cc_source.html#l01153">set_dshape_lagrangian_stored_from_element()</a>.</p>
 
 </div>
 </div>
@@ -2229,7 +2229,7 @@ Additional Inherited Members</h2></td></tr>
     <footer>
       <div class="container">
         <div class="text-muted" style="float:right;">Generated by <a href="http://www.doxygen.org/index.html">
-          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Tue Jul 6 2021 22:59:39
+          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Fri Jul 9 2021 20:54:30
         </div>
       </div>
     </footer>

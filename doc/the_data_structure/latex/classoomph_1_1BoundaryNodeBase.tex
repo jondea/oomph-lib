@@ -81,7 +81,7 @@ std\+::set$<$ unsigned $>$ $\ast$ \mbox{\hyperlink{classoomph_1_1BoundaryNodeBas
 \doxysubsection{Detailed Description}
 A class that contains the information required by Nodes that are located on \mbox{\hyperlink{classoomph_1_1Mesh}{Mesh}} boundaries. A \mbox{\hyperlink{classoomph_1_1BoundaryNode}{Boundary\+Node}} of a particular type is obtained by combining a given \mbox{\hyperlink{classoomph_1_1Node}{Node}} with this class. By differentiating between Nodes and Boundary\+Nodes we avoid a lot of un-\/necessary storage in the bulk Nodes. 
 
-Definition at line 1854 of file nodes.\+h.
+Definition at line 1850 of file nodes.\+h.
 
 
 
@@ -98,7 +98,7 @@ Default constructor, set the pointers to the storage to N\+U\+LL.
 
 
 
-Definition at line 2017 of file nodes.\+h.
+Definition at line 2013 of file nodes.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1BoundaryNodeBase_acb698db0bafda5e858856d4106614059}\label{classoomph_1_1BoundaryNodeBase_acb698db0bafda5e858856d4106614059}} 
 \index{oomph::BoundaryNodeBase@{oomph::BoundaryNodeBase}!````~BoundaryNodeBase@{$\sim$BoundaryNodeBase}}
@@ -112,7 +112,7 @@ Destructor, clean up any allocated storage for the boundaries.
 
 Destructor to clean up any memory that might have been allocated. 
 
-Definition at line 2894 of file nodes.\+cc.
+Definition at line 2890 of file nodes.\+cc.
 
 
 
@@ -130,7 +130,7 @@ Broken copy constructor.
 
 
 
-Definition at line 2027 of file nodes.\+h.
+Definition at line 2023 of file nodes.\+h.
 
 
 
@@ -151,7 +151,7 @@ Add the node to the mesh boundary b.
 
 
 
-Definition at line 2933 of file nodes.\+cc.
+Definition at line 2929 of file nodes.\+cc.
 
 
 
@@ -183,7 +183,7 @@ Have boundary coordinates been set up?
 
 
 
-Definition at line 2035 of file nodes.\+h.
+Definition at line 2031 of file nodes.\+h.
 
 
 
@@ -205,7 +205,7 @@ Access to pointer to set of mesh boundaries that this node occupies; N\+U\+LL if
 
 
 
-Definition at line 2042 of file nodes.\+h.
+Definition at line 2038 of file nodes.\+h.
 
 
 
@@ -227,7 +227,7 @@ Return the vector of the k-\/th generalised boundary coordinates on mesh boundar
 
 Given the mesh boundary b, return the k-\/th generalised boundary coordinates of the node in the vector boundary\+\_\+zeta 
 
-Definition at line 3067 of file nodes.\+cc.
+Definition at line 3063 of file nodes.\+cc.
 
 
 
@@ -245,7 +245,7 @@ Return the vector of boundary coordinates on mesh boundary b.
 
 
 
-Definition at line 2061 of file nodes.\+h.
+Definition at line 2057 of file nodes.\+h.
 
 
 
@@ -263,7 +263,7 @@ Return the index of the first value associated with the i-\/th face element valu
 
 
 
-Definition at line 1962 of file nodes.\+h.
+Definition at line 1958 of file nodes.\+h.
 
 
 
@@ -281,7 +281,7 @@ Return the index of the first value associated with the i-\/th face element valu
 
 
 
-Definition at line 1924 of file nodes.\+h.
+Definition at line 1920 of file nodes.\+h.
 
 
 
@@ -303,7 +303,7 @@ Return pointer to the map giving the index of the first face element value.
 
 
 
-Definition at line 1909 of file nodes.\+h.
+Definition at line 1905 of file nodes.\+h.
 
 
 
@@ -325,7 +325,7 @@ Test whether the node lies on a boundary.
 
 
 
-Definition at line 2052 of file nodes.\+h.
+Definition at line 2048 of file nodes.\+h.
 
 
 
@@ -347,7 +347,7 @@ Test whether the node lies on mesh boundary b.
 
 Test whether the node lies on the mesh boundary b. 
 
-Definition at line 3000 of file nodes.\+cc.
+Definition at line 2996 of file nodes.\+cc.
 
 
 
@@ -367,7 +367,7 @@ Helper function that is used to turn Boundary\+Nodes into peridic boundary nodes
 Helper function that is used to turn Boundary\+Nodes into peridic boundary nodes by setting the data values of copy\+\_\+of\+\_\+node\+\_\+pt to those of copied\+\_\+node\+\_\+pt. ~\newline
  
 
-Definition at line 2851 of file nodes.\+cc.
+Definition at line 2847 of file nodes.\+cc.
 
 
 
@@ -389,7 +389,7 @@ Helper function that is used to turn Boundary\+Nodes into periodic boundary node
 
 Helper function that is used to turn Boundary\+Nodes into periodic boundary nodes by setting the data values of the nodes in the vector periodic\+\_\+copies\+\_\+pt to be the same as those in copied\+\_\+node\+\_\+pt. This function should be used when making doubly periodic sets of nodes. 
 
-Definition at line 2792 of file nodes.\+cc.
+Definition at line 2788 of file nodes.\+cc.
 
 
 
@@ -411,7 +411,7 @@ Get the number of boundary coordinates on mesh boundary b.
 
 
 
-Definition at line 3017 of file nodes.\+cc.
+Definition at line 3013 of file nodes.\+cc.
 
 
 
@@ -443,7 +443,7 @@ Broken assignment operator.
 
 
 
-Definition at line 2031 of file nodes.\+h.
+Definition at line 2027 of file nodes.\+h.
 
 
 
@@ -461,7 +461,7 @@ Remove the node from the mesh boundary b.
 
 
 
-Definition at line 2962 of file nodes.\+cc.
+Definition at line 2958 of file nodes.\+cc.
 
 
 
@@ -483,7 +483,7 @@ Set the vector of the k-\/th generalised boundary coordinates on mesh boundary b
 
 Given the mesh boundary b, set the k-\/th generalised boundary coordinates of the node from the vector boundary\+\_\+zeta 
 
-Definition at line 3139 of file nodes.\+cc.
+Definition at line 3135 of file nodes.\+cc.
 
 
 
@@ -501,7 +501,7 @@ Set the vector of boundary coordinates on mesh boundary b.
 
 
 
-Definition at line 2070 of file nodes.\+h.
+Definition at line 2066 of file nodes.\+h.
 
 
 
@@ -523,7 +523,7 @@ Pointer to set of mesh boundaries occupied by the \mbox{\hyperlink{classoomph_1_
 
 
 
-Definition at line 1868 of file nodes.\+h.
+Definition at line 1864 of file nodes.\+h.
 
 
 
@@ -541,7 +541,7 @@ Pointer to a map of pointers to intrinsic boundary coordinates of the \mbox{\hyp
 
 
 
-Definition at line 1864 of file nodes.\+h.
+Definition at line 1860 of file nodes.\+h.
 
 
 
@@ -559,7 +559,7 @@ If the \mbox{\hyperlink{classoomph_1_1BoundaryNode}{Boundary\+Node}} is periodic
 
 
 
-Definition at line 1882 of file nodes.\+h.
+Definition at line 1878 of file nodes.\+h.
 
 
 
@@ -578,7 +578,7 @@ Pointer to a map, ~\newline
 
 
 
-Definition at line 1878 of file nodes.\+h.
+Definition at line 1874 of file nodes.\+h.
 
 
 

@@ -1199,7 +1199,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Boundary conditions for all data items associated with the mesh's elements' are temporarily overwritten so that all positional dofs (and only those!) become free while all other data (nodal data and the element's internal and external data) are either pinned (for nodal and internal data) or completely removed (for pointers to external data). The complete removal of the (pointers to the) external data is necessary because in FSI problems, positional data of certain elements can feature as external data of others. Hence pinning them in their incarnation as external data would also pin them in their incarnation as positional data.</p>
 <p>All data and its pinned-status are restored at the end of the call to setup_ic(). </p>
 
-<p class="definition">Definition at line <a class="el" href="elastic__problems_8h_source.html#l00095">95</a> of file <a class="el" href="elastic__problems_8h_source.html">elastic_problems.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="elastic__problems_8h_source.html#l00091">91</a> of file <a class="el" href="elastic__problems_8h_source.html">elastic_problems.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae1dd84a4e5df9eb444dd82531847ab79"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae1dd84a4e5df9eb444dd82531847ab79">&#9670;&nbsp;</a></span>SolidICProblem() <span class="overload">[1/2]</span></h2>
@@ -1227,9 +1227,9 @@ Additional Inherited Members</h2></td></tr>
 <p>Constructor. Initialise pointer to IC object to NULL. Create a dummy mesh that can be deleted when static problem finally goes out of scope at end of program execution. </p>
 <p>Create dummy mesh</p>
 
-<p class="definition">Definition at line <a class="el" href="elastic__problems_8h_source.html#l00104">104</a> of file <a class="el" href="elastic__problems_8h_source.html">elastic_problems.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="elastic__problems_8h_source.html#l00100">100</a> of file <a class="el" href="elastic__problems_8h_source.html">elastic_problems.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elastic__problems_8h_source.html#l00216">Max_residual_after_consistent_newton_ic</a>, and <a class="el" href="problem_8h_source.html#l01271">oomph::Problem::mesh_pt()</a>.</p>
+<p class="reference">References <a class="el" href="elastic__problems_8h_source.html#l00212">Max_residual_after_consistent_newton_ic</a>, and <a class="el" href="problem_8h_source.html#l01267">oomph::Problem::mesh_pt()</a>.</p>
 
 </div>
 </div>
@@ -1259,9 +1259,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Broken copy constructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="elastic__problems_8h_source.html#l00115">115</a> of file <a class="el" href="elastic__problems_8h_source.html">elastic_problems.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="elastic__problems_8h_source.html#l00111">111</a> of file <a class="el" href="elastic__problems_8h_source.html">elastic_problems.h</a>.</p>
 
-<p class="reference">References <a class="el" href="oomph__utilities_8cc_source.html#l00218">oomph::BrokenCopy::broken_copy()</a>.</p>
+<p class="reference">References <a class="el" href="oomph__utilities_8cc_source.html#l00214">oomph::BrokenCopy::broken_copy()</a>.</p>
 
 </div>
 </div>
@@ -1293,7 +1293,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1Problem.html#a033ec7301123deeb7e56d04c38f9f1da">oomph::Problem</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="elastic__problems_8h_source.html#l00127">127</a> of file <a class="el" href="elastic__problems_8h_source.html">elastic_problems.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="elastic__problems_8h_source.html#l00123">123</a> of file <a class="el" href="elastic__problems_8h_source.html">elastic_problems.h</a>.</p>
 
 </div>
 </div>
@@ -1324,7 +1324,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1Problem.html#a0c8d70891f7369bb4bf8412fa1a08ecb">oomph::Problem</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="elastic__problems_8h_source.html#l00130">130</a> of file <a class="el" href="elastic__problems_8h_source.html">elastic_problems.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="elastic__problems_8h_source.html#l00126">126</a> of file <a class="el" href="elastic__problems_8h_source.html">elastic_problems.h</a>.</p>
 
 </div>
 </div>
@@ -1354,11 +1354,11 @@ Additional Inherited Members</h2></td></tr>
 <p>Backup original state of all data associated with mesh. </p>
 <p>Backup pinned status of all data associated with the mesh. Also backup the (pointers to the) elements' external data. </p>
 
-<p class="definition">Definition at line <a class="el" href="elastic__problems_8cc_source.html#l00203">203</a> of file <a class="el" href="elastic__problems_8cc_source.html">elastic_problems.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="elastic__problems_8cc_source.html#l00199">199</a> of file <a class="el" href="elastic__problems_8cc_source.html">elastic_problems.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="elastic__problems_8h_source.html#l00211">Backup_ext_data</a>, <a class="el" href="elastic__problems_8h_source.html#l00208">Backup_pinned</a>, <a class="el" href="mesh_8h_source.html#l00462">oomph::Mesh::element_pt()</a>, <a class="el" href="elements_8h_source.html#l00662">oomph::GeneralisedElement::external_data_pt()</a>, <a class="el" href="elements_8h_source.html#l03464">oomph::SolidFiniteElement::has_internal_solid_data()</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="elements_8h_source.html#l00623">oomph::GeneralisedElement::internal_data_pt()</a>, <a class="el" href="nodes_8h_source.html#l00403">oomph::Data::is_pinned()</a>, <a class="el" href="problem_8h_source.html#l01271">oomph::Problem::mesh_pt()</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, <a class="el" href="nodes_8h_source.html#l00991">oomph::Node::ndim()</a>, <a class="el" href="mesh_8h_source.html#l00587">oomph::Mesh::nelement()</a>, <a class="el" href="elements_8h_source.html#l00831">oomph::GeneralisedElement::nexternal_data()</a>, <a class="el" href="elements_8h_source.html#l00828">oomph::GeneralisedElement::ninternal_data()</a>, <a class="el" href="elements_8h_source.html#l02369">oomph::FiniteElement::nnodal_position_type()</a>, <a class="el" href="mesh_8h_source.html#l00590">oomph::Mesh::nnode()</a>, <a class="el" href="mesh_8h_source.html#l00456">oomph::Mesh::node_pt()</a>, <a class="el" href="nodes_8h_source.html#l00448">oomph::Data::nvalue()</a>, <a class="el" href="nodes_8h_source.html#l01684">oomph::SolidNode::position_is_pinned()</a>, and <a class="el" href="oomph__definitions_8cc_source.html#l00293">oomph::Global_string_for_annotation::string()</a>.</p>
+<p class="reference">References <a class="el" href="elastic__problems_8h_source.html#l00207">Backup_ext_data</a>, <a class="el" href="elastic__problems_8h_source.html#l00204">Backup_pinned</a>, <a class="el" href="mesh_8h_source.html#l00458">oomph::Mesh::element_pt()</a>, <a class="el" href="elements_8h_source.html#l00658">oomph::GeneralisedElement::external_data_pt()</a>, <a class="el" href="elements_8h_source.html#l03460">oomph::SolidFiniteElement::has_internal_solid_data()</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="elements_8h_source.html#l00619">oomph::GeneralisedElement::internal_data_pt()</a>, <a class="el" href="nodes_8h_source.html#l00399">oomph::Data::is_pinned()</a>, <a class="el" href="problem_8h_source.html#l01267">oomph::Problem::mesh_pt()</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, <a class="el" href="nodes_8h_source.html#l00987">oomph::Node::ndim()</a>, <a class="el" href="mesh_8h_source.html#l00583">oomph::Mesh::nelement()</a>, <a class="el" href="elements_8h_source.html#l00827">oomph::GeneralisedElement::nexternal_data()</a>, <a class="el" href="elements_8h_source.html#l00824">oomph::GeneralisedElement::ninternal_data()</a>, <a class="el" href="elements_8h_source.html#l02365">oomph::FiniteElement::nnodal_position_type()</a>, <a class="el" href="mesh_8h_source.html#l00586">oomph::Mesh::nnode()</a>, <a class="el" href="mesh_8h_source.html#l00452">oomph::Mesh::node_pt()</a>, <a class="el" href="nodes_8h_source.html#l00444">oomph::Data::nvalue()</a>, <a class="el" href="nodes_8h_source.html#l01680">oomph::SolidNode::position_is_pinned()</a>, and <a class="el" href="oomph__definitions_8cc_source.html#l00289">oomph::Global_string_for_annotation::string()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="elastic__problems_8h_source.html#l00374">set_newmark_initial_condition_consistently()</a>, <a class="el" href="elastic__problems_8h_source.html#l00230">set_newmark_initial_condition_directly()</a>, and <a class="el" href="elastic__problems_8cc_source.html#l00542">set_static_initial_condition()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="elastic__problems_8h_source.html#l00370">set_newmark_initial_condition_consistently()</a>, <a class="el" href="elastic__problems_8h_source.html#l00226">set_newmark_initial_condition_directly()</a>, and <a class="el" href="elastic__problems_8cc_source.html#l00538">set_static_initial_condition()</a>.</p>
 
 </div>
 </div>
@@ -1387,9 +1387,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Max. tolerated residual after application of consistent <a class="el" href="classoomph_1_1Newmark.html" title="Newmark scheme for second time deriv. Stored data represents.">Newmark</a> IC. Used to check if we have specified the correct timescale ratio (non-dim density). </p>
 
-<p class="definition">Definition at line <a class="el" href="elastic__problems_8h_source.html#l00186">186</a> of file <a class="el" href="elastic__problems_8h_source.html">elastic_problems.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="elastic__problems_8h_source.html#l00182">182</a> of file <a class="el" href="elastic__problems_8h_source.html">elastic_problems.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elastic__problems_8h_source.html#l00216">Max_residual_after_consistent_newton_ic</a>.</p>
+<p class="reference">References <a class="el" href="elastic__problems_8h_source.html#l00212">Max_residual_after_consistent_newton_ic</a>.</p>
 
 </div>
 </div>
@@ -1419,9 +1419,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Broken assignment operator. </p>
 
-<p class="definition">Definition at line <a class="el" href="elastic__problems_8h_source.html#l00121">121</a> of file <a class="el" href="elastic__problems_8h_source.html">elastic_problems.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="elastic__problems_8h_source.html#l00117">117</a> of file <a class="el" href="elastic__problems_8h_source.html">elastic_problems.h</a>.</p>
 
-<p class="reference">References <a class="el" href="oomph__utilities_8cc_source.html#l00201">oomph::BrokenCopy::broken_assign()</a>.</p>
+<p class="reference">References <a class="el" href="oomph__utilities_8cc_source.html#l00197">oomph::BrokenCopy::broken_assign()</a>.</p>
 
 </div>
 </div>
@@ -1451,11 +1451,11 @@ Additional Inherited Members</h2></td></tr>
 <p>Reset original state of all data associated with mesh. </p>
 <p>Reset pinned status of all data and re-instate the pointers to the elements' external data. </p>
 
-<p class="definition">Definition at line <a class="el" href="elastic__problems_8cc_source.html#l00359">359</a> of file <a class="el" href="elastic__problems_8cc_source.html">elastic_problems.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="elastic__problems_8cc_source.html#l00355">355</a> of file <a class="el" href="elastic__problems_8cc_source.html">elastic_problems.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8cc_source.html#l00293">oomph::GeneralisedElement::add_external_data()</a>, <a class="el" href="elastic__problems_8h_source.html#l00211">Backup_ext_data</a>, <a class="el" href="elastic__problems_8h_source.html#l00208">Backup_pinned</a>, <a class="el" href="mesh_8h_source.html#l00462">oomph::Mesh::element_pt()</a>, <a class="el" href="elements_8h_source.html#l03464">oomph::SolidFiniteElement::has_internal_solid_data()</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="elements_8h_source.html#l00623">oomph::GeneralisedElement::internal_data_pt()</a>, <a class="el" href="problem_8h_source.html#l01271">oomph::Problem::mesh_pt()</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, <a class="el" href="nodes_8h_source.html#l00991">oomph::Node::ndim()</a>, <a class="el" href="mesh_8h_source.html#l00587">oomph::Mesh::nelement()</a>, <a class="el" href="elements_8h_source.html#l00828">oomph::GeneralisedElement::ninternal_data()</a>, <a class="el" href="elements_8h_source.html#l02369">oomph::FiniteElement::nnodal_position_type()</a>, <a class="el" href="mesh_8h_source.html#l00590">oomph::Mesh::nnode()</a>, <a class="el" href="mesh_8h_source.html#l00456">oomph::Mesh::node_pt()</a>, <a class="el" href="nodes_8h_source.html#l00448">oomph::Data::nvalue()</a>, <a class="el" href="nodes_8h_source.html#l01693">oomph::SolidNode::pin_position()</a>, <a class="el" href="oomph__definitions_8cc_source.html#l00293">oomph::Global_string_for_annotation::string()</a>, and <a class="el" href="nodes_8h_source.html#l00386">oomph::Data::unpin()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8cc_source.html#l00289">oomph::GeneralisedElement::add_external_data()</a>, <a class="el" href="elastic__problems_8h_source.html#l00207">Backup_ext_data</a>, <a class="el" href="elastic__problems_8h_source.html#l00204">Backup_pinned</a>, <a class="el" href="mesh_8h_source.html#l00458">oomph::Mesh::element_pt()</a>, <a class="el" href="elements_8h_source.html#l03460">oomph::SolidFiniteElement::has_internal_solid_data()</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="elements_8h_source.html#l00619">oomph::GeneralisedElement::internal_data_pt()</a>, <a class="el" href="problem_8h_source.html#l01267">oomph::Problem::mesh_pt()</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, <a class="el" href="nodes_8h_source.html#l00987">oomph::Node::ndim()</a>, <a class="el" href="mesh_8h_source.html#l00583">oomph::Mesh::nelement()</a>, <a class="el" href="elements_8h_source.html#l00824">oomph::GeneralisedElement::ninternal_data()</a>, <a class="el" href="elements_8h_source.html#l02365">oomph::FiniteElement::nnodal_position_type()</a>, <a class="el" href="mesh_8h_source.html#l00586">oomph::Mesh::nnode()</a>, <a class="el" href="mesh_8h_source.html#l00452">oomph::Mesh::node_pt()</a>, <a class="el" href="nodes_8h_source.html#l00444">oomph::Data::nvalue()</a>, <a class="el" href="nodes_8h_source.html#l01689">oomph::SolidNode::pin_position()</a>, <a class="el" href="oomph__definitions_8cc_source.html#l00289">oomph::Global_string_for_annotation::string()</a>, and <a class="el" href="nodes_8h_source.html#l00382">oomph::Data::unpin()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="elastic__problems_8h_source.html#l00374">set_newmark_initial_condition_consistently()</a>, <a class="el" href="elastic__problems_8h_source.html#l00230">set_newmark_initial_condition_directly()</a>, and <a class="el" href="elastic__problems_8cc_source.html#l00542">set_static_initial_condition()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="elastic__problems_8h_source.html#l00370">set_newmark_initial_condition_consistently()</a>, <a class="el" href="elastic__problems_8h_source.html#l00226">set_newmark_initial_condition_directly()</a>, and <a class="el" href="elastic__problems_8cc_source.html#l00538">set_static_initial_condition()</a>.</p>
 
 </div>
 </div>
@@ -1515,9 +1515,9 @@ template&lt;class TIMESTEPPER &gt; </div>
 <p>Setup initial condition for time-integration with <a class="el" href="classoomph_1_1Newmark.html" title="Newmark scheme for second time deriv. Stored data represents.">Newmark</a>'s method. Past displacements and velocities are assigned directly (consistent with the idea that a second order ODE can take ICs up to 1st order, while the history value for the previous acceleration is determined by the condition that that the weak equation is satisfied at the initial time. The multiplier function needs to specify the factor that multiplies the inertia terms &ndash; typically this is a constant, given by the ratio <img class="formulaInl" alt="$ \Lambda^2 $" src="form_99.png"/> of the problem's intrinsic timescale to the time used to non-dimensionalise the equations. If the function (pointer) is not specified, the multiplier is assumed to be equal to 1.0 &ndash; appropriate for a non-dimensionalisation based on the problem's intrinsic timescale. </p>
 <p>Pointer to member type solver</p>
 
-<p class="definition">Definition at line <a class="el" href="elastic__problems_8h_source.html#l00374">374</a> of file <a class="el" href="elastic__problems_8h_source.html">elastic_problems.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="elastic__problems_8h_source.html#l00370">370</a> of file <a class="el" href="elastic__problems_8h_source.html">elastic_problems.h</a>.</p>
 
-<p class="reference">References <a class="el" href="problem_8cc_source.html#l01972">oomph::Problem::assign_eqn_numbers()</a>, <a class="el" href="elastic__problems_8cc_source.html#l00203">backup_original_state()</a>, <a class="el" href="mesh_8h_source.html#l00462">oomph::Mesh::element_pt()</a>, <a class="el" href="elements_8h_source.html#l03827">oomph::SolidFiniteElement::enable_solve_for_consistent_newmark_accel()</a>, <a class="el" href="nodes_8h_source.html#l00365">oomph::Data::eqn_number()</a>, <a class="el" href="elements_8h_source.html#l03399">oomph::SolidInitialCondition::geom_object_pt()</a>, <a class="el" href="problem_8cc_source.html#l03678">oomph::Problem::get_residuals()</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="elastic__problems_8h_source.html#l00205">IC_pt</a>, <a class="el" href="elements_8h_source.html#l03405">oomph::SolidInitialCondition::ic_time_deriv()</a>, <a class="el" href="problem_8h_source.html#l01431">oomph::Problem::linear_solver_pt()</a>, <a class="el" href="elastic__problems_8h_source.html#l00216">Max_residual_after_consistent_newton_ic</a>, <a class="el" href="problem_8h_source.html#l01271">oomph::Problem::mesh_pt()</a>, <a class="el" href="elements_8h_source.html#l03836">oomph::SolidFiniteElement::multiplier_fct_pt()</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, <a class="el" href="mesh_8h_source.html#l00587">oomph::Mesh::nelement()</a>, <a class="el" href="problem_8cc_source.html#l08748">oomph::Problem::newton_solve()</a>, <a class="el" href="mesh_8h_source.html#l00590">oomph::Mesh::nnode()</a>, <a class="el" href="mesh_8h_source.html#l00456">oomph::Mesh::node_pt()</a>, <a class="el" href="nodes_8h_source.html#l00448">oomph::Data::nvalue()</a>, <a class="el" href="oomph__definitions_8cc_source.html#l00326">oomph::oomph_info</a>, <a class="el" href="the__data__structure_8txt_source.html#l00092">problem</a>, <a class="el" href="elastic__problems_8cc_source.html#l00359">reset_original_state()</a>, <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>, <a class="el" href="nodes_8h_source.html#l00267">oomph::Data::set_value()</a>, <a class="el" href="elastic__problems_8cc_source.html#l00054">setup_problem()</a>, <a class="el" href="elements_8h_source.html#l03816">oomph::SolidFiniteElement::solid_ic_pt()</a>, <a class="el" href="classoomph_1_1LinearSolver.html#a15ce22542b74ed1826ea485edacbeb6e">oomph::LinearSolver::solve()</a>, <a class="el" href="timesteppers_8h_source.html#l00130">oomph::Time::time()</a>, <a class="el" href="timesteppers_8h_source.html#l00540">oomph::TimeStepper::time_pt()</a>, <a class="el" href="problem_8h_source.html#l01453">oomph::Problem::time_pt()</a>, <a class="el" href="geom__objects_8h_source.html#l00197">oomph::GeomObject::time_stepper_pt()</a>, <a class="el" href="nodes_8h_source.html#l00291">oomph::Data::value()</a>, and <a class="el" href="nodes_8h_source.html#l00322">oomph::Data::value_pt()</a>.</p>
+<p class="reference">References <a class="el" href="problem_8cc_source.html#l01968">oomph::Problem::assign_eqn_numbers()</a>, <a class="el" href="elastic__problems_8cc_source.html#l00199">backup_original_state()</a>, <a class="el" href="mesh_8h_source.html#l00458">oomph::Mesh::element_pt()</a>, <a class="el" href="elements_8h_source.html#l03823">oomph::SolidFiniteElement::enable_solve_for_consistent_newmark_accel()</a>, <a class="el" href="nodes_8h_source.html#l00361">oomph::Data::eqn_number()</a>, <a class="el" href="elements_8h_source.html#l03395">oomph::SolidInitialCondition::geom_object_pt()</a>, <a class="el" href="problem_8cc_source.html#l03674">oomph::Problem::get_residuals()</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="elastic__problems_8h_source.html#l00201">IC_pt</a>, <a class="el" href="elements_8h_source.html#l03401">oomph::SolidInitialCondition::ic_time_deriv()</a>, <a class="el" href="problem_8h_source.html#l01427">oomph::Problem::linear_solver_pt()</a>, <a class="el" href="elastic__problems_8h_source.html#l00212">Max_residual_after_consistent_newton_ic</a>, <a class="el" href="problem_8h_source.html#l01267">oomph::Problem::mesh_pt()</a>, <a class="el" href="elements_8h_source.html#l03832">oomph::SolidFiniteElement::multiplier_fct_pt()</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, <a class="el" href="mesh_8h_source.html#l00583">oomph::Mesh::nelement()</a>, <a class="el" href="problem_8cc_source.html#l08744">oomph::Problem::newton_solve()</a>, <a class="el" href="mesh_8h_source.html#l00586">oomph::Mesh::nnode()</a>, <a class="el" href="mesh_8h_source.html#l00452">oomph::Mesh::node_pt()</a>, <a class="el" href="nodes_8h_source.html#l00444">oomph::Data::nvalue()</a>, <a class="el" href="oomph__definitions_8cc_source.html#l00322">oomph::oomph_info</a>, <a class="el" href="the__data__structure_8txt_source.html#l00092">problem</a>, <a class="el" href="elastic__problems_8cc_source.html#l00355">reset_original_state()</a>, <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>, <a class="el" href="nodes_8h_source.html#l00263">oomph::Data::set_value()</a>, <a class="el" href="elastic__problems_8cc_source.html#l00050">setup_problem()</a>, <a class="el" href="elements_8h_source.html#l03812">oomph::SolidFiniteElement::solid_ic_pt()</a>, <a class="el" href="classoomph_1_1LinearSolver.html#a15ce22542b74ed1826ea485edacbeb6e">oomph::LinearSolver::solve()</a>, <a class="el" href="timesteppers_8h_source.html#l00126">oomph::Time::time()</a>, <a class="el" href="timesteppers_8h_source.html#l00536">oomph::TimeStepper::time_pt()</a>, <a class="el" href="problem_8h_source.html#l01449">oomph::Problem::time_pt()</a>, <a class="el" href="geom__objects_8h_source.html#l00193">oomph::GeomObject::time_stepper_pt()</a>, <a class="el" href="nodes_8h_source.html#l00287">oomph::Data::value()</a>, and <a class="el" href="nodes_8h_source.html#l00318">oomph::Data::value_pt()</a>.</p>
 
 </div>
 </div>
@@ -1569,9 +1569,9 @@ template&lt;class TIMESTEPPER &gt; </div>
 
 <p>Setup initial condition for time-integration with <a class="el" href="classoomph_1_1Newmark.html" title="Newmark scheme for second time deriv. Stored data represents.">Newmark</a>'s method. History values are assigned to that the velocity and accelerations determined by the <a class="el" href="classoomph_1_1Newmark.html" title="Newmark scheme for second time deriv. Stored data represents.">Newmark</a> scheme are exact at the initial time. </p>
 
-<p class="definition">Definition at line <a class="el" href="elastic__problems_8h_source.html#l00230">230</a> of file <a class="el" href="elastic__problems_8h_source.html">elastic_problems.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="elastic__problems_8h_source.html#l00226">226</a> of file <a class="el" href="elastic__problems_8h_source.html">elastic_problems.h</a>.</p>
 
-<p class="reference">References <a class="el" href="problem_8cc_source.html#l01972">oomph::Problem::assign_eqn_numbers()</a>, <a class="el" href="elastic__problems_8cc_source.html#l00203">backup_original_state()</a>, <a class="el" href="elements_8h_source.html#l03399">oomph::SolidInitialCondition::geom_object_pt()</a>, <a class="el" href="elastic__problems_8h_source.html#l00205">IC_pt</a>, <a class="el" href="elements_8h_source.html#l03405">oomph::SolidInitialCondition::ic_time_deriv()</a>, <a class="el" href="problem_8h_source.html#l01271">oomph::Problem::mesh_pt()</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, <a class="el" href="problem_8cc_source.html#l08748">oomph::Problem::newton_solve()</a>, <a class="el" href="mesh_8h_source.html#l00590">oomph::Mesh::nnode()</a>, <a class="el" href="oomph__definitions_8cc_source.html#l00326">oomph::oomph_info</a>, <a class="el" href="elastic__problems_8cc_source.html#l00359">reset_original_state()</a>, <a class="el" href="elastic__problems_8cc_source.html#l00054">setup_problem()</a>, <a class="el" href="timesteppers_8h_source.html#l00130">oomph::Time::time()</a>, <a class="el" href="timesteppers_8h_source.html#l00540">oomph::TimeStepper::time_pt()</a>, and <a class="el" href="geom__objects_8h_source.html#l00197">oomph::GeomObject::time_stepper_pt()</a>.</p>
+<p class="reference">References <a class="el" href="problem_8cc_source.html#l01968">oomph::Problem::assign_eqn_numbers()</a>, <a class="el" href="elastic__problems_8cc_source.html#l00199">backup_original_state()</a>, <a class="el" href="elements_8h_source.html#l03395">oomph::SolidInitialCondition::geom_object_pt()</a>, <a class="el" href="elastic__problems_8h_source.html#l00201">IC_pt</a>, <a class="el" href="elements_8h_source.html#l03401">oomph::SolidInitialCondition::ic_time_deriv()</a>, <a class="el" href="problem_8h_source.html#l01267">oomph::Problem::mesh_pt()</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, <a class="el" href="problem_8cc_source.html#l08744">oomph::Problem::newton_solve()</a>, <a class="el" href="mesh_8h_source.html#l00586">oomph::Mesh::nnode()</a>, <a class="el" href="oomph__definitions_8cc_source.html#l00322">oomph::oomph_info</a>, <a class="el" href="elastic__problems_8cc_source.html#l00355">reset_original_state()</a>, <a class="el" href="elastic__problems_8cc_source.html#l00050">setup_problem()</a>, <a class="el" href="timesteppers_8h_source.html#l00126">oomph::Time::time()</a>, <a class="el" href="timesteppers_8h_source.html#l00536">oomph::TimeStepper::time_pt()</a>, and <a class="el" href="geom__objects_8h_source.html#l00193">oomph::GeomObject::time_stepper_pt()</a>.</p>
 
 </div>
 </div>
@@ -1617,9 +1617,9 @@ template&lt;class TIMESTEPPER &gt; </div>
 
 <p>Force the elastic structure that is discretised on the specified mesh to deform in the shape of the initial condition object (wrapper) </p>
 
-<p class="definition">Definition at line <a class="el" href="elastic__problems_8h_source.html#l00142">142</a> of file <a class="el" href="elastic__problems_8h_source.html">elastic_problems.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="elastic__problems_8h_source.html#l00138">138</a> of file <a class="el" href="elastic__problems_8h_source.html">elastic_problems.h</a>.</p>
 
-<p class="reference">References <a class="el" href="problem_8h_source.html#l01271">oomph::Problem::mesh_pt()</a>, <a class="el" href="elastic__problems_8cc_source.html#l00542">set_static_initial_condition()</a>, and <a class="el" href="problem_8cc_source.html#l11417">oomph::Problem::time()</a>.</p>
+<p class="reference">References <a class="el" href="problem_8h_source.html#l01267">oomph::Problem::mesh_pt()</a>, <a class="el" href="elastic__problems_8cc_source.html#l00538">set_static_initial_condition()</a>, and <a class="el" href="problem_8cc_source.html#l11413">oomph::Problem::time()</a>.</p>
 
 </div>
 </div>
@@ -1664,11 +1664,11 @@ template&lt;class TIMESTEPPER &gt; </div>
 <p>Force the elastic structure that is discretised on the specified mesh to deform in the shape of the initial condition object (evaluated at the time specified) </p>
 <p>IC problem for wall: Deform wall into the static initial shape described by the IC object at given time. </p>
 
-<p class="definition">Definition at line <a class="el" href="elastic__problems_8cc_source.html#l00542">542</a> of file <a class="el" href="elastic__problems_8cc_source.html">elastic_problems.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="elastic__problems_8cc_source.html#l00538">538</a> of file <a class="el" href="elastic__problems_8cc_source.html">elastic_problems.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="problem_8cc_source.html#l01972">oomph::Problem::assign_eqn_numbers()</a>, <a class="el" href="problem_8cc_source.html#l11386">oomph::Problem::assign_initial_values_impulsive()</a>, <a class="el" href="elastic__problems_8cc_source.html#l00203">backup_original_state()</a>, <a class="el" href="problem_8h_source.html#l01223">oomph::Problem::Communicator_pt</a>, <a class="el" href="problem_8h_source.html#l01228">oomph::Problem::communicator_pt()</a>, <a class="el" href="elements_8h_source.html#l03399">oomph::SolidInitialCondition::geom_object_pt()</a>, <a class="el" href="elastic__problems_8h_source.html#l00205">IC_pt</a>, <a class="el" href="elements_8h_source.html#l03405">oomph::SolidInitialCondition::ic_time_deriv()</a>, <a class="el" href="problem_8h_source.html#l01271">oomph::Problem::mesh_pt()</a>, <a class="el" href="problem_8cc_source.html#l08748">oomph::Problem::newton_solve()</a>, <a class="el" href="oomph__definitions_8cc_source.html#l00326">oomph::oomph_info</a>, <a class="el" href="problem_8h_source.html#l00958">oomph::Problem::Problem_has_been_distributed</a>, <a class="el" href="problem_8h_source.html#l02063">oomph::Problem::problem_has_been_distributed()</a>, <a class="el" href="elastic__problems_8cc_source.html#l00359">reset_original_state()</a>, <a class="el" href="elastic__problems_8cc_source.html#l00054">setup_problem()</a>, <a class="el" href="timesteppers_8h_source.html#l00130">oomph::Time::time()</a>, <a class="el" href="problem_8cc_source.html#l11417">oomph::Problem::time()</a>, <a class="el" href="timesteppers_8h_source.html#l00540">oomph::TimeStepper::time_pt()</a>, and <a class="el" href="geom__objects_8h_source.html#l00197">oomph::GeomObject::time_stepper_pt()</a>.</p>
+<p class="reference">References <a class="el" href="problem_8cc_source.html#l01968">oomph::Problem::assign_eqn_numbers()</a>, <a class="el" href="problem_8cc_source.html#l11382">oomph::Problem::assign_initial_values_impulsive()</a>, <a class="el" href="elastic__problems_8cc_source.html#l00199">backup_original_state()</a>, <a class="el" href="problem_8h_source.html#l01219">oomph::Problem::Communicator_pt</a>, <a class="el" href="problem_8h_source.html#l01224">oomph::Problem::communicator_pt()</a>, <a class="el" href="elements_8h_source.html#l03395">oomph::SolidInitialCondition::geom_object_pt()</a>, <a class="el" href="elastic__problems_8h_source.html#l00201">IC_pt</a>, <a class="el" href="elements_8h_source.html#l03401">oomph::SolidInitialCondition::ic_time_deriv()</a>, <a class="el" href="problem_8h_source.html#l01267">oomph::Problem::mesh_pt()</a>, <a class="el" href="problem_8cc_source.html#l08744">oomph::Problem::newton_solve()</a>, <a class="el" href="oomph__definitions_8cc_source.html#l00322">oomph::oomph_info</a>, <a class="el" href="problem_8h_source.html#l00954">oomph::Problem::Problem_has_been_distributed</a>, <a class="el" href="problem_8h_source.html#l02059">oomph::Problem::problem_has_been_distributed()</a>, <a class="el" href="elastic__problems_8cc_source.html#l00355">reset_original_state()</a>, <a class="el" href="elastic__problems_8cc_source.html#l00050">setup_problem()</a>, <a class="el" href="timesteppers_8h_source.html#l00126">oomph::Time::time()</a>, <a class="el" href="problem_8cc_source.html#l11413">oomph::Problem::time()</a>, <a class="el" href="timesteppers_8h_source.html#l00536">oomph::TimeStepper::time_pt()</a>, and <a class="el" href="geom__objects_8h_source.html#l00193">oomph::GeomObject::time_stepper_pt()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="elastic__problems_8h_source.html#l00142">set_static_initial_condition()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="elastic__problems_8h_source.html#l00138">set_static_initial_condition()</a>.</p>
 
 </div>
 </div>
@@ -1703,11 +1703,11 @@ template&lt;class TIMESTEPPER &gt; </div>
 <li>Setting the pointer to the IC object for all elements to ensure that the correct residuals/Jacobians are computed. </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="elastic__problems_8cc_source.html#l00054">54</a> of file <a class="el" href="elastic__problems_8cc_source.html">elastic_problems.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="elastic__problems_8cc_source.html#l00050">50</a> of file <a class="el" href="elastic__problems_8cc_source.html">elastic_problems.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="problem_8cc_source.html#l01972">oomph::Problem::assign_eqn_numbers()</a>, <a class="el" href="mesh_8h_source.html#l00462">oomph::Mesh::element_pt()</a>, <a class="el" href="elements_8cc_source.html#l00365">oomph::GeneralisedElement::flush_external_data()</a>, <a class="el" href="elements_8h_source.html#l03464">oomph::SolidFiniteElement::has_internal_solid_data()</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="elastic__problems_8h_source.html#l00205">IC_pt</a>, <a class="el" href="elements_8h_source.html#l00623">oomph::GeneralisedElement::internal_data_pt()</a>, <a class="el" href="problem_8h_source.html#l01271">oomph::Problem::mesh_pt()</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, <a class="el" href="nodes_8h_source.html#l00991">oomph::Node::ndim()</a>, <a class="el" href="mesh_8h_source.html#l00587">oomph::Mesh::nelement()</a>, <a class="el" href="elements_8h_source.html#l00828">oomph::GeneralisedElement::ninternal_data()</a>, <a class="el" href="elements_8h_source.html#l02369">oomph::FiniteElement::nnodal_position_type()</a>, <a class="el" href="mesh_8h_source.html#l00590">oomph::Mesh::nnode()</a>, <a class="el" href="mesh_8h_source.html#l00456">oomph::Mesh::node_pt()</a>, <a class="el" href="nodes_8h_source.html#l00448">oomph::Data::nvalue()</a>, <a class="el" href="oomph__definitions_8cc_source.html#l00326">oomph::oomph_info</a>, <a class="el" href="nodes_8h_source.html#l00383">oomph::Data::pin()</a>, <a class="el" href="elements_8h_source.html#l03816">oomph::SolidFiniteElement::solid_ic_pt()</a>, <a class="el" href="oomph__definitions_8cc_source.html#l00293">oomph::Global_string_for_annotation::string()</a>, and <a class="el" href="nodes_8h_source.html#l01702">oomph::SolidNode::unpin_position()</a>.</p>
+<p class="reference">References <a class="el" href="problem_8cc_source.html#l01968">oomph::Problem::assign_eqn_numbers()</a>, <a class="el" href="mesh_8h_source.html#l00458">oomph::Mesh::element_pt()</a>, <a class="el" href="elements_8cc_source.html#l00361">oomph::GeneralisedElement::flush_external_data()</a>, <a class="el" href="elements_8h_source.html#l03460">oomph::SolidFiniteElement::has_internal_solid_data()</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="elastic__problems_8h_source.html#l00201">IC_pt</a>, <a class="el" href="elements_8h_source.html#l00619">oomph::GeneralisedElement::internal_data_pt()</a>, <a class="el" href="problem_8h_source.html#l01267">oomph::Problem::mesh_pt()</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, <a class="el" href="nodes_8h_source.html#l00987">oomph::Node::ndim()</a>, <a class="el" href="mesh_8h_source.html#l00583">oomph::Mesh::nelement()</a>, <a class="el" href="elements_8h_source.html#l00824">oomph::GeneralisedElement::ninternal_data()</a>, <a class="el" href="elements_8h_source.html#l02365">oomph::FiniteElement::nnodal_position_type()</a>, <a class="el" href="mesh_8h_source.html#l00586">oomph::Mesh::nnode()</a>, <a class="el" href="mesh_8h_source.html#l00452">oomph::Mesh::node_pt()</a>, <a class="el" href="nodes_8h_source.html#l00444">oomph::Data::nvalue()</a>, <a class="el" href="oomph__definitions_8cc_source.html#l00322">oomph::oomph_info</a>, <a class="el" href="nodes_8h_source.html#l00379">oomph::Data::pin()</a>, <a class="el" href="elements_8h_source.html#l03812">oomph::SolidFiniteElement::solid_ic_pt()</a>, <a class="el" href="oomph__definitions_8cc_source.html#l00289">oomph::Global_string_for_annotation::string()</a>, and <a class="el" href="nodes_8h_source.html#l01698">oomph::SolidNode::unpin_position()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="elastic__problems_8h_source.html#l00374">set_newmark_initial_condition_consistently()</a>, <a class="el" href="elastic__problems_8h_source.html#l00230">set_newmark_initial_condition_directly()</a>, and <a class="el" href="elastic__problems_8cc_source.html#l00542">set_static_initial_condition()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="elastic__problems_8h_source.html#l00370">set_newmark_initial_condition_consistently()</a>, <a class="el" href="elastic__problems_8h_source.html#l00226">set_newmark_initial_condition_directly()</a>, and <a class="el" href="elastic__problems_8cc_source.html#l00538">set_static_initial_condition()</a>.</p>
 
 </div>
 </div>
@@ -1734,9 +1734,9 @@ template&lt;class TIMESTEPPER &gt; </div>
 
 <p><a class="el" href="classoomph_1_1Vector.html">Vector</a> of Vectors to store pointers to exernal data in the elements. </p>
 
-<p class="definition">Definition at line <a class="el" href="elastic__problems_8h_source.html#l00211">211</a> of file <a class="el" href="elastic__problems_8h_source.html">elastic_problems.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="elastic__problems_8h_source.html#l00207">207</a> of file <a class="el" href="elastic__problems_8h_source.html">elastic_problems.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="elastic__problems_8cc_source.html#l00203">backup_original_state()</a>, and <a class="el" href="elastic__problems_8cc_source.html#l00359">reset_original_state()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="elastic__problems_8cc_source.html#l00199">backup_original_state()</a>, and <a class="el" href="elastic__problems_8cc_source.html#l00355">reset_original_state()</a>.</p>
 
 </div>
 </div>
@@ -1762,9 +1762,9 @@ template&lt;class TIMESTEPPER &gt; </div>
 
 <p><a class="el" href="classoomph_1_1Vector.html">Vector</a> to store pinned status of all data. </p>
 
-<p class="definition">Definition at line <a class="el" href="elastic__problems_8h_source.html#l00208">208</a> of file <a class="el" href="elastic__problems_8h_source.html">elastic_problems.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="elastic__problems_8h_source.html#l00204">204</a> of file <a class="el" href="elastic__problems_8h_source.html">elastic_problems.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="elastic__problems_8cc_source.html#l00203">backup_original_state()</a>, and <a class="el" href="elastic__problems_8cc_source.html#l00359">reset_original_state()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="elastic__problems_8cc_source.html#l00199">backup_original_state()</a>, and <a class="el" href="elastic__problems_8cc_source.html#l00355">reset_original_state()</a>.</p>
 
 </div>
 </div>
@@ -1790,9 +1790,9 @@ template&lt;class TIMESTEPPER &gt; </div>
 
 <p>Pointer to initial condition object. </p>
 
-<p class="definition">Definition at line <a class="el" href="elastic__problems_8h_source.html#l00205">205</a> of file <a class="el" href="elastic__problems_8h_source.html">elastic_problems.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="elastic__problems_8h_source.html#l00201">201</a> of file <a class="el" href="elastic__problems_8h_source.html">elastic_problems.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="elastic__problems_8h_source.html#l00374">set_newmark_initial_condition_consistently()</a>, <a class="el" href="elastic__problems_8h_source.html#l00230">set_newmark_initial_condition_directly()</a>, <a class="el" href="elastic__problems_8cc_source.html#l00542">set_static_initial_condition()</a>, and <a class="el" href="elastic__problems_8cc_source.html#l00054">setup_problem()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="elastic__problems_8h_source.html#l00370">set_newmark_initial_condition_consistently()</a>, <a class="el" href="elastic__problems_8h_source.html#l00226">set_newmark_initial_condition_directly()</a>, <a class="el" href="elastic__problems_8cc_source.html#l00538">set_static_initial_condition()</a>, and <a class="el" href="elastic__problems_8cc_source.html#l00050">setup_problem()</a>.</p>
 
 </div>
 </div>
@@ -1818,9 +1818,9 @@ template&lt;class TIMESTEPPER &gt; </div>
 
 <p>Max. tolerated residual after application of consistent <a class="el" href="classoomph_1_1Newmark.html" title="Newmark scheme for second time deriv. Stored data represents.">Newmark</a> IC. Used to check if we have specified the correct timescale ratio (non-dim density). </p>
 
-<p class="definition">Definition at line <a class="el" href="elastic__problems_8h_source.html#l00216">216</a> of file <a class="el" href="elastic__problems_8h_source.html">elastic_problems.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="elastic__problems_8h_source.html#l00212">212</a> of file <a class="el" href="elastic__problems_8h_source.html">elastic_problems.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="elastic__problems_8h_source.html#l00186">max_residual_after_consistent_newton_ic()</a>, <a class="el" href="elastic__problems_8h_source.html#l00374">set_newmark_initial_condition_consistently()</a>, and <a class="el" href="elastic__problems_8h_source.html#l00104">SolidICProblem()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="elastic__problems_8h_source.html#l00182">max_residual_after_consistent_newton_ic()</a>, <a class="el" href="elastic__problems_8h_source.html#l00370">set_newmark_initial_condition_consistently()</a>, and <a class="el" href="elastic__problems_8h_source.html#l00100">SolidICProblem()</a>.</p>
 
 </div>
 </div>
@@ -1856,7 +1856,7 @@ template&lt;class TIMESTEPPER &gt; </div>
     <footer>
       <div class="container">
         <div class="text-muted" style="float:right;">Generated by <a href="http://www.doxygen.org/index.html">
-          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Tue Jul 6 2021 22:59:26
+          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Fri Jul 9 2021 20:54:18
         </div>
       </div>
     </footer>

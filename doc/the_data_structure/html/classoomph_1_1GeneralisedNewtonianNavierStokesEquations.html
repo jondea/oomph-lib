@@ -1447,7 +1447,7 @@ class oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;</h3>
 <p>We also provide all functions required to use this element in FSI problems, by deriving it from the <a class="el" href="classoomph_1_1FSIFluidElement.html" title="The FSIFluidElement class is a base class for all fluid finite elements that apply a load (traction) ...">FSIFluidElement</a> base class. <br  />
  </p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00134">134</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00130">130</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a0076b2b1b6ad17d306907c959b3f4d12"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0076b2b1b6ad17d306907c959b3f4d12">&#9670;&nbsp;</a></span>NavierStokesBodyForceFctPt</h2>
@@ -1465,7 +1465,7 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Function pointer to body force function fct(t,x,f(x)) x is a Vector! </p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00143">143</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00139">139</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
 
 </div>
 </div>
@@ -1485,7 +1485,7 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Function pointer to source function fct(x) for the pressure advection diffusion equation (only used during validation!). x is a Vector! </p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00156">156</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00152">152</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
 
 </div>
 </div>
@@ -1505,7 +1505,7 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Function pointer to source function fct(t,x) x is a Vector! </p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00149">149</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00145">145</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
 
 </div>
 </div>
@@ -1537,9 +1537,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Constructor: NULL the body force and source function and make sure the ALE terms are included by default. </p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00408">408</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00404">404</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00172">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::Default_Gravity_vector</a>, <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00166">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::Default_Physical_Constant_Value</a>, <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00169">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::Default_Physical_Ratio_Value</a>, <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00188">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::Density_Ratio_pt</a>, <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00203">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::G_pt</a>, <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00193">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::Re_pt</a>, <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00200">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::ReInvFr_pt</a>, <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00196">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::ReSt_pt</a>, and <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00184">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::Viscosity_Ratio_pt</a>.</p>
+<p class="reference">References <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00168">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::Default_Gravity_vector</a>, <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00162">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::Default_Physical_Constant_Value</a>, <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00165">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::Default_Physical_Ratio_Value</a>, <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00184">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::Density_Ratio_pt</a>, <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00199">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::G_pt</a>, <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00189">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::Re_pt</a>, <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00196">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::ReInvFr_pt</a>, <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00192">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::ReSt_pt</a>, and <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00180">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::Viscosity_Ratio_pt</a>.</p>
 
 </div>
 </div>
@@ -1571,11 +1571,11 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Access function for the body-force pointer. </p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00472">472</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00468">468</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00206">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::Body_force_fct_pt</a>.</p>
+<p class="reference">References <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00202">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::Body_force_fct_pt</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="generalised__newtonian__refineable__navier__stokes__elements_8h_source.html#l00189">oomph::RefineableGeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::further_build()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="generalised__newtonian__refineable__navier__stokes__elements_8h_source.html#l00185">oomph::RefineableGeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::further_build()</a>.</p>
 
 </div>
 </div>
@@ -1606,9 +1606,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Access function for the body-force pointer. Const version. </p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00476">476</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00472">472</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00206">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::Body_force_fct_pt</a>.</p>
+<p class="reference">References <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00202">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::Body_force_fct_pt</a>.</p>
 
 </div>
 </div>
@@ -1665,9 +1665,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1FiniteElement.html#a73c79a1f1e5b1d334757812a6bbd58ff">oomph::FiniteElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html#l00287">287</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html">generalised_newtonian_navier_stokes_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html#l00283">283</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html">generalised_newtonian_navier_stokes_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="cfortran_8h_source.html#l00572">s</a>, and <a class="el" href="quadtree_8h_source.html#l00060">oomph::QuadTreeNames::W</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="cfortran_8h_source.html#l00568">s</a>, and <a class="el" href="quadtree_8h_source.html#l00056">oomph::QuadTreeNames::W</a>.</p>
 
 </div>
 </div>
@@ -1730,9 +1730,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1FiniteElement.html#a7f67853506dc73fa6b7505108de22d1f">oomph::FiniteElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html#l00208">208</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html">generalised_newtonian_navier_stokes_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html#l00204">204</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html">generalised_newtonian_navier_stokes_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="cfortran_8h_source.html#l00572">s</a>, and <a class="el" href="quadtree_8h_source.html#l00060">oomph::QuadTreeNames::W</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="cfortran_8h_source.html#l00568">s</a>, and <a class="el" href="quadtree_8h_source.html#l00056">oomph::QuadTreeNames::W</a>.</p>
 
 </div>
 </div>
@@ -1763,9 +1763,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Access function for the constitutive equation pointer. </p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00486">486</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00482">482</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00212">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::Constitutive_eqn_pt</a>.</p>
+<p class="reference">References <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00208">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::Constitutive_eqn_pt</a>.</p>
 
 </div>
 </div>
@@ -1786,9 +1786,9 @@ template&lt;unsigned DIM&gt; </div>
 <p>Get integral of time derivative of kinetic energy over element. </p>
 <p>Get integral of time derivative of kinetic energy over element: </p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html#l01479">1479</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html">generalised_newtonian_navier_stokes_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html#l01475">1475</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html">generalised_newtonian_navier_stokes_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="gen__axisym__advection__diffusion__elements_8h_source.html#l00585">oomph::ALE_is_disabled</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="the__data__structure_8txt.html#a5448c72da3359c7796cf0c5f800732a1">interpolated_u()</a>, and <a class="el" href="cfortran_8h_source.html#l00572">s</a>.</p>
+<p class="reference">References <a class="el" href="gen__axisym__advection__diffusion__elements_8h_source.html#l00581">oomph::ALE_is_disabled</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="the__data__structure_8txt.html#a5448c72da3359c7796cf0c5f800732a1">interpolated_u()</a>, and <a class="el" href="cfortran_8h_source.html#l00568">s</a>.</p>
 
 </div>
 </div>
@@ -1819,9 +1819,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Density ratio for element: Element's density relative to the viscosity used in the definition of the Reynolds number. </p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00454">454</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00450">450</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00188">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::Density_Ratio_pt</a>.</p>
+<p class="reference">References <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00184">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::Density_Ratio_pt</a>.</p>
 
 </div>
 </div>
@@ -1852,11 +1852,11 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Pointer to Density ratio. </p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00457">457</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00453">453</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00188">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::Density_Ratio_pt</a>.</p>
+<p class="reference">References <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00184">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::Density_Ratio_pt</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="generalised__newtonian__refineable__navier__stokes__elements_8h_source.html#l00189">oomph::RefineableGeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::further_build()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="generalised__newtonian__refineable__navier__stokes__elements_8h_source.html#l00185">oomph::RefineableGeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::further_build()</a>.</p>
 
 </div>
 </div>
@@ -1912,9 +1912,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Reimplemented in <a class="el" href="classoomph_1_1RefineableGeneralisedNewtonianNavierStokesEquations.html#a00a1486786f3b1782fd7fb19cddf5cf4">oomph::RefineableGeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l01097">1097</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l01093">1093</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="nodes_8h_source.html#l00365">oomph::Data::eqn_number()</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="elements_8h_source.html#l02163">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l02126">oomph::FiniteElement::node_pt()</a>, <a class="el" href="cfortran_8h_source.html#l00572">s</a>, <a class="el" href="classoomph_1_1FiniteElement.html#a58a25b6859ddd43b7bfe64a19fee5023">oomph::FiniteElement::shape()</a>, and <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00532">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::u_index_nst()</a>.</p>
+<p class="reference">References <a class="el" href="nodes_8h_source.html#l00361">oomph::Data::eqn_number()</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="elements_8h_source.html#l02159">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l02122">oomph::FiniteElement::node_pt()</a>, <a class="el" href="cfortran_8h_source.html#l00568">s</a>, <a class="el" href="classoomph_1_1FiniteElement.html#a58a25b6859ddd43b7bfe64a19fee5023">oomph::FiniteElement::shape()</a>, and <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00528">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::u_index_nst()</a>.</p>
 
 </div>
 </div>
@@ -1947,9 +1947,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1FiniteElement.html#a625ea6d3f9baccfbdd1323315fb3ec71">oomph::FiniteElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00568">568</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00564">564</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00221">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::ALE_is_disabled</a>.</p>
+<p class="reference">References <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00217">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::ALE_is_disabled</a>.</p>
 
 </div>
 </div>
@@ -1969,9 +1969,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Return integral of dissipation over element. </p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html#l00865">865</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html">generalised_newtonian_navier_stokes_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html#l00861">861</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html">generalised_newtonian_navier_stokes_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, and <a class="el" href="cfortran_8h_source.html#l00572">s</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, and <a class="el" href="cfortran_8h_source.html#l00568">s</a>.</p>
 
 </div>
 </div>
@@ -1995,9 +1995,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Return dissipation at local coordinate s. </p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html#l01024">1024</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html">generalised_newtonian_navier_stokes_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html#l01020">1020</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html">generalised_newtonian_navier_stokes_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, and <a class="el" href="cfortran_8h_source.html#l00572">s</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, and <a class="el" href="cfortran_8h_source.html#l00568">s</a>.</p>
 
 </div>
 </div>
@@ -2297,9 +2297,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>i-th component of du/dt at local node n. Uses suitably interpolated value for hanging nodes. </p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00540">540</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00536">536</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="timesteppers_8h_source.html#l00375">oomph::TimeStepper::is_steady()</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, <a class="el" href="elements_8h_source.html#l02487">oomph::FiniteElement::nodal_value()</a>, <a class="el" href="elements_8h_source.html#l02126">oomph::FiniteElement::node_pt()</a>, <a class="el" href="timesteppers_8h_source.html#l00562">oomph::TimeStepper::ntstorage()</a>, <a class="el" href="cfortran_8h_source.html#l00572">t</a>, <a class="el" href="geom__objects_8h_source.html#l00197">oomph::GeomObject::time_stepper_pt()</a>, <a class="el" href="nodes_8h_source.html#l00246">oomph::Data::time_stepper_pt()</a>, <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00532">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::u_index_nst()</a>, and <a class="el" href="timesteppers_8h_source.html#l00557">oomph::TimeStepper::weight()</a>.</p>
+<p class="reference">References <a class="el" href="timesteppers_8h_source.html#l00371">oomph::TimeStepper::is_steady()</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, <a class="el" href="elements_8h_source.html#l02483">oomph::FiniteElement::nodal_value()</a>, <a class="el" href="elements_8h_source.html#l02122">oomph::FiniteElement::node_pt()</a>, <a class="el" href="timesteppers_8h_source.html#l00558">oomph::TimeStepper::ntstorage()</a>, <a class="el" href="cfortran_8h_source.html#l00568">t</a>, <a class="el" href="geom__objects_8h_source.html#l00193">oomph::GeomObject::time_stepper_pt()</a>, <a class="el" href="nodes_8h_source.html#l00242">oomph::Data::time_stepper_pt()</a>, <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00528">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::u_index_nst()</a>, and <a class="el" href="timesteppers_8h_source.html#l00553">oomph::TimeStepper::weight()</a>.</p>
 
 </div>
 </div>
@@ -2332,9 +2332,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1FiniteElement.html#a92ef8967fa4e2d6c33c51ea3efa3aa82">oomph::FiniteElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00577">577</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00573">573</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00221">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::ALE_is_disabled</a>.</p>
+<p class="reference">References <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00217">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::ALE_is_disabled</a>.</p>
 
 </div>
 </div>
@@ -2376,9 +2376,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Extrapolated strain-rate tensor: 1/2 (du_i/dx_j + du_j/dx_i) based on the previous time steps evaluated at ipt-th integration point. </p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00640">640</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00636">636</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html#l01222">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::extrapolated_strain_rate()</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="elements_8h_source.html#l01925">oomph::FiniteElement::integral_pt()</a>, <a class="el" href="classoomph_1_1Integral.html#a1a2122f99a87c18649bafdd9ed739758">oomph::Integral::knot()</a>, <a class="el" href="cfortran_8h_source.html#l00572">s</a>, and <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html#l01053">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::strain_rate()</a>.</p>
+<p class="reference">References <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html#l01218">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::extrapolated_strain_rate()</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="elements_8h_source.html#l01921">oomph::FiniteElement::integral_pt()</a>, <a class="el" href="classoomph_1_1Integral.html#a1a2122f99a87c18649bafdd9ed739758">oomph::Integral::knot()</a>, <a class="el" href="cfortran_8h_source.html#l00568">s</a>, and <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html#l01049">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::strain_rate()</a>.</p>
 
 </div>
 </div>
@@ -2421,11 +2421,11 @@ template&lt;unsigned DIM&gt; </div>
 <p>Extrapolated strain-rate tensor: 1/2 (du_i/dx_j + du_j/dx_i) based on the previous time steps evaluated at local coordinate s. </p>
 <p>Get strain-rate tensor: 1/2 (du_i/dx_j + du_j/dx_i) Extrapolated from history values. </p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html#l01222">1222</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html">generalised_newtonian_navier_stokes_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html#l01218">1218</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html">generalised_newtonian_navier_stokes_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="timesteppers_8h_source.html#l00137">oomph::Time::dt()</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="matrices_8h_source.html#l00507">oomph::DenseMatrix&lt; T &gt;::ncol()</a>, <a class="el" href="matrices_8h_source.html#l00504">oomph::DenseMatrix&lt; T &gt;::nrow()</a>, <a class="el" href="cfortran_8h_source.html#l00572">s</a>, and <a class="el" href="timesteppers_8h_source.html#l00540">oomph::TimeStepper::time_pt()</a>.</p>
+<p class="reference">References <a class="el" href="timesteppers_8h_source.html#l00133">oomph::Time::dt()</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="matrices_8h_source.html#l00503">oomph::DenseMatrix&lt; T &gt;::ncol()</a>, <a class="el" href="matrices_8h_source.html#l00500">oomph::DenseMatrix&lt; T &gt;::nrow()</a>, <a class="el" href="cfortran_8h_source.html#l00568">s</a>, and <a class="el" href="timesteppers_8h_source.html#l00536">oomph::TimeStepper::time_pt()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00640">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::extrapolated_strain_rate()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00636">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::extrapolated_strain_rate()</a>.</p>
 
 </div>
 </div>
@@ -2480,9 +2480,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1GeneralisedElement.html#a2d6e3c918ebc1f270eebdf4eb1027093">oomph::GeneralisedElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00909">909</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00905">905</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html#l02152">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::fill_in_generic_dresidual_contribution_nst()</a>.</p>
+<p class="reference">References <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html#l02148">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::fill_in_generic_dresidual_contribution_nst()</a>.</p>
 
 </div>
 </div>
@@ -2532,9 +2532,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1GeneralisedElement.html#a90ee6ee39dd3950f625148d960f1ba67">oomph::GeneralisedElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00897">897</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00893">893</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l00228">oomph::GeneralisedElement::Dummy_matrix</a>, and <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html#l02152">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::fill_in_generic_dresidual_contribution_nst()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l00224">oomph::GeneralisedElement::Dummy_matrix</a>, and <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html#l02148">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::fill_in_generic_dresidual_contribution_nst()</a>.</p>
 
 </div>
 </div>
@@ -2578,9 +2578,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1GeneralisedElement.html#a64d31806fcbe7c5b689a3281932e8073">oomph::GeneralisedElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00884">884</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00880">880</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l00228">oomph::GeneralisedElement::Dummy_matrix</a>, and <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html#l02152">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::fill_in_generic_dresidual_contribution_nst()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l00224">oomph::GeneralisedElement::Dummy_matrix</a>, and <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html#l02148">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::fill_in_generic_dresidual_contribution_nst()</a>.</p>
 
 </div>
 </div>
@@ -2630,7 +2630,7 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1GeneralisedElement.html#a94e118d65f31ce404963509e462b2d0e">oomph::GeneralisedElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html#l02170">2170</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html">generalised_newtonian_navier_stokes_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html#l02166">2166</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html">generalised_newtonian_navier_stokes_elements.cc</a>.</p>
 
 </div>
 </div>
@@ -2674,9 +2674,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1GeneralisedElement.html#a6ae09fc0d68e4309ac1b03583d252845">oomph::GeneralisedElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00863">863</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00859">859</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l00228">oomph::GeneralisedElement::Dummy_matrix</a>, <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html#l01672">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::fill_in_generic_residual_contribution_nst()</a>, and <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l00224">oomph::GeneralisedElement::Dummy_matrix</a>, <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html#l01668">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::fill_in_generic_residual_contribution_nst()</a>, and <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>.</p>
 
 </div>
 </div>
@@ -2726,9 +2726,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1GeneralisedElement.html#a2b6294a730647cf865da94f2531466f8">oomph::GeneralisedElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00875">875</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00871">871</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html#l01672">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::fill_in_generic_residual_contribution_nst()</a>, and <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>.</p>
+<p class="reference">References <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html#l01668">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::fill_in_generic_residual_contribution_nst()</a>, and <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>.</p>
 
 </div>
 </div>
@@ -2762,9 +2762,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1GeneralisedElement.html#a310c97f515e8504a48179c0e72c550d7">oomph::GeneralisedElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00852">852</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00848">848</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l00228">oomph::GeneralisedElement::Dummy_matrix</a>, <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html#l01672">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::fill_in_generic_residual_contribution_nst()</a>, and <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l00224">oomph::GeneralisedElement::Dummy_matrix</a>, <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html#l01668">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::fill_in_generic_residual_contribution_nst()</a>, and <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>.</p>
 
 </div>
 </div>
@@ -2826,9 +2826,9 @@ template&lt;unsigned DIM&gt; </div>
 <p>Compute the derivatives of the residuals for the Navier&ndash;Stokes equations with respect to a parameter; flag=2 or 1 or 0: do (or don't) compute the Jacobian and mass matrix as well <br  />
  </p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html#l02152">2152</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html">generalised_newtonian_navier_stokes_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html#l02148">2148</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html">generalised_newtonian_navier_stokes_elements.cc</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00909">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::fill_in_contribution_to_djacobian_and_dmass_matrix_dparameter()</a>, <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00897">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::fill_in_contribution_to_djacobian_dparameter()</a>, and <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00884">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::fill_in_contribution_to_dresiduals_dparameter()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00905">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::fill_in_contribution_to_djacobian_and_dmass_matrix_dparameter()</a>, <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00893">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::fill_in_contribution_to_djacobian_dparameter()</a>, and <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00880">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::fill_in_contribution_to_dresiduals_dparameter()</a>.</p>
 
 </div>
 </div>
@@ -2886,11 +2886,11 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Reimplemented in <a class="el" href="classoomph_1_1RefineableGeneralisedNewtonianNavierStokesEquations.html#abb7fde3310709225b8f9fbedfb7eca58">oomph::RefineableGeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html#l01672">1672</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html">generalised_newtonian_navier_stokes_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html#l01668">1668</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html">generalised_newtonian_navier_stokes_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="gen__axisym__advection__diffusion__elements_8h_source.html#l00585">oomph::ALE_is_disabled</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="the__data__structure_8txt.html#a5448c72da3359c7796cf0c5f800732a1">interpolated_u()</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>, <a class="el" href="cfortran_8h_source.html#l00572">s</a>, <a class="el" href="oomph__utilities_8cc_source.html#l00168">oomph::SecondInvariantHelper::second_invariant()</a>, and <a class="el" href="quadtree_8h_source.html#l00060">oomph::QuadTreeNames::W</a>.</p>
+<p class="reference">References <a class="el" href="gen__axisym__advection__diffusion__elements_8h_source.html#l00581">oomph::ALE_is_disabled</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="the__data__structure_8txt.html#a5448c72da3359c7796cf0c5f800732a1">interpolated_u()</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>, <a class="el" href="cfortran_8h_source.html#l00568">s</a>, <a class="el" href="oomph__utilities_8cc_source.html#l00164">oomph::SecondInvariantHelper::second_invariant()</a>, and <a class="el" href="quadtree_8h_source.html#l00056">oomph::QuadTreeNames::W</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00863">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::fill_in_contribution_to_jacobian()</a>, <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00875">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::fill_in_contribution_to_jacobian_and_mass_matrix()</a>, and <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00852">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::fill_in_contribution_to_residuals()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00859">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::fill_in_contribution_to_jacobian()</a>, <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00871">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::fill_in_contribution_to_jacobian_and_mass_matrix()</a>, and <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00848">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::fill_in_contribution_to_residuals()</a>.</p>
 
 </div>
 </div>
@@ -2964,9 +2964,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Full output function: x,y,[z],u,v,[w],p,du/dt,dv/dt,[dw/dt],dissipation in tecplot format. Default number of plot points. </p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00797">797</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00793">793</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="generalised__newtonian__Tnavier__stokes__elements_8h_source.html#l00292">oomph::GeneralisedNewtonianTCrouzeixRaviartElement&lt; DIM &gt;::full_output()</a>, and <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l01371">oomph::GeneralisedNewtonianQCrouzeixRaviartElement&lt; DIM &gt;::full_output()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="generalised__newtonian__Tnavier__stokes__elements_8h_source.html#l00288">oomph::GeneralisedNewtonianTCrouzeixRaviartElement&lt; DIM &gt;::full_output()</a>, and <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l01367">oomph::GeneralisedNewtonianQCrouzeixRaviartElement&lt; DIM &gt;::full_output()</a>.</p>
 
 </div>
 </div>
@@ -3002,9 +3002,9 @@ template&lt;unsigned DIM&gt; </div>
 <p>Full output function: x,y,[z],u,v,[w],p,du/dt,dv/dt,[dw/dt],dissipation in tecplot format. Specified number of plot points in each coordinate direction <br  />
  </p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html#l00659">659</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html">generalised_newtonian_navier_stokes_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html#l00655">655</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html">generalised_newtonian_navier_stokes_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, and <a class="el" href="cfortran_8h_source.html#l00572">s</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, and <a class="el" href="cfortran_8h_source.html#l00568">s</a>.</p>
 
 </div>
 </div>
@@ -3035,9 +3035,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p><a class="el" href="classoomph_1_1Vector.html">Vector</a> of gravitational components. </p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00466">466</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00462">462</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00203">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::G_pt</a>.</p>
+<p class="reference">References <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00199">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::G_pt</a>.</p>
 
 </div>
 </div>
@@ -3068,11 +3068,11 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Pointer to <a class="el" href="classoomph_1_1Vector.html">Vector</a> of gravitational components. </p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00469">469</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00465">465</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00203">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::G_pt</a>.</p>
+<p class="reference">References <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00199">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::G_pt</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="generalised__newtonian__refineable__navier__stokes__elements_8h_source.html#l00189">oomph::RefineableGeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::further_build()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="generalised__newtonian__refineable__navier__stokes__elements_8h_source.html#l00185">oomph::RefineableGeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::further_build()</a>.</p>
 
 </div>
 </div>
@@ -3131,9 +3131,9 @@ template&lt;unsigned DIM&gt; </div>
 </div><div class="memdoc">
 <p>Get gradient of body force term at (Eulerian) position x. This function is virtual to allow overloading in multi-physics problems where the strength of the source function might be determined by another system of equations. Computed via function pointer (if set) or by finite differencing (default) </p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00291">291</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00287">287</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l01181">oomph::GeneralisedElement::Default_fd_jacobian_step</a>, <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00267">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::get_body_force_nst()</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, and <a class="el" href="cfortran_8h_source.html#l00572">s</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l01177">oomph::GeneralisedElement::Default_fd_jacobian_step</a>, <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00263">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::get_body_force_nst()</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, and <a class="el" href="cfortran_8h_source.html#l00568">s</a>.</p>
 
 </div>
 </div>
@@ -3193,11 +3193,11 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Calculate the body force at a given time and local and/or Eulerian position. This function is virtual so that it can be overloaded in multi-physics elements where the body force might depend on another variable. </p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00267">267</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00263">263</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00206">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::Body_force_fct_pt</a>, and <a class="el" href="cfortran_8h_source.html#l00607">i</a>.</p>
+<p class="reference">References <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00202">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::Body_force_fct_pt</a>, and <a class="el" href="cfortran_8h_source.html#l00603">i</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00291">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::get_body_force_gradient_nst()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00287">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::get_body_force_gradient_nst()</a>.</p>
 
 </div>
 </div>
@@ -3234,9 +3234,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Reimplemented in <a class="el" href="classoomph_1_1RefineableGeneralisedNewtonianNavierStokesEquations.html#a0f5691d4db49d42d411a6ec08d29c45e">oomph::RefineableGeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html#l02190">2190</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html">generalised_newtonian_navier_stokes_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html#l02186">2186</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html">generalised_newtonian_navier_stokes_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="gen__axisym__advection__diffusion__elements_8h_source.html#l00585">oomph::ALE_is_disabled</a>, <a class="el" href="elements_8h_source.html#l01181">oomph::GeneralisedElement::Default_fd_jacobian_step</a>, <a class="el" href="nodes_8h_source.html#l01500">oomph::Node::has_auxiliary_node_update_fct_pt()</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="the__data__structure_8txt.html#a5448c72da3359c7796cf0c5f800732a1">interpolated_u()</a>, <a class="el" href="nodes_8h_source.html#l01509">oomph::Node::perform_auxiliary_node_update_fct()</a>, <a class="el" href="cfortran_8h_source.html#l00572">s</a>, <a class="el" href="nodes_8h_source.html#l00322">oomph::Data::value_pt()</a>, and <a class="el" href="nodes_8h_source.html#l00994">oomph::Node::x()</a>.</p>
+<p class="reference">References <a class="el" href="gen__axisym__advection__diffusion__elements_8h_source.html#l00581">oomph::ALE_is_disabled</a>, <a class="el" href="elements_8h_source.html#l01177">oomph::GeneralisedElement::Default_fd_jacobian_step</a>, <a class="el" href="nodes_8h_source.html#l01496">oomph::Node::has_auxiliary_node_update_fct_pt()</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="the__data__structure_8txt.html#a5448c72da3359c7796cf0c5f800732a1">interpolated_u()</a>, <a class="el" href="nodes_8h_source.html#l01505">oomph::Node::perform_auxiliary_node_update_fct()</a>, <a class="el" href="cfortran_8h_source.html#l00568">s</a>, <a class="el" href="nodes_8h_source.html#l00318">oomph::Data::value_pt()</a>, and <a class="el" href="nodes_8h_source.html#l00990">oomph::Node::x()</a>.</p>
 
 </div>
 </div>
@@ -3287,9 +3287,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Implements <a class="el" href="classoomph_1_1FSIFluidElement.html#acf10e6a716b5e0f743579dfce32e9294">oomph::FSIFluidElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00672">672</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00668">668</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html#l00925">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::get_traction()</a>, <a class="el" href="quadtree_8h_source.html#l00060">oomph::QuadTreeNames::N</a>, and <a class="el" href="cfortran_8h_source.html#l00572">s</a>.</p>
+<p class="reference">References <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html#l00921">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::get_traction()</a>, <a class="el" href="quadtree_8h_source.html#l00056">oomph::QuadTreeNames::N</a>, and <a class="el" href="cfortran_8h_source.html#l00568">s</a>.</p>
 
 </div>
 </div>
@@ -3342,9 +3342,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Reimplemented in <a class="el" href="classoomph_1_1RefineableGeneralisedNewtonianNavierStokesEquations.html#af66689b596908f67bf4af1ad9d6c11eb">oomph::RefineableGeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html#l00088">88</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html">generalised_newtonian_navier_stokes_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html#l00084">84</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html">generalised_newtonian_navier_stokes_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="cfortran_8h_source.html#l00572">s</a>, and <a class="el" href="quadtree_8h_source.html#l00060">oomph::QuadTreeNames::W</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="cfortran_8h_source.html#l00568">s</a>, and <a class="el" href="quadtree_8h_source.html#l00056">oomph::QuadTreeNames::W</a>.</p>
 
 </div>
 </div>
@@ -3397,9 +3397,9 @@ template&lt;unsigned DIM&gt; </div>
 </div><div class="memdoc">
 <p>Get gradient of source term at (Eulerian) position x. This function is virtual to allow overloading in multi-physics problems where the strength of the source function might be determined by another system of equations. Computed via function pointer (if set) or by finite differencing (default) </p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00347">347</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00343">343</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l01181">oomph::GeneralisedElement::Default_fd_jacobian_step</a>, <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00332">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::get_source_nst()</a>, and <a class="el" href="cfortran_8h_source.html#l00607">i</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l01177">oomph::GeneralisedElement::Default_fd_jacobian_step</a>, <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00328">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::get_source_nst()</a>, and <a class="el" href="cfortran_8h_source.html#l00603">i</a>.</p>
 
 </div>
 </div>
@@ -3448,11 +3448,11 @@ template&lt;unsigned DIM&gt; </div>
 <p>Calculate the source fct at given time and Eulerian position <br  />
  </p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00332">332</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00328">328</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00209">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::Source_fct_pt</a>.</p>
+<p class="reference">References <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00205">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::Source_fct_pt</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00347">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::get_source_gradient_nst()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00343">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::get_source_gradient_nst()</a>.</p>
 
 </div>
 </div>
@@ -3495,11 +3495,11 @@ template&lt;unsigned DIM&gt; </div>
 <p>Compute traction (on the viscous scale) exerted onto the fluid at local coordinate s. N has to be outer unit normal to the fluid. <br  />
  </p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html#l00925">925</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html">generalised_newtonian_navier_stokes_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html#l00921">921</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html">generalised_newtonian_navier_stokes_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="quadtree_8h_source.html#l00060">oomph::QuadTreeNames::N</a>, <a class="el" href="the__data__structure_8txt_source.html#l00585">press</a>, <a class="el" href="cfortran_8h_source.html#l00572">s</a>, and <a class="el" href="oomph__utilities_8cc_source.html#l00168">oomph::SecondInvariantHelper::second_invariant()</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="quadtree_8h_source.html#l00056">oomph::QuadTreeNames::N</a>, <a class="el" href="the__data__structure_8txt_source.html#l00585">press</a>, <a class="el" href="cfortran_8h_source.html#l00568">s</a>, and <a class="el" href="oomph__utilities_8cc_source.html#l00164">oomph::SecondInvariantHelper::second_invariant()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00672">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::get_load()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00668">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::get_load()</a>.</p>
 
 </div>
 </div>
@@ -3552,9 +3552,9 @@ template&lt;unsigned DIM&gt; </div>
 <p>Compute traction (on the viscous scale) exerted onto the fluid at local coordinate s, decomposed into pressure and normal and tangential viscous components. N has to be outer unit normal to the fluid. </p>
 <p>Compute traction (on the viscous scale) exerted onto the fluid at local coordinate s, decomposed into pressure and normal and tangential viscous components. N has to be outer unit normal to the fluid. </p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html#l00972">972</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html">generalised_newtonian_navier_stokes_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html#l00968">968</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html">generalised_newtonian_navier_stokes_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="quadtree_8h_source.html#l00060">oomph::QuadTreeNames::N</a>, <a class="el" href="the__data__structure_8txt_source.html#l00585">press</a>, <a class="el" href="cfortran_8h_source.html#l00572">s</a>, and <a class="el" href="oomph__utilities_8cc_source.html#l00168">oomph::SecondInvariantHelper::second_invariant()</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="quadtree_8h_source.html#l00056">oomph::QuadTreeNames::N</a>, <a class="el" href="the__data__structure_8txt_source.html#l00585">press</a>, <a class="el" href="cfortran_8h_source.html#l00568">s</a>, and <a class="el" href="oomph__utilities_8cc_source.html#l00164">oomph::SecondInvariantHelper::second_invariant()</a>.</p>
 
 </div>
 </div>
@@ -3617,9 +3617,9 @@ template&lt;unsigned DIM&gt; </div>
 </div><div class="memdoc">
 <p>Compute 2D vorticity vector at local coordinate s (return in one and only component of vorticity vector </p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html#l01277">1277</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html">generalised_newtonian_navier_stokes_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html#l01273">1273</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html">generalised_newtonian_navier_stokes_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, and <a class="el" href="cfortran_8h_source.html#l00572">s</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, and <a class="el" href="cfortran_8h_source.html#l00568">s</a>.</p>
 
 </div>
 </div>
@@ -3651,9 +3651,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Compute 3D vorticity vector at local coordinate s. </p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html#l01351">1351</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html">generalised_newtonian_navier_stokes_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html#l01347">1347</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html">generalised_newtonian_navier_stokes_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, and <a class="el" href="cfortran_8h_source.html#l00572">s</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, and <a class="el" href="cfortran_8h_source.html#l00568">s</a>.</p>
 
 </div>
 </div>
@@ -3695,9 +3695,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Return FE interpolated pressure at local coordinate s at time level t. </p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l01168">1168</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l01164">1164</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="classoomph_1_1GeneralisedNewtonianNavierStokesEquations.html#ad25a5d1b7a7e7cf128b9154f08739824">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::npres_nst()</a>, <a class="el" href="classoomph_1_1GeneralisedNewtonianNavierStokesEquations.html#ae56b835810547b77405585b3a4091eec">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::p_nst()</a>, <a class="el" href="classoomph_1_1GeneralisedNewtonianNavierStokesEquations.html#a84735d21f3d1ade819726a71a7b462e1">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::pshape_nst()</a>, <a class="el" href="cfortran_8h_source.html#l00572">s</a>, and <a class="el" href="cfortran_8h_source.html#l00572">t</a>.</p>
+<p class="reference">References <a class="el" href="classoomph_1_1GeneralisedNewtonianNavierStokesEquations.html#ad25a5d1b7a7e7cf128b9154f08739824">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::npres_nst()</a>, <a class="el" href="classoomph_1_1GeneralisedNewtonianNavierStokesEquations.html#ae56b835810547b77405585b3a4091eec">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::p_nst()</a>, <a class="el" href="classoomph_1_1GeneralisedNewtonianNavierStokesEquations.html#a84735d21f3d1ade819726a71a7b462e1">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::pshape_nst()</a>, <a class="el" href="cfortran_8h_source.html#l00568">s</a>, and <a class="el" href="cfortran_8h_source.html#l00568">t</a>.</p>
 
 </div>
 </div>
@@ -3729,11 +3729,11 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Return FE interpolated pressure at local coordinate s. </p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l01146">1146</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l01142">1142</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="classoomph_1_1GeneralisedNewtonianNavierStokesEquations.html#ad25a5d1b7a7e7cf128b9154f08739824">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::npres_nst()</a>, <a class="el" href="classoomph_1_1GeneralisedNewtonianNavierStokesEquations.html#ae56b835810547b77405585b3a4091eec">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::p_nst()</a>, <a class="el" href="classoomph_1_1GeneralisedNewtonianNavierStokesEquations.html#a84735d21f3d1ade819726a71a7b462e1">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::pshape_nst()</a>, and <a class="el" href="cfortran_8h_source.html#l00572">s</a>.</p>
+<p class="reference">References <a class="el" href="classoomph_1_1GeneralisedNewtonianNavierStokesEquations.html#ad25a5d1b7a7e7cf128b9154f08739824">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::npres_nst()</a>, <a class="el" href="classoomph_1_1GeneralisedNewtonianNavierStokesEquations.html#ae56b835810547b77405585b3a4091eec">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::p_nst()</a>, <a class="el" href="classoomph_1_1GeneralisedNewtonianNavierStokesEquations.html#a84735d21f3d1ade819726a71a7b462e1">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::pshape_nst()</a>, and <a class="el" href="cfortran_8h_source.html#l00568">s</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="generalised__newtonian__refineable__navier__stokes__elements_8h_source.html#l01480">oomph::RefineableGeneralisedNewtonianQCrouzeixRaviartElement&lt; DIM &gt;::further_build()</a>, <a class="el" href="generalised__newtonian__refineable__navier__stokes__elements_8cc_source.html#l01671">oomph::PRefineableGeneralisedNewtonianQCrouzeixRaviartElement&lt; DIM &gt;::further_build()</a>, <a class="el" href="generalised__newtonian__refineable__navier__stokes__elements_8h_source.html#l00460">oomph::RefineableGeneralisedNewtonianQTaylorHoodElement&lt; DIM &gt;::get_interpolated_values()</a>, <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l01191">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::point_output_data()</a>, and <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00700">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::scalar_value_paraview()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="generalised__newtonian__refineable__navier__stokes__elements_8h_source.html#l01476">oomph::RefineableGeneralisedNewtonianQCrouzeixRaviartElement&lt; DIM &gt;::further_build()</a>, <a class="el" href="generalised__newtonian__refineable__navier__stokes__elements_8cc_source.html#l01667">oomph::PRefineableGeneralisedNewtonianQCrouzeixRaviartElement&lt; DIM &gt;::further_build()</a>, <a class="el" href="generalised__newtonian__refineable__navier__stokes__elements_8h_source.html#l00456">oomph::RefineableGeneralisedNewtonianQTaylorHoodElement&lt; DIM &gt;::get_interpolated_values()</a>, <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l01187">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::point_output_data()</a>, and <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00696">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::scalar_value_paraview()</a>.</p>
 
 </div>
 </div>
@@ -3781,9 +3781,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Return FE interpolated velocity u[i] at local coordinate s at time level t (t=0: present; t&gt;0: history) </p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l01065">1065</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l01061">1061</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="the__data__structure_8txt.html#a5448c72da3359c7796cf0c5f800732a1">interpolated_u()</a>, <a class="el" href="elements_8h_source.html#l02163">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l02487">oomph::FiniteElement::nodal_value()</a>, <a class="el" href="cfortran_8h_source.html#l00572">s</a>, <a class="el" href="classoomph_1_1FiniteElement.html#a58a25b6859ddd43b7bfe64a19fee5023">oomph::FiniteElement::shape()</a>, <a class="el" href="cfortran_8h_source.html#l00572">t</a>, and <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00532">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::u_index_nst()</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="the__data__structure_8txt.html#a5448c72da3359c7796cf0c5f800732a1">interpolated_u()</a>, <a class="el" href="elements_8h_source.html#l02159">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l02483">oomph::FiniteElement::nodal_value()</a>, <a class="el" href="cfortran_8h_source.html#l00568">s</a>, <a class="el" href="classoomph_1_1FiniteElement.html#a58a25b6859ddd43b7bfe64a19fee5023">oomph::FiniteElement::shape()</a>, <a class="el" href="cfortran_8h_source.html#l00568">t</a>, and <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00528">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::u_index_nst()</a>.</p>
 
 </div>
 </div>
@@ -3825,9 +3825,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Return FE interpolated velocity u[i] at local coordinate s. </p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l01040">1040</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l01036">1036</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="the__data__structure_8txt.html#a5448c72da3359c7796cf0c5f800732a1">interpolated_u()</a>, <a class="el" href="elements_8h_source.html#l02163">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l02487">oomph::FiniteElement::nodal_value()</a>, <a class="el" href="cfortran_8h_source.html#l00572">s</a>, <a class="el" href="classoomph_1_1FiniteElement.html#a58a25b6859ddd43b7bfe64a19fee5023">oomph::FiniteElement::shape()</a>, and <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00532">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::u_index_nst()</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="the__data__structure_8txt.html#a5448c72da3359c7796cf0c5f800732a1">interpolated_u()</a>, <a class="el" href="elements_8h_source.html#l02159">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l02483">oomph::FiniteElement::nodal_value()</a>, <a class="el" href="cfortran_8h_source.html#l00568">s</a>, <a class="el" href="classoomph_1_1FiniteElement.html#a58a25b6859ddd43b7bfe64a19fee5023">oomph::FiniteElement::shape()</a>, and <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00528">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::u_index_nst()</a>.</p>
 
 </div>
 </div>
@@ -3869,11 +3869,11 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Compute vector of FE interpolated velocity u at local coordinate s. </p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l01016">1016</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l01012">1012</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="elements_8h_source.html#l02163">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l02487">oomph::FiniteElement::nodal_value()</a>, <a class="el" href="cfortran_8h_source.html#l00572">s</a>, <a class="el" href="classoomph_1_1FiniteElement.html#a58a25b6859ddd43b7bfe64a19fee5023">oomph::FiniteElement::shape()</a>, and <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00532">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::u_index_nst()</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="elements_8h_source.html#l02159">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l02483">oomph::FiniteElement::nodal_value()</a>, <a class="el" href="cfortran_8h_source.html#l00568">s</a>, <a class="el" href="classoomph_1_1FiniteElement.html#a58a25b6859ddd43b7bfe64a19fee5023">oomph::FiniteElement::shape()</a>, and <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00528">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::u_index_nst()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="generalised__newtonian__refineable__navier__stokes__elements_8h_source.html#l00460">oomph::RefineableGeneralisedNewtonianQTaylorHoodElement&lt; DIM &gt;::get_interpolated_values()</a>, <a class="el" href="generalised__newtonian__refineable__navier__stokes__elements_8h_source.html#l00851">oomph::RefineableGeneralisedNewtonianQCrouzeixRaviartElement&lt; DIM &gt;::get_interpolated_values()</a>, <a class="el" href="generalised__newtonian__refineable__navier__stokes__elements_8h_source.html#l01145">oomph::PRefineableGeneralisedNewtonianQCrouzeixRaviartElement&lt; DIM &gt;::get_interpolated_values()</a>, <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l01191">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::point_output_data()</a>, and <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00700">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::scalar_value_paraview()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="generalised__newtonian__refineable__navier__stokes__elements_8h_source.html#l00456">oomph::RefineableGeneralisedNewtonianQTaylorHoodElement&lt; DIM &gt;::get_interpolated_values()</a>, <a class="el" href="generalised__newtonian__refineable__navier__stokes__elements_8h_source.html#l00847">oomph::RefineableGeneralisedNewtonianQCrouzeixRaviartElement&lt; DIM &gt;::get_interpolated_values()</a>, <a class="el" href="generalised__newtonian__refineable__navier__stokes__elements_8h_source.html#l01141">oomph::PRefineableGeneralisedNewtonianQCrouzeixRaviartElement&lt; DIM &gt;::get_interpolated_values()</a>, <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l01187">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::point_output_data()</a>, and <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00696">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::scalar_value_paraview()</a>.</p>
 
 </div>
 </div>
@@ -3894,9 +3894,9 @@ template&lt;unsigned DIM&gt; </div>
 <p>Get integral of kinetic energy over element. </p>
 <p>Get integral of kinetic energy over element: Note that this is the "raw" kinetic energy in the sense that the density ratio has not been included. In problems with two or more fluids the user will have to remember to premultiply certain elements by the appropriate density ratio. </p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html#l01428">1428</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html">generalised_newtonian_navier_stokes_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html#l01424">1424</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html">generalised_newtonian_navier_stokes_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, and <a class="el" href="cfortran_8h_source.html#l00572">s</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, and <a class="el" href="cfortran_8h_source.html#l00568">s</a>.</p>
 
 </div>
 </div>
@@ -3945,9 +3945,9 @@ template&lt;unsigned DIM&gt; </div>
 <p>Get max. and min. strain rate invariant and visocosity over all integration points in element <br  />
  </p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html#l01622">1622</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html">generalised_newtonian_navier_stokes_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html#l01618">1618</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html">generalised_newtonian_navier_stokes_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="cfortran_8h_source.html#l00572">s</a>, and <a class="el" href="oomph__utilities_8cc_source.html#l00168">oomph::SecondInvariantHelper::second_invariant()</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="cfortran_8h_source.html#l00568">s</a>, and <a class="el" href="oomph__utilities_8cc_source.html#l00164">oomph::SecondInvariantHelper::second_invariant()</a>.</p>
 
 </div>
 </div>
@@ -3978,7 +3978,7 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Return the number of velocity components Used in FluidInterfaceElements. </p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00536">536</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00532">532</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
 
 </div>
 </div>
@@ -4011,7 +4011,7 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Implemented in <a class="el" href="classoomph_1_1GeneralisedNewtonianQTaylorHoodElement.html#ab52245df561c368a6f0709374dba7136">oomph::GeneralisedNewtonianQTaylorHoodElement&lt; DIM &gt;</a>, <a class="el" href="classoomph_1_1GeneralisedNewtonianQCrouzeixRaviartElement.html#afdd70f9e267fd6acfb87c9a842c7812c">oomph::GeneralisedNewtonianQCrouzeixRaviartElement&lt; DIM &gt;</a>, <a class="el" href="classoomph_1_1PRefineableGeneralisedNewtonianQCrouzeixRaviartElement.html#a68ed322582ba179cd0845bbd498e11b9">oomph::PRefineableGeneralisedNewtonianQCrouzeixRaviartElement&lt; DIM &gt;</a>, <a class="el" href="classoomph_1_1GeneralisedNewtonianTTaylorHoodElement.html#a044d350088f22646d119ef47e0166ede">oomph::GeneralisedNewtonianTTaylorHoodElement&lt; DIM &gt;</a>, <a class="el" href="classoomph_1_1GeneralisedNewtonianTTaylorHoodElement.html#adc6b0ab958706dc841e678d5d0fac9fa">oomph::GeneralisedNewtonianTTaylorHoodElement&lt; DIM &gt;</a>, <a class="el" href="classoomph_1_1GeneralisedNewtonianTTaylorHoodElement.html#a290fdfa0f87a6d4a52823c082c298b4f">oomph::GeneralisedNewtonianTTaylorHoodElement&lt; DIM &gt;</a>, and <a class="el" href="classoomph_1_1GeneralisedNewtonianTCrouzeixRaviartElement.html#a9292803fedb1000c418070b5c459834b">oomph::GeneralisedNewtonianTCrouzeixRaviartElement&lt; DIM &gt;</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l01146">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::interpolated_p_nst()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l01142">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::interpolated_p_nst()</a>.</p>
 
 </div>
 </div>
@@ -4044,7 +4044,7 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1FiniteElement.html#a865e2e5586552ba80babdbe26a77fe8c">oomph::FiniteElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00693">693</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00689">689</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
 
 </div>
 </div>
@@ -4080,9 +4080,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Reimplemented in <a class="el" href="classoomph_1_1GeneralisedNewtonianQTaylorHoodElement.html#ab0d6408d32a068798cdb404db5daadad">oomph::GeneralisedNewtonianQTaylorHoodElement&lt; DIM &gt;</a>, <a class="el" href="classoomph_1_1GeneralisedNewtonianQCrouzeixRaviartElement.html#a5229c52c67179de461423ab34d7f8a7d">oomph::GeneralisedNewtonianQCrouzeixRaviartElement&lt; DIM &gt;</a>, <a class="el" href="classoomph_1_1GeneralisedNewtonianTTaylorHoodElement.html#a4792f7006a06e705cf7d54c7933c1375">oomph::GeneralisedNewtonianTTaylorHoodElement&lt; DIM &gt;</a>, and <a class="el" href="classoomph_1_1GeneralisedNewtonianTCrouzeixRaviartElement.html#a3147cc62be2891996cf4e11fe8e5be79">oomph::GeneralisedNewtonianTCrouzeixRaviartElement&lt; DIM &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00784">784</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00780">780</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00772">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::output()</a>.</p>
+<p class="reference">References <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00768">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::output()</a>.</p>
 
 </div>
 </div>
@@ -4129,9 +4129,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Reimplemented in <a class="el" href="classoomph_1_1GeneralisedNewtonianQTaylorHoodElement.html#a81288f63a98b7bf60ba3fbd31d1befa7">oomph::GeneralisedNewtonianQTaylorHoodElement&lt; DIM &gt;</a>, <a class="el" href="classoomph_1_1GeneralisedNewtonianQCrouzeixRaviartElement.html#aa6119cf023b202657222a8d6ee86612c">oomph::GeneralisedNewtonianQCrouzeixRaviartElement&lt; DIM &gt;</a>, <a class="el" href="classoomph_1_1GeneralisedNewtonianTTaylorHoodElement.html#acc88cfe3517146492eff605648a22ee3">oomph::GeneralisedNewtonianTTaylorHoodElement&lt; DIM &gt;</a>, and <a class="el" href="classoomph_1_1GeneralisedNewtonianTCrouzeixRaviartElement.html#a5cd44245b4ad4ecbf6179be6068d37ea">oomph::GeneralisedNewtonianTCrouzeixRaviartElement&lt; DIM &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html#l00611">611</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html">generalised_newtonian_navier_stokes_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html#l00607">607</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html">generalised_newtonian_navier_stokes_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, and <a class="el" href="cfortran_8h_source.html#l00572">s</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, and <a class="el" href="cfortran_8h_source.html#l00568">s</a>.</p>
 
 </div>
 </div>
@@ -4167,9 +4167,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Reimplemented in <a class="el" href="classoomph_1_1GeneralisedNewtonianQTaylorHoodElement.html#ac1e132d67adcf473addf1d85eabd1e1c">oomph::GeneralisedNewtonianQTaylorHoodElement&lt; DIM &gt;</a>, <a class="el" href="classoomph_1_1GeneralisedNewtonianQCrouzeixRaviartElement.html#a243e373aca5dedfea4efb4d976434d3a">oomph::GeneralisedNewtonianQCrouzeixRaviartElement&lt; DIM &gt;</a>, <a class="el" href="classoomph_1_1GeneralisedNewtonianTTaylorHoodElement.html#a998c59443d1ac6472d036a5f0a839bed">oomph::GeneralisedNewtonianTTaylorHoodElement&lt; DIM &gt;</a>, and <a class="el" href="classoomph_1_1GeneralisedNewtonianTCrouzeixRaviartElement.html#a483703d25945a08046f0792e0321bc59">oomph::GeneralisedNewtonianTCrouzeixRaviartElement&lt; DIM &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00772">772</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00768">768</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="generalised__newtonian__Tnavier__stokes__elements_8h_source.html#l00209">oomph::GeneralisedNewtonianTCrouzeixRaviartElement&lt; DIM &gt;::output()</a>, <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00784">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::output()</a>, <a class="el" href="generalised__newtonian__Tnavier__stokes__elements_8h_source.html#l00893">oomph::GeneralisedNewtonianTTaylorHoodElement&lt; DIM &gt;::output()</a>, <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l01351">oomph::GeneralisedNewtonianQCrouzeixRaviartElement&lt; DIM &gt;::output()</a>, and <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l01896">oomph::GeneralisedNewtonianQTaylorHoodElement&lt; DIM &gt;::output()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="generalised__newtonian__Tnavier__stokes__elements_8h_source.html#l00205">oomph::GeneralisedNewtonianTCrouzeixRaviartElement&lt; DIM &gt;::output()</a>, <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00780">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::output()</a>, <a class="el" href="generalised__newtonian__Tnavier__stokes__elements_8h_source.html#l00889">oomph::GeneralisedNewtonianTTaylorHoodElement&lt; DIM &gt;::output()</a>, <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l01347">oomph::GeneralisedNewtonianQCrouzeixRaviartElement&lt; DIM &gt;::output()</a>, and <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l01892">oomph::GeneralisedNewtonianQTaylorHoodElement&lt; DIM &gt;::output()</a>.</p>
 
 </div>
 </div>
@@ -4216,9 +4216,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Reimplemented in <a class="el" href="classoomph_1_1GeneralisedNewtonianQTaylorHoodElement.html#ad6972349bba7af653113c45a127ae5f0">oomph::GeneralisedNewtonianQTaylorHoodElement&lt; DIM &gt;</a>, <a class="el" href="classoomph_1_1GeneralisedNewtonianQCrouzeixRaviartElement.html#a8479877ac6783559f319414c38245543">oomph::GeneralisedNewtonianQCrouzeixRaviartElement&lt; DIM &gt;</a>, <a class="el" href="classoomph_1_1GeneralisedNewtonianTTaylorHoodElement.html#a2c0b32513bf821e1b86efecfceaf2b08">oomph::GeneralisedNewtonianTTaylorHoodElement&lt; DIM &gt;</a>, and <a class="el" href="classoomph_1_1GeneralisedNewtonianTCrouzeixRaviartElement.html#a56bdad45189809ed1a288727e63fdb7e">oomph::GeneralisedNewtonianTCrouzeixRaviartElement&lt; DIM &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html#l00561">561</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html">generalised_newtonian_navier_stokes_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html#l00557">557</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html">generalised_newtonian_navier_stokes_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, and <a class="el" href="cfortran_8h_source.html#l00572">s</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, and <a class="el" href="cfortran_8h_source.html#l00568">s</a>.</p>
 
 </div>
 </div>
@@ -4275,9 +4275,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1FiniteElement.html#a2a8426dccd57b927be0ae0eec00d0479">oomph::FiniteElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html#l00427">427</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html">generalised_newtonian_navier_stokes_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html#l00423">423</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html">generalised_newtonian_navier_stokes_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, and <a class="el" href="cfortran_8h_source.html#l00572">s</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, and <a class="el" href="cfortran_8h_source.html#l00568">s</a>.</p>
 
 </div>
 </div>
@@ -4328,9 +4328,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1FiniteElement.html#a22b695c714f60ee6cd145be348042035">oomph::FiniteElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html#l00367">367</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html">generalised_newtonian_navier_stokes_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html#l00363">363</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html">generalised_newtonian_navier_stokes_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, and <a class="el" href="cfortran_8h_source.html#l00572">s</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, and <a class="el" href="cfortran_8h_source.html#l00568">s</a>.</p>
 
 </div>
 </div>
@@ -4372,9 +4372,9 @@ template&lt;unsigned DIM&gt; </div>
 <p>Output function: Velocities only <br  />
  x,y,[z],u,v,[w] in tecplot format at specified previous timestep (t=0: present; t&gt;0: previous timestep). Specified number of plot points in each coordinate direction. </p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html#l00488">488</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html">generalised_newtonian_navier_stokes_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html#l00484">484</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html">generalised_newtonian_navier_stokes_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="the__data__structure_8txt.html#a5448c72da3359c7796cf0c5f800732a1">interpolated_u()</a>, <a class="el" href="cfortran_8h_source.html#l00572">s</a>, <a class="el" href="shape_8h_source.html#l00549">oomph::OneDimLagrange::shape()</a>, and <a class="el" href="cfortran_8h_source.html#l00572">t</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="the__data__structure_8txt.html#a5448c72da3359c7796cf0c5f800732a1">interpolated_u()</a>, <a class="el" href="cfortran_8h_source.html#l00568">s</a>, <a class="el" href="shape_8h_source.html#l00545">oomph::OneDimLagrange::shape()</a>, and <a class="el" href="cfortran_8h_source.html#l00568">t</a>.</p>
 
 </div>
 </div>
@@ -4409,9 +4409,9 @@ template&lt;unsigned DIM&gt; </div>
 <p>Output function: x,y,[z], [omega_x,omega_y,[and/or omega_z]] in tecplot format. nplot points in each coordinate direction. </p>
 <p>Output function for vorticity. x,y,[z],[omega_x,omega_y,[and/or omega_z]] in tecplot format. Specified number of plot points in each coordinate direction. </p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html#l00792">792</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html">generalised_newtonian_navier_stokes_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html#l00788">788</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html">generalised_newtonian_navier_stokes_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="cfortran_8h_source.html#l00572">s</a>, and <a class="el" href="oomph__definitions_8cc_source.html#l00293">oomph::Global_string_for_annotation::string()</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="cfortran_8h_source.html#l00568">s</a>, and <a class="el" href="oomph__definitions_8cc_source.html#l00289">oomph::Global_string_for_annotation::string()</a>.</p>
 
 </div>
 </div>
@@ -4446,11 +4446,11 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Reimplemented in <a class="el" href="classoomph_1_1GeneralisedNewtonianQTaylorHoodElement.html#a1100787d48487bdb1ca3201b49c9c41f">oomph::GeneralisedNewtonianQTaylorHoodElement&lt; DIM &gt;</a>, and <a class="el" href="classoomph_1_1GeneralisedNewtonianTTaylorHoodElement.html#af1aacc302260ae8d987bc48b560304f5">oomph::GeneralisedNewtonianTTaylorHoodElement&lt; DIM &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00595">595</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00591">591</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00163">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::Pressure_not_stored_at_node</a>.</p>
+<p class="reference">References <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00159">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::Pressure_not_stored_at_node</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00922">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::pin_all_non_pressure_dofs()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00918">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::pin_all_non_pressure_dofs()</a>.</p>
 
 </div>
 </div>
@@ -4484,7 +4484,7 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Implemented in <a class="el" href="classoomph_1_1GeneralisedNewtonianQTaylorHoodElement.html#ab63500fdebdaa2123b503af982467d8a">oomph::GeneralisedNewtonianQTaylorHoodElement&lt; DIM &gt;</a>, <a class="el" href="classoomph_1_1GeneralisedNewtonianTTaylorHoodElement.html#a014b6af2514d0b354997402d3145dc17">oomph::GeneralisedNewtonianTTaylorHoodElement&lt; DIM &gt;</a>, <a class="el" href="classoomph_1_1GeneralisedNewtonianQCrouzeixRaviartElement.html#aa4293ea7acc0f6bc4cd9e7fe2248b726">oomph::GeneralisedNewtonianQCrouzeixRaviartElement&lt; DIM &gt;</a>, <a class="el" href="classoomph_1_1PRefineableGeneralisedNewtonianQCrouzeixRaviartElement.html#a2aa0981d2fccc40fe3b94763901ff844">oomph::PRefineableGeneralisedNewtonianQCrouzeixRaviartElement&lt; DIM &gt;</a>, and <a class="el" href="classoomph_1_1GeneralisedNewtonianTCrouzeixRaviartElement.html#aacae104194ac35d57f2172372e0d90a5">oomph::GeneralisedNewtonianTCrouzeixRaviartElement&lt; DIM &gt;</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l01146">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::interpolated_p_nst()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l01142">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::interpolated_p_nst()</a>.</p>
 
 </div>
 </div>
@@ -4560,9 +4560,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Implements <a class="el" href="classoomph_1_1GeneralisedNewtonianTemplateFreeNavierStokesEquationsBase.html#ae5b2fd78047630a2be4d66c541184a46">oomph::GeneralisedNewtonianTemplateFreeNavierStokesEquationsBase</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00922">922</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00918">918</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="nodes_8h_source.html#l00365">oomph::Data::eqn_number()</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="elements_8h_source.html#l00623">oomph::GeneralisedElement::internal_data_pt()</a>, <a class="el" href="elements_8h_source.html#l00828">oomph::GeneralisedElement::ninternal_data()</a>, <a class="el" href="elements_8h_source.html#l02163">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l02126">oomph::FiniteElement::node_pt()</a>, <a class="el" href="nodes_8h_source.html#l00448">oomph::Data::nvalue()</a>, <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00595">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::p_nodal_index_nst()</a>, <a class="el" href="nodes_8h_source.html#l00383">oomph::Data::pin()</a>, <a class="el" href="elements_8cc_source.html#l04210">oomph::FiniteElement::size()</a>, and <a class="el" href="nodes_8h_source.html#l01654">oomph::SolidNode::variable_position_pt()</a>.</p>
+<p class="reference">References <a class="el" href="nodes_8h_source.html#l00361">oomph::Data::eqn_number()</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="elements_8h_source.html#l00619">oomph::GeneralisedElement::internal_data_pt()</a>, <a class="el" href="elements_8h_source.html#l00824">oomph::GeneralisedElement::ninternal_data()</a>, <a class="el" href="elements_8h_source.html#l02159">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l02122">oomph::FiniteElement::node_pt()</a>, <a class="el" href="nodes_8h_source.html#l00444">oomph::Data::nvalue()</a>, <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00591">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::p_nodal_index_nst()</a>, <a class="el" href="nodes_8h_source.html#l00379">oomph::Data::pin()</a>, <a class="el" href="elements_8cc_source.html#l04206">oomph::FiniteElement::size()</a>, and <a class="el" href="nodes_8h_source.html#l01650">oomph::SolidNode::variable_position_pt()</a>.</p>
 
 </div>
 </div>
@@ -4606,9 +4606,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1FiniteElement.html#a8bf3f75b55d4e67b644df3e22c192596">oomph::FiniteElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l01191">1191</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l01187">1187</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l02499">oomph::FiniteElement::dim()</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l01146">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::interpolated_p_nst()</a>, <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l01016">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::interpolated_u_nst()</a>, <a class="el" href="elements_8cc_source.html#l03881">oomph::FiniteElement::interpolated_x()</a>, and <a class="el" href="cfortran_8h_source.html#l00572">s</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l02495">oomph::FiniteElement::dim()</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l01142">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::interpolated_p_nst()</a>, <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l01012">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::interpolated_u_nst()</a>, <a class="el" href="elements_8cc_source.html#l03877">oomph::FiniteElement::interpolated_x()</a>, and <a class="el" href="cfortran_8h_source.html#l00568">s</a>.</p>
 
 </div>
 </div>
@@ -4629,9 +4629,9 @@ template&lt;unsigned DIM&gt; </div>
 <p><a class="el" href="classoomph_1_1Integral.html">Integral</a> of pressure over element. </p>
 <p>Return pressure integrated over the element. </p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html#l01573">1573</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html">generalised_newtonian_navier_stokes_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html#l01569">1569</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html">generalised_newtonian_navier_stokes_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="the__data__structure_8txt_source.html#l00585">press</a>, <a class="el" href="cfortran_8h_source.html#l00572">s</a>, and <a class="el" href="quadtree_8h_source.html#l00060">oomph::QuadTreeNames::W</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="the__data__structure_8txt_source.html#l00585">press</a>, <a class="el" href="cfortran_8h_source.html#l00568">s</a>, and <a class="el" href="quadtree_8h_source.html#l00056">oomph::QuadTreeNames::W</a>.</p>
 
 </div>
 </div>
@@ -4675,7 +4675,7 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Implemented in <a class="el" href="classoomph_1_1GeneralisedNewtonianQTaylorHoodElement.html#aa2516eabe0ade06ec7f8d5c3d8dff49d">oomph::GeneralisedNewtonianQTaylorHoodElement&lt; DIM &gt;</a>, <a class="el" href="classoomph_1_1GeneralisedNewtonianQTaylorHoodElement.html#a46c8e63606e8001442289cec8ba56957">oomph::GeneralisedNewtonianQTaylorHoodElement&lt; DIM &gt;</a>, <a class="el" href="classoomph_1_1GeneralisedNewtonianQTaylorHoodElement.html#a7ec2ae0068b4c02cca984dfb549b083e">oomph::GeneralisedNewtonianQTaylorHoodElement&lt; DIM &gt;</a>, <a class="el" href="classoomph_1_1PRefineableGeneralisedNewtonianQCrouzeixRaviartElement.html#af43ba4a5c262d20e0c2a5df1c60ede4a">oomph::PRefineableGeneralisedNewtonianQCrouzeixRaviartElement&lt; DIM &gt;</a>, <a class="el" href="classoomph_1_1PRefineableGeneralisedNewtonianQCrouzeixRaviartElement.html#a3e2c4f80e7bd01f9804deb1ecf70dc5a">oomph::PRefineableGeneralisedNewtonianQCrouzeixRaviartElement&lt; DIM &gt;</a>, <a class="el" href="classoomph_1_1GeneralisedNewtonianQCrouzeixRaviartElement.html#ac84e70717ba0dfc9c40ca0daa8bb1440">oomph::GeneralisedNewtonianQCrouzeixRaviartElement&lt; DIM &gt;</a>, <a class="el" href="classoomph_1_1GeneralisedNewtonianQCrouzeixRaviartElement.html#afb83cd39ba957a43ec169c14b8905636">oomph::GeneralisedNewtonianQCrouzeixRaviartElement&lt; DIM &gt;</a>, <a class="el" href="classoomph_1_1GeneralisedNewtonianTTaylorHoodElement.html#a4db8429db779b7dea6c51fa60745e085">oomph::GeneralisedNewtonianTTaylorHoodElement&lt; DIM &gt;</a>, <a class="el" href="classoomph_1_1GeneralisedNewtonianTTaylorHoodElement.html#a0fec3dbc7115bb4f96e6e608ec0bd480">oomph::GeneralisedNewtonianTTaylorHoodElement&lt; DIM &gt;</a>, <a class="el" href="classoomph_1_1GeneralisedNewtonianQCrouzeixRaviartElement.html#ac67f51cf0d592e011ea165f62ff8976e">oomph::GeneralisedNewtonianQCrouzeixRaviartElement&lt; DIM &gt;</a>, <a class="el" href="classoomph_1_1PRefineableGeneralisedNewtonianQCrouzeixRaviartElement.html#a08a69865335d8b43be653b21a4ca358f">oomph::PRefineableGeneralisedNewtonianQCrouzeixRaviartElement&lt; DIM &gt;</a>, <a class="el" href="classoomph_1_1GeneralisedNewtonianTTaylorHoodElement.html#a6275b1519211476d13fcb08236def908">oomph::GeneralisedNewtonianTTaylorHoodElement&lt; DIM &gt;</a>, <a class="el" href="classoomph_1_1GeneralisedNewtonianTCrouzeixRaviartElement.html#a6952a639b4868976786fb15c278abaa4">oomph::GeneralisedNewtonianTCrouzeixRaviartElement&lt; DIM &gt;</a>, <a class="el" href="classoomph_1_1GeneralisedNewtonianTCrouzeixRaviartElement.html#a67ce3cc8257aef106d4f0f0b96091413">oomph::GeneralisedNewtonianTCrouzeixRaviartElement&lt; DIM &gt;</a>, and <a class="el" href="classoomph_1_1GeneralisedNewtonianTCrouzeixRaviartElement.html#aa5b24d0755232d850281523741ea7f1b">oomph::GeneralisedNewtonianTCrouzeixRaviartElement&lt; DIM &gt;</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l01146">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::interpolated_p_nst()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l01142">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::interpolated_p_nst()</a>.</p>
 
 </div>
 </div>
@@ -4754,9 +4754,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Reynolds number. </p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00434">434</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00430">430</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00193">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::Re_pt</a>.</p>
+<p class="reference">References <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00189">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::Re_pt</a>.</p>
 
 </div>
 </div>
@@ -4787,9 +4787,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Global inverse Froude number. </p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00460">460</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00456">456</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00200">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::ReInvFr_pt</a>.</p>
+<p class="reference">References <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00196">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::ReInvFr_pt</a>.</p>
 
 </div>
 </div>
@@ -4820,11 +4820,11 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Pointer to global inverse Froude number. </p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00463">463</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00459">459</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00200">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::ReInvFr_pt</a>.</p>
+<p class="reference">References <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00196">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::ReInvFr_pt</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="generalised__newtonian__refineable__navier__stokes__elements_8h_source.html#l00189">oomph::RefineableGeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::further_build()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="generalised__newtonian__refineable__navier__stokes__elements_8h_source.html#l00185">oomph::RefineableGeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::further_build()</a>.</p>
 
 </div>
 </div>
@@ -4855,11 +4855,11 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Pointer to Reynolds number. </p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00440">440</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00436">436</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00193">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::Re_pt</a>.</p>
+<p class="reference">References <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00189">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::Re_pt</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="generalised__newtonian__refineable__navier__stokes__elements_8h_source.html#l00189">oomph::RefineableGeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::further_build()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="generalised__newtonian__refineable__navier__stokes__elements_8h_source.html#l00185">oomph::RefineableGeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::further_build()</a>.</p>
 
 </div>
 </div>
@@ -4890,9 +4890,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Product of Reynolds and Strouhal number (=Womersley number) </p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00437">437</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00433">433</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00196">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::ReSt_pt</a>.</p>
+<p class="reference">References <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00192">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::ReSt_pt</a>.</p>
 
 </div>
 </div>
@@ -4923,11 +4923,11 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Pointer to product of Reynolds and Strouhal number (=Womersley number) </p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00443">443</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00439">439</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00196">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::ReSt_pt</a>.</p>
+<p class="reference">References <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00192">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::ReSt_pt</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="generalised__newtonian__refineable__navier__stokes__elements_8h_source.html#l00189">oomph::RefineableGeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::further_build()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="generalised__newtonian__refineable__navier__stokes__elements_8h_source.html#l00185">oomph::RefineableGeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::further_build()</a>.</p>
 
 </div>
 </div>
@@ -4961,9 +4961,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1FiniteElement.html#a49cc2d4f7ed5772bbc96f06760372b51">oomph::FiniteElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00742">742</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00738">738</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, and <a class="el" href="oomph__utilities_8h_source.html#l00196">oomph::StringConversion::to_string()</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, and <a class="el" href="oomph__utilities_8h_source.html#l00192">oomph::StringConversion::to_string()</a>.</p>
 
 </div>
 </div>
@@ -5013,9 +5013,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1FiniteElement.html#a02cf8832a5e2886f1572bd36f7a7c1e3">oomph::FiniteElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00700">700</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00696">696</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l03010">oomph::FiniteElement::get_s_plot()</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l01146">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::interpolated_p_nst()</a>, <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l01016">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::interpolated_u_nst()</a>, <a class="el" href="elements_8h_source.html#l02729">oomph::FiniteElement::nplot_points_paraview()</a>, and <a class="el" href="cfortran_8h_source.html#l00572">s</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l03006">oomph::FiniteElement::get_s_plot()</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l01142">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::interpolated_p_nst()</a>, <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l01012">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::interpolated_u_nst()</a>, <a class="el" href="elements_8h_source.html#l02725">oomph::FiniteElement::nplot_points_paraview()</a>, and <a class="el" href="cfortran_8h_source.html#l00568">s</a>.</p>
 
 </div>
 </div>
@@ -5046,11 +5046,11 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Access function for the source-function pointer. </p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00480">480</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00476">476</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00209">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::Source_fct_pt</a>.</p>
+<p class="reference">References <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00205">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::Source_fct_pt</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="generalised__newtonian__refineable__navier__stokes__elements_8h_source.html#l00189">oomph::RefineableGeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::further_build()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="generalised__newtonian__refineable__navier__stokes__elements_8h_source.html#l00185">oomph::RefineableGeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::further_build()</a>.</p>
 
 </div>
 </div>
@@ -5081,9 +5081,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Access function for the source-function pointer. Const version. </p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00483">483</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00479">479</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00209">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::Source_fct_pt</a>.</p>
+<p class="reference">References <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00205">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::Source_fct_pt</a>.</p>
 
 </div>
 </div>
@@ -5124,9 +5124,9 @@ template&lt;unsigned DIM&gt; </div>
 <p>Strain-rate tensor: 1/2 (du_i/dx_j + du_j/dx_i) at a specific time history value. </p>
 <p>Get strain-rate tensor: 1/2 (du_i/dx_j + du_j/dx_i) at a specific time </p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html#l01127">1127</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html">generalised_newtonian_navier_stokes_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html#l01123">1123</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html">generalised_newtonian_navier_stokes_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="matrices_8h_source.html#l00507">oomph::DenseMatrix&lt; T &gt;::ncol()</a>, <a class="el" href="matrices_8h_source.html#l00504">oomph::DenseMatrix&lt; T &gt;::nrow()</a>, <a class="el" href="cfortran_8h_source.html#l00572">s</a>, and <a class="el" href="cfortran_8h_source.html#l00572">t</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="matrices_8h_source.html#l00503">oomph::DenseMatrix&lt; T &gt;::ncol()</a>, <a class="el" href="matrices_8h_source.html#l00500">oomph::DenseMatrix&lt; T &gt;::nrow()</a>, <a class="el" href="cfortran_8h_source.html#l00568">s</a>, and <a class="el" href="cfortran_8h_source.html#l00568">t</a>.</p>
 
 </div>
 </div>
@@ -5161,11 +5161,11 @@ template&lt;unsigned DIM&gt; </div>
 <p>Strain-rate tensor: 1/2 (du_i/dx_j + du_j/dx_i) </p>
 <p>Get strain-rate tensor: 1/2 (du_i/dx_j + du_j/dx_i) </p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html#l01053">1053</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html">generalised_newtonian_navier_stokes_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html#l01049">1049</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html">generalised_newtonian_navier_stokes_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="matrices_8h_source.html#l00507">oomph::DenseMatrix&lt; T &gt;::ncol()</a>, <a class="el" href="matrices_8h_source.html#l00504">oomph::DenseMatrix&lt; T &gt;::nrow()</a>, and <a class="el" href="cfortran_8h_source.html#l00572">s</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="matrices_8h_source.html#l00503">oomph::DenseMatrix&lt; T &gt;::ncol()</a>, <a class="el" href="matrices_8h_source.html#l00500">oomph::DenseMatrix&lt; T &gt;::nrow()</a>, and <a class="el" href="cfortran_8h_source.html#l00568">s</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00640">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::extrapolated_strain_rate()</a>, <a class="el" href="generalised__newtonian__refineable__navier__stokes__elements_8h_source.html#l00147">oomph::RefineableGeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::get_Z2_flux()</a>, <a class="el" href="generalised__newtonian__Tnavier__stokes__elements_8h_source.html#l00246">oomph::GeneralisedNewtonianTCrouzeixRaviartElement&lt; DIM &gt;::get_Z2_flux()</a>, and <a class="el" href="generalised__newtonian__Tnavier__stokes__elements_8h_source.html#l00930">oomph::GeneralisedNewtonianTTaylorHoodElement&lt; DIM &gt;::get_Z2_flux()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00636">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::extrapolated_strain_rate()</a>, <a class="el" href="generalised__newtonian__refineable__navier__stokes__elements_8h_source.html#l00143">oomph::RefineableGeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::get_Z2_flux()</a>, <a class="el" href="generalised__newtonian__Tnavier__stokes__elements_8h_source.html#l00242">oomph::GeneralisedNewtonianTCrouzeixRaviartElement&lt; DIM &gt;::get_Z2_flux()</a>, and <a class="el" href="generalised__newtonian__Tnavier__stokes__elements_8h_source.html#l00926">oomph::GeneralisedNewtonianTTaylorHoodElement&lt; DIM &gt;::get_Z2_flux()</a>.</p>
 
 </div>
 </div>
@@ -5198,11 +5198,11 @@ template&lt;unsigned DIM&gt; </div>
 <p>Return the index at which the i-th unknown velocity component. </p>
 <p>is stored. The default value, i, is appropriate for single-physics problems. In derived multi-physics elements, this function should be overloaded to reflect the chosen storage scheme. Note that these equations require that the unknowns are always stored at the same indices at each node. </p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00532">532</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00528">528</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="generalised__newtonian__refineable__navier__stokes__elements_8h_source.html#l00227">oomph::RefineableGeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::dinterpolated_u_nst_ddata()</a>, <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l01097">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::dinterpolated_u_nst_ddata()</a>, <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00540">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::du_dt_nst()</a>, <a class="el" href="generalised__newtonian__refineable__navier__stokes__elements_8h_source.html#l00476">oomph::RefineableGeneralisedNewtonianQTaylorHoodElement&lt; DIM &gt;::get_interpolated_values()</a>, <a class="el" href="generalised__newtonian__refineable__navier__stokes__elements_8h_source.html#l00869">oomph::RefineableGeneralisedNewtonianQCrouzeixRaviartElement&lt; DIM &gt;::get_interpolated_values()</a>, <a class="el" href="generalised__newtonian__refineable__navier__stokes__elements_8h_source.html#l01163">oomph::PRefineableGeneralisedNewtonianQCrouzeixRaviartElement&lt; DIM &gt;::get_interpolated_values()</a>, <a class="el" href="generalised__newtonian__refineable__navier__stokes__elements_8h_source.html#l00652">oomph::RefineableGeneralisedNewtonianQTaylorHoodElement&lt; DIM &gt;::identify_load_data()</a>, <a class="el" href="generalised__newtonian__refineable__navier__stokes__elements_8h_source.html#l00917">oomph::RefineableGeneralisedNewtonianQCrouzeixRaviartElement&lt; DIM &gt;::identify_load_data()</a>, <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l01016">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::interpolated_u_nst()</a>, and <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00517">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::u_nst()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="generalised__newtonian__refineable__navier__stokes__elements_8h_source.html#l00223">oomph::RefineableGeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::dinterpolated_u_nst_ddata()</a>, <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l01093">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::dinterpolated_u_nst_ddata()</a>, <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00536">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::du_dt_nst()</a>, <a class="el" href="generalised__newtonian__refineable__navier__stokes__elements_8h_source.html#l00472">oomph::RefineableGeneralisedNewtonianQTaylorHoodElement&lt; DIM &gt;::get_interpolated_values()</a>, <a class="el" href="generalised__newtonian__refineable__navier__stokes__elements_8h_source.html#l00865">oomph::RefineableGeneralisedNewtonianQCrouzeixRaviartElement&lt; DIM &gt;::get_interpolated_values()</a>, <a class="el" href="generalised__newtonian__refineable__navier__stokes__elements_8h_source.html#l01159">oomph::PRefineableGeneralisedNewtonianQCrouzeixRaviartElement&lt; DIM &gt;::get_interpolated_values()</a>, <a class="el" href="generalised__newtonian__refineable__navier__stokes__elements_8h_source.html#l00648">oomph::RefineableGeneralisedNewtonianQTaylorHoodElement&lt; DIM &gt;::identify_load_data()</a>, <a class="el" href="generalised__newtonian__refineable__navier__stokes__elements_8h_source.html#l00913">oomph::RefineableGeneralisedNewtonianQCrouzeixRaviartElement&lt; DIM &gt;::identify_load_data()</a>, <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l01012">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::interpolated_u_nst()</a>, and <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00513">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::u_nst()</a>.</p>
 
 </div>
 </div>
@@ -5244,9 +5244,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Velocity i at local node n. Uses suitably interpolated value for hanging nodes. The use of <a class="el" href="classoomph_1_1GeneralisedNewtonianNavierStokesEquations.html#a3d3e311b51c9258280c0f65d55581a3e" title="Return the index at which the i-th unknown velocity component.">u_index_nst()</a> permits the use of this element as the basis for multi-physics elements. The default is to assume that the i-th velocity component is stored at the i-th location of the node. </p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00517">517</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00513">513</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, <a class="el" href="elements_8h_source.html#l02487">oomph::FiniteElement::nodal_value()</a>, and <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00532">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::u_index_nst()</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, <a class="el" href="elements_8h_source.html#l02483">oomph::FiniteElement::nodal_value()</a>, and <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00528">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::u_index_nst()</a>.</p>
 
 </div>
 </div>
@@ -5294,9 +5294,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Velocity i at local node n at timestep t (t=0: present; t&gt;0: previous). Uses suitably interpolated value for hanging nodes. </p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00522">522</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00518">518</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, <a class="el" href="elements_8h_source.html#l02487">oomph::FiniteElement::nodal_value()</a>, <a class="el" href="cfortran_8h_source.html#l00572">t</a>, and <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00532">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::u_index_nst()</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, <a class="el" href="elements_8h_source.html#l02483">oomph::FiniteElement::nodal_value()</a>, <a class="el" href="cfortran_8h_source.html#l00568">t</a>, and <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00528">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::u_index_nst()</a>.</p>
 
 </div>
 </div>
@@ -5327,9 +5327,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Switch to fully implict evaluation of non-Newtonian const eqn. </p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00490">490</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00486">486</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00216">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::Use_extrapolated_strainrate_to_compute_second_invariant</a>.</p>
+<p class="reference">References <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00212">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::Use_extrapolated_strainrate_to_compute_second_invariant</a>.</p>
 
 </div>
 </div>
@@ -5360,9 +5360,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Use extrapolation for non-Newtonian const eqn. </p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00496">496</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00492">492</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00216">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::Use_extrapolated_strainrate_to_compute_second_invariant</a>.</p>
+<p class="reference">References <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00212">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::Use_extrapolated_strainrate_to_compute_second_invariant</a>.</p>
 
 </div>
 </div>
@@ -5393,9 +5393,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Viscosity ratio for element: Element's viscosity relative to the viscosity used in the definition of the Reynolds number. </p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00447">447</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00443">443</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00184">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::Viscosity_Ratio_pt</a>.</p>
+<p class="reference">References <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00180">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::Viscosity_Ratio_pt</a>.</p>
 
 </div>
 </div>
@@ -5426,11 +5426,11 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Pointer to Viscosity Ratio. </p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00450">450</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00446">446</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00184">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::Viscosity_Ratio_pt</a>.</p>
+<p class="reference">References <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00180">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::Viscosity_Ratio_pt</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="generalised__newtonian__refineable__navier__stokes__elements_8h_source.html#l00189">oomph::RefineableGeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::further_build()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="generalised__newtonian__refineable__navier__stokes__elements_8h_source.html#l00185">oomph::RefineableGeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::further_build()</a>.</p>
 
 </div>
 </div>
@@ -5459,9 +5459,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Boolean flag to indicate if ALE formulation is disabled when time-derivatives are computed. Only set to true if you're sure that the mesh is stationary. </p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00221">221</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00217">217</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00568">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::disable_ALE()</a>, <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00577">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::enable_ALE()</a>, and <a class="el" href="generalised__newtonian__refineable__navier__stokes__elements_8h_source.html#l00189">oomph::RefineableGeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::further_build()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00564">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::disable_ALE()</a>, <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00573">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::enable_ALE()</a>, and <a class="el" href="generalised__newtonian__refineable__navier__stokes__elements_8h_source.html#l00185">oomph::RefineableGeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::further_build()</a>.</p>
 
 </div>
 </div>
@@ -5489,9 +5489,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Pointer to body force function. </p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00206">206</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00202">202</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00472">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::body_force_fct_pt()</a>, <a class="el" href="generalised__newtonian__refineable__navier__stokes__elements_8h_source.html#l00189">oomph::RefineableGeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::further_build()</a>, and <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00267">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::get_body_force_nst()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00468">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::body_force_fct_pt()</a>, <a class="el" href="generalised__newtonian__refineable__navier__stokes__elements_8h_source.html#l00185">oomph::RefineableGeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::further_build()</a>, and <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00263">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::get_body_force_nst()</a>.</p>
 
 </div>
 </div>
@@ -5519,9 +5519,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Pointer to the generalised Newtonian constitutive equation. </p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00212">212</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00208">208</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00486">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::constitutive_eqn_pt()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00482">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::constitutive_eqn_pt()</a>.</p>
 
 </div>
 </div>
@@ -5550,9 +5550,9 @@ template&lt;unsigned DIM&gt; </div>
 <p>Static default value for the gravity vector. </p>
 <p>Navier-Stokes equations default gravity vector. </p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00172">172</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00168">168</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00408">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::GeneralisedNewtonianNavierStokesEquations()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00404">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::GeneralisedNewtonianNavierStokesEquations()</a>.</p>
 
 </div>
 </div>
@@ -5581,9 +5581,9 @@ template&lt;unsigned DIM&gt; </div>
 <p>Static default value for the physical constants (all initialised to zero) </p>
 <p>Navier&ndash;Stokes equations static data. </p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00166">166</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00162">162</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00408">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::GeneralisedNewtonianNavierStokesEquations()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00404">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::GeneralisedNewtonianNavierStokesEquations()</a>.</p>
 
 </div>
 </div>
@@ -5612,9 +5612,9 @@ template&lt;unsigned DIM&gt; </div>
 <p>Static default value for the physical ratios (all are initialised to one) </p>
 <p>Navier&ndash;Stokes equations static data. </p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00169">169</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00165">165</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00408">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::GeneralisedNewtonianNavierStokesEquations()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00404">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::GeneralisedNewtonianNavierStokesEquations()</a>.</p>
 
 </div>
 </div>
@@ -5642,9 +5642,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Pointer to the density ratio (relative to the density used in the definition of the Reynolds number) </p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00188">188</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00184">184</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00454">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::density_ratio()</a>, <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00457">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::density_ratio_pt()</a>, <a class="el" href="generalised__newtonian__refineable__navier__stokes__elements_8h_source.html#l00189">oomph::RefineableGeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::further_build()</a>, and <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00408">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::GeneralisedNewtonianNavierStokesEquations()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00450">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::density_ratio()</a>, <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00453">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::density_ratio_pt()</a>, <a class="el" href="generalised__newtonian__refineable__navier__stokes__elements_8h_source.html#l00185">oomph::RefineableGeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::further_build()</a>, and <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00404">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::GeneralisedNewtonianNavierStokesEquations()</a>.</p>
 
 </div>
 </div>
@@ -5672,9 +5672,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Pointer to global gravity <a class="el" href="classoomph_1_1Vector.html">Vector</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00203">203</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00199">199</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="generalised__newtonian__refineable__navier__stokes__elements_8h_source.html#l00189">oomph::RefineableGeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::further_build()</a>, <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00466">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::g()</a>, <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00469">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::g_pt()</a>, and <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00408">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::GeneralisedNewtonianNavierStokesEquations()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="generalised__newtonian__refineable__navier__stokes__elements_8h_source.html#l00185">oomph::RefineableGeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::further_build()</a>, <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00462">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::g()</a>, <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00465">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::g_pt()</a>, and <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00404">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::GeneralisedNewtonianNavierStokesEquations()</a>.</p>
 
 </div>
 </div>
@@ -5703,7 +5703,7 @@ template&lt;unsigned DIM&gt; </div>
 <p><a class="el" href="classoomph_1_1Vector.html">Vector</a> to decide whether the stress-divergence form is used or not. </p>
 <p>Navier&ndash;Stokes equations static data. </p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00429">429</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00425">425</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
 
 </div>
 </div>
@@ -5731,7 +5731,7 @@ template&lt;unsigned DIM&gt; </div>
 <p>Static boolean telling us whether we pre-multiply the pressure and continuity by the viscosity ratio</p>
 <p>By default disable the pre-multiplication of the pressure and continuity equation by the viscosity ratio </p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00178">178</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00174">174</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
 
 </div>
 </div>
@@ -5760,9 +5760,9 @@ template&lt;unsigned DIM&gt; </div>
 <p>Static "magic" number that indicates that the pressure is not stored at a node. </p>
 <p>"Magic" negative number that indicates that the pressure is not stored at a node. This cannot be -1 because that represents the positional hanging scheme in the hanging_pt object of nodes </p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00163">163</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00159">159</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00595">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::p_nodal_index_nst()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00591">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::p_nodal_index_nst()</a>.</p>
 
 </div>
 </div>
@@ -5790,9 +5790,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Pointer to global Reynolds number. </p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00193">193</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00189">189</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="generalised__newtonian__refineable__navier__stokes__elements_8h_source.html#l00189">oomph::RefineableGeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::further_build()</a>, <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00408">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::GeneralisedNewtonianNavierStokesEquations()</a>, <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00434">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::re()</a>, and <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00440">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::re_pt()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="generalised__newtonian__refineable__navier__stokes__elements_8h_source.html#l00185">oomph::RefineableGeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::further_build()</a>, <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00404">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::GeneralisedNewtonianNavierStokesEquations()</a>, <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00430">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::re()</a>, and <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00436">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::re_pt()</a>.</p>
 
 </div>
 </div>
@@ -5821,9 +5821,9 @@ template&lt;unsigned DIM&gt; </div>
 <p>Pointer to global Reynolds number x inverse Froude number (= Bond number / Capillary number) <br  />
  </p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00200">200</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00196">196</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="generalised__newtonian__refineable__navier__stokes__elements_8h_source.html#l00189">oomph::RefineableGeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::further_build()</a>, <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00408">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::GeneralisedNewtonianNavierStokesEquations()</a>, <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00460">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::re_invfr()</a>, and <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00463">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::re_invfr_pt()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="generalised__newtonian__refineable__navier__stokes__elements_8h_source.html#l00185">oomph::RefineableGeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::further_build()</a>, <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00404">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::GeneralisedNewtonianNavierStokesEquations()</a>, <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00456">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::re_invfr()</a>, and <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00459">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::re_invfr_pt()</a>.</p>
 
 </div>
 </div>
@@ -5851,9 +5851,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Pointer to global Reynolds number x Strouhal number (=Womersley) </p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00196">196</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00192">192</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="generalised__newtonian__refineable__navier__stokes__elements_8h_source.html#l00189">oomph::RefineableGeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::further_build()</a>, <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00408">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::GeneralisedNewtonianNavierStokesEquations()</a>, <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00437">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::re_st()</a>, and <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00443">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::re_st_pt()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="generalised__newtonian__refineable__navier__stokes__elements_8h_source.html#l00185">oomph::RefineableGeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::further_build()</a>, <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00404">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::GeneralisedNewtonianNavierStokesEquations()</a>, <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00433">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::re_st()</a>, and <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00439">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::re_st_pt()</a>.</p>
 
 </div>
 </div>
@@ -5881,9 +5881,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Pointer to volumetric source function. </p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00209">209</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00205">205</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="generalised__newtonian__refineable__navier__stokes__elements_8h_source.html#l00189">oomph::RefineableGeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::further_build()</a>, <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00332">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::get_source_nst()</a>, and <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00480">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::source_fct_pt()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="generalised__newtonian__refineable__navier__stokes__elements_8h_source.html#l00185">oomph::RefineableGeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::further_build()</a>, <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00328">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::get_source_nst()</a>, and <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00476">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::source_fct_pt()</a>.</p>
 
 </div>
 </div>
@@ -5909,9 +5909,9 @@ template&lt;unsigned DIM&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00216">216</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00212">212</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00490">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::use_current_strainrate_to_compute_second_invariant()</a>, and <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00496">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::use_extrapolated_strainrate_to_compute_second_invariant()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00486">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::use_current_strainrate_to_compute_second_invariant()</a>, and <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00492">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::use_extrapolated_strainrate_to_compute_second_invariant()</a>.</p>
 
 </div>
 </div>
@@ -5939,9 +5939,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Pointer to the viscosity ratio (relative to the viscosity used in the definition of the Reynolds number) </p>
 
-<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00184">184</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00180">180</a> of file <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html">generalised_newtonian_navier_stokes_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="generalised__newtonian__refineable__navier__stokes__elements_8h_source.html#l00189">oomph::RefineableGeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::further_build()</a>, <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00408">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::GeneralisedNewtonianNavierStokesEquations()</a>, <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00447">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::viscosity_ratio()</a>, and <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00450">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::viscosity_ratio_pt()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="generalised__newtonian__refineable__navier__stokes__elements_8h_source.html#l00185">oomph::RefineableGeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::further_build()</a>, <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00404">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::GeneralisedNewtonianNavierStokesEquations()</a>, <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00443">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::viscosity_ratio()</a>, and <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00446">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::viscosity_ratio_pt()</a>.</p>
 
 </div>
 </div>
@@ -5977,7 +5977,7 @@ template&lt;unsigned DIM&gt; </div>
     <footer>
       <div class="container">
         <div class="text-muted" style="float:right;">Generated by <a href="http://www.doxygen.org/index.html">
-          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Tue Jul 6 2021 22:57:30
+          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Fri Jul 9 2021 20:52:39
         </div>
       </div>
     </footer>

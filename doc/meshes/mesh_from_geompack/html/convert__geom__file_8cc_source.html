@@ -125,124 +125,120 @@
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//LIC// multi-physics finite-element library, available </span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//LIC// at http://www.oomph-lib.org.</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//LIC// </span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//LIC//    Version 1.0; svn revision $LastChangedRevision$</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">//LIC//</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">//LIC// $LastChangedDate$</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">//LIC// </span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">//LIC// Copyright (C) 2006-2016 Matthias Heil and Andrew Hazel</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">//LIC// </span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">//LIC// This library is free software; you can redistribute it and/or</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">//LIC// modify it under the terms of the GNU Lesser General Public</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">//LIC// License as published by the Free Software Foundation; either</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">//LIC// version 2.1 of the License, or (at your option) any later version.</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">//LIC// </span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">//LIC// This library is distributed in the hope that it will be useful,</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">//LIC// but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">//LIC// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">//LIC// Lesser General Public License for more details.</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">//LIC// </span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">//LIC// You should have received a copy of the GNU Lesser General Public</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">//LIC// License along with this library; if not, write to the Free Software</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">//LIC// Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">//LIC// 02110-1301  USA.</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">//LIC// </span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">//LIC// The authors may be contacted at oomph-lib@maths.man.ac.uk.</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">//LIC// </span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">//LIC//====================================================================</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">// Create an output file that can be read with geomview</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">// Change the infile name and the output name to use it </span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include&lt;iostream&gt;</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include&lt;fstream&gt;</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include&lt;vector&gt;</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include&lt;math.h&gt;</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">using namespace </span>std;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="convert__geom__file_8cc.html#a0ddf1224851353fc92bfbff6f499fa97">   40</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="convert__geom__file_8cc.html#a0ddf1224851353fc92bfbff6f499fa97">main</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span>* argv[])</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; <span class="comment">// Convert argument to strings that specify the input file name</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; <span class="keywordtype">string</span> mesh_file_name(argv[1]);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">// Read the output mesh file to find informations about the nodes</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">// and elements of the mesh </span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;ifstream infile(mesh_file_name.c_str(), ios_base::in);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keywordtype">unsigned</span> n_node;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;infile&gt;&gt;n_node;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;vector&lt;double&gt; x(n_node);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;vector&lt;double&gt; y(n_node);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;vector&lt;int&gt; vertinfo(n_node);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> i=0;i&lt;n_node;i++)</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  { </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;   infile&gt;&gt;x[i];</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;   infile&gt;&gt;y[i];</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;   infile&gt;&gt;vertinfo[i];</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  }</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keywordtype">unsigned</span> n_vx;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;infile&gt;&gt;n_vx;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;vector&lt;int&gt; nodecode(n_vx);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;vector&lt;int&gt; icurv(n_vx);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;vector&lt;double&gt; ucurv(n_vx);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> i=0;i&lt;n_vx;i++)</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  {</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;   infile&gt;&gt;nodecode[i];</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;   infile&gt;&gt;icurv[i];</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;   infile&gt;&gt;ucurv[i];</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  }</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keywordtype">unsigned</span> n_local_node;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;infile&gt;&gt;n_local_node;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keywordtype">unsigned</span> n_element;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;infile&gt;&gt;n_element;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keywordtype">unsigned</span> b=n_local_node*n_element;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;vector&lt;int&gt; v(b);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;vector&lt;int&gt; edgeinfo(b);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keywordtype">unsigned</span> k=0;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> i=0;i&lt;n_element;i++)</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; {</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> j=0;j&lt;n_local_node;j++)</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;   {</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    infile&gt;&gt;v[k];</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    k++;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;   }</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; }</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keywordtype">unsigned</span> l=0;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> i=0;i&lt;n_element;i++)</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; {</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> j=0;j&lt;n_local_node;j++)</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;   {</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    infile&gt;&gt;edgeinfo[l];</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    l++;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;   }</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; }</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//LIC// Copyright (C) 2006-2021 Matthias Heil and Andrew Hazel</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">//LIC// </span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">//LIC// This library is free software; you can redistribute it and/or</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">//LIC// modify it under the terms of the GNU Lesser General Public</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">//LIC// License as published by the Free Software Foundation; either</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">//LIC// version 2.1 of the License, or (at your option) any later version.</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">//LIC// </span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">//LIC// This library is distributed in the hope that it will be useful,</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">//LIC// but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">//LIC// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">//LIC// Lesser General Public License for more details.</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">//LIC// </span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">//LIC// You should have received a copy of the GNU Lesser General Public</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">//LIC// License along with this library; if not, write to the Free Software</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">//LIC// Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">//LIC// 02110-1301  USA.</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">//LIC// </span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">//LIC// The authors may be contacted at oomph-lib@maths.man.ac.uk.</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">//LIC// </span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">//LIC//====================================================================</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">// Create an output file that can be read with geomview</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">// Change the infile name and the output name to use it </span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include&lt;iostream&gt;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include&lt;fstream&gt;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include&lt;vector&gt;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include&lt;math.h&gt;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="convert__geom__file_8cc.html#a0ddf1224851353fc92bfbff6f499fa97">   36</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="convert__geom__file_8cc.html#a0ddf1224851353fc92bfbff6f499fa97">main</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span>* argv[])</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; <span class="comment">// Convert argument to strings that specify the input file name</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; <span class="keywordtype">string</span> mesh_file_name(argv[1]);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">// Read the output mesh file to find informations about the nodes</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">// and elements of the mesh </span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;ifstream infile(mesh_file_name.c_str(), ios_base::in);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keywordtype">unsigned</span> n_node;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;infile&gt;&gt;n_node;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;vector&lt;double&gt; x(n_node);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;vector&lt;double&gt; y(n_node);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;vector&lt;int&gt; vertinfo(n_node);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> i=0;i&lt;n_node;i++)</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  { </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;   infile&gt;&gt;x[i];</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;   infile&gt;&gt;y[i];</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;   infile&gt;&gt;vertinfo[i];</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  }</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keywordtype">unsigned</span> n_vx;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;infile&gt;&gt;n_vx;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;vector&lt;int&gt; nodecode(n_vx);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;vector&lt;int&gt; icurv(n_vx);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;vector&lt;double&gt; ucurv(n_vx);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> i=0;i&lt;n_vx;i++)</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;   infile&gt;&gt;nodecode[i];</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;   infile&gt;&gt;icurv[i];</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;   infile&gt;&gt;ucurv[i];</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keywordtype">unsigned</span> n_local_node;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;infile&gt;&gt;n_local_node;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keywordtype">unsigned</span> n_element;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;infile&gt;&gt;n_element;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keywordtype">unsigned</span> b=n_local_node*n_element;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;vector&lt;int&gt; v(b);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;vector&lt;int&gt; edgeinfo(b);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keywordtype">unsigned</span> k=0;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> i=0;i&lt;n_element;i++)</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> j=0;j&lt;n_local_node;j++)</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;   {</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    infile&gt;&gt;v[k];</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    k++;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;   }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; }</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keywordtype">unsigned</span> l=0;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> i=0;i&lt;n_element;i++)</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; {</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> j=0;j&lt;n_local_node;j++)</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;   {</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    infile&gt;&gt;edgeinfo[l];</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    l++;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;   }</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; }</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;infile.close();</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment">// Create a file of type &quot;.quad&quot; to visualize the mesh with geomview</span></div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;infile.close();</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment">// Create a file of type &quot;.quad&quot; to visualize the mesh with geomview</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; <span class="keywordtype">unsigned</span> nn=0;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; <span class="keywordtype">char</span> result[20];</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; sprintf(result,<span class="stringliteral">&quot;%s&quot;</span>,<span class="stringliteral">&quot;mesh.quad&quot;</span>);</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; ofstream outfile(result,ios_base::out);</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; outfile&lt;&lt;<span class="stringliteral">&quot;QUAD&quot;</span>&lt;&lt;<span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> i=0;i&lt;n_element;i++)</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;   {</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> j=0;j&lt;n_local_node;j++) </div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;     {</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;      outfile&lt;&lt;x[v[nn]-1]&lt;&lt;<span class="stringliteral">&quot; &quot;</span>&lt;&lt;y[v[nn]-1]&lt;&lt;<span class="stringliteral">&quot; 0 &quot;</span>;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;      nn++; </div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;     }</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    outfile&lt;&lt;<span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;   } </div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; outfile.close(); </div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;}  <span class="comment">//end of main</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; <span class="keywordtype">unsigned</span> nn=0;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; <span class="keywordtype">char</span> result[20];</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; sprintf(result,<span class="stringliteral">&quot;%s&quot;</span>,<span class="stringliteral">&quot;mesh.quad&quot;</span>);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; ofstream outfile(result,ios_base::out);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; outfile&lt;&lt;<span class="stringliteral">&quot;QUAD&quot;</span>&lt;&lt;<span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> i=0;i&lt;n_element;i++)</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;   {</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> j=0;j&lt;n_local_node;j++) </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;     {</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;      outfile&lt;&lt;x[v[nn]-1]&lt;&lt;<span class="stringliteral">&quot; &quot;</span>&lt;&lt;y[v[nn]-1]&lt;&lt;<span class="stringliteral">&quot; 0 &quot;</span>;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;      nn++; </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;     }</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    outfile&lt;&lt;<span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;   } </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; outfile.close(); </div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;}  <span class="comment">//end of main</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aconvert__geom__file_8cc_html_a0ddf1224851353fc92bfbff6f499fa97"><div class="ttname"><a href="convert__geom__file_8cc.html#a0ddf1224851353fc92bfbff6f499fa97">main</a></div><div class="ttdeci">int main(int argc, char *argv[])</div><div class="ttdef"><b>Definition:</b> <a href="convert__geom__file_8cc_source.html#l00040">convert_geom_file.cc:40</a></div></div>
+<div class="ttc" id="aconvert__geom__file_8cc_html_a0ddf1224851353fc92bfbff6f499fa97"><div class="ttname"><a href="convert__geom__file_8cc.html#a0ddf1224851353fc92bfbff6f499fa97">main</a></div><div class="ttdeci">int main(int argc, char *argv[])</div><div class="ttdef"><b>Definition:</b> <a href="convert__geom__file_8cc_source.html#l00036">convert_geom_file.cc:36</a></div></div>
 
     <!-- jQuery for Bootstrap and Doxygen -->
     <script src="../../../js/jquery-1.12.0.min.js"></script>
@@ -270,7 +266,7 @@
     <footer>
       <div class="container">
         <div class="text-muted" style="float:right;">Generated by <a href="http://www.doxygen.org/index.html">
-          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Tue Jul 6 2021 22:54:16
+          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Fri Jul 9 2021 20:49:37
         </div>
       </div>
     </footer>

@@ -813,7 +813,7 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class upgrading a <a class="el" href="classoomph_1_1TriangleMeshPolygon.html" title="Class defining a closed polygon for the Triangle mesh generation.">TriangleMeshPolygon</a> to a "hole" for use during triangle mesh generation. For mesh generation purposes, the main (and only) addition to the base class is the provision of the coordinates of a hole inside the polygon. To faciliate the movement of the "hole" through the domain we also provide a <a class="el" href="classoomph_1_1Data.html" title="A class that represents a collection of data; each Data object may contain many different individual ...">Data</a> object whose three values represent the x and y displacements of its centre of gravity and the polygon's rotation about its centre of gravity. If added to a mesh in the <a class="el" href="classoomph_1_1Problem.html" title="The Problem class.">Problem</a> (in its incarnation as a <a class="el" href="classoomph_1_1GeneralisedElement.html" title="A Generalised Element class.">GeneralisedElement</a>) the displacement/rotation of the polygon is computed in response to (i) user-specifiable applied forces and a torque and (ii) the net drag (and associated torque) from a mesh of elements that can exert a drag onto the polygon (typically Navier-Stokes FaceElements that apply a viscous drag to an immersed body, represented by the polygon.) </p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00586">586</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00582">582</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a3c64954c24a57c4f9c304bf3d76c3366"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3c64954c24a57c4f9c304bf3d76c3366">&#9670;&nbsp;</a></span>ImmersedRigidBodyTriangleMeshPolygon()</h2>
@@ -855,9 +855,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Constructor: Specify coordinates of a point inside the hole and a vector of pointers to TriangleMeshPolyLines that define the boundary segments of the polygon. Each <a class="el" href="classoomph_1_1TriangleMeshPolyLine.html" title="Class defining a polyline for use in Triangle Mesh generation.">TriangleMeshPolyLine</a> has its own boundary ID and can contain multiple (straight-line) segments. The optional final argument is a pointer to a <a class="el" href="classoomph_1_1Data.html" title="A class that represents a collection of data; each Data object may contain many different individual ...">Data</a> object whose three values represent the two displacements of and the rotation angle about the polygon's centre of mass. </p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00386">386</a> of file <a class="el" href="immersed__rigid__body__elements_8cc_source.html">immersed_rigid_body_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00382">382</a> of file <a class="el" href="immersed__rigid__body__elements_8cc_source.html">immersed_rigid_body_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00740">assign_zeta()</a>, <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html#l01493">oomph::TriangleMeshPolygon::Can_update_configuration</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00499">oomph::ImmersedRigidBodyElement::Initial_centre_of_mass</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00502">oomph::ImmersedRigidBodyElement::Initial_Phi</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00505">oomph::ImmersedRigidBodyElement::Mass</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00508">oomph::ImmersedRigidBodyElement::Moment_of_inertia</a>, <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html#l01372">oomph::TriangleMeshPolygon::polyline_pt()</a>, and <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html#l00844">oomph::TriangleMeshPolyLine::vertex_coordinate()</a>.</p>
+<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00736">assign_zeta()</a>, <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html#l01489">oomph::TriangleMeshPolygon::Can_update_configuration</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00495">oomph::ImmersedRigidBodyElement::Initial_centre_of_mass</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00498">oomph::ImmersedRigidBodyElement::Initial_Phi</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00501">oomph::ImmersedRigidBodyElement::Mass</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00504">oomph::ImmersedRigidBodyElement::Moment_of_inertia</a>, <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html#l01368">oomph::TriangleMeshPolygon::polyline_pt()</a>, and <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html#l00840">oomph::TriangleMeshPolyLine::vertex_coordinate()</a>.</p>
 
 </div>
 </div>
@@ -886,7 +886,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Empty Destuctor. </p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00609">609</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00605">605</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
 
 </div>
 </div>
@@ -915,11 +915,11 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Helper function to assign the values of the (scaled) arc-length to each node of each polyline. The direction will be the natural order of the vertices within the polyline. </p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00740">740</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00736">736</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html#l01369">oomph::TriangleMeshPolygon::npolyline()</a>, <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html#l00831">oomph::TriangleMeshPolyLine::nvertex()</a>, <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html#l01372">oomph::TriangleMeshPolygon::polyline_pt()</a>, <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html#l00844">oomph::TriangleMeshPolyLine::vertex_coordinate()</a>, and <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00793">Zeta_vertex</a>.</p>
+<p class="reference">References <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html#l01365">oomph::TriangleMeshPolygon::npolyline()</a>, <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html#l00827">oomph::TriangleMeshPolyLine::nvertex()</a>, <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html#l01368">oomph::TriangleMeshPolygon::polyline_pt()</a>, <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html#l00840">oomph::TriangleMeshPolyLine::vertex_coordinate()</a>, and <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00789">Zeta_vertex</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00386">ImmersedRigidBodyTriangleMeshPolygon()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00382">ImmersedRigidBodyTriangleMeshPolygon()</a>.</p>
 
 </div>
 </div>
@@ -959,11 +959,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Get the initial position of the polygon. </p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00643">643</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00639">639</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html#l01369">oomph::TriangleMeshPolygon::npolyline()</a>, <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html#l00831">oomph::TriangleMeshPolyLine::nvertex()</a>, <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html#l01372">oomph::TriangleMeshPolygon::polyline_pt()</a>, <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html#l00844">oomph::TriangleMeshPolyLine::vertex_coordinate()</a>, and <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00793">Zeta_vertex</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html#l01365">oomph::TriangleMeshPolygon::npolyline()</a>, <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html#l00827">oomph::TriangleMeshPolyLine::nvertex()</a>, <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html#l01368">oomph::TriangleMeshPolygon::polyline_pt()</a>, <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html#l00840">oomph::TriangleMeshPolyLine::vertex_coordinate()</a>, and <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00789">Zeta_vertex</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00615">position()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00611">position()</a>.</p>
 
 </div>
 </div>
@@ -1011,9 +1011,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1ImmersedRigidBodyElement.html#aca95759d96758c7a4fc81dece7768e9d">oomph::ImmersedRigidBodyElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00624">624</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00620">620</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00417">oomph::ImmersedRigidBodyElement::apply_rigid_body_motion()</a>, and <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00643">get_initial_position()</a>.</p>
+<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00413">oomph::ImmersedRigidBodyElement::apply_rigid_body_motion()</a>, and <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00639">get_initial_position()</a>.</p>
 
 </div>
 </div>
@@ -1055,9 +1055,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1ImmersedRigidBodyElement.html#a14f5acb186ecd1168dfa08dcf242c538">oomph::ImmersedRigidBodyElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00615">615</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00611">611</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00417">oomph::ImmersedRigidBodyElement::apply_rigid_body_motion()</a>, and <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00643">get_initial_position()</a>.</p>
+<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00413">oomph::ImmersedRigidBodyElement::apply_rigid_body_motion()</a>, and <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00639">get_initial_position()</a>.</p>
 
 </div>
 </div>
@@ -1088,9 +1088,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1TriangleMeshPolygon.html#a9c569f8bf7798d423356538651292996">oomph::TriangleMeshPolygon</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00548">548</a> of file <a class="el" href="immersed__rigid__body__elements_8cc_source.html">immersed_rigid_body_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00544">544</a> of file <a class="el" href="immersed__rigid__body__elements_8cc_source.html">immersed_rigid_body_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00417">oomph::ImmersedRigidBodyElement::apply_rigid_body_motion()</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00512">oomph::ImmersedRigidBodyElement::Centre_displacement_data_pt</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00499">oomph::ImmersedRigidBodyElement::Initial_centre_of_mass</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00502">oomph::ImmersedRigidBodyElement::Initial_Phi</a>, <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html#l01303">oomph::TriangleMeshClosedCurve::internal_point()</a>, <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html#l01365">oomph::TriangleMeshPolygon::ncurve_section()</a>, <a class="el" href="classoomph_1_1TimeStepper.html#a0f38713ed304c18d9f7b5cf8131664c1">oomph::TimeStepper::nprev_values()</a>, <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html#l00831">oomph::TriangleMeshPolyLine::nvertex()</a>, <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html#l01372">oomph::TriangleMeshPolygon::polyline_pt()</a>, <a class="el" href="cfortran_8h_source.html#l00572">t</a>, <a class="el" href="nodes_8h_source.html#l00246">oomph::Data::time_stepper_pt()</a>, <a class="el" href="nodes_8h_source.html#l00291">oomph::Data::value()</a>, and <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html#l00844">oomph::TriangleMeshPolyLine::vertex_coordinate()</a>.</p>
+<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00413">oomph::ImmersedRigidBodyElement::apply_rigid_body_motion()</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00508">oomph::ImmersedRigidBodyElement::Centre_displacement_data_pt</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00495">oomph::ImmersedRigidBodyElement::Initial_centre_of_mass</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00498">oomph::ImmersedRigidBodyElement::Initial_Phi</a>, <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html#l01299">oomph::TriangleMeshClosedCurve::internal_point()</a>, <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html#l01361">oomph::TriangleMeshPolygon::ncurve_section()</a>, <a class="el" href="classoomph_1_1TimeStepper.html#a0f38713ed304c18d9f7b5cf8131664c1">oomph::TimeStepper::nprev_values()</a>, <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html#l00827">oomph::TriangleMeshPolyLine::nvertex()</a>, <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html#l01368">oomph::TriangleMeshPolygon::polyline_pt()</a>, <a class="el" href="cfortran_8h_source.html#l00568">t</a>, <a class="el" href="nodes_8h_source.html#l00242">oomph::Data::time_stepper_pt()</a>, <a class="el" href="nodes_8h_source.html#l00287">oomph::Data::value()</a>, and <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html#l00840">oomph::TriangleMeshPolyLine::vertex_coordinate()</a>.</p>
 
 </div>
 </div>
@@ -1117,9 +1117,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p><a class="el" href="classoomph_1_1Vector.html">Vector</a> of intrisic coordinate values at the nodes. </p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00793">793</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00789">789</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00740">assign_zeta()</a>, and <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00643">get_initial_position()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00736">assign_zeta()</a>, and <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00639">get_initial_position()</a>.</p>
 
 </div>
 </div>
@@ -1155,7 +1155,7 @@ Additional Inherited Members</h2></td></tr>
     <footer>
       <div class="container">
         <div class="text-muted" style="float:right;">Generated by <a href="http://www.doxygen.org/index.html">
-          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Tue Jul 6 2021 22:57:42
+          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Fri Jul 9 2021 20:52:49
         </div>
       </div>
     </footer>

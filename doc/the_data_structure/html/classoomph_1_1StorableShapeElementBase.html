@@ -1230,7 +1230,7 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class for elements that allow storage of precomputed shape functions and their derivatives w.r.t to the local and global (Eulerian) coordinates at the element's integration points. </p>
 
-<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00059">59</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00055">55</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ad1edb32d057cccc152156d9fcaa48255"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad1edb32d057cccc152156d9fcaa48255">&#9670;&nbsp;</a></span>StorableShapeElementBase() <span class="overload">[1/2]</span></h2>
@@ -1257,7 +1257,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Constructor, set most storage pointers to NULL. </p>
 
-<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00107">107</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00103">103</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
 
 </div>
 </div>
@@ -1288,9 +1288,9 @@ Additional Inherited Members</h2></td></tr>
  </p>
 <p>The destructor cleans up the memory allocated for shape function storage. </p>
 
-<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8cc_source.html#l00214">214</a> of file <a class="el" href="stored__shape__function__elements_8cc_source.html">stored_shape_function_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8cc_source.html#l00210">210</a> of file <a class="el" href="stored__shape__function__elements_8cc_source.html">stored_shape_function_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="stored__shape__function__elements_8cc_source.html#l00136">delete_all_dshape_eulerian_stored()</a>, and <a class="el" href="stored__shape__function__elements_8cc_source.html#l00053">delete_all_shape_local_stored()</a>.</p>
+<p class="reference">References <a class="el" href="stored__shape__function__elements_8cc_source.html#l00132">delete_all_dshape_eulerian_stored()</a>, and <a class="el" href="stored__shape__function__elements_8cc_source.html#l00049">delete_all_shape_local_stored()</a>.</p>
 
 </div>
 </div>
@@ -1320,9 +1320,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Broken copy constructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00121">121</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00117">117</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="oomph__utilities_8cc_source.html#l00218">oomph::BrokenCopy::broken_copy()</a>.</p>
+<p class="reference">References <a class="el" href="oomph__utilities_8cc_source.html#l00214">oomph::BrokenCopy::broken_copy()</a>.</p>
 
 </div>
 </div>
@@ -1378,9 +1378,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1FiniteElement.html#aee4c4dc82cab5662c3552f86422c8b3f">oomph::FiniteElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8cc_source.html#l00753">753</a> of file <a class="el" href="stored__shape__function__elements_8cc_source.html">stored_shape_function_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8cc_source.html#l00749">749</a> of file <a class="el" href="stored__shape__function__elements_8cc_source.html">stored_shape_function_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8cc_source.html#l03432">oomph::FiniteElement::d2shape_eulerian_at_knot()</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00093">D2Shape_eulerian_stored_pt</a>, and <a class="el" href="stored__shape__function__elements_8h_source.html#l00097">Jacobian_eulerian_stored_pt</a>.</p>
+<p class="reference">References <a class="el" href="elements_8cc_source.html#l03428">oomph::FiniteElement::d2shape_eulerian_at_knot()</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00089">D2Shape_eulerian_stored_pt</a>, and <a class="el" href="stored__shape__function__elements_8h_source.html#l00093">Jacobian_eulerian_stored_pt</a>.</p>
 
 </div>
 </div>
@@ -1410,11 +1410,11 @@ Additional Inherited Members</h2></td></tr>
 <p>Return a pointer to the vector of pointers to the stored second derivatives of the shape functions w.r.t the global (eulerian) coordinates <br  />
  </p>
 
-<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00224">224</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00220">220</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00093">D2Shape_eulerian_stored_pt</a>.</p>
+<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00089">D2Shape_eulerian_stored_pt</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8cc_source.html#l00842">set_dshape_eulerian_stored_from_element()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8cc_source.html#l00838">set_dshape_eulerian_stored_from_element()</a>.</p>
 
 </div>
 </div>
@@ -1444,9 +1444,9 @@ Additional Inherited Members</h2></td></tr>
 <p>Return a pointer to the vector of pointers to the stored second derivatives of the shape functions w.r.t the global (eulerian) <br  />
  coordinates (const version) </p>
 
-<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00230">230</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00226">226</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00093">D2Shape_eulerian_stored_pt</a>.</p>
+<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00089">D2Shape_eulerian_stored_pt</a>.</p>
 
 </div>
 </div>
@@ -1501,9 +1501,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1FiniteElement.html#a5330790998d0b103d87da72b57fc633a">oomph::FiniteElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8cc_source.html#l00702">702</a> of file <a class="el" href="stored__shape__function__elements_8cc_source.html">stored_shape_function_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8cc_source.html#l00698">698</a> of file <a class="el" href="stored__shape__function__elements_8cc_source.html">stored_shape_function_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8cc_source.html#l03207">oomph::FiniteElement::d2shape_local_at_knot()</a>, and <a class="el" href="stored__shape__function__elements_8h_source.html#l00081">D2Shape_local_stored_pt</a>.</p>
+<p class="reference">References <a class="el" href="elements_8cc_source.html#l03203">oomph::FiniteElement::d2shape_local_at_knot()</a>, and <a class="el" href="stored__shape__function__elements_8h_source.html#l00077">D2Shape_local_stored_pt</a>.</p>
 
 </div>
 </div>
@@ -1533,11 +1533,11 @@ Additional Inherited Members</h2></td></tr>
 <p>Return a pointer to the vector of pointers to the stored second derivatives of the shape functions w.r.t the local coordinates <br  />
  </p>
 
-<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00200">200</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00196">196</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00081">D2Shape_local_stored_pt</a>.</p>
+<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00077">D2Shape_local_stored_pt</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8cc_source.html#l00799">set_shape_local_stored_from_element()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8cc_source.html#l00795">set_shape_local_stored_from_element()</a>.</p>
 
 </div>
 </div>
@@ -1566,9 +1566,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Return a pointer to the vector of pointers to the stored second derivatives of the shape functions w.r.t the local coordinates (const version) </p>
 
-<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00206">206</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00202">202</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00081">D2Shape_local_stored_pt</a>.</p>
+<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00077">D2Shape_local_stored_pt</a>.</p>
 
 </div>
 </div>
@@ -1590,11 +1590,11 @@ Additional Inherited Members</h2></td></tr>
 <p>Delete all storage related to deriatives of shape fcts w.r.t. to global Eulerian coords. </p>
 <p>Delete all stored quantities related to derivatives of shape fcts w.r.t. to global Eulerian coordinates </p>
 
-<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8cc_source.html#l00136">136</a> of file <a class="el" href="stored__shape__function__elements_8cc_source.html">stored_shape_function_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8cc_source.html#l00132">132</a> of file <a class="el" href="stored__shape__function__elements_8cc_source.html">stored_shape_function_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="stored__shape__function__elements_8cc_source.html#l00172">delete_d2shape_eulerian_stored()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00146">delete_dshape_eulerian_stored()</a>, and <a class="el" href="stored__shape__function__elements_8cc_source.html#l00197">delete_J_eulerian_stored()</a>.</p>
+<p class="reference">References <a class="el" href="stored__shape__function__elements_8cc_source.html#l00168">delete_d2shape_eulerian_stored()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00142">delete_dshape_eulerian_stored()</a>, and <a class="el" href="stored__shape__function__elements_8cc_source.html#l00193">delete_J_eulerian_stored()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8cc_source.html#l00842">set_dshape_eulerian_stored_from_element()</a>, and <a class="el" href="stored__shape__function__elements_8cc_source.html#l00214">~StorableShapeElementBase()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8cc_source.html#l00838">set_dshape_eulerian_stored_from_element()</a>, and <a class="el" href="stored__shape__function__elements_8cc_source.html#l00210">~StorableShapeElementBase()</a>.</p>
 
 </div>
 </div>
@@ -1616,11 +1616,11 @@ Additional Inherited Members</h2></td></tr>
 <p>Delete all the objects stored in the [...]_local_stored_pt vectors and delete the vectors themselves. </p>
 <p>Delete all the objects stored in the vectors: Shape_stored, DShape_local_stored, and D2Shape_local_stored </p>
 
-<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8cc_source.html#l00053">53</a> of file <a class="el" href="stored__shape__function__elements_8cc_source.html">stored_shape_function_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8cc_source.html#l00049">49</a> of file <a class="el" href="stored__shape__function__elements_8cc_source.html">stored_shape_function_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="stored__shape__function__elements_8cc_source.html#l00113">delete_d2shape_local_stored()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00090">delete_dshape_local_stored()</a>, and <a class="el" href="stored__shape__function__elements_8cc_source.html#l00064">delete_shape_local_stored()</a>.</p>
+<p class="reference">References <a class="el" href="stored__shape__function__elements_8cc_source.html#l00109">delete_d2shape_local_stored()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00086">delete_dshape_local_stored()</a>, and <a class="el" href="stored__shape__function__elements_8cc_source.html#l00060">delete_shape_local_stored()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8cc_source.html#l00799">set_shape_local_stored_from_element()</a>, and <a class="el" href="stored__shape__function__elements_8cc_source.html#l00214">~StorableShapeElementBase()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8cc_source.html#l00795">set_shape_local_stored_from_element()</a>, and <a class="el" href="stored__shape__function__elements_8cc_source.html#l00210">~StorableShapeElementBase()</a>.</p>
 
 </div>
 </div>
@@ -1642,11 +1642,11 @@ Additional Inherited Members</h2></td></tr>
 <p>Delete stored second derivatives of shape functions w.r.t. to global Eulerian coordinates. </p>
 <p>Delete stored 2nd derivatives w.r.t. Eulerian coordinates. </p>
 
-<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8cc_source.html#l00172">172</a> of file <a class="el" href="stored__shape__function__elements_8cc_source.html">stored_shape_function_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8cc_source.html#l00168">168</a> of file <a class="el" href="stored__shape__function__elements_8cc_source.html">stored_shape_function_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00101">Can_delete_dshape_eulerian_stored</a>, and <a class="el" href="stored__shape__function__elements_8h_source.html#l00093">D2Shape_eulerian_stored_pt</a>.</p>
+<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00097">Can_delete_dshape_eulerian_stored</a>, and <a class="el" href="stored__shape__function__elements_8h_source.html#l00089">D2Shape_eulerian_stored_pt</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8cc_source.html#l00136">delete_all_dshape_eulerian_stored()</a>, and <a class="el" href="stored__shape__function__elements_8cc_source.html#l00579">pre_compute_d2shape_eulerian_at_knots()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8cc_source.html#l00132">delete_all_dshape_eulerian_stored()</a>, and <a class="el" href="stored__shape__function__elements_8cc_source.html#l00575">pre_compute_d2shape_eulerian_at_knots()</a>.</p>
 
 </div>
 </div>
@@ -1668,11 +1668,11 @@ Additional Inherited Members</h2></td></tr>
 <p>Delete stored 2nd derivatives of shape functions w.r.t. to local coordinates. </p>
 <p>Delete stored second derivatives of shape functions w.r.t. to local coordinates </p>
 
-<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8cc_source.html#l00113">113</a> of file <a class="el" href="stored__shape__function__elements_8cc_source.html">stored_shape_function_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8cc_source.html#l00109">109</a> of file <a class="el" href="stored__shape__function__elements_8cc_source.html">stored_shape_function_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00085">Can_delete_shape_local_stored</a>, and <a class="el" href="stored__shape__function__elements_8h_source.html#l00081">D2Shape_local_stored_pt</a>.</p>
+<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00081">Can_delete_shape_local_stored</a>, and <a class="el" href="stored__shape__function__elements_8h_source.html#l00077">D2Shape_local_stored_pt</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8cc_source.html#l00053">delete_all_shape_local_stored()</a>, and <a class="el" href="stored__shape__function__elements_8cc_source.html#l00406">pre_compute_d2shape_local_at_knots()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8cc_source.html#l00049">delete_all_shape_local_stored()</a>, and <a class="el" href="stored__shape__function__elements_8cc_source.html#l00402">pre_compute_d2shape_local_at_knots()</a>.</p>
 
 </div>
 </div>
@@ -1694,11 +1694,11 @@ Additional Inherited Members</h2></td></tr>
 <p>Delete stored deriatives of shape fcts w.r.t. to global Eulerian coords. </p>
 <p>Delete stored derivatives w.r.t. Eulerian coordinates. </p>
 
-<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8cc_source.html#l00146">146</a> of file <a class="el" href="stored__shape__function__elements_8cc_source.html">stored_shape_function_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8cc_source.html#l00142">142</a> of file <a class="el" href="stored__shape__function__elements_8cc_source.html">stored_shape_function_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00101">Can_delete_dshape_eulerian_stored</a>, and <a class="el" href="stored__shape__function__elements_8h_source.html#l00089">DShape_eulerian_stored_pt</a>.</p>
+<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00097">Can_delete_dshape_eulerian_stored</a>, and <a class="el" href="stored__shape__function__elements_8h_source.html#l00085">DShape_eulerian_stored_pt</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8cc_source.html#l00136">delete_all_dshape_eulerian_stored()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00579">pre_compute_d2shape_eulerian_at_knots()</a>, and <a class="el" href="stored__shape__function__elements_8cc_source.html#l00521">pre_compute_dshape_eulerian_at_knots()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8cc_source.html#l00132">delete_all_dshape_eulerian_stored()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00575">pre_compute_d2shape_eulerian_at_knots()</a>, and <a class="el" href="stored__shape__function__elements_8cc_source.html#l00517">pre_compute_dshape_eulerian_at_knots()</a>.</p>
 
 </div>
 </div>
@@ -1720,11 +1720,11 @@ Additional Inherited Members</h2></td></tr>
 <p>Delete stored derivatives of shape functions w.r.t. to local coordinates. </p>
 <p>Delete stored derivatives of shape functions w.r.t. to local coordinates </p>
 
-<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8cc_source.html#l00090">90</a> of file <a class="el" href="stored__shape__function__elements_8cc_source.html">stored_shape_function_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8cc_source.html#l00086">86</a> of file <a class="el" href="stored__shape__function__elements_8cc_source.html">stored_shape_function_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00085">Can_delete_shape_local_stored</a>, and <a class="el" href="stored__shape__function__elements_8h_source.html#l00076">DShape_local_stored_pt</a>.</p>
+<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00081">Can_delete_shape_local_stored</a>, and <a class="el" href="stored__shape__function__elements_8h_source.html#l00072">DShape_local_stored_pt</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8cc_source.html#l00053">delete_all_shape_local_stored()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00406">pre_compute_d2shape_local_at_knots()</a>, and <a class="el" href="stored__shape__function__elements_8cc_source.html#l00333">pre_compute_dshape_local_at_knots()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8cc_source.html#l00049">delete_all_shape_local_stored()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00402">pre_compute_d2shape_local_at_knots()</a>, and <a class="el" href="stored__shape__function__elements_8cc_source.html#l00329">pre_compute_dshape_local_at_knots()</a>.</p>
 
 </div>
 </div>
@@ -1746,11 +1746,11 @@ Additional Inherited Members</h2></td></tr>
 <p>Delete stored Jacobian of mapping between local and global (Eulerian) coordinates. </p>
 <p>Delete stored Jacobian of mapping between local and global Eulerian coordinates </p>
 
-<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8cc_source.html#l00197">197</a> of file <a class="el" href="stored__shape__function__elements_8cc_source.html">stored_shape_function_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8cc_source.html#l00193">193</a> of file <a class="el" href="stored__shape__function__elements_8cc_source.html">stored_shape_function_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00101">Can_delete_dshape_eulerian_stored</a>, and <a class="el" href="stored__shape__function__elements_8h_source.html#l00097">Jacobian_eulerian_stored_pt</a>.</p>
+<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00097">Can_delete_dshape_eulerian_stored</a>, and <a class="el" href="stored__shape__function__elements_8h_source.html#l00093">Jacobian_eulerian_stored_pt</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8cc_source.html#l00136">delete_all_dshape_eulerian_stored()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00579">pre_compute_d2shape_eulerian_at_knots()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00521">pre_compute_dshape_eulerian_at_knots()</a>, and <a class="el" href="stored__shape__function__elements_8cc_source.html#l00497">pre_compute_J_eulerian_at_knots()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8cc_source.html#l00132">delete_all_dshape_eulerian_stored()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00575">pre_compute_d2shape_eulerian_at_knots()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00517">pre_compute_dshape_eulerian_at_knots()</a>, and <a class="el" href="stored__shape__function__elements_8cc_source.html#l00493">pre_compute_J_eulerian_at_knots()</a>.</p>
 
 </div>
 </div>
@@ -1771,11 +1771,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Delete stored shape functions. </p>
 
-<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8cc_source.html#l00064">64</a> of file <a class="el" href="stored__shape__function__elements_8cc_source.html">stored_shape_function_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8cc_source.html#l00060">60</a> of file <a class="el" href="stored__shape__function__elements_8cc_source.html">stored_shape_function_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00085">Can_delete_shape_local_stored</a>, and <a class="el" href="stored__shape__function__elements_8h_source.html#l00072">Shape_stored_pt</a>.</p>
+<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00081">Can_delete_shape_local_stored</a>, and <a class="el" href="stored__shape__function__elements_8h_source.html#l00068">Shape_stored_pt</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8cc_source.html#l00053">delete_all_shape_local_stored()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00406">pre_compute_d2shape_local_at_knots()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00333">pre_compute_dshape_local_at_knots()</a>, and <a class="el" href="stored__shape__function__elements_8cc_source.html#l00272">pre_compute_shape_at_knots()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8cc_source.html#l00049">delete_all_shape_local_stored()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00402">pre_compute_d2shape_local_at_knots()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00329">pre_compute_dshape_local_at_knots()</a>, and <a class="el" href="stored__shape__function__elements_8cc_source.html#l00268">pre_compute_shape_at_knots()</a>.</p>
 
 </div>
 </div>
@@ -1824,9 +1824,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1FiniteElement.html#a368c44e295e35dd0b697be3222ce7b2f">oomph::FiniteElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8cc_source.html#l00728">728</a> of file <a class="el" href="stored__shape__function__elements_8cc_source.html">stored_shape_function_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8cc_source.html#l00724">724</a> of file <a class="el" href="stored__shape__function__elements_8cc_source.html">stored_shape_function_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8cc_source.html#l03254">oomph::FiniteElement::dshape_eulerian_at_knot()</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00089">DShape_eulerian_stored_pt</a>, and <a class="el" href="stored__shape__function__elements_8h_source.html#l00097">Jacobian_eulerian_stored_pt</a>.</p>
+<p class="reference">References <a class="el" href="elements_8cc_source.html#l03250">oomph::FiniteElement::dshape_eulerian_at_knot()</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00085">DShape_eulerian_stored_pt</a>, and <a class="el" href="stored__shape__function__elements_8h_source.html#l00093">Jacobian_eulerian_stored_pt</a>.</p>
 
 </div>
 </div>
@@ -1856,11 +1856,11 @@ Additional Inherited Members</h2></td></tr>
 <p>Return a pointer to the vector of pointers to the stored first derivatives of the shape functions w.r.t the global (eulerian) coordinates <br  />
  </p>
 
-<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00212">212</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00208">208</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00089">DShape_eulerian_stored_pt</a>.</p>
+<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00085">DShape_eulerian_stored_pt</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8cc_source.html#l00842">set_dshape_eulerian_stored_from_element()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8cc_source.html#l00838">set_dshape_eulerian_stored_from_element()</a>.</p>
 
 </div>
 </div>
@@ -1889,9 +1889,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Return a pointer to the vector of pointers to the stored first derivatives of the shape functions w.r.t the global (eulerian) coordinates (const version) </p>
 
-<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00218">218</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00214">214</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00089">DShape_eulerian_stored_pt</a>.</p>
+<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00085">DShape_eulerian_stored_pt</a>.</p>
 
 </div>
 </div>
@@ -1940,9 +1940,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1FiniteElement.html#a2214ae814100dcbb553ac97cf243dcfe">oomph::FiniteElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8cc_source.html#l00680">680</a> of file <a class="el" href="stored__shape__function__elements_8cc_source.html">stored_shape_function_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8cc_source.html#l00676">676</a> of file <a class="el" href="stored__shape__function__elements_8cc_source.html">stored_shape_function_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8cc_source.html#l03176">oomph::FiniteElement::dshape_local_at_knot()</a>, and <a class="el" href="stored__shape__function__elements_8h_source.html#l00076">DShape_local_stored_pt</a>.</p>
+<p class="reference">References <a class="el" href="elements_8cc_source.html#l03172">oomph::FiniteElement::dshape_local_at_knot()</a>, and <a class="el" href="stored__shape__function__elements_8h_source.html#l00072">DShape_local_stored_pt</a>.</p>
 
 </div>
 </div>
@@ -1972,11 +1972,11 @@ Additional Inherited Members</h2></td></tr>
 <p>Return a pointer to the vector of pointers to the stored first derivatives of the shape functions w.r.t the local coordinates <br  />
  </p>
 
-<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00189">189</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00185">185</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00076">DShape_local_stored_pt</a>.</p>
+<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00072">DShape_local_stored_pt</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8cc_source.html#l00799">set_shape_local_stored_from_element()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8cc_source.html#l00795">set_shape_local_stored_from_element()</a>.</p>
 
 </div>
 </div>
@@ -2005,9 +2005,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Return a pointer to the vector of pointers to the stored first derivatives of the shape functions w.r.t the local coordinates (const version) </p>
 
-<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00195">195</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00191">191</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00076">DShape_local_stored_pt</a>.</p>
+<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00072">DShape_local_stored_pt</a>.</p>
 
 </div>
 </div>
@@ -2040,9 +2040,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1FiniteElement.html#aa8a201e448a9200af7f87d612ef01227">oomph::FiniteElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8cc_source.html#l00777">777</a> of file <a class="el" href="stored__shape__function__elements_8cc_source.html">stored_shape_function_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8cc_source.html#l00773">773</a> of file <a class="el" href="stored__shape__function__elements_8cc_source.html">stored_shape_function_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8cc_source.html#l04086">oomph::FiniteElement::J_eulerian_at_knot()</a>, and <a class="el" href="stored__shape__function__elements_8h_source.html#l00097">Jacobian_eulerian_stored_pt</a>.</p>
+<p class="reference">References <a class="el" href="elements_8cc_source.html#l04082">oomph::FiniteElement::J_eulerian_at_knot()</a>, and <a class="el" href="stored__shape__function__elements_8h_source.html#l00093">Jacobian_eulerian_stored_pt</a>.</p>
 
 </div>
 </div>
@@ -2071,11 +2071,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Return a pointer to the vector of Jacobians of the mapping between the local and global (eulerian) coordinates. </p>
 
-<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00235">235</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00231">231</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00097">Jacobian_eulerian_stored_pt</a>.</p>
+<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00093">Jacobian_eulerian_stored_pt</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8cc_source.html#l00842">set_dshape_eulerian_stored_from_element()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8cc_source.html#l00838">set_dshape_eulerian_stored_from_element()</a>.</p>
 
 </div>
 </div>
@@ -2104,9 +2104,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Return a pointer to the vector of Jacobians of the mapping between the local and global (eulerian) coordinates (const version) </p>
 
-<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00241">241</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00237">237</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00097">Jacobian_eulerian_stored_pt</a>.</p>
+<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00093">Jacobian_eulerian_stored_pt</a>.</p>
 
 </div>
 </div>
@@ -2136,9 +2136,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Broken assignment operator. </p>
 
-<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00127">127</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00123">123</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="oomph__utilities_8cc_source.html#l00201">oomph::BrokenCopy::broken_assign()</a>.</p>
+<p class="reference">References <a class="el" href="oomph__utilities_8cc_source.html#l00197">oomph::BrokenCopy::broken_assign()</a>.</p>
 
 </div>
 </div>
@@ -2160,11 +2160,11 @@ Additional Inherited Members</h2></td></tr>
 <p>Calculate the first and second derivatives of the shape functions w.r.t global coordinates at the integration points and store the results internally. </p>
 <p>Calculate the values of the first and second derivatives of the shape functions at the integration points and store in the internal storage of the element </p>
 
-<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8cc_source.html#l00579">579</a> of file <a class="el" href="stored__shape__function__elements_8cc_source.html">stored_shape_function_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8cc_source.html#l00575">575</a> of file <a class="el" href="stored__shape__function__elements_8cc_source.html">stored_shape_function_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00101">Can_delete_dshape_eulerian_stored</a>, <a class="el" href="elements_8cc_source.html#l03432">oomph::FiniteElement::d2shape_eulerian_at_knot()</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00093">D2Shape_eulerian_stored_pt</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00172">delete_d2shape_eulerian_stored()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00146">delete_dshape_eulerian_stored()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00197">delete_J_eulerian_stored()</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00089">DShape_eulerian_stored_pt</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="elements_8h_source.html#l01925">oomph::FiniteElement::integral_pt()</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00097">Jacobian_eulerian_stored_pt</a>, <a class="el" href="elements_8h_source.html#l02369">oomph::FiniteElement::nnodal_position_type()</a>, <a class="el" href="elements_8h_source.html#l02163">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l02387">oomph::FiniteElement::nodal_dimension()</a>, <a class="el" href="classoomph_1_1Integral.html#a1a270de9d99a1fcf1d25a6c1017f65fa">oomph::Integral::nweight()</a>, <a class="el" href="oomph__definitions_8cc_source.html#l00326">oomph::oomph_info</a>, and <a class="el" href="stored__shape__function__elements_8cc_source.html#l00272">pre_compute_shape_at_knots()</a>.</p>
+<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00097">Can_delete_dshape_eulerian_stored</a>, <a class="el" href="elements_8cc_source.html#l03428">oomph::FiniteElement::d2shape_eulerian_at_knot()</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00089">D2Shape_eulerian_stored_pt</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00168">delete_d2shape_eulerian_stored()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00142">delete_dshape_eulerian_stored()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00193">delete_J_eulerian_stored()</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00085">DShape_eulerian_stored_pt</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="elements_8h_source.html#l01921">oomph::FiniteElement::integral_pt()</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00093">Jacobian_eulerian_stored_pt</a>, <a class="el" href="elements_8h_source.html#l02365">oomph::FiniteElement::nnodal_position_type()</a>, <a class="el" href="elements_8h_source.html#l02159">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l02383">oomph::FiniteElement::nodal_dimension()</a>, <a class="el" href="classoomph_1_1Integral.html#a1a270de9d99a1fcf1d25a6c1017f65fa">oomph::Integral::nweight()</a>, <a class="el" href="oomph__definitions_8cc_source.html#l00322">oomph::oomph_info</a>, and <a class="el" href="stored__shape__function__elements_8cc_source.html#l00268">pre_compute_shape_at_knots()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8cc_source.html#l00228">set_integration_scheme()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8cc_source.html#l00224">set_integration_scheme()</a>.</p>
 
 </div>
 </div>
@@ -2186,11 +2186,11 @@ Additional Inherited Members</h2></td></tr>
 <p>Calculate the second derivatives of the shape functions w.r.t. local coordinates at the integration points and store the results internally. </p>
 <p>Calculate the shape functions and thir first and second derivatives w.r.t. local coordinates at the integration points and store in internal storage of the element </p>
 
-<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8cc_source.html#l00406">406</a> of file <a class="el" href="stored__shape__function__elements_8cc_source.html">stored_shape_function_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8cc_source.html#l00402">402</a> of file <a class="el" href="stored__shape__function__elements_8cc_source.html">stored_shape_function_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00085">Can_delete_shape_local_stored</a>, <a class="el" href="elements_8cc_source.html#l03207">oomph::FiniteElement::d2shape_local_at_knot()</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00081">D2Shape_local_stored_pt</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00113">delete_d2shape_local_stored()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00090">delete_dshape_local_stored()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00064">delete_shape_local_stored()</a>, <a class="el" href="multi__domain_8cc_source.html#l00066">oomph::Multi_domain_functions::Dim</a>, <a class="el" href="elements_8h_source.html#l02499">oomph::FiniteElement::dim()</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00076">DShape_local_stored_pt</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="elements_8h_source.html#l01925">oomph::FiniteElement::integral_pt()</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, <a class="el" href="elements_8h_source.html#l02369">oomph::FiniteElement::nnodal_position_type()</a>, <a class="el" href="elements_8h_source.html#l02163">oomph::FiniteElement::nnode()</a>, <a class="el" href="classoomph_1_1Integral.html#a1a270de9d99a1fcf1d25a6c1017f65fa">oomph::Integral::nweight()</a>, <a class="el" href="oomph__definitions_8cc_source.html#l00326">oomph::oomph_info</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00072">Shape_stored_pt</a>, and <a class="el" href="oomph__definitions_8cc_source.html#l00293">oomph::Global_string_for_annotation::string()</a>.</p>
+<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00081">Can_delete_shape_local_stored</a>, <a class="el" href="elements_8cc_source.html#l03203">oomph::FiniteElement::d2shape_local_at_knot()</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00077">D2Shape_local_stored_pt</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00109">delete_d2shape_local_stored()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00086">delete_dshape_local_stored()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00060">delete_shape_local_stored()</a>, <a class="el" href="multi__domain_8cc_source.html#l00062">oomph::Multi_domain_functions::Dim</a>, <a class="el" href="elements_8h_source.html#l02495">oomph::FiniteElement::dim()</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00072">DShape_local_stored_pt</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="elements_8h_source.html#l01921">oomph::FiniteElement::integral_pt()</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, <a class="el" href="elements_8h_source.html#l02365">oomph::FiniteElement::nnodal_position_type()</a>, <a class="el" href="elements_8h_source.html#l02159">oomph::FiniteElement::nnode()</a>, <a class="el" href="classoomph_1_1Integral.html#a1a270de9d99a1fcf1d25a6c1017f65fa">oomph::Integral::nweight()</a>, <a class="el" href="oomph__definitions_8cc_source.html#l00322">oomph::oomph_info</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00068">Shape_stored_pt</a>, and <a class="el" href="oomph__definitions_8cc_source.html#l00289">oomph::Global_string_for_annotation::string()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8cc_source.html#l00228">set_integration_scheme()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8cc_source.html#l00224">set_integration_scheme()</a>.</p>
 
 </div>
 </div>
@@ -2212,11 +2212,11 @@ Additional Inherited Members</h2></td></tr>
 <p>Calculate the first derivatives of the shape functions w.r.t the global coordinates at the integration points and store the results internally. </p>
 <p>Calculate the values of the derivatives of the shape functions at the integration points and store in the internal storage of the element </p>
 
-<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8cc_source.html#l00521">521</a> of file <a class="el" href="stored__shape__function__elements_8cc_source.html">stored_shape_function_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8cc_source.html#l00517">517</a> of file <a class="el" href="stored__shape__function__elements_8cc_source.html">stored_shape_function_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00101">Can_delete_dshape_eulerian_stored</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00146">delete_dshape_eulerian_stored()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00197">delete_J_eulerian_stored()</a>, <a class="el" href="elements_8cc_source.html#l03254">oomph::FiniteElement::dshape_eulerian_at_knot()</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00089">DShape_eulerian_stored_pt</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="elements_8h_source.html#l01925">oomph::FiniteElement::integral_pt()</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00097">Jacobian_eulerian_stored_pt</a>, <a class="el" href="elements_8h_source.html#l02369">oomph::FiniteElement::nnodal_position_type()</a>, <a class="el" href="elements_8h_source.html#l02163">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l02387">oomph::FiniteElement::nodal_dimension()</a>, <a class="el" href="classoomph_1_1Integral.html#a1a270de9d99a1fcf1d25a6c1017f65fa">oomph::Integral::nweight()</a>, and <a class="el" href="stored__shape__function__elements_8cc_source.html#l00272">pre_compute_shape_at_knots()</a>.</p>
+<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00097">Can_delete_dshape_eulerian_stored</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00142">delete_dshape_eulerian_stored()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00193">delete_J_eulerian_stored()</a>, <a class="el" href="elements_8cc_source.html#l03250">oomph::FiniteElement::dshape_eulerian_at_knot()</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00085">DShape_eulerian_stored_pt</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="elements_8h_source.html#l01921">oomph::FiniteElement::integral_pt()</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00093">Jacobian_eulerian_stored_pt</a>, <a class="el" href="elements_8h_source.html#l02365">oomph::FiniteElement::nnodal_position_type()</a>, <a class="el" href="elements_8h_source.html#l02159">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l02383">oomph::FiniteElement::nodal_dimension()</a>, <a class="el" href="classoomph_1_1Integral.html#a1a270de9d99a1fcf1d25a6c1017f65fa">oomph::Integral::nweight()</a>, and <a class="el" href="stored__shape__function__elements_8cc_source.html#l00268">pre_compute_shape_at_knots()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8cc_source.html#l00228">set_integration_scheme()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8cc_source.html#l00224">set_integration_scheme()</a>.</p>
 
 </div>
 </div>
@@ -2238,11 +2238,11 @@ Additional Inherited Members</h2></td></tr>
 <p>Calculate the shape functions and first derivatives w.r.t. local coordinatess at the integration points and store the results internally. </p>
 <p>Calculate the shape functions and thir first derivatives w.r.t. local coordinates at the integration points and store in internal storage of the element </p>
 
-<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8cc_source.html#l00333">333</a> of file <a class="el" href="stored__shape__function__elements_8cc_source.html">stored_shape_function_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8cc_source.html#l00329">329</a> of file <a class="el" href="stored__shape__function__elements_8cc_source.html">stored_shape_function_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00085">Can_delete_shape_local_stored</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00090">delete_dshape_local_stored()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00064">delete_shape_local_stored()</a>, <a class="el" href="multi__domain_8cc_source.html#l00066">oomph::Multi_domain_functions::Dim</a>, <a class="el" href="elements_8h_source.html#l02499">oomph::FiniteElement::dim()</a>, <a class="el" href="elements_8cc_source.html#l03176">oomph::FiniteElement::dshape_local_at_knot()</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00076">DShape_local_stored_pt</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="elements_8h_source.html#l01925">oomph::FiniteElement::integral_pt()</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, <a class="el" href="elements_8h_source.html#l02369">oomph::FiniteElement::nnodal_position_type()</a>, <a class="el" href="elements_8h_source.html#l02163">oomph::FiniteElement::nnode()</a>, <a class="el" href="classoomph_1_1Integral.html#a1a270de9d99a1fcf1d25a6c1017f65fa">oomph::Integral::nweight()</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00072">Shape_stored_pt</a>, and <a class="el" href="oomph__definitions_8cc_source.html#l00293">oomph::Global_string_for_annotation::string()</a>.</p>
+<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00081">Can_delete_shape_local_stored</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00086">delete_dshape_local_stored()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00060">delete_shape_local_stored()</a>, <a class="el" href="multi__domain_8cc_source.html#l00062">oomph::Multi_domain_functions::Dim</a>, <a class="el" href="elements_8h_source.html#l02495">oomph::FiniteElement::dim()</a>, <a class="el" href="elements_8cc_source.html#l03172">oomph::FiniteElement::dshape_local_at_knot()</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00072">DShape_local_stored_pt</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="elements_8h_source.html#l01921">oomph::FiniteElement::integral_pt()</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, <a class="el" href="elements_8h_source.html#l02365">oomph::FiniteElement::nnodal_position_type()</a>, <a class="el" href="elements_8h_source.html#l02159">oomph::FiniteElement::nnode()</a>, <a class="el" href="classoomph_1_1Integral.html#a1a270de9d99a1fcf1d25a6c1017f65fa">oomph::Integral::nweight()</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00068">Shape_stored_pt</a>, and <a class="el" href="oomph__definitions_8cc_source.html#l00289">oomph::Global_string_for_annotation::string()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8cc_source.html#l00228">set_integration_scheme()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8cc_source.html#l00224">set_integration_scheme()</a>.</p>
 
 </div>
 </div>
@@ -2264,11 +2264,11 @@ Additional Inherited Members</h2></td></tr>
 <p>Calculate the Jacobian of the mapping from local to global coordinates at the integration points and store the results internally. </p>
 <p>Calculate the value of the Jacobian of the mapping from local to global coordinates at the integration points and store internally </p>
 
-<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8cc_source.html#l00497">497</a> of file <a class="el" href="stored__shape__function__elements_8cc_source.html">stored_shape_function_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8cc_source.html#l00493">493</a> of file <a class="el" href="stored__shape__function__elements_8cc_source.html">stored_shape_function_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00101">Can_delete_dshape_eulerian_stored</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00197">delete_J_eulerian_stored()</a>, <a class="el" href="elements_8h_source.html#l01925">oomph::FiniteElement::integral_pt()</a>, <a class="el" href="elements_8cc_source.html#l04086">oomph::FiniteElement::J_eulerian_at_knot()</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00097">Jacobian_eulerian_stored_pt</a>, and <a class="el" href="classoomph_1_1Integral.html#a1a270de9d99a1fcf1d25a6c1017f65fa">oomph::Integral::nweight()</a>.</p>
+<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00097">Can_delete_dshape_eulerian_stored</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00193">delete_J_eulerian_stored()</a>, <a class="el" href="elements_8h_source.html#l01921">oomph::FiniteElement::integral_pt()</a>, <a class="el" href="elements_8cc_source.html#l04082">oomph::FiniteElement::J_eulerian_at_knot()</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00093">Jacobian_eulerian_stored_pt</a>, and <a class="el" href="classoomph_1_1Integral.html#a1a270de9d99a1fcf1d25a6c1017f65fa">oomph::Integral::nweight()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8cc_source.html#l00228">set_integration_scheme()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8cc_source.html#l00224">set_integration_scheme()</a>.</p>
 
 </div>
 </div>
@@ -2290,11 +2290,11 @@ Additional Inherited Members</h2></td></tr>
 <p>Calculate the shape functions at the integration points and store the results internally. </p>
 <p>Calculate the shape functions at the integration points and store in internal storage of the element </p>
 
-<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8cc_source.html#l00272">272</a> of file <a class="el" href="stored__shape__function__elements_8cc_source.html">stored_shape_function_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8cc_source.html#l00268">268</a> of file <a class="el" href="stored__shape__function__elements_8cc_source.html">stored_shape_function_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00085">Can_delete_shape_local_stored</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00064">delete_shape_local_stored()</a>, <a class="el" href="elements_8h_source.html#l01925">oomph::FiniteElement::integral_pt()</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, <a class="el" href="elements_8h_source.html#l02369">oomph::FiniteElement::nnodal_position_type()</a>, <a class="el" href="elements_8h_source.html#l02163">oomph::FiniteElement::nnode()</a>, <a class="el" href="classoomph_1_1Integral.html#a1a270de9d99a1fcf1d25a6c1017f65fa">oomph::Integral::nweight()</a>, <a class="el" href="elements_8cc_source.html#l03160">oomph::FiniteElement::shape_at_knot()</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00072">Shape_stored_pt</a>, and <a class="el" href="oomph__definitions_8cc_source.html#l00293">oomph::Global_string_for_annotation::string()</a>.</p>
+<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00081">Can_delete_shape_local_stored</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00060">delete_shape_local_stored()</a>, <a class="el" href="elements_8h_source.html#l01921">oomph::FiniteElement::integral_pt()</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, <a class="el" href="elements_8h_source.html#l02365">oomph::FiniteElement::nnodal_position_type()</a>, <a class="el" href="elements_8h_source.html#l02159">oomph::FiniteElement::nnode()</a>, <a class="el" href="classoomph_1_1Integral.html#a1a270de9d99a1fcf1d25a6c1017f65fa">oomph::Integral::nweight()</a>, <a class="el" href="elements_8cc_source.html#l03156">oomph::FiniteElement::shape_at_knot()</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00068">Shape_stored_pt</a>, and <a class="el" href="oomph__definitions_8cc_source.html#l00289">oomph::Global_string_for_annotation::string()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8cc_source.html#l00579">pre_compute_d2shape_eulerian_at_knots()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l01015">oomph::StorableShapeSolidElementBase::pre_compute_d2shape_lagrangian_at_knots()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00521">pre_compute_dshape_eulerian_at_knots()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00953">oomph::StorableShapeSolidElementBase::pre_compute_dshape_lagrangian_at_knots()</a>, and <a class="el" href="stored__shape__function__elements_8cc_source.html#l00228">set_integration_scheme()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8cc_source.html#l00575">pre_compute_d2shape_eulerian_at_knots()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l01011">oomph::StorableShapeSolidElementBase::pre_compute_d2shape_lagrangian_at_knots()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00517">pre_compute_dshape_eulerian_at_knots()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00949">oomph::StorableShapeSolidElementBase::pre_compute_dshape_lagrangian_at_knots()</a>, and <a class="el" href="stored__shape__function__elements_8cc_source.html#l00224">set_integration_scheme()</a>.</p>
 
 </div>
 </div>
@@ -2317,9 +2317,9 @@ Additional Inherited Members</h2></td></tr>
 <p>Set the derivatives of stored shape functions with respect to the global coordinates to be the same as those pointed to by the <a class="el" href="classoomph_1_1FiniteElement.html" title="A general Finite Element class.">FiniteElement</a> element_pt. Note that this function also calls set_shape_local_stored_from_element(element_pt). so that the local derivatives are also stored. Calling this function only makes sense for uniformly-spaced meshes with elements of equal sizes. </p>
 <p>Set the stored derivatives of shape functions w.r.t Eulerian coordinates to be those stored in the <a class="el" href="classoomph_1_1StorableShapeElementBase.html">StorableShapeElementBase</a> pointed to by element_pt. Using this function will allow a saving in the storage required for integration schemes in the (most common) case when a large number of elements have the same integration scheme </p>
 
-<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8cc_source.html#l00842">842</a> of file <a class="el" href="stored__shape__function__elements_8cc_source.html">stored_shape_function_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8cc_source.html#l00838">838</a> of file <a class="el" href="stored__shape__function__elements_8cc_source.html">stored_shape_function_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00101">Can_delete_dshape_eulerian_stored</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00093">D2Shape_eulerian_stored_pt</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00224">d2shape_eulerian_stored_pt()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00136">delete_all_dshape_eulerian_stored()</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00089">DShape_eulerian_stored_pt</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00212">dshape_eulerian_stored_pt()</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00097">Jacobian_eulerian_stored_pt</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00235">jacobian_eulerian_stored_pt()</a>, and <a class="el" href="stored__shape__function__elements_8cc_source.html#l00799">set_shape_local_stored_from_element()</a>.</p>
+<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00097">Can_delete_dshape_eulerian_stored</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00089">D2Shape_eulerian_stored_pt</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00220">d2shape_eulerian_stored_pt()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00132">delete_all_dshape_eulerian_stored()</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00085">DShape_eulerian_stored_pt</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00208">dshape_eulerian_stored_pt()</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00093">Jacobian_eulerian_stored_pt</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00231">jacobian_eulerian_stored_pt()</a>, and <a class="el" href="stored__shape__function__elements_8cc_source.html#l00795">set_shape_local_stored_from_element()</a>.</p>
 
 </div>
 </div>
@@ -2354,11 +2354,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="classoomph_1_1StorableShapeSolidElementBase.html#acca94924abe9b0a0572ed0a73efb600a">oomph::StorableShapeSolidElementBase</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8cc_source.html#l00228">228</a> of file <a class="el" href="stored__shape__function__elements_8cc_source.html">stored_shape_function_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8cc_source.html#l00224">224</a> of file <a class="el" href="stored__shape__function__elements_8cc_source.html">stored_shape_function_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00093">D2Shape_eulerian_stored_pt</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00081">D2Shape_local_stored_pt</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00089">DShape_eulerian_stored_pt</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00076">DShape_local_stored_pt</a>, <a class="el" href="elements_8h_source.html#l01925">oomph::FiniteElement::integral_pt()</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00097">Jacobian_eulerian_stored_pt</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00579">pre_compute_d2shape_eulerian_at_knots()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00406">pre_compute_d2shape_local_at_knots()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00521">pre_compute_dshape_eulerian_at_knots()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00333">pre_compute_dshape_local_at_knots()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00497">pre_compute_J_eulerian_at_knots()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00272">pre_compute_shape_at_knots()</a>, <a class="el" href="elements_8cc_source.html#l03150">oomph::FiniteElement::set_integration_scheme()</a>, and <a class="el" href="stored__shape__function__elements_8h_source.html#l00072">Shape_stored_pt</a>.</p>
+<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00089">D2Shape_eulerian_stored_pt</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00077">D2Shape_local_stored_pt</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00085">DShape_eulerian_stored_pt</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00072">DShape_local_stored_pt</a>, <a class="el" href="elements_8h_source.html#l01921">oomph::FiniteElement::integral_pt()</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00093">Jacobian_eulerian_stored_pt</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00575">pre_compute_d2shape_eulerian_at_knots()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00402">pre_compute_d2shape_local_at_knots()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00517">pre_compute_dshape_eulerian_at_knots()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00329">pre_compute_dshape_local_at_knots()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00493">pre_compute_J_eulerian_at_knots()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00268">pre_compute_shape_at_knots()</a>, <a class="el" href="elements_8cc_source.html#l03146">oomph::FiniteElement::set_integration_scheme()</a>, and <a class="el" href="stored__shape__function__elements_8h_source.html#l00068">Shape_stored_pt</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8h_source.html#l00416">oomph::StorableShapeSolidElementBase::set_integration_scheme()</a>, and <a class="el" href="stored__shape__function__elements_8h_source.html#l00528">oomph::StorableShapeElement&lt; ELEMENT &gt;::StorableShapeElement()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8h_source.html#l00412">oomph::StorableShapeSolidElementBase::set_integration_scheme()</a>, and <a class="el" href="stored__shape__function__elements_8h_source.html#l00524">oomph::StorableShapeElement&lt; ELEMENT &gt;::StorableShapeElement()</a>.</p>
 
 </div>
 </div>
@@ -2382,11 +2382,11 @@ Additional Inherited Members</h2></td></tr>
  </p>
 <p>Set the shape functions referenced in the internal vectors to be those stored in the <a class="el" href="classoomph_1_1StorableShapeElementBase.html">StorableShapeElementBase</a> pointed to by element_pt. Using this function will allow a saving in the storage required for integration schemes in the (most common) case when a large number of elements have the same integration scheme </p>
 
-<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8cc_source.html#l00799">799</a> of file <a class="el" href="stored__shape__function__elements_8cc_source.html">stored_shape_function_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8cc_source.html#l00795">795</a> of file <a class="el" href="stored__shape__function__elements_8cc_source.html">stored_shape_function_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00085">Can_delete_shape_local_stored</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00081">D2Shape_local_stored_pt</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00200">d2shape_local_stored_pt()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00053">delete_all_shape_local_stored()</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00076">DShape_local_stored_pt</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00189">dshape_local_stored_pt()</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00072">Shape_stored_pt</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00170">shape_stored_pt()</a>, and <a class="el" href="oomph__definitions_8cc_source.html#l00293">oomph::Global_string_for_annotation::string()</a>.</p>
+<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00081">Can_delete_shape_local_stored</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00077">D2Shape_local_stored_pt</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00196">d2shape_local_stored_pt()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00049">delete_all_shape_local_stored()</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00072">DShape_local_stored_pt</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00185">dshape_local_stored_pt()</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00068">Shape_stored_pt</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00166">shape_stored_pt()</a>, and <a class="el" href="oomph__definitions_8cc_source.html#l00289">oomph::Global_string_for_annotation::string()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8cc_source.html#l00842">set_dshape_eulerian_stored_from_element()</a>, and <a class="el" href="stored__shape__function__elements_8cc_source.html#l01157">oomph::StorableShapeSolidElementBase::set_dshape_lagrangian_stored_from_element()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8cc_source.html#l00838">set_dshape_eulerian_stored_from_element()</a>, and <a class="el" href="stored__shape__function__elements_8cc_source.html#l01153">oomph::StorableShapeSolidElementBase::set_dshape_lagrangian_stored_from_element()</a>.</p>
 
 </div>
 </div>
@@ -2429,9 +2429,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1FiniteElement.html#aeccc0f774e3fab8c536e2d41004a1665">oomph::FiniteElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8cc_source.html#l00658">658</a> of file <a class="el" href="stored__shape__function__elements_8cc_source.html">stored_shape_function_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8cc_source.html#l00654">654</a> of file <a class="el" href="stored__shape__function__elements_8cc_source.html">stored_shape_function_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8cc_source.html#l03160">oomph::FiniteElement::shape_at_knot()</a>, and <a class="el" href="stored__shape__function__elements_8h_source.html#l00072">Shape_stored_pt</a>.</p>
+<p class="reference">References <a class="el" href="elements_8cc_source.html#l03156">oomph::FiniteElement::shape_at_knot()</a>, and <a class="el" href="stored__shape__function__elements_8h_source.html#l00068">Shape_stored_pt</a>.</p>
 
 </div>
 </div>
@@ -2461,11 +2461,11 @@ Additional Inherited Members</h2></td></tr>
 <p>Return a pointer to the vector of pointers to the stored shape functions <br  />
  </p>
 
-<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00170">170</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00166">166</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00072">Shape_stored_pt</a>.</p>
+<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00068">Shape_stored_pt</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8cc_source.html#l01126">oomph::StorableShapeSolidElementBase::d2shape_lagrangian_at_knot()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l01101">oomph::StorableShapeSolidElementBase::dshape_lagrangian_at_knot()</a>, and <a class="el" href="stored__shape__function__elements_8cc_source.html#l00799">set_shape_local_stored_from_element()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8cc_source.html#l01122">oomph::StorableShapeSolidElementBase::d2shape_lagrangian_at_knot()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l01097">oomph::StorableShapeSolidElementBase::dshape_lagrangian_at_knot()</a>, and <a class="el" href="stored__shape__function__elements_8cc_source.html#l00795">set_shape_local_stored_from_element()</a>.</p>
 
 </div>
 </div>
@@ -2494,9 +2494,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Return a pointer to the vector of pointers to the stored shape functions (const version) </p>
 
-<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00174">174</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00170">170</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00072">Shape_stored_pt</a>.</p>
+<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00068">Shape_stored_pt</a>.</p>
 
 </div>
 </div>
@@ -2526,9 +2526,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Return a pointer to the stored shape function at the ipt-th integration point. </p>
 
-<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00179">179</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00175">175</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00072">Shape_stored_pt</a>.</p>
+<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00068">Shape_stored_pt</a>.</p>
 
 </div>
 </div>
@@ -2558,9 +2558,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Return a pointer to the stored shape function at the ipt-th integration point (const version) </p>
 
-<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00184">184</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00180">180</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00072">Shape_stored_pt</a>.</p>
+<p class="reference">References <a class="el" href="stored__shape__function__elements_8h_source.html#l00068">Shape_stored_pt</a>.</p>
 
 </div>
 </div>
@@ -2587,9 +2587,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Boolean to determine whether the element can delete the stored derivatives of shape functions w.r.t. global coordinates. </p>
 
-<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00101">101</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00097">97</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8cc_source.html#l00172">delete_d2shape_eulerian_stored()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00146">delete_dshape_eulerian_stored()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00197">delete_J_eulerian_stored()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00579">pre_compute_d2shape_eulerian_at_knots()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00521">pre_compute_dshape_eulerian_at_knots()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00497">pre_compute_J_eulerian_at_knots()</a>, and <a class="el" href="stored__shape__function__elements_8cc_source.html#l00842">set_dshape_eulerian_stored_from_element()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8cc_source.html#l00168">delete_d2shape_eulerian_stored()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00142">delete_dshape_eulerian_stored()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00193">delete_J_eulerian_stored()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00575">pre_compute_d2shape_eulerian_at_knots()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00517">pre_compute_dshape_eulerian_at_knots()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00493">pre_compute_J_eulerian_at_knots()</a>, and <a class="el" href="stored__shape__function__elements_8cc_source.html#l00838">set_dshape_eulerian_stored_from_element()</a>.</p>
 
 </div>
 </div>
@@ -2615,9 +2615,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Boolean to determine whether the element can delete the stored local shape functions. </p>
 
-<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00085">85</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00081">81</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8cc_source.html#l00113">delete_d2shape_local_stored()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00090">delete_dshape_local_stored()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00064">delete_shape_local_stored()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00406">pre_compute_d2shape_local_at_knots()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00333">pre_compute_dshape_local_at_knots()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00272">pre_compute_shape_at_knots()</a>, and <a class="el" href="stored__shape__function__elements_8cc_source.html#l00799">set_shape_local_stored_from_element()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8cc_source.html#l00109">delete_d2shape_local_stored()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00086">delete_dshape_local_stored()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00060">delete_shape_local_stored()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00402">pre_compute_d2shape_local_at_knots()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00329">pre_compute_dshape_local_at_knots()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00268">pre_compute_shape_at_knots()</a>, and <a class="el" href="stored__shape__function__elements_8cc_source.html#l00795">set_shape_local_stored_from_element()</a>.</p>
 
 </div>
 </div>
@@ -2643,9 +2643,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Pointer to storage for the second derivatives of the shape functions w.r.t. global coordinates at integration points. </p>
 
-<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00093">93</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00089">89</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8cc_source.html#l00753">d2shape_eulerian_at_knot()</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00224">d2shape_eulerian_stored_pt()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00172">delete_d2shape_eulerian_stored()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00579">pre_compute_d2shape_eulerian_at_knots()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00842">set_dshape_eulerian_stored_from_element()</a>, and <a class="el" href="stored__shape__function__elements_8cc_source.html#l00228">set_integration_scheme()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8cc_source.html#l00749">d2shape_eulerian_at_knot()</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00220">d2shape_eulerian_stored_pt()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00168">delete_d2shape_eulerian_stored()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00575">pre_compute_d2shape_eulerian_at_knots()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00838">set_dshape_eulerian_stored_from_element()</a>, and <a class="el" href="stored__shape__function__elements_8cc_source.html#l00224">set_integration_scheme()</a>.</p>
 
 </div>
 </div>
@@ -2671,9 +2671,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Pointer to storage for the pointers to the second derivatives of the nodal shape functions w.r.t. the local coordinates at integration points. </p>
 
-<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00081">81</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00077">77</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8cc_source.html#l00702">d2shape_local_at_knot()</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00200">d2shape_local_stored_pt()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00113">delete_d2shape_local_stored()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00406">pre_compute_d2shape_local_at_knots()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00228">set_integration_scheme()</a>, and <a class="el" href="stored__shape__function__elements_8cc_source.html#l00799">set_shape_local_stored_from_element()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8cc_source.html#l00698">d2shape_local_at_knot()</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00196">d2shape_local_stored_pt()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00109">delete_d2shape_local_stored()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00402">pre_compute_d2shape_local_at_knots()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00224">set_integration_scheme()</a>, and <a class="el" href="stored__shape__function__elements_8cc_source.html#l00795">set_shape_local_stored_from_element()</a>.</p>
 
 </div>
 </div>
@@ -2699,9 +2699,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Pointer to storage for the derivatives of the shape functions w.r.t. global coordinates at integration points. </p>
 
-<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00089">89</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00085">85</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8cc_source.html#l00146">delete_dshape_eulerian_stored()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00728">dshape_eulerian_at_knot()</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00212">dshape_eulerian_stored_pt()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00579">pre_compute_d2shape_eulerian_at_knots()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00521">pre_compute_dshape_eulerian_at_knots()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00842">set_dshape_eulerian_stored_from_element()</a>, and <a class="el" href="stored__shape__function__elements_8cc_source.html#l00228">set_integration_scheme()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8cc_source.html#l00142">delete_dshape_eulerian_stored()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00724">dshape_eulerian_at_knot()</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00208">dshape_eulerian_stored_pt()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00575">pre_compute_d2shape_eulerian_at_knots()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00517">pre_compute_dshape_eulerian_at_knots()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00838">set_dshape_eulerian_stored_from_element()</a>, and <a class="el" href="stored__shape__function__elements_8cc_source.html#l00224">set_integration_scheme()</a>.</p>
 
 </div>
 </div>
@@ -2727,9 +2727,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Pointer to storage for the pointers to the derivatives of the nodal shape functions w.r.t. the local coordinates at integration points. </p>
 
-<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00076">76</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00072">72</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8cc_source.html#l00090">delete_dshape_local_stored()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00680">dshape_local_at_knot()</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00189">dshape_local_stored_pt()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00406">pre_compute_d2shape_local_at_knots()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00333">pre_compute_dshape_local_at_knots()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00228">set_integration_scheme()</a>, and <a class="el" href="stored__shape__function__elements_8cc_source.html#l00799">set_shape_local_stored_from_element()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8cc_source.html#l00086">delete_dshape_local_stored()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00676">dshape_local_at_knot()</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00185">dshape_local_stored_pt()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00402">pre_compute_d2shape_local_at_knots()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00329">pre_compute_dshape_local_at_knots()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00224">set_integration_scheme()</a>, and <a class="el" href="stored__shape__function__elements_8cc_source.html#l00795">set_shape_local_stored_from_element()</a>.</p>
 
 </div>
 </div>
@@ -2755,9 +2755,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Pointer to storage for the Jacobian of the element w.r.t global coordinates. </p>
 
-<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00097">97</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00093">93</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8cc_source.html#l00753">d2shape_eulerian_at_knot()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00197">delete_J_eulerian_stored()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00728">dshape_eulerian_at_knot()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00777">J_eulerian_at_knot()</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00235">jacobian_eulerian_stored_pt()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00579">pre_compute_d2shape_eulerian_at_knots()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00521">pre_compute_dshape_eulerian_at_knots()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00497">pre_compute_J_eulerian_at_knots()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00842">set_dshape_eulerian_stored_from_element()</a>, and <a class="el" href="stored__shape__function__elements_8cc_source.html#l00228">set_integration_scheme()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8cc_source.html#l00749">d2shape_eulerian_at_knot()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00193">delete_J_eulerian_stored()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00724">dshape_eulerian_at_knot()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00773">J_eulerian_at_knot()</a>, <a class="el" href="stored__shape__function__elements_8h_source.html#l00231">jacobian_eulerian_stored_pt()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00575">pre_compute_d2shape_eulerian_at_knots()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00517">pre_compute_dshape_eulerian_at_knots()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00493">pre_compute_J_eulerian_at_knots()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00838">set_dshape_eulerian_stored_from_element()</a>, and <a class="el" href="stored__shape__function__elements_8cc_source.html#l00224">set_integration_scheme()</a>.</p>
 
 </div>
 </div>
@@ -2783,9 +2783,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Pointer to storage for the pointers to the nodal shape functions at the integration points (knots) </p>
 
-<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00072">72</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stored__shape__function__elements_8h_source.html#l00068">68</a> of file <a class="el" href="stored__shape__function__elements_8h_source.html">stored_shape_function_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8cc_source.html#l00064">delete_shape_local_stored()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00406">pre_compute_d2shape_local_at_knots()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00333">pre_compute_dshape_local_at_knots()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00272">pre_compute_shape_at_knots()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00228">set_integration_scheme()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00799">set_shape_local_stored_from_element()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00658">shape_at_knot()</a>, and <a class="el" href="stored__shape__function__elements_8h_source.html#l00170">shape_stored_pt()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stored__shape__function__elements_8cc_source.html#l00060">delete_shape_local_stored()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00402">pre_compute_d2shape_local_at_knots()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00329">pre_compute_dshape_local_at_knots()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00268">pre_compute_shape_at_knots()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00224">set_integration_scheme()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00795">set_shape_local_stored_from_element()</a>, <a class="el" href="stored__shape__function__elements_8cc_source.html#l00654">shape_at_knot()</a>, and <a class="el" href="stored__shape__function__elements_8h_source.html#l00166">shape_stored_pt()</a>.</p>
 
 </div>
 </div>
@@ -2821,7 +2821,7 @@ Additional Inherited Members</h2></td></tr>
     <footer>
       <div class="container">
         <div class="text-muted" style="float:right;">Generated by <a href="http://www.doxygen.org/index.html">
-          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Tue Jul 6 2021 22:59:39
+          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Fri Jul 9 2021 20:54:30
         </div>
       </div>
     </footer>

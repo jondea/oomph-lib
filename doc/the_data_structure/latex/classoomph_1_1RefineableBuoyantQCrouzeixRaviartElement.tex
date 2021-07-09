@@ -114,7 +114,7 @@ class oomph\+::\+Refineable\+Buoyant\+Q\+Crouzeix\+Raviart\+Element$<$ D\+I\+M $
 
 A \mbox{\hyperlink{classoomph_1_1RefineableElement}{Refineable\+Element}} class that solves the Boussinesq approximation of the Navier--Stokes and energy equations by coupling two pre-\/existing classes. The \mbox{\hyperlink{classoomph_1_1RefineableQAdvectionDiffusionElement}{Refineable\+Q\+Advection\+Diffusion\+Element}} with bi-\/quadratic interpolation for the scalar variable (temperature) and \mbox{\hyperlink{classoomph_1_1RefineableQCrouzeixRaviartElement}{Refineable\+Q\+Crouzeix\+Raviart\+Element}} which solves the Navier--Stokes equations using bi-\/quadratic interpolation for the velocities and a discontinuous bi-\/linear interpolation for the pressure. Note that we are free to choose the order in which we store the variables at the nodes. In this case we choose to store the variables in the order fluid velocities followed by temperature. We must, therefore, overload the function \mbox{\hyperlink{classoomph_1_1AdvectionDiffusionEquations_aadffa26c42be5d4a1156a7467de48fb8}{Advection\+Diffusion\+Equations$<$\+D\+I\+M$>$\+::u\+\_\+index\+\_\+adv\+\_\+diff()}} to indicate that the temperature is stored at the D\+I\+M-\/th position not the 0-\/th. We do not need to overload the corresponding function in the Navier\+Stokes\+Equations$<$\+D\+I\+M$>$ class because the velocities are stored first. Finally, we choose to use the flux-\/recovery calculation from the fluid velocities to provide the error used in the mesh adaptation. 
 
-Definition at line 759 of file boussinesq\+\_\+elements.\+h.
+Definition at line 755 of file boussinesq\+\_\+elements.\+h.
 
 
 
@@ -132,7 +132,7 @@ Constructor\+: call the underlying constructors and initialise the pointer to th
 
 
 
-Definition at line 776 of file boussinesq\+\_\+elements.\+h.
+Definition at line 772 of file boussinesq\+\_\+elements.\+h.
 
 
 
@@ -158,7 +158,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1AdvectionDiffusionEquations_ac
 
 
 
-Definition at line 1122 of file boussinesq\+\_\+elements.\+h.
+Definition at line 1118 of file boussinesq\+\_\+elements.\+h.
 
 
 
@@ -181,7 +181,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1AdvectionDiffusionEquations_a8
 
 
 
-Definition at line 1110 of file boussinesq\+\_\+elements.\+h.
+Definition at line 1106 of file boussinesq\+\_\+elements.\+h.
 
 
 
@@ -199,7 +199,7 @@ Set the default value of the Rayleigh number to be zero.
 
 
 
-Definition at line 1500 of file boussinesq\+\_\+elements.\+h.
+Definition at line 1496 of file boussinesq\+\_\+elements.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1RefineableBuoyantQCrouzeixRaviartElement_abebe067a6aadeb95479bd1d1495004df}\label{classoomph_1_1RefineableBuoyantQCrouzeixRaviartElement_abebe067a6aadeb95479bd1d1495004df}} 
 \index{oomph::RefineableBuoyantQCrouzeixRaviartElement$<$ DIM $>$@{oomph::RefineableBuoyantQCrouzeixRaviartElement$<$ DIM $>$}!Default\_Physical\_Constant\_Value@{Default\_Physical\_Constant\_Value}}
@@ -209,7 +209,7 @@ Definition at line 1500 of file boussinesq\+\_\+elements.\+h.
 
 
 
-Definition at line 1504 of file boussinesq\+\_\+elements.\+h.
+Definition at line 1500 of file boussinesq\+\_\+elements.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1RefineableBuoyantQCrouzeixRaviartElement_a7fdb84a7d69740668514e0dae2d07f7e}\label{classoomph_1_1RefineableBuoyantQCrouzeixRaviartElement_a7fdb84a7d69740668514e0dae2d07f7e}} 
 \index{oomph::RefineableBuoyantQCrouzeixRaviartElement$<$ DIM $>$@{oomph::RefineableBuoyantQCrouzeixRaviartElement$<$ DIM $>$}!disable\_ALE@{disable\_ALE}}
@@ -228,7 +228,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1AdvectionDiffusionEquations_aa
 
 
 
-Definition at line 798 of file boussinesq\+\_\+elements.\+h.
+Definition at line 794 of file boussinesq\+\_\+elements.\+h.
 
 
 
@@ -251,7 +251,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1AdvectionDiffusionEquations_a9
 
 
 
-Definition at line 806 of file boussinesq\+\_\+elements.\+h.
+Definition at line 802 of file boussinesq\+\_\+elements.\+h.
 
 
 
@@ -274,7 +274,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1AdvectionDiffusionEquations_a6
 
 
 
-Definition at line 1178 of file boussinesq\+\_\+elements.\+h.
+Definition at line 1174 of file boussinesq\+\_\+elements.\+h.
 
 
 
@@ -293,7 +293,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1AdvectionDiffusionEquations_ae
 
 
 
-Definition at line 1200 of file boussinesq\+\_\+elements.\+h.
+Definition at line 1196 of file boussinesq\+\_\+elements.\+h.
 
 
 
@@ -316,7 +316,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1AdvectionDiffusionEquations_ae
 
 
 
-Definition at line 1164 of file boussinesq\+\_\+elements.\+h.
+Definition at line 1160 of file boussinesq\+\_\+elements.\+h.
 
 
 
@@ -335,7 +335,7 @@ Compute the contribution of the off-\/diagonal blocks analytically.
 
 
 
-Definition at line 1211 of file boussinesq\+\_\+elements.\+h.
+Definition at line 1207 of file boussinesq\+\_\+elements.\+h.
 
 
 
@@ -362,7 +362,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1RefineableAdvectionDiffusionEq
 
 
 
-Definition at line 1021 of file boussinesq\+\_\+elements.\+h.
+Definition at line 1017 of file boussinesq\+\_\+elements.\+h.
 
 
 
@@ -385,7 +385,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1RefineableElement_a86ea01c485f
 
 
 
-Definition at line 1000 of file boussinesq\+\_\+elements.\+h.
+Definition at line 996 of file boussinesq\+\_\+elements.\+h.
 
 
 
@@ -408,7 +408,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1NavierStokesEquations_a8a3f44d
 
 
 
-Definition at line 1145 of file boussinesq\+\_\+elements.\+h.
+Definition at line 1141 of file boussinesq\+\_\+elements.\+h.
 
 
 
@@ -431,7 +431,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1RefineableAdvectionDiffusionEq
 
 
 
-Definition at line 971 of file boussinesq\+\_\+elements.\+h.
+Definition at line 967 of file boussinesq\+\_\+elements.\+h.
 
 
 
@@ -454,7 +454,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1RefineableAdvectionDiffusionEq
 
 
 
-Definition at line 942 of file boussinesq\+\_\+elements.\+h.
+Definition at line 938 of file boussinesq\+\_\+elements.\+h.
 
 
 
@@ -477,7 +477,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1AdvectionDiffusionEquations_a3
 
 
 
-Definition at line 1131 of file boussinesq\+\_\+elements.\+h.
+Definition at line 1127 of file boussinesq\+\_\+elements.\+h.
 
 
 
@@ -500,7 +500,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1ElementWithZ2ErrorEstimator_a2
 
 
 
-Definition at line 1085 of file boussinesq\+\_\+elements.\+h.
+Definition at line 1081 of file boussinesq\+\_\+elements.\+h.
 
 
 
@@ -523,7 +523,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1RefineableAdvectionDiffusionEq
 
 
 
-Definition at line 1054 of file boussinesq\+\_\+elements.\+h.
+Definition at line 1050 of file boussinesq\+\_\+elements.\+h.
 
 
 
@@ -546,7 +546,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1ElementWithZ2ErrorEstimator_a1
 
 
 
-Definition at line 1081 of file boussinesq\+\_\+elements.\+h.
+Definition at line 1077 of file boussinesq\+\_\+elements.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1RefineableBuoyantQCrouzeixRaviartElement_a98f094a1c3080905d0e90f5ac6ebd1b6}\label{classoomph_1_1RefineableBuoyantQCrouzeixRaviartElement_a98f094a1c3080905d0e90f5ac6ebd1b6}} 
 \index{oomph::RefineableBuoyantQCrouzeixRaviartElement$<$ DIM $>$@{oomph::RefineableBuoyantQCrouzeixRaviartElement$<$ DIM $>$}!ncont\_interpolated\_values@{ncont\_interpolated\_values}}
@@ -565,7 +565,7 @@ Implements \mbox{\hyperlink{classoomph_1_1RefineableElement_a53e171a18c9f43f1db9
 
 
 
-Definition at line 935 of file boussinesq\+\_\+elements.\+h.
+Definition at line 931 of file boussinesq\+\_\+elements.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1RefineableBuoyantQCrouzeixRaviartElement_a18e7035500add323a8d5ce921c9c1b8a}\label{classoomph_1_1RefineableBuoyantQCrouzeixRaviartElement_a18e7035500add323a8d5ce921c9c1b8a}} 
 \index{oomph::RefineableBuoyantQCrouzeixRaviartElement$<$ DIM $>$@{oomph::RefineableBuoyantQCrouzeixRaviartElement$<$ DIM $>$}!nrecovery\_order@{nrecovery\_order}}
@@ -584,7 +584,7 @@ Implements \mbox{\hyperlink{classoomph_1_1ElementWithZ2ErrorEstimator_af39480835
 
 
 
-Definition at line 1040 of file boussinesq\+\_\+elements.\+h.
+Definition at line 1036 of file boussinesq\+\_\+elements.\+h.
 
 
 
@@ -607,7 +607,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1AdvectionDiffusionEquations_a7
 
 
 
-Definition at line 817 of file boussinesq\+\_\+elements.\+h.
+Definition at line 813 of file boussinesq\+\_\+elements.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1RefineableBuoyantQCrouzeixRaviartElement_a630b9aa6c5cf924d32996e89ed230175}\label{classoomph_1_1RefineableBuoyantQCrouzeixRaviartElement_a630b9aa6c5cf924d32996e89ed230175}} 
 \index{oomph::RefineableBuoyantQCrouzeixRaviartElement$<$ DIM $>$@{oomph::RefineableBuoyantQCrouzeixRaviartElement$<$ DIM $>$}!num\_Z2\_flux\_terms@{num\_Z2\_flux\_terms}}
@@ -626,7 +626,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1RefineableAdvectionDiffusionEq
 
 
 
-Definition at line 1045 of file boussinesq\+\_\+elements.\+h.
+Definition at line 1041 of file boussinesq\+\_\+elements.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1RefineableBuoyantQCrouzeixRaviartElement_a868eb9a7f06469da529dbbc5b1efe34e}\label{classoomph_1_1RefineableBuoyantQCrouzeixRaviartElement_a868eb9a7f06469da529dbbc5b1efe34e}} 
 \index{oomph::RefineableBuoyantQCrouzeixRaviartElement$<$ DIM $>$@{oomph::RefineableBuoyantQCrouzeixRaviartElement$<$ DIM $>$}!nvertex\_node@{nvertex\_node}}
@@ -645,7 +645,7 @@ Implements \mbox{\hyperlink{classoomph_1_1ElementWithZ2ErrorEstimator_a19495a0e7
 
 
 
-Definition at line 925 of file boussinesq\+\_\+elements.\+h.
+Definition at line 921 of file boussinesq\+\_\+elements.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1RefineableBuoyantQCrouzeixRaviartElement_a90579086f991da7fbaf7d92b29abf994}\label{classoomph_1_1RefineableBuoyantQCrouzeixRaviartElement_a90579086f991da7fbaf7d92b29abf994}} 
 \index{oomph::RefineableBuoyantQCrouzeixRaviartElement$<$ DIM $>$@{oomph::RefineableBuoyantQCrouzeixRaviartElement$<$ DIM $>$}!output@{output}}
@@ -664,7 +664,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1QAdvectionDiffusionElement_a79
 
 
 
-Definition at line 893 of file boussinesq\+\_\+elements.\+h.
+Definition at line 889 of file boussinesq\+\_\+elements.\+h.
 
 
 
@@ -687,7 +687,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1QAdvectionDiffusionElement_a89
 
 
 
-Definition at line 897 of file boussinesq\+\_\+elements.\+h.
+Definition at line 893 of file boussinesq\+\_\+elements.\+h.
 
 
 
@@ -710,7 +710,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1QAdvectionDiffusionElement_af3
 
 
 
-Definition at line 851 of file boussinesq\+\_\+elements.\+h.
+Definition at line 847 of file boussinesq\+\_\+elements.\+h.
 
 
 
@@ -734,7 +734,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1QAdvectionDiffusionElement_a24
 
 
 
-Definition at line 856 of file boussinesq\+\_\+elements.\+h.
+Definition at line 852 of file boussinesq\+\_\+elements.\+h.
 
 
 
@@ -757,7 +757,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1QAdvectionDiffusionElement_a0e
 
 
 
-Definition at line 909 of file boussinesq\+\_\+elements.\+h.
+Definition at line 905 of file boussinesq\+\_\+elements.\+h.
 
 
 
@@ -780,7 +780,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1QAdvectionDiffusionElement_a42
 
 
 
-Definition at line 901 of file boussinesq\+\_\+elements.\+h.
+Definition at line 897 of file boussinesq\+\_\+elements.\+h.
 
 
 
@@ -799,7 +799,7 @@ Access function for the Rayleigh number (const version)
 
 
 
-Definition at line 791 of file boussinesq\+\_\+elements.\+h.
+Definition at line 787 of file boussinesq\+\_\+elements.\+h.
 
 
 
@@ -822,7 +822,7 @@ Access function for the pointer to the Rayleigh number.
 
 
 
-Definition at line 794 of file boussinesq\+\_\+elements.\+h.
+Definition at line 790 of file boussinesq\+\_\+elements.\+h.
 
 
 
@@ -849,7 +849,7 @@ Implements \mbox{\hyperlink{classoomph_1_1RefineableElement_a33324be27833fa4b782
 
 
 
-Definition at line 1010 of file boussinesq\+\_\+elements.\+h.
+Definition at line 1006 of file boussinesq\+\_\+elements.\+h.
 
 
 
@@ -872,7 +872,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1QAdvectionDiffusionElement_a5a
 
 
 
-Definition at line 786 of file boussinesq\+\_\+elements.\+h.
+Definition at line 782 of file boussinesq\+\_\+elements.\+h.
 
 
 
@@ -895,7 +895,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1AdvectionDiffusionEquations_a3
 
 
 
-Definition at line 845 of file boussinesq\+\_\+elements.\+h.
+Definition at line 841 of file boussinesq\+\_\+elements.\+h.
 
 
 
@@ -918,7 +918,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1AdvectionDiffusionEquations_a7
 
 
 
-Definition at line 831 of file boussinesq\+\_\+elements.\+h.
+Definition at line 827 of file boussinesq\+\_\+elements.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1RefineableBuoyantQCrouzeixRaviartElement_ac6a973ee5e4d7425db2e7f9a259bab46}\label{classoomph_1_1RefineableBuoyantQCrouzeixRaviartElement_ac6a973ee5e4d7425db2e7f9a259bab46}} 
 \index{oomph::RefineableBuoyantQCrouzeixRaviartElement$<$ DIM $>$@{oomph::RefineableBuoyantQCrouzeixRaviartElement$<$ DIM $>$}!u\_index\_adv\_diff@{u\_index\_adv\_diff}}
@@ -937,7 +937,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1AdvectionDiffusionEquations_aa
 
 
 
-Definition at line 920 of file boussinesq\+\_\+elements.\+h.
+Definition at line 916 of file boussinesq\+\_\+elements.\+h.
 
 
 
@@ -960,7 +960,7 @@ Implements \mbox{\hyperlink{classoomph_1_1ElementWithZ2ErrorEstimator_a0eedccc33
 
 
 
-Definition at line 930 of file boussinesq\+\_\+elements.\+h.
+Definition at line 926 of file boussinesq\+\_\+elements.\+h.
 
 
 
@@ -978,7 +978,7 @@ The static default value of the Rayleigh number.
 
 
 
-Definition at line 770 of file boussinesq\+\_\+elements.\+h.
+Definition at line 766 of file boussinesq\+\_\+elements.\+h.
 
 
 
@@ -997,7 +997,7 @@ Pointer to a new physical variable, the Rayleigh number.
 
 
 
-Definition at line 767 of file boussinesq\+\_\+elements.\+h.
+Definition at line 763 of file boussinesq\+\_\+elements.\+h.
 
 
 

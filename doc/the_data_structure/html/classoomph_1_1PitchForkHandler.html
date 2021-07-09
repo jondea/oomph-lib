@@ -314,7 +314,7 @@ Friends</h2></td></tr>
 <p> In the abovem <img class="formulaInl" alt="$J$" src="form_187.png"/> is the usual Jacobian matrix, <img class="formulaInl" alt="$dR/du$" src="form_188.png"/> and <img class="formulaInl" alt="$\phi$" src="form_189.png"/> is a constant vector that is chosen to ensure that the null vector, <img class="formulaInl" alt="$y$" src="form_190.png"/>, is not trivial. <br  />
  Here <img class="formulaInl" alt="$\sigma $" src="form_191.png"/> is a slack variable that is used to enforce the constraint <img class="formulaInl" alt="$ \langle u, \phi \rangle = 0 $" src="form_192.png"/> &mdash; the inner product of the solution with the chosen symmetry vector is zero. At the bifurcation <img class="formulaInl" alt="$ \sigma $" src="form_193.png"/> should be very close to zero. Note that this formulation means that any odd symmetry in the problem must be about zero. Moreover, we use the dot product of two vectors to calculate the inner product, rather than an integral over the domain and so the mesh must be symmetric in the appropriate directions. </p>
 
-<p class="definition">Definition at line <a class="el" href="assembly__handler_8h_source.html#l00748">748</a> of file <a class="el" href="assembly__handler_8h_source.html">assembly_handler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="assembly__handler_8h_source.html#l00744">744</a> of file <a class="el" href="assembly__handler_8h_source.html">assembly_handler.h</a>.</p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="a51e85b70ec1c902015024b18bdb3dacb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a51e85b70ec1c902015024b18bdb3dacb">&#9670;&nbsp;</a></span>anonymous enum</h2>
@@ -342,7 +342,7 @@ Friends</h2></td></tr>
 <tr><td class="fieldname"><a id="a51e85b70ec1c902015024b18bdb3dacbac8e196e66210e158988de0bfebcdf6a5"></a>Block_augmented_J&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="assembly__handler_8h_source.html#l00755">755</a> of file <a class="el" href="assembly__handler_8h_source.html">assembly_handler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="assembly__handler_8h_source.html#l00751">751</a> of file <a class="el" href="assembly__handler_8h_source.html">assembly_handler.h</a>.</p>
 
 </div>
 </div>
@@ -388,9 +388,9 @@ Friends</h2></td></tr>
 <p>Constructor, initialise the systems. </p>
 <p>Constructor: Initialise the <a class="el" href="classoomph_1_1PitchForkHandler.html">PitchForkHandler</a> by setting intial guesses for Sigma, Y, specifying C and Psi and calculating count. </p>
 
-<p class="definition">Definition at line <a class="el" href="assembly__handler_8cc_source.html#l02539">2539</a> of file <a class="el" href="assembly__handler_8cc_source.html">assembly_handler.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="assembly__handler_8cc_source.html#l02535">2535</a> of file <a class="el" href="assembly__handler_8cc_source.html">assembly_handler.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="assembly__handler_8h_source.html#l00768">Assembly_handler_pt</a>, <a class="el" href="assembly__handler_8h_source.html#l00778">Augmented_dof_distribution_pt</a>, <a class="el" href="double__vector_8cc_source.html#l00040">oomph::DoubleVector::build()</a>, <a class="el" href="double__vector__with__halo_8cc_source.html#l00343">oomph::DoubleVectorWithHaloEntries::build_halo_scheme()</a>, <a class="el" href="assembly__handler_8h_source.html#l00792">C</a>, <a class="el" href="problem_8h_source.html#l01228">oomph::Problem::communicator_pt()</a>, <a class="el" href="assembly__handler_8h_source.html#l00799">Count</a>, <a class="el" href="problem_8h_source.html#l00803">oomph::Problem::distributed()</a>, <a class="el" href="assembly__handler_8h_source.html#l00813">Distributed</a>, <a class="el" href="linear__algebra__distribution_8h_source.html#l00474">oomph::DistributableLinearAlgebraObject::distribution_pt()</a>, <a class="el" href="problem_8h_source.html#l00457">oomph::Problem::Dof_distribution_pt</a>, <a class="el" href="assembly__handler_8h_source.html#l00775">Dof_distribution_pt</a>, <a class="el" href="problem_8h_source.html#l00551">oomph::Problem::Dof_pt</a>, <a class="el" href="cfortran_8h_source.html#l00575">e</a>, <a class="el" href="mesh_8h_source.html#l00462">oomph::Mesh::element_pt()</a>, <a class="el" href="assembly__handler_8cc_source.html#l00078">oomph::AssemblyHandler::eqn_number()</a>, <a class="el" href="linear__algebra__distribution_8h_source.html#l00268">oomph::LinearAlgebraDistribution::first_row()</a>, <a class="el" href="assembly__handler_8h_source.html#l00803">Global_eqn_number</a>, <a class="el" href="double__vector__with__halo_8h_source.html#l00219">oomph::DoubleVectorWithHaloEntries::global_value()</a>, <a class="el" href="problem_8h_source.html#l00574">oomph::Problem::Halo_scheme_pt</a>, <a class="el" href="elements_8h_source.html#l01158">oomph::GeneralisedElement::is_halo()</a>, <a class="el" href="problem_8h_source.html#l01271">oomph::Problem::mesh_pt()</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, <a class="el" href="assembly__handler_8cc_source.html#l00046">oomph::AssemblyHandler::ndof()</a>, <a class="el" href="assembly__handler_8h_source.html#l00772">Ndof</a>, <a class="el" href="problem_8h_source.html#l01581">oomph::Problem::ndof()</a>, <a class="el" href="mesh_8h_source.html#l00587">oomph::Mesh::nelement()</a>, <a class="el" href="assembly__handler_8h_source.html#l00809">Nelement</a>, <a class="el" href="double__vector_8cc_source.html#l00867">oomph::DoubleVector::norm()</a>, <a class="el" href="linear__algebra__distribution_8h_source.html#l00200">oomph::LinearAlgebraDistribution::nrow_local()</a>, <a class="el" href="assembly__handler_8h_source.html#l00765">Problem_pt</a>, <a class="el" href="assembly__handler_8h_source.html#l00788">Psi</a>, <a class="el" href="problem_8cc_source.html#l00291">oomph::Problem::setup_dof_halo_scheme()</a>, <a class="el" href="assembly__handler_8h_source.html#l00782">Sigma</a>, <a class="el" href="problem_8h_source.html#l00662">oomph::Problem::Sparse_assemble_with_arrays_previous_allocation</a>, <a class="el" href="double__vector__with__halo_8cc_source.html#l00297">oomph::DoubleVectorWithHaloEntries::sum_all_halo_and_haloed_values()</a>, and <a class="el" href="assembly__handler_8h_source.html#l00785">Y</a>.</p>
+<p class="reference">References <a class="el" href="assembly__handler_8h_source.html#l00764">Assembly_handler_pt</a>, <a class="el" href="assembly__handler_8h_source.html#l00774">Augmented_dof_distribution_pt</a>, <a class="el" href="double__vector_8cc_source.html#l00036">oomph::DoubleVector::build()</a>, <a class="el" href="double__vector__with__halo_8cc_source.html#l00339">oomph::DoubleVectorWithHaloEntries::build_halo_scheme()</a>, <a class="el" href="assembly__handler_8h_source.html#l00788">C</a>, <a class="el" href="problem_8h_source.html#l01224">oomph::Problem::communicator_pt()</a>, <a class="el" href="assembly__handler_8h_source.html#l00795">Count</a>, <a class="el" href="problem_8h_source.html#l00799">oomph::Problem::distributed()</a>, <a class="el" href="assembly__handler_8h_source.html#l00809">Distributed</a>, <a class="el" href="linear__algebra__distribution_8h_source.html#l00470">oomph::DistributableLinearAlgebraObject::distribution_pt()</a>, <a class="el" href="problem_8h_source.html#l00453">oomph::Problem::Dof_distribution_pt</a>, <a class="el" href="assembly__handler_8h_source.html#l00771">Dof_distribution_pt</a>, <a class="el" href="problem_8h_source.html#l00547">oomph::Problem::Dof_pt</a>, <a class="el" href="cfortran_8h_source.html#l00571">e</a>, <a class="el" href="mesh_8h_source.html#l00458">oomph::Mesh::element_pt()</a>, <a class="el" href="assembly__handler_8cc_source.html#l00074">oomph::AssemblyHandler::eqn_number()</a>, <a class="el" href="linear__algebra__distribution_8h_source.html#l00264">oomph::LinearAlgebraDistribution::first_row()</a>, <a class="el" href="assembly__handler_8h_source.html#l00799">Global_eqn_number</a>, <a class="el" href="double__vector__with__halo_8h_source.html#l00215">oomph::DoubleVectorWithHaloEntries::global_value()</a>, <a class="el" href="problem_8h_source.html#l00570">oomph::Problem::Halo_scheme_pt</a>, <a class="el" href="elements_8h_source.html#l01154">oomph::GeneralisedElement::is_halo()</a>, <a class="el" href="problem_8h_source.html#l01267">oomph::Problem::mesh_pt()</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, <a class="el" href="assembly__handler_8cc_source.html#l00042">oomph::AssemblyHandler::ndof()</a>, <a class="el" href="assembly__handler_8h_source.html#l00768">Ndof</a>, <a class="el" href="problem_8h_source.html#l01577">oomph::Problem::ndof()</a>, <a class="el" href="mesh_8h_source.html#l00583">oomph::Mesh::nelement()</a>, <a class="el" href="assembly__handler_8h_source.html#l00805">Nelement</a>, <a class="el" href="double__vector_8cc_source.html#l00863">oomph::DoubleVector::norm()</a>, <a class="el" href="linear__algebra__distribution_8h_source.html#l00196">oomph::LinearAlgebraDistribution::nrow_local()</a>, <a class="el" href="assembly__handler_8h_source.html#l00761">Problem_pt</a>, <a class="el" href="assembly__handler_8h_source.html#l00784">Psi</a>, <a class="el" href="problem_8cc_source.html#l00287">oomph::Problem::setup_dof_halo_scheme()</a>, <a class="el" href="assembly__handler_8h_source.html#l00778">Sigma</a>, <a class="el" href="problem_8h_source.html#l00658">oomph::Problem::Sparse_assemble_with_arrays_previous_allocation</a>, <a class="el" href="double__vector__with__halo_8cc_source.html#l00293">oomph::DoubleVectorWithHaloEntries::sum_all_halo_and_haloed_values()</a>, and <a class="el" href="assembly__handler_8h_source.html#l00781">Y</a>.</p>
 
 </div>
 </div>
@@ -412,9 +412,9 @@ Friends</h2></td></tr>
 <p>Destructor return the problem to its original (non-augmented) state. </p>
 <p>Destructor, return the problem to its original state, before the augmented system was added </p>
 
-<p class="definition">Definition at line <a class="el" href="assembly__handler_8cc_source.html#l02753">2753</a> of file <a class="el" href="assembly__handler_8cc_source.html">assembly_handler.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="assembly__handler_8cc_source.html#l02749">2749</a> of file <a class="el" href="assembly__handler_8cc_source.html">assembly_handler.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="problem_8h_source.html#l00457">oomph::Problem::Dof_distribution_pt</a>, <a class="el" href="assembly__handler_8h_source.html#l00775">Dof_distribution_pt</a>, <a class="el" href="problem_8h_source.html#l00551">oomph::Problem::Dof_pt</a>, <a class="el" href="assembly__handler_8h_source.html#l00654">oomph::BlockPitchForkLinearSolver::linear_solver_pt()</a>, <a class="el" href="assembly__handler_8h_source.html#l00721">oomph::AugmentedBlockPitchForkLinearSolver::linear_solver_pt()</a>, <a class="el" href="problem_8h_source.html#l01431">oomph::Problem::linear_solver_pt()</a>, <a class="el" href="linear__algebra__distribution_8h_source.html#l00200">oomph::LinearAlgebraDistribution::nrow_local()</a>, <a class="el" href="assembly__handler_8h_source.html#l00765">Problem_pt</a>, and <a class="el" href="problem_8h_source.html#l00662">oomph::Problem::Sparse_assemble_with_arrays_previous_allocation</a>.</p>
+<p class="reference">References <a class="el" href="problem_8h_source.html#l00453">oomph::Problem::Dof_distribution_pt</a>, <a class="el" href="assembly__handler_8h_source.html#l00771">Dof_distribution_pt</a>, <a class="el" href="problem_8h_source.html#l00547">oomph::Problem::Dof_pt</a>, <a class="el" href="assembly__handler_8h_source.html#l00650">oomph::BlockPitchForkLinearSolver::linear_solver_pt()</a>, <a class="el" href="assembly__handler_8h_source.html#l00717">oomph::AugmentedBlockPitchForkLinearSolver::linear_solver_pt()</a>, <a class="el" href="problem_8h_source.html#l01427">oomph::Problem::linear_solver_pt()</a>, <a class="el" href="linear__algebra__distribution_8h_source.html#l00196">oomph::LinearAlgebraDistribution::nrow_local()</a>, <a class="el" href="assembly__handler_8h_source.html#l00761">Problem_pt</a>, and <a class="el" href="problem_8h_source.html#l00658">oomph::Problem::Sparse_assemble_with_arrays_previous_allocation</a>.</p>
 
 </div>
 </div>
@@ -446,9 +446,9 @@ Friends</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1AssemblyHandler.html#a3e369ec692c3d36a4a2a8a64dab7fe2b">oomph::AssemblyHandler</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="assembly__handler_8h_source.html#l00893">893</a> of file <a class="el" href="assembly__handler_8h_source.html">assembly_handler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="assembly__handler_8h_source.html#l00889">889</a> of file <a class="el" href="assembly__handler_8h_source.html">assembly_handler.h</a>.</p>
 
-<p class="reference">References <a class="el" href="assembly__handler_8h_source.html#l00806">Parameter_pt</a>.</p>
+<p class="reference">References <a class="el" href="assembly__handler_8h_source.html#l00802">Parameter_pt</a>.</p>
 
 </div>
 </div>
@@ -479,7 +479,7 @@ Friends</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1AssemblyHandler.html#a22c5f240674e4f6cee12006790c11dae">oomph::AssemblyHandler</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="assembly__handler_8h_source.html#l00889">889</a> of file <a class="el" href="assembly__handler_8h_source.html">assembly_handler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="assembly__handler_8h_source.html#l00885">885</a> of file <a class="el" href="assembly__handler_8h_source.html">assembly_handler.h</a>.</p>
 
 </div>
 </div>
@@ -521,11 +521,11 @@ Friends</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1AssemblyHandler.html#a94d28e2de2559cde803d1ba2195b5290">oomph::AssemblyHandler</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="assembly__handler_8cc_source.html#l02831">2831</a> of file <a class="el" href="assembly__handler_8cc_source.html">assembly_handler.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="assembly__handler_8cc_source.html#l02827">2827</a> of file <a class="el" href="assembly__handler_8cc_source.html">assembly_handler.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="assembly__handler_8h_source.html#l00755">Block_augmented_J</a>, <a class="el" href="assembly__handler_8h_source.html#l00755">Block_J</a>, <a class="el" href="assembly__handler_8h_source.html#l00813">Distributed</a>, <a class="el" href="elements_8h_source.html#l00709">oomph::GeneralisedElement::eqn_number()</a>, <a class="el" href="assembly__handler_8h_source.html#l00755">Full_augmented</a>, <a class="el" href="assembly__handler_8h_source.html#l00819">global_eqn_number()</a>, <a class="el" href="assembly__handler_8h_source.html#l00772">Ndof</a>, <a class="el" href="elements_8h_source.html#l00834">oomph::GeneralisedElement::ndof()</a>, and <a class="el" href="assembly__handler_8h_source.html#l00762">Solve_which_system</a>.</p>
+<p class="reference">References <a class="el" href="assembly__handler_8h_source.html#l00751">Block_augmented_J</a>, <a class="el" href="assembly__handler_8h_source.html#l00751">Block_J</a>, <a class="el" href="assembly__handler_8h_source.html#l00809">Distributed</a>, <a class="el" href="elements_8h_source.html#l00705">oomph::GeneralisedElement::eqn_number()</a>, <a class="el" href="assembly__handler_8h_source.html#l00751">Full_augmented</a>, <a class="el" href="assembly__handler_8h_source.html#l00815">global_eqn_number()</a>, <a class="el" href="assembly__handler_8h_source.html#l00768">Ndof</a>, <a class="el" href="elements_8h_source.html#l00830">oomph::GeneralisedElement::ndof()</a>, and <a class="el" href="assembly__handler_8h_source.html#l00758">Solve_which_system</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="assembly__handler_8cc_source.html#l02380">oomph::AugmentedBlockPitchForkLinearSolver::resolve()</a>, and <a class="el" href="assembly__handler_8cc_source.html#l02164">oomph::AugmentedBlockPitchForkLinearSolver::solve()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="assembly__handler_8cc_source.html#l02376">oomph::AugmentedBlockPitchForkLinearSolver::resolve()</a>, and <a class="el" href="assembly__handler_8cc_source.html#l02160">oomph::AugmentedBlockPitchForkLinearSolver::solve()</a>.</p>
 
 </div>
 </div>
@@ -580,7 +580,7 @@ Friends</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1AssemblyHandler.html#aefc0c13a65342806c167c5d53f014803">oomph::AssemblyHandler</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="assembly__handler_8cc_source.html#l03256">3256</a> of file <a class="el" href="assembly__handler_8cc_source.html">assembly_handler.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="assembly__handler_8cc_source.html#l03252">3252</a> of file <a class="el" href="assembly__handler_8cc_source.html">assembly_handler.cc</a>.</p>
 
 </div>
 </div>
@@ -631,9 +631,9 @@ Friends</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1AssemblyHandler.html#a2ee980ccabe0ad82f98e694eecf270bb">oomph::AssemblyHandler</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="assembly__handler_8cc_source.html#l03178">3178</a> of file <a class="el" href="assembly__handler_8cc_source.html">assembly_handler.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="assembly__handler_8cc_source.html#l03174">3174</a> of file <a class="el" href="assembly__handler_8cc_source.html">assembly_handler.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="problem_8h_source.html#l01038">oomph::Problem::actions_before_newton_convergence_check()</a>, <a class="el" href="assembly__handler_8h_source.html#l00755">Block_augmented_J</a>, <a class="el" href="assembly__handler_8h_source.html#l00755">Block_J</a>, <a class="el" href="elements_8h_source.html#l00709">oomph::GeneralisedElement::eqn_number()</a>, <a class="el" href="assembly__handler_8h_source.html#l00755">Full_augmented</a>, <a class="el" href="elements_8h_source.html#l01042">oomph::GeneralisedElement::get_djacobian_dparameter()</a>, <a class="el" href="elements_8h_source.html#l01030">oomph::GeneralisedElement::get_dresiduals_dparameter()</a>, <a class="el" href="double__vector__with__halo_8h_source.html#l00219">oomph::DoubleVectorWithHaloEntries::global_value()</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="elements_8h_source.html#l00834">oomph::GeneralisedElement::ndof()</a>, <a class="el" href="assembly__handler_8h_source.html#l00765">Problem_pt</a>, <a class="el" href="assembly__handler_8h_source.html#l00762">Solve_which_system</a>, and <a class="el" href="assembly__handler_8h_source.html#l00785">Y</a>.</p>
+<p class="reference">References <a class="el" href="problem_8h_source.html#l01034">oomph::Problem::actions_before_newton_convergence_check()</a>, <a class="el" href="assembly__handler_8h_source.html#l00751">Block_augmented_J</a>, <a class="el" href="assembly__handler_8h_source.html#l00751">Block_J</a>, <a class="el" href="elements_8h_source.html#l00705">oomph::GeneralisedElement::eqn_number()</a>, <a class="el" href="assembly__handler_8h_source.html#l00751">Full_augmented</a>, <a class="el" href="elements_8h_source.html#l01038">oomph::GeneralisedElement::get_djacobian_dparameter()</a>, <a class="el" href="elements_8h_source.html#l01026">oomph::GeneralisedElement::get_dresiduals_dparameter()</a>, <a class="el" href="double__vector__with__halo_8h_source.html#l00215">oomph::DoubleVectorWithHaloEntries::global_value()</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="elements_8h_source.html#l00830">oomph::GeneralisedElement::ndof()</a>, <a class="el" href="assembly__handler_8h_source.html#l00761">Problem_pt</a>, <a class="el" href="assembly__handler_8h_source.html#l00758">Solve_which_system</a>, and <a class="el" href="assembly__handler_8h_source.html#l00781">Y</a>.</p>
 
 </div>
 </div>
@@ -667,9 +667,9 @@ Friends</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1AssemblyHandler.html#a6d614b1b3809d0eb7ceb393e3ae9594f">oomph::AssemblyHandler</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="assembly__handler_8cc_source.html#l03294">3294</a> of file <a class="el" href="assembly__handler_8cc_source.html">assembly_handler.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="assembly__handler_8cc_source.html#l03290">3290</a> of file <a class="el" href="assembly__handler_8cc_source.html">assembly_handler.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="assembly__handler_8h_source.html#l00775">Dof_distribution_pt</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, and <a class="el" href="assembly__handler_8h_source.html#l00785">Y</a>.</p>
+<p class="reference">References <a class="el" href="assembly__handler_8h_source.html#l00771">Dof_distribution_pt</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, and <a class="el" href="assembly__handler_8h_source.html#l00781">Y</a>.</p>
 
 </div>
 </div>
@@ -724,9 +724,9 @@ Friends</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1AssemblyHandler.html#a296bef49838d23522bb660c4c5207f03">oomph::AssemblyHandler</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="assembly__handler_8cc_source.html#l03279">3279</a> of file <a class="el" href="assembly__handler_8cc_source.html">assembly_handler.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="assembly__handler_8cc_source.html#l03275">3275</a> of file <a class="el" href="assembly__handler_8cc_source.html">assembly_handler.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="assembly__handler_8h_source.html#l00792">C</a>, <a class="el" href="elements_8h_source.html#l01079">oomph::GeneralisedElement::get_hessian_vector_products()</a>, and <a class="el" href="assembly__handler_8h_source.html#l00785">Y</a>.</p>
+<p class="reference">References <a class="el" href="assembly__handler_8h_source.html#l00788">C</a>, <a class="el" href="elements_8h_source.html#l01075">oomph::GeneralisedElement::get_hessian_vector_products()</a>, and <a class="el" href="assembly__handler_8h_source.html#l00781">Y</a>.</p>
 
 </div>
 </div>
@@ -777,11 +777,11 @@ Friends</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1AssemblyHandler.html#ad43c3d8760be0ba6ebee8d82509458e5">oomph::AssemblyHandler</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="assembly__handler_8cc_source.html#l02995">2995</a> of file <a class="el" href="assembly__handler_8cc_source.html">assembly_handler.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="assembly__handler_8cc_source.html#l02991">2991</a> of file <a class="el" href="assembly__handler_8cc_source.html">assembly_handler.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="problem_8h_source.html#l01141">oomph::Problem::actions_after_change_in_bifurcation_parameter()</a>, <a class="el" href="problem_8h_source.html#l01038">oomph::Problem::actions_before_newton_convergence_check()</a>, <a class="el" href="assembly__handler_8h_source.html#l00768">Assembly_handler_pt</a>, <a class="el" href="assembly__handler_8h_source.html#l00755">Block_augmented_J</a>, <a class="el" href="assembly__handler_8h_source.html#l00755">Block_J</a>, <a class="el" href="assembly__handler_8h_source.html#l00792">C</a>, <a class="el" href="assembly__handler_8h_source.html#l00799">Count</a>, <a class="el" href="assembly__handler_8cc_source.html#l00078">oomph::AssemblyHandler::eqn_number()</a>, <a class="el" href="elements_8h_source.html#l00709">oomph::GeneralisedElement::eqn_number()</a>, <a class="el" href="oomph__utilities_8cc_source.html#l00324">oomph::BlackBoxFDNewtonSolver::FD_step</a>, <a class="el" href="assembly__handler_8h_source.html#l00755">Full_augmented</a>, <a class="el" href="elements_8h_source.html#l00986">oomph::GeneralisedElement::get_jacobian()</a>, <a class="el" href="assembly__handler_8cc_source.html#l02891">get_residuals()</a>, <a class="el" href="problem_8h_source.html#l01655">oomph::Problem::global_dof_pt()</a>, <a class="el" href="double__vector__with__halo_8h_source.html#l00219">oomph::DoubleVectorWithHaloEntries::global_value()</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, <a class="el" href="elements_8h_source.html#l00834">oomph::GeneralisedElement::ndof()</a>, <a class="el" href="assembly__handler_8cc_source.html#l02801">ndof()</a>, <a class="el" href="assembly__handler_8h_source.html#l00806">Parameter_pt</a>, <a class="el" href="assembly__handler_8h_source.html#l00765">Problem_pt</a>, <a class="el" href="assembly__handler_8h_source.html#l00788">Psi</a>, <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>, <a class="el" href="assembly__handler_8h_source.html#l00782">Sigma</a>, and <a class="el" href="assembly__handler_8h_source.html#l00762">Solve_which_system</a>.</p>
+<p class="reference">References <a class="el" href="problem_8h_source.html#l01137">oomph::Problem::actions_after_change_in_bifurcation_parameter()</a>, <a class="el" href="problem_8h_source.html#l01034">oomph::Problem::actions_before_newton_convergence_check()</a>, <a class="el" href="assembly__handler_8h_source.html#l00764">Assembly_handler_pt</a>, <a class="el" href="assembly__handler_8h_source.html#l00751">Block_augmented_J</a>, <a class="el" href="assembly__handler_8h_source.html#l00751">Block_J</a>, <a class="el" href="assembly__handler_8h_source.html#l00788">C</a>, <a class="el" href="assembly__handler_8h_source.html#l00795">Count</a>, <a class="el" href="assembly__handler_8cc_source.html#l00074">oomph::AssemblyHandler::eqn_number()</a>, <a class="el" href="elements_8h_source.html#l00705">oomph::GeneralisedElement::eqn_number()</a>, <a class="el" href="oomph__utilities_8cc_source.html#l00320">oomph::BlackBoxFDNewtonSolver::FD_step</a>, <a class="el" href="assembly__handler_8h_source.html#l00751">Full_augmented</a>, <a class="el" href="elements_8h_source.html#l00982">oomph::GeneralisedElement::get_jacobian()</a>, <a class="el" href="assembly__handler_8cc_source.html#l02887">get_residuals()</a>, <a class="el" href="problem_8h_source.html#l01651">oomph::Problem::global_dof_pt()</a>, <a class="el" href="double__vector__with__halo_8h_source.html#l00215">oomph::DoubleVectorWithHaloEntries::global_value()</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, <a class="el" href="elements_8h_source.html#l00830">oomph::GeneralisedElement::ndof()</a>, <a class="el" href="assembly__handler_8cc_source.html#l02797">ndof()</a>, <a class="el" href="assembly__handler_8h_source.html#l00802">Parameter_pt</a>, <a class="el" href="assembly__handler_8h_source.html#l00761">Problem_pt</a>, <a class="el" href="assembly__handler_8h_source.html#l00784">Psi</a>, <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>, <a class="el" href="assembly__handler_8h_source.html#l00778">Sigma</a>, and <a class="el" href="assembly__handler_8h_source.html#l00758">Solve_which_system</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="assembly__handler_8cc_source.html#l02380">oomph::AugmentedBlockPitchForkLinearSolver::resolve()</a>, and <a class="el" href="assembly__handler_8cc_source.html#l02164">oomph::AugmentedBlockPitchForkLinearSolver::solve()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="assembly__handler_8cc_source.html#l02376">oomph::AugmentedBlockPitchForkLinearSolver::resolve()</a>, and <a class="el" href="assembly__handler_8cc_source.html#l02160">oomph::AugmentedBlockPitchForkLinearSolver::solve()</a>.</p>
 
 </div>
 </div>
@@ -823,11 +823,11 @@ Friends</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1AssemblyHandler.html#a7a6203b0ab90da62b4da2af8a26d08b3">oomph::AssemblyHandler</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="assembly__handler_8cc_source.html#l02891">2891</a> of file <a class="el" href="assembly__handler_8cc_source.html">assembly_handler.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="assembly__handler_8cc_source.html#l02887">2887</a> of file <a class="el" href="assembly__handler_8cc_source.html">assembly_handler.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="assembly__handler_8h_source.html#l00755">Block_augmented_J</a>, <a class="el" href="assembly__handler_8h_source.html#l00755">Block_J</a>, <a class="el" href="assembly__handler_8h_source.html#l00792">C</a>, <a class="el" href="assembly__handler_8h_source.html#l00799">Count</a>, <a class="el" href="elements_8h_source.html#l00709">oomph::GeneralisedElement::eqn_number()</a>, <a class="el" href="assembly__handler_8h_source.html#l00755">Full_augmented</a>, <a class="el" href="elements_8h_source.html#l00986">oomph::GeneralisedElement::get_jacobian()</a>, <a class="el" href="elements_8h_source.html#l00977">oomph::GeneralisedElement::get_residuals()</a>, <a class="el" href="problem_8h_source.html#l01655">oomph::Problem::global_dof_pt()</a>, <a class="el" href="double__vector__with__halo_8h_source.html#l00219">oomph::DoubleVectorWithHaloEntries::global_value()</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="elements_8h_source.html#l00834">oomph::GeneralisedElement::ndof()</a>, <a class="el" href="assembly__handler_8h_source.html#l00809">Nelement</a>, <a class="el" href="assembly__handler_8h_source.html#l00765">Problem_pt</a>, <a class="el" href="assembly__handler_8h_source.html#l00788">Psi</a>, <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>, <a class="el" href="assembly__handler_8h_source.html#l00782">Sigma</a>, <a class="el" href="assembly__handler_8h_source.html#l00762">Solve_which_system</a>, and <a class="el" href="assembly__handler_8h_source.html#l00785">Y</a>.</p>
+<p class="reference">References <a class="el" href="assembly__handler_8h_source.html#l00751">Block_augmented_J</a>, <a class="el" href="assembly__handler_8h_source.html#l00751">Block_J</a>, <a class="el" href="assembly__handler_8h_source.html#l00788">C</a>, <a class="el" href="assembly__handler_8h_source.html#l00795">Count</a>, <a class="el" href="elements_8h_source.html#l00705">oomph::GeneralisedElement::eqn_number()</a>, <a class="el" href="assembly__handler_8h_source.html#l00751">Full_augmented</a>, <a class="el" href="elements_8h_source.html#l00982">oomph::GeneralisedElement::get_jacobian()</a>, <a class="el" href="elements_8h_source.html#l00973">oomph::GeneralisedElement::get_residuals()</a>, <a class="el" href="problem_8h_source.html#l01651">oomph::Problem::global_dof_pt()</a>, <a class="el" href="double__vector__with__halo_8h_source.html#l00215">oomph::DoubleVectorWithHaloEntries::global_value()</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="elements_8h_source.html#l00830">oomph::GeneralisedElement::ndof()</a>, <a class="el" href="assembly__handler_8h_source.html#l00805">Nelement</a>, <a class="el" href="assembly__handler_8h_source.html#l00761">Problem_pt</a>, <a class="el" href="assembly__handler_8h_source.html#l00784">Psi</a>, <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>, <a class="el" href="assembly__handler_8h_source.html#l00778">Sigma</a>, <a class="el" href="assembly__handler_8h_source.html#l00758">Solve_which_system</a>, and <a class="el" href="assembly__handler_8h_source.html#l00781">Y</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="assembly__handler_8cc_source.html#l02995">get_jacobian()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="assembly__handler_8cc_source.html#l02991">get_jacobian()</a>.</p>
 
 </div>
 </div>
@@ -857,11 +857,11 @@ Friends</h2></td></tr>
 
 <p>Function that is used to return map the global equations using the simplistic numbering scheme into the actual distributed scheme. </p>
 
-<p class="definition">Definition at line <a class="el" href="assembly__handler_8h_source.html#l00819">819</a> of file <a class="el" href="assembly__handler_8h_source.html">assembly_handler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="assembly__handler_8h_source.html#l00815">815</a> of file <a class="el" href="assembly__handler_8h_source.html">assembly_handler.h</a>.</p>
 
-<p class="reference">References <a class="el" href="assembly__handler_8h_source.html#l00813">Distributed</a>, <a class="el" href="assembly__handler_8h_source.html#l00803">Global_eqn_number</a>, and <a class="el" href="cfortran_8h_source.html#l00607">i</a>.</p>
+<p class="reference">References <a class="el" href="assembly__handler_8h_source.html#l00809">Distributed</a>, <a class="el" href="assembly__handler_8h_source.html#l00799">Global_eqn_number</a>, and <a class="el" href="cfortran_8h_source.html#l00603">i</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="assembly__handler_8cc_source.html#l02831">eqn_number()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="assembly__handler_8cc_source.html#l02827">eqn_number()</a>.</p>
 
 </div>
 </div>
@@ -893,11 +893,11 @@ Friends</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1AssemblyHandler.html#a09213be8f4aa009e0366460a7ed78e68">oomph::AssemblyHandler</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="assembly__handler_8cc_source.html#l02801">2801</a> of file <a class="el" href="assembly__handler_8cc_source.html">assembly_handler.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="assembly__handler_8cc_source.html#l02797">2797</a> of file <a class="el" href="assembly__handler_8cc_source.html">assembly_handler.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="assembly__handler_8h_source.html#l00755">Block_augmented_J</a>, <a class="el" href="assembly__handler_8h_source.html#l00755">Block_J</a>, <a class="el" href="assembly__handler_8h_source.html#l00755">Full_augmented</a>, <a class="el" href="elements_8h_source.html#l00834">oomph::GeneralisedElement::ndof()</a>, and <a class="el" href="assembly__handler_8h_source.html#l00762">Solve_which_system</a>.</p>
+<p class="reference">References <a class="el" href="assembly__handler_8h_source.html#l00751">Block_augmented_J</a>, <a class="el" href="assembly__handler_8h_source.html#l00751">Block_J</a>, <a class="el" href="assembly__handler_8h_source.html#l00751">Full_augmented</a>, <a class="el" href="elements_8h_source.html#l00830">oomph::GeneralisedElement::ndof()</a>, and <a class="el" href="assembly__handler_8h_source.html#l00758">Solve_which_system</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="assembly__handler_8cc_source.html#l02995">get_jacobian()</a>, <a class="el" href="assembly__handler_8cc_source.html#l02380">oomph::AugmentedBlockPitchForkLinearSolver::resolve()</a>, and <a class="el" href="assembly__handler_8cc_source.html#l02164">oomph::AugmentedBlockPitchForkLinearSolver::solve()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="assembly__handler_8cc_source.html#l02991">get_jacobian()</a>, <a class="el" href="assembly__handler_8cc_source.html#l02376">oomph::AugmentedBlockPitchForkLinearSolver::resolve()</a>, and <a class="el" href="assembly__handler_8cc_source.html#l02160">oomph::AugmentedBlockPitchForkLinearSolver::solve()</a>.</p>
 
 </div>
 </div>
@@ -919,11 +919,11 @@ Friends</h2></td></tr>
 <p>Set to solve the augmented block system. </p>
 <p>Set to solve the augmented-by-one block system. </p>
 
-<p class="definition">Definition at line <a class="el" href="assembly__handler_8cc_source.html#l03338">3338</a> of file <a class="el" href="assembly__handler_8cc_source.html">assembly_handler.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="assembly__handler_8cc_source.html#l03334">3334</a> of file <a class="el" href="assembly__handler_8cc_source.html">assembly_handler.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="assembly__handler_8h_source.html#l00755">Block_augmented_J</a>, <a class="el" href="assembly__handler_8h_source.html#l00755">Block_J</a>, <a class="el" href="problem_8h_source.html#l01228">oomph::Problem::communicator_pt()</a>, <a class="el" href="problem_8h_source.html#l00457">oomph::Problem::Dof_distribution_pt</a>, <a class="el" href="problem_8h_source.html#l00551">oomph::Problem::Dof_pt</a>, <a class="el" href="assembly__handler_8h_source.html#l00772">Ndof</a>, <a class="el" href="assembly__handler_8h_source.html#l00806">Parameter_pt</a>, <a class="el" href="assembly__handler_8h_source.html#l00765">Problem_pt</a>, <a class="el" href="assembly__handler_8h_source.html#l00762">Solve_which_system</a>, and <a class="el" href="problem_8h_source.html#l00662">oomph::Problem::Sparse_assemble_with_arrays_previous_allocation</a>.</p>
+<p class="reference">References <a class="el" href="assembly__handler_8h_source.html#l00751">Block_augmented_J</a>, <a class="el" href="assembly__handler_8h_source.html#l00751">Block_J</a>, <a class="el" href="problem_8h_source.html#l01224">oomph::Problem::communicator_pt()</a>, <a class="el" href="problem_8h_source.html#l00453">oomph::Problem::Dof_distribution_pt</a>, <a class="el" href="problem_8h_source.html#l00547">oomph::Problem::Dof_pt</a>, <a class="el" href="assembly__handler_8h_source.html#l00768">Ndof</a>, <a class="el" href="assembly__handler_8h_source.html#l00802">Parameter_pt</a>, <a class="el" href="assembly__handler_8h_source.html#l00761">Problem_pt</a>, <a class="el" href="assembly__handler_8h_source.html#l00758">Solve_which_system</a>, and <a class="el" href="problem_8h_source.html#l00658">oomph::Problem::Sparse_assemble_with_arrays_previous_allocation</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="assembly__handler_8cc_source.html#l02380">oomph::AugmentedBlockPitchForkLinearSolver::resolve()</a>, and <a class="el" href="assembly__handler_8cc_source.html#l02164">oomph::AugmentedBlockPitchForkLinearSolver::solve()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="assembly__handler_8cc_source.html#l02376">oomph::AugmentedBlockPitchForkLinearSolver::resolve()</a>, and <a class="el" href="assembly__handler_8cc_source.html#l02160">oomph::AugmentedBlockPitchForkLinearSolver::solve()</a>.</p>
 
 </div>
 </div>
@@ -945,11 +945,11 @@ Friends</h2></td></tr>
 <p>Set to solve the block system. </p>
 <p>Set to solve the block system. The boolean flag is used to specify whether the block decomposition should use exactly the same jacobian as the original system. </p>
 
-<p class="definition">Definition at line <a class="el" href="assembly__handler_8cc_source.html#l03373">3373</a> of file <a class="el" href="assembly__handler_8cc_source.html">assembly_handler.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="assembly__handler_8cc_source.html#l03369">3369</a> of file <a class="el" href="assembly__handler_8cc_source.html">assembly_handler.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="assembly__handler_8h_source.html#l00755">Block_J</a>, <a class="el" href="problem_8h_source.html#l00457">oomph::Problem::Dof_distribution_pt</a>, <a class="el" href="assembly__handler_8h_source.html#l00775">Dof_distribution_pt</a>, <a class="el" href="problem_8h_source.html#l00551">oomph::Problem::Dof_pt</a>, <a class="el" href="linear__algebra__distribution_8h_source.html#l00200">oomph::LinearAlgebraDistribution::nrow_local()</a>, <a class="el" href="assembly__handler_8h_source.html#l00765">Problem_pt</a>, <a class="el" href="assembly__handler_8h_source.html#l00762">Solve_which_system</a>, and <a class="el" href="problem_8h_source.html#l00662">oomph::Problem::Sparse_assemble_with_arrays_previous_allocation</a>.</p>
+<p class="reference">References <a class="el" href="assembly__handler_8h_source.html#l00751">Block_J</a>, <a class="el" href="problem_8h_source.html#l00453">oomph::Problem::Dof_distribution_pt</a>, <a class="el" href="assembly__handler_8h_source.html#l00771">Dof_distribution_pt</a>, <a class="el" href="problem_8h_source.html#l00547">oomph::Problem::Dof_pt</a>, <a class="el" href="linear__algebra__distribution_8h_source.html#l00196">oomph::LinearAlgebraDistribution::nrow_local()</a>, <a class="el" href="assembly__handler_8h_source.html#l00761">Problem_pt</a>, <a class="el" href="assembly__handler_8h_source.html#l00758">Solve_which_system</a>, and <a class="el" href="problem_8h_source.html#l00658">oomph::Problem::Sparse_assemble_with_arrays_previous_allocation</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="assembly__handler_8cc_source.html#l01917">oomph::BlockPitchForkLinearSolver::resolve()</a>, and <a class="el" href="assembly__handler_8cc_source.html#l01644">oomph::BlockPitchForkLinearSolver::solve()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="assembly__handler_8cc_source.html#l01913">oomph::BlockPitchForkLinearSolver::resolve()</a>, and <a class="el" href="assembly__handler_8cc_source.html#l01640">oomph::BlockPitchForkLinearSolver::solve()</a>.</p>
 
 </div>
 </div>
@@ -970,11 +970,11 @@ Friends</h2></td></tr>
 
 <p>Solve non-block system. </p>
 
-<p class="definition">Definition at line <a class="el" href="assembly__handler_8cc_source.html#l03396">3396</a> of file <a class="el" href="assembly__handler_8cc_source.html">assembly_handler.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="assembly__handler_8cc_source.html#l03392">3392</a> of file <a class="el" href="assembly__handler_8cc_source.html">assembly_handler.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="assembly__handler_8h_source.html#l00778">Augmented_dof_distribution_pt</a>, <a class="el" href="assembly__handler_8h_source.html#l00755">Block_J</a>, <a class="el" href="problem_8h_source.html#l01228">oomph::Problem::communicator_pt()</a>, <a class="el" href="assembly__handler_8h_source.html#l00813">Distributed</a>, <a class="el" href="problem_8h_source.html#l00457">oomph::Problem::Dof_distribution_pt</a>, <a class="el" href="assembly__handler_8h_source.html#l00775">Dof_distribution_pt</a>, <a class="el" href="problem_8h_source.html#l00551">oomph::Problem::Dof_pt</a>, <a class="el" href="assembly__handler_8h_source.html#l00755">Full_augmented</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, <a class="el" href="linear__algebra__distribution_8h_source.html#l00200">oomph::LinearAlgebraDistribution::nrow_local()</a>, <a class="el" href="assembly__handler_8h_source.html#l00806">Parameter_pt</a>, <a class="el" href="assembly__handler_8h_source.html#l00765">Problem_pt</a>, <a class="el" href="assembly__handler_8h_source.html#l00782">Sigma</a>, <a class="el" href="assembly__handler_8h_source.html#l00762">Solve_which_system</a>, <a class="el" href="problem_8h_source.html#l00662">oomph::Problem::Sparse_assemble_with_arrays_previous_allocation</a>, and <a class="el" href="assembly__handler_8h_source.html#l00785">Y</a>.</p>
+<p class="reference">References <a class="el" href="assembly__handler_8h_source.html#l00774">Augmented_dof_distribution_pt</a>, <a class="el" href="assembly__handler_8h_source.html#l00751">Block_J</a>, <a class="el" href="problem_8h_source.html#l01224">oomph::Problem::communicator_pt()</a>, <a class="el" href="assembly__handler_8h_source.html#l00809">Distributed</a>, <a class="el" href="problem_8h_source.html#l00453">oomph::Problem::Dof_distribution_pt</a>, <a class="el" href="assembly__handler_8h_source.html#l00771">Dof_distribution_pt</a>, <a class="el" href="problem_8h_source.html#l00547">oomph::Problem::Dof_pt</a>, <a class="el" href="assembly__handler_8h_source.html#l00751">Full_augmented</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, <a class="el" href="linear__algebra__distribution_8h_source.html#l00196">oomph::LinearAlgebraDistribution::nrow_local()</a>, <a class="el" href="assembly__handler_8h_source.html#l00802">Parameter_pt</a>, <a class="el" href="assembly__handler_8h_source.html#l00761">Problem_pt</a>, <a class="el" href="assembly__handler_8h_source.html#l00778">Sigma</a>, <a class="el" href="assembly__handler_8h_source.html#l00758">Solve_which_system</a>, <a class="el" href="problem_8h_source.html#l00658">oomph::Problem::Sparse_assemble_with_arrays_previous_allocation</a>, and <a class="el" href="assembly__handler_8h_source.html#l00781">Y</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="assembly__handler_8cc_source.html#l01917">oomph::BlockPitchForkLinearSolver::resolve()</a>, <a class="el" href="assembly__handler_8cc_source.html#l02380">oomph::AugmentedBlockPitchForkLinearSolver::resolve()</a>, <a class="el" href="assembly__handler_8cc_source.html#l01644">oomph::BlockPitchForkLinearSolver::solve()</a>, and <a class="el" href="assembly__handler_8cc_source.html#l02164">oomph::AugmentedBlockPitchForkLinearSolver::solve()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="assembly__handler_8cc_source.html#l01913">oomph::BlockPitchForkLinearSolver::resolve()</a>, <a class="el" href="assembly__handler_8cc_source.html#l02376">oomph::AugmentedBlockPitchForkLinearSolver::resolve()</a>, <a class="el" href="assembly__handler_8cc_source.html#l01640">oomph::BlockPitchForkLinearSolver::solve()</a>, and <a class="el" href="assembly__handler_8cc_source.html#l02160">oomph::AugmentedBlockPitchForkLinearSolver::solve()</a>.</p>
 
 </div>
 </div>
@@ -1006,9 +1006,9 @@ Friends</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1AssemblyHandler.html#a0ccef21253d997dd1a78ed26c2b99fce">oomph::AssemblyHandler</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="assembly__handler_8cc_source.html#l03313">3313</a> of file <a class="el" href="assembly__handler_8cc_source.html">assembly_handler.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="assembly__handler_8cc_source.html#l03309">3309</a> of file <a class="el" href="assembly__handler_8cc_source.html">assembly_handler.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="problem_8h_source.html#l01228">oomph::Problem::communicator_pt()</a>, <a class="el" href="assembly__handler_8h_source.html#l00813">Distributed</a>, <a class="el" href="assembly__handler_8h_source.html#l00806">Parameter_pt</a>, <a class="el" href="assembly__handler_8h_source.html#l00765">Problem_pt</a>, <a class="el" href="assembly__handler_8h_source.html#l00782">Sigma</a>, <a class="el" href="double__vector__with__halo_8cc_source.html#l00253">oomph::DoubleVectorWithHaloEntries::synchronise()</a>, and <a class="el" href="assembly__handler_8h_source.html#l00785">Y</a>.</p>
+<p class="reference">References <a class="el" href="problem_8h_source.html#l01224">oomph::Problem::communicator_pt()</a>, <a class="el" href="assembly__handler_8h_source.html#l00809">Distributed</a>, <a class="el" href="assembly__handler_8h_source.html#l00802">Parameter_pt</a>, <a class="el" href="assembly__handler_8h_source.html#l00761">Problem_pt</a>, <a class="el" href="assembly__handler_8h_source.html#l00778">Sigma</a>, <a class="el" href="double__vector__with__halo_8cc_source.html#l00249">oomph::DoubleVectorWithHaloEntries::synchronise()</a>, and <a class="el" href="assembly__handler_8h_source.html#l00781">Y</a>.</p>
 
 </div>
 </div>
@@ -1033,7 +1033,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="assembly__handler_8h_source.html#l00751">751</a> of file <a class="el" href="assembly__handler_8h_source.html">assembly_handler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="assembly__handler_8h_source.html#l00747">747</a> of file <a class="el" href="assembly__handler_8h_source.html">assembly_handler.h</a>.</p>
 
 </div>
 </div>
@@ -1057,7 +1057,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="assembly__handler_8h_source.html#l00750">750</a> of file <a class="el" href="assembly__handler_8h_source.html">assembly_handler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="assembly__handler_8h_source.html#l00746">746</a> of file <a class="el" href="assembly__handler_8h_source.html">assembly_handler.h</a>.</p>
 
 </div>
 </div>
@@ -1084,9 +1084,9 @@ Friends</h2></td></tr>
 
 <p>Pointer to the underlying (original) assembly handler. </p>
 
-<p class="definition">Definition at line <a class="el" href="assembly__handler_8h_source.html#l00768">768</a> of file <a class="el" href="assembly__handler_8h_source.html">assembly_handler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="assembly__handler_8h_source.html#l00764">764</a> of file <a class="el" href="assembly__handler_8h_source.html">assembly_handler.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="assembly__handler_8cc_source.html#l02995">get_jacobian()</a>, and <a class="el" href="assembly__handler_8cc_source.html#l02539">PitchForkHandler()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="assembly__handler_8cc_source.html#l02991">get_jacobian()</a>, and <a class="el" href="assembly__handler_8cc_source.html#l02535">PitchForkHandler()</a>.</p>
 
 </div>
 </div>
@@ -1112,9 +1112,9 @@ Friends</h2></td></tr>
 
 <p>The augmented distribution. </p>
 
-<p class="definition">Definition at line <a class="el" href="assembly__handler_8h_source.html#l00778">778</a> of file <a class="el" href="assembly__handler_8h_source.html">assembly_handler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="assembly__handler_8h_source.html#l00774">774</a> of file <a class="el" href="assembly__handler_8h_source.html">assembly_handler.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="assembly__handler_8cc_source.html#l02539">PitchForkHandler()</a>, <a class="el" href="assembly__handler_8cc_source.html#l01917">oomph::BlockPitchForkLinearSolver::resolve()</a>, <a class="el" href="assembly__handler_8cc_source.html#l01644">oomph::BlockPitchForkLinearSolver::solve()</a>, and <a class="el" href="assembly__handler_8cc_source.html#l03396">solve_full_system()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="assembly__handler_8cc_source.html#l02535">PitchForkHandler()</a>, <a class="el" href="assembly__handler_8cc_source.html#l01913">oomph::BlockPitchForkLinearSolver::resolve()</a>, <a class="el" href="assembly__handler_8cc_source.html#l01640">oomph::BlockPitchForkLinearSolver::solve()</a>, and <a class="el" href="assembly__handler_8cc_source.html#l03392">solve_full_system()</a>.</p>
 
 </div>
 </div>
@@ -1140,9 +1140,9 @@ Friends</h2></td></tr>
 
 <p>A constant vector used to ensure that the null vector is not trivial. </p>
 
-<p class="definition">Definition at line <a class="el" href="assembly__handler_8h_source.html#l00792">792</a> of file <a class="el" href="assembly__handler_8h_source.html">assembly_handler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="assembly__handler_8h_source.html#l00788">788</a> of file <a class="el" href="assembly__handler_8h_source.html">assembly_handler.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="assembly__handler_8cc_source.html#l03279">get_hessian_vector_products()</a>, <a class="el" href="assembly__handler_8cc_source.html#l02995">get_jacobian()</a>, <a class="el" href="assembly__handler_8cc_source.html#l02891">get_residuals()</a>, and <a class="el" href="assembly__handler_8cc_source.html#l02539">PitchForkHandler()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="assembly__handler_8cc_source.html#l03275">get_hessian_vector_products()</a>, <a class="el" href="assembly__handler_8cc_source.html#l02991">get_jacobian()</a>, <a class="el" href="assembly__handler_8cc_source.html#l02887">get_residuals()</a>, and <a class="el" href="assembly__handler_8cc_source.html#l02535">PitchForkHandler()</a>.</p>
 
 </div>
 </div>
@@ -1168,9 +1168,9 @@ Friends</h2></td></tr>
 
 <p>A vector that is used to determine how many elements contribute to a particular equation. It is used to ensure that the global system is correctly formulated. This should really be an integer, but its double so that the distribution can be used. </p>
 
-<p class="definition">Definition at line <a class="el" href="assembly__handler_8h_source.html#l00799">799</a> of file <a class="el" href="assembly__handler_8h_source.html">assembly_handler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="assembly__handler_8h_source.html#l00795">795</a> of file <a class="el" href="assembly__handler_8h_source.html">assembly_handler.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="assembly__handler_8cc_source.html#l02995">get_jacobian()</a>, <a class="el" href="assembly__handler_8cc_source.html#l02891">get_residuals()</a>, and <a class="el" href="assembly__handler_8cc_source.html#l02539">PitchForkHandler()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="assembly__handler_8cc_source.html#l02991">get_jacobian()</a>, <a class="el" href="assembly__handler_8cc_source.html#l02887">get_residuals()</a>, and <a class="el" href="assembly__handler_8cc_source.html#l02535">PitchForkHandler()</a>.</p>
 
 </div>
 </div>
@@ -1196,9 +1196,9 @@ Friends</h2></td></tr>
 
 <p>Boolean to indicate whether the problem is distributed. </p>
 
-<p class="definition">Definition at line <a class="el" href="assembly__handler_8h_source.html#l00813">813</a> of file <a class="el" href="assembly__handler_8h_source.html">assembly_handler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="assembly__handler_8h_source.html#l00809">809</a> of file <a class="el" href="assembly__handler_8h_source.html">assembly_handler.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="assembly__handler_8cc_source.html#l02831">eqn_number()</a>, <a class="el" href="assembly__handler_8h_source.html#l00819">global_eqn_number()</a>, <a class="el" href="assembly__handler_8cc_source.html#l02539">PitchForkHandler()</a>, <a class="el" href="assembly__handler_8cc_source.html#l03396">solve_full_system()</a>, and <a class="el" href="assembly__handler_8cc_source.html#l03313">synchronise()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="assembly__handler_8cc_source.html#l02827">eqn_number()</a>, <a class="el" href="assembly__handler_8h_source.html#l00815">global_eqn_number()</a>, <a class="el" href="assembly__handler_8cc_source.html#l02535">PitchForkHandler()</a>, <a class="el" href="assembly__handler_8cc_source.html#l03392">solve_full_system()</a>, and <a class="el" href="assembly__handler_8cc_source.html#l03309">synchronise()</a>.</p>
 
 </div>
 </div>
@@ -1224,9 +1224,9 @@ Friends</h2></td></tr>
 
 <p>Store the original dof distribution. </p>
 
-<p class="definition">Definition at line <a class="el" href="assembly__handler_8h_source.html#l00775">775</a> of file <a class="el" href="assembly__handler_8h_source.html">assembly_handler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="assembly__handler_8h_source.html#l00771">771</a> of file <a class="el" href="assembly__handler_8h_source.html">assembly_handler.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="assembly__handler_8cc_source.html#l03294">get_eigenfunction()</a>, <a class="el" href="assembly__handler_8cc_source.html#l02539">PitchForkHandler()</a>, <a class="el" href="assembly__handler_8cc_source.html#l01917">oomph::BlockPitchForkLinearSolver::resolve()</a>, <a class="el" href="assembly__handler_8cc_source.html#l01644">oomph::BlockPitchForkLinearSolver::solve()</a>, <a class="el" href="assembly__handler_8cc_source.html#l03373">solve_block_system()</a>, <a class="el" href="assembly__handler_8cc_source.html#l03396">solve_full_system()</a>, and <a class="el" href="assembly__handler_8cc_source.html#l02753">~PitchForkHandler()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="assembly__handler_8cc_source.html#l03290">get_eigenfunction()</a>, <a class="el" href="assembly__handler_8cc_source.html#l02535">PitchForkHandler()</a>, <a class="el" href="assembly__handler_8cc_source.html#l01913">oomph::BlockPitchForkLinearSolver::resolve()</a>, <a class="el" href="assembly__handler_8cc_source.html#l01640">oomph::BlockPitchForkLinearSolver::solve()</a>, <a class="el" href="assembly__handler_8cc_source.html#l03369">solve_block_system()</a>, <a class="el" href="assembly__handler_8cc_source.html#l03392">solve_full_system()</a>, and <a class="el" href="assembly__handler_8cc_source.html#l02749">~PitchForkHandler()</a>.</p>
 
 </div>
 </div>
@@ -1252,9 +1252,9 @@ Friends</h2></td></tr>
 
 <p>A vector that is used to map the global equations to their actual location in a distributed problem. </p>
 
-<p class="definition">Definition at line <a class="el" href="assembly__handler_8h_source.html#l00803">803</a> of file <a class="el" href="assembly__handler_8h_source.html">assembly_handler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="assembly__handler_8h_source.html#l00799">799</a> of file <a class="el" href="assembly__handler_8h_source.html">assembly_handler.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="assembly__handler_8h_source.html#l00819">global_eqn_number()</a>, and <a class="el" href="assembly__handler_8cc_source.html#l02539">PitchForkHandler()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="assembly__handler_8h_source.html#l00815">global_eqn_number()</a>, and <a class="el" href="assembly__handler_8cc_source.html#l02535">PitchForkHandler()</a>.</p>
 
 </div>
 </div>
@@ -1280,9 +1280,9 @@ Friends</h2></td></tr>
 
 <p>Store the number of degrees of freedom in the non-augmented problem. </p>
 
-<p class="definition">Definition at line <a class="el" href="assembly__handler_8h_source.html#l00772">772</a> of file <a class="el" href="assembly__handler_8h_source.html">assembly_handler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="assembly__handler_8h_source.html#l00768">768</a> of file <a class="el" href="assembly__handler_8h_source.html">assembly_handler.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="assembly__handler_8cc_source.html#l02831">eqn_number()</a>, <a class="el" href="assembly__handler_8cc_source.html#l02539">PitchForkHandler()</a>, and <a class="el" href="assembly__handler_8cc_source.html#l03338">solve_augmented_block_system()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="assembly__handler_8cc_source.html#l02827">eqn_number()</a>, <a class="el" href="assembly__handler_8cc_source.html#l02535">PitchForkHandler()</a>, and <a class="el" href="assembly__handler_8cc_source.html#l03334">solve_augmented_block_system()</a>.</p>
 
 </div>
 </div>
@@ -1306,9 +1306,9 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="assembly__handler_8h_source.html#l00809">809</a> of file <a class="el" href="assembly__handler_8h_source.html">assembly_handler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="assembly__handler_8h_source.html#l00805">805</a> of file <a class="el" href="assembly__handler_8h_source.html">assembly_handler.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="assembly__handler_8cc_source.html#l02891">get_residuals()</a>, and <a class="el" href="assembly__handler_8cc_source.html#l02539">PitchForkHandler()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="assembly__handler_8cc_source.html#l02887">get_residuals()</a>, and <a class="el" href="assembly__handler_8cc_source.html#l02535">PitchForkHandler()</a>.</p>
 
 </div>
 </div>
@@ -1334,9 +1334,9 @@ Friends</h2></td></tr>
 
 <p>Storage for the pointer to the parameter. </p>
 
-<p class="definition">Definition at line <a class="el" href="assembly__handler_8h_source.html#l00806">806</a> of file <a class="el" href="assembly__handler_8h_source.html">assembly_handler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="assembly__handler_8h_source.html#l00802">802</a> of file <a class="el" href="assembly__handler_8h_source.html">assembly_handler.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="assembly__handler_8h_source.html#l00893">bifurcation_parameter_pt()</a>, <a class="el" href="assembly__handler_8cc_source.html#l02995">get_jacobian()</a>, <a class="el" href="assembly__handler_8cc_source.html#l01644">oomph::BlockPitchForkLinearSolver::solve()</a>, <a class="el" href="assembly__handler_8cc_source.html#l03338">solve_augmented_block_system()</a>, <a class="el" href="assembly__handler_8cc_source.html#l03396">solve_full_system()</a>, and <a class="el" href="assembly__handler_8cc_source.html#l03313">synchronise()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="assembly__handler_8h_source.html#l00889">bifurcation_parameter_pt()</a>, <a class="el" href="assembly__handler_8cc_source.html#l02991">get_jacobian()</a>, <a class="el" href="assembly__handler_8cc_source.html#l01640">oomph::BlockPitchForkLinearSolver::solve()</a>, <a class="el" href="assembly__handler_8cc_source.html#l03334">solve_augmented_block_system()</a>, <a class="el" href="assembly__handler_8cc_source.html#l03392">solve_full_system()</a>, and <a class="el" href="assembly__handler_8cc_source.html#l03309">synchronise()</a>.</p>
 
 </div>
 </div>
@@ -1362,9 +1362,9 @@ Friends</h2></td></tr>
 
 <p>Pointer to the problem. </p>
 
-<p class="definition">Definition at line <a class="el" href="assembly__handler_8h_source.html#l00765">765</a> of file <a class="el" href="assembly__handler_8h_source.html">assembly_handler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="assembly__handler_8h_source.html#l00761">761</a> of file <a class="el" href="assembly__handler_8h_source.html">assembly_handler.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="assembly__handler_8cc_source.html#l03178">get_dresiduals_dparameter()</a>, <a class="el" href="assembly__handler_8cc_source.html#l02995">get_jacobian()</a>, <a class="el" href="assembly__handler_8cc_source.html#l02891">get_residuals()</a>, <a class="el" href="assembly__handler_8cc_source.html#l02539">PitchForkHandler()</a>, <a class="el" href="assembly__handler_8cc_source.html#l03338">solve_augmented_block_system()</a>, <a class="el" href="assembly__handler_8cc_source.html#l03373">solve_block_system()</a>, <a class="el" href="assembly__handler_8cc_source.html#l03396">solve_full_system()</a>, <a class="el" href="assembly__handler_8cc_source.html#l03313">synchronise()</a>, and <a class="el" href="assembly__handler_8cc_source.html#l02753">~PitchForkHandler()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="assembly__handler_8cc_source.html#l03174">get_dresiduals_dparameter()</a>, <a class="el" href="assembly__handler_8cc_source.html#l02991">get_jacobian()</a>, <a class="el" href="assembly__handler_8cc_source.html#l02887">get_residuals()</a>, <a class="el" href="assembly__handler_8cc_source.html#l02535">PitchForkHandler()</a>, <a class="el" href="assembly__handler_8cc_source.html#l03334">solve_augmented_block_system()</a>, <a class="el" href="assembly__handler_8cc_source.html#l03369">solve_block_system()</a>, <a class="el" href="assembly__handler_8cc_source.html#l03392">solve_full_system()</a>, <a class="el" href="assembly__handler_8cc_source.html#l03309">synchronise()</a>, and <a class="el" href="assembly__handler_8cc_source.html#l02749">~PitchForkHandler()</a>.</p>
 
 </div>
 </div>
@@ -1390,9 +1390,9 @@ Friends</h2></td></tr>
 
 <p>A constant vector that is specifies the symmetry being broken. </p>
 
-<p class="definition">Definition at line <a class="el" href="assembly__handler_8h_source.html#l00788">788</a> of file <a class="el" href="assembly__handler_8h_source.html">assembly_handler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="assembly__handler_8h_source.html#l00784">784</a> of file <a class="el" href="assembly__handler_8h_source.html">assembly_handler.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="assembly__handler_8cc_source.html#l02995">get_jacobian()</a>, <a class="el" href="assembly__handler_8cc_source.html#l02891">get_residuals()</a>, <a class="el" href="assembly__handler_8cc_source.html#l02539">PitchForkHandler()</a>, <a class="el" href="assembly__handler_8cc_source.html#l01917">oomph::BlockPitchForkLinearSolver::resolve()</a>, <a class="el" href="assembly__handler_8cc_source.html#l01644">oomph::BlockPitchForkLinearSolver::solve()</a>, and <a class="el" href="assembly__handler_8cc_source.html#l02164">oomph::AugmentedBlockPitchForkLinearSolver::solve()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="assembly__handler_8cc_source.html#l02991">get_jacobian()</a>, <a class="el" href="assembly__handler_8cc_source.html#l02887">get_residuals()</a>, <a class="el" href="assembly__handler_8cc_source.html#l02535">PitchForkHandler()</a>, <a class="el" href="assembly__handler_8cc_source.html#l01913">oomph::BlockPitchForkLinearSolver::resolve()</a>, <a class="el" href="assembly__handler_8cc_source.html#l01640">oomph::BlockPitchForkLinearSolver::solve()</a>, and <a class="el" href="assembly__handler_8cc_source.html#l02160">oomph::AugmentedBlockPitchForkLinearSolver::solve()</a>.</p>
 
 </div>
 </div>
@@ -1419,9 +1419,9 @@ Friends</h2></td></tr>
 <p>A slack variable used to specify the amount of antisymmetry in the solution. <br  />
  </p>
 
-<p class="definition">Definition at line <a class="el" href="assembly__handler_8h_source.html#l00782">782</a> of file <a class="el" href="assembly__handler_8h_source.html">assembly_handler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="assembly__handler_8h_source.html#l00778">778</a> of file <a class="el" href="assembly__handler_8h_source.html">assembly_handler.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="assembly__handler_8cc_source.html#l02995">get_jacobian()</a>, <a class="el" href="assembly__handler_8cc_source.html#l02891">get_residuals()</a>, <a class="el" href="assembly__handler_8cc_source.html#l02539">PitchForkHandler()</a>, <a class="el" href="assembly__handler_8cc_source.html#l03396">solve_full_system()</a>, and <a class="el" href="assembly__handler_8cc_source.html#l03313">synchronise()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="assembly__handler_8cc_source.html#l02991">get_jacobian()</a>, <a class="el" href="assembly__handler_8cc_source.html#l02887">get_residuals()</a>, <a class="el" href="assembly__handler_8cc_source.html#l02535">PitchForkHandler()</a>, <a class="el" href="assembly__handler_8cc_source.html#l03392">solve_full_system()</a>, and <a class="el" href="assembly__handler_8cc_source.html#l03309">synchronise()</a>.</p>
 
 </div>
 </div>
@@ -1447,9 +1447,9 @@ Friends</h2></td></tr>
 
 <p>Integer flag to indicate which system should be assembled. There are three possibilities. The full augmented system (0), the non-augmented jacobian system (1), a system in which the jacobian is augmented by 1 row and column to ensure that it is non-singular (2). See the enum above. </p>
 
-<p class="definition">Definition at line <a class="el" href="assembly__handler_8h_source.html#l00762">762</a> of file <a class="el" href="assembly__handler_8h_source.html">assembly_handler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="assembly__handler_8h_source.html#l00758">758</a> of file <a class="el" href="assembly__handler_8h_source.html">assembly_handler.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="assembly__handler_8cc_source.html#l02831">eqn_number()</a>, <a class="el" href="assembly__handler_8cc_source.html#l03178">get_dresiduals_dparameter()</a>, <a class="el" href="assembly__handler_8cc_source.html#l02995">get_jacobian()</a>, <a class="el" href="assembly__handler_8cc_source.html#l02891">get_residuals()</a>, <a class="el" href="assembly__handler_8cc_source.html#l02801">ndof()</a>, <a class="el" href="assembly__handler_8cc_source.html#l03338">solve_augmented_block_system()</a>, <a class="el" href="assembly__handler_8cc_source.html#l03373">solve_block_system()</a>, and <a class="el" href="assembly__handler_8cc_source.html#l03396">solve_full_system()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="assembly__handler_8cc_source.html#l02827">eqn_number()</a>, <a class="el" href="assembly__handler_8cc_source.html#l03174">get_dresiduals_dparameter()</a>, <a class="el" href="assembly__handler_8cc_source.html#l02991">get_jacobian()</a>, <a class="el" href="assembly__handler_8cc_source.html#l02887">get_residuals()</a>, <a class="el" href="assembly__handler_8cc_source.html#l02797">ndof()</a>, <a class="el" href="assembly__handler_8cc_source.html#l03334">solve_augmented_block_system()</a>, <a class="el" href="assembly__handler_8cc_source.html#l03369">solve_block_system()</a>, and <a class="el" href="assembly__handler_8cc_source.html#l03392">solve_full_system()</a>.</p>
 
 </div>
 </div>
@@ -1475,9 +1475,9 @@ Friends</h2></td></tr>
 
 <p>Storage for the null vector. </p>
 
-<p class="definition">Definition at line <a class="el" href="assembly__handler_8h_source.html#l00785">785</a> of file <a class="el" href="assembly__handler_8h_source.html">assembly_handler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="assembly__handler_8h_source.html#l00781">781</a> of file <a class="el" href="assembly__handler_8h_source.html">assembly_handler.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="assembly__handler_8cc_source.html#l03178">get_dresiduals_dparameter()</a>, <a class="el" href="assembly__handler_8cc_source.html#l03294">get_eigenfunction()</a>, <a class="el" href="assembly__handler_8cc_source.html#l03279">get_hessian_vector_products()</a>, <a class="el" href="assembly__handler_8cc_source.html#l02891">get_residuals()</a>, <a class="el" href="assembly__handler_8cc_source.html#l02539">PitchForkHandler()</a>, <a class="el" href="assembly__handler_8cc_source.html#l01917">oomph::BlockPitchForkLinearSolver::resolve()</a>, <a class="el" href="assembly__handler_8cc_source.html#l02380">oomph::AugmentedBlockPitchForkLinearSolver::resolve()</a>, <a class="el" href="assembly__handler_8cc_source.html#l01644">oomph::BlockPitchForkLinearSolver::solve()</a>, <a class="el" href="assembly__handler_8cc_source.html#l02164">oomph::AugmentedBlockPitchForkLinearSolver::solve()</a>, <a class="el" href="assembly__handler_8cc_source.html#l03396">solve_full_system()</a>, and <a class="el" href="assembly__handler_8cc_source.html#l03313">synchronise()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="assembly__handler_8cc_source.html#l03174">get_dresiduals_dparameter()</a>, <a class="el" href="assembly__handler_8cc_source.html#l03290">get_eigenfunction()</a>, <a class="el" href="assembly__handler_8cc_source.html#l03275">get_hessian_vector_products()</a>, <a class="el" href="assembly__handler_8cc_source.html#l02887">get_residuals()</a>, <a class="el" href="assembly__handler_8cc_source.html#l02535">PitchForkHandler()</a>, <a class="el" href="assembly__handler_8cc_source.html#l01913">oomph::BlockPitchForkLinearSolver::resolve()</a>, <a class="el" href="assembly__handler_8cc_source.html#l02376">oomph::AugmentedBlockPitchForkLinearSolver::resolve()</a>, <a class="el" href="assembly__handler_8cc_source.html#l01640">oomph::BlockPitchForkLinearSolver::solve()</a>, <a class="el" href="assembly__handler_8cc_source.html#l02160">oomph::AugmentedBlockPitchForkLinearSolver::solve()</a>, <a class="el" href="assembly__handler_8cc_source.html#l03392">solve_full_system()</a>, and <a class="el" href="assembly__handler_8cc_source.html#l03309">synchronise()</a>.</p>
 
 </div>
 </div>
@@ -1513,7 +1513,7 @@ Friends</h2></td></tr>
     <footer>
       <div class="container">
         <div class="text-muted" style="float:right;">Generated by <a href="http://www.doxygen.org/index.html">
-          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Tue Jul 6 2021 22:58:05
+          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Fri Jul 9 2021 20:53:09
         </div>
       </div>
     </footer>

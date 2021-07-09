@@ -685,7 +685,7 @@ class oomph::BlockPreconditioner&lt; MATRIX &gt;</h3>
 <p>This class can function in one of two ways. Either it acts as a stand-alone block preconditioner which computes and stores the association between global degrees of freedom and their unique global block numbers itself. Alternatively, the block preconditioner can act as a subsidiary block preconditioner within a (larger) master block preconditioner (pointed to by Master_block_preconditioner_pt). The master block preconditioner must have an equal or greater number of block types. Examples are the FSI preconditioner which is the 3x3 "master block preconditioner" for the Navier-Stokes preconditioners which deals with the 2x2 fluid-blocks within the overall structure. In this case, <b>only</b> the master block preconditioner computes and stores the master lookup schemes. All block preconditioners compute and store their own optimised lookup schemes.</p>
 <p>In cases where a <code><a class="el" href="classoomph_1_1Problem.html" title="The Problem class.">Problem</a></code> contains elements of different element types (e.g. fluid and solid elements in a fluid-structure interaction problem), access to the elements of the same type must be provided via pointers to (possibly auxiliary) <code>Meshes</code> that only contain elements of a single type. The block preconditioner will then create global block numbers by concatenating the block types. Consider, e.g. a fluid-structure interaction problem in which the first <code><a class="el" href="classoomph_1_1Mesh.html" title="A general mesh class.">Mesh</a></code> contains (fluid) elements whose degrees of freedom have been subdivided into types "0" (the velocity, say) and "1" (the pressure say), while the second <code><a class="el" href="classoomph_1_1Mesh.html" title="A general mesh class.">Mesh</a></code> contains (solid) elements whose degrees of freedom are the nodal displacements, classified as its type "0". The combined block preconditioner then has three "block types": "0": Fluid velocity, "1": Fluid pressure, "2": Solid nodal positions. NOTE: currently this preconditioner uses the same communicator as the underlying problem. We may need to change this in the future. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l00428">428</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l00424">424</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a74c4b4bef4371b72816631445689a2e6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a74c4b4bef4371b72816631445689a2e6">&#9670;&nbsp;</a></span>BlockPreconditioner() <span class="overload">[1/2]</span></h2>
@@ -714,7 +714,7 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Constructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l00433">433</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l00429">429</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
 </div>
 </div>
@@ -745,7 +745,7 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Destructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l00515">515</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l00511">511</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
 </div>
 </div>
@@ -777,7 +777,7 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Broken copy constructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l00521">521</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l00517">517</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
 </div>
 </div>
@@ -809,7 +809,7 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Check if any of the meshes are distributed. This is equivalent to problem.distributed() and is used as a replacement. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03070">3070</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03066">3066</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
 </div>
 </div>
@@ -841,9 +841,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Access function to the block distributions (const version). </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l01928">1928</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l01924">1924</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l01146">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::get_concatenated_block()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l01142">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::get_concatenated_block()</a>.</p>
 
 </div>
 </div>
@@ -875,7 +875,7 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Access function to the block distributions (non-const version). </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l01959">1959</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l01955">1955</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
 </div>
 </div>
@@ -916,7 +916,7 @@ template&lt;typename MATRIX &gt; </div>
 <p>Private helper function to check that every element in the block matrix (i,j) matches the corresponding element in the original matrix. </p>
 <p>test function to check that every element in the block matrix (block_i,block_j) matches the corresponding element in the original matrix </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8cc_source.html#l05753">5753</a> of file <a class="el" href="block__preconditioner_8cc_source.html">block_preconditioner.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8cc_source.html#l05749">5749</a> of file <a class="el" href="block__preconditioner_8cc_source.html">block_preconditioner.cc</a>.</p>
 
 </div>
 </div>
@@ -948,9 +948,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Return the block number corresponding to a global index i_dof. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l01847">1847</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l01843">1843</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l01875">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::index_in_block()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l01871">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::index_in_block()</a>.</p>
 
 </div>
 </div>
@@ -981,7 +981,7 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Test if output of blocks is on or not. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l02119">2119</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l02115">2115</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
 </div>
 </div>
@@ -1010,9 +1010,9 @@ template&lt;typename MATRIX &gt; </div>
 <p>Determine the size of the matrix blocks and setup the lookup schemes relating the global degrees of freedom with their "blocks" and their indices (row/column numbers) in those blocks. The distributions of the preconditioner and the internal blocks are automatically specified (and assumed to be uniform) at this stage. This method should be used if the identity dof-to-block mapping is okay, i.e. dof number 0 corresponds to block number 0 dof number 1 corresponds to block number 1 dof number 2 corresponds to block number 2 etc... </p>
 <p>Determine the size of the matrix blocks and setup the lookup schemes relating the global degrees of freedom with their "blocks" and their indices (row/column numbers) in those blocks. The distributions of the preconditioner and the blocks are automatically specified (and assumed to be uniform) at this stage. This method should be used if each DOF type corresponds to a unique block type. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8cc_source.html#l02437">2437</a> of file <a class="el" href="block__preconditioner_8cc_source.html">block_preconditioner.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8cc_source.html#l02433">2433</a> of file <a class="el" href="block__preconditioner_8cc_source.html">block_preconditioner.cc</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="general__purpose__block__preconditioners_8h_source.html#l00249">oomph::GeneralPurposeBlockPreconditioner&lt; MATRIX &gt;::gp_preconditioner_block_setup()</a>, <a class="el" href="general__purpose__block__preconditioners_8h_source.html#l00659">oomph::DummyBlockPreconditioner&lt; MATRIX &gt;::setup()</a>, <a class="el" href="complex__smoother_8h_source.html#l01841">oomph::HelmholtzGMRESMG&lt; MATRIX &gt;::solve()</a>, and <a class="el" href="complex__smoother_8h_source.html#l03337">oomph::HelmholtzFGMRESMG&lt; MATRIX &gt;::solve()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="general__purpose__block__preconditioners_8h_source.html#l00245">oomph::GeneralPurposeBlockPreconditioner&lt; MATRIX &gt;::gp_preconditioner_block_setup()</a>, <a class="el" href="general__purpose__block__preconditioners_8h_source.html#l00655">oomph::DummyBlockPreconditioner&lt; MATRIX &gt;::setup()</a>, <a class="el" href="complex__smoother_8h_source.html#l01866">oomph::HelmholtzGMRESMG&lt; MATRIX &gt;::solve()</a>, and <a class="el" href="complex__smoother_8h_source.html#l03362">oomph::HelmholtzFGMRESMG&lt; MATRIX &gt;::solve()</a>.</p>
 
 </div>
 </div>
@@ -1038,7 +1038,7 @@ template&lt;typename MATRIX &gt; </div>
 <p>dof_to_block_map[dof_number] = block_number.</p>
 <p>Determine the size of the matrix blocks and setup the lookup schemes relating the global degrees of freedom with their "blocks" and their indices (row/column numbers) in those blocks. The distributions of the preconditioner and the blocks are automatically specified (and assumed to be uniform) at this stage. This method should be used if any block contains more than one type of DOF. The argument vector dof_to_block_map should be of length ndof. Each element should contain an integer indicating the block number corresponding to that type of DOF. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8cc_source.html#l00056">56</a> of file <a class="el" href="block__preconditioner_8cc_source.html">block_preconditioner.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8cc_source.html#l00052">52</a> of file <a class="el" href="block__preconditioner_8cc_source.html">block_preconditioner.cc</a>.</p>
 
 </div>
 </div>
@@ -1069,9 +1069,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Clears all <a class="el" href="classoomph_1_1BlockPreconditioner.html">BlockPreconditioner</a> data. Called by the destructor and the block_setup(...) methods. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l02189">2189</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l02185">2185</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="general__purpose__block__preconditioners_8h_source.html#l00116">oomph::GeneralPurposeBlockPreconditioner&lt; MATRIX &gt;::clean_up_memory()</a>, and <a class="el" href="block__preconditioner_8h_source.html#l00515">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::~BlockPreconditioner()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="general__purpose__block__preconditioners_8h_source.html#l00112">oomph::GeneralPurposeBlockPreconditioner&lt; MATRIX &gt;::clean_up_memory()</a>, and <a class="el" href="block__preconditioner_8h_source.html#l00511">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::~BlockPreconditioner()</a>.</p>
 
 </div>
 </div>
@@ -1102,7 +1102,7 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Turn off output of blocks (by clearing the basefilename string). </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l02113">2113</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l02109">2109</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
 </div>
 </div>
@@ -1133,7 +1133,7 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>debugging method to document the setup. Should only be called after block_setup(...). </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l02301">2301</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l02297">2297</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
 </div>
 </div>
@@ -1165,9 +1165,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Access function to the dof-level block distributions. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l01990">1990</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l01986">1986</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l02950">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::set_replacement_dof_block()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l02946">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::set_replacement_dof_block()</a>.</p>
 
 </div>
 </div>
@@ -1198,7 +1198,7 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Access function for the Doftype_coarsen_map_fine variable. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l02364">2364</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l02360">2360</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
 </div>
 </div>
@@ -1246,7 +1246,7 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Return block (i,j). If the optional argument ignore_replacement_block is true, then any blocks in Replacement_dof_block_pt will be ignored throughout the preconditioning hierarchy. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l01004">1004</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l01000">1000</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
 </div>
 </div>
@@ -1300,9 +1300,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Put block (i,j) into output_matrix. This block accounts for any coarsening of dof types and any replaced dof-level blocks above this preconditioner. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l00692">692</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l00688">688</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l01004">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::get_block()</a>, <a class="el" href="block__preconditioner_8h_source.html#l01028">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::get_block_other_matrix()</a>, <a class="el" href="block__preconditioner_8h_source.html#l01146">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::get_concatenated_block()</a>, <a class="el" href="block__preconditioner_8h_source.html#l02126">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::output_blocks_to_files()</a>, <a class="el" href="complex__smoother_8h_source.html#l01841">oomph::HelmholtzGMRESMG&lt; MATRIX &gt;::solve()</a>, and <a class="el" href="complex__smoother_8h_source.html#l03337">oomph::HelmholtzFGMRESMG&lt; MATRIX &gt;::solve()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l01000">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::get_block()</a>, <a class="el" href="block__preconditioner_8h_source.html#l01024">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::get_block_other_matrix()</a>, <a class="el" href="block__preconditioner_8h_source.html#l01142">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::get_concatenated_block()</a>, <a class="el" href="block__preconditioner_8h_source.html#l02122">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::output_blocks_to_files()</a>, <a class="el" href="complex__smoother_8h_source.html#l01866">oomph::HelmholtzGMRESMG&lt; MATRIX &gt;::solve()</a>, and <a class="el" href="complex__smoother_8h_source.html#l03362">oomph::HelmholtzFGMRESMG&lt; MATRIX &gt;::solve()</a>.</p>
 
 </div>
 </div>
@@ -1342,7 +1342,7 @@ template&lt;typename MATRIX &gt; </div>
 <p>4) This function extracts the most fine grain dof-level vectors and concatenates them. These dof-level vectors respect the re-ordering caused by the coarsening of dof types. The overhead associated with concatenating DoubleVectors without communication is very small.</p>
 <p>This function should be used. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8cc_source.html#l04736">4736</a> of file <a class="el" href="block__preconditioner_8cc_source.html">block_preconditioner.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8cc_source.html#l04732">4732</a> of file <a class="el" href="block__preconditioner_8cc_source.html">block_preconditioner.cc</a>.</p>
 
 </div>
 </div>
@@ -1396,7 +1396,7 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Get a block from a different matrix using the blocking scheme that has already been set up. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l01028">1028</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l01024">1024</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
 </div>
 </div>
@@ -1436,7 +1436,7 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Takes the naturally ordered vector, v and returns the n-th block vector, b. Here n is the block number in the current preconditioner. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8cc_source.html#l04136">4136</a> of file <a class="el" href="block__preconditioner_8cc_source.html">block_preconditioner.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8cc_source.html#l04132">4132</a> of file <a class="el" href="block__preconditioner_8cc_source.html">block_preconditioner.cc</a>.</p>
 
 </div>
 </div>
@@ -1470,7 +1470,7 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Takes the naturally ordered vector and rearranges it into a vector of sub vectors corresponding to the blocks, so s[b][i] contains the i-th entry in the vector associated with block b. Note: If the preconditioner is a subsidiary preconditioner then only the sub-vectors associated with the blocks of the subsidiary preconditioner will be included. Hence the length of v is <a class="el" href="classoomph_1_1BlockPreconditioner.html#a3e5b553f65e6c25354a5c908d507e8ee" title="Return the number of dofs (number of rows or columns) in the overall problem. The prefix &quot;master_&quot; is...">master_nrow()</a> whereas the total length of the s vectors is Nrow. This is simply a wrapper around the other get_block_vectors(...) function where the block_vec_number <a class="el" href="classoomph_1_1Vector.html">Vector</a> is the identity, i.e. block_vec_number is [0, 1, ..., nblock_types - 1]. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8cc_source.html#l03085">3085</a> of file <a class="el" href="block__preconditioner_8cc_source.html">block_preconditioner.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8cc_source.html#l03081">3081</a> of file <a class="el" href="block__preconditioner_8cc_source.html">block_preconditioner.cc</a>.</p>
 
 </div>
 </div>
@@ -1510,9 +1510,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Takes the naturally ordered vector and rearranges it into a vector of sub vectors corresponding to the blocks, so s[b][i] contains the i-th entry in the vector associated with block b. Note: If the preconditioner is a subsidiary preconditioner then only the sub-vectors associated with the blocks of the subsidiary preconditioner will be included. Hence the length of v is <a class="el" href="classoomph_1_1BlockPreconditioner.html#a3e5b553f65e6c25354a5c908d507e8ee" title="Return the number of dofs (number of rows or columns) in the overall problem. The prefix &quot;master_&quot; is...">master_nrow()</a> whereas the total length of the s vectors is the sum of the lengths of the individual block vectors defined in block_vec_number. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8cc_source.html#l02917">2917</a> of file <a class="el" href="block__preconditioner_8cc_source.html">block_preconditioner.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8cc_source.html#l02913">2913</a> of file <a class="el" href="block__preconditioner_8cc_source.html">block_preconditioner.cc</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="complex__smoother_8h_source.html#l02211">oomph::HelmholtzGMRESMG&lt; MATRIX &gt;::update()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="complex__smoother_8h_source.html#l02236">oomph::HelmholtzGMRESMG&lt; MATRIX &gt;::update()</a>.</p>
 
 </div>
 </div>
@@ -1549,7 +1549,7 @@ template&lt;typename MATRIX &gt; </div>
 <p>WARNING 2: the matrix pointers in block_matrix_pt MUST be null because Richard in all his wisdom decided to call delete on any non-null pointers. Presumably to avoid fixing his memory leaks properly...</p>
 <p>Get the block matrices required for the block preconditioner. Takes a pointer to a matrix of bools that indicate if a specified sub-block is required for the preconditioning operation. Computes the required block matrices, and stores pointers to them in the matrix block_matrix_pt. If an entry in block_matrix_pt is equal to NULL that sub-block has not been requested and is therefore not available. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8cc_source.html#l02495">2495</a> of file <a class="el" href="block__preconditioner_8cc_source.html">block_preconditioner.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8cc_source.html#l02491">2491</a> of file <a class="el" href="block__preconditioner_8cc_source.html">block_preconditioner.cc</a>.</p>
 
 </div>
 </div>
@@ -1612,7 +1612,7 @@ template&lt;typename MATRIX &gt; </div>
 <p><a class="el" href="classoomph_1_1CRDoubleMatrix.html" title="A class for compressed row matrices. This is a distributable object.">CRDoubleMatrix</a> my_block = get_concatenated_block(selected_block);</p>
 <p>NOTE: It is important to set the row and column indices even if you do not want the block. This is because, if we allow the row and column indices to be "not set", then we can have a whole empty block row without any indices. But concatenation of blocks without communication requires both the row and column distributions, so we know how to permute the rows and columns. So in short, we require that the column and row indices to always be set for every entry in the VectorMatrix&lt;BlockSelector&gt; object for convenience and consistency checks. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l01146">1146</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l01142">1142</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
 </div>
 </div>
@@ -1653,7 +1653,7 @@ template&lt;typename MATRIX &gt; </div>
 <p>Takes the naturally ordered vector and extracts the blocks indicated by the block number (the values) in the <a class="el" href="classoomph_1_1Vector.html">Vector</a> block_vec_number all at once, then concatenates them without communication. Here, the values in block_vec_number is the block number in the current preconditioner. This is a non-const function because distributions may be created and stored in Auxiliary_block_distribution_pt for future use. </p>
 <p>Takes the naturally ordered vector and extracts the blocks indicated by the block number (the values) in the <a class="el" href="classoomph_1_1Vector.html">Vector</a> block_vec_number all at once, then concatenates them without communication. Here, the values in block_vec_number is the block number in the current preconditioner. This is a non-const function because distributions may be created and stored in Auxiliary_block_distribution_pt for future use. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8cc_source.html#l02569">2569</a> of file <a class="el" href="block__preconditioner_8cc_source.html">block_preconditioner.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8cc_source.html#l02565">2565</a> of file <a class="el" href="block__preconditioner_8cc_source.html">block_preconditioner.cc</a>.</p>
 
 </div>
 </div>
@@ -1698,7 +1698,7 @@ template&lt;typename MATRIX &gt; </div>
 <p>Gets dof-level block (i,j). If Replacement_dof_block_pt(i,j) is not null, then the replacement block is returned via a deep copy. </p>
 <p>Otherwise if this is the uppermost block preconditioner then it calls internal_get_block(i,j), else if it is a subsidiary block preconditioner, it will call it's master block preconditioners' get_dof_level_block function. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8cc_source.html#l05593">5593</a> of file <a class="el" href="block__preconditioner_8cc_source.html">block_preconditioner.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8cc_source.html#l05589">5589</a> of file <a class="el" href="block__preconditioner_8cc_source.html">block_preconditioner.cc</a>.</p>
 
 </div>
 </div>
@@ -1745,7 +1745,7 @@ template&lt;typename MATRIX &gt; </div>
 <p>Gets dof-level block (i,j). If Replacement_dof_block_pt(i,j) is not null, then the replacement block is returned via a deep copy. </p>
 <p>Otherwise if this is the uppermost block preconditioner then it calls internal_get_block(i,j), else if it is a subsidiary block preconditioner, it will call it's master block preconditioners' get_dof_level_block function. </p>
 
-<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l00692">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::get_block()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l00688">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::get_block()</a>.</p>
 
 </div>
 </div>
@@ -1777,7 +1777,7 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Returns the most fine grain dof types in a (possibly coarsened) dof type. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l02371">2371</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l02367">2367</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
 </div>
 </div>
@@ -1827,7 +1827,7 @@ template&lt;typename myType &gt; </div>
 
 <p>Get the index of first occurrence of value in a vector. If the element does not exist, -1 is returned. The optional parameter indicates of the <a class="el" href="classoomph_1_1Vector.html">Vector</a> is sorted or not. Complexity: if the <a class="el" href="classoomph_1_1Vector.html">Vector</a> is sorted, then on average, logarithmic in the distance between first and last: Performs approximately log2(N)+2 element comparisons. Otherwise, up to linear in the distance between first and last: Compares elements until a match is found. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l02862">2862</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l02858">2858</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
 </div>
 </div>
@@ -1859,7 +1859,7 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Given a global dof number, returns the index in the block it belongs to. This is the overall index, not local block (in parallel). </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l01875">1875</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l01871">1871</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
 </div>
 </div>
@@ -1901,9 +1901,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>insert a <a class="el" href="classoomph_1_1Vector.html">Vector&lt;unsigned&gt;</a> and LinearAlgebraDistribution* pair into Auxiliary_block_distribution_pt. The Auxiliary_block_distribution_pt should only contain pointers to distributions concatenated at this block level. We try to ensure this by checking if the block_vec_number vector is within the range <a class="el" href="classoomph_1_1BlockPreconditioner.html#a80808d42be8db74fd58af80b019bf317" title="Return the number of block types.">nblock_types()</a>. Of course, this does not guarantee correctness, but this is the least we can do. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l02800">2800</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l02796">2796</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l01146">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::get_concatenated_block()</a>, and <a class="el" href="block__preconditioner_8h_source.html#l02429">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::setup_matrix_vector_product()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l01142">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::get_concatenated_block()</a>, and <a class="el" href="block__preconditioner_8h_source.html#l02425">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::setup_matrix_vector_product()</a>.</p>
 
 </div>
 </div>
@@ -1935,7 +1935,7 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Return the number of degrees of freedom in block b. Note that if this preconditioner acts as a subsidiary preconditioner then b refers to the block number in the subsidiary preconditioner not the master block preconditioner. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03207">3207</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03203">3203</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
 </div>
 </div>
@@ -1967,9 +1967,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Access function to the internal block distributions. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l02765">2765</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l02761">2761</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l01875">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::index_in_block()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l01871">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::index_in_block()</a>.</p>
 
 </div>
 </div>
@@ -2001,9 +2001,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Return the block number corresponding to a global index i_dof. This returns the block number corresponding to the internal blocks. What this means is that this returns the most fine grain dof-block number which this global index i_dof corresponds to. Since the writer of the preconditioner does not need to care about the internal block types, this function should not be used and thus moved to private. This function should not be removed since it is still used deep within the inner workings of the block preconditioning framework. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l02717">2717</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l02713">2713</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l01847">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::block_number()</a>, and <a class="el" href="block__preconditioner_8h_source.html#l02733">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::internal_index_in_block()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l01843">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::block_number()</a>, and <a class="el" href="block__preconditioner_8h_source.html#l02729">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::internal_index_in_block()</a>.</p>
 
 </div>
 </div>
@@ -2035,9 +2035,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Return the size of the dof "block" i, i.e. how many degrees of freedom are associated with it. Note that if this preconditioner acts as a subsidiary preconditioner, then i refers to the block number in the subsidiary preconditioner not the master block preconditioner. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03230">3230</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03226">3226</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l02733">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::internal_index_in_block()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l02729">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::internal_index_in_block()</a>.</p>
 
 </div>
 </div>
@@ -2069,9 +2069,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Return the number of the block associated with global unknown i_dof. If this preconditioner is a subsidiary block preconditioner then the block number in the subsidiary block preconditioner is returned. If a particular global DOF is not associated with this preconditioner then -1 is returned. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03087">3087</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03083">3083</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l01875">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::index_in_block()</a>, <a class="el" href="block__preconditioner_8h_source.html#l02717">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::internal_block_number()</a>, and <a class="el" href="block__preconditioner_8h_source.html#l02733">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::internal_index_in_block()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l01871">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::index_in_block()</a>, <a class="el" href="block__preconditioner_8h_source.html#l02713">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::internal_block_number()</a>, and <a class="el" href="block__preconditioner_8h_source.html#l02729">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::internal_index_in_block()</a>.</p>
 
 </div>
 </div>
@@ -2109,7 +2109,7 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Gets block (i,j) from the matrix pointed to by Matrix_pt and returns it in output_block. This is associated with the internal blocks. Please use the other get_block(...) function. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8cc_source.html#l05041">5041</a> of file <a class="el" href="block__preconditioner_8cc_source.html">block_preconditioner.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8cc_source.html#l05037">5037</a> of file <a class="el" href="block__preconditioner_8cc_source.html">block_preconditioner.cc</a>.</p>
 
 </div>
 </div>
@@ -2187,7 +2187,7 @@ template&lt;typename MATRIX &gt; </div>
 <p>Furthermore, it does not take into account the new dof type coarsening feature. So this function will most likely produce the incorrect vector w from what the user intended. It still works, but w will be the concatenation of the most fine grain dof block vectors with the "natural" dof type ordering.</p>
 <p>This has been superseded by the function get_block_ordered_preconditioner_vector(...) which does the correct thing. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8cc_source.html#l04549">4549</a> of file <a class="el" href="block__preconditioner_8cc_source.html">block_preconditioner.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8cc_source.html#l04545">4545</a> of file <a class="el" href="block__preconditioner_8cc_source.html">block_preconditioner.cc</a>.</p>
 
 </div>
 </div>
@@ -2227,7 +2227,7 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>A helper function, takes the naturally ordered vector, v, and extracts the n-th block vector, b. Here n is the block number in the current preconditioner. NOTE: The ordering of the vector b is the same as the ordering of the block matrix from internal_get_block(...). </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8cc_source.html#l03966">3966</a> of file <a class="el" href="block__preconditioner_8cc_source.html">block_preconditioner.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8cc_source.html#l03962">3962</a> of file <a class="el" href="block__preconditioner_8cc_source.html">block_preconditioner.cc</a>.</p>
 
 </div>
 </div>
@@ -2261,7 +2261,7 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>A helper function, takes the naturally ordered vector and rearranges it into a vector of sub vectors corresponding to the blocks, so s[b][i] contains the i-th entry in the vector associated with block b. The block_vec_number indicates which blocks we want. These blocks and vectors are those corresponding to the internal blocks. Note: If the preconditioner is a subsidiary preconditioner then only the sub-vectors associated with the blocks of the subsidiary preconditioner will be included. Hence the length of v is <a class="el" href="classoomph_1_1BlockPreconditioner.html#a3e5b553f65e6c25354a5c908d507e8ee" title="Return the number of dofs (number of rows or columns) in the overall problem. The prefix &quot;master_&quot; is...">master_nrow()</a> whereas the total length of the s vectors is the sum of the Nrow of the sub vectors. This is simply a wrapper around the other internal_get_block_vectors(...) function with the identity block_vec_number vector. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8cc_source.html#l03385">3385</a> of file <a class="el" href="block__preconditioner_8cc_source.html">block_preconditioner.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8cc_source.html#l03381">3381</a> of file <a class="el" href="block__preconditioner_8cc_source.html">block_preconditioner.cc</a>.</p>
 
 </div>
 </div>
@@ -2305,7 +2305,7 @@ template&lt;typename MATRIX &gt; </div>
 <p>sub-vectors associated with the blocks of the subsidiary preconditioner will be included. Hence the length of v is <a class="el" href="classoomph_1_1BlockPreconditioner.html#a3e5b553f65e6c25354a5c908d507e8ee" title="Return the number of dofs (number of rows or columns) in the overall problem. The prefix &quot;master_&quot; is...">master_nrow()</a> whereas the total length of the s vectors is the sum of the Nrow of the sub vectors. <br  />
  </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8cc_source.html#l03113">3113</a> of file <a class="el" href="block__preconditioner_8cc_source.html">block_preconditioner.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8cc_source.html#l03109">3109</a> of file <a class="el" href="block__preconditioner_8cc_source.html">block_preconditioner.cc</a>.</p>
 
 </div>
 </div>
@@ -2337,7 +2337,7 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Return the index in the block corresponding to a global block number i_dof. The index returned corresponds to the internal blocks, which is the most fine grain dof blocks. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l02733">2733</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l02729">2729</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
 </div>
 </div>
@@ -2369,9 +2369,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Return the row/column number of global unknown i_dof within it's block. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03154">3154</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03150">3150</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l01875">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::index_in_block()</a>, and <a class="el" href="block__preconditioner_8h_source.html#l02733">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::internal_index_in_block()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l01871">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::index_in_block()</a>, and <a class="el" href="block__preconditioner_8h_source.html#l02729">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::internal_index_in_block()</a>.</p>
 
 </div>
 </div>
@@ -2403,9 +2403,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Takes the block number within this preconditioner and returns the corresponding block number in the master preconditioner. If this preconditioner does not have a master block preconditioner then the block number passed is returned. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03281">3281</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03277">3277</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l02301">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::document()</a>, and <a class="el" href="block__preconditioner_8h_source.html#l03230">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::internal_dof_block_dimension()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l02297">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::document()</a>, and <a class="el" href="block__preconditioner_8h_source.html#l03226">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::internal_dof_block_dimension()</a>.</p>
 
 </div>
 </div>
@@ -2439,9 +2439,9 @@ template&lt;typename MATRIX &gt; </div>
 <p>This is legacy code from before the coarsening dof type functionality was added. This is kept alive because it is still used in the internal workings of the block preconditioning framework.</p>
 <p>The function nblock_types(...) should be used if the number of block types is required. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l02554">2554</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l02550">2550</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l02301">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::document()</a>, <a class="el" href="block__preconditioner_8h_source.html#l03207">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::internal_block_dimension()</a>, <a class="el" href="block__preconditioner_8h_source.html#l02765">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::internal_block_distribution_pt()</a>, and <a class="el" href="block__preconditioner_8h_source.html#l02126">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::output_blocks_to_files()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l02297">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::document()</a>, <a class="el" href="block__preconditioner_8h_source.html#l03203">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::internal_block_dimension()</a>, <a class="el" href="block__preconditioner_8h_source.html#l02761">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::internal_block_distribution_pt()</a>, and <a class="el" href="block__preconditioner_8h_source.html#l02122">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::output_blocks_to_files()</a>.</p>
 
 </div>
 </div>
@@ -2472,9 +2472,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Return the number of internal dof types. This is the number of most fine grain dof types. The preconditioner writer should not have to concern him/her-self with the internal dof/block types. Thus this fuction is moved to private. We have kept this function alive since it it still used deep within the inner workings of the block preconditioning framework. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l02596">2596</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l02592">2592</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l02301">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::document()</a>, <a class="el" href="block__preconditioner_8h_source.html#l03230">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::internal_dof_block_dimension()</a>, <a class="el" href="block__preconditioner_8h_source.html#l03087">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::internal_dof_number()</a>, <a class="el" href="block__preconditioner_8h_source.html#l02554">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::internal_nblock_types()</a>, and <a class="el" href="block__preconditioner_8h_source.html#l01715">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::ndof_types()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l02297">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::document()</a>, <a class="el" href="block__preconditioner_8h_source.html#l03226">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::internal_dof_block_dimension()</a>, <a class="el" href="block__preconditioner_8h_source.html#l03083">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::internal_dof_number()</a>, <a class="el" href="block__preconditioner_8h_source.html#l02550">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::internal_nblock_types()</a>, and <a class="el" href="block__preconditioner_8h_source.html#l01711">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::ndof_types()</a>.</p>
 
 </div>
 </div>
@@ -2505,9 +2505,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>access function to the internal preconditioner matrix distribution pt. preconditioner_matrix_distribution_pt always returns the concatenation of the internal block distributions. Since the writer of the preconditioner does not need to concern themselves with the internal dof/block, please use <a class="el" href="classoomph_1_1BlockPreconditioner.html#a74eeff188f842dd8abdff1b7d9801d44" title="Access function to the preconditioner matrix distribution pointer. This is the concatenation of the b...">preconditioner_matrix_distribution_pt()</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03296">3296</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03292">3292</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l02301">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::document()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l02297">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::document()</a>.</p>
 
 </div>
 </div>
@@ -2544,7 +2544,7 @@ template&lt;typename MATRIX &gt; </div>
 <p>get_block_ordered_preconditioner_vector(...) and return_block_ordered_preconditioner_vector(...),</p>
 <p>Thus this function is moved to the private section of the code. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8cc_source.html#l04794">4794</a> of file <a class="el" href="block__preconditioner_8cc_source.html">block_preconditioner.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8cc_source.html#l04790">4790</a> of file <a class="el" href="block__preconditioner_8cc_source.html">block_preconditioner.cc</a>.</p>
 
 </div>
 </div>
@@ -2585,7 +2585,7 @@ template&lt;typename MATRIX &gt; </div>
 <p>Takes the n-th block ordered vector, b, and copies its entries to the appropriate entries in the naturally ordered vector, v. Here n is the block number in the current block preconditioner. If the preconditioner is a subsidiary block preconditioner the other entries in v that are not associated with it are left alone. </p>
 <p>This version works with the internal block types. This is legacy code but is kept alive, hence moved to private. Please use the function "return_block_vector(...)". </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8cc_source.html#l04245">4245</a> of file <a class="el" href="block__preconditioner_8cc_source.html">block_preconditioner.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8cc_source.html#l04241">4241</a> of file <a class="el" href="block__preconditioner_8cc_source.html">block_preconditioner.cc</a>.</p>
 
 </div>
 </div>
@@ -2620,7 +2620,7 @@ template&lt;typename MATRIX &gt; </div>
 <p>A helper function, takes the vector of block vectors, s, and copies its entries into the naturally ordered vector, v. If this is a subsidiary block preconditioner only those entries in v that are associated with its blocks are affected. This is simple a wrapper around the other internal_return_block_vectors(...) function with the identity block_vec_number vector. </p>
 <p>A helper function, takes the naturally ordered vector and rearranges it into a vector of sub vectors corresponding to the blocks, so s[b][i] contains the i-th entry in the vector associated with block b. The block_vec_number indicates which blocks we want. These blocks and vectors are those corresponding to the internal blocks. Note: If the preconditioner is a subsidiary preconditioner then only the sub-vectors associated with the blocks of the subsidiary preconditioner will be included. Hence the length of v is <a class="el" href="classoomph_1_1BlockPreconditioner.html#a3e5b553f65e6c25354a5c908d507e8ee" title="Return the number of dofs (number of rows or columns) in the overall problem. The prefix &quot;master_&quot; is...">master_nrow()</a> whereas the total length of the s vectors is the sum of the Nrow of the sub vectors. This is simply a wrapper around the other internal_get_block_vectors(...) function with the identity block_vec_number vector. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8cc_source.html#l03944">3944</a> of file <a class="el" href="block__preconditioner_8cc_source.html">block_preconditioner.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8cc_source.html#l03940">3940</a> of file <a class="el" href="block__preconditioner_8cc_source.html">block_preconditioner.cc</a>.</p>
 
 </div>
 </div>
@@ -2662,7 +2662,7 @@ template&lt;typename MATRIX &gt; </div>
 <p>Takes the naturally ordered vector and rearranges it into a vector of sub vectors corresponding to the blocks, so s[b][i] contains the i-th entry in the vector associated with block b. The block_vec_number indicates which blocks we want. These blocks and vectors are those corresponding to the internal blocks. Note: If the preconditioner is a subsidiary preconditioner then only the sub-vectors associated with the blocks of the subsidiary preconditioner will be included. Hence the length of v is <a class="el" href="classoomph_1_1BlockPreconditioner.html#a3e5b553f65e6c25354a5c908d507e8ee" title="Return the number of dofs (number of rows or columns) in the overall problem. The prefix &quot;master_&quot; is...">master_nrow()</a> whereas the total length of the s vectors is the sum of the Nrow of the sub vectors. <br  />
  </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8cc_source.html#l03659">3659</a> of file <a class="el" href="block__preconditioner_8cc_source.html">block_preconditioner.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8cc_source.html#l03655">3655</a> of file <a class="el" href="block__preconditioner_8cc_source.html">block_preconditioner.cc</a>.</p>
 
 </div>
 </div>
@@ -2693,9 +2693,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Return true if this preconditioner is the master block preconditioner. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l02099">2099</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l02095">2095</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l02189">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::clear_block_preconditioner_base()</a>, <a class="el" href="block__preconditioner_8h_source.html#l01990">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::dof_block_distribution_pt()</a>, <a class="el" href="block__preconditioner_8h_source.html#l00692">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::get_block()</a>, <a class="el" href="block__preconditioner_8h_source.html#l03230">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::internal_dof_block_dimension()</a>, <a class="el" href="block__preconditioner_8h_source.html#l03087">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::internal_dof_number()</a>, <a class="el" href="block__preconditioner_8h_source.html#l03154">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::internal_index_in_dof()</a>, <a class="el" href="block__preconditioner_8h_source.html#l03281">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::internal_master_dof_number()</a>, <a class="el" href="block__preconditioner_8h_source.html#l03296">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::internal_preconditioner_matrix_distribution_pt()</a>, <a class="el" href="block__preconditioner_8h_source.html#l02172">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::master_block_preconditioner_pt()</a>, <a class="el" href="block__preconditioner_8h_source.html#l02048">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::master_distribution_pt()</a>, <a class="el" href="block__preconditioner_8h_source.html#l03265">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::master_nrow()</a>, <a class="el" href="block__preconditioner_8h_source.html#l01715">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::ndof_types()</a>, and <a class="el" href="block__preconditioner_8h_source.html#l02151">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::post_block_matrix_assembly_partial_clear()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l02185">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::clear_block_preconditioner_base()</a>, <a class="el" href="block__preconditioner_8h_source.html#l01986">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::dof_block_distribution_pt()</a>, <a class="el" href="block__preconditioner_8h_source.html#l00688">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::get_block()</a>, <a class="el" href="block__preconditioner_8h_source.html#l03226">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::internal_dof_block_dimension()</a>, <a class="el" href="block__preconditioner_8h_source.html#l03083">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::internal_dof_number()</a>, <a class="el" href="block__preconditioner_8h_source.html#l03150">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::internal_index_in_dof()</a>, <a class="el" href="block__preconditioner_8h_source.html#l03277">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::internal_master_dof_number()</a>, <a class="el" href="block__preconditioner_8h_source.html#l03292">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::internal_preconditioner_matrix_distribution_pt()</a>, <a class="el" href="block__preconditioner_8h_source.html#l02168">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::master_block_preconditioner_pt()</a>, <a class="el" href="block__preconditioner_8h_source.html#l02044">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::master_distribution_pt()</a>, <a class="el" href="block__preconditioner_8h_source.html#l03261">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::master_nrow()</a>, <a class="el" href="block__preconditioner_8h_source.html#l01711">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::ndof_types()</a>, and <a class="el" href="block__preconditioner_8h_source.html#l02147">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::post_block_matrix_assembly_partial_clear()</a>.</p>
 
 </div>
 </div>
@@ -2726,9 +2726,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Return true if this preconditioner is a subsidiary preconditioner. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l02092">2092</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l02088">2088</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l02301">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::document()</a>, <a class="el" href="block__preconditioner_8h_source.html#l02596">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::internal_ndof_types()</a>, <a class="el" href="block__preconditioner_8h_source.html#l00535">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::matrix_pt()</a>, <a class="el" href="block__preconditioner_8h_source.html#l01805">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::mesh_pt()</a>, <a class="el" href="block__preconditioner_8h_source.html#l01715">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::ndof_types()</a>, <a class="el" href="block__preconditioner_8h_source.html#l02068">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::ndof_types_in_mesh()</a>, <a class="el" href="block__preconditioner_8h_source.html#l01013">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::set_master_matrix_pt()</a>, <a class="el" href="block__preconditioner_8h_source.html#l00571">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::turn_off_recursive_debug_flag()</a>, and <a class="el" href="block__preconditioner_8h_source.html#l00561">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::turn_on_recursive_debug_flag()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l02297">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::document()</a>, <a class="el" href="block__preconditioner_8h_source.html#l02592">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::internal_ndof_types()</a>, <a class="el" href="block__preconditioner_8h_source.html#l00531">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::matrix_pt()</a>, <a class="el" href="block__preconditioner_8h_source.html#l01801">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::mesh_pt()</a>, <a class="el" href="block__preconditioner_8h_source.html#l01711">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::ndof_types()</a>, <a class="el" href="block__preconditioner_8h_source.html#l02064">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::ndof_types_in_mesh()</a>, <a class="el" href="block__preconditioner_8h_source.html#l01009">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::set_master_matrix_pt()</a>, <a class="el" href="block__preconditioner_8h_source.html#l00567">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::turn_off_recursive_debug_flag()</a>, and <a class="el" href="block__preconditioner_8h_source.html#l00557">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::turn_on_recursive_debug_flag()</a>.</p>
 
 </div>
 </div>
@@ -2759,9 +2759,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Access function to the master block preconditioner pt. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l02172">2172</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l02168">2168</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l00535">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::matrix_pt()</a>, <a class="el" href="block__preconditioner_8h_source.html#l01013">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::set_master_matrix_pt()</a>, <a class="el" href="block__preconditioner_8h_source.html#l00571">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::turn_off_recursive_debug_flag()</a>, and <a class="el" href="block__preconditioner_8h_source.html#l00561">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::turn_on_recursive_debug_flag()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l00531">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::matrix_pt()</a>, <a class="el" href="block__preconditioner_8h_source.html#l01009">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::set_master_matrix_pt()</a>, <a class="el" href="block__preconditioner_8h_source.html#l00567">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::turn_off_recursive_debug_flag()</a>, and <a class="el" href="block__preconditioner_8h_source.html#l00557">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::turn_on_recursive_debug_flag()</a>.</p>
 
 </div>
 </div>
@@ -2792,9 +2792,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Access function to the distribution of the master preconditioner. If this preconditioner does not have a master preconditioner then the distribution of this preconditioner is returned. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l02048">2048</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l02044">2044</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l02301">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::document()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l02297">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::document()</a>.</p>
 
 </div>
 </div>
@@ -2825,7 +2825,7 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Return the number of dofs (number of rows or columns) in the overall problem. The prefix "master_" is sort of redundant when used as a stand-alone block preconditioner but is required to avoid ambiguities. The latter is stored (and maintained) separately for each specific block preconditioner regardless of its role. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03265">3265</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03261">3261</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
 </div>
 </div>
@@ -2858,9 +2858,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1Preconditioner.html#a66726e9df31365df646cdf83a975aa26">oomph::Preconditioner</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l00535">535</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l00531">531</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l01028">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::get_block_other_matrix()</a>, <a class="el" href="complex__smoother_8h_source.html#l02027">oomph::HelmholtzGMRESMG&lt; MATRIX &gt;::resolve()</a>, <a class="el" href="complex__smoother_8h_source.html#l01841">oomph::HelmholtzGMRESMG&lt; MATRIX &gt;::solve()</a>, and <a class="el" href="complex__smoother_8h_source.html#l03337">oomph::HelmholtzFGMRESMG&lt; MATRIX &gt;::solve()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l01024">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::get_block_other_matrix()</a>, <a class="el" href="complex__smoother_8h_source.html#l02052">oomph::HelmholtzGMRESMG&lt; MATRIX &gt;::resolve()</a>, <a class="el" href="complex__smoother_8h_source.html#l01866">oomph::HelmholtzGMRESMG&lt; MATRIX &gt;::solve()</a>, and <a class="el" href="complex__smoother_8h_source.html#l03362">oomph::HelmholtzFGMRESMG&lt; MATRIX &gt;::solve()</a>.</p>
 
 </div>
 </div>
@@ -2893,9 +2893,9 @@ template&lt;typename MATRIX &gt; </div>
 <p>Access to i-th mesh (of the various meshes that contain block preconditionable elements of the same number of dof type). </p>
 <p>WARNING: This should only be used if the derived class is the upper-most master block preconditioner. An error is thrown is this function is called from a subsidiary preconditioner. They (and since every block preconditioner can in principle be used as s subsidiary preconditioner: all block preconditioners) should store local copies of "their meshes" (if they're needed for anything) </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l01805">1805</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l01801">1801</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="general__purpose__block__preconditioners_8h_source.html#l00195">oomph::GeneralPurposeBlockPreconditioner&lt; MATRIX &gt;::add_mesh()</a>, <a class="el" href="block__preconditioner_8h_source.html#l03070">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::any_mesh_distributed()</a>, <a class="el" href="block__preconditioner_8h_source.html#l02068">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::ndof_types_in_mesh()</a>, <a class="el" href="block__preconditioner_8h_source.html#l02903">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::set_mesh()</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00555">oomph::SimpleFSIPreconditioner&lt; MATRIX &gt;::set_navier_stokes_mesh()</a>, and <a class="el" href="fsi__preconditioners_8h_source.html#l00569">oomph::SimpleFSIPreconditioner&lt; MATRIX &gt;::set_wall_mesh()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="general__purpose__block__preconditioners_8h_source.html#l00191">oomph::GeneralPurposeBlockPreconditioner&lt; MATRIX &gt;::add_mesh()</a>, <a class="el" href="block__preconditioner_8h_source.html#l03066">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::any_mesh_distributed()</a>, <a class="el" href="block__preconditioner_8h_source.html#l02064">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::ndof_types_in_mesh()</a>, <a class="el" href="block__preconditioner_8h_source.html#l02899">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::set_mesh()</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00551">oomph::SimpleFSIPreconditioner&lt; MATRIX &gt;::set_navier_stokes_mesh()</a>, and <a class="el" href="fsi__preconditioners_8h_source.html#l00565">oomph::SimpleFSIPreconditioner&lt; MATRIX &gt;::set_wall_mesh()</a>.</p>
 
 </div>
 </div>
@@ -2926,9 +2926,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Return the number of block types. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l01691">1691</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l01687">1687</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l01928">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::block_distribution_pt()</a>, <a class="el" href="block__preconditioner_8h_source.html#l02301">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::document()</a>, <a class="el" href="block__preconditioner_8h_source.html#l00692">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::get_block()</a>, <a class="el" href="block__preconditioner_8h_source.html#l01146">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::get_concatenated_block()</a>, <a class="el" href="block__preconditioner_8h_source.html#l02800">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::insert_auxiliary_block_distribution()</a>, <a class="el" href="block__preconditioner_8h_source.html#l02950">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::set_replacement_dof_block()</a>, <a class="el" href="complex__smoother_8h_source.html#l01841">oomph::HelmholtzGMRESMG&lt; MATRIX &gt;::solve()</a>, and <a class="el" href="complex__smoother_8h_source.html#l03337">oomph::HelmholtzFGMRESMG&lt; MATRIX &gt;::solve()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l01924">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::block_distribution_pt()</a>, <a class="el" href="block__preconditioner_8h_source.html#l02297">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::document()</a>, <a class="el" href="block__preconditioner_8h_source.html#l00688">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::get_block()</a>, <a class="el" href="block__preconditioner_8h_source.html#l01142">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::get_concatenated_block()</a>, <a class="el" href="block__preconditioner_8h_source.html#l02796">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::insert_auxiliary_block_distribution()</a>, <a class="el" href="block__preconditioner_8h_source.html#l02946">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::set_replacement_dof_block()</a>, <a class="el" href="complex__smoother_8h_source.html#l01866">oomph::HelmholtzGMRESMG&lt; MATRIX &gt;::solve()</a>, and <a class="el" href="complex__smoother_8h_source.html#l03362">oomph::HelmholtzFGMRESMG&lt; MATRIX &gt;::solve()</a>.</p>
 
 </div>
 </div>
@@ -2959,9 +2959,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Return the total number of DOF types. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l01715">1715</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l01711">1711</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l01990">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::dof_block_distribution_pt()</a>, <a class="el" href="block__preconditioner_8h_source.html#l02371">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::get_fine_grain_dof_types_in()</a>, <a class="el" href="block__preconditioner_8h_source.html#l02392">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::nfine_grain_dof_types_in()</a>, and <a class="el" href="block__preconditioner_8h_source.html#l02950">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::set_replacement_dof_block()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l01986">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::dof_block_distribution_pt()</a>, <a class="el" href="block__preconditioner_8h_source.html#l02367">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::get_fine_grain_dof_types_in()</a>, <a class="el" href="block__preconditioner_8h_source.html#l02388">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::nfine_grain_dof_types_in()</a>, and <a class="el" href="block__preconditioner_8h_source.html#l02946">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::set_replacement_dof_block()</a>.</p>
 
 </div>
 </div>
@@ -2993,9 +2993,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Return the number of DOF types in mesh i. WARNING: This should only be used by the upper-most master block preconditioner. An error is thrown is this function is called from a subsidiary preconditioner. They (and since every block preconditioner can in principle be used as s subsidiary preconditioner: all block preconditioners) should store local copies of "their meshes" (if they're needed for anything) </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l02068">2068</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l02064">2064</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l02596">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::internal_ndof_types()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l02592">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::internal_ndof_types()</a>.</p>
 
 </div>
 </div>
@@ -3027,7 +3027,7 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Access function for the number of most fine grain dof types in a (possibly coarsened) dof type. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l02392">2392</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l02388">2388</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
 </div>
 </div>
@@ -3059,9 +3059,9 @@ template&lt;typename MATRIX &gt; </div>
 <p>Return the number of meshes in Mesh_pt. </p>
 <p>WARNING: This should only be used if the derived class is the upper-most master block preconditioner. All block preconditioners) should store local copies of "their meshes" (if they're needed for anything) </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l01841">1841</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l01837">1837</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l03070">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::any_mesh_distributed()</a>, <a class="el" href="general__purpose__block__preconditioners_8h_source.html#l00224">oomph::GeneralPurposeBlockPreconditioner&lt; MATRIX &gt;::gp_preconditioner_set_all_meshes()</a>, <a class="el" href="block__preconditioner_8h_source.html#l02596">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::internal_ndof_types()</a>, <a class="el" href="block__preconditioner_8h_source.html#l01715">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::ndof_types()</a>, and <a class="el" href="block__preconditioner_8h_source.html#l02903">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::set_mesh()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l03066">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::any_mesh_distributed()</a>, <a class="el" href="general__purpose__block__preconditioners_8h_source.html#l00220">oomph::GeneralPurposeBlockPreconditioner&lt; MATRIX &gt;::gp_preconditioner_set_all_meshes()</a>, <a class="el" href="block__preconditioner_8h_source.html#l02592">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::internal_ndof_types()</a>, <a class="el" href="block__preconditioner_8h_source.html#l01711">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::ndof_types()</a>, and <a class="el" href="block__preconditioner_8h_source.html#l02899">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::set_mesh()</a>.</p>
 
 </div>
 </div>
@@ -3093,7 +3093,7 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Broken assignment operator. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l00527">527</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l00523">523</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
 </div>
 </div>
@@ -3134,7 +3134,7 @@ template&lt;typename MATRIX &gt; </div>
 </div><div class="memdoc">
 <p>Output all blocks to numbered files. Called at the end of get blocks if an output filename has been set. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l02126">2126</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l02122">2122</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
 </div>
 </div>
@@ -3165,9 +3165,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>A helper method to reduce the memory requirements of block preconditioners. Once the methods get_block(...), get_blocks(...) and build_preconditioner_matrix(...) have been called in this and all subsidiary block preconditioners this method can be called to clean up. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l02151">2151</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l02147">2147</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l02189">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::clear_block_preconditioner_base()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l02185">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::clear_block_preconditioner_base()</a>.</p>
 
 </div>
 </div>
@@ -3198,9 +3198,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Access function to the preconditioner matrix distribution pointer. This is the concatenation of the block distributions with the identity ordering. I.e. if this preconditioner has three block types, with the three associated block distributions dist_b0, dist_b1 and dist_b2, then this distribution is: LinearAlgebraDistributionHelpers::concatenate(dist_b0, dist_b1, dist_b2). </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03311">3311</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03307">3307</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l02301">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::document()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l02297">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::document()</a>.</p>
 
 </div>
 </div>
@@ -3231,9 +3231,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Access function to the replaced dof-level blocks. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l02413">2413</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l02409">2409</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l02950">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::set_replacement_dof_block()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l02946">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::set_replacement_dof_block()</a>.</p>
 
 </div>
 </div>
@@ -3269,7 +3269,7 @@ template&lt;typename MATRIX &gt; </div>
 <p>This is the return function for the function get_block_ordered_preconditioner_vector(...).</p>
 <p>It calls the function return_concatenated_block_vector(...) with the identity block number ordering. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8cc_source.html#l04981">4981</a> of file <a class="el" href="block__preconditioner_8cc_source.html">block_preconditioner.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8cc_source.html#l04977">4977</a> of file <a class="el" href="block__preconditioner_8cc_source.html">block_preconditioner.cc</a>.</p>
 
 </div>
 </div>
@@ -3309,7 +3309,7 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Takes the n-th block ordered vector, b, and copies its entries to the appropriate entries in the naturally ordered vector, v. Here n is the block number in the current block preconditioner. If the preconditioner is a subsidiary block preconditioner the other entries in v that are not associated with it are left alone. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8cc_source.html#l04436">4436</a> of file <a class="el" href="block__preconditioner_8cc_source.html">block_preconditioner.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8cc_source.html#l04432">4432</a> of file <a class="el" href="block__preconditioner_8cc_source.html">block_preconditioner.cc</a>.</p>
 
 </div>
 </div>
@@ -3343,7 +3343,7 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Takes the vector of block vectors, s, and copies its entries into the naturally ordered vector, v. If this is a subsidiary block preconditioner only those entries in v that are associated with its blocks are affected. The block_vec_number indicates which block the vectors in s came from. The block number corresponds to the block numbers in this preconditioner. This is simply a wrapper around the other return_block_vectors(...) function where the block_vec_number <a class="el" href="classoomph_1_1Vector.html">Vector</a> is the identity, i.e. block_vec_number is [0, 1, ..., nblock_types - 1]. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8cc_source.html#l03631">3631</a> of file <a class="el" href="block__preconditioner_8cc_source.html">block_preconditioner.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8cc_source.html#l03627">3627</a> of file <a class="el" href="block__preconditioner_8cc_source.html">block_preconditioner.cc</a>.</p>
 
 </div>
 </div>
@@ -3383,9 +3383,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Takes the vector of block vectors, s, and copies its entries into the naturally ordered vector, v. If this is a subsidiary block preconditioner only those entries in v that are associated with its blocks are affected. The block_vec_number indicates which block the vectors in s came from. The block number corresponds to the block numbers in this preconditioner. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8cc_source.html#l03408">3408</a> of file <a class="el" href="block__preconditioner_8cc_source.html">block_preconditioner.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8cc_source.html#l03404">3404</a> of file <a class="el" href="block__preconditioner_8cc_source.html">block_preconditioner.cc</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="complex__smoother_8h_source.html#l02211">oomph::HelmholtzGMRESMG&lt; MATRIX &gt;::update()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="complex__smoother_8h_source.html#l02236">oomph::HelmholtzGMRESMG&lt; MATRIX &gt;::update()</a>.</p>
 
 </div>
 </div>
@@ -3426,7 +3426,7 @@ template&lt;typename MATRIX &gt; </div>
 <p>Takes concatenated block ordered vector, b, and copies its entries to the appropriate entries in the naturally ordered vector, v. Here the values in block_vec_number indicates which blocks the vector b is a concatenation of. The block number are those in the current preconditioner. If the preconditioner is a subsidiary block preconditioner the other entries in v that are not associated with it are left alone. </p>
 <p>Takes concatenated block ordered vector, b, and copies its. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8cc_source.html#l02742">2742</a> of file <a class="el" href="block__preconditioner_8cc_source.html">block_preconditioner.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8cc_source.html#l02738">2738</a> of file <a class="el" href="block__preconditioner_8cc_source.html">block_preconditioner.cc</a>.</p>
 
 </div>
 </div>
@@ -3458,7 +3458,7 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Set the base part of the filename to output blocks to. If it is set then all blocks will be output at the end of block_setup. If it is left empty nothing will be output. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l02107">2107</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l02103">2103</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
 </div>
 </div>
@@ -3490,9 +3490,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Set the matrix_pt in the upper-most master preconditioner. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l01013">1013</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l01009">1009</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l01028">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::get_block_other_matrix()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l01024">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::get_block_other_matrix()</a>.</p>
 
 </div>
 </div>
@@ -3540,9 +3540,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Set the i-th mesh for this block preconditioner. Note: The method set_nmesh(...) must be called before this method to specify the number of meshes. By default, it is assumed that each mesh only contains elements of the same type. This condition may be relaxed by setting the boolean allow_multiple_element_type_in_mesh to true, however, each mesh must only contain elements with the same number of dof types. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l02903">2903</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l02899">2899</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="general__purpose__block__preconditioners_8h_source.html#l00224">oomph::GeneralPurposeBlockPreconditioner&lt; MATRIX &gt;::gp_preconditioner_set_all_meshes()</a>, <a class="el" href="complex__smoother_8h_source.html#l01841">oomph::HelmholtzGMRESMG&lt; MATRIX &gt;::solve()</a>, and <a class="el" href="complex__smoother_8h_source.html#l03337">oomph::HelmholtzFGMRESMG&lt; MATRIX &gt;::solve()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="general__purpose__block__preconditioners_8h_source.html#l00220">oomph::GeneralPurposeBlockPreconditioner&lt; MATRIX &gt;::gp_preconditioner_set_all_meshes()</a>, <a class="el" href="complex__smoother_8h_source.html#l01866">oomph::HelmholtzGMRESMG&lt; MATRIX &gt;::solve()</a>, and <a class="el" href="complex__smoother_8h_source.html#l03362">oomph::HelmholtzFGMRESMG&lt; MATRIX &gt;::solve()</a>.</p>
 
 </div>
 </div>
@@ -3574,9 +3574,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Specify the number of meshes required by this block preconditioner. Note: elements in different meshes correspond to different types of DOF. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l02888">2888</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l02884">2884</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="general__purpose__block__preconditioners_8h_source.html#l00224">oomph::GeneralPurposeBlockPreconditioner&lt; MATRIX &gt;::gp_preconditioner_set_all_meshes()</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00505">oomph::SimpleFSIPreconditioner&lt; MATRIX &gt;::SimpleFSIPreconditioner()</a>, <a class="el" href="complex__smoother_8h_source.html#l01841">oomph::HelmholtzGMRESMG&lt; MATRIX &gt;::solve()</a>, and <a class="el" href="complex__smoother_8h_source.html#l03337">oomph::HelmholtzFGMRESMG&lt; MATRIX &gt;::solve()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="general__purpose__block__preconditioners_8h_source.html#l00220">oomph::GeneralPurposeBlockPreconditioner&lt; MATRIX &gt;::gp_preconditioner_set_all_meshes()</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00501">oomph::SimpleFSIPreconditioner&lt; MATRIX &gt;::SimpleFSIPreconditioner()</a>, <a class="el" href="complex__smoother_8h_source.html#l01866">oomph::HelmholtzGMRESMG&lt; MATRIX &gt;::solve()</a>, and <a class="el" href="complex__smoother_8h_source.html#l03362">oomph::HelmholtzFGMRESMG&lt; MATRIX &gt;::solve()</a>.</p>
 
 </div>
 </div>
@@ -3625,7 +3625,7 @@ template&lt;typename MATRIX &gt; </div>
 <p>Set replacement dof-level blocks. Only dof-level blocks can be set. This is important due to how the dof type coarsening feature operates. </p>
 <p>IMPORTANT: The block indices (block_i, block_j) is the dof-level ordering, NOT the block-ordering. The block-ordering is determined by the parameters given to block_setup(...). The DOF-ordering is determined by the two-level ordering scheme of first the elements, then the meshes. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l02950">2950</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l02946">2946</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
 </div>
 </div>
@@ -3673,7 +3673,7 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Setup matrix vector product. This is simply a wrapper around the other setup_matrix_vector_product function. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l02470">2470</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l02466">2466</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
 </div>
 </div>
@@ -3722,9 +3722,9 @@ template&lt;typename MATRIX &gt; </div>
 <p>Setup a matrix vector product. matvec_prod_pt is a pointer to the <a class="el" href="classoomph_1_1MatrixVectorProduct.html" title="Matrix vector product helper class - primarily a wrapper to Trilinos&#39;s Epetra matrix vector product m...">MatrixVectorProduct</a>, block_pt is a pointer to the block matrix, block_col_indices is a vector indicating which block indices does the RHS vector we want to multiply the matrix by. </p>
 <p>The distribution of the block column must be the same as the RHS vector being solved. By default, OOMPH-LIB's uniform row distribution is employed. When block matrices are concatenated without communication, the columns are permuted, as a result, the distribution of the columns may no longer be uniform. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l02429">2429</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l02425">2425</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l02470">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::setup_matrix_vector_product()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l02466">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::setup_matrix_vector_product()</a>.</p>
 
 </div>
 </div>
@@ -3760,9 +3760,9 @@ template&lt;typename MATRIX &gt; </div>
 <p>Function to turn this preconditioner into a subsidiary preconditioner that operates within a bigger "master block preconditioner (e.g. a Navier-Stokes 2x2 block preconditioner dealing with the fluid sub-blocks within a 3x3 FSI preconditioner. Once this is done the master block preconditioner deals with the block setup etc. The vector block_map must specify the dof number in the master preconditioner that corresponds to a block number in this preconditioner. ??ds horribly misleading comment! The length of the vector is used to determine the number of blocks in this preconditioner therefore it must be correctly sized. This calls the other turn_into_subsidiary_block_preconditioner(...) function providing an empty doftype_to_doftype_map vector.</p>
 <p>This calls the other turn_into_subsidiary_block_preconditioner function with the identity mapping for doftype_coarsen_map_coarse vector. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8cc_source.html#l02330">2330</a> of file <a class="el" href="block__preconditioner_8cc_source.html">block_preconditioner.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8cc_source.html#l02326">2326</a> of file <a class="el" href="block__preconditioner_8cc_source.html">block_preconditioner.cc</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pseudo__elastic__fsi__preconditioner_8cc_source.html#l00056">oomph::PseudoElasticFSIPreconditioner::setup()</a>, <a class="el" href="pseudo__elastic__preconditioner_8cc_source.html#l00121">oomph::PseudoElasticPreconditioner::setup()</a>, <a class="el" href="lagrange__enforced__flow__preconditioner_8cc_source.html#l00525">oomph::LagrangeEnforcedFlowPreconditioner::setup()</a>, and <a class="el" href="pseudo__elastic__preconditioner_8cc_source.html#l00561">oomph::PseudoElasticPreconditionerOld::setup()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pseudo__elastic__fsi__preconditioner_8cc_source.html#l00052">oomph::PseudoElasticFSIPreconditioner::setup()</a>, <a class="el" href="pseudo__elastic__preconditioner_8cc_source.html#l00117">oomph::PseudoElasticPreconditioner::setup()</a>, <a class="el" href="lagrange__enforced__flow__preconditioner_8cc_source.html#l00521">oomph::LagrangeEnforcedFlowPreconditioner::setup()</a>, and <a class="el" href="pseudo__elastic__preconditioner_8cc_source.html#l00557">oomph::PseudoElasticPreconditionerOld::setup()</a>.</p>
 
 </div>
 </div>
@@ -3815,7 +3815,7 @@ template&lt;typename MATRIX &gt; </div>
 <p>The doftype_coarsen_map vector (in this case) might be [[0,1], [2,3]] telling the subsidiary block preconditioner that the SUBSIDIARY dof types 0 and 1 should be treated as dof type 0 and the subsidiary dof types 2 and 3 should be treated as subsidiary dof type 1.</p>
 <p>If no doftype_coarsen_map vector is provided, then the identity is used automatically (see the turn_into_subsidiary_block_preconditioner(...) function with only two arguments). In the above case, the identity doftype_coarsen_map vector for the subsidiary block preconditioner would be the 2D vector [[0], [1], [2], [3]] which means dof type 0 is treated as dof type 0, dof type 1 is treated as dof type 1, dof type 2 is treated as dof type 2, and dof type 3 is treated as dof type 3. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8cc_source.html#l02408">2408</a> of file <a class="el" href="block__preconditioner_8cc_source.html">block_preconditioner.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8cc_source.html#l02404">2404</a> of file <a class="el" href="block__preconditioner_8cc_source.html">block_preconditioner.cc</a>.</p>
 
 </div>
 </div>
@@ -3846,7 +3846,7 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Toggles off the debug flag. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l00586">586</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l00582">582</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
 </div>
 </div>
@@ -3877,7 +3877,7 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Toggles off the recursive debug flag. The change goes up the block preconditioning hierarchy. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l00571">571</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l00567">567</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
 </div>
 </div>
@@ -3908,7 +3908,7 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Toggles on the debug flag. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l00580">580</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l00576">576</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
 </div>
 </div>
@@ -3939,7 +3939,7 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Toggles on the recursive debug flag. The change goes up the block preconditioning hierarchy. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l00561">561</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l00557">557</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
 </div>
 </div>
@@ -3968,9 +3968,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p><a class="el" href="classoomph_1_1Vector.html">Vector</a> of unsigned to indicate which meshes contain multiple element types. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03388">3388</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03384">3384</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l02903">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::set_mesh()</a>, and <a class="el" href="block__preconditioner_8h_source.html#l02888">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::set_nmesh()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l02899">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::set_mesh()</a>, and <a class="el" href="block__preconditioner_8h_source.html#l02884">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::set_nmesh()</a>.</p>
 
 </div>
 </div>
@@ -3998,9 +3998,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Stores any block-level distributions / concatenation of block-level distributions required. The first in the pair (<a class="el" href="classoomph_1_1Vector.html">Vector&lt;unsigned&gt;</a>) represents the block numbers of the distributions concatenated to get the second in the pair (LinearAlgebraDistribution*). </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03431">3431</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03427">3427</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l02189">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::clear_block_preconditioner_base()</a>, <a class="el" href="block__preconditioner_8h_source.html#l01146">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::get_concatenated_block()</a>, <a class="el" href="block__preconditioner_8h_source.html#l02800">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::insert_auxiliary_block_distribution()</a>, and <a class="el" href="block__preconditioner_8h_source.html#l02429">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::setup_matrix_vector_product()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l02185">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::clear_block_preconditioner_base()</a>, <a class="el" href="block__preconditioner_8h_source.html#l01142">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::get_concatenated_block()</a>, <a class="el" href="block__preconditioner_8h_source.html#l02796">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::insert_auxiliary_block_distribution()</a>, and <a class="el" href="block__preconditioner_8h_source.html#l02425">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::setup_matrix_vector_product()</a>.</p>
 
 </div>
 </div>
@@ -4028,9 +4028,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>The distribution for the blocks. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03320">3320</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03316">3316</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l01928">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::block_distribution_pt()</a>, <a class="el" href="block__preconditioner_8h_source.html#l00433">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::BlockPreconditioner()</a>, <a class="el" href="block__preconditioner_8h_source.html#l02189">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::clear_block_preconditioner_base()</a>, <a class="el" href="block__preconditioner_8h_source.html#l02301">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::document()</a>, <a class="el" href="block__preconditioner_8h_source.html#l01146">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::get_concatenated_block()</a>, and <a class="el" href="block__preconditioner_8h_source.html#l02429">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::setup_matrix_vector_product()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l01924">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::block_distribution_pt()</a>, <a class="el" href="block__preconditioner_8h_source.html#l00429">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::BlockPreconditioner()</a>, <a class="el" href="block__preconditioner_8h_source.html#l02185">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::clear_block_preconditioner_base()</a>, <a class="el" href="block__preconditioner_8h_source.html#l02297">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::document()</a>, <a class="el" href="block__preconditioner_8h_source.html#l01142">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::get_concatenated_block()</a>, and <a class="el" href="block__preconditioner_8h_source.html#l02425">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::setup_matrix_vector_product()</a>.</p>
 
 </div>
 </div>
@@ -4058,9 +4058,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p><a class="el" href="classoomph_1_1Vector.html">Vector</a> of vectors to store the mapping from block number to the DOF number (each element could be a vector because we allow multiple DOFs types in a single block). </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03512">3512</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03508">3508</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l02301">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::document()</a>, <a class="el" href="block__preconditioner_8h_source.html#l02733">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::internal_index_in_block()</a>, and <a class="el" href="block__preconditioner_8h_source.html#l02151">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::post_block_matrix_assembly_partial_clear()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l02297">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::document()</a>, <a class="el" href="block__preconditioner_8h_source.html#l02729">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::internal_index_in_block()</a>, and <a class="el" href="block__preconditioner_8h_source.html#l02147">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::post_block_matrix_assembly_partial_clear()</a>.</p>
 
 </div>
 </div>
@@ -4088,9 +4088,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Mapping for block types to dof types. These are the dof types the writer of the preconditioner expects. For the upper-most master block preconditioner, this would be the sum of the dof types in the meshes. For subsidiary block preconditioners, this is determined by the parent preconditioner when passing in the doftype_coarsen_map_coarse vector in turn_into_subsidiary_block_preconditioner(...). </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03328">3328</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03324">3324</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l00433">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::BlockPreconditioner()</a>, <a class="el" href="block__preconditioner_8h_source.html#l00692">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::get_block()</a>, and <a class="el" href="block__preconditioner_8h_source.html#l01691">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::nblock_types()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l00429">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::BlockPreconditioner()</a>, <a class="el" href="block__preconditioner_8h_source.html#l00688">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::get_block()</a>, and <a class="el" href="block__preconditioner_8h_source.html#l01687">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::nblock_types()</a>.</p>
 
 </div>
 </div>
@@ -4118,9 +4118,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Mapping for the block types to the most fine grain dof types. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03331">3331</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03327">3327</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l01847">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::block_number()</a>, <a class="el" href="block__preconditioner_8h_source.html#l00433">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::BlockPreconditioner()</a>, and <a class="el" href="block__preconditioner_8h_source.html#l01875">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::index_in_block()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l01843">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::block_number()</a>, <a class="el" href="block__preconditioner_8h_source.html#l00429">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::BlockPreconditioner()</a>, and <a class="el" href="block__preconditioner_8h_source.html#l01871">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::index_in_block()</a>.</p>
 
 </div>
 </div>
@@ -4148,9 +4148,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Debugging variable. Set true or false via the access functions turn_on_debug_flag(...) turn_off_debug_flag(...) </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03424">3424</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03420">3420</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l00433">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::BlockPreconditioner()</a>, <a class="el" href="block__preconditioner_8h_source.html#l00586">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::turn_off_debug_flag()</a>, and <a class="el" href="block__preconditioner_8h_source.html#l00580">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::turn_on_debug_flag()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l00429">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::BlockPreconditioner()</a>, <a class="el" href="block__preconditioner_8h_source.html#l00582">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::turn_off_debug_flag()</a>, and <a class="el" href="block__preconditioner_8h_source.html#l00576">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::turn_on_debug_flag()</a>.</p>
 
 </div>
 </div>
@@ -4178,9 +4178,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Storage for the default distribution for each dof block at this level. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03384">3384</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03380">3380</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l00433">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::BlockPreconditioner()</a>, <a class="el" href="block__preconditioner_8h_source.html#l02189">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::clear_block_preconditioner_base()</a>, <a class="el" href="block__preconditioner_8h_source.html#l01990">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::dof_block_distribution_pt()</a>, and <a class="el" href="block__preconditioner_8h_source.html#l00692">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::get_block()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l00429">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::BlockPreconditioner()</a>, <a class="el" href="block__preconditioner_8h_source.html#l02185">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::clear_block_preconditioner_base()</a>, <a class="el" href="block__preconditioner_8h_source.html#l01986">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::dof_block_distribution_pt()</a>, and <a class="el" href="block__preconditioner_8h_source.html#l00688">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::get_block()</a>.</p>
 
 </div>
 </div>
@@ -4208,9 +4208,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p><a class="el" href="classoomph_1_1Vector.html">Vector</a> containing the size of each block, i.e. the number of global DOFs associated with it. (Empty if this preconditioner has a master preconditioner as this information is obtain from the master preconditioner.) </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03501">3501</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03497">3497</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l03230">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::internal_dof_block_dimension()</a>, and <a class="el" href="block__preconditioner_8h_source.html#l02151">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::post_block_matrix_assembly_partial_clear()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l03226">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::internal_dof_block_dimension()</a>, and <a class="el" href="block__preconditioner_8h_source.html#l02147">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::post_block_matrix_assembly_partial_clear()</a>.</p>
 
 </div>
 </div>
@@ -4238,9 +4238,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p><a class="el" href="classoomph_1_1Vector.html">Vector</a> to store the mapping from the global DOF number to its block. Empty if this preconditioner has a master preconditioner, in this case the information is obtained from the master preconditioner. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03464">3464</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03460">3460</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l03087">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::internal_dof_number()</a>, and <a class="el" href="block__preconditioner_8h_source.html#l02151">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::post_block_matrix_assembly_partial_clear()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l03083">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::internal_dof_number()</a>, and <a class="el" href="block__preconditioner_8h_source.html#l02147">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::post_block_matrix_assembly_partial_clear()</a>.</p>
 
 </div>
 </div>
@@ -4268,9 +4268,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p><a class="el" href="classoomph_1_1Vector.html">Vector</a> to store the mapping from the global DOF number to its block (empty if this preconditioner has a master preconditioner as this information is obtained from the master preconditioner). Sparse version: for global indices outside of the range this-&gt;<a class="el" href="classoomph_1_1DistributableLinearAlgebraObject.html#ab00a3919b8634c698749f14a4d92947d" title="access function for the first row on this processor">first_row()</a> to this-&gt;<a class="el" href="classoomph_1_1DistributableLinearAlgebraObject.html#ab00a3919b8634c698749f14a4d92947d" title="access function for the first row on this processor">first_row()</a>+this-&gt;<a class="el" href="classoomph_1_1DistributableLinearAlgebraObject.html#a9bd7e1d242c69a28da85a804a7717fce" title="access function for the num of local rows on this processor.">nrow_local()</a>. The global index of an element in this vector is defined in Global_index_sparse. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03494">3494</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03490">3490</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l03087">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::internal_dof_number()</a>, and <a class="el" href="block__preconditioner_8h_source.html#l02151">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::post_block_matrix_assembly_partial_clear()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l03083">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::internal_dof_number()</a>, and <a class="el" href="block__preconditioner_8h_source.html#l02147">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::post_block_matrix_assembly_partial_clear()</a>.</p>
 
 </div>
 </div>
@@ -4298,9 +4298,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p><a class="el" href="classoomph_1_1Vector.html">Vector</a> to the mapping from DOF number to block number. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03515">3515</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03511">3511</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l02717">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::internal_block_number()</a>, and <a class="el" href="block__preconditioner_8h_source.html#l02151">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::post_block_matrix_assembly_partial_clear()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l02713">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::internal_block_number()</a>, and <a class="el" href="block__preconditioner_8h_source.html#l02147">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::post_block_matrix_assembly_partial_clear()</a>.</p>
 
 </div>
 </div>
@@ -4332,9 +4332,9 @@ template&lt;typename MATRIX &gt; </div>
 <p>Doftype_coarsen_map_fine = [[0,1][2,3,4,5]], since the dof types passed to this preconditioner is [2, 3, 4] from the master preconditioner, but it actually refers to the underlying dof types [2,3,4,5,6,7].</p>
 <p>In the case of the top most master block preconditioner, the block_setup(...) function fills the vector with the identity mapping. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03369">3369</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03365">3365</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l01715">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::ndof_types()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l01711">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::ndof_types()</a>.</p>
 
 </div>
 </div>
@@ -4362,9 +4362,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Mapping the dof types within this preconditioner. The values in here refers to the most grain dof types. This list is automatically generated either in block_setup(...) (for the top-most preconditioner) or the turn_into_subsidiary_block_preconditioner(...) function. Please refer to the comment above Doftype_coarsen_map_coarse for more details. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03377">3377</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03373">3373</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l02364">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::doftype_coarsen_map_fine()</a>, <a class="el" href="block__preconditioner_8h_source.html#l02371">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::get_fine_grain_dof_types_in()</a>, and <a class="el" href="block__preconditioner_8h_source.html#l02392">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::nfine_grain_dof_types_in()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l02360">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::doftype_coarsen_map_fine()</a>, <a class="el" href="block__preconditioner_8h_source.html#l02367">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::get_fine_grain_dof_types_in()</a>, and <a class="el" href="block__preconditioner_8h_source.html#l02388">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::nfine_grain_dof_types_in()</a>.</p>
 
 </div>
 </div>
@@ -4392,7 +4392,7 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>The map between the dof types in this preconditioner and the master preconditioner. If there is no master preconditioner, it remains empty. This is the version for which the master preconditioner expects. The dof types in here may or may not be coarsened in the preconditioner above this one. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03455">3455</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03451">3451</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
 </div>
 </div>
@@ -4420,9 +4420,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>The map between the dof types in this preconditioner and the master preconditioner. If there is no master preconditioner it remains empty. This list contains the mapping for the underlying dof types. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03448">3448</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03444">3444</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l03087">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::internal_dof_number()</a>, and <a class="el" href="block__preconditioner_8h_source.html#l03281">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::internal_master_dof_number()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l03083">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::internal_dof_number()</a>, and <a class="el" href="block__preconditioner_8h_source.html#l03277">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::internal_master_dof_number()</a>.</p>
 
 </div>
 </div>
@@ -4450,9 +4450,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Vectors of vectors for the mapping from block number and block row to global row number. Empty if this preconditioner has a master preconditioner as this information is obtain from the master preconditioner. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03507">3507</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03503">3503</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l02189">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::clear_block_preconditioner_base()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l02185">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::clear_block_preconditioner_base()</a>.</p>
 
 </div>
 </div>
@@ -4484,9 +4484,9 @@ template&lt;typename MATRIX &gt; </div>
 <li>Dof_number_sparse; The corresponding global indices are stored in this vector. </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03477">3477</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03473">3473</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l03087">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::internal_dof_number()</a>, <a class="el" href="block__preconditioner_8h_source.html#l03154">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::internal_index_in_dof()</a>, and <a class="el" href="block__preconditioner_8h_source.html#l02151">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::post_block_matrix_assembly_partial_clear()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l03083">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::internal_dof_number()</a>, <a class="el" href="block__preconditioner_8h_source.html#l03150">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::internal_index_in_dof()</a>, and <a class="el" href="block__preconditioner_8h_source.html#l02147">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::post_block_matrix_assembly_partial_clear()</a>.</p>
 
 </div>
 </div>
@@ -4514,9 +4514,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p><b>This was uncommented</b> Presumably a non-distributed analogue of Index_in_dof_block_sparse. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03459">3459</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03455">3455</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l03154">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::internal_index_in_dof()</a>, and <a class="el" href="block__preconditioner_8h_source.html#l02151">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::post_block_matrix_assembly_partial_clear()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l03150">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::internal_index_in_dof()</a>, and <a class="el" href="block__preconditioner_8h_source.html#l02147">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::post_block_matrix_assembly_partial_clear()</a>.</p>
 
 </div>
 </div>
@@ -4544,9 +4544,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p><a class="el" href="classoomph_1_1Vector.html">Vector</a> to store the mapping from the global DOF number to the index (row/column number) within its block (empty if this preconditioner has a master preconditioner as this information is obtained from the master preconditioner). Sparse version: for global indices outside of the range this-&gt;<a class="el" href="classoomph_1_1DistributableLinearAlgebraObject.html#ab00a3919b8634c698749f14a4d92947d" title="access function for the first row on this processor">first_row()</a> to this-&gt;<a class="el" href="classoomph_1_1DistributableLinearAlgebraObject.html#ab00a3919b8634c698749f14a4d92947d" title="access function for the first row on this processor">first_row()</a>+this-&gt;<a class="el" href="classoomph_1_1DistributableLinearAlgebraObject.html#a9bd7e1d242c69a28da85a804a7717fce" title="access function for the num of local rows on this processor.">nrow_local()</a>. The global index of an element in this vector is defined in Global_index_sparse. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03486">3486</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03482">3482</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l03154">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::internal_index_in_dof()</a>, and <a class="el" href="block__preconditioner_8h_source.html#l02151">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::post_block_matrix_assembly_partial_clear()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l03150">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::internal_index_in_dof()</a>, and <a class="el" href="block__preconditioner_8h_source.html#l02147">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::post_block_matrix_assembly_partial_clear()</a>.</p>
 
 </div>
 </div>
@@ -4574,9 +4574,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Storage for the default distribution for each internal block. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03380">3380</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03376">3376</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l00433">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::BlockPreconditioner()</a>, <a class="el" href="block__preconditioner_8h_source.html#l02189">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::clear_block_preconditioner_base()</a>, <a class="el" href="block__preconditioner_8h_source.html#l02301">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::document()</a>, <a class="el" href="block__preconditioner_8h_source.html#l01990">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::dof_block_distribution_pt()</a>, <a class="el" href="block__preconditioner_8h_source.html#l00692">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::get_block()</a>, <a class="el" href="block__preconditioner_8h_source.html#l03207">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::internal_block_dimension()</a>, and <a class="el" href="block__preconditioner_8h_source.html#l02765">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::internal_block_distribution_pt()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l00429">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::BlockPreconditioner()</a>, <a class="el" href="block__preconditioner_8h_source.html#l02185">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::clear_block_preconditioner_base()</a>, <a class="el" href="block__preconditioner_8h_source.html#l02297">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::document()</a>, <a class="el" href="block__preconditioner_8h_source.html#l01986">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::dof_block_distribution_pt()</a>, <a class="el" href="block__preconditioner_8h_source.html#l00688">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::get_block()</a>, <a class="el" href="block__preconditioner_8h_source.html#l03203">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::internal_block_dimension()</a>, and <a class="el" href="block__preconditioner_8h_source.html#l02761">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::internal_block_distribution_pt()</a>.</p>
 
 </div>
 </div>
@@ -4604,9 +4604,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Number of different block types in this preconditioner. Note that this information is maintained if used as a subsidiary or stand-alone block preconditioner, in the latter case it stores the number of blocks within the subsidiary preconditioner. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03405">3405</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03401">3401</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l00433">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::BlockPreconditioner()</a>, <a class="el" href="block__preconditioner_8h_source.html#l02189">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::clear_block_preconditioner_base()</a>, <a class="el" href="block__preconditioner_8h_source.html#l02301">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::document()</a>, and <a class="el" href="block__preconditioner_8h_source.html#l02554">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::internal_nblock_types()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l00429">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::BlockPreconditioner()</a>, <a class="el" href="block__preconditioner_8h_source.html#l02185">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::clear_block_preconditioner_base()</a>, <a class="el" href="block__preconditioner_8h_source.html#l02297">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::document()</a>, and <a class="el" href="block__preconditioner_8h_source.html#l02550">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::internal_nblock_types()</a>.</p>
 
 </div>
 </div>
@@ -4634,9 +4634,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Number of different DOF types in this preconditioner. Note that this information is maintained if used as a subsidiary or stand-alone block preconditioner, in the latter case it stores the number of dofs within the subsidiary preconditioner. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03411">3411</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03407">3407</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l00433">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::BlockPreconditioner()</a>, <a class="el" href="block__preconditioner_8h_source.html#l02189">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::clear_block_preconditioner_base()</a>, <a class="el" href="block__preconditioner_8h_source.html#l02301">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::document()</a>, and <a class="el" href="block__preconditioner_8h_source.html#l02596">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::internal_ndof_types()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l00429">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::BlockPreconditioner()</a>, <a class="el" href="block__preconditioner_8h_source.html#l02185">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::clear_block_preconditioner_base()</a>, <a class="el" href="block__preconditioner_8h_source.html#l02297">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::document()</a>, and <a class="el" href="block__preconditioner_8h_source.html#l02592">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::internal_ndof_types()</a>.</p>
 
 </div>
 </div>
@@ -4667,9 +4667,9 @@ template&lt;typename MATRIX &gt; </div>
 <li>only used if this preconditioner is a master preconditioner. Warning: always use the access function <a class="el" href="classoomph_1_1BlockPreconditioner.html#a3a16de88bd5369e729d761a6498fdd3f" title="access function to the internal preconditioner matrix distribution pt. preconditioner_matrix_distribu...">internal_preconditioner_matrix_distribution_pt()</a>. </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03564">3564</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03560">3560</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l00433">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::BlockPreconditioner()</a>, <a class="el" href="block__preconditioner_8h_source.html#l02189">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::clear_block_preconditioner_base()</a>, and <a class="el" href="block__preconditioner_8h_source.html#l03296">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::internal_preconditioner_matrix_distribution_pt()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l00429">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::BlockPreconditioner()</a>, <a class="el" href="block__preconditioner_8h_source.html#l02185">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::clear_block_preconditioner_base()</a>, and <a class="el" href="block__preconditioner_8h_source.html#l03292">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::internal_preconditioner_matrix_distribution_pt()</a>.</p>
 
 </div>
 </div>
@@ -4697,9 +4697,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>If the block preconditioner is acting a subsidiary block preconditioner then a pointer to the master preconditioner is stored here. If the preconditioner does not have a master block preconditioner then this pointer remains null. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03443">3443</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03439">3439</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l00433">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::BlockPreconditioner()</a>, <a class="el" href="block__preconditioner_8h_source.html#l03230">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::internal_dof_block_dimension()</a>, <a class="el" href="block__preconditioner_8h_source.html#l03087">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::internal_dof_number()</a>, <a class="el" href="block__preconditioner_8h_source.html#l03154">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::internal_index_in_dof()</a>, <a class="el" href="block__preconditioner_8h_source.html#l02099">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::is_master_block_preconditioner()</a>, <a class="el" href="block__preconditioner_8h_source.html#l02092">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::is_subsidiary_block_preconditioner()</a>, <a class="el" href="block__preconditioner_8h_source.html#l02172">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::master_block_preconditioner_pt()</a>, <a class="el" href="block__preconditioner_8h_source.html#l02048">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::master_distribution_pt()</a>, and <a class="el" href="block__preconditioner_8h_source.html#l03265">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::master_nrow()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l00429">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::BlockPreconditioner()</a>, <a class="el" href="block__preconditioner_8h_source.html#l03226">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::internal_dof_block_dimension()</a>, <a class="el" href="block__preconditioner_8h_source.html#l03083">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::internal_dof_number()</a>, <a class="el" href="block__preconditioner_8h_source.html#l03150">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::internal_index_in_dof()</a>, <a class="el" href="block__preconditioner_8h_source.html#l02095">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::is_master_block_preconditioner()</a>, <a class="el" href="block__preconditioner_8h_source.html#l02088">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::is_subsidiary_block_preconditioner()</a>, <a class="el" href="block__preconditioner_8h_source.html#l02168">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::master_block_preconditioner_pt()</a>, <a class="el" href="block__preconditioner_8h_source.html#l02044">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::master_distribution_pt()</a>, and <a class="el" href="block__preconditioner_8h_source.html#l03261">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::master_nrow()</a>.</p>
 
 </div>
 </div>
@@ -4727,9 +4727,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p><a class="el" href="classoomph_1_1Vector.html">Vector</a> of pointers to the meshes containing the elements used in the block preconditioner. Const pointers to prevent modification of the mesh by the preconditioner (this could be relaxed if needed). If this is a subsidiary preconditioner, then the information is looked up in the master preconditioner. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03395">3395</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03391">3391</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l01805">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::mesh_pt()</a>, <a class="el" href="block__preconditioner_8h_source.html#l01715">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::ndof_types()</a>, <a class="el" href="block__preconditioner_8h_source.html#l01841">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::nmesh()</a>, <a class="el" href="block__preconditioner_8h_source.html#l02903">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::set_mesh()</a>, and <a class="el" href="block__preconditioner_8h_source.html#l02888">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::set_nmesh()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l01801">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::mesh_pt()</a>, <a class="el" href="block__preconditioner_8h_source.html#l01711">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::ndof_types()</a>, <a class="el" href="block__preconditioner_8h_source.html#l01837">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::nmesh()</a>, <a class="el" href="block__preconditioner_8h_source.html#l02899">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::set_mesh()</a>, and <a class="el" href="block__preconditioner_8h_source.html#l02884">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::set_nmesh()</a>.</p>
 
 </div>
 </div>
@@ -4757,9 +4757,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Number of types of degree of freedom associated with each block. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03518">3518</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03514">3514</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l02151">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::post_block_matrix_assembly_partial_clear()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l02147">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::post_block_matrix_assembly_partial_clear()</a>.</p>
 
 </div>
 </div>
@@ -4787,9 +4787,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Storage for number of types of degree of freedom of the elements in each mesh. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03399">3399</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03395">3395</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l02068">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::ndof_types_in_mesh()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l02064">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::ndof_types_in_mesh()</a>.</p>
 
 </div>
 </div>
@@ -4817,9 +4817,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Number of DOFs (# of rows or columns in the matrix) in this preconditioner. Note that this information is maintained if used as a subsidiary or stand-alone block preconditioner, in the latter case it stores the number of rows within the subsidiary preconditioner. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03437">3437</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03433">3433</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l00433">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::BlockPreconditioner()</a>, <a class="el" href="block__preconditioner_8h_source.html#l02189">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::clear_block_preconditioner_base()</a>, and <a class="el" href="block__preconditioner_8h_source.html#l03265">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::master_nrow()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l00429">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::BlockPreconditioner()</a>, <a class="el" href="block__preconditioner_8h_source.html#l02185">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::clear_block_preconditioner_base()</a>, and <a class="el" href="block__preconditioner_8h_source.html#l03261">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::master_nrow()</a>.</p>
 
 </div>
 </div>
@@ -4847,9 +4847,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>The number of block rows to be received from processor p for block b (matrix indexed [b][p]). </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03537">3537</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03533">3533</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l02189">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::clear_block_preconditioner_base()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l02185">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::clear_block_preconditioner_base()</a>.</p>
 
 </div>
 </div>
@@ -4877,9 +4877,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>The number of preconditioner rows to be received from processor p for get_block_ordered_... type methods. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03553">3553</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03549">3549</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l02189">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::clear_block_preconditioner_base()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l02185">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::clear_block_preconditioner_base()</a>.</p>
 
 </div>
 </div>
@@ -4907,9 +4907,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>The number of global rows to be sent of block b to processor p (matrix indexed [b][p]). </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03529">3529</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03525">3525</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l02189">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::clear_block_preconditioner_base()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l02185">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::clear_block_preconditioner_base()</a>.</p>
 
 </div>
 </div>
@@ -4937,9 +4937,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>The number global rows to be sent to processor p for get_block_ordered_... type methods. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03545">3545</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03541">3541</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l02189">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::clear_block_preconditioner_base()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l02185">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::clear_block_preconditioner_base()</a>.</p>
 
 </div>
 </div>
@@ -4967,9 +4967,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>String giving the base of the files to write block data into. If empty then do not output blocks. Default is empty. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03576">3576</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03572">3572</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l02119">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::block_output_on()</a>, <a class="el" href="block__preconditioner_8h_source.html#l02113">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::disable_block_output_to_files()</a>, and <a class="el" href="block__preconditioner_8h_source.html#l02107">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::set_block_output_to_files()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l02115">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::block_output_on()</a>, <a class="el" href="block__preconditioner_8h_source.html#l02109">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::disable_block_output_to_files()</a>, and <a class="el" href="block__preconditioner_8h_source.html#l02103">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::set_block_output_to_files()</a>.</p>
 
 </div>
 </div>
@@ -4997,9 +4997,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>The distribution of the preconditioner matrix. This is the concatenation of the block distribution. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03568">3568</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03564">3564</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l00433">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::BlockPreconditioner()</a>, <a class="el" href="block__preconditioner_8h_source.html#l02189">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::clear_block_preconditioner_base()</a>, and <a class="el" href="block__preconditioner_8h_source.html#l03311">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::preconditioner_matrix_distribution_pt()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l00429">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::BlockPreconditioner()</a>, <a class="el" href="block__preconditioner_8h_source.html#l02185">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::clear_block_preconditioner_base()</a>, and <a class="el" href="block__preconditioner_8h_source.html#l03307">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::preconditioner_matrix_distribution_pt()</a>.</p>
 
 </div>
 </div>
@@ -5027,9 +5027,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Debugging variable. Set true or false via the access functions turn_on_recursive_debug_flag(...) turn_off_recursive_debug_flag(...) These will turn on/off the debug flag up the hierarchy. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03419">3419</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03415">3415</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l00433">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::BlockPreconditioner()</a>, <a class="el" href="block__preconditioner_8h_source.html#l00571">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::turn_off_recursive_debug_flag()</a>, and <a class="el" href="block__preconditioner_8h_source.html#l00561">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::turn_on_recursive_debug_flag()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l00429">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::BlockPreconditioner()</a>, <a class="el" href="block__preconditioner_8h_source.html#l00567">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::turn_off_recursive_debug_flag()</a>, and <a class="el" href="block__preconditioner_8h_source.html#l00557">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::turn_on_recursive_debug_flag()</a>.</p>
 
 </div>
 </div>
@@ -5057,9 +5057,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>The replacement dof-level blocks. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03317">3317</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03313">3313</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l02189">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::clear_block_preconditioner_base()</a>, <a class="el" href="block__preconditioner_8h_source.html#l00692">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::get_block()</a>, <a class="el" href="block__preconditioner_8h_source.html#l02413">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::replacement_dof_block_pt()</a>, and <a class="el" href="block__preconditioner_8h_source.html#l02950">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::set_replacement_dof_block()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l02185">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::clear_block_preconditioner_base()</a>, <a class="el" href="block__preconditioner_8h_source.html#l00688">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::get_block()</a>, <a class="el" href="block__preconditioner_8h_source.html#l02409">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::replacement_dof_block_pt()</a>, and <a class="el" href="block__preconditioner_8h_source.html#l02946">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::set_replacement_dof_block()</a>.</p>
 
 </div>
 </div>
@@ -5087,9 +5087,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>The block rows to be received from processor p for block b (matrix indexed [b][p]). </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03533">3533</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03529">3529</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l02189">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::clear_block_preconditioner_base()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l02185">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::clear_block_preconditioner_base()</a>.</p>
 
 </div>
 </div>
@@ -5117,9 +5117,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>The preconditioner rows to be received from processor p for get_block_ordered_... type methods. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03549">3549</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03545">3545</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l02189">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::clear_block_preconditioner_base()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l02185">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::clear_block_preconditioner_base()</a>.</p>
 
 </div>
 </div>
@@ -5147,9 +5147,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>The global rows to be sent of block b to processor p (matrix indexed [b][p]). </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03525">3525</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03521">3521</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l02189">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::clear_block_preconditioner_base()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l02185">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::clear_block_preconditioner_base()</a>.</p>
 
 </div>
 </div>
@@ -5177,9 +5177,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>The global rows to be sent to processor p for get_block_ordered_... type methods. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03541">3541</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03537">3537</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l02189">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::clear_block_preconditioner_base()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="block__preconditioner_8h_source.html#l02185">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::clear_block_preconditioner_base()</a>.</p>
 
 </div>
 </div>
@@ -5207,7 +5207,7 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Static boolean to allow block_matrix_test(...) to be run. Defaults to false. </p>
 
-<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03572">3572</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="block__preconditioner_8h_source.html#l03568">3568</a> of file <a class="el" href="block__preconditioner_8h_source.html">block_preconditioner.h</a>.</p>
 
 </div>
 </div>
@@ -5243,7 +5243,7 @@ template&lt;typename MATRIX &gt; </div>
     <footer>
       <div class="container">
         <div class="text-muted" style="float:right;">Generated by <a href="http://www.doxygen.org/index.html">
-          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Tue Jul 6 2021 22:55:50
+          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Fri Jul 9 2021 20:51:08
         </div>
       </div>
     </footer>

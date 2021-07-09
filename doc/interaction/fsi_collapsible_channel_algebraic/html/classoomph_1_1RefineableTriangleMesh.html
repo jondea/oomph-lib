@@ -877,7 +877,7 @@ class oomph::RefineableTriangleMesh&lt; ELEMENT &gt;</h3>
 
 <p>Unstructured refineable Triangle Mesh. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02158">2158</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02154">2154</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="aa6831f42aa1941f4ae0b9186d01f9d7c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa6831f42aa1941f4ae0b9186d01f9d7c">&#9670;&nbsp;</a></span>InternalHolePointUpdateFctPt</h2>
@@ -895,7 +895,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Function pointer to a function that can generate a point within the ihole-th hole, so that this can be overloaded by the user if they have a better way of doing it than our clunky default. The function should update the components of the Vector poly_pt-&gt;internal_point() </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02176">2176</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02172">2172</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
 
 </div>
 </div>
@@ -915,7 +915,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Function pointer to function that updates the mesh following the snapping of boundary nodes to the boundaries (e.g. to move boundary nodes very slightly to satisfy volume constraints) </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02168">2168</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02164">2164</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
 
 </div>
 </div>
@@ -958,7 +958,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Build mesh, based on the specifications on <a class="el" href="classoomph_1_1TriangleMeshParameters.html" title="Helper object for dealing with the parameters used for the TriangleMesh objects.">TriangleMeshParameters</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02183">2183</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02179">2179</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
 
 </div>
 </div>
@@ -1018,7 +1018,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Build mesh, based on the polyfiles. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02199">2199</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02195">2195</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
 
 </div>
 </div>
@@ -1084,7 +1084,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Build mesh from specified triangulation and associated target areas for elements in it NOTE: This is used ONLY during adaptation and should not be used as a method of constructing a <a class="el" href="classoomph_1_1TriangleMesh.html">TriangleMesh</a> object in demo drivers! </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02230">2230</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02226">2226</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
 
 <p class="reference">References <a class="el" href="namespaceoomph.html#a3af531b221ad8fe56e4f9e3364435b87">oomph::triangulate()</a>.</p>
 
@@ -1117,7 +1117,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Empty Destructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02327">2327</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02323">2323</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
 
 </div>
 </div>
@@ -1143,9 +1143,9 @@ template&lt;class ELEMENT &gt; </div>
 <p>Adapt mesh, based on elemental error provided. </p>
 <p>Adapt problem based on specified elemental error estimates This function implement serial and parallel mesh adaptation, the sections for parallel mesh adaptation are clearly identified by checking whether the mesh is distributed or not </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l29348">29348</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l29344">29344</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="triangle__mesh_8template_8h_source.html#l00298">oomph::TriangleMeshParameters::disable_automatic_creation_of_vertices_on_boundaries()</a>, <a class="el" href="triangle__mesh_8template_8h_source.html#l00180">oomph::TriangleMeshParameters::element_area()</a>, <a class="el" href="triangle__mesh_8template_8h_source.html#l00248">oomph::TriangleMeshParameters::enable_use_attributes()</a>, <a class="el" href="triangle__mesh_8template_8h_source.html#l00186">oomph::TriangleMeshParameters::extra_holes_coordinates()</a>, <a class="el" href="triangle__mesh_8template_8h_source.html#l00162">oomph::TriangleMeshParameters::internal_closed_curve_pt()</a>, <a class="el" href="triangle__mesh_8template_8h_source.html#l00171">oomph::TriangleMeshParameters::internal_open_curves_pt()</a>, <a class="el" href="triangle__mesh_8template_8h_source.html#l02375">oomph::RefineableTriangleMesh&lt; ELEMENT &gt;::max_element_size()</a>, <a class="el" href="triangle__mesh_8template_8h_source.html#l02378">oomph::RefineableTriangleMesh&lt; ELEMENT &gt;::min_element_size()</a>, <a class="el" href="triangle__mesh_8template_8h_source.html#l02381">oomph::RefineableTriangleMesh&lt; ELEMENT &gt;::min_permitted_angle()</a>, <a class="el" href="triangle__mesh_8template_8h_source.html#l01122">oomph::TriangleMesh&lt; ELEMENT &gt;::oomph_vertex_nodes_id()</a>, <a class="el" href="triangle__mesh_8template_8h_source.html#l00234">oomph::TriangleMeshParameters::regions_coordinates()</a>, <a class="el" href="triangle__mesh_8template_8h_source.html#l00264">oomph::TriangleMeshParameters::set_communicator_pt()</a>, <a class="el" href="triangle__mesh_8template_8h_source.html#l00849">oomph::TriangleMesh&lt; ELEMENT &gt;::set_mesh_level_time_stepper()</a>, <a class="el" href="triangle__mesh_8template_8h_source.html#l01392">oomph::TriangleMesh&lt; ELEMENT &gt;::shared_boundaries_ids()</a>, and <a class="el" href="triangle__mesh_8template_8h_source.html#l01665">oomph::TriangleMesh&lt; ELEMENT &gt;::shared_boundary_overlaps_internal_boundary()</a>.</p>
+<p class="reference">References <a class="el" href="triangle__mesh_8template_8h_source.html#l00294">oomph::TriangleMeshParameters::disable_automatic_creation_of_vertices_on_boundaries()</a>, <a class="el" href="triangle__mesh_8template_8h_source.html#l00176">oomph::TriangleMeshParameters::element_area()</a>, <a class="el" href="triangle__mesh_8template_8h_source.html#l00244">oomph::TriangleMeshParameters::enable_use_attributes()</a>, <a class="el" href="triangle__mesh_8template_8h_source.html#l00182">oomph::TriangleMeshParameters::extra_holes_coordinates()</a>, <a class="el" href="triangle__mesh_8template_8h_source.html#l00158">oomph::TriangleMeshParameters::internal_closed_curve_pt()</a>, <a class="el" href="triangle__mesh_8template_8h_source.html#l00167">oomph::TriangleMeshParameters::internal_open_curves_pt()</a>, <a class="el" href="triangle__mesh_8template_8h_source.html#l02371">oomph::RefineableTriangleMesh&lt; ELEMENT &gt;::max_element_size()</a>, <a class="el" href="triangle__mesh_8template_8h_source.html#l02374">oomph::RefineableTriangleMesh&lt; ELEMENT &gt;::min_element_size()</a>, <a class="el" href="triangle__mesh_8template_8h_source.html#l02377">oomph::RefineableTriangleMesh&lt; ELEMENT &gt;::min_permitted_angle()</a>, <a class="el" href="triangle__mesh_8template_8h_source.html#l01118">oomph::TriangleMesh&lt; ELEMENT &gt;::oomph_vertex_nodes_id()</a>, <a class="el" href="triangle__mesh_8template_8h_source.html#l00230">oomph::TriangleMeshParameters::regions_coordinates()</a>, <a class="el" href="triangle__mesh_8template_8h_source.html#l00260">oomph::TriangleMeshParameters::set_communicator_pt()</a>, <a class="el" href="triangle__mesh_8template_8h_source.html#l00845">oomph::TriangleMesh&lt; ELEMENT &gt;::set_mesh_level_time_stepper()</a>, <a class="el" href="triangle__mesh_8template_8h_source.html#l01388">oomph::TriangleMesh&lt; ELEMENT &gt;::shared_boundaries_ids()</a>, and <a class="el" href="triangle__mesh_8template_8h_source.html#l01661">oomph::TriangleMesh&lt; ELEMENT &gt;::shared_boundary_overlaps_internal_boundary()</a>.</p>
 
 </div>
 </div>
@@ -1193,7 +1193,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Helper function to create elements on the loop process based on the info received in send_and_received_elements_nodes_info This function is in charge of verify if the element is associated to a boundary and associate to it if that is the case. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l27316">27316</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l27312">27312</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
 
 </div>
 </div>
@@ -1235,7 +1235,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Helper function to create (halo) elements on the loop process based on the info received in send_and_received_located_info This function is in charge of verify if the element is associated to a boundary. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l18963">18963</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l18959">18959</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
 
 </div>
 </div>
@@ -1319,7 +1319,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Helper function to add halo node. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l19132">19132</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l19128">19128</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
 
 </div>
 </div>
@@ -1362,7 +1362,7 @@ template&lt;class ELEMENT &gt; </div>
 <p>Helper function to add haloed node. </p>
 <p>Helper to add external haloed node that is not a master. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l18700">18700</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l18696">18696</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
 
 </div>
 </div>
@@ -1417,7 +1417,7 @@ template&lt;class ELEMENT &gt; </div>
 <p>Helper function to add haloed node. </p>
 <p>Helper function to add nodes on a new domain as a result of load balance. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l26475">26475</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l26471">26471</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
 
 </div>
 </div>
@@ -1471,7 +1471,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Adds the vertices from the sources boundary that are repeated in the destination boundary to the list of non delete-able vertices in the destination boundary. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l32325">32325</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l32321">32321</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
 
 </div>
 </div>
@@ -1567,7 +1567,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Helper function to add a new node from load balance. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l27581">27581</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l27577">27577</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
 
 </div>
 </div>
@@ -1596,7 +1596,7 @@ template&lt;class ELEMENT &gt; </div>
 <p>Mark the vertices that are not allowed for deletion by the unrefienment/refinement polyline methods. In charge of filling the Boundary_chunk_connections_pt structure. </p>
 <p>\ short Mark the vertices that are not allowed for deletion by the unrefienment/refinement polyline methods. In charge of filling the Boundary_connections_pt structure </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l31602">31602</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l31598">31598</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
 
 </div>
 </div>
@@ -1643,7 +1643,7 @@ template&lt;class ELEMENT &gt; </div>
 </div><div class="memdoc">
 <p>Get the size of the vector that now includes all added nodes</p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l35283">35283</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l35279">35279</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
 
 </div>
 </div>
@@ -1691,7 +1691,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Verifies if the given boundary receives a connection, and if that is the case then returns the list of vertices that receive the connections. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02800">2800</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02796">2796</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
 
 </div>
 </div>
@@ -1733,7 +1733,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Compute target area based on the element's error and the error target; return minimum angle (in degrees) </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l03576">3576</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l03572">3572</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
 
 </div>
 </div>
@@ -1787,7 +1787,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Compute the names of the nodes on shared boundaries in this (my_rank) processor with other processors. Also compute the names of nodes on shared boundaries of other processors with other processors (useful when there is an element that requires to be sent to this (my_rank) processor because there is a shared node between this (my_rank) and other processors BUT there is not a shared boundary between this and the other processor. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l15898">15898</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l15894">15894</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
 
 </div>
 </div>
@@ -1821,7 +1821,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Computes the degree of the nodes on the shared boundaries, the degree of the node is computed from the global graph created by the shared boundaries of all processors. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l24593">24593</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l24589">24589</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
 
 </div>
 </div>
@@ -1909,7 +1909,7 @@ template&lt;class ELEMENT &gt; </div>
 <p>For the received update_id, ref_value, geom_object call add_node_update_info</p>
 <p>Now call update_node_update</p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l19187">19187</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l19183">19183</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
 
 </div>
 </div>
@@ -2009,7 +2009,7 @@ template&lt;class ELEMENT &gt; </div>
 <p>For the received update_id, ref_value, geom_object call add_node_update_info</p>
 <p>Now call update_node_update</p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l27652">27652</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l27648">27648</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
 
 </div>
 </div>
@@ -2055,7 +2055,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Sort the nodes on the new shared boundaries (after load balancing), computes the alias of the nodes and creates the adjacency matrix that represent the graph created by the shared edges between each pair of processors. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l25591">25591</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l25587">25587</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
 
 </div>
 </div>
@@ -2139,7 +2139,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Helper function to create elements on the loop process based on the info received in send_and_received_elements_nodes_info. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l27231">27231</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l27227">27227</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
 
 </div>
 </div>
@@ -2206,7 +2206,7 @@ template&lt;class ELEMENT &gt; </div>
 <p>Helper function to create (halo) elements on the loop process based on the info received in send_and_received_located_info. </p>
 <p>Creates (halo) element on the loop process based on the information received from each processor </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l18871">18871</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l18867">18867</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
 
 </div>
 </div>
@@ -2246,7 +2246,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Creates the new shared boundaries, this method is also in charge of computing the shared boundaries ids of each processor and send that info. to all the processors. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l22466">22466</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l22462">22462</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
 
 </div>
 </div>
@@ -2281,7 +2281,7 @@ template&lt;class ELEMENT &gt; </div>
 <p>Helper function to create polylines and fill associate data. </p>
 <p>Create the polylines and fill associate data structures, used when creating from a mesh from polyfiles </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l36397">36397</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l36393">36393</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
 
 </div>
 </div>
@@ -2336,7 +2336,7 @@ template&lt;class ELEMENT &gt; </div>
 <p>Helper function Creates a sorted face mesh representation of the specified PolyLine It means that the elements are sorted along the boundary It also returns a map that indicated the inverted elements. </p>
 <p>Helper function Creates a sorted face mesh representation of the specified PolyLine It means that the elements are sorted along the boundary. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l35438">35438</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l35434">35434</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
 
 </div>
 </div>
@@ -2378,7 +2378,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>After unrefinement and refinement has taken place compute the new vertices numbers of the temporary representation of the. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l32761">32761</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l32757">32757</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
 
 </div>
 </div>
@@ -2420,7 +2420,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Helper function Creates an unsorted face mesh representation from the specified boundary id. It means that the elements are not sorted along the boundary. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l35401">35401</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l35397">35397</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
 
 </div>
 </div>
@@ -2449,7 +2449,7 @@ template&lt;class ELEMENT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02771">2771</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02767">2767</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
 
 </div>
 </div>
@@ -2478,7 +2478,7 @@ template&lt;class ELEMENT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02765">2765</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02761">2761</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
 
 </div>
 </div>
@@ -2508,7 +2508,7 @@ template&lt;class ELEMENT &gt; </div>
 </div><div class="memdoc">
 <p>Enables the use of an iterative solver for the projection problem </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02395">2395</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02391">2391</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
 
 </div>
 </div>
@@ -2539,7 +2539,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Disables printing of timings for adaptation. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02403">2403</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02399">2399</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
 
 </div>
 </div>
@@ -2570,7 +2570,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Disables printing of timings for load balance. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02426">2426</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02422">2422</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
 
 </div>
 </div>
@@ -2601,7 +2601,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Disables the solution projection step during adaptation. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02344">2344</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02340">2340</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
 
 </div>
 </div>
@@ -2630,7 +2630,7 @@ template&lt;class ELEMENT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02785">2785</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02781">2781</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
 
 </div>
 </div>
@@ -2659,7 +2659,7 @@ template&lt;class ELEMENT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02779">2779</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02775">2775</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
 
 </div>
 </div>
@@ -2690,7 +2690,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Disables info. and timings for projection. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02352">2352</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02348">2348</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
 
 </div>
 </div>
@@ -2721,7 +2721,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Disables info. and timings for tranferring of target areas. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02336">2336</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02332">2332</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
 
 </div>
 </div>
@@ -2753,7 +2753,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Doc the targets for mesh adaptation. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02445">2445</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02441">2441</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
 
 </div>
 </div>
@@ -2782,7 +2782,7 @@ template&lt;class ELEMENT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02768">2768</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02764">2764</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
 
 </div>
 </div>
@@ -2813,7 +2813,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Enable/disable unrefinement/refinement methods for original boundaries. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02762">2762</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02758">2758</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
 
 </div>
 </div>
@@ -2843,7 +2843,7 @@ template&lt;class ELEMENT &gt; </div>
 </div><div class="memdoc">
 <p>Enables the use of an iterative solver for the projection problem </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02390">2390</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02386">2386</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
 
 </div>
 </div>
@@ -2875,7 +2875,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Enables printing of timings for adaptation. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02399">2399</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02395">2395</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
 
 </div>
 </div>
@@ -2907,7 +2907,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Enables printing of timings for load balance. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02422">2422</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02418">2418</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
 
 </div>
 </div>
@@ -2938,7 +2938,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Enables the solution projection step during adaptation. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02340">2340</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02336">2336</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
 
 </div>
 </div>
@@ -2967,7 +2967,7 @@ template&lt;class ELEMENT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02782">2782</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02778">2778</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
 
 </div>
 </div>
@@ -2998,7 +2998,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Enable/disable unrefinement/refinement methods for shared boundaries. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02776">2776</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02772">2772</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
 
 </div>
 </div>
@@ -3029,7 +3029,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Enables info. and timings for projection. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02348">2348</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02344">2344</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
 
 </div>
 </div>
@@ -3060,7 +3060,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Enables info. and timings for tranferring of target areas. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02331">2331</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02327">2327</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
 
 </div>
 </div>
@@ -3078,7 +3078,7 @@ template&lt;class ELEMENT &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l43096">43096</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l43092">43092</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
 
 </div>
 </div>
@@ -3100,7 +3100,7 @@ template&lt;class ELEMENT &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l43109">43109</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l43105">43105</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
 
 </div>
 </div>
@@ -3129,7 +3129,7 @@ template&lt;class ELEMENT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02536">2536</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02532">2532</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
 
 </div>
 </div>
@@ -3163,7 +3163,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Get the nodes on the boundary (b), these are stored in the segment they belong (also used by the load balance method to re-set the number of segments per boundary after load balance has taken place) </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l28824">28824</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l28820">28820</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
 
 </div>
 </div>
@@ -3212,7 +3212,7 @@ template&lt;class ELEMENT &gt; </div>
 <p>Computes the associated vertex number on the destination boundary. </p>
 <p>Gets the associated vertex number according to the vertex coordinates on the destination boundary. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l33824">33824</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l33820">33820</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
 
 </div>
 </div>
@@ -3255,7 +3255,7 @@ template&lt;class ELEMENT &gt; </div>
 <p>Helper function to construct face mesh representation of open curves. </p>
 <p>Helper function to construct face mesh representation of all polylines. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l36175">36175</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l36171">36171</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
 
 </div>
 </div>
@@ -3298,7 +3298,7 @@ template&lt;class ELEMENT &gt; </div>
 <p>Helper function to construct face mesh representation of all polylines, possibly with segments re-distributed between polylines to maintain an appxroximately even sub-division of the polygon. </p>
 <p>Helper function to construct face mesh representation of all polylines, possibly with segments re-distributed between polylines to maintain an approximately even sub-division of the polygon </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l35635">35635</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l35631">35631</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
 
 </div>
 </div>
@@ -3340,7 +3340,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Helper function to get the required elemental information from an haloed element. This info. involves the association of the element to a boundary or region. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l17800">17800</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l17796">17796</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
 
 </div>
 </div>
@@ -3389,7 +3389,7 @@ template&lt;class ELEMENT &gt; </div>
 <p>Helper function to get the required elemental information from the element to be sent. This info. involves the association of the element to a boundary or region, and if its part of the halo(ed) elements within a processor. </p>
 <p>Helper function to get the required elemental information from the element that will be sent to iproc processor. This info. involves the association of the element to a boundary or region. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l26104">26104</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l26100">26100</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
 
 </div>
 </div>
@@ -3432,7 +3432,7 @@ template&lt;class ELEMENT &gt; </div>
 <p>Helper function to get the required nodal information from a haloed node so that a fully-functional halo node (and therefore element) can be created on the receiving process. </p>
 <p>Helper function to get the required nodal information from an haloed node so that a fully-functional halo node (and therefore element) can be created on the receiving process </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l18121">18121</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l18117">18117</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
 
 </div>
 </div>
@@ -3481,7 +3481,7 @@ template&lt;class ELEMENT &gt; </div>
 <p>Helper function to get the required nodal information from an haloed node so that a fully-functional node (and therefore element) can be created on the receiving process (this is the specific version for the load balance strategy, the difference with the original method is that it checks if the node is on a shared boundary no associated with the current processor &ndash;my_rank&ndash;, or in a haloed element from other processors. </p>
 <p>Helper function to get the required nodal information from an haloed node so that a fully-functional halo node (and therefore element) can be created on the receiving process </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l26534">26534</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l26530">26530</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
 
 </div>
 </div>
@@ -3540,7 +3540,7 @@ template&lt;class ELEMENT &gt; </div>
 <p>Use the first and second group of elements to find the intersection between them to get the shared boundary elements from the first and second group. </p>
 <p>Use the first and second group of elements to find the intersection between them to get the shared boundary elements from the first and second group </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l22311">22311</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l22307">22307</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
 
 </div>
 </div>
@@ -3574,7 +3574,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Get the nodes on the shared boundary (b), these are stored in the segment they belong. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l25777">25777</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l25773">25773</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
 
 </div>
 </div>
@@ -3605,7 +3605,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Helper function to initialise data associated with adaptation. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l03512">3512</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l03508">3508</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
 
 </div>
 </div>
@@ -3636,7 +3636,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Set all the flags to true (the default values) </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02966">2966</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02962">2962</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
 
 </div>
 </div>
@@ -3668,7 +3668,7 @@ template&lt;class ELEMENT &gt; </div>
 <p>Access to function pointer to can be used to generate the internal point for the ihole-th hole. <br  />
  </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02511">2511</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02507">2507</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
 
 </div>
 </div>
@@ -3702,7 +3702,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1TriangleMesh.html#a712bfd68d4b55e9c475347c0146fc8ac">oomph::TriangleMesh&lt; ELEMENT &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l20245">20245</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l20241">20241</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
 
 </div>
 </div>
@@ -3733,9 +3733,9 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Max element size allowed during adaptation. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02375">2375</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02371">2371</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="triangle__mesh_8template_8cc_source.html#l29348">oomph::RefineableTriangleMesh&lt; ELEMENT &gt;::adapt()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="triangle__mesh_8template_8cc_source.html#l29344">oomph::RefineableTriangleMesh&lt; ELEMENT &gt;::adapt()</a>.</p>
 
 </div>
 </div>
@@ -3767,7 +3767,7 @@ template&lt;class ELEMENT &gt; </div>
 <p>Read/write access to number of sample points from which we try to locate zeta by Newton method when transferring target areas using cgal-based sample point container. If Newton method doesn't converge from any of these we use the nearest sample point. <br  />
  </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02369">2369</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02365">2365</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
 
 </div>
 </div>
@@ -3798,7 +3798,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Access to function pointer to function that updates the mesh following the snapping of boundary nodes to the boundaries (e.g. to move boundary nodes very slightly to satisfy volume constraints) </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02503">2503</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02499">2499</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
 
 </div>
 </div>
@@ -3829,9 +3829,9 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Min element size allowed during adaptation. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02378">2378</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02374">2374</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="triangle__mesh_8template_8cc_source.html#l29348">oomph::RefineableTriangleMesh&lt; ELEMENT &gt;::adapt()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="triangle__mesh_8template_8cc_source.html#l29344">oomph::RefineableTriangleMesh&lt; ELEMENT &gt;::adapt()</a>.</p>
 
 </div>
 </div>
@@ -3862,9 +3862,9 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Min angle before remesh gets triggered. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02381">2381</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02377">2377</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="triangle__mesh_8template_8cc_source.html#l29348">oomph::RefineableTriangleMesh&lt; ELEMENT &gt;::adapt()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="triangle__mesh_8template_8cc_source.html#l29344">oomph::RefineableTriangleMesh&lt; ELEMENT &gt;::adapt()</a>.</p>
 
 </div>
 </div>
@@ -3895,7 +3895,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Read/write access to number of bins in the x-direction when transferring target areas by bin method. Only used if we don't have CGAL! </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02358">2358</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02354">2354</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
 
 </div>
 </div>
@@ -3926,7 +3926,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Read/write access to number of bins in the y-direction when transferring target areas by bin method. Only used if we don't have CGAL! </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02363">2363</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02359">2359</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
 
 </div>
 </div>
@@ -3956,7 +3956,7 @@ template&lt;class ELEMENT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02520">2520</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02516">2516</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
 
 </div>
 </div>
@@ -3999,7 +3999,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1TriangleMesh.html#aa4b1cfd4537c1e511fe1f2fb14b1e8a6">oomph::TriangleMesh&lt; ELEMENT &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02593">2593</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02589">2589</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
 
 </div>
 </div>
@@ -4054,7 +4054,7 @@ template&lt;class ELEMENT &gt; </div>
 <p>Helper function that performs the refinement process on the specified boundary by using the provided vertices representation. Optional boolean is used to run it as test only (if true is specified as input) in which case vertex coordinates aren't actually modified. Returned boolean indicates if polyline was (or would have been &ndash; if called with check_only=false) changed. </p>
 <p>Get the size of the vector that now includes all added nodes</p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l35133">35133</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l35129">35129</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
 
 </div>
 </div>
@@ -4109,7 +4109,7 @@ template&lt;class ELEMENT &gt; </div>
 <p>Helper function that performs the refinement process on the specified boundary by using the provided vertices representation and the associated elements target area. Used only when the 'allow_automatic_creation_of_vertices_on_boundaries' flag is set to true. </p>
 <p>Helper function that performs the refinement process on the specified boundary by using the provided vertices representation and the associated elements target area. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l40523">40523</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l40519">40519</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
 
 </div>
 </div>
@@ -4151,7 +4151,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Helper function that performs the refinement process on the specified boundary by using the provided vertices representation and the associated elements target area. NOTE: This is the version that applies refinement to shared boundaries. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l40877">40877</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l40873">40873</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
 
 </div>
 </div>
@@ -4200,7 +4200,7 @@ template&lt;class ELEMENT &gt; </div>
 <p>Build a new TriangulateIO object from previous TriangulateIO based on target area for each element. </p>
 <p>Build a new TriangulateIO object based on target areas specified. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l14886">14886</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l14882">14882</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
 
 </div>
 </div>
@@ -4232,7 +4232,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Refine mesh uniformly and doc process. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02461">2461</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02457">2457</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
 
 </div>
 </div>
@@ -4260,7 +4260,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>In charge of. re-establish the halo(ed) scheme on all processors. Sends info. to create halo elements and nodes on the processors that need it. It uses and all to all communication strategy therefore must be called on all processors. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l15327">15327</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l15323">15323</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
 
 </div>
 </div>
@@ -4320,7 +4320,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>In charge of creating additional halo(ed) elements on those processors that have no shared boundaries in common but have shared nodes. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l17463">17463</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l17459">17459</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
 
 </div>
 </div>
@@ -4374,7 +4374,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Re-establish the shared boundary elements after the adaptation process (the updating of shared nodes is optional and performed by default) </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l15241">15241</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l15237">15237</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
 
 </div>
 </div>
@@ -4417,7 +4417,7 @@ template&lt;class ELEMENT &gt; </div>
 <p>After unrefinement and refinement has taken place compute the new vertices numbers of the boundaries to connect (in a distributed scheme it may be possible that the destination boundary does no longer exist, therefore the connection is suspended and resumed after the adaptation processor. </p>
 <p>After unrefinement and refinement has taken place compute the new vertices numbers of the boundaries to connect (in a distributed scheme it may be possible that the destination boundary does no longer exist, therefore the connection is suspended. It is not permanently deleted because if load balance takes place it may be possible that the boundary to connect be part of the new domain representation, so the connection would exist) </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l32888">32888</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l32884">32884</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
 
 </div>
 </div>
@@ -4465,7 +4465,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Restore the connections of the specific polyline The vertices numbering on the destination boundaries may have change because of (un)refinement in the destination boundaries. Also deals with connection that do not longer exist because the destination boundary does no longer exist because of the distribution process. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l33012">33012</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l33008">33008</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
 
 </div>
 </div>
@@ -4507,7 +4507,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Resume the boundary connections that may have been suspended because the destination boundary is no part of the domain. The connections are no permanently suspended because if load balance takes place the destination boundary may be part of the new domain representation therefore the connection would exist. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l33778">33778</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l33774">33774</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
 
 </div>
 </div>
@@ -4550,7 +4550,7 @@ template&lt;class ELEMENT &gt; </div>
 <p>Helper function to send back halo and haloed information. </p>
 <p>Send the information of the elements that will be created on the other processor </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l18753">18753</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l18749">18749</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
 
 </div>
 </div>
@@ -4598,7 +4598,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Get the original boundaries to which is associated each shared node, and send the info. to the related processors. We need to do this so that at the reset of halo(ed) info. stage, the info. be already updated. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l16898">16898</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l16894">16894</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
 
 </div>
 </div>
@@ -4630,7 +4630,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Sets the printing level of timings for adaptation. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02407">2407</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02403">2403</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
 
 </div>
 </div>
@@ -4662,7 +4662,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Sets the printing level of timings for load balance. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02430">2430</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02426">2426</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
 
 </div>
 </div>
@@ -4709,9 +4709,9 @@ template&lt;class ELEMENT &gt; </div>
  <h2><a class="anchor" id="autotoc_md3"></a>
 Repositioning of mid-side nodes</h2>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l43322">43322</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l43318">43318</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="triangle__mesh_8template_8h_source.html#l00908">oomph::TriangleMesh&lt; ELEMENT &gt;::boundary_segment_node_pt()</a>.</p>
+<p class="reference">References <a class="el" href="triangle__mesh_8template_8h_source.html#l00904">oomph::TriangleMesh&lt; ELEMENT &gt;::boundary_segment_node_pt()</a>.</p>
 
 </div>
 </div>
@@ -4739,9 +4739,9 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Sort the nodes on shared boundaries so that the processors that share a boundary agree with the order of the nodes on the boundary. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l15131">15131</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l15127">15127</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="namespaceoomph.html#ad087abffe3fdc0d66d2f684a3f426076">oomph::Bottom_left_sorter</a>, and <a class="el" href="triangle__mesh_8template_8cc_source.html#l15037">oomph::classcomp::Tol</a>.</p>
+<p class="reference">References <a class="el" href="namespaceoomph.html#ad087abffe3fdc0d66d2f684a3f426076">oomph::Bottom_left_sorter</a>, and <a class="el" href="triangle__mesh_8template_8cc_source.html#l15033">oomph::classcomp::Tol</a>.</p>
 
 </div>
 </div>
@@ -4771,7 +4771,7 @@ template&lt;class ELEMENT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02556">2556</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02552">2552</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
 
 </div>
 </div>
@@ -4811,7 +4811,7 @@ template&lt;class ELEMENT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02539">2539</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02535">2535</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
 
 </div>
 </div>
@@ -4855,7 +4855,7 @@ template&lt;class ELEMENT &gt; </div>
  </p>
 <p>Update the PSLG that define the inner boundaries of the mesh. Optional boolean is used to run it as test only (if true is specified as input) in which case PSLG isn't actually modified. Returned boolean indicates if PSLG was (or would have been &ndash; if called with check_only=false) changed. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l36208">36208</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l36204">36204</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
 
 </div>
 </div>
@@ -4883,7 +4883,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Synchronise the vertices that are marked for non deletion. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l32412">32412</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l32408">32408</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
 
 </div>
 </div>
@@ -4925,7 +4925,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Check if necessary to add the element to the new domain or if it has been previously added. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l03052">3052</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l03048">3048</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
 
 </div>
 </div>
@@ -4967,7 +4967,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Check if necessary to add the node as haloed or if it has been previously added to the haloed scheme. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l03297">3297</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l03293">3293</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
 
 </div>
 </div>
@@ -5009,7 +5009,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Check if necessary to add the node to the new domain or if it has been already added. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l03102">3102</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l03098">3098</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
 
 </div>
 </div>
@@ -5051,7 +5051,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Check if necessary to add the element as haloed or if it has been previously added to the haloed scheme. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l03259">3259</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l03255">3255</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
 
 </div>
 </div>
@@ -5115,7 +5115,7 @@ template&lt;class ELEMENT &gt; </div>
 <p>Get the size of the vector that now includes all remaining nodes</p>
 <p>Copy back</p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l34848">34848</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l34844">34844</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
 
 </div>
 </div>
@@ -5176,7 +5176,7 @@ template&lt;class ELEMENT &gt; </div>
 <p>Helper function that performs the unrefinement process on the specified boundary by using the provided vertices representation and the associated target area. Used only when the 'allow_automatic_creation_of_vertices_on_boundaries' flag is set to true. </p>
 <p>Helper function that performs the unrefinement process on the specified boundary by using the provided vertices representation and the associated target area. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l40268">40268</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l40264">40264</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
 
 </div>
 </div>
@@ -5230,7 +5230,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Helper function that performs the unrefinement process on the specified boundary by using the provided vertices representation and the associated target area. NOTE: This is the version that applies unrefinement to shared boundaries. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l40667">40667</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l40663">40663</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
 
 </div>
 </div>
@@ -5261,7 +5261,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Unrefine mesh uniformly: Return 0 for success, 1 for failure (if unrefinement has reached the coarsest permitted level) </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02487">2487</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02483">2483</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
 
 </div>
 </div>
@@ -5294,7 +5294,7 @@ template&lt;class ELEMENT &gt; </div>
 <p>Updates the open curve representation after restart. </p>
 <p>Use a vector of vector for vertices and target areas to deal with the cases when the boundaries are split bn the distribution process. Internal boundaries may be completely or partially overlapped by shared boundaries</p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l41735">41735</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l41731">41731</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
 
 </div>
 </div>
@@ -5337,7 +5337,7 @@ template&lt;class ELEMENT &gt; </div>
 <p>Updates the open curve but using the elements area instead of the default refinement and unrefinement methods. </p>
 <p>Use a vector of vector for vertices and target areas to deal with the cases when the boundaries are split by the distribution process. Internal boundaries may be completely or partially overlapped by shared boundaries</p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l38367">38367</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l38363">38363</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
 
 </div>
 </div>
@@ -5380,7 +5380,7 @@ template&lt;class ELEMENT &gt; </div>
 <p>Helper function that updates the input open curve by using end-points of elements from FaceMesh(es) that are constructed for the boundaries associated with the polylines. Optional boolean is used to run it as test only (if true is specified as input) in which case the polylines are not actually modified. Returned boolean indicates if polylines were (or would have been &ndash; if called with check_only=false) changed. </p>
 <p>Refinement</p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l34366">34366</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l34362">34362</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
 
 </div>
 </div>
@@ -5464,7 +5464,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Helper function that assigns/updates the references to the node so that it can be found with any other reference. The return value indicates whether or not a node was found on the same reference. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l20086">20086</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l20082">20082</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
 
 </div>
 </div>
@@ -5497,7 +5497,7 @@ template&lt;class ELEMENT &gt; </div>
 <p>Updates the polylines representation after restart. </p>
 <p>Use a vector of vector for vertices and target areas to deal with the cases when the boundaries are split by the distribution process</p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l40981">40981</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l40977">40977</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
 
 </div>
 </div>
@@ -5541,7 +5541,7 @@ template&lt;class ELEMENT &gt; </div>
 <p>Updates the polygon but using the elements area instead of the default refinement and unrefinement methods. </p>
 <p>Use a vector of vector for vertices and target areas to deal with the cases when the boundaries are split by the distribution process</p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l37425">37425</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l37421">37421</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
 
 </div>
 </div>
@@ -5585,7 +5585,7 @@ template&lt;class ELEMENT &gt; </div>
  </p>
 <p>Helper function that updates the input polygon's PSLG by using the end-points of elements from FaceMesh(es) that are constructed for the boundaries associated with the segments of the polygon. Optional boolean is used to run it as test only (if true is specified as input) in which case polygon isn't actually modified. Returned boolean indicates if polygon was (or would have been &ndash; if called with check_only=false) changed. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l33880">33880</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l33876">33876</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
 
 </div>
 </div>
@@ -5616,7 +5616,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Method used to update the polylines representation after restart. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02645">2645</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02641">2641</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
 
 </div>
 </div>
@@ -5648,7 +5648,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Updates the shared polylines representation after restart. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l42680">42680</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l42676">42676</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
 
 </div>
 </div>
@@ -5690,7 +5690,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Updates the polylines using the elements area as constraint for the number of points along the boundaries. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l39611">39611</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8cc_source.html#l39607">39607</a> of file <a class="el" href="triangle__mesh_8template_8cc_source.html">triangle_mesh.template.cc</a>.</p>
 
 </div>
 </div>
@@ -5719,7 +5719,7 @@ template&lt;class ELEMENT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02385">2385</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02381">2381</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
 
 </div>
 </div>
@@ -5748,7 +5748,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>A map that stores the vertices that receive connections, they are identified by the boundary number that receive the connection This is necessary for not erasing them on the adaptation process, specifically for the un-refinement process. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02795">2795</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02791">2791</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
 
 </div>
 </div>
@@ -5776,7 +5776,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Counter used when processing vector of flat-packed doubles. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l03233">3233</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l03229">3229</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
 
 </div>
 </div>
@@ -5804,7 +5804,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Counter used when processing vector of flat-packed unsigneds. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l03241">3241</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l03237">3237</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
 
 </div>
 </div>
@@ -5832,7 +5832,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Enable/disable solution projection during adaptation. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l03729">3729</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l03725">3725</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
 
 </div>
 </div>
@@ -5860,7 +5860,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Flag that enables or disables boundary refinement (true by default) </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02957">2957</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02953">2953</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
 
 </div>
 </div>
@@ -5888,7 +5888,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Flag that enables or disables boundary unrefinement (true by default) </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02954">2954</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02950">2950</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
 
 </div>
 </div>
@@ -5916,7 +5916,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Flag that enables or disables boundary unrefinement (true by default) </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02963">2963</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02959">2959</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
 
 </div>
 </div>
@@ -5944,7 +5944,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Flag that enables or disables boundary unrefinement (true by default) </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02960">2960</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02956">2956</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
 
 </div>
 </div>
@@ -5972,7 +5972,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Vector of flat-packed doubles to be communicated with other processors. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l03229">3229</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l03225">3225</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
 
 </div>
 </div>
@@ -6000,7 +6000,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Vector of flat-packed unsigneds to be communicated with other processors. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l03237">3237</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l03233">3233</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
 
 </div>
 </div>
@@ -6028,7 +6028,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Temporary vector of strings to enable full annotation of <a class="el" href="classoomph_1_1RefineableTriangleMesh.html" title="Unstructured refineable Triangle Mesh.">RefineableTriangleMesh</a> comms. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l03246">3246</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l03242">3242</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
 
 </div>
 </div>
@@ -6056,7 +6056,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Function pointer to function that can be set to update the position of the central point in internal holes. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l03756">3756</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l03752">3752</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
 
 </div>
 </div>
@@ -6084,7 +6084,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Max permitted element size. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l03720">3720</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l03716">3716</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
 
 </div>
 </div>
@@ -6112,7 +6112,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Default value for max. number of sample points used for locate_zeta when transferring target areas using cgal-based sample point container. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l03717">3717</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l03713">3713</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
 
 </div>
 </div>
@@ -6140,7 +6140,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Function pointer to function that updates the mesh following the snapping of boundary nodes to the boundaries (e.g. to move boundary nodes very slightly to satisfy volume constraints) </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l03751">3751</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l03747">3747</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
 
 </div>
 </div>
@@ -6168,7 +6168,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Min permitted element size. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l03723">3723</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l03719">3719</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
 
 </div>
 </div>
@@ -6196,7 +6196,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Min angle before remesh gets triggered. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l03726">3726</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l03722">3722</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
 
 </div>
 </div>
@@ -6224,7 +6224,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Number of bins in the x-direction when transferring target areas by bin method. Only used if we don't have CGAL! </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l03708">3708</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l03704">3704</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
 
 </div>
 </div>
@@ -6252,7 +6252,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Number of bins in the y-direction when transferring target areas by bin method. Only used if we don't have CGAL! </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l03713">3713</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l03709">3709</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
 
 </div>
 </div>
@@ -6280,7 +6280,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>The printing level for adaptation. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l03742">3742</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l03738">3738</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
 
 </div>
 </div>
@@ -6308,7 +6308,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>The printing level for load balance. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l03745">3745</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l03741">3741</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
 
 </div>
 </div>
@@ -6336,7 +6336,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Enable/disable printing timings for projection. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l03739">3739</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l03735">3735</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
 
 </div>
 </div>
@@ -6364,7 +6364,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Enable/disable printing timings for transfering target areas. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l03736">3736</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l03732">3732</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
 
 </div>
 </div>
@@ -6392,7 +6392,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Stores the nodes in the boundaries in the same order in all the processors Sorted_shared_boundary_node_pt[bnd_id][i-th node] = Node* It is a map since the boundary id may not start at zero. </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02981">2981</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l02977">2977</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
 
 </div>
 </div>
@@ -6419,7 +6419,7 @@ template&lt;class ELEMENT &gt; </div>
 </div><div class="memdoc">
 <p>Flag to indicate whether to use or not an iterative solver (CG with diagonal preconditioned) for the projection problem </p>
 
-<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l03733">3733</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="triangle__mesh_8template_8h_source.html#l03729">3729</a> of file <a class="el" href="triangle__mesh_8template_8h_source.html">triangle_mesh.template.h</a>.</p>
 
 </div>
 </div>
@@ -6455,7 +6455,7 @@ template&lt;class ELEMENT &gt; </div>
     <footer>
       <div class="container">
         <div class="text-muted" style="float:right;">Generated by <a href="http://www.doxygen.org/index.html">
-          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Tue Jul 6 2021 23:21:26
+          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Fri Jul 9 2021 21:12:33
         </div>
       </div>
     </footer>

@@ -1464,7 +1464,7 @@ class oomph::PVDEquationsWithPressure&lt; DIM &gt;</h3>
 
 <p>A class for elements that solve the equations of solid mechanics, based on the principle of virtual displacements, with a contitutive equation that involves a pressure. This formulation is required in the case of incompressible materials, in which the additional constraint that volume must be conserved is applied. In this case, the Incompressible flag must be set to true. If the Incompressible flag is not set to true, we use the nearly-incompressible formulation of the constitutive equations. </p>
 
-<p class="definition">Definition at line <a class="el" href="solid__elements_8h_source.html#l00822">822</a> of file <a class="el" href="solid__elements_8h_source.html">solid_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solid__elements_8h_source.html#l00818">818</a> of file <a class="el" href="solid__elements_8h_source.html">solid_elements.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af689308b2b9b9e0d54fa8f052d28935c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af689308b2b9b9e0d54fa8f052d28935c">&#9670;&nbsp;</a></span>PVDEquationsWithPressure()</h2>
@@ -1493,7 +1493,7 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Constructor, by default the element is NOT incompressible. </p>
 
-<p class="definition">Definition at line <a class="el" href="solid__elements_8h_source.html#l00828">828</a> of file <a class="el" href="solid__elements_8h_source.html">solid_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solid__elements_8h_source.html#l00824">824</a> of file <a class="el" href="solid__elements_8h_source.html">solid_elements.h</a>.</p>
 
 </div>
 </div>
@@ -1530,9 +1530,9 @@ template&lt;unsigned DIM&gt; </div>
 <p>Output: x,y,[z],xi0,xi1,[xi2],gamma strain and stress components.</p>
 <p>components </p>
 
-<p class="definition">Definition at line <a class="el" href="solid__elements_8cc_source.html#l02071">2071</a> of file <a class="el" href="solid__elements_8cc_source.html">solid_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solid__elements_8cc_source.html#l02067">2067</a> of file <a class="el" href="solid__elements_8cc_source.html">solid_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, and <a class="el" href="cfortran_8h_source.html#l00572">s</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, and <a class="el" href="cfortran_8h_source.html#l00568">s</a>.</p>
 
 </div>
 </div>
@@ -1576,9 +1576,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1SolidFiniteElement.html#a3167a2005e33815948bef357214e15ee">oomph::SolidFiniteElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="solid__elements_8h_source.html#l00864">864</a> of file <a class="el" href="solid__elements_8h_source.html">solid_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solid__elements_8h_source.html#l00860">860</a> of file <a class="el" href="solid__elements_8h_source.html">solid_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l00228">oomph::GeneralisedElement::Dummy_matrix</a>, <a class="el" href="solid__elements_8h_source.html#l00390">oomph::PVDEquationsBase&lt; DIM &gt;::Evaluate_jacobian_by_fd</a>, <a class="el" href="solid__elements_8cc_source.html#l01239">oomph::PVDEquationsWithPressure&lt; DIM &gt;::fill_in_generic_residual_contribution_pvd_with_pressure()</a>, <a class="el" href="elements_8cc_source.html#l06839">oomph::SolidFiniteElement::fill_in_jacobian_from_solid_position_by_fd()</a>, <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>, <a class="el" href="elements_8h_source.html#l04004">oomph::SolidFiniteElement::Solid_ic_pt</a>, <a class="el" href="elements_8h_source.html#l04179">oomph::SolidFiniteElement::Solve_for_consistent_newmark_accel_flag</a>, and <a class="el" href="oomph__definitions_8cc_source.html#l00293">oomph::Global_string_for_annotation::string()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l00224">oomph::GeneralisedElement::Dummy_matrix</a>, <a class="el" href="solid__elements_8h_source.html#l00386">oomph::PVDEquationsBase&lt; DIM &gt;::Evaluate_jacobian_by_fd</a>, <a class="el" href="solid__elements_8cc_source.html#l01235">oomph::PVDEquationsWithPressure&lt; DIM &gt;::fill_in_generic_residual_contribution_pvd_with_pressure()</a>, <a class="el" href="elements_8cc_source.html#l06835">oomph::SolidFiniteElement::fill_in_jacobian_from_solid_position_by_fd()</a>, <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>, <a class="el" href="elements_8h_source.html#l04000">oomph::SolidFiniteElement::Solid_ic_pt</a>, <a class="el" href="elements_8h_source.html#l04175">oomph::SolidFiniteElement::Solve_for_consistent_newmark_accel_flag</a>, and <a class="el" href="oomph__definitions_8cc_source.html#l00289">oomph::Global_string_for_annotation::string()</a>.</p>
 
 </div>
 </div>
@@ -1628,9 +1628,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1GeneralisedElement.html#a2b6294a730647cf865da94f2531466f8">oomph::GeneralisedElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="solid__elements_8h_source.html#l00912">912</a> of file <a class="el" href="solid__elements_8h_source.html">solid_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solid__elements_8h_source.html#l00908">908</a> of file <a class="el" href="solid__elements_8h_source.html">solid_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="solid__elements_8h_source.html#l00390">oomph::PVDEquationsBase&lt; DIM &gt;::Evaluate_jacobian_by_fd</a>, <a class="el" href="solid__elements_8cc_source.html#l01239">oomph::PVDEquationsWithPressure&lt; DIM &gt;::fill_in_generic_residual_contribution_pvd_with_pressure()</a>, <a class="el" href="elements_8cc_source.html#l06839">oomph::SolidFiniteElement::fill_in_jacobian_from_solid_position_by_fd()</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="elements_8h_source.html#l00834">oomph::GeneralisedElement::ndof()</a>, <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>, <a class="el" href="elements_8h_source.html#l04004">oomph::SolidFiniteElement::Solid_ic_pt</a>, <a class="el" href="elements_8h_source.html#l04179">oomph::SolidFiniteElement::Solve_for_consistent_newmark_accel_flag</a>, and <a class="el" href="oomph__definitions_8cc_source.html#l00293">oomph::Global_string_for_annotation::string()</a>.</p>
+<p class="reference">References <a class="el" href="solid__elements_8h_source.html#l00386">oomph::PVDEquationsBase&lt; DIM &gt;::Evaluate_jacobian_by_fd</a>, <a class="el" href="solid__elements_8cc_source.html#l01235">oomph::PVDEquationsWithPressure&lt; DIM &gt;::fill_in_generic_residual_contribution_pvd_with_pressure()</a>, <a class="el" href="elements_8cc_source.html#l06835">oomph::SolidFiniteElement::fill_in_jacobian_from_solid_position_by_fd()</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="elements_8h_source.html#l00830">oomph::GeneralisedElement::ndof()</a>, <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>, <a class="el" href="elements_8h_source.html#l04000">oomph::SolidFiniteElement::Solid_ic_pt</a>, <a class="el" href="elements_8h_source.html#l04175">oomph::SolidFiniteElement::Solve_for_consistent_newmark_accel_flag</a>, and <a class="el" href="oomph__definitions_8cc_source.html#l00289">oomph::Global_string_for_annotation::string()</a>.</p>
 
 </div>
 </div>
@@ -1664,9 +1664,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1GeneralisedElement.html#a310c97f515e8504a48179c0e72c550d7">oomph::GeneralisedElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="solid__elements_8h_source.html#l00851">851</a> of file <a class="el" href="solid__elements_8h_source.html">solid_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solid__elements_8h_source.html#l00847">847</a> of file <a class="el" href="solid__elements_8h_source.html">solid_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l00228">oomph::GeneralisedElement::Dummy_matrix</a>, <a class="el" href="solid__elements_8cc_source.html#l01239">oomph::PVDEquationsWithPressure&lt; DIM &gt;::fill_in_generic_residual_contribution_pvd_with_pressure()</a>, and <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l00224">oomph::GeneralisedElement::Dummy_matrix</a>, <a class="el" href="solid__elements_8cc_source.html#l01235">oomph::PVDEquationsWithPressure&lt; DIM &gt;::fill_in_generic_residual_contribution_pvd_with_pressure()</a>, and <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>.</p>
 
 </div>
 </div>
@@ -1728,11 +1728,11 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Reimplemented in <a class="el" href="classoomph_1_1RefineablePVDEquationsWithPressure.html#a5772ce11dd9bc9e7bdf0a2463fc753d5">oomph::RefineablePVDEquationsWithPressure&lt; DIM &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="solid__elements_8cc_source.html#l01239">1239</a> of file <a class="el" href="solid__elements_8cc_source.html">solid_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solid__elements_8cc_source.html#l01235">1235</a> of file <a class="el" href="solid__elements_8cc_source.html">solid_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="the__data__structure_8txt.html#a26a1818885f7aebd0129ce36f6d391e8">a()</a>, <a class="el" href="mesh__smooth_8h_source.html#l00063">oomph::Helper_namespace_for_mesh_smoothing::Constitutive_law_pt</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="shape_8h_source.html#l00482">oomph::DShape::offset()</a>, <a class="el" href="matrices_8h_source.html#l01960">oomph::RankFourTensor&lt; T &gt;::offset()</a>, <a class="el" href="matrices_8h_source.html#l02354">oomph::RankFiveTensor&lt; T &gt;::offset()</a>, <a class="el" href="shape_8h_source.html#l00468">oomph::DShape::raw_direct_access()</a>, <a class="el" href="matrices_8h_source.html#l01946">oomph::RankFourTensor&lt; T &gt;::raw_direct_access()</a>, <a class="el" href="matrices_8h_source.html#l02339">oomph::RankFiveTensor&lt; T &gt;::raw_direct_access()</a>, <a class="el" href="classoomph_1_1ConstitutiveLaw.html#a446452158a8ae9fbc3dde4277155f824">oomph::ConstitutiveLaw::requires_incompressibility_constraint()</a>, <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>, <a class="el" href="cfortran_8h_source.html#l00572">s</a>, and <a class="el" href="quadtree_8h_source.html#l00060">oomph::QuadTreeNames::W</a>.</p>
+<p class="reference">References <a class="el" href="the__data__structure_8txt.html#a26a1818885f7aebd0129ce36f6d391e8">a()</a>, <a class="el" href="mesh__smooth_8h_source.html#l00059">oomph::Helper_namespace_for_mesh_smoothing::Constitutive_law_pt</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="shape_8h_source.html#l00478">oomph::DShape::offset()</a>, <a class="el" href="matrices_8h_source.html#l01956">oomph::RankFourTensor&lt; T &gt;::offset()</a>, <a class="el" href="matrices_8h_source.html#l02350">oomph::RankFiveTensor&lt; T &gt;::offset()</a>, <a class="el" href="shape_8h_source.html#l00464">oomph::DShape::raw_direct_access()</a>, <a class="el" href="matrices_8h_source.html#l01942">oomph::RankFourTensor&lt; T &gt;::raw_direct_access()</a>, <a class="el" href="matrices_8h_source.html#l02335">oomph::RankFiveTensor&lt; T &gt;::raw_direct_access()</a>, <a class="el" href="classoomph_1_1ConstitutiveLaw.html#a446452158a8ae9fbc3dde4277155f824">oomph::ConstitutiveLaw::requires_incompressibility_constraint()</a>, <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>, <a class="el" href="cfortran_8h_source.html#l00568">s</a>, and <a class="el" href="quadtree_8h_source.html#l00056">oomph::QuadTreeNames::W</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="solid__elements_8h_source.html#l00864">oomph::PVDEquationsWithPressure&lt; DIM &gt;::fill_in_contribution_to_jacobian()</a>, <a class="el" href="solid__elements_8h_source.html#l00912">oomph::PVDEquationsWithPressure&lt; DIM &gt;::fill_in_contribution_to_jacobian_and_mass_matrix()</a>, and <a class="el" href="solid__elements_8h_source.html#l00851">oomph::PVDEquationsWithPressure&lt; DIM &gt;::fill_in_contribution_to_residuals()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="solid__elements_8h_source.html#l00860">oomph::PVDEquationsWithPressure&lt; DIM &gt;::fill_in_contribution_to_jacobian()</a>, <a class="el" href="solid__elements_8h_source.html#l00908">oomph::PVDEquationsWithPressure&lt; DIM &gt;::fill_in_contribution_to_jacobian_and_mass_matrix()</a>, and <a class="el" href="solid__elements_8h_source.html#l00847">oomph::PVDEquationsWithPressure&lt; DIM &gt;::fill_in_contribution_to_residuals()</a>.</p>
 
 </div>
 </div>
@@ -1804,9 +1804,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Return the derivative of the 2nd Piola Kirchhoff stress tensor, as calculated from the constitutive law in the incompresible formulation. Also return derivative of the determinant of the deformed covariant metric tensor (likely to be needed in the incompressibility constraint) </p>
 
-<p class="definition">Definition at line <a class="el" href="solid__elements_8h_source.html#l01241">1241</a> of file <a class="el" href="solid__elements_8h_source.html">solid_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solid__elements_8h_source.html#l01237">1237</a> of file <a class="el" href="solid__elements_8h_source.html">solid_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="solid__elements_8h_source.html#l00375">oomph::PVDEquationsBase&lt; DIM &gt;::Constitutive_law_pt</a>, <a class="el" href="solid__elements_8h_source.html#l00969">oomph::PVDEquationsWithPressure&lt; DIM &gt;::interpolated_solid_p()</a>, and <a class="el" href="oomph__definitions_8cc_source.html#l00293">oomph::Global_string_for_annotation::string()</a>.</p>
+<p class="reference">References <a class="el" href="solid__elements_8h_source.html#l00371">oomph::PVDEquationsBase&lt; DIM &gt;::Constitutive_law_pt</a>, <a class="el" href="solid__elements_8h_source.html#l00965">oomph::PVDEquationsWithPressure&lt; DIM &gt;::interpolated_solid_p()</a>, and <a class="el" href="oomph__definitions_8cc_source.html#l00289">oomph::Global_string_for_annotation::string()</a>.</p>
 
 </div>
 </div>
@@ -1884,9 +1884,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Return the derivative of the deviatoric part of the 2nd Piola Kirchhoff stress tensor, as calculated from the constitutive law in the nearly incompresible formulation. Also return the derivative of the generalised dilatation. </p>
 
-<p class="definition">Definition at line <a class="el" href="solid__elements_8h_source.html#l01137">1137</a> of file <a class="el" href="solid__elements_8h_source.html">solid_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solid__elements_8h_source.html#l01133">1133</a> of file <a class="el" href="solid__elements_8h_source.html">solid_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="solid__elements_8h_source.html#l00375">oomph::PVDEquationsBase&lt; DIM &gt;::Constitutive_law_pt</a>, <a class="el" href="solid__elements_8h_source.html#l00969">oomph::PVDEquationsWithPressure&lt; DIM &gt;::interpolated_solid_p()</a>, and <a class="el" href="oomph__definitions_8cc_source.html#l00293">oomph::Global_string_for_annotation::string()</a>.</p>
+<p class="reference">References <a class="el" href="solid__elements_8h_source.html#l00371">oomph::PVDEquationsBase&lt; DIM &gt;::Constitutive_law_pt</a>, <a class="el" href="solid__elements_8h_source.html#l00965">oomph::PVDEquationsWithPressure&lt; DIM &gt;::interpolated_solid_p()</a>, and <a class="el" href="oomph__definitions_8cc_source.html#l00289">oomph::Global_string_for_annotation::string()</a>.</p>
 
 </div>
 </div>
@@ -1921,9 +1921,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1PVDEquationsBase.html#af17c01ce27e3a8aa21f86aaed70bc34e">oomph::PVDEquationsBase&lt; DIM &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="solid__elements_8h_source.html#l01033">1033</a> of file <a class="el" href="solid__elements_8h_source.html">solid_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solid__elements_8h_source.html#l01029">1029</a> of file <a class="el" href="solid__elements_8h_source.html">solid_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l00709">oomph::GeneralisedElement::eqn_number()</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, <a class="el" href="elements_8h_source.html#l02369">oomph::FiniteElement::nnodal_position_type()</a>, <a class="el" href="elements_8h_source.html#l02163">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l02387">oomph::FiniteElement::nodal_dimension()</a>, <a class="el" href="solid__elements_8h_source.html#l00143">oomph::PVDEquationsBase&lt; DIM &gt;::npres_solid()</a>, <a class="el" href="elements_8h_source.html#l04011">oomph::SolidFiniteElement::position_local_eqn()</a>, and <a class="el" href="solid__elements_8h_source.html#l00147">oomph::PVDEquationsBase&lt; DIM &gt;::solid_p_local_eqn()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l00705">oomph::GeneralisedElement::eqn_number()</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, <a class="el" href="elements_8h_source.html#l02365">oomph::FiniteElement::nnodal_position_type()</a>, <a class="el" href="elements_8h_source.html#l02159">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l02383">oomph::FiniteElement::nodal_dimension()</a>, <a class="el" href="solid__elements_8h_source.html#l00139">oomph::PVDEquationsBase&lt; DIM &gt;::npres_solid()</a>, <a class="el" href="elements_8h_source.html#l04007">oomph::SolidFiniteElement::position_local_eqn()</a>, and <a class="el" href="solid__elements_8h_source.html#l00143">oomph::PVDEquationsBase&lt; DIM &gt;::solid_p_local_eqn()</a>.</p>
 
 </div>
 </div>
@@ -1958,9 +1958,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Implements <a class="el" href="classoomph_1_1SolidElementWithDiagonalMassMatrix.html#ad2335852a20987f6a6c8e0d6ce5bc3af">oomph::SolidElementWithDiagonalMassMatrix</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="solid__elements_8cc_source.html#l02150">2150</a> of file <a class="el" href="solid__elements_8cc_source.html">solid_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solid__elements_8cc_source.html#l02146">2146</a> of file <a class="el" href="solid__elements_8cc_source.html">solid_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, and <a class="el" href="quadtree_8h_source.html#l00060">oomph::QuadTreeNames::W</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, and <a class="el" href="quadtree_8h_source.html#l00056">oomph::QuadTreeNames::W</a>.</p>
 
 </div>
 </div>
@@ -2020,9 +2020,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Return the deviatoric part of the 2nd Piola Kirchhoff stress tensor, as calculated from the constitutive law in the incompresible formulation. Also return the contravariant deformed metric tensor, and the determinant of the deformed covariant metric tensor (likely to be needed in the incompressibility constraint) </p>
 
-<p class="definition">Definition at line <a class="el" href="solid__elements_8h_source.html#l01210">1210</a> of file <a class="el" href="solid__elements_8h_source.html">solid_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solid__elements_8h_source.html#l01206">1206</a> of file <a class="el" href="solid__elements_8h_source.html">solid_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="solid__elements_8h_source.html#l00375">oomph::PVDEquationsBase&lt; DIM &gt;::Constitutive_law_pt</a>, and <a class="el" href="oomph__definitions_8cc_source.html#l00293">oomph::Global_string_for_annotation::string()</a>.</p>
+<p class="reference">References <a class="el" href="solid__elements_8h_source.html#l00371">oomph::PVDEquationsBase&lt; DIM &gt;::Constitutive_law_pt</a>, and <a class="el" href="oomph__definitions_8cc_source.html#l00289">oomph::Global_string_for_annotation::string()</a>.</p>
 
 </div>
 </div>
@@ -2088,9 +2088,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Return the deviatoric part of the 2nd Piola Kirchhoff stress tensor, as calculated from the constitutive law in the nearly incompresible formulation. Also return the contravariant deformed metric tensor, the generalised dilatation, and the inverse of the bulk modulus. </p>
 
-<p class="definition">Definition at line <a class="el" href="solid__elements_8h_source.html#l01104">1104</a> of file <a class="el" href="solid__elements_8h_source.html">solid_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solid__elements_8h_source.html#l01100">1100</a> of file <a class="el" href="solid__elements_8h_source.html">solid_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="solid__elements_8h_source.html#l00375">oomph::PVDEquationsBase&lt; DIM &gt;::Constitutive_law_pt</a>, and <a class="el" href="oomph__definitions_8cc_source.html#l00293">oomph::Global_string_for_annotation::string()</a>.</p>
+<p class="reference">References <a class="el" href="solid__elements_8h_source.html#l00371">oomph::PVDEquationsBase&lt; DIM &gt;::Constitutive_law_pt</a>, and <a class="el" href="oomph__definitions_8cc_source.html#l00289">oomph::Global_string_for_annotation::string()</a>.</p>
 
 </div>
 </div>
@@ -2135,9 +2135,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Implements <a class="el" href="classoomph_1_1PVDEquationsBase.html#ad429d68f0129d5f7a38705aab386daa5">oomph::PVDEquationsBase&lt; DIM &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="solid__elements_8cc_source.html#l02222">2222</a> of file <a class="el" href="solid__elements_8cc_source.html">solid_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solid__elements_8cc_source.html#l02218">2218</a> of file <a class="el" href="solid__elements_8cc_source.html">solid_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, and <a class="el" href="cfortran_8h_source.html#l00572">s</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, and <a class="el" href="cfortran_8h_source.html#l00568">s</a>.</p>
 
 </div>
 </div>
@@ -2169,11 +2169,11 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Return the interpolated_solid_pressure. </p>
 
-<p class="definition">Definition at line <a class="el" href="solid__elements_8h_source.html#l00969">969</a> of file <a class="el" href="solid__elements_8h_source.html">solid_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solid__elements_8h_source.html#l00965">965</a> of file <a class="el" href="solid__elements_8h_source.html">solid_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="solid__elements_8h_source.html#l00143">oomph::PVDEquationsBase&lt; DIM &gt;::npres_solid()</a>, <a class="el" href="cfortran_8h_source.html#l00572">s</a>, <a class="el" href="classoomph_1_1PVDEquationsWithPressure.html#a2f447e84104fbdd8afe9efe52c62f2b3">oomph::PVDEquationsWithPressure&lt; DIM &gt;::solid_p()</a>, and <a class="el" href="classoomph_1_1PVDEquationsWithPressure.html#ad580f7919412f6b574b76f514f56282c">oomph::PVDEquationsWithPressure&lt; DIM &gt;::solid_pshape()</a>.</p>
+<p class="reference">References <a class="el" href="solid__elements_8h_source.html#l00139">oomph::PVDEquationsBase&lt; DIM &gt;::npres_solid()</a>, <a class="el" href="cfortran_8h_source.html#l00568">s</a>, <a class="el" href="classoomph_1_1PVDEquationsWithPressure.html#a2f447e84104fbdd8afe9efe52c62f2b3">oomph::PVDEquationsWithPressure&lt; DIM &gt;::solid_p()</a>, and <a class="el" href="classoomph_1_1PVDEquationsWithPressure.html#ad580f7919412f6b574b76f514f56282c">oomph::PVDEquationsWithPressure&lt; DIM &gt;::solid_pshape()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="refineable__solid__elements_8h_source.html#l00557">oomph::RefineableQPVDElementWithPressure&lt; DIM &gt;::further_build()</a>, <a class="el" href="solid__elements_8h_source.html#l01137">oomph::PVDEquationsWithPressure&lt; DIM &gt;::get_d_stress_dG_upper()</a>, and <a class="el" href="refineable__solid__elements_8h_source.html#l00813">oomph::RefineableQPVDElementWithContinuousPressure&lt; DIM &gt;::get_interpolated_values()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="refineable__solid__elements_8h_source.html#l00553">oomph::RefineableQPVDElementWithPressure&lt; DIM &gt;::further_build()</a>, <a class="el" href="solid__elements_8h_source.html#l01133">oomph::PVDEquationsWithPressure&lt; DIM &gt;::get_d_stress_dG_upper()</a>, and <a class="el" href="refineable__solid__elements_8h_source.html#l00809">oomph::RefineableQPVDElementWithContinuousPressure&lt; DIM &gt;::get_interpolated_values()</a>.</p>
 
 </div>
 </div>
@@ -2204,11 +2204,11 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Return whether the material is incompressible. </p>
 
-<p class="definition">Definition at line <a class="el" href="solid__elements_8h_source.html#l00836">836</a> of file <a class="el" href="solid__elements_8h_source.html">solid_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solid__elements_8h_source.html#l00832">832</a> of file <a class="el" href="solid__elements_8h_source.html">solid_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="solid__elements_8h_source.html#l01190">oomph::PVDEquationsWithPressure&lt; DIM &gt;::Incompressible</a>.</p>
+<p class="reference">References <a class="el" href="solid__elements_8h_source.html#l01186">oomph::PVDEquationsWithPressure&lt; DIM &gt;::Incompressible</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="refineable__solid__elements_8h_source.html#l00360">oomph::RefineablePVDEquationsWithPressure&lt; DIM &gt;::further_build()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="refineable__solid__elements_8h_source.html#l00356">oomph::RefineablePVDEquationsWithPressure&lt; DIM &gt;::further_build()</a>.</p>
 
 </div>
 </div>
@@ -2241,7 +2241,7 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1PVDEquationsBase.html#a749f42fea2b7138a61193c2615b2d95c">oomph::PVDEquationsBase&lt; DIM &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="solid__elements_8h_source.html#l01020">1020</a> of file <a class="el" href="solid__elements_8h_source.html">solid_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solid__elements_8h_source.html#l01016">1016</a> of file <a class="el" href="solid__elements_8h_source.html">solid_elements.h</a>.</p>
 
 </div>
 </div>
@@ -2277,9 +2277,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Reimplemented in <a class="el" href="classoomph_1_1TPVDElementWithContinuousPressure.html#a082f3c2e891783a923daeaee5686203c">oomph::TPVDElementWithContinuousPressure&lt; DIM &gt;</a>, <a class="el" href="classoomph_1_1QPVDElementWithContinuousPressure.html#ae44d9dd8f7a28dafd17e20a0408f4708">oomph::QPVDElementWithContinuousPressure&lt; DIM &gt;</a>, and <a class="el" href="classoomph_1_1QPVDElementWithPressure.html#adf19767f05bb8227c56b011c3f6931e5">oomph::QPVDElementWithPressure&lt; DIM &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="solid__elements_8h_source.html#l01000">1000</a> of file <a class="el" href="solid__elements_8h_source.html">solid_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solid__elements_8h_source.html#l00996">996</a> of file <a class="el" href="solid__elements_8h_source.html">solid_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="solid__elements_8h_source.html#l00989">oomph::PVDEquationsWithPressure&lt; DIM &gt;::output()</a>.</p>
+<p class="reference">References <a class="el" href="solid__elements_8h_source.html#l00985">oomph::PVDEquationsWithPressure&lt; DIM &gt;::output()</a>.</p>
 
 </div>
 </div>
@@ -2326,9 +2326,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Reimplemented in <a class="el" href="classoomph_1_1TPVDElementWithContinuousPressure.html#a943ae7f4fcad3538108a207325160c92">oomph::TPVDElementWithContinuousPressure&lt; DIM &gt;</a>, <a class="el" href="classoomph_1_1QPVDElementWithContinuousPressure.html#af9d764cc0daeb7151b37284bf2082162">oomph::QPVDElementWithContinuousPressure&lt; DIM &gt;</a>, and <a class="el" href="classoomph_1_1QPVDElementWithPressure.html#a129f52703db667b9b67a2aa7a6f7fb3e">oomph::QPVDElementWithPressure&lt; DIM &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="solid__elements_8cc_source.html#l01944">1944</a> of file <a class="el" href="solid__elements_8cc_source.html">solid_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solid__elements_8cc_source.html#l01940">1940</a> of file <a class="el" href="solid__elements_8cc_source.html">solid_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, and <a class="el" href="cfortran_8h_source.html#l00572">s</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, and <a class="el" href="cfortran_8h_source.html#l00568">s</a>.</p>
 
 </div>
 </div>
@@ -2364,9 +2364,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Reimplemented in <a class="el" href="classoomph_1_1TPVDElementWithContinuousPressure.html#a33bc9dab61e60a0de1cb784020c5f056">oomph::TPVDElementWithContinuousPressure&lt; DIM &gt;</a>, <a class="el" href="classoomph_1_1QPVDElementWithContinuousPressure.html#acc858925ae5724c02fc1073130f67430">oomph::QPVDElementWithContinuousPressure&lt; DIM &gt;</a>, and <a class="el" href="classoomph_1_1QPVDElementWithPressure.html#a442248cc27256d32e674ab2ffc1aa032">oomph::QPVDElementWithPressure&lt; DIM &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="solid__elements_8h_source.html#l00989">989</a> of file <a class="el" href="solid__elements_8h_source.html">solid_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solid__elements_8h_source.html#l00985">985</a> of file <a class="el" href="solid__elements_8h_source.html">solid_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="solid__elements_8h_source.html#l01000">oomph::PVDEquationsWithPressure&lt; DIM &gt;::output()</a>, <a class="el" href="solid__elements_8h_source.html#l01355">oomph::QPVDElementWithPressure&lt; DIM &gt;::output()</a>, <a class="el" href="solid__elements_8h_source.html#l01536">oomph::QPVDElementWithContinuousPressure&lt; DIM &gt;::output()</a>, and <a class="el" href="solid__elements_8h_source.html#l02088">oomph::TPVDElementWithContinuousPressure&lt; DIM &gt;::output()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="solid__elements_8h_source.html#l00996">oomph::PVDEquationsWithPressure&lt; DIM &gt;::output()</a>, <a class="el" href="solid__elements_8h_source.html#l01351">oomph::QPVDElementWithPressure&lt; DIM &gt;::output()</a>, <a class="el" href="solid__elements_8h_source.html#l01532">oomph::QPVDElementWithContinuousPressure&lt; DIM &gt;::output()</a>, and <a class="el" href="solid__elements_8h_source.html#l02084">oomph::TPVDElementWithContinuousPressure&lt; DIM &gt;::output()</a>.</p>
 
 </div>
 </div>
@@ -2412,9 +2412,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Reimplemented in <a class="el" href="classoomph_1_1TPVDElementWithContinuousPressure.html#aefeba130e3533f5af5286830d271028d">oomph::TPVDElementWithContinuousPressure&lt; DIM &gt;</a>, <a class="el" href="classoomph_1_1QPVDElementWithContinuousPressure.html#a52659b143c819c1fcc86a6473ef324f0">oomph::QPVDElementWithContinuousPressure&lt; DIM &gt;</a>, and <a class="el" href="classoomph_1_1QPVDElementWithPressure.html#ad47eebe6e14138c64fc313f3ecda8d6e">oomph::QPVDElementWithPressure&lt; DIM &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="solid__elements_8cc_source.html#l01890">1890</a> of file <a class="el" href="solid__elements_8cc_source.html">solid_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solid__elements_8cc_source.html#l01886">1886</a> of file <a class="el" href="solid__elements_8cc_source.html">solid_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, and <a class="el" href="cfortran_8h_source.html#l00572">s</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, and <a class="el" href="cfortran_8h_source.html#l00568">s</a>.</p>
 
 </div>
 </div>
@@ -2445,9 +2445,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Set the material to be compressible. </p>
 
-<p class="definition">Definition at line <a class="el" href="solid__elements_8h_source.html#l00842">842</a> of file <a class="el" href="solid__elements_8h_source.html">solid_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solid__elements_8h_source.html#l00838">838</a> of file <a class="el" href="solid__elements_8h_source.html">solid_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="solid__elements_8h_source.html#l01190">oomph::PVDEquationsWithPressure&lt; DIM &gt;::Incompressible</a>.</p>
+<p class="reference">References <a class="el" href="solid__elements_8h_source.html#l01186">oomph::PVDEquationsWithPressure&lt; DIM &gt;::Incompressible</a>.</p>
 
 </div>
 </div>
@@ -2478,9 +2478,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Set the material to be incompressible. </p>
 
-<p class="definition">Definition at line <a class="el" href="solid__elements_8h_source.html#l00839">839</a> of file <a class="el" href="solid__elements_8h_source.html">solid_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solid__elements_8h_source.html#l00835">835</a> of file <a class="el" href="solid__elements_8h_source.html">solid_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="solid__elements_8h_source.html#l01190">oomph::PVDEquationsWithPressure&lt; DIM &gt;::Incompressible</a>.</p>
+<p class="reference">References <a class="el" href="solid__elements_8h_source.html#l01186">oomph::PVDEquationsWithPressure&lt; DIM &gt;::Incompressible</a>.</p>
 
 </div>
 </div>
@@ -2556,7 +2556,7 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Implemented in <a class="el" href="classoomph_1_1TPVDElementWithContinuousPressure.html#aa0a9aad423ffe12eb10f07af6850191c">oomph::TPVDElementWithContinuousPressure&lt; DIM &gt;</a>, <a class="el" href="classoomph_1_1QPVDElementWithContinuousPressure.html#a28df8e859a4201842857e6ad7dbc7ecd">oomph::QPVDElementWithContinuousPressure&lt; DIM &gt;</a>, and <a class="el" href="classoomph_1_1QPVDElementWithPressure.html#ae60d58f767b89eb8ecf147da5e646bf3">oomph::QPVDElementWithPressure&lt; DIM &gt;</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="solid__elements_8h_source.html#l00969">oomph::PVDEquationsWithPressure&lt; DIM &gt;::interpolated_solid_p()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="solid__elements_8h_source.html#l00965">oomph::PVDEquationsWithPressure&lt; DIM &gt;::interpolated_solid_p()</a>.</p>
 
 </div>
 </div>
@@ -2600,7 +2600,7 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Implemented in <a class="el" href="classoomph_1_1TPVDElementWithContinuousPressure.html#a51defb0dbc2433b09fdcd1c3ac9f20dc">oomph::TPVDElementWithContinuousPressure&lt; DIM &gt;</a>, <a class="el" href="classoomph_1_1TPVDElementWithContinuousPressure.html#aa33acd1ed78ba0c48f535af0039395fd">oomph::TPVDElementWithContinuousPressure&lt; DIM &gt;</a>, <a class="el" href="classoomph_1_1TPVDElementWithContinuousPressure.html#a5bb00d8bab9b92063a4cef340154438d">oomph::TPVDElementWithContinuousPressure&lt; DIM &gt;</a>, <a class="el" href="classoomph_1_1QPVDElementWithContinuousPressure.html#a3ae7aa0cf24e89e4c946efed81244727">oomph::QPVDElementWithContinuousPressure&lt; DIM &gt;</a>, <a class="el" href="classoomph_1_1QPVDElementWithContinuousPressure.html#ab48638387c6474924fa9b4719c586f30">oomph::QPVDElementWithContinuousPressure&lt; DIM &gt;</a>, <a class="el" href="classoomph_1_1QPVDElementWithContinuousPressure.html#a917e2f9e3b1bd9ff49d28006e47e438f">oomph::QPVDElementWithContinuousPressure&lt; DIM &gt;</a>, <a class="el" href="classoomph_1_1QPVDElementWithPressure.html#aa7ed162df0c43e24b54fc853340e5f17">oomph::QPVDElementWithPressure&lt; DIM &gt;</a>, <a class="el" href="classoomph_1_1QPVDElementWithPressure.html#a9e12eb079c27aade696a3d43a006d1e9">oomph::QPVDElementWithPressure&lt; DIM &gt;</a>, and <a class="el" href="classoomph_1_1QPVDElementWithPressure.html#a2775e60c755528c5d8eaf403450f93e2">oomph::QPVDElementWithPressure&lt; DIM &gt;</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="solid__elements_8h_source.html#l00969">oomph::PVDEquationsWithPressure&lt; DIM &gt;::interpolated_solid_p()</a>, and <a class="el" href="solid__elements_8h_source.html#l01175">oomph::PVDEquationsWithPressure&lt; DIM &gt;::solid_pshape_at_knot()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="solid__elements_8h_source.html#l00965">oomph::PVDEquationsWithPressure&lt; DIM &gt;::interpolated_solid_p()</a>, and <a class="el" href="solid__elements_8h_source.html#l01171">oomph::PVDEquationsWithPressure&lt; DIM &gt;::solid_pshape_at_knot()</a>.</p>
 
 </div>
 </div>
@@ -2642,9 +2642,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Return the stored solid shape functions at the knots. </p>
 
-<p class="definition">Definition at line <a class="el" href="solid__elements_8h_source.html#l01175">1175</a> of file <a class="el" href="solid__elements_8h_source.html">solid_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solid__elements_8h_source.html#l01171">1171</a> of file <a class="el" href="solid__elements_8h_source.html">solid_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="multi__domain_8cc_source.html#l00066">oomph::Multi_domain_functions::Dim</a>, <a class="el" href="elements_8h_source.html#l02499">oomph::FiniteElement::dim()</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="elements_8h_source.html#l01925">oomph::FiniteElement::integral_pt()</a>, <a class="el" href="classoomph_1_1Integral.html#a1a2122f99a87c18649bafdd9ed739758">oomph::Integral::knot()</a>, <a class="el" href="cfortran_8h_source.html#l00572">s</a>, and <a class="el" href="classoomph_1_1PVDEquationsWithPressure.html#ad580f7919412f6b574b76f514f56282c">oomph::PVDEquationsWithPressure&lt; DIM &gt;::solid_pshape()</a>.</p>
+<p class="reference">References <a class="el" href="multi__domain_8cc_source.html#l00062">oomph::Multi_domain_functions::Dim</a>, <a class="el" href="elements_8h_source.html#l02495">oomph::FiniteElement::dim()</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="elements_8h_source.html#l01921">oomph::FiniteElement::integral_pt()</a>, <a class="el" href="classoomph_1_1Integral.html#a1a2122f99a87c18649bafdd9ed739758">oomph::Integral::knot()</a>, <a class="el" href="cfortran_8h_source.html#l00568">s</a>, and <a class="el" href="classoomph_1_1PVDEquationsWithPressure.html#ad580f7919412f6b574b76f514f56282c">oomph::PVDEquationsWithPressure&lt; DIM &gt;::solid_pshape()</a>.</p>
 
 </div>
 </div>
@@ -2673,9 +2673,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Boolean to determine whether the solid is incompressible or not. </p>
 
-<p class="definition">Definition at line <a class="el" href="solid__elements_8h_source.html#l01190">1190</a> of file <a class="el" href="solid__elements_8h_source.html">solid_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solid__elements_8h_source.html#l01186">1186</a> of file <a class="el" href="solid__elements_8h_source.html">solid_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="refineable__solid__elements_8h_source.html#l00360">oomph::RefineablePVDEquationsWithPressure&lt; DIM &gt;::further_build()</a>, <a class="el" href="solid__elements_8h_source.html#l00836">oomph::PVDEquationsWithPressure&lt; DIM &gt;::is_incompressible()</a>, <a class="el" href="solid__elements_8h_source.html#l00842">oomph::PVDEquationsWithPressure&lt; DIM &gt;::set_compressible()</a>, and <a class="el" href="solid__elements_8h_source.html#l00839">oomph::PVDEquationsWithPressure&lt; DIM &gt;::set_incompressible()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="refineable__solid__elements_8h_source.html#l00356">oomph::RefineablePVDEquationsWithPressure&lt; DIM &gt;::further_build()</a>, <a class="el" href="solid__elements_8h_source.html#l00832">oomph::PVDEquationsWithPressure&lt; DIM &gt;::is_incompressible()</a>, <a class="el" href="solid__elements_8h_source.html#l00838">oomph::PVDEquationsWithPressure&lt; DIM &gt;::set_compressible()</a>, and <a class="el" href="solid__elements_8h_source.html#l00835">oomph::PVDEquationsWithPressure&lt; DIM &gt;::set_incompressible()</a>.</p>
 
 </div>
 </div>
@@ -2711,7 +2711,7 @@ template&lt;unsigned DIM&gt; </div>
     <footer>
       <div class="container">
         <div class="text-muted" style="float:right;">Generated by <a href="http://www.doxygen.org/index.html">
-          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Tue Jul 6 2021 22:58:29
+          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Fri Jul 9 2021 20:53:29
         </div>
       </div>
     </footer>

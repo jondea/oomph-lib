@@ -200,7 +200,7 @@ Protected Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A <a class="el" href="classoomph_1_1TreeForest.html">TreeForest</a> consists of a collection of TreeRoots. Each member tree can have neighbours in various enumerated directions (e.g. S/W/N/E for a <a class="el" href="classoomph_1_1QuadTreeForest.html">QuadTreeForest</a>) and the orientation of their compasses can differ, allowing for complex, unstructured meshes. </p>
 
-<p class="definition">Definition at line <a class="el" href="tree_8h_source.html#l00385">385</a> of file <a class="el" href="tree_8h_source.html">tree.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tree_8h_source.html#l00381">381</a> of file <a class="el" href="tree_8h_source.html">tree.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a9d2be69c257888e0c1c79c9073c67cfa"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9d2be69c257888e0c1c79c9073c67cfa">&#9670;&nbsp;</a></span>TreeForest() <span class="overload">[1/3]</span></h2>
@@ -226,7 +226,7 @@ Protected Attributes</h2></td></tr>
 <p>Note that the pointers to the neighbour's of each tree must have been allocated before the constructor is called, otherwise the relative rotation scheme will not be constructed correctly. <br  />
  </p>
 
-<p class="definition">Definition at line <a class="el" href="tree_8cc_source.html#l00356">356</a> of file <a class="el" href="tree_8cc_source.html">tree.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tree_8cc_source.html#l00352">352</a> of file <a class="el" href="tree_8cc_source.html">tree.cc</a>.</p>
 
 </div>
 </div>
@@ -255,7 +255,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Default constructor (empty and broken) </p>
 
-<p class="definition">Definition at line <a class="el" href="tree_8h_source.html#l00394">394</a> of file <a class="el" href="tree_8h_source.html">tree.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tree_8h_source.html#l00390">390</a> of file <a class="el" href="tree_8h_source.html">tree.h</a>.</p>
 
 </div>
 </div>
@@ -285,9 +285,9 @@ Protected Attributes</h2></td></tr>
 
 <p>Broken copy constructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="tree_8h_source.html#l00403">403</a> of file <a class="el" href="tree_8h_source.html">tree.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tree_8h_source.html#l00399">399</a> of file <a class="el" href="tree_8h_source.html">tree.h</a>.</p>
 
-<p class="reference">References <a class="el" href="oomph__utilities_8cc_source.html#l00218">oomph::BrokenCopy::broken_copy()</a>.</p>
+<p class="reference">References <a class="el" href="oomph__utilities_8cc_source.html#l00214">oomph::BrokenCopy::broken_copy()</a>.</p>
 
 </div>
 </div>
@@ -317,9 +317,9 @@ Protected Attributes</h2></td></tr>
 <p>Destructor: Delete the constituent trees (and thus the objects associated with its non-leaf nodes!) </p>
 <p>Kill tree forest: Delete the constituent trees. </p>
 
-<p class="definition">Definition at line <a class="el" href="tree_8cc_source.html#l00362">362</a> of file <a class="el" href="tree_8cc_source.html">tree.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tree_8cc_source.html#l00358">358</a> of file <a class="el" href="tree_8cc_source.html">tree.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, and <a class="el" href="tree_8h_source.html#l00461">Trees_pt</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, and <a class="el" href="tree_8h_source.html#l00457">Trees_pt</a>.</p>
 
 </div>
 </div>
@@ -352,7 +352,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implemented in <a class="el" href="classoomph_1_1OcTreeForest.html#a762eaa5790197e03146d42957c03b33e">oomph::OcTreeForest</a>, <a class="el" href="classoomph_1_1QuadTreeForest.html#a7ae708ced04343303be644f87cb1c169">oomph::QuadTreeForest</a>, and <a class="el" href="classoomph_1_1BinaryTreeForest.html#a2e99234fcdc75760e00afb7d140c74ec">oomph::BinaryTreeForest</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="refineable__mesh_8cc_source.html#l00898">oomph::TreeBasedRefineableMeshBase::adapt_mesh()</a>, and <a class="el" href="refineable__mesh_8cc_source.html#l04292">oomph::TreeBasedRefineableMeshBase::p_adapt_mesh()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="refineable__mesh_8cc_source.html#l00894">oomph::TreeBasedRefineableMeshBase::adapt_mesh()</a>, and <a class="el" href="refineable__mesh_8cc_source.html#l04288">oomph::TreeBasedRefineableMeshBase::p_adapt_mesh()</a>.</p>
 
 </div>
 </div>
@@ -385,11 +385,11 @@ Protected Attributes</h2></td></tr>
 <p>Close output files that will store any hanging nodes in the forest and delete any associated storage. This can be performed genercially in this base class. </p>
 <p>Close the hanging node output files and delete storage allocated at the pointers. This can be done generically at the base level </p>
 
-<p class="definition">Definition at line <a class="el" href="tree_8cc_source.html#l00433">433</a> of file <a class="el" href="tree_8cc_source.html">tree.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tree_8cc_source.html#l00429">429</a> of file <a class="el" href="tree_8cc_source.html">tree.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="oomph__utilities_8h_source.html#l00596">oomph::DocInfo::is_doc_enabled()</a>, and <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>.</p>
+<p class="reference">References <a class="el" href="oomph__utilities_8h_source.html#l00592">oomph::DocInfo::is_doc_enabled()</a>, and <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="refineable__mesh_8cc_source.html#l00898">oomph::TreeBasedRefineableMeshBase::adapt_mesh()</a>, and <a class="el" href="refineable__mesh_8cc_source.html#l04292">oomph::TreeBasedRefineableMeshBase::p_adapt_mesh()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="refineable__mesh_8cc_source.html#l00894">oomph::TreeBasedRefineableMeshBase::adapt_mesh()</a>, and <a class="el" href="refineable__mesh_8cc_source.html#l04288">oomph::TreeBasedRefineableMeshBase::p_adapt_mesh()</a>.</p>
 
 </div>
 </div>
@@ -418,11 +418,11 @@ Protected Attributes</h2></td></tr>
 
 <p>Flush trees from forest. </p>
 
-<p class="definition">Definition at line <a class="el" href="tree_8h_source.html#l00452">452</a> of file <a class="el" href="tree_8h_source.html">tree.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tree_8h_source.html#l00448">448</a> of file <a class="el" href="tree_8h_source.html">tree.h</a>.</p>
 
-<p class="reference">References <a class="el" href="tree_8h_source.html#l00461">Trees_pt</a>.</p>
+<p class="reference">References <a class="el" href="tree_8h_source.html#l00457">Trees_pt</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="refineable__brick__mesh_8h_source.html#l00102">oomph::RefineableBrickMesh&lt; ELEMENT &gt;::setup_octree_forest()</a>, and <a class="el" href="refineable__quad__mesh_8h_source.html#l00100">oomph::RefineableQuadMesh&lt; ELEMENT &gt;::setup_quadtree_forest()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="refineable__brick__mesh_8h_source.html#l00098">oomph::RefineableBrickMesh&lt; ELEMENT &gt;::setup_octree_forest()</a>, and <a class="el" href="refineable__quad__mesh_8h_source.html#l00096">oomph::RefineableQuadMesh&lt; ELEMENT &gt;::setup_quadtree_forest()</a>.</p>
 
 </div>
 </div>
@@ -451,11 +451,11 @@ Protected Attributes</h2></td></tr>
 
 <p>Number of trees in forest. </p>
 
-<p class="definition">Definition at line <a class="el" href="tree_8h_source.html#l00446">446</a> of file <a class="el" href="tree_8h_source.html">tree.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tree_8h_source.html#l00442">442</a> of file <a class="el" href="tree_8h_source.html">tree.h</a>.</p>
 
-<p class="reference">References <a class="el" href="tree_8h_source.html#l00461">Trees_pt</a>.</p>
+<p class="reference">References <a class="el" href="tree_8h_source.html#l00457">Trees_pt</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="refineable__mesh_8cc_source.html#l00898">oomph::TreeBasedRefineableMeshBase::adapt_mesh()</a>, <a class="el" href="quadtree_8cc_source.html#l01049">oomph::QuadTreeForest::construct_north_equivalents()</a>, <a class="el" href="octree_8cc_source.html#l05234">oomph::OcTreeForest::construct_up_right_equivalents()</a>, <a class="el" href="binary__tree_8cc_source.html#l00455">oomph::BinaryTreeForest::find_neighbours()</a>, <a class="el" href="quadtree_8cc_source.html#l00874">oomph::QuadTreeForest::find_neighbours()</a>, <a class="el" href="octree_8cc_source.html#l04893">oomph::OcTreeForest::find_neighbours()</a>, <a class="el" href="refineable__mesh_8cc_source.html#l04292">oomph::TreeBasedRefineableMeshBase::p_adapt_mesh()</a>, <a class="el" href="refineable__mesh_8h_source.html#l00792">oomph::TreeBasedRefineableMesh&lt; oomph::SpectralPeriodicOrbitElement&lt; NNODE_1D &gt; &gt;::p_refine_elements_if_required()</a>, <a class="el" href="refineable__mesh_8h_source.html#l00776">oomph::TreeBasedRefineableMesh&lt; oomph::SpectralPeriodicOrbitElement&lt; NNODE_1D &gt; &gt;::split_elements_if_required()</a>, <a class="el" href="tree_8cc_source.html#l00405">stick_all_tree_nodes_into_vector()</a>, and <a class="el" href="tree_8cc_source.html#l00377">stick_leaves_into_vector()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="refineable__mesh_8cc_source.html#l00894">oomph::TreeBasedRefineableMeshBase::adapt_mesh()</a>, <a class="el" href="quadtree_8cc_source.html#l01045">oomph::QuadTreeForest::construct_north_equivalents()</a>, <a class="el" href="octree_8cc_source.html#l05230">oomph::OcTreeForest::construct_up_right_equivalents()</a>, <a class="el" href="binary__tree_8cc_source.html#l00451">oomph::BinaryTreeForest::find_neighbours()</a>, <a class="el" href="quadtree_8cc_source.html#l00870">oomph::QuadTreeForest::find_neighbours()</a>, <a class="el" href="octree_8cc_source.html#l04889">oomph::OcTreeForest::find_neighbours()</a>, <a class="el" href="refineable__mesh_8cc_source.html#l04288">oomph::TreeBasedRefineableMeshBase::p_adapt_mesh()</a>, <a class="el" href="refineable__mesh_8h_source.html#l00788">oomph::TreeBasedRefineableMesh&lt; oomph::SpectralPeriodicOrbitElement&lt; NNODE_1D &gt; &gt;::p_refine_elements_if_required()</a>, <a class="el" href="refineable__mesh_8h_source.html#l00772">oomph::TreeBasedRefineableMesh&lt; oomph::SpectralPeriodicOrbitElement&lt; NNODE_1D &gt; &gt;::split_elements_if_required()</a>, <a class="el" href="tree_8cc_source.html#l00401">stick_all_tree_nodes_into_vector()</a>, and <a class="el" href="tree_8cc_source.html#l00373">stick_leaves_into_vector()</a>.</p>
 
 </div>
 </div>
@@ -497,7 +497,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implemented in <a class="el" href="classoomph_1_1OcTreeForest.html#a34523b415aa855786831bca37f48d4cb">oomph::OcTreeForest</a>, <a class="el" href="classoomph_1_1QuadTreeForest.html#acaf91cedf80490c307b9a4aff411439a">oomph::QuadTreeForest</a>, and <a class="el" href="classoomph_1_1BinaryTreeForest.html#a7cf07f826ebdb73a0270791a6f300f9e">oomph::BinaryTreeForest</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="refineable__mesh_8cc_source.html#l00898">oomph::TreeBasedRefineableMeshBase::adapt_mesh()</a>, and <a class="el" href="refineable__mesh_8cc_source.html#l04292">oomph::TreeBasedRefineableMeshBase::p_adapt_mesh()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="refineable__mesh_8cc_source.html#l00894">oomph::TreeBasedRefineableMeshBase::adapt_mesh()</a>, and <a class="el" href="refineable__mesh_8cc_source.html#l04288">oomph::TreeBasedRefineableMeshBase::p_adapt_mesh()</a>.</p>
 
 </div>
 </div>
@@ -527,9 +527,9 @@ Protected Attributes</h2></td></tr>
 
 <p>Broken assignment operator. </p>
 
-<p class="definition">Definition at line <a class="el" href="tree_8h_source.html#l00409">409</a> of file <a class="el" href="tree_8h_source.html">tree.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tree_8h_source.html#l00405">405</a> of file <a class="el" href="tree_8h_source.html">tree.h</a>.</p>
 
-<p class="reference">References <a class="el" href="oomph__utilities_8cc_source.html#l00201">oomph::BrokenCopy::broken_assign()</a>.</p>
+<p class="reference">References <a class="el" href="oomph__utilities_8cc_source.html#l00197">oomph::BrokenCopy::broken_assign()</a>.</p>
 
 </div>
 </div>
@@ -552,11 +552,11 @@ Protected Attributes</h2></td></tr>
 <p>Traverse forest and stick pointers to all "nodes" into <a class="el" href="classoomph_1_1Vector.html">Vector</a>. </p>
 <p>Traverse <a class="el" href="classoomph_1_1TreeForest.html">TreeForest</a>: Preorder traverse and stick pointers to all nodes into <a class="el" href="classoomph_1_1Vector.html">Vector</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="tree_8cc_source.html#l00405">405</a> of file <a class="el" href="tree_8cc_source.html">tree.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tree_8cc_source.html#l00401">401</a> of file <a class="el" href="tree_8cc_source.html">tree.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="tree_8h_source.html#l00134">oomph::Tree::nsons()</a>, <a class="el" href="tree_8h_source.html#l00446">ntree()</a>, <a class="el" href="tree_8h_source.html#l00114">oomph::Tree::son_pt()</a>, and <a class="el" href="tree_8h_source.html#l00449">tree_pt()</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="tree_8h_source.html#l00130">oomph::Tree::nsons()</a>, <a class="el" href="tree_8h_source.html#l00442">ntree()</a>, <a class="el" href="tree_8h_source.html#l00110">oomph::Tree::son_pt()</a>, and <a class="el" href="tree_8h_source.html#l00445">tree_pt()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="refineable__mesh_8cc_source.html#l00898">oomph::TreeBasedRefineableMeshBase::adapt_mesh()</a>, <a class="el" href="binary__tree_8cc_source.html#l00547">oomph::BinaryTreeForest::check_all_neighbours()</a>, <a class="el" href="quadtree_8cc_source.html#l01227">oomph::QuadTreeForest::check_all_neighbours()</a>, <a class="el" href="octree_8cc_source.html#l05743">oomph::OcTreeForest::check_all_neighbours()</a>, <a class="el" href="refineable__mesh_8cc_source.html#l00118">oomph::TreeBasedRefineableMeshBase::get_elements_at_refinement_level()</a>, <a class="el" href="refineable__mesh_8cc_source.html#l00055">oomph::TreeBasedRefineableMeshBase::get_refinement_pattern()</a>, <a class="el" href="refineable__mesh_8cc_source.html#l04292">oomph::TreeBasedRefineableMeshBase::p_adapt_mesh()</a>, <a class="el" href="binary__tree_8cc_source.html#l00624">oomph::BinaryTreeForest::self_test()</a>, <a class="el" href="quadtree_8cc_source.html#l01338">oomph::QuadTreeForest::self_test()</a>, <a class="el" href="octree_8cc_source.html#l05673">oomph::OcTreeForest::self_test()</a>, <a class="el" href="refineable__brick__mesh_8h_source.html#l00102">oomph::RefineableBrickMesh&lt; ELEMENT &gt;::setup_octree_forest()</a>, and <a class="el" href="refineable__quad__mesh_8h_source.html#l00100">oomph::RefineableQuadMesh&lt; ELEMENT &gt;::setup_quadtree_forest()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="refineable__mesh_8cc_source.html#l00894">oomph::TreeBasedRefineableMeshBase::adapt_mesh()</a>, <a class="el" href="binary__tree_8cc_source.html#l00543">oomph::BinaryTreeForest::check_all_neighbours()</a>, <a class="el" href="quadtree_8cc_source.html#l01223">oomph::QuadTreeForest::check_all_neighbours()</a>, <a class="el" href="octree_8cc_source.html#l05739">oomph::OcTreeForest::check_all_neighbours()</a>, <a class="el" href="refineable__mesh_8cc_source.html#l00114">oomph::TreeBasedRefineableMeshBase::get_elements_at_refinement_level()</a>, <a class="el" href="refineable__mesh_8cc_source.html#l00051">oomph::TreeBasedRefineableMeshBase::get_refinement_pattern()</a>, <a class="el" href="refineable__mesh_8cc_source.html#l04288">oomph::TreeBasedRefineableMeshBase::p_adapt_mesh()</a>, <a class="el" href="binary__tree_8cc_source.html#l00620">oomph::BinaryTreeForest::self_test()</a>, <a class="el" href="quadtree_8cc_source.html#l01334">oomph::QuadTreeForest::self_test()</a>, <a class="el" href="octree_8cc_source.html#l05669">oomph::OcTreeForest::self_test()</a>, <a class="el" href="refineable__brick__mesh_8h_source.html#l00098">oomph::RefineableBrickMesh&lt; ELEMENT &gt;::setup_octree_forest()</a>, and <a class="el" href="refineable__quad__mesh_8h_source.html#l00096">oomph::RefineableQuadMesh&lt; ELEMENT &gt;::setup_quadtree_forest()</a>.</p>
 
 </div>
 </div>
@@ -579,11 +579,11 @@ Protected Attributes</h2></td></tr>
 <p>Traverse forst and stick pointers to leaf "nodes" into <a class="el" href="classoomph_1_1Vector.html">Vector</a>. </p>
 <p>Traverse <a class="el" href="classoomph_1_1TreeForest.html">TreeForest</a>: Preorder traverse and stick pointers to leaf nodes (only) into <a class="el" href="classoomph_1_1Vector.html">Vector</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="tree_8cc_source.html#l00377">377</a> of file <a class="el" href="tree_8cc_source.html">tree.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tree_8cc_source.html#l00373">373</a> of file <a class="el" href="tree_8cc_source.html">tree.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="tree_8h_source.html#l00134">oomph::Tree::nsons()</a>, <a class="el" href="tree_8h_source.html#l00446">ntree()</a>, <a class="el" href="tree_8h_source.html#l00114">oomph::Tree::son_pt()</a>, <a class="el" href="tree_8cc_source.html#l00255">oomph::Tree::stick_leaves_into_vector()</a>, and <a class="el" href="tree_8h_source.html#l00449">tree_pt()</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="tree_8h_source.html#l00130">oomph::Tree::nsons()</a>, <a class="el" href="tree_8h_source.html#l00442">ntree()</a>, <a class="el" href="tree_8h_source.html#l00110">oomph::Tree::son_pt()</a>, <a class="el" href="tree_8cc_source.html#l00251">oomph::Tree::stick_leaves_into_vector()</a>, and <a class="el" href="tree_8h_source.html#l00445">tree_pt()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="refineable__mesh_8cc_source.html#l00898">oomph::TreeBasedRefineableMeshBase::adapt_mesh()</a>, and <a class="el" href="refineable__mesh_8cc_source.html#l04292">oomph::TreeBasedRefineableMeshBase::p_adapt_mesh()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="refineable__mesh_8cc_source.html#l00894">oomph::TreeBasedRefineableMeshBase::adapt_mesh()</a>, and <a class="el" href="refineable__mesh_8cc_source.html#l04288">oomph::TreeBasedRefineableMeshBase::p_adapt_mesh()</a>.</p>
 
 </div>
 </div>
@@ -613,11 +613,11 @@ Protected Attributes</h2></td></tr>
 
 <p>Return pointer to i-th tree in forest. </p>
 
-<p class="definition">Definition at line <a class="el" href="tree_8h_source.html#l00449">449</a> of file <a class="el" href="tree_8h_source.html">tree.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tree_8h_source.html#l00445">445</a> of file <a class="el" href="tree_8h_source.html">tree.h</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, and <a class="el" href="tree_8h_source.html#l00461">Trees_pt</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, and <a class="el" href="tree_8h_source.html#l00457">Trees_pt</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="refineable__mesh_8cc_source.html#l00898">oomph::TreeBasedRefineableMeshBase::adapt_mesh()</a>, <a class="el" href="refineable__mesh_8cc_source.html#l04292">oomph::TreeBasedRefineableMeshBase::p_adapt_mesh()</a>, <a class="el" href="refineable__mesh_8h_source.html#l00792">oomph::TreeBasedRefineableMesh&lt; oomph::SpectralPeriodicOrbitElement&lt; NNODE_1D &gt; &gt;::p_refine_elements_if_required()</a>, <a class="el" href="refineable__mesh_8h_source.html#l00776">oomph::TreeBasedRefineableMesh&lt; oomph::SpectralPeriodicOrbitElement&lt; NNODE_1D &gt; &gt;::split_elements_if_required()</a>, <a class="el" href="tree_8cc_source.html#l00405">stick_all_tree_nodes_into_vector()</a>, and <a class="el" href="tree_8cc_source.html#l00377">stick_leaves_into_vector()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="refineable__mesh_8cc_source.html#l00894">oomph::TreeBasedRefineableMeshBase::adapt_mesh()</a>, <a class="el" href="refineable__mesh_8cc_source.html#l04288">oomph::TreeBasedRefineableMeshBase::p_adapt_mesh()</a>, <a class="el" href="refineable__mesh_8h_source.html#l00788">oomph::TreeBasedRefineableMesh&lt; oomph::SpectralPeriodicOrbitElement&lt; NNODE_1D &gt; &gt;::p_refine_elements_if_required()</a>, <a class="el" href="refineable__mesh_8h_source.html#l00772">oomph::TreeBasedRefineableMesh&lt; oomph::SpectralPeriodicOrbitElement&lt; NNODE_1D &gt; &gt;::split_elements_if_required()</a>, <a class="el" href="tree_8cc_source.html#l00401">stick_all_tree_nodes_into_vector()</a>, and <a class="el" href="tree_8cc_source.html#l00373">stick_leaves_into_vector()</a>.</p>
 
 </div>
 </div>
@@ -644,9 +644,9 @@ Protected Attributes</h2></td></tr>
 
 <p><a class="el" href="classoomph_1_1Vector.html">Vector</a> containing the pointers to the trees. </p>
 
-<p class="definition">Definition at line <a class="el" href="tree_8h_source.html#l00461">461</a> of file <a class="el" href="tree_8h_source.html">tree.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tree_8h_source.html#l00457">457</a> of file <a class="el" href="tree_8h_source.html">tree.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="octree_8cc_source.html#l05234">oomph::OcTreeForest::construct_up_right_equivalents()</a>, <a class="el" href="binary__tree_8cc_source.html#l00455">oomph::BinaryTreeForest::find_neighbours()</a>, <a class="el" href="quadtree_8cc_source.html#l00874">oomph::QuadTreeForest::find_neighbours()</a>, <a class="el" href="octree_8cc_source.html#l04893">oomph::OcTreeForest::find_neighbours()</a>, <a class="el" href="tree_8h_source.html#l00452">flush_trees()</a>, <a class="el" href="tree_8h_source.html#l00446">ntree()</a>, <a class="el" href="tree_8h_source.html#l00449">tree_pt()</a>, and <a class="el" href="tree_8cc_source.html#l00362">~TreeForest()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="octree_8cc_source.html#l05230">oomph::OcTreeForest::construct_up_right_equivalents()</a>, <a class="el" href="binary__tree_8cc_source.html#l00451">oomph::BinaryTreeForest::find_neighbours()</a>, <a class="el" href="quadtree_8cc_source.html#l00870">oomph::QuadTreeForest::find_neighbours()</a>, <a class="el" href="octree_8cc_source.html#l04889">oomph::OcTreeForest::find_neighbours()</a>, <a class="el" href="tree_8h_source.html#l00448">flush_trees()</a>, <a class="el" href="tree_8h_source.html#l00442">ntree()</a>, <a class="el" href="tree_8h_source.html#l00445">tree_pt()</a>, and <a class="el" href="tree_8cc_source.html#l00358">~TreeForest()</a>.</p>
 
 </div>
 </div>
@@ -682,7 +682,7 @@ Protected Attributes</h2></td></tr>
     <footer>
       <div class="container">
         <div class="text-muted" style="float:right;">Generated by <a href="http://www.doxygen.org/index.html">
-          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Tue Jul 6 2021 22:59:56
+          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Fri Jul 9 2021 20:54:45
         </div>
       </div>
     </footer>

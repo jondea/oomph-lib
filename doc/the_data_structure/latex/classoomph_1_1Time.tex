@@ -53,7 +53,7 @@ double \mbox{\hyperlink{classoomph_1_1Time_a0d304d449babd0531b76668c6548ad4b}{Co
 \doxysubsection{Detailed Description}
 Class to keep track of discrete/continous time. It is essential to have a single \mbox{\hyperlink{classoomph_1_1Time}{Time}} object when using multiple time-\/stepping schemes; e.\+g., in fluid-\/structure interaction problems, it is common to use different schemes for the fluid and solid domains. Storage is allocated for the current value of the (continuous) time and a limited history of previous timesteps. The number of previous timesteps must be equal to the number required by the \char`\"{}highest order\char`\"{} scheme. 
 
-Definition at line 67 of file timesteppers.\+h.
+Definition at line 63 of file timesteppers.\+h.
 
 
 
@@ -70,7 +70,7 @@ Constructor\+: Do not allocate any storage for previous timesteps, but set the i
 
 
 
-Definition at line 81 of file timesteppers.\+h.
+Definition at line 77 of file timesteppers.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1Time_af933eb465690f9630983aa0fe24782a3}\label{classoomph_1_1Time_af933eb465690f9630983aa0fe24782a3}} 
 \index{oomph::Time@{oomph::Time}!Time@{Time}}
@@ -84,7 +84,7 @@ Constructor\+: Pass the number of timesteps to be stored and set the initial val
 
 
 
-Definition at line 85 of file timesteppers.\+h.
+Definition at line 81 of file timesteppers.\+h.
 
 
 
@@ -102,7 +102,7 @@ Broken copy constructor.
 
 
 
-Definition at line 93 of file timesteppers.\+h.
+Definition at line 89 of file timesteppers.\+h.
 
 
 
@@ -120,7 +120,7 @@ Destructor\+: empty.
 
 
 
-Definition at line 127 of file timesteppers.\+h.
+Definition at line 123 of file timesteppers.\+h.
 
 
 
@@ -133,7 +133,7 @@ Definition at line 127 of file timesteppers.\+h.
 
 Return the value of the t-\/th stored timestep (t=0\+: present; t$>$0\+: previous). 
 
-Definition at line 137 of file timesteppers.\+h.
+Definition at line 133 of file timesteppers.\+h.
 
 
 
@@ -151,7 +151,7 @@ Referenced by oomph\+::\+I\+M\+R\+By\+B\+D\+F\+::actions\+\_\+after\+\_\+timeste
 
 Return the value of the t-\/th stored timestep (t=0\+: present; t$>$0\+: previous), const version. 
 
-Definition at line 141 of file timesteppers.\+h.
+Definition at line 137 of file timesteppers.\+h.
 
 
 
@@ -169,7 +169,7 @@ Set all timesteps to the same value, dt.
 
 
 
-Definition at line 109 of file timesteppers.\+h.
+Definition at line 105 of file timesteppers.\+h.
 
 
 
@@ -192,7 +192,7 @@ Set the value of the timesteps to be equal to the values passed in a vector ~\ne
 
 
 
-Definition at line 117 of file timesteppers.\+h.
+Definition at line 113 of file timesteppers.\+h.
 
 
 
@@ -210,7 +210,7 @@ Return the number of timesteps stored.
 
 
 
-Definition at line 133 of file timesteppers.\+h.
+Definition at line 129 of file timesteppers.\+h.
 
 
 
@@ -232,7 +232,7 @@ Broken assignment operator.
 
 
 
-Definition at line 99 of file timesteppers.\+h.
+Definition at line 95 of file timesteppers.\+h.
 
 
 
@@ -250,7 +250,7 @@ Resize the vector holding the number of previous timesteps and initialise the ne
 
 
 
-Definition at line 106 of file timesteppers.\+h.
+Definition at line 102 of file timesteppers.\+h.
 
 
 
@@ -272,7 +272,7 @@ Update all stored values of dt by shifting each value along the array. This func
 
 
 
-Definition at line 166 of file timesteppers.\+h.
+Definition at line 162 of file timesteppers.\+h.
 
 
 
@@ -294,7 +294,7 @@ Return the current value of the continuous time.
 
 
 
-Definition at line 130 of file timesteppers.\+h.
+Definition at line 126 of file timesteppers.\+h.
 
 
 
@@ -316,7 +316,7 @@ Return the value of the continuous time at the t-\/th previous time level (t=0\+
 
 
 
-Definition at line 145 of file timesteppers.\+h.
+Definition at line 141 of file timesteppers.\+h.
 
 
 
@@ -337,7 +337,7 @@ Pointer to the value of the continuous time.
 
 
 
-Definition at line 72 of file timesteppers.\+h.
+Definition at line 68 of file timesteppers.\+h.
 
 
 
@@ -355,7 +355,7 @@ Referenced by time().
 
 
 
-Definition at line 75 of file timesteppers.\+h.
+Definition at line 71 of file timesteppers.\+h.
 
 
 

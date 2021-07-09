@@ -66,7 +66,7 @@ class Q\+Thermal\+P\+V\+D\+Element$<$ D\+I\+M $>$}
 
 A class that solves the equations of steady thermoelasticity by combining the Unsteady\+Heat and P\+VD equations into a single element. A temperature-\/dependent growth term is added to the P\+VD equations by overloading the member function get\+\_\+istotropic\+\_\+growth() 
 
-Definition at line 56 of file thermo.\+cc.
+Definition at line 52 of file thermo.\+cc.
 
 
 
@@ -84,7 +84,7 @@ Constructor\+: call the underlying constructors and initialise the pointer to Al
 
 
 
-Definition at line 71 of file thermo.\+cc.
+Definition at line 67 of file thermo.\+cc.
 
 
 
@@ -102,7 +102,7 @@ Access function for the thermal expansion coefficient (const version)
 
 
 
-Definition at line 85 of file thermo.\+cc.
+Definition at line 81 of file thermo.\+cc.
 
 \mbox{\Hypertarget{classQThermalPVDElement_a57fb80dd582c02c0e8c7dc17491bf76f}\label{classQThermalPVDElement_a57fb80dd582c02c0e8c7dc17491bf76f}} 
 \index{QThermalPVDElement$<$ DIM $>$@{QThermalPVDElement$<$ DIM $>$}!alpha\_pt@{alpha\_pt}}
@@ -117,7 +117,7 @@ Access function for the pointer to the thermal expansion coefficientr.
 
 
 
-Definition at line 88 of file thermo.\+cc.
+Definition at line 84 of file thermo.\+cc.
 
 \mbox{\Hypertarget{classQThermalPVDElement_abbfb260a0c8dbf1dbfa797f15d98e0af}\label{classQThermalPVDElement_abbfb260a0c8dbf1dbfa797f15d98e0af}} 
 \index{QThermalPVDElement$<$ DIM $>$@{QThermalPVDElement$<$ DIM $>$}!compute\_error@{compute\_error}}
@@ -132,7 +132,7 @@ Validate against exact solution. Solution is provided via function pointer. Plot
 
 
 
-Definition at line 178 of file thermo.\+cc.
+Definition at line 174 of file thermo.\+cc.
 
 \mbox{\Hypertarget{classQThermalPVDElement_a64e5047e9a054544b61a6e8cf5534364}\label{classQThermalPVDElement_a64e5047e9a054544b61a6e8cf5534364}} 
 \index{QThermalPVDElement$<$ DIM $>$@{QThermalPVDElement$<$ DIM $>$}!compute\_error@{compute\_error}}
@@ -147,7 +147,7 @@ Validate against exact solution at given time Solution is provided via function 
 
 
 
-Definition at line 166 of file thermo.\+cc.
+Definition at line 162 of file thermo.\+cc.
 
 \mbox{\Hypertarget{classQThermalPVDElement_a7824ab9fd50480c1eb8b20e57620afe5}\label{classQThermalPVDElement_a7824ab9fd50480c1eb8b20e57620afe5}} 
 \index{QThermalPVDElement$<$ DIM $>$@{QThermalPVDElement$<$ DIM $>$}!compute\_norm@{compute\_norm}}
@@ -163,7 +163,7 @@ Compute norm of solution\+: use the version in the unsteady heat class ~\newline
 
 
 
-Definition at line 156 of file thermo.\+cc.
+Definition at line 152 of file thermo.\+cc.
 
 \mbox{\Hypertarget{classQThermalPVDElement_a9a9cb4c621700b1b84d2200bd94d5511}\label{classQThermalPVDElement_a9a9cb4c621700b1b84d2200bd94d5511}} 
 \index{QThermalPVDElement$<$ DIM $>$@{QThermalPVDElement$<$ DIM $>$}!Default\_Physical\_Constant\_Value@{Default\_Physical\_Constant\_Value}}
@@ -177,7 +177,7 @@ Set the default physical value to be one.
 
 
 
-Definition at line 223 of file thermo.\+cc.
+Definition at line 219 of file thermo.\+cc.
 
 \mbox{\Hypertarget{classQThermalPVDElement_a6fe89466bee5ebcf16a14a68550ff447}\label{classQThermalPVDElement_a6fe89466bee5ebcf16a14a68550ff447}} 
 \index{QThermalPVDElement$<$ DIM $>$@{QThermalPVDElement$<$ DIM $>$}!fill\_in\_contribution\_to\_jacobian@{fill\_in\_contribution\_to\_jacobian}}
@@ -192,7 +192,7 @@ Compute the element\textquotesingle{}s residual Vector and the jacobian matrix W
 
 
 
-Definition at line 209 of file thermo.\+cc.
+Definition at line 205 of file thermo.\+cc.
 
 \mbox{\Hypertarget{classQThermalPVDElement_ab26361e4164834860ec74603276b0207}\label{classQThermalPVDElement_ab26361e4164834860ec74603276b0207}} 
 \index{QThermalPVDElement$<$ DIM $>$@{QThermalPVDElement$<$ DIM $>$}!fill\_in\_contribution\_to\_residuals@{fill\_in\_contribution\_to\_residuals}}
@@ -207,7 +207,7 @@ Calculate the contribution to the residual vector. We assume that the vector has
 
 
 
-Definition at line 196 of file thermo.\+cc.
+Definition at line 192 of file thermo.\+cc.
 
 \mbox{\Hypertarget{classQThermalPVDElement_a25774a0b8d2a7ec688e91420527cc5c4}\label{classQThermalPVDElement_a25774a0b8d2a7ec688e91420527cc5c4}} 
 \index{QThermalPVDElement$<$ DIM $>$@{QThermalPVDElement$<$ DIM $>$}!get\_isotropic\_growth@{get\_isotropic\_growth}}
@@ -222,7 +222,7 @@ Overload the growth function in the advection-\/diffusion equations. to be tempe
 
 
 
-Definition at line 185 of file thermo.\+cc.
+Definition at line 181 of file thermo.\+cc.
 
 \mbox{\Hypertarget{classQThermalPVDElement_af290922dfcefef30dc03fca2a2cb4fbf}\label{classQThermalPVDElement_af290922dfcefef30dc03fca2a2cb4fbf}} 
 \index{QThermalPVDElement$<$ DIM $>$@{QThermalPVDElement$<$ DIM $>$}!output@{output}}
@@ -237,7 +237,7 @@ C-\/style output function\+: Broken default.
 
 
 
-Definition at line 129 of file thermo.\+cc.
+Definition at line 125 of file thermo.\+cc.
 
 \mbox{\Hypertarget{classQThermalPVDElement_a649062cd4f15d8f14a2755786dd466dc}\label{classQThermalPVDElement_a649062cd4f15d8f14a2755786dd466dc}} 
 \index{QThermalPVDElement$<$ DIM $>$@{QThermalPVDElement$<$ DIM $>$}!output@{output}}
@@ -252,7 +252,7 @@ C-\/style output function\+: Broken default.
 
 
 
-Definition at line 133 of file thermo.\+cc.
+Definition at line 129 of file thermo.\+cc.
 
 \mbox{\Hypertarget{classQThermalPVDElement_a99e482f47a98c1b5ec7ec069211de827}\label{classQThermalPVDElement_a99e482f47a98c1b5ec7ec069211de827}} 
 \index{QThermalPVDElement$<$ DIM $>$@{QThermalPVDElement$<$ DIM $>$}!output@{output}}
@@ -267,7 +267,7 @@ Overload the standard output function with the broken default.
 
 
 
-Definition at line 91 of file thermo.\+cc.
+Definition at line 87 of file thermo.\+cc.
 
 \mbox{\Hypertarget{classQThermalPVDElement_a9d00cc21789124a37dffc9fdf2f011cd}\label{classQThermalPVDElement_a9d00cc21789124a37dffc9fdf2f011cd}} 
 \index{QThermalPVDElement$<$ DIM $>$@{QThermalPVDElement$<$ DIM $>$}!output@{output}}
@@ -283,7 +283,7 @@ Output function\+: ~\newline
 
 
 
-Definition at line 96 of file thermo.\+cc.
+Definition at line 92 of file thermo.\+cc.
 
 \mbox{\Hypertarget{classQThermalPVDElement_a0bb6609214fc7991950848806f9fb742}\label{classQThermalPVDElement_a0bb6609214fc7991950848806f9fb742}} 
 \index{QThermalPVDElement$<$ DIM $>$@{QThermalPVDElement$<$ DIM $>$}!output\_fct@{output\_fct}}
@@ -298,7 +298,7 @@ Output function for a time-\/dependent exact solution\+: Broken default.
 
 
 
-Definition at line 145 of file thermo.\+cc.
+Definition at line 141 of file thermo.\+cc.
 
 \mbox{\Hypertarget{classQThermalPVDElement_accda081c3fb783b2c24715ec0c8e8e19}\label{classQThermalPVDElement_accda081c3fb783b2c24715ec0c8e8e19}} 
 \index{QThermalPVDElement$<$ DIM $>$@{QThermalPVDElement$<$ DIM $>$}!output\_fct@{output\_fct}}
@@ -313,7 +313,7 @@ Output function for an exact solution\+: Broken default.
 
 
 
-Definition at line 137 of file thermo.\+cc.
+Definition at line 133 of file thermo.\+cc.
 
 \mbox{\Hypertarget{classQThermalPVDElement_a55025994fc3d2799fde6f9c1142340af}\label{classQThermalPVDElement_a55025994fc3d2799fde6f9c1142340af}} 
 \index{QThermalPVDElement$<$ DIM $>$@{QThermalPVDElement$<$ DIM $>$}!required\_nvalue@{required\_nvalue}}
@@ -328,7 +328,7 @@ The required number of values stored at the nodes is the sum of the required val
 
 
 
-Definition at line 80 of file thermo.\+cc.
+Definition at line 76 of file thermo.\+cc.
 
 
 
@@ -346,7 +346,7 @@ Pointer to a private data member, the thermal expansion coefficient.
 
 
 
-Definition at line 62 of file thermo.\+cc.
+Definition at line 58 of file thermo.\+cc.
 
 \mbox{\Hypertarget{classQThermalPVDElement_ad0722326e8c25746f63b35a46cac5886}\label{classQThermalPVDElement_ad0722326e8c25746f63b35a46cac5886}} 
 \index{QThermalPVDElement$<$ DIM $>$@{QThermalPVDElement$<$ DIM $>$}!Default\_Physical\_Constant\_Value@{Default\_Physical\_Constant\_Value}}
@@ -361,7 +361,7 @@ The static default value of Alpha.
 
 
 
-Definition at line 65 of file thermo.\+cc.
+Definition at line 61 of file thermo.\+cc.
 
 
 

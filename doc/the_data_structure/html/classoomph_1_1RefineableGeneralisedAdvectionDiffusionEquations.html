@@ -1459,7 +1459,7 @@ class oomph::RefineableGeneralisedAdvectionDiffusionEquations&lt; DIM &gt;</h3>
 
 <p>A version of the GeneralisedAdvection Diffusion equations that can be used with non-uniform mesh refinement. In essence, the class overloads the <a class="el" href="classoomph_1_1RefineableGeneralisedAdvectionDiffusionEquations.html#abd0535533c7133651ac18ad8e025f139" title="Add the element&#39;s contribution to the elemental residual vector and/or Jacobian matrix flag=1: comput...">fill_in_generic_residual_contribution_cons_adv_diff()</a> function so that contributions from hanging nodes (or alternatively in-compatible function values) are taken into account. </p>
 
-<p class="definition">Definition at line <a class="el" href="refineable__gen__advection__diffusion__elements_8h_source.html#l00059">59</a> of file <a class="el" href="refineable__gen__advection__diffusion__elements_8h_source.html">refineable_gen_advection_diffusion_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="refineable__gen__advection__diffusion__elements_8h_source.html#l00055">55</a> of file <a class="el" href="refineable__gen__advection__diffusion__elements_8h_source.html">refineable_gen_advection_diffusion_elements.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aaf60df44fee48a9cc07f7f7cefa4f29c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aaf60df44fee48a9cc07f7f7cefa4f29c">&#9670;&nbsp;</a></span>RefineableGeneralisedAdvectionDiffusionEquations() <span class="overload">[1/2]</span></h2>
@@ -1488,7 +1488,7 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Empty Constructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="refineable__gen__advection__diffusion__elements_8h_source.html#l00067">67</a> of file <a class="el" href="refineable__gen__advection__diffusion__elements_8h_source.html">refineable_gen_advection_diffusion_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="refineable__gen__advection__diffusion__elements_8h_source.html#l00063">63</a> of file <a class="el" href="refineable__gen__advection__diffusion__elements_8h_source.html">refineable_gen_advection_diffusion_elements.h</a>.</p>
 
 </div>
 </div>
@@ -1520,9 +1520,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Broken copy constructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="refineable__gen__advection__diffusion__elements_8h_source.html#l00075">75</a> of file <a class="el" href="refineable__gen__advection__diffusion__elements_8h_source.html">refineable_gen_advection_diffusion_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="refineable__gen__advection__diffusion__elements_8h_source.html#l00071">71</a> of file <a class="el" href="refineable__gen__advection__diffusion__elements_8h_source.html">refineable_gen_advection_diffusion_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="oomph__utilities_8cc_source.html#l00218">oomph::BrokenCopy::broken_copy()</a>.</p>
+<p class="reference">References <a class="el" href="oomph__utilities_8cc_source.html#l00214">oomph::BrokenCopy::broken_copy()</a>.</p>
 
 </div>
 </div>
@@ -1580,9 +1580,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1GeneralisedAdvectionDiffusionEquations.html#ae05de6e681f20f04f5ad9821f3a572c0">oomph::GeneralisedAdvectionDiffusionEquations&lt; DIM &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="refineable__gen__advection__diffusion__elements_8cc_source.html#l00044">44</a> of file <a class="el" href="refineable__gen__advection__diffusion__elements_8cc_source.html">refineable_gen_advection_diffusion_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="refineable__gen__advection__diffusion__elements_8cc_source.html#l00040">40</a> of file <a class="el" href="refineable__gen__advection__diffusion__elements_8cc_source.html">refineable_gen_advection_diffusion_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="gen__axisym__advection__diffusion__elements_8h_source.html#l00585">oomph::ALE_is_disabled</a>, <a class="el" href="octree_8h_source.html#l00059">oomph::OcTreeNames::D</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="the__data__structure_8txt.html#a5448c72da3359c7796cf0c5f800732a1">interpolated_u()</a>, <a class="el" href="nodes_8h_source.html#l00735">oomph::HangInfo::master_node_pt()</a>, <a class="el" href="nodes_8h_source.html#l00752">oomph::HangInfo::master_weight()</a>, <a class="el" href="nodes_8h_source.html#l00732">oomph::HangInfo::nmaster()</a>, <a class="el" href="gen__axisym__advection__diffusion__elements_8h_source.html#l00267">oomph::pe()</a>, <a class="el" href="gen__axisym__advection__diffusion__elements_8h_source.html#l00273">oomph::pe_st()</a>, <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>, <a class="el" href="cfortran_8h_source.html#l00572">s</a>, and <a class="el" href="quadtree_8h_source.html#l00060">oomph::QuadTreeNames::W</a>.</p>
+<p class="reference">References <a class="el" href="gen__axisym__advection__diffusion__elements_8h_source.html#l00581">oomph::ALE_is_disabled</a>, <a class="el" href="octree_8h_source.html#l00055">oomph::OcTreeNames::D</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="the__data__structure_8txt.html#a5448c72da3359c7796cf0c5f800732a1">interpolated_u()</a>, <a class="el" href="nodes_8h_source.html#l00731">oomph::HangInfo::master_node_pt()</a>, <a class="el" href="nodes_8h_source.html#l00748">oomph::HangInfo::master_weight()</a>, <a class="el" href="nodes_8h_source.html#l00728">oomph::HangInfo::nmaster()</a>, <a class="el" href="gen__axisym__advection__diffusion__elements_8h_source.html#l00263">oomph::pe()</a>, <a class="el" href="gen__axisym__advection__diffusion__elements_8h_source.html#l00269">oomph::pe_st()</a>, <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>, <a class="el" href="cfortran_8h_source.html#l00568">s</a>, and <a class="el" href="quadtree_8h_source.html#l00056">oomph::QuadTreeNames::W</a>.</p>
 
 </div>
 </div>
@@ -1615,9 +1615,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1RefineableElement.html#a26628ce36dfad028686adeb4694a9ef3">oomph::RefineableElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="refineable__gen__advection__diffusion__elements_8h_source.html#l00163">163</a> of file <a class="el" href="refineable__gen__advection__diffusion__elements_8h_source.html">refineable_gen_advection_diffusion_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="refineable__gen__advection__diffusion__elements_8h_source.html#l00159">159</a> of file <a class="el" href="refineable__gen__advection__diffusion__elements_8h_source.html">refineable_gen_advection_diffusion_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="gen__advection__diffusion__elements_8h_source.html#l00573">oomph::GeneralisedAdvectionDiffusionEquations&lt; DIM &gt;::ALE_is_disabled</a>, <a class="el" href="gen__advection__diffusion__elements_8h_source.html#l00242">oomph::GeneralisedAdvectionDiffusionEquations&lt; DIM &gt;::conserved_wind_fct_pt()</a>, <a class="el" href="gen__advection__diffusion__elements_8h_source.html#l00565">oomph::GeneralisedAdvectionDiffusionEquations&lt; DIM &gt;::Conserved_wind_fct_pt</a>, <a class="el" href="gen__advection__diffusion__elements_8h_source.html#l00253">oomph::GeneralisedAdvectionDiffusionEquations&lt; DIM &gt;::diff_fct_pt()</a>, <a class="el" href="gen__advection__diffusion__elements_8h_source.html#l00568">oomph::GeneralisedAdvectionDiffusionEquations&lt; DIM &gt;::Diff_fct_pt</a>, <a class="el" href="refineable__elements_8h_source.html#l00472">oomph::RefineableElement::father_element_pt()</a>, <a class="el" href="gen__advection__diffusion__elements_8h_source.html#l00264">oomph::GeneralisedAdvectionDiffusionEquations&lt; DIM &gt;::pe_pt()</a>, <a class="el" href="gen__advection__diffusion__elements_8h_source.html#l00553">oomph::GeneralisedAdvectionDiffusionEquations&lt; DIM &gt;::Pe_pt</a>, <a class="el" href="gen__advection__diffusion__elements_8h_source.html#l00270">oomph::GeneralisedAdvectionDiffusionEquations&lt; DIM &gt;::pe_st_pt()</a>, <a class="el" href="gen__advection__diffusion__elements_8h_source.html#l00556">oomph::GeneralisedAdvectionDiffusionEquations&lt; DIM &gt;::PeSt_pt</a>, <a class="el" href="gen__advection__diffusion__elements_8h_source.html#l00223">oomph::GeneralisedAdvectionDiffusionEquations&lt; DIM &gt;::source_fct_pt()</a>, <a class="el" href="gen__advection__diffusion__elements_8h_source.html#l00559">oomph::GeneralisedAdvectionDiffusionEquations&lt; DIM &gt;::Source_fct_pt</a>, <a class="el" href="gen__advection__diffusion__elements_8h_source.html#l00233">oomph::GeneralisedAdvectionDiffusionEquations&lt; DIM &gt;::wind_fct_pt()</a>, and <a class="el" href="gen__advection__diffusion__elements_8h_source.html#l00562">oomph::GeneralisedAdvectionDiffusionEquations&lt; DIM &gt;::Wind_fct_pt</a>.</p>
+<p class="reference">References <a class="el" href="gen__advection__diffusion__elements_8h_source.html#l00569">oomph::GeneralisedAdvectionDiffusionEquations&lt; DIM &gt;::ALE_is_disabled</a>, <a class="el" href="gen__advection__diffusion__elements_8h_source.html#l00238">oomph::GeneralisedAdvectionDiffusionEquations&lt; DIM &gt;::conserved_wind_fct_pt()</a>, <a class="el" href="gen__advection__diffusion__elements_8h_source.html#l00561">oomph::GeneralisedAdvectionDiffusionEquations&lt; DIM &gt;::Conserved_wind_fct_pt</a>, <a class="el" href="gen__advection__diffusion__elements_8h_source.html#l00249">oomph::GeneralisedAdvectionDiffusionEquations&lt; DIM &gt;::diff_fct_pt()</a>, <a class="el" href="gen__advection__diffusion__elements_8h_source.html#l00564">oomph::GeneralisedAdvectionDiffusionEquations&lt; DIM &gt;::Diff_fct_pt</a>, <a class="el" href="refineable__elements_8h_source.html#l00468">oomph::RefineableElement::father_element_pt()</a>, <a class="el" href="gen__advection__diffusion__elements_8h_source.html#l00260">oomph::GeneralisedAdvectionDiffusionEquations&lt; DIM &gt;::pe_pt()</a>, <a class="el" href="gen__advection__diffusion__elements_8h_source.html#l00549">oomph::GeneralisedAdvectionDiffusionEquations&lt; DIM &gt;::Pe_pt</a>, <a class="el" href="gen__advection__diffusion__elements_8h_source.html#l00266">oomph::GeneralisedAdvectionDiffusionEquations&lt; DIM &gt;::pe_st_pt()</a>, <a class="el" href="gen__advection__diffusion__elements_8h_source.html#l00552">oomph::GeneralisedAdvectionDiffusionEquations&lt; DIM &gt;::PeSt_pt</a>, <a class="el" href="gen__advection__diffusion__elements_8h_source.html#l00219">oomph::GeneralisedAdvectionDiffusionEquations&lt; DIM &gt;::source_fct_pt()</a>, <a class="el" href="gen__advection__diffusion__elements_8h_source.html#l00555">oomph::GeneralisedAdvectionDiffusionEquations&lt; DIM &gt;::Source_fct_pt</a>, <a class="el" href="gen__advection__diffusion__elements_8h_source.html#l00229">oomph::GeneralisedAdvectionDiffusionEquations&lt; DIM &gt;::wind_fct_pt()</a>, and <a class="el" href="gen__advection__diffusion__elements_8h_source.html#l00558">oomph::GeneralisedAdvectionDiffusionEquations&lt; DIM &gt;::Wind_fct_pt</a>.</p>
 
 </div>
 </div>
@@ -1667,9 +1667,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Implements <a class="el" href="classoomph_1_1RefineableElement.html#ada6f0efe831ffefb1d2829ce01d45bfc">oomph::RefineableElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="refineable__gen__advection__diffusion__elements_8h_source.html#l00133">133</a> of file <a class="el" href="refineable__gen__advection__diffusion__elements_8h_source.html">refineable_gen_advection_diffusion_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="refineable__gen__advection__diffusion__elements_8h_source.html#l00129">129</a> of file <a class="el" href="refineable__gen__advection__diffusion__elements_8h_source.html">refineable_gen_advection_diffusion_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l02163">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l02487">oomph::FiniteElement::nodal_value()</a>, <a class="el" href="cfortran_8h_source.html#l00572">s</a>, <a class="el" href="classoomph_1_1FiniteElement.html#a58a25b6859ddd43b7bfe64a19fee5023">oomph::FiniteElement::shape()</a>, <a class="el" href="gen__advection__diffusion__elements_8h_source.html#l00111">oomph::GeneralisedAdvectionDiffusionEquations&lt; DIM &gt;::u_index_cons_adv_diff()</a>, and <a class="el" href="the__data__structure_8txt_source.html#l00580">values</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l02159">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l02483">oomph::FiniteElement::nodal_value()</a>, <a class="el" href="cfortran_8h_source.html#l00568">s</a>, <a class="el" href="classoomph_1_1FiniteElement.html#a58a25b6859ddd43b7bfe64a19fee5023">oomph::FiniteElement::shape()</a>, <a class="el" href="gen__advection__diffusion__elements_8h_source.html#l00107">oomph::GeneralisedAdvectionDiffusionEquations&lt; DIM &gt;::u_index_cons_adv_diff()</a>, and <a class="el" href="the__data__structure_8txt_source.html#l00580">values</a>.</p>
 
 </div>
 </div>
@@ -1713,9 +1713,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1RefineableElement.html#ad9a4f92880668a2373326d8306365c43">oomph::RefineableElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="refineable__gen__advection__diffusion__elements_8h_source.html#l00102">102</a> of file <a class="el" href="refineable__gen__advection__diffusion__elements_8h_source.html">refineable_gen_advection_diffusion_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="refineable__gen__advection__diffusion__elements_8h_source.html#l00098">98</a> of file <a class="el" href="refineable__gen__advection__diffusion__elements_8h_source.html">refineable_gen_advection_diffusion_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l02163">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l02487">oomph::FiniteElement::nodal_value()</a>, <a class="el" href="cfortran_8h_source.html#l00572">s</a>, <a class="el" href="classoomph_1_1FiniteElement.html#a58a25b6859ddd43b7bfe64a19fee5023">oomph::FiniteElement::shape()</a>, <a class="el" href="gen__advection__diffusion__elements_8h_source.html#l00111">oomph::GeneralisedAdvectionDiffusionEquations&lt; DIM &gt;::u_index_cons_adv_diff()</a>, and <a class="el" href="the__data__structure_8txt_source.html#l00580">values</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l02159">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l02483">oomph::FiniteElement::nodal_value()</a>, <a class="el" href="cfortran_8h_source.html#l00568">s</a>, <a class="el" href="classoomph_1_1FiniteElement.html#a58a25b6859ddd43b7bfe64a19fee5023">oomph::FiniteElement::shape()</a>, <a class="el" href="gen__advection__diffusion__elements_8h_source.html#l00107">oomph::GeneralisedAdvectionDiffusionEquations&lt; DIM &gt;::u_index_cons_adv_diff()</a>, and <a class="el" href="the__data__structure_8txt_source.html#l00580">values</a>.</p>
 
 </div>
 </div>
@@ -1760,9 +1760,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Implements <a class="el" href="classoomph_1_1ElementWithZ2ErrorEstimator.html#a5688ff5f546d81771cabad82ca5a7556">oomph::ElementWithZ2ErrorEstimator</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="refineable__gen__advection__diffusion__elements_8h_source.html#l00094">94</a> of file <a class="el" href="refineable__gen__advection__diffusion__elements_8h_source.html">refineable_gen_advection_diffusion_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="refineable__gen__advection__diffusion__elements_8h_source.html#l00090">90</a> of file <a class="el" href="refineable__gen__advection__diffusion__elements_8h_source.html">refineable_gen_advection_diffusion_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="gen__advection__diffusion__elements_8h_source.html#l00368">oomph::GeneralisedAdvectionDiffusionEquations&lt; DIM &gt;::get_flux()</a>.</p>
+<p class="reference">References <a class="el" href="gen__advection__diffusion__elements_8h_source.html#l00364">oomph::GeneralisedAdvectionDiffusionEquations&lt; DIM &gt;::get_flux()</a>.</p>
 
 </div>
 </div>
@@ -1795,7 +1795,7 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Implements <a class="el" href="classoomph_1_1ElementWithZ2ErrorEstimator.html#ae82c5728902e13da31be19c390fc28e3">oomph::ElementWithZ2ErrorEstimator</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="refineable__gen__advection__diffusion__elements_8h_source.html#l00090">90</a> of file <a class="el" href="refineable__gen__advection__diffusion__elements_8h_source.html">refineable_gen_advection_diffusion_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="refineable__gen__advection__diffusion__elements_8h_source.html#l00086">86</a> of file <a class="el" href="refineable__gen__advection__diffusion__elements_8h_source.html">refineable_gen_advection_diffusion_elements.h</a>.</p>
 
 </div>
 </div>
@@ -1827,9 +1827,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Broken assignment operator. </p>
 
-<p class="definition">Definition at line <a class="el" href="refineable__gen__advection__diffusion__elements_8h_source.html#l00083">83</a> of file <a class="el" href="refineable__gen__advection__diffusion__elements_8h_source.html">refineable_gen_advection_diffusion_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="refineable__gen__advection__diffusion__elements_8h_source.html#l00079">79</a> of file <a class="el" href="refineable__gen__advection__diffusion__elements_8h_source.html">refineable_gen_advection_diffusion_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="oomph__utilities_8cc_source.html#l00201">oomph::BrokenCopy::broken_assign()</a>.</p>
+<p class="reference">References <a class="el" href="oomph__utilities_8cc_source.html#l00197">oomph::BrokenCopy::broken_assign()</a>.</p>
 
 </div>
 </div>
@@ -1865,7 +1865,7 @@ template&lt;unsigned DIM&gt; </div>
     <footer>
       <div class="container">
         <div class="text-muted" style="float:right;">Generated by <a href="http://www.doxygen.org/index.html">
-          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Tue Jul 6 2021 22:58:53
+          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Fri Jul 9 2021 20:53:50
         </div>
       </div>
     </footer>

@@ -1322,7 +1322,7 @@ class oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;</h3>
 </p>
 <p> This contains the generic maths. <a class="el" href="classoomph_1_1Shape.html">Shape</a> functions, geometric mapping etc. must get implemented in derived class. Note that this class assumes an isoparametric formulation, i.e. that the scalar unknown is interpolated using the same shape funcitons as the position. </p>
 
-<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00082">82</a> of file <a class="el" href="space__time__unsteady__heat__elements_8h_source.html">space_time_unsteady_heat_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00078">78</a> of file <a class="el" href="space__time__unsteady__heat__elements_8h_source.html">space_time_unsteady_heat_elements.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a35294bb50e768e05875d0603d7ab1d39"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a35294bb50e768e05875d0603d7ab1d39">&#9670;&nbsp;</a></span>SpaceTimeUnsteadyHeatSourceFctPt <span class="overload">[1/2]</span></h2>
@@ -1340,7 +1340,7 @@ template&lt;unsigned SPATIAL_DIM&gt; </div>
 
 <p>Function pointer to source function fct(t,x,f(x,t)) &ndash; x is a Vector! DRAIG: Why is this here? There is already one in the base class! </p>
 
-<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00090">90</a> of file <a class="el" href="space__time__unsteady__heat__elements_8h_source.html">space_time_unsteady_heat_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00086">86</a> of file <a class="el" href="space__time__unsteady__heat__elements_8h_source.html">space_time_unsteady_heat_elements.h</a>.</p>
 
 </div>
 </div>
@@ -1360,7 +1360,7 @@ template&lt;unsigned SPATIAL_DIM&gt; </div>
 
 <p>Function pointer to source function fct(t,x,f(x,t)) &ndash; x is a Vector! DRAIG: Why is this here? There is already one in the base class! </p>
 
-<p class="definition">Definition at line <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00090">90</a> of file <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html">discontinuous_galerkin_space_time_unsteady_heat_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00086">86</a> of file <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html">discontinuous_galerkin_space_time_unsteady_heat_elements.h</a>.</p>
 
 </div>
 </div>
@@ -1392,9 +1392,9 @@ template&lt;unsigned SPATIAL_DIM&gt; </div>
 
 <p>Constructor: Initialises the Source_fct_pt to null and sets flag to use ALE formulation of the equations. Also, set Alpha (thermal inertia) and Beta (thermal conductivity) parameters to defaults (both one for natural scaling). </p>
 
-<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00099">99</a> of file <a class="el" href="space__time__unsteady__heat__elements_8h_source.html">space_time_unsteady_heat_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00095">95</a> of file <a class="el" href="space__time__unsteady__heat__elements_8h_source.html">space_time_unsteady_heat_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00685">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::Alpha_pt</a>, <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00688">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::Beta_pt</a>, <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00694">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::Default_alpha_parameter</a>, and <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00698">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::Default_beta_parameter</a>.</p>
+<p class="reference">References <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00681">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::Alpha_pt</a>, <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00684">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::Beta_pt</a>, <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00690">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::Default_alpha_parameter</a>, and <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00694">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::Default_beta_parameter</a>.</p>
 
 </div>
 </div>
@@ -1426,9 +1426,9 @@ template&lt;unsigned SPATIAL_DIM&gt; </div>
 
 <p>Broken copy constructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00110">110</a> of file <a class="el" href="space__time__unsteady__heat__elements_8h_source.html">space_time_unsteady_heat_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00106">106</a> of file <a class="el" href="space__time__unsteady__heat__elements_8h_source.html">space_time_unsteady_heat_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="oomph__utilities_8cc_source.html#l00218">oomph::BrokenCopy::broken_copy()</a>.</p>
+<p class="reference">References <a class="el" href="oomph__utilities_8cc_source.html#l00214">oomph::BrokenCopy::broken_copy()</a>.</p>
 
 </div>
 </div>
@@ -1459,9 +1459,9 @@ template&lt;unsigned SPATIAL_DIM&gt; </div>
 
 <p>Constructor: Initialises the Source_fct_pt to null and sets flag to use ALE formulation of the equations. Also, set Alpha (thermal inertia) and Beta (thermal conductivity) parameters to defaults (both one for natural scaling). </p>
 
-<p class="definition">Definition at line <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00099">99</a> of file <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html">discontinuous_galerkin_space_time_unsteady_heat_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00095">95</a> of file <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html">discontinuous_galerkin_space_time_unsteady_heat_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00685">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::Alpha_pt</a>, <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00688">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::Beta_pt</a>, <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00694">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::Default_alpha_parameter</a>, and <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00698">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::Default_beta_parameter</a>.</p>
+<p class="reference">References <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00681">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::Alpha_pt</a>, <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00684">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::Beta_pt</a>, <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00690">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::Default_alpha_parameter</a>, and <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00694">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::Default_beta_parameter</a>.</p>
 
 </div>
 </div>
@@ -1493,9 +1493,9 @@ template&lt;unsigned SPATIAL_DIM&gt; </div>
 
 <p>Broken copy constructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00112">112</a> of file <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html">discontinuous_galerkin_space_time_unsteady_heat_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00108">108</a> of file <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html">discontinuous_galerkin_space_time_unsteady_heat_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="oomph__utilities_8cc_source.html#l00218">oomph::BrokenCopy::broken_copy()</a>.</p>
+<p class="reference">References <a class="el" href="oomph__utilities_8cc_source.html#l00214">oomph::BrokenCopy::broken_copy()</a>.</p>
 
 </div>
 </div>
@@ -1527,9 +1527,9 @@ template&lt;unsigned SPATIAL_DIM&gt; </div>
 
 <p>Alpha parameter (thermal inertia) </p>
 
-<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00432">432</a> of file <a class="el" href="space__time__unsteady__heat__elements_8h_source.html">space_time_unsteady_heat_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00428">428</a> of file <a class="el" href="space__time__unsteady__heat__elements_8h_source.html">space_time_unsteady_heat_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00685">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::Alpha_pt</a>.</p>
+<p class="reference">References <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00681">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::Alpha_pt</a>.</p>
 
 </div>
 </div>
@@ -1560,9 +1560,9 @@ template&lt;unsigned SPATIAL_DIM&gt; </div>
 
 <p>Alpha parameter (thermal inertia) </p>
 
-<p class="definition">Definition at line <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00434">434</a> of file <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html">discontinuous_galerkin_space_time_unsteady_heat_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00430">430</a> of file <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html">discontinuous_galerkin_space_time_unsteady_heat_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00685">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::Alpha_pt</a>.</p>
+<p class="reference">References <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00681">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::Alpha_pt</a>.</p>
 
 </div>
 </div>
@@ -1593,9 +1593,9 @@ template&lt;unsigned SPATIAL_DIM&gt; </div>
 
 <p>Pointer to Alpha parameter (thermal inertia) </p>
 
-<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00440">440</a> of file <a class="el" href="space__time__unsteady__heat__elements_8h_source.html">space_time_unsteady_heat_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00436">436</a> of file <a class="el" href="space__time__unsteady__heat__elements_8h_source.html">space_time_unsteady_heat_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00685">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::Alpha_pt</a>.</p>
+<p class="reference">References <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00681">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::Alpha_pt</a>.</p>
 
 </div>
 </div>
@@ -1626,9 +1626,9 @@ template&lt;unsigned SPATIAL_DIM&gt; </div>
 
 <p>Pointer to Alpha parameter (thermal inertia) </p>
 
-<p class="definition">Definition at line <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00442">442</a> of file <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html">discontinuous_galerkin_space_time_unsteady_heat_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00438">438</a> of file <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html">discontinuous_galerkin_space_time_unsteady_heat_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00685">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::Alpha_pt</a>.</p>
+<p class="reference">References <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00681">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::Alpha_pt</a>.</p>
 
 </div>
 </div>
@@ -1659,9 +1659,9 @@ template&lt;unsigned SPATIAL_DIM&gt; </div>
 
 <p>Beta parameter (thermal conductivity) </p>
 
-<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00448">448</a> of file <a class="el" href="space__time__unsteady__heat__elements_8h_source.html">space_time_unsteady_heat_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00444">444</a> of file <a class="el" href="space__time__unsteady__heat__elements_8h_source.html">space_time_unsteady_heat_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00688">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::Beta_pt</a>.</p>
+<p class="reference">References <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00684">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::Beta_pt</a>.</p>
 
 </div>
 </div>
@@ -1692,9 +1692,9 @@ template&lt;unsigned SPATIAL_DIM&gt; </div>
 
 <p>Beta parameter (thermal conductivity) </p>
 
-<p class="definition">Definition at line <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00450">450</a> of file <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html">discontinuous_galerkin_space_time_unsteady_heat_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00446">446</a> of file <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html">discontinuous_galerkin_space_time_unsteady_heat_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00688">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::Beta_pt</a>.</p>
+<p class="reference">References <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00684">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::Beta_pt</a>.</p>
 
 </div>
 </div>
@@ -1725,9 +1725,9 @@ template&lt;unsigned SPATIAL_DIM&gt; </div>
 
 <p>Pointer to Beta parameter (thermal conductivity) </p>
 
-<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00456">456</a> of file <a class="el" href="space__time__unsteady__heat__elements_8h_source.html">space_time_unsteady_heat_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00452">452</a> of file <a class="el" href="space__time__unsteady__heat__elements_8h_source.html">space_time_unsteady_heat_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00688">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::Beta_pt</a>.</p>
+<p class="reference">References <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00684">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::Beta_pt</a>.</p>
 
 </div>
 </div>
@@ -1758,9 +1758,9 @@ template&lt;unsigned SPATIAL_DIM&gt; </div>
 
 <p>Pointer to Beta parameter (thermal conductivity) </p>
 
-<p class="definition">Definition at line <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00458">458</a> of file <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html">discontinuous_galerkin_space_time_unsteady_heat_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00454">454</a> of file <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html">discontinuous_galerkin_space_time_unsteady_heat_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00688">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::Beta_pt</a>.</p>
+<p class="reference">References <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00684">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::Beta_pt</a>.</p>
 
 </div>
 </div>
@@ -1818,9 +1818,9 @@ template&lt;unsigned SPATIAL_DIM&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1FiniteElement.html#a73c79a1f1e5b1d334757812a6bbd58ff">oomph::FiniteElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8cc_source.html#l00528">528</a> of file <a class="el" href="space__time__unsteady__heat__elements_8cc_source.html">space_time_unsteady_heat_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8cc_source.html#l00524">524</a> of file <a class="el" href="space__time__unsteady__heat__elements_8cc_source.html">space_time_unsteady_heat_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="cfortran_8h_source.html#l00572">s</a>, and <a class="el" href="quadtree_8h_source.html#l00060">oomph::QuadTreeNames::W</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="cfortran_8h_source.html#l00568">s</a>, and <a class="el" href="quadtree_8h_source.html#l00056">oomph::QuadTreeNames::W</a>.</p>
 
 </div>
 </div>
@@ -1938,9 +1938,9 @@ template&lt;unsigned SPATIAL_DIM&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1FiniteElement.html#a7f67853506dc73fa6b7505108de22d1f">oomph::FiniteElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8cc_source.html#l00618">618</a> of file <a class="el" href="space__time__unsteady__heat__elements_8cc_source.html">space_time_unsteady_heat_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8cc_source.html#l00614">614</a> of file <a class="el" href="space__time__unsteady__heat__elements_8cc_source.html">space_time_unsteady_heat_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="cfortran_8h_source.html#l00572">s</a>, and <a class="el" href="quadtree_8h_source.html#l00060">oomph::QuadTreeNames::W</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="cfortran_8h_source.html#l00568">s</a>, and <a class="el" href="quadtree_8h_source.html#l00056">oomph::QuadTreeNames::W</a>.</p>
 
 </div>
 </div>
@@ -2034,9 +2034,9 @@ template&lt;unsigned SPATIAL_DIM&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1GeneralisedElement.html#af2025a472df6752a946739da58e7fb37">oomph::GeneralisedElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8cc_source.html#l00240">240</a> of file <a class="el" href="space__time__unsteady__heat__elements_8cc_source.html">space_time_unsteady_heat_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8cc_source.html#l00236">236</a> of file <a class="el" href="space__time__unsteady__heat__elements_8cc_source.html">space_time_unsteady_heat_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="cfortran_8h_source.html#l00572">s</a>, <a class="el" href="the__data__structure_8txt.html#aaa5287b1cf3ca06b3f413cb95bd1ec60">u()</a>, and <a class="el" href="quadtree_8h_source.html#l00060">oomph::QuadTreeNames::W</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="cfortran_8h_source.html#l00568">s</a>, <a class="el" href="the__data__structure_8txt.html#aaa5287b1cf3ca06b3f413cb95bd1ec60">u()</a>, and <a class="el" href="quadtree_8h_source.html#l00056">oomph::QuadTreeNames::W</a>.</p>
 
 </div>
 </div>
@@ -2101,9 +2101,9 @@ template&lt;unsigned SPATIAL_DIM&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1FiniteElement.html#a625ea6d3f9baccfbdd1323315fb3ec71">oomph::FiniteElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00118">118</a> of file <a class="el" href="space__time__unsteady__heat__elements_8h_source.html">space_time_unsteady_heat_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00114">114</a> of file <a class="el" href="space__time__unsteady__heat__elements_8h_source.html">space_time_unsteady_heat_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00682">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::ALE_is_disabled</a>.</p>
+<p class="reference">References <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00678">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::ALE_is_disabled</a>.</p>
 
 </div>
 </div>
@@ -2136,9 +2136,9 @@ template&lt;unsigned SPATIAL_DIM&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1FiniteElement.html#a625ea6d3f9baccfbdd1323315fb3ec71">oomph::FiniteElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00120">120</a> of file <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html">discontinuous_galerkin_space_time_unsteady_heat_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00116">116</a> of file <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html">discontinuous_galerkin_space_time_unsteady_heat_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00682">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::ALE_is_disabled</a>.</p>
+<p class="reference">References <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00678">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::ALE_is_disabled</a>.</p>
 
 </div>
 </div>
@@ -2410,9 +2410,9 @@ template&lt;unsigned SPATIAL_DIM&gt; </div>
 
 <p>Calculate du/dt at the n-th local node. Uses suitably interpolated value for hanging nodes. </p>
 
-<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00599">599</a> of file <a class="el" href="space__time__unsteady__heat__elements_8h_source.html">space_time_unsteady_heat_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00595">595</a> of file <a class="el" href="space__time__unsteady__heat__elements_8h_source.html">space_time_unsteady_heat_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00613">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::interpolated_du_dt_ust_heat()</a>, <a class="el" href="elements_8h_source.html#l01820">oomph::FiniteElement::local_coordinate_of_node()</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, and <a class="el" href="cfortran_8h_source.html#l00572">s</a>.</p>
+<p class="reference">References <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00609">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::interpolated_du_dt_ust_heat()</a>, <a class="el" href="elements_8h_source.html#l01816">oomph::FiniteElement::local_coordinate_of_node()</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, and <a class="el" href="cfortran_8h_source.html#l00568">s</a>.</p>
 
 </div>
 </div>
@@ -2444,9 +2444,9 @@ template&lt;unsigned SPATIAL_DIM&gt; </div>
 
 <p>Calculate du/dt at the n-th local node. Uses suitably interpolated value for hanging nodes. </p>
 
-<p class="definition">Definition at line <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00601">601</a> of file <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html">discontinuous_galerkin_space_time_unsteady_heat_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00597">597</a> of file <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html">discontinuous_galerkin_space_time_unsteady_heat_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00613">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::interpolated_du_dt_ust_heat()</a>, <a class="el" href="elements_8h_source.html#l01820">oomph::FiniteElement::local_coordinate_of_node()</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, and <a class="el" href="cfortran_8h_source.html#l00572">s</a>.</p>
+<p class="reference">References <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00609">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::interpolated_du_dt_ust_heat()</a>, <a class="el" href="elements_8h_source.html#l01816">oomph::FiniteElement::local_coordinate_of_node()</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, and <a class="el" href="cfortran_8h_source.html#l00568">s</a>.</p>
 
 </div>
 </div>
@@ -2479,9 +2479,9 @@ template&lt;unsigned SPATIAL_DIM&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1FiniteElement.html#a92ef8967fa4e2d6c33c51ea3efa3aa82">oomph::FiniteElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00129">129</a> of file <a class="el" href="space__time__unsteady__heat__elements_8h_source.html">space_time_unsteady_heat_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00125">125</a> of file <a class="el" href="space__time__unsteady__heat__elements_8h_source.html">space_time_unsteady_heat_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00682">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::ALE_is_disabled</a>.</p>
+<p class="reference">References <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00678">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::ALE_is_disabled</a>.</p>
 
 </div>
 </div>
@@ -2514,9 +2514,9 @@ template&lt;unsigned SPATIAL_DIM&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1FiniteElement.html#a92ef8967fa4e2d6c33c51ea3efa3aa82">oomph::FiniteElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00131">131</a> of file <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html">discontinuous_galerkin_space_time_unsteady_heat_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00127">127</a> of file <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html">discontinuous_galerkin_space_time_unsteady_heat_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00682">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::ALE_is_disabled</a>.</p>
+<p class="reference">References <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00678">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::ALE_is_disabled</a>.</p>
 
 </div>
 </div>
@@ -2560,9 +2560,9 @@ template&lt;unsigned SPATIAL_DIM&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1FiniteElement.html#a0ae7af222af38a0d53bf283dc85bdfea">oomph::FiniteElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00512">512</a> of file <a class="el" href="space__time__unsteady__heat__elements_8h_source.html">space_time_unsteady_heat_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00508">508</a> of file <a class="el" href="space__time__unsteady__heat__elements_8h_source.html">space_time_unsteady_heat_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="space__time__unsteady__heat__elements_8cc_source.html#l00066">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::fill_in_generic_residual_contribution_ust_heat()</a>, and <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>.</p>
+<p class="reference">References <a class="el" href="space__time__unsteady__heat__elements_8cc_source.html#l00062">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::fill_in_generic_residual_contribution_ust_heat()</a>, and <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>.</p>
 
 </div>
 </div>
@@ -2606,9 +2606,9 @@ template&lt;unsigned SPATIAL_DIM&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1FiniteElement.html#a0ae7af222af38a0d53bf283dc85bdfea">oomph::FiniteElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00514">514</a> of file <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html">discontinuous_galerkin_space_time_unsteady_heat_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00510">510</a> of file <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html">discontinuous_galerkin_space_time_unsteady_heat_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="space__time__unsteady__heat__elements_8cc_source.html#l00066">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::fill_in_generic_residual_contribution_ust_heat()</a>, and <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>.</p>
+<p class="reference">References <a class="el" href="space__time__unsteady__heat__elements_8cc_source.html#l00062">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::fill_in_generic_residual_contribution_ust_heat()</a>, and <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>.</p>
 
 </div>
 </div>
@@ -2642,9 +2642,9 @@ template&lt;unsigned SPATIAL_DIM&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1GeneralisedElement.html#a310c97f515e8504a48179c0e72c550d7">oomph::GeneralisedElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00502">502</a> of file <a class="el" href="space__time__unsteady__heat__elements_8h_source.html">space_time_unsteady_heat_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00498">498</a> of file <a class="el" href="space__time__unsteady__heat__elements_8h_source.html">space_time_unsteady_heat_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l00228">oomph::GeneralisedElement::Dummy_matrix</a>, <a class="el" href="space__time__unsteady__heat__elements_8cc_source.html#l00066">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::fill_in_generic_residual_contribution_ust_heat()</a>, and <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l00224">oomph::GeneralisedElement::Dummy_matrix</a>, <a class="el" href="space__time__unsteady__heat__elements_8cc_source.html#l00062">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::fill_in_generic_residual_contribution_ust_heat()</a>, and <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>.</p>
 
 </div>
 </div>
@@ -2678,9 +2678,9 @@ template&lt;unsigned SPATIAL_DIM&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1GeneralisedElement.html#a310c97f515e8504a48179c0e72c550d7">oomph::GeneralisedElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00504">504</a> of file <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html">discontinuous_galerkin_space_time_unsteady_heat_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00500">500</a> of file <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html">discontinuous_galerkin_space_time_unsteady_heat_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l00228">oomph::GeneralisedElement::Dummy_matrix</a>, <a class="el" href="space__time__unsteady__heat__elements_8cc_source.html#l00066">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::fill_in_generic_residual_contribution_ust_heat()</a>, and <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l00224">oomph::GeneralisedElement::Dummy_matrix</a>, <a class="el" href="space__time__unsteady__heat__elements_8cc_source.html#l00062">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::fill_in_generic_residual_contribution_ust_heat()</a>, and <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>.</p>
 
 </div>
 </div>
@@ -2733,11 +2733,11 @@ template&lt;unsigned SPATIAL_DIM&gt; </div>
 
 <p>Reimplemented in <a class="el" href="classoomph_1_1RefineableSpaceTimeUnsteadyHeatEquations.html#a3cdab62da2f5575258a57b5360798c56">oomph::RefineableSpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;</a>, and <a class="el" href="classoomph_1_1RefineableSpaceTimeUnsteadyHeatEquations.html#a93500040be9ffc22dc8347bf27a4f48c">oomph::RefineableSpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8cc_source.html#l00066">66</a> of file <a class="el" href="space__time__unsteady__heat__elements_8cc_source.html">space_time_unsteady_heat_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8cc_source.html#l00062">62</a> of file <a class="el" href="space__time__unsteady__heat__elements_8cc_source.html">space_time_unsteady_heat_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="the__data__structure_8txt.html#a5448c72da3359c7796cf0c5f800732a1">interpolated_u()</a>, <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>, <a class="el" href="cfortran_8h_source.html#l00572">s</a>, and <a class="el" href="quadtree_8h_source.html#l00060">oomph::QuadTreeNames::W</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="the__data__structure_8txt.html#a5448c72da3359c7796cf0c5f800732a1">interpolated_u()</a>, <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>, <a class="el" href="cfortran_8h_source.html#l00568">s</a>, and <a class="el" href="quadtree_8h_source.html#l00056">oomph::QuadTreeNames::W</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00514">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::fill_in_contribution_to_jacobian()</a>, and <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00504">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::fill_in_contribution_to_residuals()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00510">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::fill_in_contribution_to_jacobian()</a>, and <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00500">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::fill_in_contribution_to_residuals()</a>.</p>
 
 </div>
 </div>
@@ -2827,9 +2827,9 @@ template&lt;unsigned SPATIAL_DIM&gt; </div>
 
 <p>Get flux: flux[i]=du/dx_i. </p>
 
-<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00464">464</a> of file <a class="el" href="space__time__unsteady__heat__elements_8h_source.html">space_time_unsteady_heat_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00460">460</a> of file <a class="el" href="space__time__unsteady__heat__elements_8h_source.html">space_time_unsteady_heat_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8cc_source.html#l03227">oomph::FiniteElement::dshape_eulerian()</a>, <a class="el" href="elements_8h_source.html#l02163">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l02487">oomph::FiniteElement::nodal_value()</a>, <a class="el" href="cfortran_8h_source.html#l00572">s</a>, and <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00557">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::u_index_ust_heat()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8cc_source.html#l03223">oomph::FiniteElement::dshape_eulerian()</a>, <a class="el" href="elements_8h_source.html#l02159">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l02483">oomph::FiniteElement::nodal_value()</a>, <a class="el" href="cfortran_8h_source.html#l00568">s</a>, and <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00553">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::u_index_ust_heat()</a>.</p>
 
 </div>
 </div>
@@ -2871,9 +2871,9 @@ template&lt;unsigned SPATIAL_DIM&gt; </div>
 
 <p>Get flux: flux[i]=du/dx_i. </p>
 
-<p class="definition">Definition at line <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00466">466</a> of file <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html">discontinuous_galerkin_space_time_unsteady_heat_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00462">462</a> of file <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html">discontinuous_galerkin_space_time_unsteady_heat_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8cc_source.html#l03227">oomph::FiniteElement::dshape_eulerian()</a>, <a class="el" href="elements_8h_source.html#l02163">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l02487">oomph::FiniteElement::nodal_value()</a>, <a class="el" href="cfortran_8h_source.html#l00572">s</a>, and <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00557">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::u_index_ust_heat()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8cc_source.html#l03223">oomph::FiniteElement::dshape_eulerian()</a>, <a class="el" href="elements_8h_source.html#l02159">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l02483">oomph::FiniteElement::nodal_value()</a>, <a class="el" href="cfortran_8h_source.html#l00568">s</a>, and <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00553">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::u_index_ust_heat()</a>.</p>
 
 </div>
 </div>
@@ -2927,9 +2927,9 @@ template&lt;unsigned SPATIAL_DIM&gt; </div>
 
 <p>Get source term at continous time t and (Eulerian) position x. Virtual so it can be overloaded in derived multi-physics elements. </p>
 
-<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00411">411</a> of file <a class="el" href="space__time__unsteady__heat__elements_8h_source.html">space_time_unsteady_heat_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00407">407</a> of file <a class="el" href="space__time__unsteady__heat__elements_8h_source.html">space_time_unsteady_heat_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00677">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::Source_fct_pt</a>, and <a class="el" href="cfortran_8h_source.html#l00572">t</a>.</p>
+<p class="reference">References <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00673">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::Source_fct_pt</a>, and <a class="el" href="cfortran_8h_source.html#l00568">t</a>.</p>
 
 </div>
 </div>
@@ -2983,9 +2983,9 @@ template&lt;unsigned SPATIAL_DIM&gt; </div>
 
 <p>Get source term at continous time t and (Eulerian) position x. Virtual so it can be overloaded in derived multi-physics elements. </p>
 
-<p class="definition">Definition at line <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00413">413</a> of file <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html">discontinuous_galerkin_space_time_unsteady_heat_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00409">409</a> of file <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html">discontinuous_galerkin_space_time_unsteady_heat_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00677">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::Source_fct_pt</a>, and <a class="el" href="cfortran_8h_source.html#l00572">t</a>.</p>
+<p class="reference">References <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00673">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::Source_fct_pt</a>, and <a class="el" href="cfortran_8h_source.html#l00568">t</a>.</p>
 
 </div>
 </div>
@@ -3017,11 +3017,11 @@ template&lt;unsigned SPATIAL_DIM&gt; </div>
 
 <p>Return FE representation of function value du/dt(s) at local coordinate s. </p>
 
-<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00613">613</a> of file <a class="el" href="space__time__unsteady__heat__elements_8h_source.html">space_time_unsteady_heat_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00609">609</a> of file <a class="el" href="space__time__unsteady__heat__elements_8h_source.html">space_time_unsteady_heat_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8cc_source.html#l03227">oomph::FiniteElement::dshape_eulerian()</a>, <a class="el" href="elements_8h_source.html#l02163">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l02487">oomph::FiniteElement::nodal_value()</a>, <a class="el" href="cfortran_8h_source.html#l00572">s</a>, and <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00557">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::u_index_ust_heat()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8cc_source.html#l03223">oomph::FiniteElement::dshape_eulerian()</a>, <a class="el" href="elements_8h_source.html#l02159">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l02483">oomph::FiniteElement::nodal_value()</a>, <a class="el" href="cfortran_8h_source.html#l00568">s</a>, and <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00553">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::u_index_ust_heat()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00601">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::du_dt_ust_heat()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00597">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::du_dt_ust_heat()</a>.</p>
 
 </div>
 </div>
@@ -3053,9 +3053,9 @@ template&lt;unsigned SPATIAL_DIM&gt; </div>
 
 <p>Return FE representation of function value du/dt(s) at local coordinate s. </p>
 
-<p class="definition">Definition at line <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00615">615</a> of file <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html">discontinuous_galerkin_space_time_unsteady_heat_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00611">611</a> of file <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html">discontinuous_galerkin_space_time_unsteady_heat_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8cc_source.html#l03227">oomph::FiniteElement::dshape_eulerian()</a>, <a class="el" href="elements_8h_source.html#l02163">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l02487">oomph::FiniteElement::nodal_value()</a>, <a class="el" href="cfortran_8h_source.html#l00572">s</a>, and <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00557">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::u_index_ust_heat()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8cc_source.html#l03223">oomph::FiniteElement::dshape_eulerian()</a>, <a class="el" href="elements_8h_source.html#l02159">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l02483">oomph::FiniteElement::nodal_value()</a>, <a class="el" href="cfortran_8h_source.html#l00568">s</a>, and <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00553">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::u_index_ust_heat()</a>.</p>
 
 </div>
 </div>
@@ -3097,9 +3097,9 @@ template&lt;unsigned SPATIAL_DIM&gt; </div>
 
 <p>Return FE representation of function value u(s) at local coordinate s at previous time t (t=0: present) DRAIG: This needs to be broken; doesn't make sense in space-time elements! </p>
 
-<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00567">567</a> of file <a class="el" href="space__time__unsteady__heat__elements_8h_source.html">space_time_unsteady_heat_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00563">563</a> of file <a class="el" href="space__time__unsteady__heat__elements_8h_source.html">space_time_unsteady_heat_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="the__data__structure_8txt.html#a5448c72da3359c7796cf0c5f800732a1">interpolated_u()</a>, <a class="el" href="elements_8h_source.html#l02163">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l02487">oomph::FiniteElement::nodal_value()</a>, <a class="el" href="cfortran_8h_source.html#l00572">s</a>, <a class="el" href="classoomph_1_1FiniteElement.html#a58a25b6859ddd43b7bfe64a19fee5023">oomph::FiniteElement::shape()</a>, <a class="el" href="cfortran_8h_source.html#l00572">t</a>, and <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00557">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::u_index_ust_heat()</a>.</p>
+<p class="reference">References <a class="el" href="the__data__structure_8txt.html#a5448c72da3359c7796cf0c5f800732a1">interpolated_u()</a>, <a class="el" href="elements_8h_source.html#l02159">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l02483">oomph::FiniteElement::nodal_value()</a>, <a class="el" href="cfortran_8h_source.html#l00568">s</a>, <a class="el" href="classoomph_1_1FiniteElement.html#a58a25b6859ddd43b7bfe64a19fee5023">oomph::FiniteElement::shape()</a>, <a class="el" href="cfortran_8h_source.html#l00568">t</a>, and <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00553">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::u_index_ust_heat()</a>.</p>
 
 </div>
 </div>
@@ -3141,9 +3141,9 @@ template&lt;unsigned SPATIAL_DIM&gt; </div>
 
 <p>Return FE representation of function value u(s) at local coordinate s at previous time t (t=0: present) DRAIG: This needs to be broken; doesn't make sense in space-time elements! </p>
 
-<p class="definition">Definition at line <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00569">569</a> of file <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html">discontinuous_galerkin_space_time_unsteady_heat_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00565">565</a> of file <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html">discontinuous_galerkin_space_time_unsteady_heat_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="the__data__structure_8txt.html#a5448c72da3359c7796cf0c5f800732a1">interpolated_u()</a>, <a class="el" href="elements_8h_source.html#l02163">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l02487">oomph::FiniteElement::nodal_value()</a>, <a class="el" href="cfortran_8h_source.html#l00572">s</a>, <a class="el" href="classoomph_1_1FiniteElement.html#a58a25b6859ddd43b7bfe64a19fee5023">oomph::FiniteElement::shape()</a>, <a class="el" href="cfortran_8h_source.html#l00572">t</a>, and <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00557">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::u_index_ust_heat()</a>.</p>
+<p class="reference">References <a class="el" href="the__data__structure_8txt.html#a5448c72da3359c7796cf0c5f800732a1">interpolated_u()</a>, <a class="el" href="elements_8h_source.html#l02159">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l02483">oomph::FiniteElement::nodal_value()</a>, <a class="el" href="cfortran_8h_source.html#l00568">s</a>, <a class="el" href="classoomph_1_1FiniteElement.html#a58a25b6859ddd43b7bfe64a19fee5023">oomph::FiniteElement::shape()</a>, <a class="el" href="cfortran_8h_source.html#l00568">t</a>, and <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00553">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::u_index_ust_heat()</a>.</p>
 
 </div>
 </div>
@@ -3175,11 +3175,11 @@ template&lt;unsigned SPATIAL_DIM&gt; </div>
 
 <p>Return FE representation of function value u(s) at local coordinate s. </p>
 
-<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00521">521</a> of file <a class="el" href="space__time__unsteady__heat__elements_8h_source.html">space_time_unsteady_heat_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00517">517</a> of file <a class="el" href="space__time__unsteady__heat__elements_8h_source.html">space_time_unsteady_heat_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="the__data__structure_8txt.html#a5448c72da3359c7796cf0c5f800732a1">interpolated_u()</a>, <a class="el" href="elements_8h_source.html#l02163">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l02487">oomph::FiniteElement::nodal_value()</a>, <a class="el" href="cfortran_8h_source.html#l00572">s</a>, <a class="el" href="classoomph_1_1FiniteElement.html#a58a25b6859ddd43b7bfe64a19fee5023">oomph::FiniteElement::shape()</a>, and <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00557">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::u_index_ust_heat()</a>.</p>
+<p class="reference">References <a class="el" href="the__data__structure_8txt.html#a5448c72da3359c7796cf0c5f800732a1">interpolated_u()</a>, <a class="el" href="elements_8h_source.html#l02159">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l02483">oomph::FiniteElement::nodal_value()</a>, <a class="el" href="cfortran_8h_source.html#l00568">s</a>, <a class="el" href="classoomph_1_1FiniteElement.html#a58a25b6859ddd43b7bfe64a19fee5023">oomph::FiniteElement::shape()</a>, and <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00553">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::u_index_ust_heat()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00220">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::scalar_value_paraview()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00216">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::scalar_value_paraview()</a>.</p>
 
 </div>
 </div>
@@ -3211,9 +3211,9 @@ template&lt;unsigned SPATIAL_DIM&gt; </div>
 
 <p>Return FE representation of function value u(s) at local coordinate s. </p>
 
-<p class="definition">Definition at line <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00523">523</a> of file <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html">discontinuous_galerkin_space_time_unsteady_heat_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00519">519</a> of file <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html">discontinuous_galerkin_space_time_unsteady_heat_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="the__data__structure_8txt.html#a5448c72da3359c7796cf0c5f800732a1">interpolated_u()</a>, <a class="el" href="elements_8h_source.html#l02163">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l02487">oomph::FiniteElement::nodal_value()</a>, <a class="el" href="cfortran_8h_source.html#l00572">s</a>, <a class="el" href="classoomph_1_1FiniteElement.html#a58a25b6859ddd43b7bfe64a19fee5023">oomph::FiniteElement::shape()</a>, and <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00557">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::u_index_ust_heat()</a>.</p>
+<p class="reference">References <a class="el" href="the__data__structure_8txt.html#a5448c72da3359c7796cf0c5f800732a1">interpolated_u()</a>, <a class="el" href="elements_8h_source.html#l02159">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l02483">oomph::FiniteElement::nodal_value()</a>, <a class="el" href="cfortran_8h_source.html#l00568">s</a>, <a class="el" href="classoomph_1_1FiniteElement.html#a58a25b6859ddd43b7bfe64a19fee5023">oomph::FiniteElement::shape()</a>, and <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00553">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::u_index_ust_heat()</a>.</p>
 
 </div>
 </div>
@@ -3246,7 +3246,7 @@ template&lt;unsigned SPATIAL_DIM&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1FiniteElement.html#a865e2e5586552ba80babdbe26a77fe8c">oomph::FiniteElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00209">209</a> of file <a class="el" href="space__time__unsteady__heat__elements_8h_source.html">space_time_unsteady_heat_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00205">205</a> of file <a class="el" href="space__time__unsteady__heat__elements_8h_source.html">space_time_unsteady_heat_elements.h</a>.</p>
 
 </div>
 </div>
@@ -3279,7 +3279,7 @@ template&lt;unsigned SPATIAL_DIM&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1FiniteElement.html#a865e2e5586552ba80babdbe26a77fe8c">oomph::FiniteElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00211">211</a> of file <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html">discontinuous_galerkin_space_time_unsteady_heat_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00207">207</a> of file <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html">discontinuous_galerkin_space_time_unsteady_heat_elements.h</a>.</p>
 
 </div>
 </div>
@@ -3315,9 +3315,9 @@ template&lt;unsigned SPATIAL_DIM&gt; </div>
 
 <p>Reimplemented in <a class="el" href="classoomph_1_1QUnsteadyHeatSpaceTimeElement.html#ac200c2c224b3f8c77a6533d162eb2c7a">oomph::QUnsteadyHeatSpaceTimeElement&lt; SPATIAL_DIM, NNODE_1D &gt;</a>, and <a class="el" href="classoomph_1_1QUnsteadyHeatSpaceTimeElement.html#ac200c2c224b3f8c77a6533d162eb2c7a">oomph::QUnsteadyHeatSpaceTimeElement&lt; SPATIAL_DIM, NNODE_1D &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00157">157</a> of file <a class="el" href="space__time__unsteady__heat__elements_8h_source.html">space_time_unsteady_heat_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00153">153</a> of file <a class="el" href="space__time__unsteady__heat__elements_8h_source.html">space_time_unsteady_heat_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00141">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::output()</a>.</p>
+<p class="reference">References <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00137">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::output()</a>.</p>
 
 </div>
 </div>
@@ -3353,9 +3353,9 @@ template&lt;unsigned SPATIAL_DIM&gt; </div>
 
 <p>Reimplemented in <a class="el" href="classoomph_1_1QUnsteadyHeatSpaceTimeElement.html#ac200c2c224b3f8c77a6533d162eb2c7a">oomph::QUnsteadyHeatSpaceTimeElement&lt; SPATIAL_DIM, NNODE_1D &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00159">159</a> of file <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html">discontinuous_galerkin_space_time_unsteady_heat_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00155">155</a> of file <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html">discontinuous_galerkin_space_time_unsteady_heat_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00141">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::output()</a>.</p>
+<p class="reference">References <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00137">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::output()</a>.</p>
 
 </div>
 </div>
@@ -3402,9 +3402,9 @@ template&lt;unsigned SPATIAL_DIM&gt; </div>
 
 <p>Reimplemented in <a class="el" href="classoomph_1_1QUnsteadyHeatSpaceTimeElement.html#aacdb4919b8121082c558e613df0b5363">oomph::QUnsteadyHeatSpaceTimeElement&lt; SPATIAL_DIM, NNODE_1D &gt;</a>, and <a class="el" href="classoomph_1_1QUnsteadyHeatSpaceTimeElement.html#aacdb4919b8121082c558e613df0b5363">oomph::QUnsteadyHeatSpaceTimeElement&lt; SPATIAL_DIM, NNODE_1D &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8cc_source.html#l00365">365</a> of file <a class="el" href="space__time__unsteady__heat__elements_8cc_source.html">space_time_unsteady_heat_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8cc_source.html#l00361">361</a> of file <a class="el" href="space__time__unsteady__heat__elements_8cc_source.html">space_time_unsteady_heat_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, and <a class="el" href="cfortran_8h_source.html#l00572">s</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, and <a class="el" href="cfortran_8h_source.html#l00568">s</a>.</p>
 
 </div>
 </div>
@@ -3484,9 +3484,9 @@ template&lt;unsigned SPATIAL_DIM&gt; </div>
 
 <p>Reimplemented in <a class="el" href="classoomph_1_1QUnsteadyHeatSpaceTimeElement.html#ac53c69193308ba87b7b69af24cef78e5">oomph::QUnsteadyHeatSpaceTimeElement&lt; SPATIAL_DIM, NNODE_1D &gt;</a>, and <a class="el" href="classoomph_1_1QUnsteadyHeatSpaceTimeElement.html#ac53c69193308ba87b7b69af24cef78e5">oomph::QUnsteadyHeatSpaceTimeElement&lt; SPATIAL_DIM, NNODE_1D &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00141">141</a> of file <a class="el" href="space__time__unsteady__heat__elements_8h_source.html">space_time_unsteady_heat_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00137">137</a> of file <a class="el" href="space__time__unsteady__heat__elements_8h_source.html">space_time_unsteady_heat_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00143">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::output()</a>, and <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00748">oomph::QUnsteadyHeatSpaceTimeElement&lt; SPATIAL_DIM, NNODE_1D &gt;::output()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00139">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::output()</a>, and <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00744">oomph::QUnsteadyHeatSpaceTimeElement&lt; SPATIAL_DIM, NNODE_1D &gt;::output()</a>.</p>
 
 </div>
 </div>
@@ -3522,9 +3522,9 @@ template&lt;unsigned SPATIAL_DIM&gt; </div>
 
 <p>Reimplemented in <a class="el" href="classoomph_1_1QUnsteadyHeatSpaceTimeElement.html#ac53c69193308ba87b7b69af24cef78e5">oomph::QUnsteadyHeatSpaceTimeElement&lt; SPATIAL_DIM, NNODE_1D &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00143">143</a> of file <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html">discontinuous_galerkin_space_time_unsteady_heat_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00139">139</a> of file <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html">discontinuous_galerkin_space_time_unsteady_heat_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00141">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::output()</a>.</p>
+<p class="reference">References <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00137">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::output()</a>.</p>
 
 </div>
 </div>
@@ -3571,9 +3571,9 @@ template&lt;unsigned SPATIAL_DIM&gt; </div>
 
 <p>Reimplemented in <a class="el" href="classoomph_1_1QUnsteadyHeatSpaceTimeElement.html#acefd8f8383a3a929231391ac74f5dbae">oomph::QUnsteadyHeatSpaceTimeElement&lt; SPATIAL_DIM, NNODE_1D &gt;</a>, and <a class="el" href="classoomph_1_1QUnsteadyHeatSpaceTimeElement.html#acefd8f8383a3a929231391ac74f5dbae">oomph::QUnsteadyHeatSpaceTimeElement&lt; SPATIAL_DIM, NNODE_1D &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8cc_source.html#l00325">325</a> of file <a class="el" href="space__time__unsteady__heat__elements_8cc_source.html">space_time_unsteady_heat_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8cc_source.html#l00321">321</a> of file <a class="el" href="space__time__unsteady__heat__elements_8cc_source.html">space_time_unsteady_heat_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, and <a class="el" href="cfortran_8h_source.html#l00572">s</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, and <a class="el" href="cfortran_8h_source.html#l00568">s</a>.</p>
 
 </div>
 </div>
@@ -3652,9 +3652,9 @@ template&lt;unsigned SPATIAL_DIM&gt; </div>
 <p>C-style output FE representation of soln: x,y,u or x,y,z,u at nplot^SPATIAL_DIM plot points. </p>
 <p>Output function: x,t,u or x,y,t,u at nplot points in each coordinate direction </p>
 
-<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8cc_source.html#l00713">713</a> of file <a class="el" href="space__time__unsteady__heat__elements_8cc_source.html">space_time_unsteady_heat_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8cc_source.html#l00709">709</a> of file <a class="el" href="space__time__unsteady__heat__elements_8cc_source.html">space_time_unsteady_heat_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>.</p>
 
 </div>
 </div>
@@ -3745,9 +3745,9 @@ template&lt;unsigned SPATIAL_DIM&gt; </div>
 
 <p>Reimplemented in <a class="el" href="classoomph_1_1QUnsteadyHeatSpaceTimeElement.html#aba4db11ecfb9fbb9dbb53e17446ab4ee">oomph::QUnsteadyHeatSpaceTimeElement&lt; SPATIAL_DIM, NNODE_1D &gt;</a>, and <a class="el" href="classoomph_1_1QUnsteadyHeatSpaceTimeElement.html#aba4db11ecfb9fbb9dbb53e17446ab4ee">oomph::QUnsteadyHeatSpaceTimeElement&lt; SPATIAL_DIM, NNODE_1D &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8cc_source.html#l00463">463</a> of file <a class="el" href="space__time__unsteady__heat__elements_8cc_source.html">space_time_unsteady_heat_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8cc_source.html#l00459">459</a> of file <a class="el" href="space__time__unsteady__heat__elements_8cc_source.html">space_time_unsteady_heat_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, and <a class="el" href="cfortran_8h_source.html#l00572">s</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, and <a class="el" href="cfortran_8h_source.html#l00568">s</a>.</p>
 
 </div>
 </div>
@@ -3855,11 +3855,11 @@ template&lt;unsigned SPATIAL_DIM&gt; </div>
 
 <p>Reimplemented in <a class="el" href="classoomph_1_1QUnsteadyHeatSpaceTimeElement.html#ada0ae572412eade00a0302b665423dbb">oomph::QUnsteadyHeatSpaceTimeElement&lt; SPATIAL_DIM, NNODE_1D &gt;</a>, and <a class="el" href="classoomph_1_1QUnsteadyHeatSpaceTimeElement.html#ada0ae572412eade00a0302b665423dbb">oomph::QUnsteadyHeatSpaceTimeElement&lt; SPATIAL_DIM, NNODE_1D &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8cc_source.html#l00406">406</a> of file <a class="el" href="space__time__unsteady__heat__elements_8cc_source.html">space_time_unsteady_heat_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8cc_source.html#l00402">402</a> of file <a class="el" href="space__time__unsteady__heat__elements_8cc_source.html">space_time_unsteady_heat_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, and <a class="el" href="cfortran_8h_source.html#l00572">s</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, and <a class="el" href="cfortran_8h_source.html#l00568">s</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00784">oomph::QUnsteadyHeatSpaceTimeElement&lt; SPATIAL_DIM, NNODE_1D &gt;::output_fct()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00780">oomph::QUnsteadyHeatSpaceTimeElement&lt; SPATIAL_DIM, NNODE_1D &gt;::output_fct()</a>.</p>
 
 </div>
 </div>
@@ -3942,9 +3942,9 @@ template&lt;unsigned SPATIAL_DIM&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1FiniteElement.html#a49cc2d4f7ed5772bbc96f06760372b51">oomph::FiniteElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00369">369</a> of file <a class="el" href="space__time__unsteady__heat__elements_8h_source.html">space_time_unsteady_heat_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00365">365</a> of file <a class="el" href="space__time__unsteady__heat__elements_8h_source.html">space_time_unsteady_heat_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>.</p>
 
 </div>
 </div>
@@ -3978,9 +3978,9 @@ template&lt;unsigned SPATIAL_DIM&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1FiniteElement.html#a49cc2d4f7ed5772bbc96f06760372b51">oomph::FiniteElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00371">371</a> of file <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html">discontinuous_galerkin_space_time_unsteady_heat_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00367">367</a> of file <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html">discontinuous_galerkin_space_time_unsteady_heat_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>.</p>
 
 </div>
 </div>
@@ -4042,9 +4042,9 @@ template&lt;unsigned SPATIAL_DIM&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1FiniteElement.html#ab566cc2b0a758b0881779ee11a3f147c">oomph::FiniteElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00308">308</a> of file <a class="el" href="space__time__unsteady__heat__elements_8h_source.html">space_time_unsteady_heat_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00304">304</a> of file <a class="el" href="space__time__unsteady__heat__elements_8h_source.html">space_time_unsteady_heat_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l03010">oomph::FiniteElement::get_s_plot()</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="elements_8cc_source.html#l03881">oomph::FiniteElement::interpolated_x()</a>, <a class="el" href="elements_8h_source.html#l02729">oomph::FiniteElement::nplot_points_paraview()</a>, and <a class="el" href="cfortran_8h_source.html#l00572">s</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l03006">oomph::FiniteElement::get_s_plot()</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="elements_8cc_source.html#l03877">oomph::FiniteElement::interpolated_x()</a>, <a class="el" href="elements_8h_source.html#l02725">oomph::FiniteElement::nplot_points_paraview()</a>, and <a class="el" href="cfortran_8h_source.html#l00568">s</a>.</p>
 
 </div>
 </div>
@@ -4106,9 +4106,9 @@ template&lt;unsigned SPATIAL_DIM&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1FiniteElement.html#ab566cc2b0a758b0881779ee11a3f147c">oomph::FiniteElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00310">310</a> of file <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html">discontinuous_galerkin_space_time_unsteady_heat_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00306">306</a> of file <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html">discontinuous_galerkin_space_time_unsteady_heat_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l03010">oomph::FiniteElement::get_s_plot()</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="elements_8cc_source.html#l03881">oomph::FiniteElement::interpolated_x()</a>, <a class="el" href="elements_8h_source.html#l02729">oomph::FiniteElement::nplot_points_paraview()</a>, and <a class="el" href="cfortran_8h_source.html#l00572">s</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l03006">oomph::FiniteElement::get_s_plot()</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="elements_8cc_source.html#l03877">oomph::FiniteElement::interpolated_x()</a>, <a class="el" href="elements_8h_source.html#l02725">oomph::FiniteElement::nplot_points_paraview()</a>, and <a class="el" href="cfortran_8h_source.html#l00568">s</a>.</p>
 
 </div>
 </div>
@@ -4164,9 +4164,9 @@ template&lt;unsigned SPATIAL_DIM&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1FiniteElement.html#ac6ce34f52481195e8dba634618ef3f36">oomph::FiniteElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00254">254</a> of file <a class="el" href="space__time__unsteady__heat__elements_8h_source.html">space_time_unsteady_heat_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00250">250</a> of file <a class="el" href="space__time__unsteady__heat__elements_8h_source.html">space_time_unsteady_heat_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l03010">oomph::FiniteElement::get_s_plot()</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="elements_8cc_source.html#l03881">oomph::FiniteElement::interpolated_x()</a>, <a class="el" href="elements_8h_source.html#l02729">oomph::FiniteElement::nplot_points_paraview()</a>, and <a class="el" href="cfortran_8h_source.html#l00572">s</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l03006">oomph::FiniteElement::get_s_plot()</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="elements_8cc_source.html#l03877">oomph::FiniteElement::interpolated_x()</a>, <a class="el" href="elements_8h_source.html#l02725">oomph::FiniteElement::nplot_points_paraview()</a>, and <a class="el" href="cfortran_8h_source.html#l00568">s</a>.</p>
 
 </div>
 </div>
@@ -4222,9 +4222,9 @@ template&lt;unsigned SPATIAL_DIM&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1FiniteElement.html#ac6ce34f52481195e8dba634618ef3f36">oomph::FiniteElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00256">256</a> of file <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html">discontinuous_galerkin_space_time_unsteady_heat_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00252">252</a> of file <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html">discontinuous_galerkin_space_time_unsteady_heat_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l03010">oomph::FiniteElement::get_s_plot()</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="elements_8cc_source.html#l03881">oomph::FiniteElement::interpolated_x()</a>, <a class="el" href="elements_8h_source.html#l02729">oomph::FiniteElement::nplot_points_paraview()</a>, and <a class="el" href="cfortran_8h_source.html#l00572">s</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l03006">oomph::FiniteElement::get_s_plot()</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="elements_8cc_source.html#l03877">oomph::FiniteElement::interpolated_x()</a>, <a class="el" href="elements_8h_source.html#l02725">oomph::FiniteElement::nplot_points_paraview()</a>, and <a class="el" href="cfortran_8h_source.html#l00568">s</a>.</p>
 
 </div>
 </div>
@@ -4274,9 +4274,9 @@ template&lt;unsigned SPATIAL_DIM&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1FiniteElement.html#a02cf8832a5e2886f1572bd36f7a7c1e3">oomph::FiniteElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00218">218</a> of file <a class="el" href="space__time__unsteady__heat__elements_8h_source.html">space_time_unsteady_heat_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00214">214</a> of file <a class="el" href="space__time__unsteady__heat__elements_8h_source.html">space_time_unsteady_heat_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l03010">oomph::FiniteElement::get_s_plot()</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00521">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::interpolated_u_ust_heat()</a>, <a class="el" href="elements_8h_source.html#l02729">oomph::FiniteElement::nplot_points_paraview()</a>, and <a class="el" href="cfortran_8h_source.html#l00572">s</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l03006">oomph::FiniteElement::get_s_plot()</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00517">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::interpolated_u_ust_heat()</a>, <a class="el" href="elements_8h_source.html#l02725">oomph::FiniteElement::nplot_points_paraview()</a>, and <a class="el" href="cfortran_8h_source.html#l00568">s</a>.</p>
 
 </div>
 </div>
@@ -4326,9 +4326,9 @@ template&lt;unsigned SPATIAL_DIM&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1FiniteElement.html#a02cf8832a5e2886f1572bd36f7a7c1e3">oomph::FiniteElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00220">220</a> of file <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html">discontinuous_galerkin_space_time_unsteady_heat_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00216">216</a> of file <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html">discontinuous_galerkin_space_time_unsteady_heat_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l03010">oomph::FiniteElement::get_s_plot()</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00521">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::interpolated_u_ust_heat()</a>, <a class="el" href="elements_8h_source.html#l02729">oomph::FiniteElement::nplot_points_paraview()</a>, and <a class="el" href="cfortran_8h_source.html#l00572">s</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l03006">oomph::FiniteElement::get_s_plot()</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00517">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::interpolated_u_ust_heat()</a>, <a class="el" href="elements_8h_source.html#l02725">oomph::FiniteElement::nplot_points_paraview()</a>, and <a class="el" href="cfortran_8h_source.html#l00568">s</a>.</p>
 
 </div>
 </div>
@@ -4358,9 +4358,9 @@ template&lt;unsigned SPATIAL_DIM&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1FiniteElement.html#af94c5a5e22175d5420b33b3b79e46ed3">oomph::FiniteElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8cc_source.html#l00292">292</a> of file <a class="el" href="space__time__unsteady__heat__elements_8cc_source.html">space_time_unsteady_heat_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8cc_source.html#l00288">288</a> of file <a class="el" href="space__time__unsteady__heat__elements_8cc_source.html">space_time_unsteady_heat_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8cc_source.html#l04336">oomph::FiniteElement::self_test()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8cc_source.html#l04332">oomph::FiniteElement::self_test()</a>.</p>
 
 </div>
 </div>
@@ -4424,11 +4424,11 @@ template&lt;unsigned SPATIAL_DIM&gt; </div>
 
 <p>Implements <a class="el" href="classoomph_1_1SpaceTimeUnsteadyHeatEquationsBase.html#a9342bcc275d4e6952da5b9579e5bff7d">oomph::SpaceTimeUnsteadyHeatEquationsBase</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00394">394</a> of file <a class="el" href="space__time__unsteady__heat__elements_8h_source.html">space_time_unsteady_heat_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00390">390</a> of file <a class="el" href="space__time__unsteady__heat__elements_8h_source.html">space_time_unsteady_heat_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00677">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::Source_fct_pt</a>.</p>
+<p class="reference">References <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00673">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::Source_fct_pt</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="refineable__space__time__unsteady__heat__elements_8h_source.html#l00195">oomph::RefineableSpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::further_build()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="refineable__space__time__unsteady__heat__elements_8h_source.html#l00191">oomph::RefineableSpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::further_build()</a>.</p>
 
 </div>
 </div>
@@ -4461,9 +4461,9 @@ template&lt;unsigned SPATIAL_DIM&gt; </div>
 
 <p>Implements <a class="el" href="classoomph_1_1SpaceTimeUnsteadyHeatEquationsBase.html#a9342bcc275d4e6952da5b9579e5bff7d">oomph::SpaceTimeUnsteadyHeatEquationsBase</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00396">396</a> of file <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html">discontinuous_galerkin_space_time_unsteady_heat_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00392">392</a> of file <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html">discontinuous_galerkin_space_time_unsteady_heat_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00677">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::Source_fct_pt</a>.</p>
+<p class="reference">References <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00673">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::Source_fct_pt</a>.</p>
 
 </div>
 </div>
@@ -4494,9 +4494,9 @@ template&lt;unsigned SPATIAL_DIM&gt; </div>
 
 <p>Access function: Pointer to source function. Const version. </p>
 
-<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00402">402</a> of file <a class="el" href="space__time__unsteady__heat__elements_8h_source.html">space_time_unsteady_heat_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00398">398</a> of file <a class="el" href="space__time__unsteady__heat__elements_8h_source.html">space_time_unsteady_heat_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00677">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::Source_fct_pt</a>.</p>
+<p class="reference">References <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00673">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::Source_fct_pt</a>.</p>
 
 </div>
 </div>
@@ -4527,9 +4527,9 @@ template&lt;unsigned SPATIAL_DIM&gt; </div>
 
 <p>Access function: Pointer to source function. Const version. </p>
 
-<p class="definition">Definition at line <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00404">404</a> of file <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html">discontinuous_galerkin_space_time_unsteady_heat_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00400">400</a> of file <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html">discontinuous_galerkin_space_time_unsteady_heat_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00677">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::Source_fct_pt</a>.</p>
+<p class="reference">References <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00673">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::Source_fct_pt</a>.</p>
 
 </div>
 </div>
@@ -4560,9 +4560,9 @@ template&lt;unsigned SPATIAL_DIM&gt; </div>
 
 <p>Return the index at which the unknown value is stored. The default value, 0, is appropriate for single-physics problems, when there is only one variable, the value that satisfies the unsteady heat equation. In derived multi-physics elements, this function should be overloaded to reflect the chosen storage scheme. Note that these equations require that the unknown is always stored at the same index at each node. </p>
 
-<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00557">557</a> of file <a class="el" href="space__time__unsteady__heat__elements_8h_source.html">space_time_unsteady_heat_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00553">553</a> of file <a class="el" href="space__time__unsteady__heat__elements_8h_source.html">space_time_unsteady_heat_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00466">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::get_flux()</a>, <a class="el" href="refineable__discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00130">oomph::RefineableSpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::get_interpolated_values()</a>, <a class="el" href="refineable__discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00089">oomph::RefineableSpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::get_Z2_flux()</a>, <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00615">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::interpolated_du_dt_ust_heat()</a>, and <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00523">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::interpolated_u_ust_heat()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00462">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::get_flux()</a>, <a class="el" href="refineable__discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00126">oomph::RefineableSpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::get_interpolated_values()</a>, <a class="el" href="refineable__discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00085">oomph::RefineableSpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::get_Z2_flux()</a>, <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00611">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::interpolated_du_dt_ust_heat()</a>, and <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00519">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::interpolated_u_ust_heat()</a>.</p>
 
 </div>
 </div>
@@ -4593,7 +4593,7 @@ template&lt;unsigned SPATIAL_DIM&gt; </div>
 
 <p>Return the index at which the unknown value is stored. The default value, 0, is appropriate for single-physics problems, when there is only one variable, the value that satisfies the unsteady heat equation. In derived multi-physics elements, this function should be overloaded to reflect the chosen storage scheme. Note that these equations require that the unknown is always stored at the same index at each node. </p>
 
-<p class="definition">Definition at line <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00559">559</a> of file <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html">discontinuous_galerkin_space_time_unsteady_heat_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00555">555</a> of file <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html">discontinuous_galerkin_space_time_unsteady_heat_elements.h</a>.</p>
 
 </div>
 </div>
@@ -4622,9 +4622,9 @@ template&lt;unsigned SPATIAL_DIM&gt; </div>
 
 <p>Boolean flag to indicate if ALE formulation is disabled when time-derivatives are computed. Only set to true if you're sure that the mesh is stationary. </p>
 
-<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00682">682</a> of file <a class="el" href="space__time__unsteady__heat__elements_8h_source.html">space_time_unsteady_heat_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00678">678</a> of file <a class="el" href="space__time__unsteady__heat__elements_8h_source.html">space_time_unsteady_heat_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00120">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::disable_ALE()</a>, <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00131">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::enable_ALE()</a>, and <a class="el" href="refineable__discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00195">oomph::RefineableSpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::further_build()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00116">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::disable_ALE()</a>, <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00127">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::enable_ALE()</a>, and <a class="el" href="refineable__discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00191">oomph::RefineableSpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::further_build()</a>.</p>
 
 </div>
 </div>
@@ -4652,9 +4652,9 @@ template&lt;unsigned SPATIAL_DIM&gt; </div>
 
 <p>Pointer to Alpha parameter (thermal inertia) </p>
 
-<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00685">685</a> of file <a class="el" href="space__time__unsteady__heat__elements_8h_source.html">space_time_unsteady_heat_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00681">681</a> of file <a class="el" href="space__time__unsteady__heat__elements_8h_source.html">space_time_unsteady_heat_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00434">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::alpha()</a>, <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00442">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::alpha_pt()</a>, and <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00099">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::SpaceTimeUnsteadyHeatEquations()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00430">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::alpha()</a>, <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00438">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::alpha_pt()</a>, and <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00095">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::SpaceTimeUnsteadyHeatEquations()</a>.</p>
 
 </div>
 </div>
@@ -4682,9 +4682,9 @@ template&lt;unsigned SPATIAL_DIM&gt; </div>
 
 <p>Pointer to Beta parameter (thermal conductivity) </p>
 
-<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00688">688</a> of file <a class="el" href="space__time__unsteady__heat__elements_8h_source.html">space_time_unsteady_heat_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00684">684</a> of file <a class="el" href="space__time__unsteady__heat__elements_8h_source.html">space_time_unsteady_heat_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00450">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::beta()</a>, <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00458">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::beta_pt()</a>, and <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00099">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::SpaceTimeUnsteadyHeatEquations()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00446">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::beta()</a>, <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00454">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::beta_pt()</a>, and <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00095">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::SpaceTimeUnsteadyHeatEquations()</a>.</p>
 
 </div>
 </div>
@@ -4713,9 +4713,9 @@ template&lt;unsigned SPATIAL_DIM&gt; </div>
 <p>Static default value for the Alpha parameter (thermal inertia): One for natural scaling. </p>
 <p>Default value for Alpha parameter (thermal inertia) </p>
 
-<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00694">694</a> of file <a class="el" href="space__time__unsteady__heat__elements_8h_source.html">space_time_unsteady_heat_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00690">690</a> of file <a class="el" href="space__time__unsteady__heat__elements_8h_source.html">space_time_unsteady_heat_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00099">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::SpaceTimeUnsteadyHeatEquations()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00095">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::SpaceTimeUnsteadyHeatEquations()</a>.</p>
 
 </div>
 </div>
@@ -4744,9 +4744,9 @@ template&lt;unsigned SPATIAL_DIM&gt; </div>
 <p>Static default value for the Beta parameter (thermal conductivity): One for natural scaling. </p>
 <p>Default value for Beta parameter (thermal conductivity) </p>
 
-<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00698">698</a> of file <a class="el" href="space__time__unsteady__heat__elements_8h_source.html">space_time_unsteady_heat_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00694">694</a> of file <a class="el" href="space__time__unsteady__heat__elements_8h_source.html">space_time_unsteady_heat_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00099">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::SpaceTimeUnsteadyHeatEquations()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00095">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::SpaceTimeUnsteadyHeatEquations()</a>.</p>
 
 </div>
 </div>
@@ -4774,9 +4774,9 @@ template&lt;unsigned SPATIAL_DIM&gt; </div>
 
 <p>Pointer to source function: </p>
 
-<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00677">677</a> of file <a class="el" href="space__time__unsteady__heat__elements_8h_source.html">space_time_unsteady_heat_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="space__time__unsteady__heat__elements_8h_source.html#l00673">673</a> of file <a class="el" href="space__time__unsteady__heat__elements_8h_source.html">space_time_unsteady_heat_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="refineable__discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00195">oomph::RefineableSpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::further_build()</a>, <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00413">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::get_source_ust_heat()</a>, and <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00396">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::source_fct_pt()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="refineable__discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00191">oomph::RefineableSpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::further_build()</a>, <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00409">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::get_source_ust_heat()</a>, and <a class="el" href="discontinuous__galerkin__space__time__unsteady__heat__elements_8h_source.html#l00392">oomph::SpaceTimeUnsteadyHeatEquations&lt; SPATIAL_DIM &gt;::source_fct_pt()</a>.</p>
 
 </div>
 </div>
@@ -4814,7 +4814,7 @@ template&lt;unsigned SPATIAL_DIM&gt; </div>
     <footer>
       <div class="container">
         <div class="text-muted" style="float:right;">Generated by <a href="http://www.doxygen.org/index.html">
-          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Tue Jul 6 2021 22:59:31
+          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Fri Jul 9 2021 20:54:23
         </div>
       </div>
     </footer>

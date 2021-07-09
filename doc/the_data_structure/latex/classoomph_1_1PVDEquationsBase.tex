@@ -128,7 +128,7 @@ class oomph\+::\+P\+V\+D\+Equations\+Base$<$ D\+I\+M $>$}
 
 A base class for elements that solve the equations of solid mechanics, based on the principle of virtual displacements in Cartesian coordinates. Combines a few generic functions that are shared by \mbox{\hyperlink{classoomph_1_1PVDEquations}{P\+V\+D\+Equations}} and \mbox{\hyperlink{classoomph_1_1PVDEquationsWithPressure}{P\+V\+D\+Equations\+With\+Pressure}}. 
 
-Definition at line 63 of file solid\+\_\+elements.\+h.
+Definition at line 59 of file solid\+\_\+elements.\+h.
 
 
 
@@ -147,7 +147,7 @@ Function pointer to function that specifies the body force as a function of the 
 
 
 
-Definition at line 88 of file solid\+\_\+elements.\+h.
+Definition at line 84 of file solid\+\_\+elements.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1PVDEquationsBase_a59fc7069e0330c399ff53aebb6c67729}\label{classoomph_1_1PVDEquationsBase_a59fc7069e0330c399ff53aebb6c67729}} 
 \index{oomph::PVDEquationsBase$<$ DIM $>$@{oomph::PVDEquationsBase$<$ DIM $>$}!IsotropicGrowthFctPt@{IsotropicGrowthFctPt}}
@@ -163,7 +163,7 @@ Function pointer to function that specifies the isotropic growth as a function o
 
 
 
-Definition at line 77 of file solid\+\_\+elements.\+h.
+Definition at line 73 of file solid\+\_\+elements.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1PVDEquationsBase_a457b9ffb2b62ecc0cf5fe61cf28e98e5}\label{classoomph_1_1PVDEquationsBase_a457b9ffb2b62ecc0cf5fe61cf28e98e5}} 
 \index{oomph::PVDEquationsBase$<$ DIM $>$@{oomph::PVDEquationsBase$<$ DIM $>$}!PrestressFctPt@{PrestressFctPt}}
@@ -179,7 +179,7 @@ Function pointer to function that specifies the pre-\/stress sigma\+\_\+0(i,j) a
 
 
 
-Definition at line 83 of file solid\+\_\+elements.\+h.
+Definition at line 79 of file solid\+\_\+elements.\+h.
 
 
 
@@ -197,7 +197,7 @@ Constructor\+: Set null pointers for constitutive law and for isotropic growth f
 
 
 
-Definition at line 96 of file solid\+\_\+elements.\+h.
+Definition at line 92 of file solid\+\_\+elements.\+h.
 
 
 
@@ -215,7 +215,7 @@ Evaluate body force at Lagrangian coordinate xi at present time (returns zero ve
 
 
 
-Definition at line 249 of file solid\+\_\+elements.\+h.
+Definition at line 245 of file solid\+\_\+elements.\+h.
 
 
 
@@ -234,7 +234,7 @@ Access function\+: Pointer to body force function.
 
 
 
-Definition at line 127 of file solid\+\_\+elements.\+h.
+Definition at line 123 of file solid\+\_\+elements.\+h.
 
 
 
@@ -257,7 +257,7 @@ Access function\+: Pointer to body force function (const version)
 
 
 
-Definition at line 130 of file solid\+\_\+elements.\+h.
+Definition at line 126 of file solid\+\_\+elements.\+h.
 
 
 
@@ -276,7 +276,7 @@ Return the constitutive law pointer.
 
 
 
-Definition at line 103 of file solid\+\_\+elements.\+h.
+Definition at line 99 of file solid\+\_\+elements.\+h.
 
 
 
@@ -299,7 +299,7 @@ Set Jacobian to be evaluated analytically Else\+: by FD.
 
 
 
-Definition at line 345 of file solid\+\_\+elements.\+h.
+Definition at line 341 of file solid\+\_\+elements.\+h.
 
 
 
@@ -318,7 +318,7 @@ Switch off solid inertia.
 
 
 
-Definition at line 136 of file solid\+\_\+elements.\+h.
+Definition at line 132 of file solid\+\_\+elements.\+h.
 
 
 
@@ -337,7 +337,7 @@ Set Jacobian to be evaluated by FD? Else\+: Analytically.
 
 
 
-Definition at line 342 of file solid\+\_\+elements.\+h.
+Definition at line 338 of file solid\+\_\+elements.\+h.
 
 
 
@@ -356,7 +356,7 @@ Switch on solid inertia.
 
 
 
-Definition at line 133 of file solid\+\_\+elements.\+h.
+Definition at line 129 of file solid\+\_\+elements.\+h.
 
 
 
@@ -375,7 +375,7 @@ Return the deformed covariant basis vectors at specified local coordinate\+: {\t
 
 Return the deformed covariant basis vectors at specified local coordinate\+: {\ttfamily def\+\_\+covariant\+\_\+basis(i,j)} is the j-\/th component of the i-\/th basis vector. 
 
-Definition at line 1165 of file solid\+\_\+elements.\+cc.
+Definition at line 1161 of file solid\+\_\+elements.\+cc.
 
 
 
@@ -402,7 +402,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1PVDEquationsWithPressure_a46331a
 
 
 
-Definition at line 295 of file solid\+\_\+elements.\+h.
+Definition at line 291 of file solid\+\_\+elements.\+h.
 
 
 
@@ -421,7 +421,7 @@ Get potential (strain) and kinetic energy.
 
 
 
-Definition at line 811 of file solid\+\_\+elements.\+cc.
+Definition at line 807 of file solid\+\_\+elements.\+cc.
 
 
 
@@ -440,7 +440,7 @@ Evaluate isotropic growth function at Lagrangian coordinate xi and/or local coor
 
 
 
-Definition at line 232 of file solid\+\_\+elements.\+h.
+Definition at line 228 of file solid\+\_\+elements.\+h.
 
 
 
@@ -459,7 +459,7 @@ Compute principal stress vectors and (scalar) principal stresses at specified lo
 
 Compute principal stress vectors and (scalar) principal stresses at specified local coordinate\+: {\ttfamily principal\+\_\+stress\+\_\+vector(i,j)} is the j-\/th component of the i-\/th principal stress vector. 
 
-Definition at line 1042 of file solid\+\_\+elements.\+cc.
+Definition at line 1038 of file solid\+\_\+elements.\+cc.
 
 
 
@@ -478,7 +478,7 @@ Return the strain tensor.
 
 Compute the strain tensor at local coordinate s. 
 
-Definition at line 54 of file solid\+\_\+elements.\+cc.
+Definition at line 50 of file solid\+\_\+elements.\+cc.
 
 
 
@@ -516,7 +516,7 @@ Access function to flag that switches inertia on/off (const version)
 
 
 
-Definition at line 139 of file solid\+\_\+elements.\+h.
+Definition at line 135 of file solid\+\_\+elements.\+h.
 
 
 
@@ -539,7 +539,7 @@ Return the flag indicating whether the jacobian is evaluated by fd.
 
 
 
-Definition at line 348 of file solid\+\_\+elements.\+h.
+Definition at line 344 of file solid\+\_\+elements.\+h.
 
 
 
@@ -562,7 +562,7 @@ Access function\+: Pointer to isotropic growth function.
 
 
 
-Definition at line 115 of file solid\+\_\+elements.\+h.
+Definition at line 111 of file solid\+\_\+elements.\+h.
 
 
 
@@ -585,7 +585,7 @@ Access function\+: Pointer to isotropic growth function (const version)
 
 
 
-Definition at line 123 of file solid\+\_\+elements.\+h.
+Definition at line 119 of file solid\+\_\+elements.\+h.
 
 
 
@@ -604,7 +604,7 @@ Access function for timescale ratio (nondim density)
 
 
 
-Definition at line 107 of file solid\+\_\+elements.\+h.
+Definition at line 103 of file solid\+\_\+elements.\+h.
 
 
 
@@ -623,7 +623,7 @@ Access function for pointer to timescale ratio (nondim density)
 
 
 
-Definition at line 111 of file solid\+\_\+elements.\+h.
+Definition at line 107 of file solid\+\_\+elements.\+h.
 
 
 
@@ -654,7 +654,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1PVDEquationsWithPressure_ac7b603
 
 
 
-Definition at line 280 of file solid\+\_\+elements.\+h.
+Definition at line 276 of file solid\+\_\+elements.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1PVDEquationsBase_a6e8457327151e87d2fa5694148afc7cc}\label{classoomph_1_1PVDEquationsBase_a6e8457327151e87d2fa5694148afc7cc}} 
 \index{oomph::PVDEquationsBase$<$ DIM $>$@{oomph::PVDEquationsBase$<$ DIM $>$}!npres\_solid@{npres\_solid}}
@@ -673,7 +673,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1TPVDElementWithContinuousPressur
 
 
 
-Definition at line 143 of file solid\+\_\+elements.\+h.
+Definition at line 139 of file solid\+\_\+elements.\+h.
 
 
 
@@ -696,7 +696,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1RefineableQPVDElementWithContinu
 
 
 
-Definition at line 160 of file solid\+\_\+elements.\+h.
+Definition at line 156 of file solid\+\_\+elements.\+h.
 
 
 
@@ -719,7 +719,7 @@ Loop over all elements in \mbox{\hyperlink{classoomph_1_1Vector}{Vector}} (which
 \end{DoxyItemize}which is empty by default and should be implemented for elements with nodal solid pressure degrees of freedom ~\newline
  (e.\+g. solid elements with continuous pressure interpolation.) 
 
-Definition at line 172 of file solid\+\_\+elements.\+h.
+Definition at line 168 of file solid\+\_\+elements.\+h.
 
 
 
@@ -738,7 +738,7 @@ Return (i,j)-\/th component of second Piola Kirchhoff membrane prestress at Lagr
 
 
 
-Definition at line 352 of file solid\+\_\+elements.\+h.
+Definition at line 348 of file solid\+\_\+elements.\+h.
 
 
 
@@ -757,7 +757,7 @@ Access function\+: Pointer to pre-\/stress function.
 
 
 
-Definition at line 119 of file solid\+\_\+elements.\+h.
+Definition at line 115 of file solid\+\_\+elements.\+h.
 
 
 
@@ -780,7 +780,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1TPVDElementWithContinuousPressur
 
 
 
-Definition at line 147 of file solid\+\_\+elements.\+h.
+Definition at line 143 of file solid\+\_\+elements.\+h.
 
 
 
@@ -803,7 +803,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1TPVDElementWithContinuousPressur
 
 
 
-Definition at line 152 of file solid\+\_\+elements.\+h.
+Definition at line 148 of file solid\+\_\+elements.\+h.
 
 
 
@@ -822,7 +822,7 @@ Unpin all pressure dofs in elements listed in vector.
 
 
 
-Definition at line 185 of file solid\+\_\+elements.\+h.
+Definition at line 181 of file solid\+\_\+elements.\+h.
 
 
 
@@ -863,7 +863,7 @@ Pointer to body force function.
 
 
 
-Definition at line 384 of file solid\+\_\+elements.\+h.
+Definition at line 380 of file solid\+\_\+elements.\+h.
 
 
 
@@ -882,7 +882,7 @@ Pointer to the constitutive law.
 
 
 
-Definition at line 375 of file solid\+\_\+elements.\+h.
+Definition at line 371 of file solid\+\_\+elements.\+h.
 
 
 
@@ -901,7 +901,7 @@ Static default value for timescale ratio (1.\+0 -- for natural scaling)
 
 
 
-Definition at line 387 of file solid\+\_\+elements.\+h.
+Definition at line 383 of file solid\+\_\+elements.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1PVDEquationsBase_ab63c545f5b34501a58d5d47c56ba1471}\label{classoomph_1_1PVDEquationsBase_ab63c545f5b34501a58d5d47c56ba1471}} 
 \index{oomph::PVDEquationsBase$<$ DIM $>$@{oomph::PVDEquationsBase$<$ DIM $>$}!Evaluate\_jacobian\_by\_fd@{Evaluate\_jacobian\_by\_fd}}
@@ -916,7 +916,7 @@ Use FD to evaluate Jacobian.
 
 
 
-Definition at line 390 of file solid\+\_\+elements.\+h.
+Definition at line 386 of file solid\+\_\+elements.\+h.
 
 
 
@@ -935,7 +935,7 @@ Pointer to isotropic growth function.
 
 
 
-Definition at line 369 of file solid\+\_\+elements.\+h.
+Definition at line 365 of file solid\+\_\+elements.\+h.
 
 
 
@@ -954,7 +954,7 @@ Timescale ratio (non-\/dim. density)
 
 
 
-Definition at line 378 of file solid\+\_\+elements.\+h.
+Definition at line 374 of file solid\+\_\+elements.\+h.
 
 
 
@@ -973,7 +973,7 @@ Pointer to prestress function.
 
 
 
-Definition at line 372 of file solid\+\_\+elements.\+h.
+Definition at line 368 of file solid\+\_\+elements.\+h.
 
 
 
@@ -992,7 +992,7 @@ Static \char`\"{}magic\char`\"{} number that indicates that the solid pressure i
 
 \char`\"{}\+Magic\char`\"{} number that indicates that the solid pressure is not stored at a node. It is a negative number that cannot be -\/1 because that is used to represent the positional hanging scheme in Hanging\+\_\+pt objects 
 
-Definition at line 69 of file solid\+\_\+elements.\+h.
+Definition at line 65 of file solid\+\_\+elements.\+h.
 
 
 
@@ -1011,7 +1011,7 @@ Flag that switches inertia on/off.
 
 
 
-Definition at line 381 of file solid\+\_\+elements.\+h.
+Definition at line 377 of file solid\+\_\+elements.\+h.
 
 
 

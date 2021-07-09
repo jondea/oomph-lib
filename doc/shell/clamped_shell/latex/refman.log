@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.7.6)  6 JUL 2021 23:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.7.9)  9 JUL 2021 21:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -793,15 +793,15 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [5]
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 12.9599pt on input line 575.
+(Font)              scaled to size 12.9599pt on input line 571.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 12.9599pt on input line 575.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 576.
+(Font)              scaled to size 12.9599pt on input line 571.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 572.
 [6]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 576.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 572.
 (./refman.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 576.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 576.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 572.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 572.
 Package rerunfilecheck Info: File `refman.out' has not changed.
 (rerunfilecheck)             Checksum: 6D08749B453C8C313ABB0B392B6BB660;586.
  ) ) 
@@ -891,7 +891,7 @@ ist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/
 helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhv
 b8ac.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on refman.pdf (6 pages, 75296 bytes).
+Output written on refman.pdf (6 pages, 74944 bytes).
 PDF statistics:
  141 PDF objects out of 1000 (max. 8388607)
  125 compressed objects within 2 object streams

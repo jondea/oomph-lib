@@ -1184,7 +1184,7 @@ class oomph::WomersleyEquations&lt; DIM &gt;</h3>
 <p>Generally, the instantaneous value of the pressure gradient, g, is prescribed (and specified via a pointer to a single-valued <a class="el" href="classoomph_1_1Data.html" title="A class that represents a collection of data; each Data object may contain many different individual ...">Data</a> object whose current (pinned) value contains the pressure.</p>
 <p>It is also possible to prescribe the flow rate through a mesh of Womersley elements and to determine the pressure gradient required to achieve this flow rate as an unknown. In that case the external pressure is treated as an external <a class="el" href="classoomph_1_1Data.html" title="A class that represents a collection of data; each Data object may contain many different individual ...">Data</a> object that an associated <a class="el" href="classoomph_1_1ImposeFluxForWomersleyElement.html" title="Element to impose volume flux through collection of Womersley elements, in exchange for treating the ...">ImposeFluxForWomersleyElement</a> is in charge of. Note that only the <a class="el" href="classoomph_1_1ImposeFluxForWomersleyElement.html" title="Element to impose volume flux through collection of Womersley elements, in exchange for treating the ...">ImposeFluxForWomersleyElement</a> can set the pressure gradient <a class="el" href="classoomph_1_1Data.html" title="A class that represents a collection of data; each Data object may contain many different individual ...">Data</a> object as external <a class="el" href="classoomph_1_1Data.html" title="A class that represents a collection of data; each Data object may contain many different individual ...">Data</a>. This is because (counter to general practice) the <a class="el" href="classoomph_1_1WomersleyEquations.html">WomersleyEquations</a> make contributions to the residuals of the ImposeFluxForWomersleyElements in order to keep the elemental Jacobians as small as possible. </p>
 
-<p class="definition">Definition at line <a class="el" href="womersley__elements_8h_source.html#l00207">207</a> of file <a class="el" href="womersley__elements_8h_source.html">womersley_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="womersley__elements_8h_source.html#l00203">203</a> of file <a class="el" href="womersley__elements_8h_source.html">womersley_elements.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a22ad21d028f961d08c2ec17ed59bd88b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a22ad21d028f961d08c2ec17ed59bd88b">&#9670;&nbsp;</a></span>WomersleyEquations() <span class="overload">[1/2]</span></h2>
@@ -1213,9 +1213,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Constructor: Initialises the Pressure_gradient_data_pt to null. </p>
 
-<p class="definition">Definition at line <a class="el" href="womersley__elements_8h_source.html#l00213">213</a> of file <a class="el" href="womersley__elements_8h_source.html">womersley_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="womersley__elements_8h_source.html#l00209">209</a> of file <a class="el" href="womersley__elements_8h_source.html">womersley_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="womersley__elements_8h_source.html#l00480">oomph::WomersleyEquations&lt; DIM &gt;::Default_ReSt_value</a>, and <a class="el" href="womersley__elements_8h_source.html#l00477">oomph::WomersleyEquations&lt; DIM &gt;::ReSt_pt</a>.</p>
+<p class="reference">References <a class="el" href="womersley__elements_8h_source.html#l00476">oomph::WomersleyEquations&lt; DIM &gt;::Default_ReSt_value</a>, and <a class="el" href="womersley__elements_8h_source.html#l00473">oomph::WomersleyEquations&lt; DIM &gt;::ReSt_pt</a>.</p>
 
 </div>
 </div>
@@ -1247,9 +1247,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Broken copy constructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="womersley__elements_8h_source.html#l00220">220</a> of file <a class="el" href="womersley__elements_8h_source.html">womersley_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="womersley__elements_8h_source.html#l00216">216</a> of file <a class="el" href="womersley__elements_8h_source.html">womersley_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="oomph__utilities_8cc_source.html#l00218">oomph::BrokenCopy::broken_copy()</a>.</p>
+<p class="reference">References <a class="el" href="oomph__utilities_8cc_source.html#l00214">oomph::BrokenCopy::broken_copy()</a>.</p>
 
 </div>
 </div>
@@ -1308,9 +1308,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1FiniteElement.html#a73c79a1f1e5b1d334757812a6bbd58ff">oomph::FiniteElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="womersley__elements_8cc_source.html#l00569">569</a> of file <a class="el" href="womersley__elements_8cc_source.html">womersley_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="womersley__elements_8cc_source.html#l00565">565</a> of file <a class="el" href="womersley__elements_8cc_source.html">womersley_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="cfortran_8h_source.html#l00572">s</a>, and <a class="el" href="quadtree_8h_source.html#l00060">oomph::QuadTreeNames::W</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="cfortran_8h_source.html#l00568">s</a>, and <a class="el" href="quadtree_8h_source.html#l00056">oomph::QuadTreeNames::W</a>.</p>
 
 </div>
 </div>
@@ -1374,9 +1374,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1FiniteElement.html#a7f67853506dc73fa6b7505108de22d1f">oomph::FiniteElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="womersley__elements_8cc_source.html#l00650">650</a> of file <a class="el" href="womersley__elements_8cc_source.html">womersley_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="womersley__elements_8cc_source.html#l00646">646</a> of file <a class="el" href="womersley__elements_8cc_source.html">womersley_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="cfortran_8h_source.html#l00572">s</a>, and <a class="el" href="quadtree_8h_source.html#l00060">oomph::QuadTreeNames::W</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="cfortran_8h_source.html#l00568">s</a>, and <a class="el" href="quadtree_8h_source.html#l00056">oomph::QuadTreeNames::W</a>.</p>
 
 </div>
 </div>
@@ -1528,9 +1528,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>du/dt at local node n. Uses suitably interpolated value for hanging nodes. </p>
 
-<p class="definition">Definition at line <a class="el" href="womersley__elements_8h_source.html#l00277">277</a> of file <a class="el" href="womersley__elements_8h_source.html">womersley_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="womersley__elements_8h_source.html#l00273">273</a> of file <a class="el" href="womersley__elements_8h_source.html">womersley_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="timesteppers_8h_source.html#l00375">oomph::TimeStepper::is_steady()</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, <a class="el" href="elements_8h_source.html#l02487">oomph::FiniteElement::nodal_value()</a>, <a class="el" href="elements_8h_source.html#l02126">oomph::FiniteElement::node_pt()</a>, <a class="el" href="timesteppers_8h_source.html#l00562">oomph::TimeStepper::ntstorage()</a>, <a class="el" href="cfortran_8h_source.html#l00572">t</a>, <a class="el" href="geom__objects_8h_source.html#l00197">oomph::GeomObject::time_stepper_pt()</a>, <a class="el" href="nodes_8h_source.html#l00246">oomph::Data::time_stepper_pt()</a>, <a class="el" href="womersley__elements_8h_source.html#l00272">oomph::WomersleyEquations&lt; DIM &gt;::u_index_womersley()</a>, and <a class="el" href="timesteppers_8h_source.html#l00557">oomph::TimeStepper::weight()</a>.</p>
+<p class="reference">References <a class="el" href="timesteppers_8h_source.html#l00371">oomph::TimeStepper::is_steady()</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, <a class="el" href="elements_8h_source.html#l02483">oomph::FiniteElement::nodal_value()</a>, <a class="el" href="elements_8h_source.html#l02122">oomph::FiniteElement::node_pt()</a>, <a class="el" href="timesteppers_8h_source.html#l00558">oomph::TimeStepper::ntstorage()</a>, <a class="el" href="cfortran_8h_source.html#l00568">t</a>, <a class="el" href="geom__objects_8h_source.html#l00193">oomph::GeomObject::time_stepper_pt()</a>, <a class="el" href="nodes_8h_source.html#l00242">oomph::Data::time_stepper_pt()</a>, <a class="el" href="womersley__elements_8h_source.html#l00268">oomph::WomersleyEquations&lt; DIM &gt;::u_index_womersley()</a>, and <a class="el" href="timesteppers_8h_source.html#l00553">oomph::TimeStepper::weight()</a>.</p>
 
 </div>
 </div>
@@ -1574,9 +1574,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1FiniteElement.html#a0ae7af222af38a0d53bf283dc85bdfea">oomph::FiniteElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="womersley__elements_8h_source.html#l00405">405</a> of file <a class="el" href="womersley__elements_8h_source.html">womersley_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="womersley__elements_8h_source.html#l00401">401</a> of file <a class="el" href="womersley__elements_8h_source.html">womersley_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="womersley__elements_8cc_source.html#l00076">oomph::WomersleyEquations&lt; DIM &gt;::fill_in_generic_residual_contribution_womersley()</a>, and <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>.</p>
+<p class="reference">References <a class="el" href="womersley__elements_8cc_source.html#l00072">oomph::WomersleyEquations&lt; DIM &gt;::fill_in_generic_residual_contribution_womersley()</a>, and <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>.</p>
 
 </div>
 </div>
@@ -1610,9 +1610,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1GeneralisedElement.html#a310c97f515e8504a48179c0e72c550d7">oomph::GeneralisedElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="womersley__elements_8h_source.html#l00395">395</a> of file <a class="el" href="womersley__elements_8h_source.html">womersley_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="womersley__elements_8h_source.html#l00391">391</a> of file <a class="el" href="womersley__elements_8h_source.html">womersley_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l00228">oomph::GeneralisedElement::Dummy_matrix</a>, <a class="el" href="womersley__elements_8cc_source.html#l00076">oomph::WomersleyEquations&lt; DIM &gt;::fill_in_generic_residual_contribution_womersley()</a>, and <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l00224">oomph::GeneralisedElement::Dummy_matrix</a>, <a class="el" href="womersley__elements_8cc_source.html#l00072">oomph::WomersleyEquations&lt; DIM &gt;::fill_in_generic_residual_contribution_womersley()</a>, and <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>.</p>
 
 </div>
 </div>
@@ -1664,11 +1664,11 @@ template&lt;unsigned DIM&gt; </div>
 <p>flag=1: compute both flag=0: compute only residual <a class="el" href="classoomph_1_1Vector.html">Vector</a></p>
 <p>Pure version without hanging nodes </p>
 
-<p class="definition">Definition at line <a class="el" href="womersley__elements_8cc_source.html#l00076">76</a> of file <a class="el" href="womersley__elements_8cc_source.html">womersley_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="womersley__elements_8cc_source.html#l00072">72</a> of file <a class="el" href="womersley__elements_8cc_source.html">womersley_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="the__data__structure_8txt.html#a5448c72da3359c7796cf0c5f800732a1">interpolated_u()</a>, <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>, <a class="el" href="cfortran_8h_source.html#l00572">s</a>, and <a class="el" href="quadtree_8h_source.html#l00060">oomph::QuadTreeNames::W</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="the__data__structure_8txt.html#a5448c72da3359c7796cf0c5f800732a1">interpolated_u()</a>, <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>, <a class="el" href="cfortran_8h_source.html#l00568">s</a>, and <a class="el" href="quadtree_8h_source.html#l00056">oomph::QuadTreeNames::W</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="womersley__elements_8h_source.html#l00405">oomph::WomersleyEquations&lt; DIM &gt;::fill_in_contribution_to_jacobian()</a>, and <a class="el" href="womersley__elements_8h_source.html#l00395">oomph::WomersleyEquations&lt; DIM &gt;::fill_in_contribution_to_residuals()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="womersley__elements_8h_source.html#l00401">oomph::WomersleyEquations&lt; DIM &gt;::fill_in_contribution_to_jacobian()</a>, and <a class="el" href="womersley__elements_8h_source.html#l00391">oomph::WomersleyEquations&lt; DIM &gt;::fill_in_contribution_to_residuals()</a>.</p>
 
 </div>
 </div>
@@ -1710,9 +1710,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Get flux: flux[i] = du/dx_i. </p>
 
-<p class="definition">Definition at line <a class="el" href="womersley__elements_8h_source.html#l00364">364</a> of file <a class="el" href="womersley__elements_8h_source.html">womersley_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="womersley__elements_8h_source.html#l00360">360</a> of file <a class="el" href="womersley__elements_8h_source.html">womersley_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8cc_source.html#l03227">oomph::FiniteElement::dshape_eulerian()</a>, <a class="el" href="elements_8h_source.html#l02163">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l02487">oomph::FiniteElement::nodal_value()</a>, <a class="el" href="cfortran_8h_source.html#l00572">s</a>, and <a class="el" href="womersley__elements_8h_source.html#l00272">oomph::WomersleyEquations&lt; DIM &gt;::u_index_womersley()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8cc_source.html#l03223">oomph::FiniteElement::dshape_eulerian()</a>, <a class="el" href="elements_8h_source.html#l02159">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l02483">oomph::FiniteElement::nodal_value()</a>, <a class="el" href="cfortran_8h_source.html#l00568">s</a>, and <a class="el" href="womersley__elements_8h_source.html#l00268">oomph::WomersleyEquations&lt; DIM &gt;::u_index_womersley()</a>.</p>
 
 </div>
 </div>
@@ -1733,11 +1733,11 @@ template&lt;unsigned DIM&gt; </div>
 <p>Compute total volume flux through element. </p>
 <p>Compute volume flux through element. </p>
 
-<p class="definition">Definition at line <a class="el" href="womersley__elements_8cc_source.html#l00236">236</a> of file <a class="el" href="womersley__elements_8cc_source.html">womersley_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="womersley__elements_8cc_source.html#l00232">232</a> of file <a class="el" href="womersley__elements_8cc_source.html">womersley_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="the__data__structure_8txt.html#a5448c72da3359c7796cf0c5f800732a1">interpolated_u()</a>, <a class="el" href="cfortran_8h_source.html#l00572">s</a>, and <a class="el" href="quadtree_8h_source.html#l00060">oomph::QuadTreeNames::W</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="the__data__structure_8txt.html#a5448c72da3359c7796cf0c5f800732a1">interpolated_u()</a>, <a class="el" href="cfortran_8h_source.html#l00568">s</a>, and <a class="el" href="quadtree_8h_source.html#l00056">oomph::QuadTreeNames::W</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="womersley__elements_8h_source.html#l00580">oomph::ImposeFluxForWomersleyElement&lt; DIM &gt;::total_volume_flux()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="womersley__elements_8h_source.html#l00576">oomph::ImposeFluxForWomersleyElement&lt; DIM &gt;::total_volume_flux()</a>.</p>
 
 </div>
 </div>
@@ -1769,9 +1769,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Return FE representation of function value u(s) at local coordinate s. </p>
 
-<p class="definition">Definition at line <a class="el" href="womersley__elements_8h_source.html#l00414">414</a> of file <a class="el" href="womersley__elements_8h_source.html">womersley_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="womersley__elements_8h_source.html#l00410">410</a> of file <a class="el" href="womersley__elements_8h_source.html">womersley_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="the__data__structure_8txt.html#a5448c72da3359c7796cf0c5f800732a1">interpolated_u()</a>, <a class="el" href="elements_8h_source.html#l02163">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l02487">oomph::FiniteElement::nodal_value()</a>, <a class="el" href="cfortran_8h_source.html#l00572">s</a>, <a class="el" href="classoomph_1_1FiniteElement.html#a58a25b6859ddd43b7bfe64a19fee5023">oomph::FiniteElement::shape()</a>, and <a class="el" href="womersley__elements_8h_source.html#l00272">oomph::WomersleyEquations&lt; DIM &gt;::u_index_womersley()</a>.</p>
+<p class="reference">References <a class="el" href="the__data__structure_8txt.html#a5448c72da3359c7796cf0c5f800732a1">interpolated_u()</a>, <a class="el" href="elements_8h_source.html#l02159">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l02483">oomph::FiniteElement::nodal_value()</a>, <a class="el" href="cfortran_8h_source.html#l00568">s</a>, <a class="el" href="classoomph_1_1FiniteElement.html#a58a25b6859ddd43b7bfe64a19fee5023">oomph::FiniteElement::shape()</a>, and <a class="el" href="womersley__elements_8h_source.html#l00268">oomph::WomersleyEquations&lt; DIM &gt;::u_index_womersley()</a>.</p>
 
 </div>
 </div>
@@ -1803,9 +1803,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Broken assignment operator. </p>
 
-<p class="definition">Definition at line <a class="el" href="womersley__elements_8h_source.html#l00227">227</a> of file <a class="el" href="womersley__elements_8h_source.html">womersley_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="womersley__elements_8h_source.html#l00223">223</a> of file <a class="el" href="womersley__elements_8h_source.html">womersley_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="oomph__utilities_8cc_source.html#l00201">oomph::BrokenCopy::broken_assign()</a>.</p>
+<p class="reference">References <a class="el" href="oomph__utilities_8cc_source.html#l00197">oomph::BrokenCopy::broken_assign()</a>.</p>
 
 </div>
 </div>
@@ -1841,9 +1841,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Reimplemented in <a class="el" href="classoomph_1_1QWomersleyElement.html#a2d73507033cac13eed334354502663d6">oomph::QWomersleyElement&lt; DIM, NNODE_1D &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="womersley__elements_8h_source.html#l00323">323</a> of file <a class="el" href="womersley__elements_8h_source.html">womersley_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="womersley__elements_8h_source.html#l00319">319</a> of file <a class="el" href="womersley__elements_8h_source.html">womersley_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="womersley__elements_8h_source.html#l00305">oomph::WomersleyEquations&lt; DIM &gt;::output()</a>.</p>
+<p class="reference">References <a class="el" href="womersley__elements_8h_source.html#l00301">oomph::WomersleyEquations&lt; DIM &gt;::output()</a>.</p>
 
 </div>
 </div>
@@ -1892,9 +1892,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Reimplemented in <a class="el" href="classoomph_1_1QWomersleyElement.html#aedac8e0c2b41e446b7c835731b179255">oomph::QWomersleyElement&lt; DIM, NNODE_1D &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="womersley__elements_8cc_source.html#l00413">413</a> of file <a class="el" href="womersley__elements_8cc_source.html">womersley_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="womersley__elements_8cc_source.html#l00409">409</a> of file <a class="el" href="womersley__elements_8cc_source.html">womersley_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, and <a class="el" href="cfortran_8h_source.html#l00572">s</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, and <a class="el" href="cfortran_8h_source.html#l00568">s</a>.</p>
 
 </div>
 </div>
@@ -1930,9 +1930,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Reimplemented in <a class="el" href="classoomph_1_1QWomersleyElement.html#a5a8951b6a947e120821c1a83048975d4">oomph::QWomersleyElement&lt; DIM, NNODE_1D &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="womersley__elements_8h_source.html#l00305">305</a> of file <a class="el" href="womersley__elements_8h_source.html">womersley_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="womersley__elements_8h_source.html#l00301">301</a> of file <a class="el" href="womersley__elements_8h_source.html">womersley_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="Twomersley__elements_8h_source.html#l00100">oomph::TWomersleyElement&lt; DIM, NNODE_1D &gt;::output()</a>, <a class="el" href="womersley__elements_8h_source.html#l00323">oomph::WomersleyEquations&lt; DIM &gt;::output()</a>, and <a class="el" href="womersley__elements_8h_source.html#l00699">oomph::QWomersleyElement&lt; DIM, NNODE_1D &gt;::output()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="Twomersley__elements_8h_source.html#l00096">oomph::TWomersleyElement&lt; DIM, NNODE_1D &gt;::output()</a>, <a class="el" href="womersley__elements_8h_source.html#l00319">oomph::WomersleyEquations&lt; DIM &gt;::output()</a>, and <a class="el" href="womersley__elements_8h_source.html#l00695">oomph::QWomersleyElement&lt; DIM, NNODE_1D &gt;::output()</a>.</p>
 
 </div>
 </div>
@@ -1981,9 +1981,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Reimplemented in <a class="el" href="classoomph_1_1QWomersleyElement.html#a98968ff614577c7796f293cb020831da">oomph::QWomersleyElement&lt; DIM, NNODE_1D &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="womersley__elements_8cc_source.html#l00374">374</a> of file <a class="el" href="womersley__elements_8cc_source.html">womersley_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="womersley__elements_8cc_source.html#l00370">370</a> of file <a class="el" href="womersley__elements_8cc_source.html">womersley_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, and <a class="el" href="cfortran_8h_source.html#l00572">s</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, and <a class="el" href="cfortran_8h_source.html#l00568">s</a>.</p>
 
 </div>
 </div>
@@ -2024,9 +2024,9 @@ template&lt;unsigned DIM&gt; </div>
 <p>Output function: x,y,z_out,0,0,u,0 to allow comparison against full Navier Stokes at n_nplot x n_plot points (2D) </p>
 <p>Output function: x,y,z_out,0,0,u,0 to allow comparison against full Navier Stokes at n_nplot x n_plot points (2D) </p>
 
-<p class="definition">Definition at line <a class="el" href="womersley__elements_8cc_source.html#l00335">335</a> of file <a class="el" href="womersley__elements_8cc_source.html">womersley_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="womersley__elements_8cc_source.html#l00331">331</a> of file <a class="el" href="womersley__elements_8cc_source.html">womersley_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, and <a class="el" href="cfortran_8h_source.html#l00572">s</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, and <a class="el" href="cfortran_8h_source.html#l00568">s</a>.</p>
 
 </div>
 </div>
@@ -2087,9 +2087,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Reimplemented in <a class="el" href="classoomph_1_1QWomersleyElement.html#a2730f3cf9212c0b5cbc22939a376af07">oomph::QWomersleyElement&lt; DIM, NNODE_1D &gt;</a>, and <a class="el" href="classoomph_1_1TWomersleyElement.html#a2ff66a70ff364d1ddfc0ef0a99ad70cb">oomph::TWomersleyElement&lt; DIM, NNODE_1D &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="womersley__elements_8cc_source.html#l00510">510</a> of file <a class="el" href="womersley__elements_8cc_source.html">womersley_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="womersley__elements_8cc_source.html#l00506">506</a> of file <a class="el" href="womersley__elements_8cc_source.html">womersley_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, and <a class="el" href="cfortran_8h_source.html#l00572">s</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, and <a class="el" href="cfortran_8h_source.html#l00568">s</a>.</p>
 
 </div>
 </div>
@@ -2144,11 +2144,11 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Reimplemented in <a class="el" href="classoomph_1_1QWomersleyElement.html#ae15d32d03c1e64811cc29098c85d1e23">oomph::QWomersleyElement&lt; DIM, NNODE_1D &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="womersley__elements_8cc_source.html#l00454">454</a> of file <a class="el" href="womersley__elements_8cc_source.html">womersley_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="womersley__elements_8cc_source.html#l00450">450</a> of file <a class="el" href="womersley__elements_8cc_source.html">womersley_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, and <a class="el" href="cfortran_8h_source.html#l00572">s</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, and <a class="el" href="cfortran_8h_source.html#l00568">s</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="Twomersley__elements_8h_source.html#l00125">oomph::TWomersleyElement&lt; DIM, NNODE_1D &gt;::output_fct()</a>, and <a class="el" href="womersley__elements_8h_source.html#l00724">oomph::QWomersleyElement&lt; DIM, NNODE_1D &gt;::output_fct()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="Twomersley__elements_8h_source.html#l00121">oomph::TWomersleyElement&lt; DIM, NNODE_1D &gt;::output_fct()</a>, and <a class="el" href="womersley__elements_8h_source.html#l00720">oomph::QWomersleyElement&lt; DIM, NNODE_1D &gt;::output_fct()</a>.</p>
 
 </div>
 </div>
@@ -2179,9 +2179,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Product of Reynolds and Strouhal number (=Womersley number) </p>
 
-<p class="definition">Definition at line <a class="el" href="womersley__elements_8h_source.html#l00258">258</a> of file <a class="el" href="womersley__elements_8h_source.html">womersley_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="womersley__elements_8h_source.html#l00254">254</a> of file <a class="el" href="womersley__elements_8h_source.html">womersley_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="womersley__elements_8h_source.html#l00477">oomph::WomersleyEquations&lt; DIM &gt;::ReSt_pt</a>.</p>
+<p class="reference">References <a class="el" href="womersley__elements_8h_source.html#l00473">oomph::WomersleyEquations&lt; DIM &gt;::ReSt_pt</a>.</p>
 
 </div>
 </div>
@@ -2212,9 +2212,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Pointer to product of Reynolds and Strouhal number (=Womersley number) </p>
 
-<p class="definition">Definition at line <a class="el" href="womersley__elements_8h_source.html#l00262">262</a> of file <a class="el" href="womersley__elements_8h_source.html">womersley_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="womersley__elements_8h_source.html#l00258">258</a> of file <a class="el" href="womersley__elements_8h_source.html">womersley_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="womersley__elements_8h_source.html#l00477">oomph::WomersleyEquations&lt; DIM &gt;::ReSt_pt</a>.</p>
+<p class="reference">References <a class="el" href="womersley__elements_8h_source.html#l00473">oomph::WomersleyEquations&lt; DIM &gt;::ReSt_pt</a>.</p>
 
 </div>
 </div>
@@ -2244,9 +2244,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1FiniteElement.html#af94c5a5e22175d5420b33b3b79e46ed3">oomph::FiniteElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="womersley__elements_8cc_source.html#l00304">304</a> of file <a class="el" href="womersley__elements_8cc_source.html">womersley_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="womersley__elements_8cc_source.html#l00300">300</a> of file <a class="el" href="womersley__elements_8cc_source.html">womersley_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8cc_source.html#l04336">oomph::FiniteElement::self_test()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8cc_source.html#l04332">oomph::FiniteElement::self_test()</a>.</p>
 
 </div>
 </div>
@@ -2278,11 +2278,11 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Set pointer to pressure gradient (single-valued <a class="el" href="classoomph_1_1Data.html" title="A class that represents a collection of data; each Data object may contain many different individual ...">Data</a>) and treat it as external data &ndash; this can only be called by the friend class <a class="el" href="classoomph_1_1ImposeFluxForWomersleyElement.html" title="Element to impose volume flux through collection of Womersley elements, in exchange for treating the ...">ImposeFluxForWomersleyElement</a> which imposes a volume flux constraint and trades it for the now unknown pressure gradient <a class="el" href="classoomph_1_1Data.html" title="A class that represents a collection of data; each Data object may contain many different individual ...">Data</a> that is treated as external <a class="el" href="classoomph_1_1Data.html" title="A class that represents a collection of data; each Data object may contain many different individual ...">Data</a> for this element. This slightly convoluted (private/friend) construction is necessary because, counter to practice, the current element adds contributions to the equation that determines the external data. This obviously requires that the <a class="el" href="classoomph_1_1ImposeFluxForWomersleyElement.html" title="Element to impose volume flux through collection of Womersley elements, in exchange for treating the ...">ImposeFluxForWomersleyElement</a> doesn't do the same. We know that it doesn't and therefore we make it a friend that's allowed to collaborate with this element... </p>
 
-<p class="definition">Definition at line <a class="el" href="womersley__elements_8h_source.html#l00500">500</a> of file <a class="el" href="womersley__elements_8h_source.html">womersley_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="womersley__elements_8h_source.html#l00496">496</a> of file <a class="el" href="womersley__elements_8h_source.html">womersley_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8cc_source.html#l00293">oomph::GeneralisedElement::add_external_data()</a>, and <a class="el" href="womersley__elements_8h_source.html#l00474">oomph::WomersleyEquations&lt; DIM &gt;::Pressure_gradient_data_pt</a>.</p>
+<p class="reference">References <a class="el" href="elements_8cc_source.html#l00289">oomph::GeneralisedElement::add_external_data()</a>, and <a class="el" href="womersley__elements_8h_source.html#l00470">oomph::WomersleyEquations&lt; DIM &gt;::Pressure_gradient_data_pt</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="womersley__elements_8h_source.html#l00536">oomph::ImposeFluxForWomersleyElement&lt; DIM &gt;::ImposeFluxForWomersleyElement()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="womersley__elements_8h_source.html#l00532">oomph::ImposeFluxForWomersleyElement&lt; DIM &gt;::ImposeFluxForWomersleyElement()</a>.</p>
 
 </div>
 </div>
@@ -2313,9 +2313,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Read-only access to pointer to pressure gradient. </p>
 
-<p class="definition">Definition at line <a class="el" href="womersley__elements_8h_source.html#l00251">251</a> of file <a class="el" href="womersley__elements_8h_source.html">womersley_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="womersley__elements_8h_source.html#l00247">247</a> of file <a class="el" href="womersley__elements_8h_source.html">womersley_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="womersley__elements_8h_source.html#l00474">oomph::WomersleyEquations&lt; DIM &gt;::Pressure_gradient_data_pt</a>.</p>
+<p class="reference">References <a class="el" href="womersley__elements_8h_source.html#l00470">oomph::WomersleyEquations&lt; DIM &gt;::Pressure_gradient_data_pt</a>.</p>
 
 </div>
 </div>
@@ -2347,9 +2347,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Set pointer to pressure gradient (single-valued <a class="el" href="classoomph_1_1Data.html" title="A class that represents a collection of data; each Data object may contain many different individual ...">Data</a>) </p>
 
-<p class="definition">Definition at line <a class="el" href="womersley__elements_8h_source.html#l00234">234</a> of file <a class="el" href="womersley__elements_8h_source.html">womersley_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="womersley__elements_8h_source.html#l00230">230</a> of file <a class="el" href="womersley__elements_8h_source.html">womersley_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="nodes_8h_source.html#l00448">oomph::Data::nvalue()</a>, and <a class="el" href="womersley__elements_8h_source.html#l00474">oomph::WomersleyEquations&lt; DIM &gt;::Pressure_gradient_data_pt</a>.</p>
+<p class="reference">References <a class="el" href="nodes_8h_source.html#l00444">oomph::Data::nvalue()</a>, and <a class="el" href="womersley__elements_8h_source.html#l00470">oomph::WomersleyEquations&lt; DIM &gt;::Pressure_gradient_data_pt</a>.</p>
 
 </div>
 </div>
@@ -2380,9 +2380,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Return the index at which the unknown value is stored. The default value, 0, is appropriate for single-physics problems, when there is only one variable, the value that satisfies the Womersley equation. In derived multi-physics elements, this function should be overloaded to reflect the chosen storage scheme. Note that these equations require that the unknown is always stored at the same index at each node. </p>
 
-<p class="definition">Definition at line <a class="el" href="womersley__elements_8h_source.html#l00272">272</a> of file <a class="el" href="womersley__elements_8h_source.html">womersley_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="womersley__elements_8h_source.html#l00268">268</a> of file <a class="el" href="womersley__elements_8h_source.html">womersley_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="womersley__elements_8h_source.html#l00277">oomph::WomersleyEquations&lt; DIM &gt;::du_dt_womersley()</a>, <a class="el" href="womersley__elements_8h_source.html#l00364">oomph::WomersleyEquations&lt; DIM &gt;::get_flux()</a>, and <a class="el" href="womersley__elements_8h_source.html#l00414">oomph::WomersleyEquations&lt; DIM &gt;::interpolated_u_womersley()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="womersley__elements_8h_source.html#l00273">oomph::WomersleyEquations&lt; DIM &gt;::du_dt_womersley()</a>, <a class="el" href="womersley__elements_8h_source.html#l00360">oomph::WomersleyEquations&lt; DIM &gt;::get_flux()</a>, and <a class="el" href="womersley__elements_8h_source.html#l00410">oomph::WomersleyEquations&lt; DIM &gt;::interpolated_u_womersley()</a>.</p>
 
 </div>
 </div>
@@ -2411,7 +2411,7 @@ template&lt;unsigned DIMM&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="womersley__elements_8h_source.html#l00485">485</a> of file <a class="el" href="womersley__elements_8h_source.html">womersley_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="womersley__elements_8h_source.html#l00481">481</a> of file <a class="el" href="womersley__elements_8h_source.html">womersley_elements.h</a>.</p>
 
 </div>
 </div>
@@ -2441,9 +2441,9 @@ template&lt;unsigned DIM&gt; </div>
 <p>Static default value for the Womersley number. </p>
 <p>Default Womersley number. </p>
 
-<p class="definition">Definition at line <a class="el" href="womersley__elements_8h_source.html#l00480">480</a> of file <a class="el" href="womersley__elements_8h_source.html">womersley_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="womersley__elements_8h_source.html#l00476">476</a> of file <a class="el" href="womersley__elements_8h_source.html">womersley_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="womersley__elements_8h_source.html#l00213">oomph::WomersleyEquations&lt; DIM &gt;::WomersleyEquations()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="womersley__elements_8h_source.html#l00209">oomph::WomersleyEquations&lt; DIM &gt;::WomersleyEquations()</a>.</p>
 
 </div>
 </div>
@@ -2471,9 +2471,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Pointer to pressure gradient <a class="el" href="classoomph_1_1Data.html" title="A class that represents a collection of data; each Data object may contain many different individual ...">Data</a> (single value <a class="el" href="classoomph_1_1Data.html" title="A class that represents a collection of data; each Data object may contain many different individual ...">Data</a> item) </p>
 
-<p class="definition">Definition at line <a class="el" href="womersley__elements_8h_source.html#l00474">474</a> of file <a class="el" href="womersley__elements_8h_source.html">womersley_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="womersley__elements_8h_source.html#l00470">470</a> of file <a class="el" href="womersley__elements_8h_source.html">womersley_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="womersley__elements_8h_source.html#l00500">oomph::WomersleyEquations&lt; DIM &gt;::set_pressure_gradient_and_add_as_external_data()</a>, and <a class="el" href="womersley__elements_8h_source.html#l00234">oomph::WomersleyEquations&lt; DIM &gt;::set_pressure_gradient_pt()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="womersley__elements_8h_source.html#l00496">oomph::WomersleyEquations&lt; DIM &gt;::set_pressure_gradient_and_add_as_external_data()</a>, and <a class="el" href="womersley__elements_8h_source.html#l00230">oomph::WomersleyEquations&lt; DIM &gt;::set_pressure_gradient_pt()</a>.</p>
 
 </div>
 </div>
@@ -2501,9 +2501,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Pointer to global Reynolds number x Strouhal number (=Womersley) </p>
 
-<p class="definition">Definition at line <a class="el" href="womersley__elements_8h_source.html#l00477">477</a> of file <a class="el" href="womersley__elements_8h_source.html">womersley_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="womersley__elements_8h_source.html#l00473">473</a> of file <a class="el" href="womersley__elements_8h_source.html">womersley_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="womersley__elements_8h_source.html#l00258">oomph::WomersleyEquations&lt; DIM &gt;::re_st()</a>, <a class="el" href="womersley__elements_8h_source.html#l00262">oomph::WomersleyEquations&lt; DIM &gt;::re_st_pt()</a>, and <a class="el" href="womersley__elements_8h_source.html#l00213">oomph::WomersleyEquations&lt; DIM &gt;::WomersleyEquations()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="womersley__elements_8h_source.html#l00254">oomph::WomersleyEquations&lt; DIM &gt;::re_st()</a>, <a class="el" href="womersley__elements_8h_source.html#l00258">oomph::WomersleyEquations&lt; DIM &gt;::re_st_pt()</a>, and <a class="el" href="womersley__elements_8h_source.html#l00209">oomph::WomersleyEquations&lt; DIM &gt;::WomersleyEquations()</a>.</p>
 
 </div>
 </div>
@@ -2539,7 +2539,7 @@ template&lt;unsigned DIM&gt; </div>
     <footer>
       <div class="container">
         <div class="text-muted" style="float:right;">Generated by <a href="http://www.doxygen.org/index.html">
-          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Tue Jul 6 2021 23:00:04
+          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Fri Jul 9 2021 20:54:51
         </div>
       </div>
     </footer>

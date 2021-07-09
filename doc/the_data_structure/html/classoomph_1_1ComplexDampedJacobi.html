@@ -480,7 +480,7 @@ class oomph::ComplexDampedJacobi&lt; MATRIX &gt;</h3>
 
 <p>Damped Jacobi "solver" templated by matrix type. The "solver" exists in many different incarnations: It's an <a class="el" href="classoomph_1_1IterativeLinearSolver.html" title="Base class for all linear iterative solvers. This merely defines standard interfaces for linear itera...">IterativeLinearSolver</a>, and a <a class="el" href="classoomph_1_1Smoother.html">Smoother</a>, all of which use the same basic iteration. </p>
 
-<p class="definition">Definition at line <a class="el" href="complex__smoother_8h_source.html#l00259">259</a> of file <a class="el" href="complex__smoother_8h_source.html">complex_smoother.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="complex__smoother_8h_source.html#l00284">284</a> of file <a class="el" href="complex__smoother_8h_source.html">complex_smoother.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a5c76dd5e5fac0246eced85a66df6c7ee"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5c76dd5e5fac0246eced85a66df6c7ee">&#9670;&nbsp;</a></span>ComplexDampedJacobi() <span class="overload">[1/2]</span></h2>
@@ -510,7 +510,7 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Constructor (empty) </p>
 
-<p class="definition">Definition at line <a class="el" href="complex__smoother_8h_source.html#l00265">265</a> of file <a class="el" href="complex__smoother_8h_source.html">complex_smoother.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="complex__smoother_8h_source.html#l00290">290</a> of file <a class="el" href="complex__smoother_8h_source.html">complex_smoother.h</a>.</p>
 
 </div>
 </div>
@@ -541,9 +541,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Empty destructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="complex__smoother_8h_source.html#l00273">273</a> of file <a class="el" href="complex__smoother_8h_source.html">complex_smoother.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="complex__smoother_8h_source.html#l00298">298</a> of file <a class="el" href="complex__smoother_8h_source.html">complex_smoother.h</a>.</p>
 
-<p class="reference">References <a class="el" href="complex__smoother_8h_source.html#l00280">oomph::ComplexDampedJacobi&lt; MATRIX &gt;::clean_up_memory()</a>.</p>
+<p class="reference">References <a class="el" href="complex__smoother_8h_source.html#l00305">oomph::ComplexDampedJacobi&lt; MATRIX &gt;::clean_up_memory()</a>.</p>
 
 </div>
 </div>
@@ -575,9 +575,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Broken copy constructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="complex__smoother_8h_source.html#l00306">306</a> of file <a class="el" href="complex__smoother_8h_source.html">complex_smoother.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="complex__smoother_8h_source.html#l00331">331</a> of file <a class="el" href="complex__smoother_8h_source.html">complex_smoother.h</a>.</p>
 
-<p class="reference">References <a class="el" href="oomph__utilities_8cc_source.html#l00218">oomph::BrokenCopy::broken_copy()</a>.</p>
+<p class="reference">References <a class="el" href="oomph__utilities_8cc_source.html#l00214">oomph::BrokenCopy::broken_copy()</a>.</p>
 
 </div>
 </div>
@@ -621,11 +621,11 @@ template&lt;typename MATRIX &gt; </div>
 <p>Function to calculate the value of Omega by passing in the value of k and h [see Elman et al. "A multigrid method enhanced by
 Krylov subspace iteration for discrete Helmholtz equations", p.1303]. </p>
 
-<p class="definition">Definition at line <a class="el" href="complex__smoother_8h_source.html#l00320">320</a> of file <a class="el" href="complex__smoother_8h_source.html">complex_smoother.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="complex__smoother_8h_source.html#l00345">345</a> of file <a class="el" href="complex__smoother_8h_source.html">complex_smoother.h</a>.</p>
 
-<p class="reference">References <a class="el" href="complex__smoother_8h_source.html#l00378">oomph::ComplexDampedJacobi&lt; MATRIX &gt;::omega()</a>, <a class="el" href="complex__smoother_8h_source.html#l00512">oomph::ComplexDampedJacobi&lt; MATRIX &gt;::Omega</a>, <a class="el" href="oomph__utilities_8h_source.html#l00163">oomph::MathematicalConstants::Pi</a>, and <a class="el" href="iterative__linear__solver_8h_source.html#l00116">oomph::IterativeLinearSolver::tolerance()</a>.</p>
+<p class="reference">References <a class="el" href="complex__smoother_8h_source.html#l00403">oomph::ComplexDampedJacobi&lt; MATRIX &gt;::omega()</a>, <a class="el" href="complex__smoother_8h_source.html#l00537">oomph::ComplexDampedJacobi&lt; MATRIX &gt;::Omega</a>, <a class="el" href="oomph__utilities_8h_source.html#l00159">oomph::MathematicalConstants::Pi</a>, and <a class="el" href="iterative__linear__solver_8h_source.html#l00112">oomph::IterativeLinearSolver::tolerance()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="helmholtz__geometric__multigrid_8h_source.html#l02543">oomph::HelmholtzMGPreconditioner&lt; DIM &gt;::setup_smoothers()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="helmholtz__geometric__multigrid_8h_source.html#l02568">oomph::HelmholtzMGPreconditioner&lt; DIM &gt;::setup_smoothers()</a>.</p>
 
 </div>
 </div>
@@ -658,11 +658,11 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1LinearSolver.html#a9d66f3262e80ca06a365f98216afd85f">oomph::LinearSolver</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="complex__smoother_8h_source.html#l00280">280</a> of file <a class="el" href="complex__smoother_8h_source.html">complex_smoother.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="complex__smoother_8h_source.html#l00305">305</a> of file <a class="el" href="complex__smoother_8h_source.html">complex_smoother.h</a>.</p>
 
-<p class="reference">References <a class="el" href="complex__smoother_8h_source.html#l00491">oomph::ComplexDampedJacobi&lt; MATRIX &gt;::Matrix_can_be_deleted</a>, <a class="el" href="complex__smoother_8h_source.html#l00497">oomph::ComplexDampedJacobi&lt; MATRIX &gt;::Matrix_imag_pt</a>, and <a class="el" href="complex__smoother_8h_source.html#l00494">oomph::ComplexDampedJacobi&lt; MATRIX &gt;::Matrix_real_pt</a>.</p>
+<p class="reference">References <a class="el" href="complex__smoother_8h_source.html#l00516">oomph::ComplexDampedJacobi&lt; MATRIX &gt;::Matrix_can_be_deleted</a>, <a class="el" href="complex__smoother_8h_source.html#l00522">oomph::ComplexDampedJacobi&lt; MATRIX &gt;::Matrix_imag_pt</a>, and <a class="el" href="complex__smoother_8h_source.html#l00519">oomph::ComplexDampedJacobi&lt; MATRIX &gt;::Matrix_real_pt</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="complex__smoother_8h_source.html#l00273">oomph::ComplexDampedJacobi&lt; MATRIX &gt;::~ComplexDampedJacobi()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="complex__smoother_8h_source.html#l00298">oomph::ComplexDampedJacobi&lt; MATRIX &gt;::~ComplexDampedJacobi()</a>.</p>
 
 </div>
 </div>
@@ -696,9 +696,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Implements <a class="el" href="classoomph_1_1HelmholtzSmoother.html#a7c46336fdc3b386b0bab6111a3c55d44">oomph::HelmholtzSmoother</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="complex__smoother_8h_source.html#l00385">385</a> of file <a class="el" href="complex__smoother_8h_source.html">complex_smoother.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="complex__smoother_8h_source.html#l00410">410</a> of file <a class="el" href="complex__smoother_8h_source.html">complex_smoother.h</a>.</p>
 
-<p class="reference">References <a class="el" href="matrices_8cc_source.html#l03442">oomph::CRDoubleMatrix::diagonal_entries()</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="complex__smoother_8h_source.html#l00491">oomph::ComplexDampedJacobi&lt; MATRIX &gt;::Matrix_can_be_deleted</a>, <a class="el" href="complex__smoother_8h_source.html#l00503">oomph::ComplexDampedJacobi&lt; MATRIX &gt;::Matrix_diagonal_imag</a>, <a class="el" href="complex__smoother_8h_source.html#l00506">oomph::ComplexDampedJacobi&lt; MATRIX &gt;::Matrix_diagonal_inv_sq</a>, <a class="el" href="complex__smoother_8h_source.html#l00500">oomph::ComplexDampedJacobi&lt; MATRIX &gt;::Matrix_diagonal_real</a>, <a class="el" href="complex__smoother_8h_source.html#l00497">oomph::ComplexDampedJacobi&lt; MATRIX &gt;::Matrix_imag_pt</a>, <a class="el" href="complex__smoother_8h_source.html#l00494">oomph::ComplexDampedJacobi&lt; MATRIX &gt;::Matrix_real_pt</a>, and <a class="el" href="matrices_8h_source.html#l00992">oomph::CRDoubleMatrix::nrow()</a>.</p>
+<p class="reference">References <a class="el" href="matrices_8cc_source.html#l03438">oomph::CRDoubleMatrix::diagonal_entries()</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="complex__smoother_8h_source.html#l00516">oomph::ComplexDampedJacobi&lt; MATRIX &gt;::Matrix_can_be_deleted</a>, <a class="el" href="complex__smoother_8h_source.html#l00528">oomph::ComplexDampedJacobi&lt; MATRIX &gt;::Matrix_diagonal_imag</a>, <a class="el" href="complex__smoother_8h_source.html#l00531">oomph::ComplexDampedJacobi&lt; MATRIX &gt;::Matrix_diagonal_inv_sq</a>, <a class="el" href="complex__smoother_8h_source.html#l00525">oomph::ComplexDampedJacobi&lt; MATRIX &gt;::Matrix_diagonal_real</a>, <a class="el" href="complex__smoother_8h_source.html#l00522">oomph::ComplexDampedJacobi&lt; MATRIX &gt;::Matrix_imag_pt</a>, <a class="el" href="complex__smoother_8h_source.html#l00519">oomph::ComplexDampedJacobi&lt; MATRIX &gt;::Matrix_real_pt</a>, and <a class="el" href="matrices_8h_source.html#l00988">oomph::CRDoubleMatrix::nrow()</a>.</p>
 
 </div>
 </div>
@@ -742,9 +742,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Implements <a class="el" href="classoomph_1_1HelmholtzSmoother.html#a8ec748270df3e1199f19ef267d5b8e85">oomph::HelmholtzSmoother</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="complex__smoother_8h_source.html#l00458">458</a> of file <a class="el" href="complex__smoother_8h_source.html">complex_smoother.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="complex__smoother_8h_source.html#l00483">483</a> of file <a class="el" href="complex__smoother_8h_source.html">complex_smoother.h</a>.</p>
 
-<p class="reference">References <a class="el" href="complex__smoother_8h_source.html#l00521">oomph::ComplexDampedJacobi&lt; MATRIX &gt;::complex_solve_helper()</a>, and <a class="el" href="complex__smoother_8h_source.html#l00155">oomph::HelmholtzSmoother::Use_as_smoother</a>.</p>
+<p class="reference">References <a class="el" href="complex__smoother_8h_source.html#l00546">oomph::ComplexDampedJacobi&lt; MATRIX &gt;::complex_solve_helper()</a>, and <a class="el" href="complex__smoother_8h_source.html#l00180">oomph::HelmholtzSmoother::Use_as_smoother</a>.</p>
 
 </div>
 </div>
@@ -786,11 +786,11 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>This is where the actual work is done. </p>
 
-<p class="definition">Definition at line <a class="el" href="complex__smoother_8h_source.html#l00521">521</a> of file <a class="el" href="complex__smoother_8h_source.html">complex_smoother.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="complex__smoother_8h_source.html#l00546">546</a> of file <a class="el" href="complex__smoother_8h_source.html">complex_smoother.h</a>.</p>
 
-<p class="reference">References <a class="el" href="double__vector_8cc_source.html#l00040">oomph::DoubleVector::build()</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="oomph__utilities_8cc_source.html#l00314">oomph::BlackBoxFDNewtonSolver::Max_iter</a>, <a class="el" href="double__vector_8cc_source.html#l00867">oomph::DoubleVector::norm()</a>, <a class="el" href="oomph__definitions_8cc_source.html#l00326">oomph::oomph_info</a>, <a class="el" href="oomph__definitions_8cc_source.html#l00293">oomph::Global_string_for_annotation::string()</a>, and <a class="el" href="oomph__utilities_8cc_source.html#l01642">oomph::TimingHelpers::timer()</a>.</p>
+<p class="reference">References <a class="el" href="double__vector_8cc_source.html#l00036">oomph::DoubleVector::build()</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="oomph__utilities_8cc_source.html#l00310">oomph::BlackBoxFDNewtonSolver::Max_iter</a>, <a class="el" href="double__vector_8cc_source.html#l00863">oomph::DoubleVector::norm()</a>, <a class="el" href="oomph__definitions_8cc_source.html#l00322">oomph::oomph_info</a>, <a class="el" href="oomph__definitions_8cc_source.html#l00289">oomph::Global_string_for_annotation::string()</a>, and <a class="el" href="oomph__utilities_8cc_source.html#l01638">oomph::TimingHelpers::timer()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="complex__smoother_8h_source.html#l00458">oomph::ComplexDampedJacobi&lt; MATRIX &gt;::complex_smoother_solve()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="complex__smoother_8h_source.html#l00483">oomph::ComplexDampedJacobi&lt; MATRIX &gt;::complex_smoother_solve()</a>.</p>
 
 </div>
 </div>
@@ -823,9 +823,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Implements <a class="el" href="classoomph_1_1IterativeLinearSolver.html#a5fe7f7b5e4847fdbd4f95d3875ec7a46">oomph::IterativeLinearSolver</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="complex__smoother_8h_source.html#l00478">478</a> of file <a class="el" href="complex__smoother_8h_source.html">complex_smoother.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="complex__smoother_8h_source.html#l00503">503</a> of file <a class="el" href="complex__smoother_8h_source.html">complex_smoother.h</a>.</p>
 
-<p class="reference">References <a class="el" href="complex__smoother_8h_source.html#l00509">oomph::ComplexDampedJacobi&lt; MATRIX &gt;::Iterations</a>.</p>
+<p class="reference">References <a class="el" href="complex__smoother_8h_source.html#l00534">oomph::ComplexDampedJacobi&lt; MATRIX &gt;::Iterations</a>.</p>
 
 </div>
 </div>
@@ -856,11 +856,11 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Get access to the value of Omega (lvalue) </p>
 
-<p class="definition">Definition at line <a class="el" href="complex__smoother_8h_source.html#l00378">378</a> of file <a class="el" href="complex__smoother_8h_source.html">complex_smoother.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="complex__smoother_8h_source.html#l00403">403</a> of file <a class="el" href="complex__smoother_8h_source.html">complex_smoother.h</a>.</p>
 
-<p class="reference">References <a class="el" href="complex__smoother_8h_source.html#l00512">oomph::ComplexDampedJacobi&lt; MATRIX &gt;::Omega</a>.</p>
+<p class="reference">References <a class="el" href="complex__smoother_8h_source.html#l00537">oomph::ComplexDampedJacobi&lt; MATRIX &gt;::Omega</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="complex__smoother_8h_source.html#l00320">oomph::ComplexDampedJacobi&lt; MATRIX &gt;::calculate_omega()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="complex__smoother_8h_source.html#l00345">oomph::ComplexDampedJacobi&lt; MATRIX &gt;::calculate_omega()</a>.</p>
 
 </div>
 </div>
@@ -892,9 +892,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Broken assignment operator. </p>
 
-<p class="definition">Definition at line <a class="el" href="complex__smoother_8h_source.html#l00312">312</a> of file <a class="el" href="complex__smoother_8h_source.html">complex_smoother.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="complex__smoother_8h_source.html#l00337">337</a> of file <a class="el" href="complex__smoother_8h_source.html">complex_smoother.h</a>.</p>
 
-<p class="reference">References <a class="el" href="oomph__utilities_8cc_source.html#l00201">oomph::BrokenCopy::broken_assign()</a>.</p>
+<p class="reference">References <a class="el" href="oomph__utilities_8cc_source.html#l00197">oomph::BrokenCopy::broken_assign()</a>.</p>
 
 </div>
 </div>
@@ -938,9 +938,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Implements <a class="el" href="classoomph_1_1LinearSolver.html#a15ce22542b74ed1826ea485edacbeb6e">oomph::LinearSolver</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="complex__smoother_8h_source.html#l00472">472</a> of file <a class="el" href="complex__smoother_8h_source.html">complex_smoother.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="complex__smoother_8h_source.html#l00497">497</a> of file <a class="el" href="complex__smoother_8h_source.html">complex_smoother.h</a>.</p>
 
-<p class="reference">References <a class="el" href="oomph__utilities_8cc_source.html#l00201">oomph::BrokenCopy::broken_assign()</a>.</p>
+<p class="reference">References <a class="el" href="oomph__utilities_8cc_source.html#l00197">oomph::BrokenCopy::broken_assign()</a>.</p>
 
 </div>
 </div>
@@ -969,9 +969,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Number of iterations taken. </p>
 
-<p class="definition">Definition at line <a class="el" href="complex__smoother_8h_source.html#l00509">509</a> of file <a class="el" href="complex__smoother_8h_source.html">complex_smoother.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="complex__smoother_8h_source.html#l00534">534</a> of file <a class="el" href="complex__smoother_8h_source.html">complex_smoother.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="complex__smoother_8h_source.html#l00478">oomph::ComplexDampedJacobi&lt; MATRIX &gt;::iterations()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="complex__smoother_8h_source.html#l00503">oomph::ComplexDampedJacobi&lt; MATRIX &gt;::iterations()</a>.</p>
 
 </div>
 </div>
@@ -999,9 +999,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Boolean flag to indicate if the matrices pointed to by Matrix_real_pt and Matrix_imag_pt can be deleted. </p>
 
-<p class="definition">Definition at line <a class="el" href="complex__smoother_8h_source.html#l00491">491</a> of file <a class="el" href="complex__smoother_8h_source.html">complex_smoother.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="complex__smoother_8h_source.html#l00516">516</a> of file <a class="el" href="complex__smoother_8h_source.html">complex_smoother.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="complex__smoother_8h_source.html#l00280">oomph::ComplexDampedJacobi&lt; MATRIX &gt;::clean_up_memory()</a>, and <a class="el" href="complex__smoother_8h_source.html#l00385">oomph::ComplexDampedJacobi&lt; MATRIX &gt;::complex_smoother_setup()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="complex__smoother_8h_source.html#l00305">oomph::ComplexDampedJacobi&lt; MATRIX &gt;::clean_up_memory()</a>, and <a class="el" href="complex__smoother_8h_source.html#l00410">oomph::ComplexDampedJacobi&lt; MATRIX &gt;::complex_smoother_setup()</a>.</p>
 
 </div>
 </div>
@@ -1029,9 +1029,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p><a class="el" href="classoomph_1_1Vector.html">Vector</a> containing the diagonal entries of A_c (imag(A)) </p>
 
-<p class="definition">Definition at line <a class="el" href="complex__smoother_8h_source.html#l00503">503</a> of file <a class="el" href="complex__smoother_8h_source.html">complex_smoother.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="complex__smoother_8h_source.html#l00528">528</a> of file <a class="el" href="complex__smoother_8h_source.html">complex_smoother.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="complex__smoother_8h_source.html#l00385">oomph::ComplexDampedJacobi&lt; MATRIX &gt;::complex_smoother_setup()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="complex__smoother_8h_source.html#l00410">oomph::ComplexDampedJacobi&lt; MATRIX &gt;::complex_smoother_setup()</a>.</p>
 
 </div>
 </div>
@@ -1059,9 +1059,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p><a class="el" href="classoomph_1_1Vector.html">Vector</a> whose j'th entry is given by 1/(A_r(j,j)^2 + A_c(j,j)^2) </p>
 
-<p class="definition">Definition at line <a class="el" href="complex__smoother_8h_source.html#l00506">506</a> of file <a class="el" href="complex__smoother_8h_source.html">complex_smoother.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="complex__smoother_8h_source.html#l00531">531</a> of file <a class="el" href="complex__smoother_8h_source.html">complex_smoother.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="complex__smoother_8h_source.html#l00385">oomph::ComplexDampedJacobi&lt; MATRIX &gt;::complex_smoother_setup()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="complex__smoother_8h_source.html#l00410">oomph::ComplexDampedJacobi&lt; MATRIX &gt;::complex_smoother_setup()</a>.</p>
 
 </div>
 </div>
@@ -1089,9 +1089,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p><a class="el" href="classoomph_1_1Vector.html">Vector</a> containing the diagonal entries of A_r (real(A)) </p>
 
-<p class="definition">Definition at line <a class="el" href="complex__smoother_8h_source.html#l00500">500</a> of file <a class="el" href="complex__smoother_8h_source.html">complex_smoother.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="complex__smoother_8h_source.html#l00525">525</a> of file <a class="el" href="complex__smoother_8h_source.html">complex_smoother.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="complex__smoother_8h_source.html#l00385">oomph::ComplexDampedJacobi&lt; MATRIX &gt;::complex_smoother_setup()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="complex__smoother_8h_source.html#l00410">oomph::ComplexDampedJacobi&lt; MATRIX &gt;::complex_smoother_setup()</a>.</p>
 
 </div>
 </div>
@@ -1119,9 +1119,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Pointer to the real part of the system matrix. </p>
 
-<p class="definition">Definition at line <a class="el" href="complex__smoother_8h_source.html#l00497">497</a> of file <a class="el" href="complex__smoother_8h_source.html">complex_smoother.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="complex__smoother_8h_source.html#l00522">522</a> of file <a class="el" href="complex__smoother_8h_source.html">complex_smoother.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="complex__smoother_8h_source.html#l00280">oomph::ComplexDampedJacobi&lt; MATRIX &gt;::clean_up_memory()</a>, and <a class="el" href="complex__smoother_8h_source.html#l00385">oomph::ComplexDampedJacobi&lt; MATRIX &gt;::complex_smoother_setup()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="complex__smoother_8h_source.html#l00305">oomph::ComplexDampedJacobi&lt; MATRIX &gt;::clean_up_memory()</a>, and <a class="el" href="complex__smoother_8h_source.html#l00410">oomph::ComplexDampedJacobi&lt; MATRIX &gt;::complex_smoother_setup()</a>.</p>
 
 </div>
 </div>
@@ -1149,9 +1149,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Pointer to the real part of the system matrix. </p>
 
-<p class="definition">Definition at line <a class="el" href="complex__smoother_8h_source.html#l00494">494</a> of file <a class="el" href="complex__smoother_8h_source.html">complex_smoother.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="complex__smoother_8h_source.html#l00519">519</a> of file <a class="el" href="complex__smoother_8h_source.html">complex_smoother.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="complex__smoother_8h_source.html#l00280">oomph::ComplexDampedJacobi&lt; MATRIX &gt;::clean_up_memory()</a>, and <a class="el" href="complex__smoother_8h_source.html#l00385">oomph::ComplexDampedJacobi&lt; MATRIX &gt;::complex_smoother_setup()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="complex__smoother_8h_source.html#l00305">oomph::ComplexDampedJacobi&lt; MATRIX &gt;::clean_up_memory()</a>, and <a class="el" href="complex__smoother_8h_source.html#l00410">oomph::ComplexDampedJacobi&lt; MATRIX &gt;::complex_smoother_setup()</a>.</p>
 
 </div>
 </div>
@@ -1179,9 +1179,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Damping factor. </p>
 
-<p class="definition">Definition at line <a class="el" href="complex__smoother_8h_source.html#l00512">512</a> of file <a class="el" href="complex__smoother_8h_source.html">complex_smoother.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="complex__smoother_8h_source.html#l00537">537</a> of file <a class="el" href="complex__smoother_8h_source.html">complex_smoother.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="complex__smoother_8h_source.html#l00320">oomph::ComplexDampedJacobi&lt; MATRIX &gt;::calculate_omega()</a>, and <a class="el" href="complex__smoother_8h_source.html#l00378">oomph::ComplexDampedJacobi&lt; MATRIX &gt;::omega()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="complex__smoother_8h_source.html#l00345">oomph::ComplexDampedJacobi&lt; MATRIX &gt;::calculate_omega()</a>, and <a class="el" href="complex__smoother_8h_source.html#l00403">oomph::ComplexDampedJacobi&lt; MATRIX &gt;::omega()</a>.</p>
 
 </div>
 </div>
@@ -1216,7 +1216,7 @@ template&lt;typename MATRIX &gt; </div>
     <footer>
       <div class="container">
         <div class="text-muted" style="float:right;">Generated by <a href="http://www.doxygen.org/index.html">
-          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Tue Jul 6 2021 22:55:59
+          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Fri Jul 9 2021 20:51:17
         </div>
       </div>
     </footer>

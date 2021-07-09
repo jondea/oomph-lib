@@ -1228,7 +1228,7 @@ class oomph::MacroElementNodeUpdateElement&lt; ELEMENT &gt;</h3>
 <p>MacroElementNodeUpdate elements are elements that can not only be updated via their <a class="el" href="classoomph_1_1MacroElement.html">MacroElement</a> representation (in princple any <a class="el" href="classoomph_1_1FiniteElement.html" title="A general Finite Element class.">FiniteElement</a> could do that...) but also allows the geometric <a class="el" href="classoomph_1_1Data.html" title="A class that represents a collection of data; each Data object may contain many different individual ...">Data</a> contained in the GeomObjects that affect the MacroElement-based node update operations to be unknowns in the overall <a class="el" href="classoomph_1_1Problem.html" title="The Problem class.">Problem</a>.</p>
 <p>The element wraps around the ELEMENT specified by the template parameter and computes the derivatives of the residual vector with respect to the geometric <a class="el" href="classoomph_1_1Data.html" title="A class that represents a collection of data; each Data object may contain many different individual ...">Data</a> (needed in the setup of the element's Jacobian matrix) by finite differencing. Otherwise the element behaves exactly like the templace element. </p>
 
-<p class="definition">Definition at line <a class="el" href="macro__element__node__update__element_8h_source.html#l00275">275</a> of file <a class="el" href="macro__element__node__update__element_8h_source.html">macro_element_node_update_element.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="macro__element__node__update__element_8h_source.html#l00271">271</a> of file <a class="el" href="macro__element__node__update__element_8h_source.html">macro_element_node_update_element.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab49b2589181fe58687ae0d628d02ed4c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab49b2589181fe58687ae0d628d02ed4c">&#9670;&nbsp;</a></span>MacroElementNodeUpdateElement() <span class="overload">[1/3]</span></h2>
@@ -1257,7 +1257,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Constructor: Call constructor of underlying element. </p>
 
-<p class="definition">Definition at line <a class="el" href="macro__element__node__update__element_8h_source.html#l00283">283</a> of file <a class="el" href="macro__element__node__update__element_8h_source.html">macro_element_node_update_element.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="macro__element__node__update__element_8h_source.html#l00279">279</a> of file <a class="el" href="macro__element__node__update__element_8h_source.html">macro_element_node_update_element.h</a>.</p>
 
 </div>
 </div>
@@ -1299,7 +1299,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Constructor used for face elements. </p>
 
-<p class="definition">Definition at line <a class="el" href="macro__element__node__update__element_8h_source.html#l00289">289</a> of file <a class="el" href="macro__element__node__update__element_8h_source.html">macro_element_node_update_element.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="macro__element__node__update__element_8h_source.html#l00285">285</a> of file <a class="el" href="macro__element__node__update__element_8h_source.html">macro_element_node_update_element.h</a>.</p>
 
 </div>
 </div>
@@ -1331,9 +1331,9 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Broken copy constructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="macro__element__node__update__element_8h_source.html#l00297">297</a> of file <a class="el" href="macro__element__node__update__element_8h_source.html">macro_element_node_update_element.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="macro__element__node__update__element_8h_source.html#l00293">293</a> of file <a class="el" href="macro__element__node__update__element_8h_source.html">macro_element_node_update_element.h</a>.</p>
 
-<p class="reference">References <a class="el" href="oomph__utilities_8cc_source.html#l00218">oomph::BrokenCopy::broken_copy()</a>.</p>
+<p class="reference">References <a class="el" href="oomph__utilities_8cc_source.html#l00214">oomph::BrokenCopy::broken_copy()</a>.</p>
 
 </div>
 </div>
@@ -1364,7 +1364,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Empty destructor to clean up allocated memory. </p>
 
-<p class="definition">Definition at line <a class="el" href="macro__element__node__update__element_8h_source.html#l00303">303</a> of file <a class="el" href="macro__element__node__update__element_8h_source.html">macro_element_node_update_element.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="macro__element__node__update__element_8h_source.html#l00299">299</a> of file <a class="el" href="macro__element__node__update__element_8h_source.html">macro_element_node_update_element.h</a>.</p>
 
 </div>
 </div>
@@ -1397,9 +1397,9 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Rebuild after unrefinement: Reset the node update information for all nodes so that the nodes get updated by this element. If we don't do that, some nodes might still want to be updated by elements that no longer exist which leads to the most wonderful seg fault... Afterwards, call the template element's own rebuild_from_son() function (if it's a <a class="el" href="classoomph_1_1RefineableElement.html">RefineableElement</a>) </p>
 
-<p class="definition">Definition at line <a class="el" href="macro__element__node__update__element_8h_source.html#l00347">347</a> of file <a class="el" href="macro__element__node__update__element_8h_source.html">macro_element_node_update_element.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="macro__element__node__update__element_8h_source.html#l00343">343</a> of file <a class="el" href="macro__element__node__update__element_8h_source.html">macro_element_node_update_element.h</a>.</p>
 
-<p class="reference">References <a class="el" href="macro__element__node__update__element_8h_source.html#l00254">oomph::MacroElementNodeUpdateElementBase::Geom_object_pt</a>, <a class="el" href="elements_8h_source.html#l01820">oomph::FiniteElement::local_coordinate_of_node()</a>, <a class="el" href="elements_8h_source.html#l02163">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l02126">oomph::FiniteElement::node_pt()</a>, and <a class="el" href="macro__element__node__update__element_8h_source.html#l00315">oomph::MacroElementNodeUpdateElement&lt; ELEMENT &gt;::set_node_update_info()</a>.</p>
+<p class="reference">References <a class="el" href="macro__element__node__update__element_8h_source.html#l00250">oomph::MacroElementNodeUpdateElementBase::Geom_object_pt</a>, <a class="el" href="elements_8h_source.html#l01816">oomph::FiniteElement::local_coordinate_of_node()</a>, <a class="el" href="elements_8h_source.html#l02159">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l02122">oomph::FiniteElement::node_pt()</a>, and <a class="el" href="macro__element__node__update__element_8h_source.html#l00311">oomph::MacroElementNodeUpdateElement&lt; ELEMENT &gt;::set_node_update_info()</a>.</p>
 
 </div>
 </div>
@@ -1434,11 +1434,11 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Implements <a class="el" href="classoomph_1_1MacroElementNodeUpdateElementBase.html#aa2408d8463e8cecc2ad12a93e10390b1">oomph::MacroElementNodeUpdateElementBase</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="macro__element__node__update__element_8h_source.html#l00315">315</a> of file <a class="el" href="macro__element__node__update__element_8h_source.html">macro_element_node_update_element.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="macro__element__node__update__element_8h_source.html#l00311">311</a> of file <a class="el" href="macro__element__node__update__element_8h_source.html">macro_element_node_update_element.h</a>.</p>
 
-<p class="reference">References <a class="el" href="macro__element__node__update__element_8h_source.html#l00243">oomph::MacroElementNodeUpdateElementBase::geom_object_pt()</a>, <a class="el" href="macro__element__node__update__element_8h_source.html#l00254">oomph::MacroElementNodeUpdateElementBase::Geom_object_pt</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="elements_8h_source.html#l01820">oomph::FiniteElement::local_coordinate_of_node()</a>, <a class="el" href="macro__element__node__update__element_8h_source.html#l00239">oomph::MacroElementNodeUpdateElementBase::ngeom_object()</a>, <a class="el" href="elements_8h_source.html#l02163">oomph::FiniteElement::nnode()</a>, and <a class="el" href="elements_8h_source.html#l02126">oomph::FiniteElement::node_pt()</a>.</p>
+<p class="reference">References <a class="el" href="macro__element__node__update__element_8h_source.html#l00239">oomph::MacroElementNodeUpdateElementBase::geom_object_pt()</a>, <a class="el" href="macro__element__node__update__element_8h_source.html#l00250">oomph::MacroElementNodeUpdateElementBase::Geom_object_pt</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="elements_8h_source.html#l01816">oomph::FiniteElement::local_coordinate_of_node()</a>, <a class="el" href="macro__element__node__update__element_8h_source.html#l00235">oomph::MacroElementNodeUpdateElementBase::ngeom_object()</a>, <a class="el" href="elements_8h_source.html#l02159">oomph::FiniteElement::nnode()</a>, and <a class="el" href="elements_8h_source.html#l02122">oomph::FiniteElement::node_pt()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="macro__element__node__update__element_8h_source.html#l00347">oomph::MacroElementNodeUpdateElement&lt; ELEMENT &gt;::rebuild_from_sons()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="macro__element__node__update__element_8h_source.html#l00343">oomph::MacroElementNodeUpdateElement&lt; ELEMENT &gt;::rebuild_from_sons()</a>.</p>
 
 </div>
 </div>
@@ -1473,7 +1473,7 @@ template&lt;class ELEMENT &gt; </div>
     <footer>
       <div class="container">
         <div class="text-muted" style="float:right;">Generated by <a href="http://www.doxygen.org/index.html">
-          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Tue Jul 6 2021 22:57:51
+          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Fri Jul 9 2021 20:52:57
         </div>
       </div>
     </footer>

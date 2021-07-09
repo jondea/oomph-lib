@@ -205,7 +205,7 @@ class oomph::HermiteQuadMesh&lt; ELEMENT &gt;</h3>
 
 <p>A two dimensional Hermite bicubic element quadrilateral mesh for a topologically rectangular domain. The geometry of the problem must be prescribed using the <a class="el" href="classoomph_1_1TopologicallyRectangularDomain.html" title="Topologically Rectangular Domain - a domain dexcribing a topologically rectangular problem - primaril...">TopologicallyRectangularDomain</a>. Non uniform node spacing can be prescribed using a function pointer. </p>
 
-<p class="definition">Definition at line <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html#l00058">58</a> of file <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html">hermite_element_quad_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html#l00054">54</a> of file <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html">hermite_element_quad_mesh.template.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="abebf4806b300591f976398404ed0ef3f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abebf4806b300591f976398404ed0ef3f">&#9670;&nbsp;</a></span>MeshSpacingFnPtr</h2>
@@ -224,7 +224,7 @@ template&lt;class ELEMENT &gt; </div>
 <p>Mesh Spacing Function Pointer - an optional function pointer to prescibe the node spacing in a non-uniformly spaced mesh - takes the position of a node (in macro element coordinates) in the uniformly spaced mesh and return the position in the non-uniformly spaced mesh <br  />
  </p>
 
-<p class="definition">Definition at line <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html#l00069">69</a> of file <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html">hermite_element_quad_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html#l00065">65</a> of file <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html">hermite_element_quad_mesh.template.h</a>.</p>
 
 </div>
 </div>
@@ -285,9 +285,9 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Mesh Constructor (for a uniformly spaced mesh). Takes the following arguments : nx : number of elements in x direction; ny : number of elements in y direction; domain : topologically rectangular domain; periodic_in_x : flag specifying if the mesh is periodic in the x direction (default = false); time_stepper_pt : pointer to the time stepper (default = no timestepper);. </p>
 
-<p class="definition">Definition at line <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html#l00081">81</a> of file <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html">hermite_element_quad_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html#l00077">77</a> of file <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html">hermite_element_quad_mesh.template.h</a>.</p>
 
-<p class="reference">References <a class="el" href="hermite__element__quad__mesh_8template_8cc_source.html#l00607">oomph::HermiteQuadMesh&lt; ELEMENT &gt;::build_mesh()</a>, <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html#l00245">oomph::HermiteQuadMesh&lt; ELEMENT &gt;::Domain_pt</a>, <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html#l00237">oomph::HermiteQuadMesh&lt; ELEMENT &gt;::Nelement</a>, <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html#l00248">oomph::HermiteQuadMesh&lt; ELEMENT &gt;::Node_spacing_fn</a>, and <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html#l00241">oomph::HermiteQuadMesh&lt; ELEMENT &gt;::Xperiodic</a>.</p>
+<p class="reference">References <a class="el" href="hermite__element__quad__mesh_8template_8cc_source.html#l00603">oomph::HermiteQuadMesh&lt; ELEMENT &gt;::build_mesh()</a>, <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html#l00241">oomph::HermiteQuadMesh&lt; ELEMENT &gt;::Domain_pt</a>, <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html#l00233">oomph::HermiteQuadMesh&lt; ELEMENT &gt;::Nelement</a>, <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html#l00244">oomph::HermiteQuadMesh&lt; ELEMENT &gt;::Node_spacing_fn</a>, and <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html#l00237">oomph::HermiteQuadMesh&lt; ELEMENT &gt;::Xperiodic</a>.</p>
 
 </div>
 </div>
@@ -354,9 +354,9 @@ template&lt;class ELEMENT &gt; </div>
 <p>Mesh Constructor (for a non-uniformly spaced mesh). Takes the following arguments : nx : number of elements in x direction; ny : number of elements in y direction; domain : topologically rectangular domain; spacing_fn : spacing function prescribing a non-uniformly spaced mesh periodic_in_x : flag specifying if the mesh is periodic in the x direction (default = false); time_stepper_pt : pointer to the time stepper (default = notimestepper);. </p>
 <p>build the mesh</p>
 
-<p class="definition">Definition at line <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html#l00120">120</a> of file <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html">hermite_element_quad_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html#l00116">116</a> of file <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html">hermite_element_quad_mesh.template.h</a>.</p>
 
-<p class="reference">References <a class="el" href="hermite__element__quad__mesh_8template_8cc_source.html#l00607">oomph::HermiteQuadMesh&lt; ELEMENT &gt;::build_mesh()</a>, <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html#l00245">oomph::HermiteQuadMesh&lt; ELEMENT &gt;::Domain_pt</a>, <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html#l00237">oomph::HermiteQuadMesh&lt; ELEMENT &gt;::Nelement</a>, <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html#l00248">oomph::HermiteQuadMesh&lt; ELEMENT &gt;::Node_spacing_fn</a>, and <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html#l00241">oomph::HermiteQuadMesh&lt; ELEMENT &gt;::Xperiodic</a>.</p>
+<p class="reference">References <a class="el" href="hermite__element__quad__mesh_8template_8cc_source.html#l00603">oomph::HermiteQuadMesh&lt; ELEMENT &gt;::build_mesh()</a>, <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html#l00241">oomph::HermiteQuadMesh&lt; ELEMENT &gt;::Domain_pt</a>, <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html#l00233">oomph::HermiteQuadMesh&lt; ELEMENT &gt;::Nelement</a>, <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html#l00244">oomph::HermiteQuadMesh&lt; ELEMENT &gt;::Node_spacing_fn</a>, and <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html#l00237">oomph::HermiteQuadMesh&lt; ELEMENT &gt;::Xperiodic</a>.</p>
 
 </div>
 </div>
@@ -387,7 +387,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Destructor - does nothing - handled in mesh base class. </p>
 
-<p class="definition">Definition at line <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html#l00149">149</a> of file <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html">hermite_element_quad_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html#l00145">145</a> of file <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html">hermite_element_quad_mesh.template.h</a>.</p>
 
 </div>
 </div>
@@ -420,9 +420,9 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Generic mesh construction function to build the mesh. </p>
 
-<p class="definition">Definition at line <a class="el" href="hermite__element__quad__mesh_8template_8cc_source.html#l00607">607</a> of file <a class="el" href="hermite__element__quad__mesh_8template_8cc_source.html">hermite_element_quad_mesh.template.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hermite__element__quad__mesh_8template_8cc_source.html#l00603">603</a> of file <a class="el" href="hermite__element__quad__mesh_8template_8cc_source.html">hermite_element_quad_mesh.template.cc</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html#l00081">oomph::HermiteQuadMesh&lt; ELEMENT &gt;::HermiteQuadMesh()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html#l00077">oomph::HermiteQuadMesh&lt; ELEMENT &gt;::HermiteQuadMesh()</a>.</p>
 
 </div>
 </div>
@@ -470,7 +470,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>computes the generalised position of the node at position (node_num_x, node_num_y) in the macro element coordinate scheme. index 0 of m_gen : 0 - m_i 1 - dm_i/ds_0 2 - dm_i/ds_1 3 - d2m_i/ds_0ds_1 (where i is index 1 of m_gen) </p>
 
-<p class="definition">Definition at line <a class="el" href="hermite__element__quad__mesh_8template_8cc_source.html#l00210">210</a> of file <a class="el" href="hermite__element__quad__mesh_8template_8cc_source.html">hermite_element_quad_mesh.template.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hermite__element__quad__mesh_8template_8cc_source.html#l00206">206</a> of file <a class="el" href="hermite__element__quad__mesh_8template_8cc_source.html">hermite_element_quad_mesh.template.cc</a>.</p>
 
 </div>
 </div>
@@ -518,9 +518,9 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>returns the macro element position of the node that is the x-th node along from the LHS and the y-th node up from the lower edge </p>
 
-<p class="definition">Definition at line <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html#l00163">163</a> of file <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html">hermite_element_quad_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html#l00159">159</a> of file <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html">hermite_element_quad_mesh.template.h</a>.</p>
 
-<p class="reference">References <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html#l00237">oomph::HermiteQuadMesh&lt; ELEMENT &gt;::Nelement</a>, and <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html#l00248">oomph::HermiteQuadMesh&lt; ELEMENT &gt;::Node_spacing_fn</a>.</p>
+<p class="reference">References <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html#l00233">oomph::HermiteQuadMesh&lt; ELEMENT &gt;::Nelement</a>, and <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html#l00244">oomph::HermiteQuadMesh&lt; ELEMENT &gt;::Node_spacing_fn</a>.</p>
 
 </div>
 </div>
@@ -552,9 +552,9 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Access function for number of elements in mesh in each dimension. </p>
 
-<p class="definition">Definition at line <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html#l00153">153</a> of file <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html">hermite_element_quad_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html#l00149">149</a> of file <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html">hermite_element_quad_mesh.template.h</a>.</p>
 
-<p class="reference">References <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html#l00237">oomph::HermiteQuadMesh&lt; ELEMENT &gt;::Nelement</a>.</p>
+<p class="reference">References <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html#l00233">oomph::HermiteQuadMesh&lt; ELEMENT &gt;::Nelement</a>.</p>
 
 </div>
 </div>
@@ -602,7 +602,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>sets the generalised position of the node (i.e. - x_i, dx_i/ds_0, dx_i/ds_1 &amp; d2x_i/ds_0ds_1 for i = 1,2). Takes the x,y coordinates of the node from which its position can be determined. Also sets coordinates on boundary vector for the node to be the generalised position of the node in macro element coordinates </p>
 
-<p class="definition">Definition at line <a class="el" href="hermite__element__quad__mesh_8template_8cc_source.html#l00125">125</a> of file <a class="el" href="hermite__element__quad__mesh_8template_8cc_source.html">hermite_element_quad_mesh.template.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hermite__element__quad__mesh_8template_8cc_source.html#l00121">121</a> of file <a class="el" href="hermite__element__quad__mesh_8template_8cc_source.html">hermite_element_quad_mesh.template.cc</a>.</p>
 
 </div>
 </div>
@@ -650,7 +650,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>sets the generalised position of the node (i.e. - x_i, dx_i/ds_0, dx_i/ds_1 &amp; d2x_i/ds_0ds_1 for i = 1,2). Takes the x,y coordinates of the node from which its position can be determined. </p>
 
-<p class="definition">Definition at line <a class="el" href="hermite__element__quad__mesh_8template_8cc_source.html#l00054">54</a> of file <a class="el" href="hermite__element__quad__mesh_8template_8cc_source.html">hermite_element_quad_mesh.template.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hermite__element__quad__mesh_8template_8cc_source.html#l00050">50</a> of file <a class="el" href="hermite__element__quad__mesh_8template_8cc_source.html">hermite_element_quad_mesh.template.cc</a>.</p>
 
 </div>
 </div>
@@ -680,7 +680,7 @@ template&lt;class ELEMENT &gt; </div>
 </div><div class="memdoc">
 <p>Setup lookup schemes which establish whic elements are located next to mesh's boundaries (wrapper to suppress doc). Specific version for <a class="el" href="classoomph_1_1HermiteQuadMesh.html" title="A two dimensional Hermite bicubic element quadrilateral mesh for a topologically rectangular domain....">HermiteQuadMesh</a> to ensure that the order of the elements in Boundary_element_pt matches the actual order along the boundary. This is required when hijacking the BiharmonicElement to apply the BiharmonicFluidBoundaryElement in BiharmonicFluidProblem::impose_traction_free_edge(...) </p>
 
-<p class="definition">Definition at line <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html#l00219">219</a> of file <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html">hermite_element_quad_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html#l00215">215</a> of file <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html">hermite_element_quad_mesh.template.h</a>.</p>
 
 </div>
 </div>
@@ -712,7 +712,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Setup lookup schemes which establish which elements are located next to which boundaries (Doc to outfile if it's open). Specific version for <a class="el" href="classoomph_1_1HermiteQuadMesh.html" title="A two dimensional Hermite bicubic element quadrilateral mesh for a topologically rectangular domain....">HermiteQuadMesh</a> to ensure that the order of the elements in Boundary_element_pt matches the actual order along the boundary. This is required when hijacking the BiharmonicElement to apply the BiharmonicFluidBoundaryElement in BiharmonicFluidProblem::impose_traction_free_edge(...) </p>
 
-<p class="definition">Definition at line <a class="el" href="hermite__element__quad__mesh_8template_8cc_source.html#l01263">1263</a> of file <a class="el" href="hermite__element__quad__mesh_8template_8cc_source.html">hermite_element_quad_mesh.template.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hermite__element__quad__mesh_8template_8cc_source.html#l01259">1259</a> of file <a class="el" href="hermite__element__quad__mesh_8template_8cc_source.html">hermite_element_quad_mesh.template.cc</a>.</p>
 
 </div>
 </div>
@@ -741,9 +741,9 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Pointer to the topologically rectangular domain which prescribes the problem domain. </p>
 
-<p class="definition">Definition at line <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html#l00245">245</a> of file <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html">hermite_element_quad_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html#l00241">241</a> of file <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html">hermite_element_quad_mesh.template.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html#l00081">oomph::HermiteQuadMesh&lt; ELEMENT &gt;::HermiteQuadMesh()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html#l00077">oomph::HermiteQuadMesh&lt; ELEMENT &gt;::HermiteQuadMesh()</a>.</p>
 
 </div>
 </div>
@@ -771,9 +771,9 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>number of elements in each coordinate direction </p>
 
-<p class="definition">Definition at line <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html#l00237">237</a> of file <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html">hermite_element_quad_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html#l00233">233</a> of file <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html">hermite_element_quad_mesh.template.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html#l00081">oomph::HermiteQuadMesh&lt; ELEMENT &gt;::HermiteQuadMesh()</a>, <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html#l00163">oomph::HermiteQuadMesh&lt; ELEMENT &gt;::macro_coordinate_position()</a>, and <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html#l00153">oomph::HermiteQuadMesh&lt; ELEMENT &gt;::nelement_in_dim()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html#l00077">oomph::HermiteQuadMesh&lt; ELEMENT &gt;::HermiteQuadMesh()</a>, <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html#l00159">oomph::HermiteQuadMesh&lt; ELEMENT &gt;::macro_coordinate_position()</a>, and <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html#l00149">oomph::HermiteQuadMesh&lt; ELEMENT &gt;::nelement_in_dim()</a>.</p>
 
 </div>
 </div>
@@ -801,9 +801,9 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>non uniform mesh spacing function pointer </p>
 
-<p class="definition">Definition at line <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html#l00248">248</a> of file <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html">hermite_element_quad_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html#l00244">244</a> of file <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html">hermite_element_quad_mesh.template.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html#l00081">oomph::HermiteQuadMesh&lt; ELEMENT &gt;::HermiteQuadMesh()</a>, and <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html#l00163">oomph::HermiteQuadMesh&lt; ELEMENT &gt;::macro_coordinate_position()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html#l00077">oomph::HermiteQuadMesh&lt; ELEMENT &gt;::HermiteQuadMesh()</a>, and <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html#l00159">oomph::HermiteQuadMesh&lt; ELEMENT &gt;::macro_coordinate_position()</a>.</p>
 
 </div>
 </div>
@@ -832,9 +832,9 @@ template&lt;class ELEMENT &gt; </div>
 <p>boolean variable to determine whether the mesh is periodic in the <br  />
  x-direction </p>
 
-<p class="definition">Definition at line <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html#l00241">241</a> of file <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html">hermite_element_quad_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html#l00237">237</a> of file <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html">hermite_element_quad_mesh.template.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html#l00081">oomph::HermiteQuadMesh&lt; ELEMENT &gt;::HermiteQuadMesh()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="hermite__element__quad__mesh_8template_8h_source.html#l00077">oomph::HermiteQuadMesh&lt; ELEMENT &gt;::HermiteQuadMesh()</a>.</p>
 
 </div>
 </div>
@@ -870,7 +870,7 @@ template&lt;class ELEMENT &gt; </div>
     <footer>
       <div class="container">
         <div class="text-muted" style="float:right;">Generated by <a href="http://www.doxygen.org/index.html">
-          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Tue Jul 6 2021 22:51:04
+          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Fri Jul 9 2021 20:46:49
         </div>
       </div>
     </footer>

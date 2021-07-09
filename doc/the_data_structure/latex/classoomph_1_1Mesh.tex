@@ -458,7 +458,7 @@ The main components of a \mbox{\hyperlink{classoomph_1_1Mesh}{Mesh}} are\+:
 \item pointers to its boundary Nodes 
 \end{DoxyItemize}
 
-Definition at line 74 of file mesh.\+h.
+Definition at line 70 of file mesh.\+h.
 
 
 
@@ -475,7 +475,7 @@ Typedef for function pointer to function that computes steady exact solution.
 
 
 
-Definition at line 236 of file mesh.\+h.
+Definition at line 232 of file mesh.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1Mesh_a4fccd0b52d2384b0d4f423118284882d}\label{classoomph_1_1Mesh_a4fccd0b52d2384b0d4f423118284882d}} 
 \index{oomph::Mesh@{oomph::Mesh}!UnsteadyExactSolutionFctPt@{UnsteadyExactSolutionFctPt}}
@@ -489,7 +489,7 @@ Typedef for function pointer to function that computes unsteady exact solution.
 
 
 
-Definition at line 241 of file mesh.\+h.
+Definition at line 237 of file mesh.\+h.
 
 
 
@@ -506,7 +506,7 @@ Default constructor.
 
 
 
-Definition at line 249 of file mesh.\+h.
+Definition at line 245 of file mesh.\+h.
 
 
 
@@ -524,7 +524,7 @@ Constructor builds combined mesh from the meshes specified. Note\+: This simply 
 
 
 
-Definition at line 270 of file mesh.\+h.
+Definition at line 266 of file mesh.\+h.
 
 
 
@@ -542,7 +542,7 @@ Broken copy constructor.
 
 
 
-Definition at line 402 of file mesh.\+h.
+Definition at line 398 of file mesh.\+h.
 
 
 
@@ -560,7 +560,7 @@ Virtual Destructor to clean up all memory.
 
 
 
-Definition at line 650 of file mesh.\+cc.
+Definition at line 646 of file mesh.\+cc.
 
 
 
@@ -581,7 +581,7 @@ Add a (pointer to) a node to the b-\/th boundary.
 
 Add the node node\+\_\+pt to the b-\/th boundary of the mesh This function also sets the boundary information in the \mbox{\hyperlink{classoomph_1_1Node}{Node}} itself 
 
-Definition at line 246 of file mesh.\+cc.
+Definition at line 242 of file mesh.\+cc.
 
 
 
@@ -603,7 +603,7 @@ Add a (pointer to) an element to the mesh.
 
 
 
-Definition at line 605 of file mesh.\+h.
+Definition at line 601 of file mesh.\+h.
 
 
 
@@ -625,7 +625,7 @@ Add external halo element whose non-\/halo counterpart is held on processor p to
 
 
 
-Definition at line 2184 of file mesh.\+h.
+Definition at line 2180 of file mesh.\+h.
 
 
 
@@ -647,7 +647,7 @@ Add external halo node whose non-\/halo (external) counterpart is held on proces
 
 
 
-Definition at line 2290 of file mesh.\+h.
+Definition at line 2286 of file mesh.\+h.
 
 
 
@@ -669,7 +669,7 @@ Add external haloed element whose non-\/halo counterpart is held on processor p 
 
 Add external haloed element whose non-\/halo counterpart is held on processor p to the storage scheme for external haloed elements. If the element is already in the storage scheme then return its index. 
 
-Definition at line 9450 of file mesh.\+cc.
+Definition at line 9446 of file mesh.\+cc.
 
 
 
@@ -691,7 +691,7 @@ Add external haloed node whose halo (external) counterpart is held on processor 
 
 Add external haloed node whose halo (external) counterpart is held on processor p to the storage scheme for external haloed nodes. If the node is already in the storage scheme then return its index. 
 
-Definition at line 9491 of file mesh.\+cc.
+Definition at line 9487 of file mesh.\+cc.
 
 
 
@@ -713,7 +713,7 @@ Add halo node whose non-\/halo counterpart is held on processor p to the storage
 
 
 
-Definition at line 1843 of file mesh.\+h.
+Definition at line 1839 of file mesh.\+h.
 
 
 
@@ -735,7 +735,7 @@ Add haloed node whose halo counterpart is held on processor p to the storage sch
 
 
 
-Definition at line 1954 of file mesh.\+h.
+Definition at line 1950 of file mesh.\+h.
 
 
 
@@ -757,7 +757,7 @@ Add a (pointer to a) node to the mesh.
 
 
 
-Definition at line 602 of file mesh.\+h.
+Definition at line 598 of file mesh.\+h.
 
 
 
@@ -779,7 +779,7 @@ Add root halo element whose non-\/halo counterpart is held on processor p to thi
 
 
 
-Definition at line 1809 of file mesh.\+h.
+Definition at line 1805 of file mesh.\+h.
 
 
 
@@ -801,7 +801,7 @@ Add root haloed element whose non-\/halo counterpart is held on processor p to t
 
 
 
-Definition at line 1912 of file mesh.\+h.
+Definition at line 1908 of file mesh.\+h.
 
 
 
@@ -823,7 +823,7 @@ Add shared node whose counterpart is held on processor p to the storage scheme f
 
 
 
-Definition at line 2063 of file mesh.\+h.
+Definition at line 2059 of file mesh.\+h.
 
 
 
@@ -845,7 +845,7 @@ Assign the global equation numbers in the \mbox{\hyperlink{classoomph_1_1Data}{D
 
 Assign (global) equation numbers to the nodes. 
 
-Definition at line 676 of file mesh.\+cc.
+Definition at line 672 of file mesh.\+cc.
 
 
 
@@ -867,7 +867,7 @@ Assign initial values for an impulsive start.
 
 Assign the initial values for an impulsive start, which is acheived by looping over all data in the mesh (internal element data and data stored at nodes) and setting the calling the \mbox{\hyperlink{classoomph_1_1Mesh_ab1ceceaadc7114773f5a70cb52e67081}{assign\+\_\+initial\+\_\+values\+\_\+impulsive()}} function for each data\textquotesingle{}s timestepper 
 
-Definition at line 2386 of file mesh.\+cc.
+Definition at line 2382 of file mesh.\+cc.
 
 
 
@@ -889,7 +889,7 @@ Assign the local equation numbers in all elements If the boolean argument is tru
 
 Assign local equation numbers in all elements. 
 
-Definition at line 764 of file mesh.\+cc.
+Definition at line 760 of file mesh.\+cc.
 
 
 
@@ -911,7 +911,7 @@ Indicate whether the i-\/th boundary has an intrinsic coordinate.
 
 
 
-Definition at line 565 of file mesh.\+h.
+Definition at line 561 of file mesh.\+h.
 
 
 
@@ -933,7 +933,7 @@ Return pointer to e-\/th finite element on boundary b.
 
 
 
-Definition at line 814 of file mesh.\+h.
+Definition at line 810 of file mesh.\+h.
 
 
 
@@ -955,7 +955,7 @@ Return pointer to node n on boundary b.
 
 
 
-Definition at line 497 of file mesh.\+h.
+Definition at line 493 of file mesh.\+h.
 
 
 
@@ -977,7 +977,7 @@ Return pointer to node n on boundary b.
 
 
 
-Definition at line 501 of file mesh.\+h.
+Definition at line 497 of file mesh.\+h.
 
 
 
@@ -996,7 +996,7 @@ Constuct a \mbox{\hyperlink{classoomph_1_1Mesh}{Mesh}} of F\+A\+C\+E\+\_\+\+E\+L
 
 
 
-Definition at line 639 of file mesh.\+h.
+Definition at line 635 of file mesh.\+h.
 
 
 
@@ -1014,7 +1014,7 @@ Calculate predictions for all \mbox{\hyperlink{classoomph_1_1Data}{Data}} and po
 
 Calculate predictions for all \mbox{\hyperlink{classoomph_1_1Data}{Data}} and positions associated with the mesh. This is usually only used for adaptive time-\/stepping when the comparison between a predicted value and the actual value is usually used to determine the change in step size. Again the loop is over all data in the mesh and individual timestepper functions for each data value are called. 
 
-Definition at line 2461 of file mesh.\+cc.
+Definition at line 2457 of file mesh.\+cc.
 
 
 
@@ -1036,7 +1036,7 @@ Check for repeated nodes within a given spatial tolerance. Return (0/1) for (pas
 
 
 
-Definition at line 737 of file mesh.\+h.
+Definition at line 733 of file mesh.\+h.
 
 
 
@@ -1058,7 +1058,7 @@ Check halo and shared schemes on the mesh.
 
 Check the halo/haloed/shared node/element schemes on the \mbox{\hyperlink{classoomph_1_1Mesh}{Mesh}}. 
 
-Definition at line 6914 of file mesh.\+cc.
+Definition at line 6910 of file mesh.\+cc.
 
 
 
@@ -1080,7 +1080,7 @@ Check for inverted elements and report outcome.
 
 in boolean variable. This visits all elements at their integration points and checks if the Jacobian of the mapping between local and global coordinates is positive -- using the same test that would be carried out (but only in P\+A\+R\+A\+N\+O\+ID mode) during the assembly of the elements\textquotesingle{} Jacobian matrices. 
 
-Definition at line 727 of file mesh.\+h.
+Definition at line 723 of file mesh.\+h.
 
 
 
@@ -1098,7 +1098,7 @@ Check for inverted elements and report outcome in boolean variable. This visits 
 
 Check for inverted elements and report outcome in boolean variable. This visits all elements at their integration points and checks if the Jacobian of the mapping between local and global coordinates is positive -- using the same test that would be carried out (but only in P\+A\+R\+A\+N\+O\+ID mode) during the assembly of the elements\textquotesingle{} Jacobian matrices. Inverted elements are output in inverted\+\_\+element\+\_\+file (if the stream is open). 
 
-Definition at line 864 of file mesh.\+cc.
+Definition at line 860 of file mesh.\+cc.
 
 
 
@@ -1120,7 +1120,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1TreeBasedRefineableMeshBase_a0f1
 
 
 
-Definition at line 1653 of file mesh.\+h.
+Definition at line 1649 of file mesh.\+h.
 
 
 
@@ -1142,7 +1142,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1TreeBasedRefineableMeshBase_aec7
 
 
 
-Definition at line 3347 of file mesh.\+cc.
+Definition at line 3343 of file mesh.\+cc.
 
 
 
@@ -1160,7 +1160,7 @@ Referenced by oomph\+::\+Tree\+Based\+Refineable\+Mesh\+Base\+::classify\+\_\+ha
 
 Read-\/only access fct to communicator (Null if mesh is not distributed, i.\+e. if we don\textquotesingle{}t have mpi). 
 
-Definition at line 1552 of file mesh.\+h.
+Definition at line 1548 of file mesh.\+h.
 
 
 
@@ -1182,7 +1182,7 @@ Plot error when compared against a given time-\/dependent exact solution. Also r
 
 
 
-Definition at line 1194 of file mesh.\+h.
+Definition at line 1190 of file mesh.\+h.
 
 
 
@@ -1200,7 +1200,7 @@ Plot error when compared against a given time-\/dependent exact solution. Also r
 
 
 
-Definition at line 1239 of file mesh.\+h.
+Definition at line 1235 of file mesh.\+h.
 
 
 
@@ -1218,7 +1218,7 @@ Returns the norm of the error and that of the exact solution.
 
 
 
-Definition at line 1436 of file mesh.\+h.
+Definition at line 1432 of file mesh.\+h.
 
 
 
@@ -1236,7 +1236,7 @@ Returns the norm of the error and that of the exact solution. Version with vecto
 
 
 
-Definition at line 1477 of file mesh.\+h.
+Definition at line 1473 of file mesh.\+h.
 
 
 
@@ -1254,7 +1254,7 @@ Plot error when compared against a given time-\/depdendent exact solution. Also 
 
 
 
-Definition at line 1153 of file mesh.\+h.
+Definition at line 1149 of file mesh.\+h.
 
 
 
@@ -1272,7 +1272,7 @@ Plot error when compared against a given time-\/depdendent exact solution. Also 
 
 
 
-Definition at line 1376 of file mesh.\+h.
+Definition at line 1372 of file mesh.\+h.
 
 
 
@@ -1290,7 +1290,7 @@ Plot error when compared against a given exact solution. Also returns the norm o
 
 
 
-Definition at line 1111 of file mesh.\+h.
+Definition at line 1107 of file mesh.\+h.
 
 
 
@@ -1308,7 +1308,7 @@ Plot error when compared against a given time-\/depdendent exact solution. Also 
 
 
 
-Definition at line 1311 of file mesh.\+h.
+Definition at line 1307 of file mesh.\+h.
 
 
 
@@ -1326,7 +1326,7 @@ Compute norm of solution by summing contributions of compute\+\_\+norm(...) for 
 
 
 
-Definition at line 1039 of file mesh.\+h.
+Definition at line 1035 of file mesh.\+h.
 
 
 
@@ -1344,7 +1344,7 @@ Compute norm of solution by summing contributions of compute\+\_\+norm(...) for 
 
 
 
-Definition at line 1070 of file mesh.\+h.
+Definition at line 1066 of file mesh.\+h.
 
 
 
@@ -1358,7 +1358,7 @@ References oomph\+::\+Generalised\+Element\+::compute\+\_\+norm(), e, Element\+\
 
 A function that upgrades an ordinary node to a boundary node. All pointers to the node from the mesh\textquotesingle{}s elements are found. and replaced by pointers to the new boundary node. If the node is present in the mesh\textquotesingle{}s list of nodes, that pointer is also replaced. Finally, the pointer argument node\+\_\+pt addresses the new node on return from the function. We shouldn\textquotesingle{}t ever really use this, but it does make life that bit easier for the lazy mesh writer. 
 
-Definition at line 2654 of file mesh.\+cc.
+Definition at line 2650 of file mesh.\+cc.
 
 
 
@@ -1376,7 +1376,7 @@ A function that upgrades an ordinary node to a boundary node We shouldn\textquot
 
 As convert\+\_\+to\+\_\+boundary\+\_\+node but with a vector of pre-\/\char`\"{}dynamic cast\char`\"{}ed pointers passed in. If this function is being called often then creating this vector and passing it in explicitly each time can give a large speed up. 
 
-Definition at line 2680 of file mesh.\+cc.
+Definition at line 2676 of file mesh.\+cc.
 
 
 
@@ -1394,7 +1394,7 @@ Referenced by oomph\+::\+Channel\+With\+Leaflet\+Mesh$<$ E\+L\+E\+M\+E\+N\+T $>$
 
 Replace existing boundary node lookup schemes with new schemes created using the boundary data stored in the nodes. 
 
-Definition at line 526 of file mesh.\+h.
+Definition at line 522 of file mesh.\+h.
 
 
 
@@ -1416,7 +1416,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1TriangleMesh_a1b5df9c44997b7d193
 
 
 
-Definition at line 2408 of file mesh.\+h.
+Definition at line 2404 of file mesh.\+h.
 
 
 
@@ -1434,7 +1434,7 @@ Wipe the storage for all externally-\/based elements.
 
 Wipe the storage for all externally-\/based elements and delete halos. 
 
-Definition at line 9179 of file mesh.\+cc.
+Definition at line 9175 of file mesh.\+cc.
 
 
 
@@ -1456,7 +1456,7 @@ Function to describe the dofs of the \mbox{\hyperlink{classoomph_1_1Mesh}{Mesh}}
 
 
 
-Definition at line 710 of file mesh.\+cc.
+Definition at line 706 of file mesh.\+cc.
 
 
 
@@ -1478,7 +1478,7 @@ Function to describe the local dofs of the elements. The ostream specifies the o
 
 
 
-Definition at line 745 of file mesh.\+cc.
+Definition at line 741 of file mesh.\+cc.
 
 
 
@@ -1500,7 +1500,7 @@ Function to disable halo element output.
 
 
 
-Definition at line 1979 of file mesh.\+h.
+Definition at line 1975 of file mesh.\+h.
 
 
 
@@ -1518,7 +1518,7 @@ Function to suppress resizing of halo nodes -- optmisation but call it at your o
 
 
 
-Definition at line 1965 of file mesh.\+h.
+Definition at line 1961 of file mesh.\+h.
 
 
 
@@ -1536,7 +1536,7 @@ Distribute the problem Add to vector of pointers to deleted elements.
 
 
 
-Definition at line 1588 of file mesh.\+h.
+Definition at line 1584 of file mesh.\+h.
 
 
 
@@ -1558,7 +1558,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1MacroElementNodeUpdateMesh_a7cb2
 
 
 
-Definition at line 4983 of file mesh.\+cc.
+Definition at line 4979 of file mesh.\+cc.
 
 
 
@@ -1581,7 +1581,7 @@ Output boundary coordinates on boundary b -- template argument specifies the bul
 
 
 
-Definition at line 316 of file mesh.\+h.
+Definition at line 312 of file mesh.\+h.
 
 
 
@@ -1599,7 +1599,7 @@ Doc the mesh distribution, to be processed with tecplot macros.
 
 Doc the mesh distribution. 
 
-Definition at line 6486 of file mesh.\+cc.
+Definition at line 6482 of file mesh.\+cc.
 
 
 
@@ -1621,7 +1621,7 @@ Doc shared nodes.
 
 
 
-Definition at line 2003 of file mesh.\+h.
+Definition at line 1999 of file mesh.\+h.
 
 
 
@@ -1639,7 +1639,7 @@ Does the double pointer correspond to any mesh data.
 
 Return true if the pointer corresponds to any data stored in the mesh and false if not 
 
-Definition at line 2564 of file mesh.\+cc.
+Definition at line 2560 of file mesh.\+cc.
 
 
 
@@ -1661,7 +1661,7 @@ Dump the data in the mesh into a file for restart.
 
 
 
-Definition at line 889 of file mesh.\+h.
+Definition at line 885 of file mesh.\+h.
 
 
 
@@ -1679,7 +1679,7 @@ Dump the data in the mesh into a file for restart.
 
 Dump function for the mesh class. Loop over all nodes and elements and dump them 
 
-Definition at line 1089 of file mesh.\+cc.
+Definition at line 1085 of file mesh.\+cc.
 
 
 
@@ -1701,7 +1701,7 @@ Return reference to the \mbox{\hyperlink{classoomph_1_1Vector}{Vector}} of eleme
 
 
 
-Definition at line 473 of file mesh.\+h.
+Definition at line 469 of file mesh.\+h.
 
 
 
@@ -1719,7 +1719,7 @@ Return reference to the \mbox{\hyperlink{classoomph_1_1Vector}{Vector}} of eleme
 
 
 
-Definition at line 470 of file mesh.\+h.
+Definition at line 466 of file mesh.\+h.
 
 
 
@@ -1741,7 +1741,7 @@ Return pointer to element e.
 
 
 
-Definition at line 462 of file mesh.\+h.
+Definition at line 458 of file mesh.\+h.
 
 
 
@@ -1763,7 +1763,7 @@ Return pointer to element e (const version)
 
 
 
-Definition at line 466 of file mesh.\+h.
+Definition at line 462 of file mesh.\+h.
 
 
 
@@ -1781,7 +1781,7 @@ Return number of elemental dimension in mesh.
 
 Get the number of elemental dimension in the mesh from the first element of the mesh. If M\+PI is on then also do some consistency checks between processors. {\bfseries{Careful\+:}} Involves M\+PI Broadcasts and must therefore be called on all processors! 
 
-Definition at line 8902 of file mesh.\+cc.
+Definition at line 8898 of file mesh.\+cc.
 
 
 
@@ -1803,7 +1803,7 @@ Function to enable halo element output.
 
 
 
-Definition at line 1985 of file mesh.\+h.
+Definition at line 1981 of file mesh.\+h.
 
 
 
@@ -1821,7 +1821,7 @@ Function to (re-\/)enable resizing of halo nodes -- this returns things to the d
 
 
 
-Definition at line 1973 of file mesh.\+h.
+Definition at line 1969 of file mesh.\+h.
 
 
 
@@ -1839,7 +1839,7 @@ Access fct to the e-\/th external halo element in this \mbox{\hyperlink{classoom
 
 
 
-Definition at line 2176 of file mesh.\+h.
+Definition at line 2172 of file mesh.\+h.
 
 
 
@@ -1861,7 +1861,7 @@ Access fct to vector of external halo node in this \mbox{\hyperlink{classoomph_1
 
 
 
-Definition at line 2306 of file mesh.\+h.
+Definition at line 2302 of file mesh.\+h.
 
 
 
@@ -1879,7 +1879,7 @@ Access fct to the j-\/th external halo node in this \mbox{\hyperlink{classoomph_
 
 
 
-Definition at line 2299 of file mesh.\+h.
+Definition at line 2295 of file mesh.\+h.
 
 
 
@@ -1901,7 +1901,7 @@ Return the set of processors that hold external halo nodes. This is required to 
 
 
 
-Definition at line 2395 of file mesh.\+h.
+Definition at line 2391 of file mesh.\+h.
 
 
 
@@ -1923,7 +1923,7 @@ Access fct to the e-\/th external haloed element in this \mbox{\hyperlink{classo
 
 
 
-Definition at line 2220 of file mesh.\+h.
+Definition at line 2216 of file mesh.\+h.
 
 
 
@@ -1945,7 +1945,7 @@ Access fct to vector of external haloed node in this \mbox{\hyperlink{classoomph
 
 
 
-Definition at line 2372 of file mesh.\+h.
+Definition at line 2368 of file mesh.\+h.
 
 
 
@@ -1963,7 +1963,7 @@ Access fct to the j-\/th external haloed node in this \mbox{\hyperlink{classoomp
 
 
 
-Definition at line 2361 of file mesh.\+h.
+Definition at line 2357 of file mesh.\+h.
 
 
 
@@ -1985,7 +1985,7 @@ For the e-\/th finite element on boundary b, return int to indicate the face\+\_
 
 
 
-Definition at line 870 of file mesh.\+h.
+Definition at line 866 of file mesh.\+h.
 
 
 
@@ -2007,7 +2007,7 @@ Upcast (downcast?) to \mbox{\hyperlink{classoomph_1_1FiniteElement}{Finite\+Elem
 
 
 
-Definition at line 477 of file mesh.\+h.
+Definition at line 473 of file mesh.\+h.
 
 
 
@@ -2029,7 +2029,7 @@ Flush storage for elements and nodes by emptying the vectors that store the poin
 
 
 
-Definition at line 427 of file mesh.\+h.
+Definition at line 423 of file mesh.\+h.
 
 
 
@@ -2051,7 +2051,7 @@ Flush storage for elements (only) by emptying the vectors that store the pointer
 
 
 
-Definition at line 443 of file mesh.\+h.
+Definition at line 439 of file mesh.\+h.
 
 
 
@@ -2073,7 +2073,7 @@ Flush storage for nodes (only) by emptying the vectors that store the pointers t
 
 
 
-Definition at line 450 of file mesh.\+h.
+Definition at line 446 of file mesh.\+h.
 
 
 
@@ -2095,7 +2095,7 @@ Get all the halo data stored in the mesh and add pointers to the data to the map
 
 Get all the halo data stored in the mesh and add pointers to the data to the map, indexed by global equation number Repeat for the external data
 
-Definition at line 4781 of file mesh.\+cc.
+Definition at line 4777 of file mesh.\+cc.
 
 
 
@@ -2117,7 +2117,7 @@ Get efficiency of mesh distribution\+: In an ideal distribution without halo ove
 
 Get efficiency of mesh distribution\+: In an ideal distribution without halo overhead, each processor would only hold its own elements. Efficieny per processor = (number of non-\/halo elements)/ (total number of elements). 
 
-Definition at line 6413 of file mesh.\+cc.
+Definition at line 6409 of file mesh.\+cc.
 
 
 
@@ -2135,7 +2135,7 @@ Get vector of pointers to all external halo nodes.
 
 
 
-Definition at line 2245 of file mesh.\+h.
+Definition at line 2241 of file mesh.\+h.
 
 
 
@@ -2157,7 +2157,7 @@ Get halo node stats for this distributed mesh\+: Average/max/min number of halo 
 
 Get halo node stats for this distributed mesh\+: Average/max/min number of halo nodes over all processors. {\bfseries{Careful\+:}} Involves M\+PI Broadcasts and must therefore be called on all processors! 
 
-Definition at line 4877 of file mesh.\+cc.
+Definition at line 4873 of file mesh.\+cc.
 
 
 
@@ -2175,7 +2175,7 @@ Get haloed node stats for this distributed mesh\+: Average/max/min number of hal
 
 Get haloed node stats for this distributed mesh\+: Average/max/min number of haloed nodes over all processors. {\bfseries{Careful\+:}} Involves M\+PI Broadcasts and must therefore be called on all processors! 
 
-Definition at line 4932 of file mesh.\+cc.
+Definition at line 4928 of file mesh.\+cc.
 
 
 
@@ -2193,7 +2193,7 @@ Get a reordering of the nodes in the order in which they appear in elements -- c
 
 Get a vector of the nodes in the order in which they are encountered when stepping through the elements (similar to \mbox{\hyperlink{classoomph_1_1Mesh_a801e77424d1bf8a35c9bba055230f1e3}{reorder\+\_\+nodes()}} but without changing the mesh\textquotesingle{}s node vector). 
 
-Definition at line 535 of file mesh.\+cc.
+Definition at line 531 of file mesh.\+cc.
 
 
 
@@ -2215,7 +2215,7 @@ Get vector of pointers to shared nodes with processor p. Required for faster sea
 
 
 
-Definition at line 2049 of file mesh.\+h.
+Definition at line 2045 of file mesh.\+h.
 
 
 
@@ -2237,7 +2237,7 @@ Find a node not on any boundary in mesh\+\_\+pt (useful for pinning a single nod
 
 
 
-Definition at line 832 of file mesh.\+h.
+Definition at line 828 of file mesh.\+h.
 
 
 
@@ -2255,7 +2255,7 @@ Return vector of halo elements in this \mbox{\hyperlink{classoomph_1_1Mesh}{Mesh
 
 
 
-Definition at line 1680 of file mesh.\+h.
+Definition at line 1676 of file mesh.\+h.
 
 
 
@@ -2277,7 +2277,7 @@ Access fct to the j-\/th halo node in this \mbox{\hyperlink{classoomph_1_1Mesh}{
 
 
 
-Definition at line 1851 of file mesh.\+h.
+Definition at line 1847 of file mesh.\+h.
 
 
 
@@ -2299,7 +2299,7 @@ Return vector of haloed elements in this \mbox{\hyperlink{classoomph_1_1Mesh}{Me
 
 
 
-Definition at line 1719 of file mesh.\+h.
+Definition at line 1715 of file mesh.\+h.
 
 
 
@@ -2321,7 +2321,7 @@ Access fct to the j-\/th haloed node in this \mbox{\hyperlink{classoomph_1_1Mesh
 
 
 
-Definition at line 1947 of file mesh.\+h.
+Definition at line 1943 of file mesh.\+h.
 
 
 
@@ -2343,7 +2343,7 @@ Boolean to indicate if \mbox{\hyperlink{classoomph_1_1Mesh}{Mesh}} has been dist
 
 
 
-Definition at line 1540 of file mesh.\+h.
+Definition at line 1536 of file mesh.\+h.
 
 
 
@@ -2365,7 +2365,7 @@ Determine max and min area for all Finite\+Elements in the mesh (non-\/\+Finite\
 
 
 
-Definition at line 676 of file mesh.\+h.
+Definition at line 672 of file mesh.\+h.
 
 
 
@@ -2383,7 +2383,7 @@ Merge meshes. Note\+: This simply merges the meshes\textquotesingle{} elements a
 
 Merge meshes. Note\+: This simply merges the meshes\textquotesingle{} elements and nodes (ignoring duplicates; no boundary information etc. is created). 
 
-Definition at line 69 of file mesh.\+cc.
+Definition at line 65 of file mesh.\+cc.
 
 
 
@@ -2405,7 +2405,7 @@ Return number of boundaries.
 
 
 
-Definition at line 806 of file mesh.\+h.
+Definition at line 802 of file mesh.\+h.
 
 
 
@@ -2427,7 +2427,7 @@ Return number of finite elements that are adjacent to boundary b.
 
 
 
-Definition at line 852 of file mesh.\+h.
+Definition at line 848 of file mesh.\+h.
 
 
 
@@ -2449,7 +2449,7 @@ Return number of nodes on a particular boundary.
 
 
 
-Definition at line 809 of file mesh.\+h.
+Definition at line 805 of file mesh.\+h.
 
 
 
@@ -2471,7 +2471,7 @@ Return number of dof types in mesh.
 
 Get the number of dof types in the mesh from the first element of the mesh. If M\+PI is on then also do some consistency checks between processors. {\bfseries{Careful\+:}} Involves M\+PI Broadcasts and must therefore be called on all processors! 
 
-Definition at line 8758 of file mesh.\+cc.
+Definition at line 8754 of file mesh.\+cc.
 
 
 
@@ -2493,7 +2493,7 @@ Return number of elements in the mesh.
 
 
 
-Definition at line 587 of file mesh.\+h.
+Definition at line 583 of file mesh.\+h.
 
 
 
@@ -2515,7 +2515,7 @@ Total number of external halo elements in this \mbox{\hyperlink{classoomph_1_1Me
 
 
 
-Definition at line 2148 of file mesh.\+h.
+Definition at line 2144 of file mesh.\+h.
 
 
 
@@ -2537,7 +2537,7 @@ Number of external halo elements in this \mbox{\hyperlink{classoomph_1_1Mesh}{Me
 
 
 
-Definition at line 2162 of file mesh.\+h.
+Definition at line 2158 of file mesh.\+h.
 
 
 
@@ -2555,7 +2555,7 @@ Total number of external halo nodes in this \mbox{\hyperlink{classoomph_1_1Mesh}
 
 
 
-Definition at line 2232 of file mesh.\+h.
+Definition at line 2228 of file mesh.\+h.
 
 
 
@@ -2577,7 +2577,7 @@ Number of external halo nodes in this \mbox{\hyperlink{classoomph_1_1Mesh}{Mesh}
 
 
 
-Definition at line 2276 of file mesh.\+h.
+Definition at line 2272 of file mesh.\+h.
 
 
 
@@ -2595,7 +2595,7 @@ Total number of external haloed elements in this \mbox{\hyperlink{classoomph_1_1
 
 
 
-Definition at line 2192 of file mesh.\+h.
+Definition at line 2188 of file mesh.\+h.
 
 
 
@@ -2617,7 +2617,7 @@ Number of external haloed elements in this \mbox{\hyperlink{classoomph_1_1Mesh}{
 
 
 
-Definition at line 2206 of file mesh.\+h.
+Definition at line 2202 of file mesh.\+h.
 
 
 
@@ -2635,7 +2635,7 @@ Total number of external haloed nodes in this \mbox{\hyperlink{classoomph_1_1Mes
 
 
 
-Definition at line 2334 of file mesh.\+h.
+Definition at line 2330 of file mesh.\+h.
 
 
 
@@ -2657,7 +2657,7 @@ Number of external haloed nodes in this \mbox{\hyperlink{classoomph_1_1Mesh}{Mes
 
 
 
-Definition at line 2347 of file mesh.\+h.
+Definition at line 2343 of file mesh.\+h.
 
 
 
@@ -2675,7 +2675,7 @@ Total number of halo nodes in this \mbox{\hyperlink{classoomph_1_1Mesh}{Mesh}}.
 
 
 
-Definition at line 1816 of file mesh.\+h.
+Definition at line 1812 of file mesh.\+h.
 
 
 
@@ -2697,7 +2697,7 @@ Number of halo nodes in this \mbox{\hyperlink{classoomph_1_1Mesh}{Mesh}} whose n
 
 
 
-Definition at line 1829 of file mesh.\+h.
+Definition at line 1825 of file mesh.\+h.
 
 
 
@@ -2715,7 +2715,7 @@ Total number of haloed nodes in this \mbox{\hyperlink{classoomph_1_1Mesh}{Mesh}}
 
 
 
-Definition at line 1919 of file mesh.\+h.
+Definition at line 1915 of file mesh.\+h.
 
 
 
@@ -2737,7 +2737,7 @@ Number of haloed nodes in this \mbox{\hyperlink{classoomph_1_1Mesh}{Mesh}} whose
 
 
 
-Definition at line 1933 of file mesh.\+h.
+Definition at line 1929 of file mesh.\+h.
 
 
 
@@ -2755,7 +2755,7 @@ Return number of nodes in the mesh.
 
 
 
-Definition at line 590 of file mesh.\+h.
+Definition at line 586 of file mesh.\+h.
 
 
 
@@ -2777,7 +2777,7 @@ Total number of non-\/halo elements in this mesh (Costly call computes result on
 
 
 
-Definition at line 1757 of file mesh.\+h.
+Definition at line 1753 of file mesh.\+h.
 
 
 
@@ -2799,7 +2799,7 @@ Return number of nodal dimension in mesh.
 
 Get the number of nodal dimension in the mesh from the first element of the mesh. If M\+PI is on then also do some consistency checks between processors. {\bfseries{Careful\+:}} Involves M\+PI Broadcasts and must therefore be called on all processors! 
 
-Definition at line 9042 of file mesh.\+cc.
+Definition at line 9038 of file mesh.\+cc.
 
 
 
@@ -2821,7 +2821,7 @@ Return pointer to global node n.
 
 
 
-Definition at line 456 of file mesh.\+h.
+Definition at line 452 of file mesh.\+h.
 
 
 
@@ -2843,7 +2843,7 @@ Return pointer to global node n (const version)
 
 
 
-Definition at line 459 of file mesh.\+h.
+Definition at line 455 of file mesh.\+h.
 
 
 
@@ -2865,7 +2865,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1AlgebraicMesh_ad3a5638cacb6df1a4
 
 
 
-Definition at line 291 of file mesh.\+cc.
+Definition at line 287 of file mesh.\+cc.
 
 
 
@@ -2887,7 +2887,7 @@ Total number of root halo elements in this \mbox{\hyperlink{classoomph_1_1Mesh}{
 
 
 
-Definition at line 1770 of file mesh.\+h.
+Definition at line 1766 of file mesh.\+h.
 
 
 
@@ -2909,7 +2909,7 @@ Number of root halo elements in this \mbox{\hyperlink{classoomph_1_1Mesh}{Mesh}}
 
 
 
-Definition at line 1784 of file mesh.\+h.
+Definition at line 1780 of file mesh.\+h.
 
 
 
@@ -2927,7 +2927,7 @@ Total number of root haloed elements in this \mbox{\hyperlink{classoomph_1_1Mesh
 
 
 
-Definition at line 1858 of file mesh.\+h.
+Definition at line 1854 of file mesh.\+h.
 
 
 
@@ -2949,7 +2949,7 @@ Number of root haloed elements in this \mbox{\hyperlink{classoomph_1_1Mesh}{Mesh
 
 
 
-Definition at line 1871 of file mesh.\+h.
+Definition at line 1867 of file mesh.\+h.
 
 
 
@@ -2967,7 +2967,7 @@ Total number of shared nodes in this \mbox{\hyperlink{classoomph_1_1Mesh}{Mesh}}
 
 
 
-Definition at line 1991 of file mesh.\+h.
+Definition at line 1987 of file mesh.\+h.
 
 
 
@@ -2989,7 +2989,7 @@ Number of shared nodes in this \mbox{\hyperlink{classoomph_1_1Mesh}{Mesh}} who h
 
 
 
-Definition at line 2026 of file mesh.\+h.
+Definition at line 2022 of file mesh.\+h.
 
 
 
@@ -3007,7 +3007,7 @@ Null out specified external halo node (used when deleting duplicates)
 
 
 
-Definition at line 8569 of file mesh.\+cc.
+Definition at line 8565 of file mesh.\+cc.
 
 
 
@@ -3029,7 +3029,7 @@ Broken assignment operator.
 
 
 
-Definition at line 408 of file mesh.\+h.
+Definition at line 404 of file mesh.\+h.
 
 
 
@@ -3047,7 +3047,7 @@ Output for all elements.
 
 
 
-Definition at line 948 of file mesh.\+h.
+Definition at line 944 of file mesh.\+h.
 
 
 
@@ -3065,7 +3065,7 @@ Output at f(n\+\_\+plot) points in each element.
 
 
 
-Definition at line 957 of file mesh.\+h.
+Definition at line 953 of file mesh.\+h.
 
 
 
@@ -3085,7 +3085,7 @@ Output function for the mesh class
 
 Loop over all elements and plot (i.\+e. execute the element\textquotesingle{}s own \mbox{\hyperlink{classoomph_1_1Mesh_aab74388e8e21325f3ca26f1bd99c26f7}{output()}} function) (C style output) 
 
-Definition at line 2213 of file mesh.\+cc.
+Definition at line 2209 of file mesh.\+cc.
 
 
 
@@ -3105,7 +3105,7 @@ Output function for the mesh class
 
 Loop over all elements and plot (i.\+e. execute the element\textquotesingle{}s own \mbox{\hyperlink{classoomph_1_1Mesh_aab74388e8e21325f3ca26f1bd99c26f7}{output()}} function). Use n\+\_\+plot plot points in each coordinate direction. (C style output) 
 
-Definition at line 2256 of file mesh.\+cc.
+Definition at line 2252 of file mesh.\+cc.
 
 
 
@@ -3125,7 +3125,7 @@ Output function for the mesh class
 
 Loop over all elements and plot (i.\+e. execute the element\textquotesingle{}s own \mbox{\hyperlink{classoomph_1_1Mesh_aab74388e8e21325f3ca26f1bd99c26f7}{output()}} function) 
 
-Definition at line 2124 of file mesh.\+cc.
+Definition at line 2120 of file mesh.\+cc.
 
 
 
@@ -3149,7 +3149,7 @@ Output function for the mesh class
 
 Loop over all elements and plot (i.\+e. execute the element\textquotesingle{}s own \mbox{\hyperlink{classoomph_1_1Mesh_aab74388e8e21325f3ca26f1bd99c26f7}{output()}} function). Use n\+\_\+plot plot points in each coordinate direction. 
 
-Definition at line 2166 of file mesh.\+cc.
+Definition at line 2162 of file mesh.\+cc.
 
 
 
@@ -3163,7 +3163,7 @@ References e, Element\+\_\+pt, oomph\+::\+Generalised\+Element\+::is\+\_\+halo()
 
 Output the nodes on the boundaries (into separate tecplot zones). Specify filename 
 
-Definition at line 980 of file mesh.\+h.
+Definition at line 976 of file mesh.\+h.
 
 
 
@@ -3183,7 +3183,7 @@ Output function for the mesh boundaries
 
 Loop over all boundaries and dump out the coordinates of the points on the boundary (in individual tecplot zones) 
 
-Definition at line 1063 of file mesh.\+cc.
+Definition at line 1059 of file mesh.\+cc.
 
 
 
@@ -3205,7 +3205,7 @@ Output all external halo elements with processor p.
 
 
 
-Definition at line 2101 of file mesh.\+h.
+Definition at line 2097 of file mesh.\+h.
 
 
 
@@ -3223,7 +3223,7 @@ Output all external halo elements.
 
 
 
-Definition at line 2088 of file mesh.\+h.
+Definition at line 2084 of file mesh.\+h.
 
 
 
@@ -3245,7 +3245,7 @@ Output all external haloed elements with processor p.
 
 
 
-Definition at line 2131 of file mesh.\+h.
+Definition at line 2127 of file mesh.\+h.
 
 
 
@@ -3263,7 +3263,7 @@ Output all external haloed elements.
 
 
 
-Definition at line 2118 of file mesh.\+h.
+Definition at line 2114 of file mesh.\+h.
 
 
 
@@ -3287,7 +3287,7 @@ Output function for the mesh class
 
 Loop over all elements and plot (i.\+e. execute the element\textquotesingle{}s own \mbox{\hyperlink{classoomph_1_1Mesh_aab74388e8e21325f3ca26f1bd99c26f7}{output()}} function) at time t. Use n\+\_\+plot plot points in each coordinate direction. 
 
-Definition at line 2342 of file mesh.\+cc.
+Definition at line 2338 of file mesh.\+cc.
 
 
 
@@ -3307,7 +3307,7 @@ Output function for the mesh class
 
 Loop over all elements and plot (i.\+e. execute the element\textquotesingle{}s own \mbox{\hyperlink{classoomph_1_1Mesh_aab74388e8e21325f3ca26f1bd99c26f7}{output()}} function). Use n\+\_\+plot plot points in each coordinate direction. 
 
-Definition at line 2299 of file mesh.\+cc.
+Definition at line 2295 of file mesh.\+cc.
 
 
 
@@ -3333,7 +3333,7 @@ Output in paraview format into specified file.
 Breaks up each element into sub-\/elements for plotting purposes. We assume that all elements are of the same type (fct will break (in paranoid mode) if paraview output fcts of the elements are inconsistent). ~\newline
  
 
-Definition at line 1827 of file mesh.\+cc.
+Definition at line 1823 of file mesh.\+cc.
 
 
 
@@ -3355,7 +3355,7 @@ Output in paraview format into specified file.
 Breaks up each element into sub-\/elements for plotting purposes. We assume that all elements are of the same type (fct will break (in paranoid mode) if paraview output fcts of the elements are inconsistent). ~\newline
  
 
-Definition at line 1527 of file mesh.\+cc.
+Definition at line 1523 of file mesh.\+cc.
 
 
 
@@ -3377,7 +3377,7 @@ Output in paraview format into specified file.
 Breaks up each element into sub-\/elements for plotting purposes. We assume that all elements are of the same type (fct will break (in paranoid mode) if paraview output fcts of the elements are inconsistent). ~\newline
  
 
-Definition at line 1229 of file mesh.\+cc.
+Definition at line 1225 of file mesh.\+cc.
 
 
 
@@ -3395,7 +3395,7 @@ Prune nodes. Nodes that have been marked as obsolete are removed from the mesh (
 
 Nodes that have been marked as obsolete are removed from the mesh and the its boundaries. Returns vector of pointers to deleted nodes. 
 
-Definition at line 962 of file mesh.\+cc.
+Definition at line 958 of file mesh.\+cc.
 
 
 
@@ -3417,7 +3417,7 @@ Referenced by oomph\+::\+Tree\+Based\+Refineable\+Mesh\+Base\+::adapt\+\_\+mesh(
 
 
 
-Definition at line 1607 of file mesh.\+h.
+Definition at line 1603 of file mesh.\+h.
 
 
 
@@ -3439,7 +3439,7 @@ Referenced by oomph\+::\+Problem\+::load\+\_\+balance(), and oomph\+::\+Problem\
 
 (Irreversibly) prune halo(ed) elements and nodes, usually after another round of refinement, to get rid of excessively wide halo layers. Note that the current mesh will be now regarded as the base mesh and no unrefinement relative to it will be possible once this function has been called. 
 
-Definition at line 5652 of file mesh.\+cc.
+Definition at line 5648 of file mesh.\+cc.
 
 
 
@@ -3461,7 +3461,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1SpineMesh_a281b1de21b0957de28fe7
 
 
 
-Definition at line 1132 of file mesh.\+cc.
+Definition at line 1128 of file mesh.\+cc.
 
 
 
@@ -3479,7 +3479,7 @@ Referenced by oomph\+::\+Spine\+Mesh\+::read(), and oomph\+::\+Problem\+::read()
 
 Remove the node node\+\_\+pt from the b-\/th boundary of the mesh This function also removes the information from the \mbox{\hyperlink{classoomph_1_1Node}{Node}} itself 
 
-Definition at line 222 of file mesh.\+cc.
+Definition at line 218 of file mesh.\+cc.
 
 
 
@@ -3501,7 +3501,7 @@ Clear all pointers to boundary nodes.
 
 Remove all information about mesh boundaries. 
 
-Definition at line 208 of file mesh.\+cc.
+Definition at line 204 of file mesh.\+cc.
 
 
 
@@ -3523,7 +3523,7 @@ Remove all information about nodes stored on the b-\/th boundary of the mesh.
 
 Remove the information about nodes stored on the b-\/th boundary of the mesh 
 
-Definition at line 192 of file mesh.\+cc.
+Definition at line 188 of file mesh.\+cc.
 
 
 
@@ -3541,7 +3541,7 @@ Consolidate external halo node storage by removing nulled out pointes in externa
 
 Consolidate external halo node storage by removing nulled out pointes in external halo and haloed schemes 
 
-Definition at line 8589 of file mesh.\+cc.
+Definition at line 8585 of file mesh.\+cc.
 
 
 
@@ -3559,7 +3559,7 @@ Re-\/order nodes in the order in which they appear in elements -- can be overloa
 
 Reorder nodes in the order in which they are encountered when stepping through the elements 
 
-Definition at line 511 of file mesh.\+cc.
+Definition at line 507 of file mesh.\+cc.
 
 
 
@@ -3585,7 +3585,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1TriangleMesh_a47080ac440e82c099c
 
 
 
-Definition at line 297 of file mesh.\+h.
+Definition at line 293 of file mesh.\+h.
 
 
 
@@ -3603,7 +3603,7 @@ Helper function that resizes halo nodes to the same size as their non-\/halo cou
 
 Helper function that resizes halo nodes to the same size as their non-\/halo counterparts if required. (A discrepancy can arise if a \mbox{\hyperlink{classoomph_1_1FaceElement}{Face\+Element}} that introduces additional unknowns are attached to a bulk element that shares a node with a haloed element. In that case the joint node between haloed and non-\/haloed element is resized on that processor but not on the one that holds the halo counterpart (because no \mbox{\hyperlink{classoomph_1_1FaceElement}{Face\+Element}} is attached to the halo element) 
 
-Definition at line 4469 of file mesh.\+cc.
+Definition at line 4465 of file mesh.\+cc.
 
 
 
@@ -3625,7 +3625,7 @@ Referenced by oomph\+::\+Tree\+Based\+Refineable\+Mesh\+Base\+::classify\+\_\+ha
 
 
 
-Definition at line 1792 of file mesh.\+h.
+Definition at line 1788 of file mesh.\+h.
 
 
 
@@ -3647,7 +3647,7 @@ Access fct to the e-\/th root halo element in this \mbox{\hyperlink{classoomph_1
 
 
 
-Definition at line 1800 of file mesh.\+h.
+Definition at line 1796 of file mesh.\+h.
 
 
 
@@ -3665,7 +3665,7 @@ References e, and Root\+\_\+halo\+\_\+element\+\_\+pt.
 
 
 
-Definition at line 1886 of file mesh.\+h.
+Definition at line 1882 of file mesh.\+h.
 
 
 
@@ -3687,7 +3687,7 @@ Access fct to the e-\/th root haloed element in this \mbox{\hyperlink{classoomph
 
 
 
-Definition at line 1901 of file mesh.\+h.
+Definition at line 1897 of file mesh.\+h.
 
 
 
@@ -3709,7 +3709,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1SolidMesh_a65a49a75f83674d7fbcf5
 
 
 
-Definition at line 386 of file mesh.\+h.
+Definition at line 382 of file mesh.\+h.
 
 
 
@@ -3731,7 +3731,7 @@ Self-\/test\+: Check elements and nodes. Return 0 for OK.
 
 
 
-Definition at line 777 of file mesh.\+cc.
+Definition at line 773 of file mesh.\+cc.
 
 
 
@@ -3749,7 +3749,7 @@ Referenced by oomph\+::\+Refineable\+Eighth\+Sphere\+Mesh$<$ E\+L\+E\+M\+E\+N\+T
 
 Function to set communicator (mesh is assumed to be distributed if the communicator pointer is non-\/null). Only defined if mpi is enabled becaus Comm\+\_\+pt itself is only defined when mpi is enabled. 
 
-Definition at line 1567 of file mesh.\+h.
+Definition at line 1563 of file mesh.\+h.
 
 
 
@@ -3771,7 +3771,7 @@ Set consistent values for pinned data in continuation.
 
 Set the values of auxilliary data used in continuation problems when the data is pinned. 
 
-Definition at line 2530 of file mesh.\+cc.
+Definition at line 2526 of file mesh.\+cc.
 
 
 
@@ -3793,7 +3793,7 @@ Set the timestepper associated with the internal data stored within elements in 
 
 Set the time stepper associated with all internal data stored in the elements in the mesh 
 
-Definition at line 2625 of file mesh.\+cc.
+Definition at line 2621 of file mesh.\+cc.
 
 
 
@@ -3815,7 +3815,7 @@ Set vector of external halo node in this \mbox{\hyperlink{classoomph_1_1Mesh}{Me
 
 
 
-Definition at line 2320 of file mesh.\+h.
+Definition at line 2316 of file mesh.\+h.
 
 
 
@@ -3837,7 +3837,7 @@ Set vector of external haloed node in this \mbox{\hyperlink{classoomph_1_1Mesh}{
 
 
 
-Definition at line 2386 of file mesh.\+h.
+Definition at line 2382 of file mesh.\+h.
 
 
 
@@ -3859,7 +3859,7 @@ Call this function to keep all the elements as halo elements.
 
 
 
-Definition at line 1570 of file mesh.\+h.
+Definition at line 1566 of file mesh.\+h.
 
 
 
@@ -3881,7 +3881,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1TriangleMesh_abb1a6cb242b5d0e067
 
 
 
-Definition at line 2495 of file mesh.\+cc.
+Definition at line 2491 of file mesh.\+cc.
 
 
 
@@ -3903,7 +3903,7 @@ Set the number of boundaries in the mesh.
 
 
 
-Definition at line 505 of file mesh.\+h.
+Definition at line 501 of file mesh.\+h.
 
 
 
@@ -3926,7 +3926,7 @@ Set the timestepper associated with all nodal and elemental data stored in the m
 
 
 
-Definition at line 1003 of file mesh.\+h.
+Definition at line 999 of file mesh.\+h.
 
 
 
@@ -3948,7 +3948,7 @@ Set the timestepper associated with the nodal data in the mesh.
 
 Set the time stepper associated with all the nodal data in the problem 
 
-Definition at line 2607 of file mesh.\+cc.
+Definition at line 2603 of file mesh.\+cc.
 
 
 
@@ -3974,7 +3974,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1TetMeshBase_ac372c93f2834c864f73
 
 
 
-Definition at line 288 of file mesh.\+h.
+Definition at line 284 of file mesh.\+h.
 
 
 
@@ -3996,7 +3996,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1TetMeshBase_a5982b96584e7f60eeb6
 
 
 
-Definition at line 294 of file mesh.\+h.
+Definition at line 290 of file mesh.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1Mesh_a1ef2de4e0406dd4ed6317cf857b2c3b1}\label{classoomph_1_1Mesh_a1ef2de4e0406dd4ed6317cf857b2c3b1}} 
 \index{oomph::Mesh@{oomph::Mesh}!setup\_shared\_node\_scheme@{setup\_shared\_node\_scheme}}
@@ -4010,7 +4010,7 @@ Setup shared node scheme.
 
 Setup shared node scheme\+: Shared node lookup scheme contains a unique correspondence between all nodes on the halo/haloed elements between two processors. 
 
-Definition at line 2801 of file mesh.\+cc.
+Definition at line 2797 of file mesh.\+cc.
 
 
 
@@ -4032,7 +4032,7 @@ Access fct to the j-\/th shared node in this \mbox{\hyperlink{classoomph_1_1Mesh
 
 
 
-Definition at line 2040 of file mesh.\+h.
+Definition at line 2036 of file mesh.\+h.
 
 
 
@@ -4054,7 +4054,7 @@ Shift time-\/dependent data along for next timestep\+: Deal with nodal Data/posi
 
 Shift time-\/dependent data along for next timestep\+: Again this is achieved by looping over all data and calling the functions defined in each data object\textquotesingle{}s timestepper. 
 
-Definition at line 2422 of file mesh.\+cc.
+Definition at line 2418 of file mesh.\+cc.
 
 
 
@@ -4076,7 +4076,7 @@ Synchronise shared node lookup schemes to cater for the the case where\+: (1) a 
 
 Synchronise shared node lookup schemes to cater for the the case where\+: (1) a certain node on the current processor is halo with proc p (i.\+e. its non-\/halo counterpart lives on processor p) (2) that node also exists (also as a halo) on another processor (q, say) where its non-\/halo counter part is also known to be on processor p. However, without calling this function the current processor does not necessarily know that it shares a node with processor q. This information can be required, e.\+g. when synchronising hanging node schemes over all processors. 
 
-Definition at line 2981 of file mesh.\+cc.
+Definition at line 2977 of file mesh.\+cc.
 
 
 
@@ -4098,7 +4098,7 @@ Determine the sum of all \char`\"{}sizes\char`\"{} of the Finite\+Elements in th
 
 
 
-Definition at line 693 of file mesh.\+h.
+Definition at line 689 of file mesh.\+h.
 
 
 
@@ -4116,7 +4116,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1RefineableTriangleMesh_a0bc1283a
 
 
 
-Definition at line 2446 of file mesh.\+h.
+Definition at line 2442 of file mesh.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1Mesh_aafe4f0a71859972be0c7c0957c69d5de}\label{classoomph_1_1Mesh_aafe4f0a71859972be0c7c0957c69d5de}} 
 \index{oomph::Mesh@{oomph::Mesh}!try\_to\_add\_root\_haloed\_element\_pt@{try\_to\_add\_root\_haloed\_element\_pt}}
@@ -4130,7 +4130,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1RefineableTriangleMesh_a40ed8992
 
 
 
-Definition at line 2431 of file mesh.\+h.
+Definition at line 2427 of file mesh.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1Mesh_ac0bf3e23f2a5ee4521df5541d047728f}\label{classoomph_1_1Mesh_ac0bf3e23f2a5ee4521df5541d047728f}} 
 \index{oomph::Mesh@{oomph::Mesh}!unset\_keep\_all\_elements\_as\_halos@{unset\_keep\_all\_elements\_as\_halos}}
@@ -4144,7 +4144,7 @@ Calll this function to unset the flag that keeps all elements in the mesh as hal
 
 
 
-Definition at line 1574 of file mesh.\+h.
+Definition at line 1570 of file mesh.\+h.
 
 
 
@@ -4165,7 +4165,7 @@ References Keep\+\_\+all\+\_\+elements\+\_\+as\+\_\+halos.
 
 
 
-Definition at line 80 of file mesh.\+h.
+Definition at line 76 of file mesh.\+h.
 
 
 
@@ -4182,7 +4182,7 @@ Definition at line 80 of file mesh.\+h.
 
 
 
-Definition at line 201 of file mesh.\+h.
+Definition at line 197 of file mesh.\+h.
 
 
 
@@ -4200,7 +4200,7 @@ Referenced by boundary\+\_\+coordinate\+\_\+exists(), oomph\+::\+Channel\+With\+
 
 
 
-Definition at line 102 of file mesh.\+h.
+Definition at line 98 of file mesh.\+h.
 
 
 
@@ -4218,7 +4218,7 @@ Referenced by boundary\+\_\+element\+\_\+pt(), nboundary\+\_\+element(), oomph\+
 
 
 
-Definition at line 94 of file mesh.\+h.
+Definition at line 90 of file mesh.\+h.
 
 
 
@@ -4236,7 +4236,7 @@ Pointer to communicator -- set to N\+U\+LL if mesh is not distributed.
 
 
 
-Definition at line 130 of file mesh.\+h.
+Definition at line 126 of file mesh.\+h.
 
 
 
@@ -4254,7 +4254,7 @@ Default \mbox{\hyperlink{classoomph_1_1Steady}{Steady}} Timestepper, to be used 
 
 The \mbox{\hyperlink{classoomph_1_1Steady}{Steady}} Timestepper. 
 
-Definition at line 85 of file mesh.\+h.
+Definition at line 81 of file mesh.\+h.
 
 
 
@@ -4272,7 +4272,7 @@ Referenced by oomph\+::\+Periodic\+Orbit\+Assembly\+Handler$<$ N\+N\+O\+D\+E\+\_
 
 
 
-Definition at line 197 of file mesh.\+h.
+Definition at line 193 of file mesh.\+h.
 
 
 
@@ -4290,7 +4290,7 @@ Map of vectors holding the pointers to the external halo elements.
 
 External halo(ed) elements are created as and when they are needed to act as source elements for the particular process\textquotesingle{}s mesh. The storage is wiped and rebuilt every time the mesh is refined. 
 
-Definition at line 137 of file mesh.\+h.
+Definition at line 133 of file mesh.\+h.
 
 
 
@@ -4308,7 +4308,7 @@ Map of vectors holding the pointers to the external halo nodes.
 
 
 
-Definition at line 146 of file mesh.\+h.
+Definition at line 142 of file mesh.\+h.
 
 
 
@@ -4326,7 +4326,7 @@ Map of vectors holding the pointers to the external haloed elements.
 
 
 
-Definition at line 140 of file mesh.\+h.
+Definition at line 136 of file mesh.\+h.
 
 
 
@@ -4344,7 +4344,7 @@ Map of vectors holding the pointers to the external haloed nodes.
 
 
 
-Definition at line 149 of file mesh.\+h.
+Definition at line 145 of file mesh.\+h.
 
 
 
@@ -4362,7 +4362,7 @@ For the e-\/th finite element on boundary b, this is the index of the face that 
 
 
 
-Definition at line 106 of file mesh.\+h.
+Definition at line 102 of file mesh.\+h.
 
 
 
@@ -4380,7 +4380,7 @@ Map of vectors holding the pointers to the halo nodes.
 
 
 
-Definition at line 117 of file mesh.\+h.
+Definition at line 113 of file mesh.\+h.
 
 
 
@@ -4398,7 +4398,7 @@ Map of vectors holding the pointers to the haloed nodes.
 
 
 
-Definition at line 120 of file mesh.\+h.
+Definition at line 116 of file mesh.\+h.
 
 
 
@@ -4416,7 +4416,7 @@ bool to indicate whether to keep all elements in a mesh as halos or not
 
 
 
-Definition at line 152 of file mesh.\+h.
+Definition at line 148 of file mesh.\+h.
 
 
 
@@ -4430,7 +4430,7 @@ Referenced by distribute(), Mesh(), set\+\_\+keep\+\_\+all\+\_\+elements\+\_\+as
 
 Flag to indicate that the lookup schemes for elements that are adjacent to the boundaries has been set up. 
 
-Definition at line 98 of file mesh.\+h.
+Definition at line 94 of file mesh.\+h.
 
 
 
@@ -4448,7 +4448,7 @@ Referenced by oomph\+::\+Tree\+Based\+Refineable\+Mesh\+Base\+::adapt\+\_\+mesh(
 
 
 
-Definition at line 194 of file mesh.\+h.
+Definition at line 190 of file mesh.\+h.
 
 
 
@@ -4466,7 +4466,7 @@ Bool for output of halo elements.
 
 
 
-Definition at line 1960 of file mesh.\+h.
+Definition at line 1956 of file mesh.\+h.
 
 
 
@@ -4484,7 +4484,7 @@ Set this to true to suppress resizing of halo nodes (at your own risk!)
 
 
 
-Definition at line 155 of file mesh.\+h.
+Definition at line 151 of file mesh.\+h.
 
 
 
@@ -4502,7 +4502,7 @@ Map of vectors holding the pointers to the root halo elements.
 
 
 
-Definition at line 111 of file mesh.\+h.
+Definition at line 107 of file mesh.\+h.
 
 
 
@@ -4520,7 +4520,7 @@ Map of vectors holding the pointers to the root haloed elements.
 
 
 
-Definition at line 114 of file mesh.\+h.
+Definition at line 110 of file mesh.\+h.
 
 
 
@@ -4537,7 +4537,7 @@ Map of vectors holding the pointers to the shared nodes. These are all the nodes
 \item a node which is on 3 processors, for example, will not feature in the halo(ed) lookup scheme between the two lowest-\/numbered processors) 
 \end{DoxyItemize}
 
-Definition at line 127 of file mesh.\+h.
+Definition at line 123 of file mesh.\+h.
 
 
 
@@ -4555,7 +4555,7 @@ Boolean used to control warning about empty mesh level timestepper function.
 
 Static boolean flag to control warning about mesh level timesteppers. 
 
-Definition at line 246 of file mesh.\+h.
+Definition at line 242 of file mesh.\+h.
 
 
 

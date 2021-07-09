@@ -788,7 +788,7 @@ class oomph::BackupMeshForProjection&lt; GEOMETRIC_ELEMENT &gt;</h3>
 
 <p>Class that makes backup (via a deep copy) of a mesh, keeping alive enough information to allow the solution that is currently stored on the mesh to be projected onto another mesh sometime in the future (when the original mesh may already have been deleted). This is mainly useful for the projection of additional nodal values (such as Lagrange multipliers) created by FaceElements. ASSUMPTION: All fields in the element are represented by isoparametric Lagrange interpolation between the nodal values. Any fields that do not fall into this category will not be copied across correctly and if you're unlucky the code may die...). </p>
 
-<p class="definition">Definition at line <a class="el" href="face__mesh__project_8h_source.html#l00237">237</a> of file <a class="el" href="face__mesh__project_8h_source.html">face_mesh_project.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="face__mesh__project_8h_source.html#l00233">233</a> of file <a class="el" href="face__mesh__project_8h_source.html">face_mesh_project.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a15032c7709e65ad4e1d00a6406786c6c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a15032c7709e65ad4e1d00a6406786c6c">&#9670;&nbsp;</a></span>BackupMeshForProjection()</h2>
@@ -835,9 +835,9 @@ template&lt;class GEOMETRIC_ELEMENT &gt; </div>
 <p>Constructor: Pass existing mesh and the boundary ID (need to find the boundary coordinates that are used for the projection. Optional final argument specifies the ID of the field (i.e. the index of the relevant nodal value!) to be projected. If omitted, we project all of them. <br  />
  </p>
 
-<p class="definition">Definition at line <a class="el" href="face__mesh__project_8h_source.html#l00247">247</a> of file <a class="el" href="face__mesh__project_8h_source.html">face_mesh_project.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="face__mesh__project_8h_source.html#l00243">243</a> of file <a class="el" href="face__mesh__project_8h_source.html">face_mesh_project.h</a>.</p>
 
-<p class="reference">References <a class="el" href="mesh_8h_source.html#l00605">oomph::Mesh::add_element_pt()</a>, <a class="el" href="nodes_8cc_source.html#l02257">oomph::Node::add_to_boundary()</a>, <a class="el" href="face__mesh__project_8h_source.html#l00489">oomph::BackupMeshForProjection&lt; GEOMETRIC_ELEMENT &gt;::Boundary_id</a>, <a class="el" href="cfortran_8h_source.html#l00575">e</a>, <a class="el" href="mesh_8h_source.html#l00197">oomph::Mesh::Element_pt</a>, <a class="el" href="mesh_8h_source.html#l00462">oomph::Mesh::element_pt()</a>, <a class="el" href="mesh_8h_source.html#l00477">oomph::Mesh::finite_element_pt()</a>, <a class="el" href="nodes_8cc_source.html#l02301">oomph::Node::get_coordinates_on_boundary()</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="face__mesh__project_8h_source.html#l00493">oomph::BackupMeshForProjection&lt; GEOMETRIC_ELEMENT &gt;::ID_of_field_to_be_projected</a>, <a class="el" href="nodes_8h_source.html#l01289">oomph::Node::is_on_boundary()</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, <a class="el" href="nodes_8cc_source.html#l02285">oomph::Node::ncoordinates_on_boundary()</a>, <a class="el" href="nodes_8h_source.html#l00991">oomph::Node::ndim()</a>, <a class="el" href="mesh_8h_source.html#l00587">oomph::Mesh::nelement()</a>, <a class="el" href="face__mesh__project_8h_source.html#l00486">oomph::BackupMeshForProjection&lt; GEOMETRIC_ELEMENT &gt;::New_node_pt</a>, <a class="el" href="elements_8h_source.html#l00828">oomph::GeneralisedElement::ninternal_data()</a>, <a class="el" href="mesh_8h_source.html#l00590">oomph::Mesh::nnode()</a>, <a class="el" href="elements_8h_source.html#l02163">oomph::FiniteElement::nnode()</a>, <a class="el" href="mesh_8h_source.html#l00194">oomph::Mesh::Node_pt</a>, <a class="el" href="elements_8h_source.html#l02126">oomph::FiniteElement::node_pt()</a>, <a class="el" href="nodes_8h_source.html#l00965">oomph::Node::nposition_type()</a>, <a class="el" href="nodes_8cc_source.html#l00847">oomph::Data::ntstorage()</a>, <a class="el" href="nodes_8h_source.html#l00448">oomph::Data::nvalue()</a>, <a class="el" href="face__mesh__project_8h_source.html#l00091">oomph::GenericLagrangeInterpolatedProjectableElement&lt; ELEMENT &gt;::set_boundary_id()</a>, <a class="el" href="nodes_8cc_source.html#l02315">oomph::Node::set_coordinates_on_boundary()</a>, <a class="el" href="elements_8h_source.html#l01368">oomph::FiniteElement::set_nodal_dimension()</a>, <a class="el" href="nodes_8h_source.html#l00267">oomph::Data::set_value()</a>, <a class="el" href="cfortran_8h_source.html#l00572">t</a>, <a class="el" href="nodes_8h_source.html#l00246">oomph::Data::time_stepper_pt()</a>, <a class="el" href="nodes_8cc_source.html#l02328">oomph::Node::value()</a>, and <a class="el" href="nodes_8h_source.html#l00994">oomph::Node::x()</a>.</p>
+<p class="reference">References <a class="el" href="mesh_8h_source.html#l00601">oomph::Mesh::add_element_pt()</a>, <a class="el" href="nodes_8cc_source.html#l02253">oomph::Node::add_to_boundary()</a>, <a class="el" href="face__mesh__project_8h_source.html#l00485">oomph::BackupMeshForProjection&lt; GEOMETRIC_ELEMENT &gt;::Boundary_id</a>, <a class="el" href="cfortran_8h_source.html#l00571">e</a>, <a class="el" href="mesh_8h_source.html#l00193">oomph::Mesh::Element_pt</a>, <a class="el" href="mesh_8h_source.html#l00458">oomph::Mesh::element_pt()</a>, <a class="el" href="mesh_8h_source.html#l00473">oomph::Mesh::finite_element_pt()</a>, <a class="el" href="nodes_8cc_source.html#l02297">oomph::Node::get_coordinates_on_boundary()</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="face__mesh__project_8h_source.html#l00489">oomph::BackupMeshForProjection&lt; GEOMETRIC_ELEMENT &gt;::ID_of_field_to_be_projected</a>, <a class="el" href="nodes_8h_source.html#l01285">oomph::Node::is_on_boundary()</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, <a class="el" href="nodes_8cc_source.html#l02281">oomph::Node::ncoordinates_on_boundary()</a>, <a class="el" href="nodes_8h_source.html#l00987">oomph::Node::ndim()</a>, <a class="el" href="mesh_8h_source.html#l00583">oomph::Mesh::nelement()</a>, <a class="el" href="face__mesh__project_8h_source.html#l00482">oomph::BackupMeshForProjection&lt; GEOMETRIC_ELEMENT &gt;::New_node_pt</a>, <a class="el" href="elements_8h_source.html#l00824">oomph::GeneralisedElement::ninternal_data()</a>, <a class="el" href="mesh_8h_source.html#l00586">oomph::Mesh::nnode()</a>, <a class="el" href="elements_8h_source.html#l02159">oomph::FiniteElement::nnode()</a>, <a class="el" href="mesh_8h_source.html#l00190">oomph::Mesh::Node_pt</a>, <a class="el" href="elements_8h_source.html#l02122">oomph::FiniteElement::node_pt()</a>, <a class="el" href="nodes_8h_source.html#l00961">oomph::Node::nposition_type()</a>, <a class="el" href="nodes_8cc_source.html#l00843">oomph::Data::ntstorage()</a>, <a class="el" href="nodes_8h_source.html#l00444">oomph::Data::nvalue()</a>, <a class="el" href="face__mesh__project_8h_source.html#l00087">oomph::GenericLagrangeInterpolatedProjectableElement&lt; ELEMENT &gt;::set_boundary_id()</a>, <a class="el" href="nodes_8cc_source.html#l02311">oomph::Node::set_coordinates_on_boundary()</a>, <a class="el" href="elements_8h_source.html#l01364">oomph::FiniteElement::set_nodal_dimension()</a>, <a class="el" href="nodes_8h_source.html#l00263">oomph::Data::set_value()</a>, <a class="el" href="cfortran_8h_source.html#l00568">t</a>, <a class="el" href="nodes_8h_source.html#l00242">oomph::Data::time_stepper_pt()</a>, <a class="el" href="nodes_8cc_source.html#l02324">oomph::Node::value()</a>, and <a class="el" href="nodes_8h_source.html#l00990">oomph::Node::x()</a>.</p>
 
 </div>
 </div>
@@ -869,11 +869,11 @@ template&lt;class GEOMETRIC_ELEMENT &gt; </div>
 
 <p>Copy nodal values back onto original mesh from which this mesh was built. This obviously only makes sense if the original mesh still exists! </p>
 
-<p class="definition">Definition at line <a class="el" href="face__mesh__project_8h_source.html#l00443">443</a> of file <a class="el" href="face__mesh__project_8h_source.html">face_mesh_project.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="face__mesh__project_8h_source.html#l00439">439</a> of file <a class="el" href="face__mesh__project_8h_source.html">face_mesh_project.h</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="face__mesh__project_8h_source.html#l00493">oomph::BackupMeshForProjection&lt; GEOMETRIC_ELEMENT &gt;::ID_of_field_to_be_projected</a>, <a class="el" href="face__mesh__project_8h_source.html#l00486">oomph::BackupMeshForProjection&lt; GEOMETRIC_ELEMENT &gt;::New_node_pt</a>, <a class="el" href="nodes_8cc_source.html#l00847">oomph::Data::ntstorage()</a>, <a class="el" href="nodes_8h_source.html#l00448">oomph::Data::nvalue()</a>, <a class="el" href="nodes_8h_source.html#l00267">oomph::Data::set_value()</a>, <a class="el" href="cfortran_8h_source.html#l00572">t</a>, and <a class="el" href="nodes_8cc_source.html#l02328">oomph::Node::value()</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="face__mesh__project_8h_source.html#l00489">oomph::BackupMeshForProjection&lt; GEOMETRIC_ELEMENT &gt;::ID_of_field_to_be_projected</a>, <a class="el" href="face__mesh__project_8h_source.html#l00482">oomph::BackupMeshForProjection&lt; GEOMETRIC_ELEMENT &gt;::New_node_pt</a>, <a class="el" href="nodes_8cc_source.html#l00843">oomph::Data::ntstorage()</a>, <a class="el" href="nodes_8h_source.html#l00444">oomph::Data::nvalue()</a>, <a class="el" href="nodes_8h_source.html#l00263">oomph::Data::set_value()</a>, <a class="el" href="cfortran_8h_source.html#l00568">t</a>, and <a class="el" href="nodes_8cc_source.html#l02324">oomph::Node::value()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="face__mesh__project_8h_source.html#l00410">oomph::BackupMeshForProjection&lt; GEOMETRIC_ELEMENT &gt;::project_onto_new_mesh()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="face__mesh__project_8h_source.html#l00406">oomph::BackupMeshForProjection&lt; GEOMETRIC_ELEMENT &gt;::project_onto_new_mesh()</a>.</p>
 
 </div>
 </div>
@@ -905,9 +905,9 @@ template&lt;class GEOMETRIC_ELEMENT &gt; </div>
 
 <p>Project the solution that was present in the original mesh and from which this backup mesh was created onto the mesh pointed to by new_mesh_pt. Note that elements in the new mesh do not have to be projectable. The original mesh may by now have been deleted. </p>
 
-<p class="definition">Definition at line <a class="el" href="face__mesh__project_8h_source.html#l00410">410</a> of file <a class="el" href="face__mesh__project_8h_source.html">face_mesh_project.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="face__mesh__project_8h_source.html#l00406">406</a> of file <a class="el" href="face__mesh__project_8h_source.html">face_mesh_project.h</a>.</p>
 
-<p class="reference">References <a class="el" href="face__mesh__project_8h_source.html#l00489">oomph::BackupMeshForProjection&lt; GEOMETRIC_ELEMENT &gt;::Boundary_id</a>, <a class="el" href="face__mesh__project_8h_source.html#l00443">oomph::BackupMeshForProjection&lt; GEOMETRIC_ELEMENT &gt;::copy_onto_original_mesh()</a>, and <a class="el" href="face__mesh__project_8h_source.html#l00493">oomph::BackupMeshForProjection&lt; GEOMETRIC_ELEMENT &gt;::ID_of_field_to_be_projected</a>.</p>
+<p class="reference">References <a class="el" href="face__mesh__project_8h_source.html#l00485">oomph::BackupMeshForProjection&lt; GEOMETRIC_ELEMENT &gt;::Boundary_id</a>, <a class="el" href="face__mesh__project_8h_source.html#l00439">oomph::BackupMeshForProjection&lt; GEOMETRIC_ELEMENT &gt;::copy_onto_original_mesh()</a>, and <a class="el" href="face__mesh__project_8h_source.html#l00489">oomph::BackupMeshForProjection&lt; GEOMETRIC_ELEMENT &gt;::ID_of_field_to_be_projected</a>.</p>
 
 </div>
 </div>
@@ -936,9 +936,9 @@ template&lt;class GEOMETRIC_ELEMENT &gt; </div>
 
 <p>Boundary id. </p>
 
-<p class="definition">Definition at line <a class="el" href="face__mesh__project_8h_source.html#l00489">489</a> of file <a class="el" href="face__mesh__project_8h_source.html">face_mesh_project.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="face__mesh__project_8h_source.html#l00485">485</a> of file <a class="el" href="face__mesh__project_8h_source.html">face_mesh_project.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="face__mesh__project_8h_source.html#l00247">oomph::BackupMeshForProjection&lt; GEOMETRIC_ELEMENT &gt;::BackupMeshForProjection()</a>, and <a class="el" href="face__mesh__project_8h_source.html#l00410">oomph::BackupMeshForProjection&lt; GEOMETRIC_ELEMENT &gt;::project_onto_new_mesh()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="face__mesh__project_8h_source.html#l00243">oomph::BackupMeshForProjection&lt; GEOMETRIC_ELEMENT &gt;::BackupMeshForProjection()</a>, and <a class="el" href="face__mesh__project_8h_source.html#l00406">oomph::BackupMeshForProjection&lt; GEOMETRIC_ELEMENT &gt;::project_onto_new_mesh()</a>.</p>
 
 </div>
 </div>
@@ -966,9 +966,9 @@ template&lt;class GEOMETRIC_ELEMENT &gt; </div>
 
 <p>ID of field to be projected (UINT_MAX if there isn't one, in which case we're doing all of them. </p>
 
-<p class="definition">Definition at line <a class="el" href="face__mesh__project_8h_source.html#l00493">493</a> of file <a class="el" href="face__mesh__project_8h_source.html">face_mesh_project.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="face__mesh__project_8h_source.html#l00489">489</a> of file <a class="el" href="face__mesh__project_8h_source.html">face_mesh_project.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="face__mesh__project_8h_source.html#l00247">oomph::BackupMeshForProjection&lt; GEOMETRIC_ELEMENT &gt;::BackupMeshForProjection()</a>, <a class="el" href="face__mesh__project_8h_source.html#l00443">oomph::BackupMeshForProjection&lt; GEOMETRIC_ELEMENT &gt;::copy_onto_original_mesh()</a>, and <a class="el" href="face__mesh__project_8h_source.html#l00410">oomph::BackupMeshForProjection&lt; GEOMETRIC_ELEMENT &gt;::project_onto_new_mesh()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="face__mesh__project_8h_source.html#l00243">oomph::BackupMeshForProjection&lt; GEOMETRIC_ELEMENT &gt;::BackupMeshForProjection()</a>, <a class="el" href="face__mesh__project_8h_source.html#l00439">oomph::BackupMeshForProjection&lt; GEOMETRIC_ELEMENT &gt;::copy_onto_original_mesh()</a>, and <a class="el" href="face__mesh__project_8h_source.html#l00406">oomph::BackupMeshForProjection&lt; GEOMETRIC_ELEMENT &gt;::project_onto_new_mesh()</a>.</p>
 
 </div>
 </div>
@@ -996,9 +996,9 @@ template&lt;class GEOMETRIC_ELEMENT &gt; </div>
 
 <p>Map returning new node, labeled by node point in original mesh. </p>
 
-<p class="definition">Definition at line <a class="el" href="face__mesh__project_8h_source.html#l00486">486</a> of file <a class="el" href="face__mesh__project_8h_source.html">face_mesh_project.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="face__mesh__project_8h_source.html#l00482">482</a> of file <a class="el" href="face__mesh__project_8h_source.html">face_mesh_project.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="face__mesh__project_8h_source.html#l00247">oomph::BackupMeshForProjection&lt; GEOMETRIC_ELEMENT &gt;::BackupMeshForProjection()</a>, and <a class="el" href="face__mesh__project_8h_source.html#l00443">oomph::BackupMeshForProjection&lt; GEOMETRIC_ELEMENT &gt;::copy_onto_original_mesh()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="face__mesh__project_8h_source.html#l00243">oomph::BackupMeshForProjection&lt; GEOMETRIC_ELEMENT &gt;::BackupMeshForProjection()</a>, and <a class="el" href="face__mesh__project_8h_source.html#l00439">oomph::BackupMeshForProjection&lt; GEOMETRIC_ELEMENT &gt;::copy_onto_original_mesh()</a>.</p>
 
 </div>
 </div>
@@ -1033,7 +1033,7 @@ template&lt;class GEOMETRIC_ELEMENT &gt; </div>
     <footer>
       <div class="container">
         <div class="text-muted" style="float:right;">Generated by <a href="http://www.doxygen.org/index.html">
-          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Tue Jul 6 2021 22:55:46
+          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Fri Jul 9 2021 20:51:04
         </div>
       </div>
     </footer>

@@ -134,7 +134,7 @@ class oomph\+::\+P\+M\+L\+Helmholtz\+Equations$<$ D\+I\+M $>$}
 
 A class for all isoparametric elements that solve the Helmholtz equations with pml capabilities. This contains the generic maths. \mbox{\hyperlink{classoomph_1_1Shape}{Shape}} functions, geometric mapping etc. must get implemented in derived class. 
 
-Definition at line 65 of file pml\+\_\+helmholtz\+\_\+elements.\+h.
+Definition at line 61 of file pml\+\_\+helmholtz\+\_\+elements.\+h.
 
 
 
@@ -152,7 +152,7 @@ Function pointer to source function fct(x,f(x)) -- x is a Vector!
 
 
 
-Definition at line 73 of file pml\+\_\+helmholtz\+\_\+elements.\+h.
+Definition at line 69 of file pml\+\_\+helmholtz\+\_\+elements.\+h.
 
 
 
@@ -170,7 +170,7 @@ Constructor.
 
 
 
-Definition at line 77 of file pml\+\_\+helmholtz\+\_\+elements.\+h.
+Definition at line 73 of file pml\+\_\+helmholtz\+\_\+elements.\+h.
 
 
 
@@ -189,7 +189,7 @@ Broken copy constructor.
 
 
 
-Definition at line 87 of file pml\+\_\+helmholtz\+\_\+elements.\+h.
+Definition at line 83 of file pml\+\_\+helmholtz\+\_\+elements.\+h.
 
 
 
@@ -211,7 +211,7 @@ Alpha, wavenumber complex shift.
 
 
 
-Definition at line 127 of file pml\+\_\+helmholtz\+\_\+elements.\+h.
+Definition at line 123 of file pml\+\_\+helmholtz\+\_\+elements.\+h.
 
 
 
@@ -234,7 +234,7 @@ Pointer to Alpha, wavenumber complex shift.
 
 
 
-Definition at line 130 of file pml\+\_\+helmholtz\+\_\+elements.\+h.
+Definition at line 126 of file pml\+\_\+helmholtz\+\_\+elements.\+h.
 
 
 
@@ -263,7 +263,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1FiniteElement_a73c79a1f1e5b1d3
 
 
 
-Definition at line 735 of file pml\+\_\+helmholtz\+\_\+elements.\+cc.
+Definition at line 731 of file pml\+\_\+helmholtz\+\_\+elements.\+cc.
 
 
 
@@ -286,7 +286,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1FiniteElement_a7f67853506dc73f
 
 
 
-Definition at line 388 of file pml\+\_\+helmholtz\+\_\+elements.\+h.
+Definition at line 384 of file pml\+\_\+helmholtz\+\_\+elements.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1PMLHelmholtzEquations_a6c26381bc4aab3ff5a4e059989778128}\label{classoomph_1_1PMLHelmholtzEquations_a6c26381bc4aab3ff5a4e059989778128}} 
 \index{oomph::PMLHelmholtzEquations$<$ DIM $>$@{oomph::PMLHelmholtzEquations$<$ DIM $>$}!compute\_norm@{compute\_norm}}
@@ -305,7 +305,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1GeneralisedElement_af2025a472d
 
 
 
-Definition at line 816 of file pml\+\_\+helmholtz\+\_\+elements.\+cc.
+Definition at line 812 of file pml\+\_\+helmholtz\+\_\+elements.\+cc.
 
 
 
@@ -330,7 +330,7 @@ for 2D, in order\+: g\+\_\+y/g\+\_\+x, g\+\_\+x/g\+\_\+y for Laplace bit and g\+
 
 The weights all default to 1.\+0 as if the propagation medium is the physical domain
 
-Definition at line 544 of file pml\+\_\+helmholtz\+\_\+elements.\+h.
+Definition at line 540 of file pml\+\_\+helmholtz\+\_\+elements.\+h.
 
 
 
@@ -383,7 +383,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1FiniteElement_a0ae7af222af38a0
 
 
 
-Definition at line 492 of file pml\+\_\+helmholtz\+\_\+elements.\+h.
+Definition at line 488 of file pml\+\_\+helmholtz\+\_\+elements.\+h.
 
 
 
@@ -406,7 +406,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1GeneralisedElement_a310c97f515
 
 
 
-Definition at line 481 of file pml\+\_\+helmholtz\+\_\+elements.\+h.
+Definition at line 477 of file pml\+\_\+helmholtz\+\_\+elements.\+h.
 
 
 
@@ -433,7 +433,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1RefineablePMLHelmholtzEquations_
 
 
 
-Definition at line 59 of file pml\+\_\+helmholtz\+\_\+elements.\+cc.
+Definition at line 55 of file pml\+\_\+helmholtz\+\_\+elements.\+cc.
 
 
 
@@ -460,7 +460,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1GeneralisedElement_a069f59bfc3
 
 
 
-Definition at line 642 of file pml\+\_\+helmholtz\+\_\+elements.\+h.
+Definition at line 638 of file pml\+\_\+helmholtz\+\_\+elements.\+h.
 
 
 
@@ -479,7 +479,7 @@ Get flux\+: flux\mbox{[}i\mbox{]} = du/dx\+\_\+i for real and imag part.
 
 
 
-Definition at line 443 of file pml\+\_\+helmholtz\+\_\+elements.\+h.
+Definition at line 439 of file pml\+\_\+helmholtz\+\_\+elements.\+h.
 
 
 
@@ -498,7 +498,7 @@ virtual void \mbox{\hyperlink{classoomph_1_1PMLHelmholtzEquations}{oomph\+::\+P\
 
 Get source term at (Eulerian) position x. This function is virtual to allow overloading in multi-\/physics problems where the strength of the source function might be determined by another system of equations. 
 
-Definition at line 413 of file pml\+\_\+helmholtz\+\_\+elements.\+h.
+Definition at line 409 of file pml\+\_\+helmholtz\+\_\+elements.\+h.
 
 
 
@@ -517,7 +517,7 @@ Return FE representation of function value u\+\_\+helmholtz(s) at local coordina
 
 
 
-Definition at line 504 of file pml\+\_\+helmholtz\+\_\+elements.\+h.
+Definition at line 500 of file pml\+\_\+helmholtz\+\_\+elements.\+h.
 
 
 
@@ -540,7 +540,7 @@ Get the square of wavenumber.
 
 
 
-Definition at line 112 of file pml\+\_\+helmholtz\+\_\+elements.\+h.
+Definition at line 108 of file pml\+\_\+helmholtz\+\_\+elements.\+h.
 
 
 
@@ -563,7 +563,7 @@ Get pointer to k\+\_\+squared.
 
 
 
-Definition at line 108 of file pml\+\_\+helmholtz\+\_\+elements.\+h.
+Definition at line 104 of file pml\+\_\+helmholtz\+\_\+elements.\+h.
 
 
 
@@ -586,7 +586,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1GeneralisedElement_a0c6037a870
 
 
 
-Definition at line 631 of file pml\+\_\+helmholtz\+\_\+elements.\+h.
+Definition at line 627 of file pml\+\_\+helmholtz\+\_\+elements.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1PMLHelmholtzEquations_ad01f5a39cc376ab238d2443e39732bcb}\label{classoomph_1_1PMLHelmholtzEquations_ad01f5a39cc376ab238d2443e39732bcb}} 
 \index{oomph::PMLHelmholtzEquations$<$ DIM $>$@{oomph::PMLHelmholtzEquations$<$ DIM $>$}!nscalar\_paraview@{nscalar\_paraview}}
@@ -605,7 +605,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1FiniteElement_a865e2e5586552ba
 
 
 
-Definition at line 135 of file pml\+\_\+helmholtz\+\_\+elements.\+h.
+Definition at line 131 of file pml\+\_\+helmholtz\+\_\+elements.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1PMLHelmholtzEquations_a8ac463e252c5d20255e810e52f32c6ef}\label{classoomph_1_1PMLHelmholtzEquations_a8ac463e252c5d20255e810e52f32c6ef}} 
 \index{oomph::PMLHelmholtzEquations$<$ DIM $>$@{oomph::PMLHelmholtzEquations$<$ DIM $>$}!output@{output}}
@@ -628,7 +628,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1QPMLHelmholtzElement_a37929db100
 
 
 
-Definition at line 330 of file pml\+\_\+helmholtz\+\_\+elements.\+h.
+Definition at line 326 of file pml\+\_\+helmholtz\+\_\+elements.\+h.
 
 
 
@@ -659,7 +659,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1QPMLHelmholtzElement_a2d0d6f63dd
 
 
 
-Definition at line 524 of file pml\+\_\+helmholtz\+\_\+elements.\+cc.
+Definition at line 520 of file pml\+\_\+helmholtz\+\_\+elements.\+cc.
 
 
 
@@ -686,7 +686,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1QPMLHelmholtzElement_ab8c2433419
 
 
 
-Definition at line 290 of file pml\+\_\+helmholtz\+\_\+elements.\+h.
+Definition at line 286 of file pml\+\_\+helmholtz\+\_\+elements.\+h.
 
 
 
@@ -717,7 +717,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1QPMLHelmholtzElement_a72fce9b0be
 
 
 
-Definition at line 339 of file pml\+\_\+helmholtz\+\_\+elements.\+cc.
+Definition at line 335 of file pml\+\_\+helmholtz\+\_\+elements.\+cc.
 
 
 
@@ -744,7 +744,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1QPMLHelmholtzElement_a11cffc61d0
 
 
 
-Definition at line 347 of file pml\+\_\+helmholtz\+\_\+elements.\+h.
+Definition at line 343 of file pml\+\_\+helmholtz\+\_\+elements.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1PMLHelmholtzEquations_ae56afa0bfd1de461e033a7ecc5a4f895}\label{classoomph_1_1PMLHelmholtzEquations_ae56afa0bfd1de461e033a7ecc5a4f895}} 
 \index{oomph::PMLHelmholtzEquations$<$ DIM $>$@{oomph::PMLHelmholtzEquations$<$ DIM $>$}!output\_fct@{output\_fct}}
@@ -769,7 +769,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1QPMLHelmholtzElement_aa61e5de679
 
 
 
-Definition at line 571 of file pml\+\_\+helmholtz\+\_\+elements.\+cc.
+Definition at line 567 of file pml\+\_\+helmholtz\+\_\+elements.\+cc.
 
 
 
@@ -800,7 +800,7 @@ x,y,u or x,y,z,u
 
 Output at nplot points in each coordinate direction 
 
-Definition at line 486 of file pml\+\_\+helmholtz\+\_\+elements.\+cc.
+Definition at line 482 of file pml\+\_\+helmholtz\+\_\+elements.\+cc.
 
 
 
@@ -831,7 +831,7 @@ x,y,u or x,y,z,u
 
 Output at nplot points in each coordinate direction 
 
-Definition at line 680 of file pml\+\_\+helmholtz\+\_\+elements.\+cc.
+Definition at line 676 of file pml\+\_\+helmholtz\+\_\+elements.\+cc.
 
 
 
@@ -862,7 +862,7 @@ x,y,u or x,y,z,u
 
 Output at nplot points in each coordinate direction 
 
-Definition at line 385 of file pml\+\_\+helmholtz\+\_\+elements.\+cc.
+Definition at line 381 of file pml\+\_\+helmholtz\+\_\+elements.\+cc.
 
 
 
@@ -893,7 +893,7 @@ x,y,u or x,y,z,u
 
 Output at nplot points in each coordinate direction 
 
-Definition at line 625 of file pml\+\_\+helmholtz\+\_\+elements.\+cc.
+Definition at line 621 of file pml\+\_\+helmholtz\+\_\+elements.\+cc.
 
 
 
@@ -922,7 +922,7 @@ x,y,u or x,y,z,u
 
 Output at nplot points in each coordinate direction 
 
-Definition at line 428 of file pml\+\_\+helmholtz\+\_\+elements.\+cc.
+Definition at line 424 of file pml\+\_\+helmholtz\+\_\+elements.\+cc.
 
 
 
@@ -941,7 +941,7 @@ Return a pointer to the P\+ML Mapping object.
 
 
 
-Definition at line 620 of file pml\+\_\+helmholtz\+\_\+elements.\+h.
+Definition at line 616 of file pml\+\_\+helmholtz\+\_\+elements.\+h.
 
 
 
@@ -960,7 +960,7 @@ Return a pointer to the P\+ML Mapping object (const version)
 
 
 
-Definition at line 623 of file pml\+\_\+helmholtz\+\_\+elements.\+h.
+Definition at line 619 of file pml\+\_\+helmholtz\+\_\+elements.\+h.
 
 
 
@@ -983,7 +983,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1FiniteElement_a49cc2d4f7ed5772
 
 
 
-Definition at line 257 of file pml\+\_\+helmholtz\+\_\+elements.\+h.
+Definition at line 253 of file pml\+\_\+helmholtz\+\_\+elements.\+h.
 
 
 
@@ -1006,7 +1006,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1FiniteElement_ac6ce34f52481195
 
 
 
-Definition at line 193 of file pml\+\_\+helmholtz\+\_\+elements.\+h.
+Definition at line 189 of file pml\+\_\+helmholtz\+\_\+elements.\+h.
 
 
 
@@ -1029,7 +1029,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1FiniteElement_a02cf8832a5e2886
 
 
 
-Definition at line 142 of file pml\+\_\+helmholtz\+\_\+elements.\+h.
+Definition at line 138 of file pml\+\_\+helmholtz\+\_\+elements.\+h.
 
 
 
@@ -1052,7 +1052,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1FiniteElement_af94c5a5e22175d5
 
 
 
-Definition at line 307 of file pml\+\_\+helmholtz\+\_\+elements.\+cc.
+Definition at line 303 of file pml\+\_\+helmholtz\+\_\+elements.\+cc.
 
 
 
@@ -1071,7 +1071,7 @@ Access function\+: Pointer to source function.
 
 
 
-Definition at line 403 of file pml\+\_\+helmholtz\+\_\+elements.\+h.
+Definition at line 399 of file pml\+\_\+helmholtz\+\_\+elements.\+h.
 
 
 
@@ -1094,7 +1094,7 @@ Access function\+: Pointer to source function. Const version.
 
 
 
-Definition at line 406 of file pml\+\_\+helmholtz\+\_\+elements.\+h.
+Definition at line 402 of file pml\+\_\+helmholtz\+\_\+elements.\+h.
 
 
 
@@ -1113,7 +1113,7 @@ Broken assignment operator.
 
 Return the index at which the unknown value is stored. 
 
-Definition at line 104 of file pml\+\_\+helmholtz\+\_\+elements.\+h.
+Definition at line 100 of file pml\+\_\+helmholtz\+\_\+elements.\+h.
 
 
 
@@ -1136,7 +1136,7 @@ Implements \mbox{\hyperlink{classoomph_1_1PMLElementBase_ad63639f1966cd3191fad69
 
 
 
-Definition at line 432 of file pml\+\_\+helmholtz\+\_\+elements.\+h.
+Definition at line 428 of file pml\+\_\+helmholtz\+\_\+elements.\+h.
 
 
 
@@ -1154,7 +1154,7 @@ Pointer to wavenumber complex shift.
 
 
 
-Definition at line 715 of file pml\+\_\+helmholtz\+\_\+elements.\+h.
+Definition at line 711 of file pml\+\_\+helmholtz\+\_\+elements.\+h.
 
 
 
@@ -1173,7 +1173,7 @@ Static default value for the physical constants (initialised to zero)
 
 P\+ML Helmholtz equations static data, so that by default we can point to a 0. 
 
-Definition at line 727 of file pml\+\_\+helmholtz\+\_\+elements.\+h.
+Definition at line 723 of file pml\+\_\+helmholtz\+\_\+elements.\+h.
 
 
 
@@ -1188,7 +1188,7 @@ Referenced by oomph\+::\+P\+M\+L\+Helmholtz\+Equations$<$ D\+I\+M $>$\+::\+P\+M\
 
 Static so that the class doesn\textquotesingle{}t need to instantiate a new default everytime it uses it 
 
-Definition at line 627 of file pml\+\_\+helmholtz\+\_\+elements.\+h.
+Definition at line 623 of file pml\+\_\+helmholtz\+\_\+elements.\+h.
 
 
 
@@ -1207,7 +1207,7 @@ Pointer to wave number (must be set!)
 
 
 
-Definition at line 721 of file pml\+\_\+helmholtz\+\_\+elements.\+h.
+Definition at line 717 of file pml\+\_\+helmholtz\+\_\+elements.\+h.
 
 
 
@@ -1226,7 +1226,7 @@ Pointer to class which holds the pml mapping function, also known as gamma.
 
 
 
-Definition at line 724 of file pml\+\_\+helmholtz\+\_\+elements.\+h.
+Definition at line 720 of file pml\+\_\+helmholtz\+\_\+elements.\+h.
 
 
 
@@ -1245,7 +1245,7 @@ Pointer to source function\+:
 
 
 
-Definition at line 718 of file pml\+\_\+helmholtz\+\_\+elements.\+h.
+Definition at line 714 of file pml\+\_\+helmholtz\+\_\+elements.\+h.
 
 
 

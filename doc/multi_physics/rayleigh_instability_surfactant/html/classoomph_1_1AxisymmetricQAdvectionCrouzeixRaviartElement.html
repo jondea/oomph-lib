@@ -206,7 +206,7 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class that solves the Boussinesq approximation of the Navier&ndash;Stokes and energy equations by coupling two pre-existing classes. The QAdvectionDiffusionReactionElement with bi-quadratic interpolation for the scalar variables (temperature and concentration) and QCrouzeixRaviartElement which solves the Navier&ndash;Stokes equations using bi-quadratic interpolation for the velocities and a discontinuous bi-linear interpolation for the pressure. Note that we are free to choose the order in which we store the variables at the nodes. In this case we choose to store the variables in the order fluid velocities followed by temperature. We must, therefore, overload the function AdvectionDiffusionReactionEquations&lt;2,DIM&gt;::u_index_adv_diff_react() to indicate that the temperature is stored at the DIM-th position not the 0-th. We do not need to overload the corresponding function in the NavierStokesEquations&lt;DIM&gt; class because the velocities are stored first. </p>
 
-<p class="definition">Definition at line <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html#l00061">61</a> of file <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html">axisymmetric_advection_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html#l00057">57</a> of file <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html">axisymmetric_advection_navier_stokes_elements.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af4d272a08506d3a47aff330fb57948bb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af4d272a08506d3a47aff330fb57948bb">&#9670;&nbsp;</a></span>AxisymmetricQAdvectionCrouzeixRaviartElement()</h2>
@@ -233,7 +233,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Constructor: call the underlying constructors and initialise the pointer to the Rayleigh number to point to the default value of 0.0. </p>
 
-<p class="definition">Definition at line <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html#l00071">71</a> of file <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html">axisymmetric_advection_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html#l00067">67</a> of file <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html">axisymmetric_advection_navier_stokes_elements.h</a>.</p>
 
 </div>
 </div>
@@ -286,7 +286,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Validate against exact solution. Solution is provided via function pointer. Plot at a given number of plot points and compute L2 error and L2 norm of velocity solution over element Call the broken default. </p>
 
-<p class="definition">Definition at line <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html#l00225">225</a> of file <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html">axisymmetric_advection_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html#l00221">221</a> of file <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html">axisymmetric_advection_navier_stokes_elements.h</a>.</p>
 
 </div>
 </div>
@@ -344,7 +344,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Validate against exact solution at given time Solution is provided via function pointer. Plot at a given number of plot points and compute L2 error and L2 norm of velocity solution over element Call the broken default. </p>
 
-<p class="definition">Definition at line <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html#l00213">213</a> of file <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html">axisymmetric_advection_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html#l00209">209</a> of file <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html">axisymmetric_advection_navier_stokes_elements.h</a>.</p>
 
 </div>
 </div>
@@ -372,7 +372,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html#l00204">204</a> of file <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html">axisymmetric_advection_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html#l00200">200</a> of file <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html">axisymmetric_advection_navier_stokes_elements.h</a>.</p>
 
 </div>
 </div>
@@ -401,7 +401,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Final override for disable ALE. </p>
 
-<p class="definition">Definition at line <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html#l00084">84</a> of file <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html">axisymmetric_advection_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html#l00080">80</a> of file <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html">axisymmetric_advection_navier_stokes_elements.h</a>.</p>
 
 </div>
 </div>
@@ -430,7 +430,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Final override for enable ALE. </p>
 
-<p class="definition">Definition at line <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html#l00092">92</a> of file <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html">axisymmetric_advection_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html#l00088">88</a> of file <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html">axisymmetric_advection_navier_stokes_elements.h</a>.</p>
 
 </div>
 </div>
@@ -470,7 +470,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Compute the element's residual vector and the Jacobian matrix. Jacobian is computed by finite-differencing. </p>
 
-<p class="definition">Definition at line <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html#l00261">261</a> of file <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html">axisymmetric_advection_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html#l00257">257</a> of file <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html">axisymmetric_advection_navier_stokes_elements.h</a>.</p>
 
 </div>
 </div>
@@ -510,9 +510,9 @@ Public Member Functions</h2></td></tr>
 
 <p>Compute the element's residual Vector and the Jacobian matrix. Use finite-differencing only for the off-diagonal blocks. </p>
 
-<p class="definition">Definition at line <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html#l00359">359</a> of file <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html">axisymmetric_advection_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html#l00355">355</a> of file <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html">axisymmetric_advection_navier_stokes_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html#l00272">fill_in_off_diagonal_jacobian_blocks_by_fd()</a>.</p>
+<p class="reference">References <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html#l00268">fill_in_off_diagonal_jacobian_blocks_by_fd()</a>.</p>
 
 </div>
 </div>
@@ -557,9 +557,9 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Add the element's contribution to its residuals vector, jacobian matrix and mass matrix </p>
 
-<p class="definition">Definition at line <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html#l00381">381</a> of file <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html">axisymmetric_advection_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html#l00377">377</a> of file <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html">axisymmetric_advection_navier_stokes_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html#l00272">fill_in_off_diagonal_jacobian_blocks_by_fd()</a>.</p>
+<p class="reference">References <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html#l00268">fill_in_off_diagonal_jacobian_blocks_by_fd()</a>.</p>
 
 </div>
 </div>
@@ -589,7 +589,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Calculate the element's contribution to the residual vector. Recall that fill_in_* functions MUST NOT initialise the entries in the vector to zero. This allows us to call the fill_in_* functions of the constituent single-physics elements sequentially, without wiping out any previously computed entries. </p>
 
-<p class="definition">Definition at line <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html#l00246">246</a> of file <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html">axisymmetric_advection_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html#l00242">242</a> of file <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html">axisymmetric_advection_navier_stokes_elements.h</a>.</p>
 
 </div>
 </div>
@@ -629,11 +629,11 @@ Public Member Functions</h2></td></tr>
 
 <p>Helper function to get the off-diagonal blocks of the Jacobian matrix by finite differences. </p>
 
-<p class="definition">Definition at line <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html#l00272">272</a> of file <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html">axisymmetric_advection_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html#l00268">268</a> of file <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html">axisymmetric_advection_navier_stokes_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html#l00200">u_index_axi_adv_diff()</a>.</p>
+<p class="reference">References <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html#l00196">u_index_axi_adv_diff()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html#l00359">fill_in_contribution_to_jacobian()</a>, and <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html#l00381">fill_in_contribution_to_jacobian_and_mass_matrix()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html#l00355">fill_in_contribution_to_jacobian()</a>, and <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html#l00377">fill_in_contribution_to_jacobian_and_mass_matrix()</a>.</p>
 
 </div>
 </div>
@@ -685,7 +685,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Overload the wind function in the advection-diffusion equations. This provides the coupling from the Navier&ndash;Stokes equations to the advection-diffusion equations because the wind is the fluid velocity. </p>
 
-<p class="definition">Definition at line <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html#l00233">233</a> of file <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html">axisymmetric_advection_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html#l00229">229</a> of file <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html">axisymmetric_advection_navier_stokes_elements.h</a>.</p>
 
 </div>
 </div>
@@ -714,7 +714,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Number of scalars/fields output by this element. Reimplements broken virtual function in base class. </p>
 
-<p class="definition">Definition at line <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html#l00102">102</a> of file <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html">axisymmetric_advection_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html#l00098">98</a> of file <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html">axisymmetric_advection_navier_stokes_elements.h</a>.</p>
 
 </div>
 </div>
@@ -744,7 +744,7 @@ Public Member Functions</h2></td></tr>
 
 <p>C-style output function: Broken default. </p>
 
-<p class="definition">Definition at line <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html#l00172">172</a> of file <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html">axisymmetric_advection_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html#l00168">168</a> of file <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html">axisymmetric_advection_navier_stokes_elements.h</a>.</p>
 
 </div>
 </div>
@@ -784,7 +784,7 @@ Public Member Functions</h2></td></tr>
 
 <p>C-style output function: Broken default. </p>
 
-<p class="definition">Definition at line <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html#l00176">176</a> of file <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html">axisymmetric_advection_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html#l00172">172</a> of file <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html">axisymmetric_advection_navier_stokes_elements.h</a>.</p>
 
 </div>
 </div>
@@ -814,7 +814,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Overload the standard output function with the broken default. </p>
 
-<p class="definition">Definition at line <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html#l00128">128</a> of file <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html">axisymmetric_advection_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html#l00124">124</a> of file <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html">axisymmetric_advection_navier_stokes_elements.h</a>.</p>
 
 </div>
 </div>
@@ -855,7 +855,7 @@ Public Member Functions</h2></td></tr>
 <p>Output function: <br  />
  Output x, y, u, v, p, theta at Nplot^DIM plot points. </p>
 
-<p class="definition">Definition at line <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html#l00133">133</a> of file <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html">axisymmetric_advection_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html#l00129">129</a> of file <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html">axisymmetric_advection_navier_stokes_elements.h</a>.</p>
 
 </div>
 </div>
@@ -907,7 +907,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Output function for a time-dependent exact solution: Broken default. </p>
 
-<p class="definition">Definition at line <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html#l00188">188</a> of file <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html">axisymmetric_advection_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html#l00184">184</a> of file <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html">axisymmetric_advection_navier_stokes_elements.h</a>.</p>
 
 </div>
 </div>
@@ -953,7 +953,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Output function for an exact solution: Broken default. </p>
 
-<p class="definition">Definition at line <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html#l00180">180</a> of file <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html">axisymmetric_advection_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html#l00176">176</a> of file <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html">axisymmetric_advection_navier_stokes_elements.h</a>.</p>
 
 </div>
 </div>
@@ -983,7 +983,7 @@ Public Member Functions</h2></td></tr>
 
 <p>The required number of values stored at the nodes is the sum of the required values of the two single-physics elements. Note that this step is generic for any multi-physics element of this type. </p>
 
-<p class="definition">Definition at line <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html#l00079">79</a> of file <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html">axisymmetric_advection_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html#l00075">75</a> of file <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html">axisymmetric_advection_navier_stokes_elements.h</a>.</p>
 
 </div>
 </div>
@@ -1011,7 +1011,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html#l00119">119</a> of file <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html">axisymmetric_advection_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html#l00115">115</a> of file <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html">axisymmetric_advection_navier_stokes_elements.h</a>.</p>
 
 </div>
 </div>
@@ -1057,7 +1057,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Write values of the i-th scalar field at the plot points. Needs to be implemented for each new specific element type. </p>
 
-<p class="definition">Definition at line <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html#l00110">110</a> of file <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html">axisymmetric_advection_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html#l00106">106</a> of file <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html">axisymmetric_advection_navier_stokes_elements.h</a>.</p>
 
 </div>
 </div>
@@ -1087,9 +1087,9 @@ Public Member Functions</h2></td></tr>
 <p>Overload the index at which the temperature and solute concentration variables are stored. <br  />
  </p>
 
-<p class="definition">Definition at line <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html#l00200">200</a> of file <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html">axisymmetric_advection_navier_stokes_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html#l00196">196</a> of file <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html">axisymmetric_advection_navier_stokes_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html#l00272">fill_in_off_diagonal_jacobian_blocks_by_fd()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="axisymmetric__advection__navier__stokes__elements_8h_source.html#l00268">fill_in_off_diagonal_jacobian_blocks_by_fd()</a>.</p>
 
 </div>
 </div>
@@ -1124,7 +1124,7 @@ Public Member Functions</h2></td></tr>
     <footer>
       <div class="container">
         <div class="text-muted" style="float:right;">Generated by <a href="http://www.doxygen.org/index.html">
-          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Tue Jul 6 2021 23:25:39
+          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Fri Jul 9 2021 21:16:01
         </div>
       </div>
     </footer>

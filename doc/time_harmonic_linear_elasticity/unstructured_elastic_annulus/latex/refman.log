@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.7.6)  6 JUL 2021 23:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.7.9)  9 JUL 2021 21:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -920,7 +920,17 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [14]
-Underfull \hbox (badness 10000) in paragraph at lines 991--993
+Underfull \hbox (badness 10000) in paragraph at lines 987--989
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 987--989
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 989--990
 
  []
 
@@ -930,27 +940,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 991--993
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 993--994
+Underfull \hbox (badness 10000) in paragraph at lines 991--993
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 995--997
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 995--997
-
- []
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1003.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 999.
 [15]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1003.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 999.
 (./refman.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1003.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1003.
-
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 999.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 999.
 Package rerunfilecheck Info: File `refman.out' has not changed.
 (rerunfilecheck)             Checksum: 0472A25FCB4448776A7D5C060E4CDB22;1919.
  ) ) 
@@ -1038,7 +1037,7 @@ m/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8ac.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on refman.pdf (15 pages, 256834 bytes).
+Output written on refman.pdf (15 pages, 256351 bytes).
 PDF statistics:
  297 PDF objects out of 1000 (max. 8388607)
  258 compressed objects within 3 object streams

@@ -139,7 +139,7 @@ Not\+\_\+found&\\
 \end{DoxyEnumFields}
 
 
-Definition at line 153 of file multi\+\_\+domain.\+h.
+Definition at line 149 of file multi\+\_\+domain.\+h.
 
 
 
@@ -157,7 +157,7 @@ Helper function to add external halo node that is a master.
 
 
 
-Definition at line 2011 of file multi\+\_\+domain.\+template.\+cc.
+Definition at line 2007 of file multi\+\_\+domain.\+template.\+cc.
 
 
 
@@ -175,7 +175,7 @@ Helper functiono to add external halo node that is not a master.
 
 Helper function to add external halo node that is not a master. 
 
-Definition at line 1286 of file multi\+\_\+domain.\+cc.
+Definition at line 1282 of file multi\+\_\+domain.\+cc.
 
 
 
@@ -194,7 +194,7 @@ Helper function to add external halo nodes, including any masters, based on info
 
 Helper function to add external halo nodes, including any masters, based on information received from the haloed process 
 
-Definition at line 1925 of file multi\+\_\+domain.\+template.\+cc.
+Definition at line 1921 of file multi\+\_\+domain.\+template.\+cc.
 
 
 
@@ -212,7 +212,7 @@ Helper function to add external haloed node that is a master.
 
 
 
-Definition at line 590 of file multi\+\_\+domain.\+cc.
+Definition at line 586 of file multi\+\_\+domain.\+cc.
 
 
 
@@ -234,7 +234,7 @@ Helper to add external haloed node that is not a master.
 
 Helper function to add external haloed node that is not a master. 
 
-Definition at line 532 of file multi\+\_\+domain.\+cc.
+Definition at line 528 of file multi\+\_\+domain.\+cc.
 
 
 
@@ -256,7 +256,7 @@ Helper function to add external haloed nodes, including any masters.
 
 Helper function to add external haloed nodes, inc. masters of external haloed nodes. 
 
-Definition at line 446 of file multi\+\_\+domain.\+cc.
+Definition at line 442 of file multi\+\_\+domain.\+cc.
 
 
 
@@ -281,7 +281,7 @@ This routine calls the locate\+\_\+zeta routine (simultaneously on each processo
 
 Vector-\/based version operates simultaneously on the meshes contained in the vectors. If it\textquotesingle{}s is now zero then break out of the spirals loop
 
-Definition at line 533 of file multi\+\_\+domain.\+template.\+cc.
+Definition at line 529 of file multi\+\_\+domain.\+template.\+cc.
 
 
 
@@ -300,7 +300,7 @@ Auxiliary helper function.
 
 This routine calls the locate\+\_\+zeta routine (simultaneously on each processor for each individual processor\textquotesingle{}s element set if necessary) and sets up the external (halo) element and node storage as necessary. The locate\+\_\+zeta procedure here works for all multi-\/domain problems where either two meshes occupy the same physical space but have differing element types (e.\+g. a Boussinesq convection problem where Advection\+Diffusion elements interact with Navier-\/\+Stokes type elements) or two meshes interact along some boundary of the external mesh, represented by a \char`\"{}face mesh\char`\"{}, such as an F\+SI problem. 
 
-Definition at line 496 of file multi\+\_\+domain.\+template.\+cc.
+Definition at line 492 of file multi\+\_\+domain.\+template.\+cc.
 
 
 
@@ -318,7 +318,7 @@ Helper function that clears all the intermediate information used during the ext
 
 Helper function that clears all the information used during the external storage creation 
 
-Definition at line 2276 of file multi\+\_\+domain.\+cc.
+Definition at line 2272 of file multi\+\_\+domain.\+cc.
 
 
 
@@ -345,7 +345,7 @@ Helper function which constructs a new external halo master node with the requir
 
 Now call update\+\_\+node\+\_\+update
 
-Definition at line 2050 of file multi\+\_\+domain.\+template.\+cc.
+Definition at line 2046 of file multi\+\_\+domain.\+template.\+cc.
 
 
 
@@ -369,7 +369,7 @@ For the received update\+\_\+id, ref\+\_\+value, geom\+\_\+object call add\+\_\+
 
 Now call update\+\_\+node\+\_\+update
 
-Definition at line 1333 of file multi\+\_\+domain.\+cc.
+Definition at line 1329 of file multi\+\_\+domain.\+cc.
 
 
 
@@ -392,7 +392,7 @@ Create external (halo) elements on the loop process based on the information rec
 
 Creates external (halo) elements on the loop process based on the information received from each locate\+\_\+zeta call on other processes. vector based version 
 
-Definition at line 1683 of file multi\+\_\+domain.\+template.\+cc.
+Definition at line 1679 of file multi\+\_\+domain.\+template.\+cc.
 
 
 
@@ -406,7 +406,7 @@ References oomph\+::\+Problem\+::communicator\+\_\+pt(), Counter\+\_\+for\+\_\+f
 
 Comparison function for sorting entries in bin\+: Returns true if point identified by p1 (comprising pointer to finite element and vector of local coordinates within that element) is closer to Zeta\+\_\+coords\+\_\+for\+\_\+further\+\_\+away\+\_\+comparison than p2 
 
-Definition at line 2296 of file multi\+\_\+domain.\+cc.
+Definition at line 2292 of file multi\+\_\+domain.\+cc.
 
 
 
@@ -424,7 +424,7 @@ Helper function that computes the dimension of the elements within each of the s
 
 Helper function that computes the dimension of the elements within each of the specified meshes (and checks they are the same). Stores result in Dim. 
 
-Definition at line 2212 of file multi\+\_\+domain.\+cc.
+Definition at line 2208 of file multi\+\_\+domain.\+cc.
 
 
 
@@ -446,7 +446,7 @@ Helper function to get the required master nodal information from an external ha
 
 Helper function to get the required master nodal information from an external haloed master node so that a fully-\/functional external halo master node (and possible element) can be created on the receiving process 
 
-Definition at line 899 of file multi\+\_\+domain.\+cc.
+Definition at line 895 of file multi\+\_\+domain.\+cc.
 
 
 
@@ -468,7 +468,7 @@ Helper function to get the required nodal information from an external haloed no
 
 Helper function to get the required nodal information from an external haloed node so that a fully-\/functional external halo node (and therefore element) can be created on the receiving process 
 
-Definition at line 643 of file multi\+\_\+domain.\+cc.
+Definition at line 639 of file multi\+\_\+domain.\+cc.
 
 
 
@@ -490,7 +490,7 @@ Helper function to locate \char`\"{}local\char`\"{} zeta coordinates This is the
 
 locate zeta for current set of \char`\"{}local\char`\"{} coordinates vector-\/based version 
 
-Definition at line 2022 of file multi\+\_\+domain.\+cc.
+Definition at line 2018 of file multi\+\_\+domain.\+cc.
 
 
 
@@ -512,7 +512,7 @@ Locate zeta for current set of missing coordinates; vector-\/based version.
 
 Helper function to locate these \char`\"{}missing\char`\"{} zeta coordinates. This is the vector-\/based function which operates simultaneously on the meshes contained in the vectors. 
 
-Definition at line 1677 of file multi\+\_\+domain.\+cc.
+Definition at line 1673 of file multi\+\_\+domain.\+cc.
 
 
 
@@ -535,7 +535,7 @@ Recursively add masters of external halo nodes (and their masters, etc) based on
 
 Recursively add masters of external halo nodes (and their masters, etc) based on information received from the haloed process 
 
-Definition at line 1951 of file multi\+\_\+domain.\+template.\+cc.
+Definition at line 1947 of file multi\+\_\+domain.\+template.\+cc.
 
 
 
@@ -553,7 +553,7 @@ Recursively add any master nodes (and their master nodes etc) of external haloed
 
 Recursively add any master nodes (and their master nodes etc) of external nodes 
 
-Definition at line 468 of file multi\+\_\+domain.\+cc.
+Definition at line 464 of file multi\+\_\+domain.\+cc.
 
 
 
@@ -575,7 +575,7 @@ Helper function to send back any located information.
 
 Send location information from current process; Received location information from (current process + iproc) modulo (nproc) 
 
-Definition at line 248 of file multi\+\_\+domain.\+cc.
+Definition at line 244 of file multi\+\_\+domain.\+cc.
 
 
 
@@ -597,7 +597,7 @@ Helper function to send any \char`\"{}missing\char`\"{} zeta coordinates to the 
 
 Send the zeta coordinates from the current process to the next process; receive from the previous process 
 
-Definition at line 184 of file multi\+\_\+domain.\+cc.
+Definition at line 180 of file multi\+\_\+domain.\+cc.
 
 
 
@@ -620,7 +620,7 @@ Identify the {\ttfamily Face\+Elements} (stored in the mesh pointed to by {\ttfa
 
 Identify the {\ttfamily Face\+Elements} (stored in the mesh pointed to by {\ttfamily face\+\_\+mesh\+\_\+pt}) that are adjacent to the bulk elements next to the {\ttfamily boundary\+\_\+in\+\_\+bulk\+\_\+mesh} -\/th boundary of the mesh pointed to by {\ttfamily bulk\+\_\+mesh\+\_\+pt}. The {\ttfamily Face\+Elements} must be derived from the {\ttfamily \mbox{\hyperlink{classoomph_1_1ElementWithExternalElement}{Element\+With\+External\+Element}}} base class and the adjacent bulk elements are stored as their external elements. 
 
-Definition at line 216 of file multi\+\_\+domain.\+template.\+cc.
+Definition at line 212 of file multi\+\_\+domain.\+template.\+cc.
 
 \mbox{\Hypertarget{namespaceoomph_1_1Multi__domain__functions_a35d48459a5261d565afbc106cb61fe60}\label{namespaceoomph_1_1Multi__domain__functions_a35d48459a5261d565afbc106cb61fe60}} 
 \index{oomph::Multi\_domain\_functions@{oomph::Multi\_domain\_functions}!setup\_bulk\_elements\_adjacent\_to\_face\_mesh@{setup\_bulk\_elements\_adjacent\_to\_face\_mesh}}
@@ -639,7 +639,7 @@ Identify the {\ttfamily Face\+Elements} (stored in the mesh pointed to by {\ttfa
 
 This is the vector-\/based version which deals with multiple bulk mesh boundaries at the same time. 
 
-Definition at line 78 of file multi\+\_\+domain.\+template.\+cc.
+Definition at line 74 of file multi\+\_\+domain.\+template.\+cc.
 
 
 
@@ -678,7 +678,7 @@ Function to set up the one-\/way multi-\/domain interaction for F\+S\+I-\/like p
   elements\char`\"{} for the \mbox{\hyperlink{classoomph_1_1Mesh}{Mesh}} pointed to by mesh\+\_\+pt (e.\+g. in the case when a beam or shell structure is loaded by fluid from both sides.)
 \end{DoxyItemize}Vector-\/based version operates simultaneously on the meshes contained in the vectors. 
 
-Definition at line 404 of file multi\+\_\+domain.\+template.\+cc.
+Definition at line 400 of file multi\+\_\+domain.\+template.\+cc.
 
 
 
@@ -709,7 +709,7 @@ Function to set up the one-\/way multi-\/domain interaction for problems where t
 \item The interaction\+\_\+index parameter defaults to zero and must be otherwise set by the user if there is more than one mesh that provides sources for the \mbox{\hyperlink{classoomph_1_1Mesh}{Mesh}} pointed to by mesh\+\_\+pt. 
 \end{DoxyItemize}
 
-Definition at line 286 of file multi\+\_\+domain.\+template.\+cc.
+Definition at line 282 of file multi\+\_\+domain.\+template.\+cc.
 
 
 
@@ -748,7 +748,7 @@ Function to set up the one-\/way multi-\/domain interaction for F\+S\+I-\/like p
   elements\char`\"{} for the \mbox{\hyperlink{classoomph_1_1Mesh}{Mesh}} pointed to by mesh\+\_\+pt (e.\+g. in the case when a beam or shell structure is loaded by fluid from both sides.) 
 \end{DoxyItemize}
 
-Definition at line 343 of file multi\+\_\+domain.\+template.\+cc.
+Definition at line 339 of file multi\+\_\+domain.\+template.\+cc.
 
 
 
@@ -767,7 +767,7 @@ Set up the two-\/way multi-\/domain interactions for the problem pointed to by {
 
 Set up the two-\/way multi-\/domain interactions for the problem pointed to by {\ttfamily problem\+\_\+pt}. Use this for cases where first\+\_\+mesh\+\_\+pt and second\+\_\+mesh\+\_\+pt occupy the same physical space and are populated by E\+L\+E\+M\+E\+N\+T\+\_\+0 and E\+L\+E\+M\+E\+N\+T\+\_\+1 respectively, and are combined to solve a single problem. The elements in two meshes interact both ways the elements in each mesh act as \char`\"{}external elements\char`\"{} for the elements in the \char`\"{}other\char`\"{} mesh. The interaction indices allow the specification of which interaction we\textquotesingle{}re setting up in the two meshes. They default to zero, which is appropriate if there\textquotesingle{}s only a single interaction. 
 
-Definition at line 252 of file multi\+\_\+domain.\+template.\+cc.
+Definition at line 248 of file multi\+\_\+domain.\+template.\+cc.
 
 
 
@@ -788,7 +788,7 @@ Boolean to indicate that failure in setup multi domain functions is acceptable; 
 
 
 
-Definition at line 62 of file multi\+\_\+domain.\+cc.
+Definition at line 58 of file multi\+\_\+domain.\+cc.
 
 
 
@@ -806,7 +806,7 @@ Boolean to indicate if we\textquotesingle{}re allowed to use halo elements as ex
 
 
 
-Definition at line 155 of file multi\+\_\+domain.\+cc.
+Definition at line 151 of file multi\+\_\+domain.\+cc.
 
 
 
@@ -824,7 +824,7 @@ Indicate whether we are allowed to use halo elements as external elements for pr
 
 
 
-Definition at line 161 of file multi\+\_\+domain.\+cc.
+Definition at line 157 of file multi\+\_\+domain.\+cc.
 
 \mbox{\Hypertarget{namespaceoomph_1_1Multi__domain__functions_aeb7431547acc61e750fcc456a25ffc13}\label{namespaceoomph_1_1Multi__domain__functions_aeb7431547acc61e750fcc456a25ffc13}} 
 \index{oomph::Multi\_domain\_functions@{oomph::Multi\_domain\_functions}!Counter\_for\_flat\_packed\_doubles@{Counter\_for\_flat\_packed\_doubles}}
@@ -838,7 +838,7 @@ Counter used when processing vector of flat-\/packed doubles -- this is really \
 
 
 
-Definition at line 118 of file multi\+\_\+domain.\+cc.
+Definition at line 114 of file multi\+\_\+domain.\+cc.
 
 
 
@@ -856,7 +856,7 @@ Counter used when processing vector of flat-\/packed unsigneds -- this is really
 
 
 
-Definition at line 140 of file multi\+\_\+domain.\+cc.
+Definition at line 136 of file multi\+\_\+domain.\+cc.
 
 
 
@@ -874,7 +874,7 @@ Dimension of zeta tuples (set by get\+\_\+dim\+\_\+helper) -- needed because we 
 
 
 
-Definition at line 66 of file multi\+\_\+domain.\+cc.
+Definition at line 62 of file multi\+\_\+domain.\+cc.
 
 
 
@@ -892,7 +892,7 @@ Output file to document the boundary coordinate along the mesh boundary of the b
 
 
 
-Definition at line 53 of file multi\+\_\+domain.\+cc.
+Definition at line 49 of file multi\+\_\+domain.\+cc.
 
 
 
@@ -910,7 +910,7 @@ Boolean to indicate whether to output further info during \mbox{\hyperlink{names
 
 Boolean to indicate whether to document further info (to screen) during \mbox{\hyperlink{namespaceoomph_1_1Multi__domain__functions_ac64183e03f173c69ed6ed6f493a1a67e}{setup\+\_\+multi\+\_\+domain\+\_\+interaction()}} routines. 
 
-Definition at line 172 of file multi\+\_\+domain.\+cc.
+Definition at line 168 of file multi\+\_\+domain.\+cc.
 
 
 
@@ -928,7 +928,7 @@ Boolean to indicate whether to output basic info during \mbox{\hyperlink{namespa
 
 Boolean to indicate whether to document basic info (to screen) during \mbox{\hyperlink{namespaceoomph_1_1Multi__domain__functions_ac64183e03f173c69ed6ed6f493a1a67e}{setup\+\_\+multi\+\_\+domain\+\_\+interaction()}} routines. 
 
-Definition at line 168 of file multi\+\_\+domain.\+cc.
+Definition at line 164 of file multi\+\_\+domain.\+cc.
 
 
 
@@ -946,7 +946,7 @@ Boolean to indicate whether to doc timings or not.
 
 
 
-Definition at line 164 of file multi\+\_\+domain.\+cc.
+Definition at line 160 of file multi\+\_\+domain.\+cc.
 
 
 
@@ -964,7 +964,7 @@ Lookup scheme for whether a local element\textquotesingle{}s integration point h
 
 
 
-Definition at line 74 of file multi\+\_\+domain.\+cc.
+Definition at line 70 of file multi\+\_\+domain.\+cc.
 
 
 
@@ -982,7 +982,7 @@ Referenced by aux\+\_\+setup\+\_\+multi\+\_\+domain\+\_\+interaction(), clean\+\
 
 
 
-Definition at line 112 of file multi\+\_\+domain.\+cc.
+Definition at line 108 of file multi\+\_\+domain.\+cc.
 
 
 
@@ -1000,7 +1000,7 @@ Referenced by clean\+\_\+up(), construct\+\_\+new\+\_\+external\+\_\+halo\+\_\+m
 
 
 
-Definition at line 108 of file multi\+\_\+domain.\+cc.
+Definition at line 104 of file multi\+\_\+domain.\+cc.
 
 
 
@@ -1018,7 +1018,7 @@ Referenced by clean\+\_\+up(), create\+\_\+external\+\_\+halo\+\_\+elements(), l
 
 
 
-Definition at line 124 of file multi\+\_\+domain.\+cc.
+Definition at line 120 of file multi\+\_\+domain.\+cc.
 
 
 
@@ -1032,7 +1032,7 @@ Referenced by oomph\+::\+Refineable\+Triangle\+Mesh$<$ E\+L\+E\+M\+E\+N\+T $>$\+
 
 
 
-Definition at line 131 of file multi\+\_\+domain.\+cc.
+Definition at line 127 of file multi\+\_\+domain.\+cc.
 
 
 
@@ -1050,7 +1050,7 @@ Referenced by add\+\_\+external\+\_\+haloed\+\_\+master\+\_\+node\+\_\+helper(),
 
 
 
-Definition at line 80 of file multi\+\_\+domain.\+cc.
+Definition at line 76 of file multi\+\_\+domain.\+cc.
 
 
 
@@ -1068,7 +1068,7 @@ Referenced by aux\+\_\+setup\+\_\+multi\+\_\+domain\+\_\+interaction(), clean\+\
 
 
 
-Definition at line 104 of file multi\+\_\+domain.\+cc.
+Definition at line 100 of file multi\+\_\+domain.\+cc.
 
 
 
@@ -1086,7 +1086,7 @@ Proc\+\_\+id\+\_\+plus\+\_\+one\+\_\+of\+\_\+external\+\_\+element\mbox{[}i\mbox
 
 
 
-Definition at line 97 of file multi\+\_\+domain.\+cc.
+Definition at line 93 of file multi\+\_\+domain.\+cc.
 
 
 
@@ -1104,7 +1104,7 @@ Referenced by clean\+\_\+up(), create\+\_\+external\+\_\+halo\+\_\+elements(), l
 
 
 
-Definition at line 88 of file multi\+\_\+domain.\+cc.
+Definition at line 84 of file multi\+\_\+domain.\+cc.
 
 
 
@@ -1122,7 +1122,7 @@ Boolean to indicate when to use the bulk element as the external element. Defaul
 
 
 
-Definition at line 148 of file multi\+\_\+domain.\+cc.
+Definition at line 144 of file multi\+\_\+domain.\+cc.
 
 
 
@@ -1136,7 +1136,7 @@ Referenced by aux\+\_\+setup\+\_\+multi\+\_\+domain\+\_\+interaction(), locate\+
 
 \mbox{\hyperlink{classoomph_1_1Vector}{Vector}} of zeta coordinates that we\textquotesingle{}re currently trying to locate; used in sorting of bin entries in further\+\_\+away() comparison function 
 
-Definition at line 2290 of file multi\+\_\+domain.\+cc.
+Definition at line 2286 of file multi\+\_\+domain.\+cc.
 
 
 

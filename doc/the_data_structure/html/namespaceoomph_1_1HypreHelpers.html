@@ -188,11 +188,11 @@ Variables</h2></td></tr>
 <p>Helper function to check the Hypre error flag, return the message associated with any error, and reset the error flag to zero. </p>
 <p>Helper function to check the Hypre error flag, return the message associated with any error, and reset the global error flag to zero. This function also returns the error value. </p>
 
-<p class="definition">Definition at line <a class="el" href="hypre__solver_8cc_source.html#l00154">154</a> of file <a class="el" href="hypre__solver_8cc_source.html">hypre_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hypre__solver_8cc_source.html#l00150">150</a> of file <a class="el" href="hypre__solver_8cc_source.html">hypre_solver.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="hypre__solver_8h.html#a7ae3d5ec4f7036569d2c2c48535ab392">hypre__global_error</a>, and <a class="el" href="oomph__definitions_8cc_source.html#l00326">oomph::oomph_info</a>.</p>
+<p class="reference">References <a class="el" href="hypre__solver_8h.html#a7ae3d5ec4f7036569d2c2c48535ab392">hypre__global_error</a>, and <a class="el" href="oomph__definitions_8cc_source.html#l00322">oomph::oomph_info</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="hypre__solver_8cc_source.html#l01322">oomph::HypreInterface::hypre_clean_up_memory()</a>, <a class="el" href="hypre__solver_8cc_source.html#l00527">oomph::HypreInterface::hypre_matrix_setup()</a>, <a class="el" href="hypre__solver_8cc_source.html#l01106">oomph::HypreInterface::hypre_solve()</a>, and <a class="el" href="hypre__solver_8cc_source.html#l00575">oomph::HypreInterface::hypre_solver_setup()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="hypre__solver_8cc_source.html#l01318">oomph::HypreInterface::hypre_clean_up_memory()</a>, <a class="el" href="hypre__solver_8cc_source.html#l00523">oomph::HypreInterface::hypre_matrix_setup()</a>, <a class="el" href="hypre__solver_8cc_source.html#l01102">oomph::HypreInterface::hypre_solve()</a>, and <a class="el" href="hypre__solver_8cc_source.html#l00571">oomph::HypreInterface::hypre_solver_setup()</a>.</p>
 
 </div>
 </div>
@@ -237,11 +237,11 @@ Variables</h2></td></tr>
 <p>Helper function to create a serial HYPRE_IJMatrix and HYPRE_ParCSRMatrix from a <a class="el" href="classoomph_1_1CRDoubleMatrix.html" title="A class for compressed row matrices. This is a distributable object.">CRDoubleMatrix</a>. </p>
 <p>Helper function to create a serial HYPRE_IJMatrix and HYPRE_ParCSRMatrix from a <a class="el" href="classoomph_1_1CRDoubleMatrix.html" title="A class for compressed row matrices. This is a distributable object.">CRDoubleMatrix</a> NOTE: dist_pt is rebuilt to match the distribution of the hypre solver which is not necassarily the same as the oomph lib matrix </p>
 
-<p class="definition">Definition at line <a class="el" href="hypre__solver_8cc_source.html#l00278">278</a> of file <a class="el" href="hypre__solver_8cc_source.html">hypre_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hypre__solver_8cc_source.html#l00274">274</a> of file <a class="el" href="hypre__solver_8cc_source.html">hypre_solver.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="linear__algebra__distribution_8cc_source.html#l00041">oomph::LinearAlgebraDistribution::build()</a>, <a class="el" href="matrices_8h_source.html#l01177">oomph::CRDoubleMatrix::built()</a>, <a class="el" href="matrices_8h_source.html#l01056">oomph::CRDoubleMatrix::column_index()</a>, <a class="el" href="linear__algebra__distribution_8h_source.html#l00343">oomph::LinearAlgebraDistribution::communicator_pt()</a>, <a class="el" href="linear__algebra__distribution_8h_source.html#l00337">oomph::LinearAlgebraDistribution::distributed()</a>, <a class="el" href="linear__algebra__distribution_8h_source.html#l00510">oomph::DistributableLinearAlgebraObject::distributed()</a>, <a class="el" href="linear__algebra__distribution_8h_source.html#l00474">oomph::DistributableLinearAlgebraObject::distribution_pt()</a>, <a class="el" href="linear__algebra__distribution_8h_source.html#l00268">oomph::LinearAlgebraDistribution::first_row()</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="oomph__utilities_8h_source.html#l00883">oomph::MPI_Helpers::mpi_has_been_initialised()</a>, <a class="el" href="matrices_8h_source.html#l00998">oomph::CRDoubleMatrix::ncol()</a>, <a class="el" href="matrices_8h_source.html#l00992">oomph::CRDoubleMatrix::nrow()</a>, <a class="el" href="linear__algebra__distribution_8h_source.html#l00200">oomph::LinearAlgebraDistribution::nrow_local()</a>, <a class="el" href="matrices_8h_source.html#l01050">oomph::CRDoubleMatrix::row_start()</a>, and <a class="el" href="matrices_8h_source.html#l01062">oomph::CRDoubleMatrix::value()</a>.</p>
+<p class="reference">References <a class="el" href="linear__algebra__distribution_8cc_source.html#l00037">oomph::LinearAlgebraDistribution::build()</a>, <a class="el" href="matrices_8h_source.html#l01173">oomph::CRDoubleMatrix::built()</a>, <a class="el" href="matrices_8h_source.html#l01052">oomph::CRDoubleMatrix::column_index()</a>, <a class="el" href="linear__algebra__distribution_8h_source.html#l00339">oomph::LinearAlgebraDistribution::communicator_pt()</a>, <a class="el" href="linear__algebra__distribution_8h_source.html#l00333">oomph::LinearAlgebraDistribution::distributed()</a>, <a class="el" href="linear__algebra__distribution_8h_source.html#l00506">oomph::DistributableLinearAlgebraObject::distributed()</a>, <a class="el" href="linear__algebra__distribution_8h_source.html#l00470">oomph::DistributableLinearAlgebraObject::distribution_pt()</a>, <a class="el" href="linear__algebra__distribution_8h_source.html#l00264">oomph::LinearAlgebraDistribution::first_row()</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="oomph__utilities_8h_source.html#l00879">oomph::MPI_Helpers::mpi_has_been_initialised()</a>, <a class="el" href="matrices_8h_source.html#l00994">oomph::CRDoubleMatrix::ncol()</a>, <a class="el" href="matrices_8h_source.html#l00988">oomph::CRDoubleMatrix::nrow()</a>, <a class="el" href="linear__algebra__distribution_8h_source.html#l00196">oomph::LinearAlgebraDistribution::nrow_local()</a>, <a class="el" href="matrices_8h_source.html#l01046">oomph::CRDoubleMatrix::row_start()</a>, and <a class="el" href="matrices_8h_source.html#l01058">oomph::CRDoubleMatrix::value()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="hypre__solver_8cc_source.html#l00527">oomph::HypreInterface::hypre_matrix_setup()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="hypre__solver_8cc_source.html#l00523">oomph::HypreInterface::hypre_matrix_setup()</a>.</p>
 
 </div>
 </div>
@@ -293,11 +293,11 @@ Variables</h2></td></tr>
 <li>If MPI and distributed input vector the distributed output vectors are created. </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="hypre__solver_8cc_source.html#l00185">185</a> of file <a class="el" href="hypre__solver_8cc_source.html">hypre_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hypre__solver_8cc_source.html#l00181">181</a> of file <a class="el" href="hypre__solver_8cc_source.html">hypre_solver.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="linear__algebra__distribution_8h_source.html#l00337">oomph::LinearAlgebraDistribution::distributed()</a>, <a class="el" href="linear__algebra__distribution_8h_source.html#l00510">oomph::DistributableLinearAlgebraObject::distributed()</a>, <a class="el" href="linear__algebra__distribution_8h_source.html#l00474">oomph::DistributableLinearAlgebraObject::distribution_pt()</a>, <a class="el" href="linear__algebra__distribution_8h_source.html#l00268">oomph::LinearAlgebraDistribution::first_row()</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="linear__algebra__distribution_8h_source.html#l00200">oomph::LinearAlgebraDistribution::nrow_local()</a>, <a class="el" href="the__data__structure_8txt_source.html#l00580">values</a>, and <a class="el" href="double__vector_8h_source.html#l00259">oomph::DoubleVector::values_pt()</a>.</p>
+<p class="reference">References <a class="el" href="linear__algebra__distribution_8h_source.html#l00333">oomph::LinearAlgebraDistribution::distributed()</a>, <a class="el" href="linear__algebra__distribution_8h_source.html#l00506">oomph::DistributableLinearAlgebraObject::distributed()</a>, <a class="el" href="linear__algebra__distribution_8h_source.html#l00470">oomph::DistributableLinearAlgebraObject::distribution_pt()</a>, <a class="el" href="linear__algebra__distribution_8h_source.html#l00264">oomph::LinearAlgebraDistribution::first_row()</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="linear__algebra__distribution_8h_source.html#l00196">oomph::LinearAlgebraDistribution::nrow_local()</a>, <a class="el" href="the__data__structure_8txt_source.html#l00580">values</a>, and <a class="el" href="double__vector_8h_source.html#l00255">oomph::DoubleVector::values_pt()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="hypre__solver_8cc_source.html#l01106">oomph::HypreInterface::hypre_solve()</a>, and <a class="el" href="hypre__solver_8cc_source.html#l00575">oomph::HypreInterface::hypre_solver_setup()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="hypre__solver_8cc_source.html#l01102">oomph::HypreInterface::hypre_solve()</a>, and <a class="el" href="hypre__solver_8cc_source.html#l00571">oomph::HypreInterface::hypre_solver_setup()</a>.</p>
 
 </div>
 </div>
@@ -343,9 +343,9 @@ Variables</h2></td></tr>
 <li>If MPI and distributed input distribution the distributed output vectors are created. </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="hypre__solver_8cc_source.html#l00246">246</a> of file <a class="el" href="hypre__solver_8cc_source.html">hypre_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hypre__solver_8cc_source.html#l00242">242</a> of file <a class="el" href="hypre__solver_8cc_source.html">hypre_solver.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="linear__algebra__distribution_8h_source.html#l00343">oomph::LinearAlgebraDistribution::communicator_pt()</a>, <a class="el" href="linear__algebra__distribution_8h_source.html#l00268">oomph::LinearAlgebraDistribution::first_row()</a>, and <a class="el" href="linear__algebra__distribution_8h_source.html#l00200">oomph::LinearAlgebraDistribution::nrow_local()</a>.</p>
+<p class="reference">References <a class="el" href="linear__algebra__distribution_8h_source.html#l00339">oomph::LinearAlgebraDistribution::communicator_pt()</a>, <a class="el" href="linear__algebra__distribution_8h_source.html#l00264">oomph::LinearAlgebraDistribution::first_row()</a>, and <a class="el" href="linear__algebra__distribution_8h_source.html#l00196">oomph::LinearAlgebraDistribution::nrow_local()</a>.</p>
 
 </div>
 </div>
@@ -407,11 +407,11 @@ Variables</h2></td></tr>
 
 <p>Helper function to set Euclid options using a command line like array. </p>
 
-<p class="definition">Definition at line <a class="el" href="hypre__solver_8cc_source.html#l00421">421</a> of file <a class="el" href="hypre__solver_8cc_source.html">hypre_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hypre__solver_8cc_source.html#l00417">417</a> of file <a class="el" href="hypre__solver_8cc_source.html">hypre_solver.cc</a>.</p>
 
 <p class="reference">References <a class="el" href="the__data__structure_8txt_source.html#l00560">level</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="hypre__solver_8cc_source.html#l00575">oomph::HypreInterface::hypre_solver_setup()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="hypre__solver_8cc_source.html#l00571">oomph::HypreInterface::hypre_solver_setup()</a>.</p>
 
 </div>
 </div>
@@ -430,9 +430,9 @@ Variables</h2></td></tr>
 
 <p>Default AMG coarsening strategy. Coarsening types include: 0 = CLJP (parallel coarsening using independent sets) 1 = classical RS with no boundary treatment (not recommended in parallel) 3 = modified RS with 3rd pass to add C points on the boundaries 6 = Falgout (uses 1 then CLJP using interior coarse points as first independent set) 8 = PMIS (parallel coarsening using independent sets - lower complexities than 0, maybe also slower convergence) 10= HMIS (one pass RS on each processor then PMIS on interior coarse points as first independent set) 11= One pass RS on each processor (not recommended) </p>
 
-<p class="definition">Definition at line <a class="el" href="hypre__solver_8cc_source.html#l00141">141</a> of file <a class="el" href="hypre__solver_8cc_source.html">hypre_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hypre__solver_8cc_source.html#l00137">137</a> of file <a class="el" href="hypre__solver_8cc_source.html">hypre_solver.cc</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="hypre__solver_8h_source.html#l00146">oomph::HypreInterface::HypreInterface()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="hypre__solver_8h_source.html#l00142">oomph::HypreInterface::HypreInterface()</a>.</p>
 
 </div>
 </div>
@@ -450,9 +450,9 @@ Variables</h2></td></tr>
 
 <p>Default for AMG strength (0.25 recommended for 2D problems; larger (0.5-0.75, say) for 3D. </p>
 
-<p class="definition">Definition at line <a class="el" href="hypre__solver_8cc_source.html#l00125">125</a> of file <a class="el" href="hypre__solver_8cc_source.html">hypre_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hypre__solver_8cc_source.html#l00121">121</a> of file <a class="el" href="hypre__solver_8cc_source.html">hypre_solver.cc</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="hypre__solver_8h_source.html#l00146">oomph::HypreInterface::HypreInterface()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="hypre__solver_8h_source.html#l00142">oomph::HypreInterface::HypreInterface()</a>.</p>
 
 </div>
 </div>
@@ -470,9 +470,9 @@ Variables</h2></td></tr>
 
 <p>AMG interpolation truncation factor. </p>
 
-<p class="definition">Definition at line <a class="el" href="hypre__solver_8cc_source.html#l00147">147</a> of file <a class="el" href="hypre__solver_8cc_source.html">hypre_solver.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hypre__solver_8cc_source.html#l00143">143</a> of file <a class="el" href="hypre__solver_8cc_source.html">hypre_solver.cc</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="hypre__solver_8h_source.html#l00146">oomph::HypreInterface::HypreInterface()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="hypre__solver_8h_source.html#l00142">oomph::HypreInterface::HypreInterface()</a>.</p>
 
 </div>
 </div>
@@ -504,7 +504,7 @@ Variables</h2></td></tr>
     <footer>
       <div class="container">
         <div class="text-muted" style="float:right;">Generated by <a href="http://www.doxygen.org/index.html">
-          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Tue Jul 6 2021 23:00:05
+          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Fri Jul 9 2021 20:54:53
         </div>
       </div>
     </footer>

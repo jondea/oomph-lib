@@ -222,7 +222,7 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class that is used to define the functions used to assemble the elemental contributions to the residuals vector and Jacobian matrix that define the problem being solved. The main use of this class is to assemble and solve the augmented systems used in bifurcation detection and tracking. The default implementation merely calls the underlying elemental functions with no augmentation. </p>
 
-<p class="definition">Definition at line <a class="el" href="assembly__handler_8h_source.html#l00066">66</a> of file <a class="el" href="assembly__handler_8h_source.html">assembly_handler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="assembly__handler_8h_source.html#l00062">62</a> of file <a class="el" href="assembly__handler_8h_source.html">assembly_handler.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af3ab79744dce0b50370defdbf7981691"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af3ab79744dce0b50370defdbf7981691">&#9670;&nbsp;</a></span>AssemblyHandler()</h2>
@@ -249,7 +249,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Empty constructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="assembly__handler_8h_source.html#l00071">71</a> of file <a class="el" href="assembly__handler_8h_source.html">assembly_handler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="assembly__handler_8h_source.html#l00067">67</a> of file <a class="el" href="assembly__handler_8h_source.html">assembly_handler.h</a>.</p>
 
 </div>
 </div>
@@ -278,7 +278,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Empty virtual destructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="assembly__handler_8h_source.html#l00169">169</a> of file <a class="el" href="assembly__handler_8h_source.html">assembly_handler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="assembly__handler_8h_source.html#l00165">165</a> of file <a class="el" href="assembly__handler_8h_source.html">assembly_handler.h</a>.</p>
 
 </div>
 </div>
@@ -311,9 +311,9 @@ Public Member Functions</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="classoomph_1_1HopfHandler.html#a49f4d0a78ac46ea1412d71d3bb9cc6a1">oomph::HopfHandler</a>, <a class="el" href="classoomph_1_1PitchForkHandler.html#a7363cb34d716d64d891af5018e09d807">oomph::PitchForkHandler</a>, and <a class="el" href="classoomph_1_1FoldHandler.html#a0e35268f1b13aa94739aaaaa366f4586">oomph::FoldHandler</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="assembly__handler_8cc_source.html#l00157">157</a> of file <a class="el" href="assembly__handler_8cc_source.html">assembly_handler.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="assembly__handler_8cc_source.html#l00153">153</a> of file <a class="el" href="assembly__handler_8cc_source.html">assembly_handler.cc</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="problem_8cc_source.html#l09998">oomph::Problem::bifurcation_parameter_pt()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="problem_8cc_source.html#l09994">oomph::Problem::bifurcation_parameter_pt()</a>.</p>
 
 </div>
 </div>
@@ -344,9 +344,9 @@ Public Member Functions</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="classoomph_1_1HopfHandler.html#a789de82e82adaac82b366bbaa7f7ce59">oomph::HopfHandler</a>, <a class="el" href="classoomph_1_1PitchForkHandler.html#aadc4f0b5dfb82cf171b91432536d1679">oomph::PitchForkHandler</a>, and <a class="el" href="classoomph_1_1FoldHandler.html#adb2878f53be92ea2be6cc012cbfc27ba">oomph::FoldHandler</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="assembly__handler_8h_source.html#l00137">137</a> of file <a class="el" href="assembly__handler_8h_source.html">assembly_handler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="assembly__handler_8h_source.html#l00133">133</a> of file <a class="el" href="assembly__handler_8h_source.html">assembly_handler.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="problem_8cc_source.html#l13528">oomph::Problem::adapt()</a>, <a class="el" href="problem_8cc_source.html#l14671">oomph::Problem::doc_errors()</a>, and <a class="el" href="problem_8cc_source.html#l14119">oomph::Problem::p_adapt()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="problem_8cc_source.html#l13524">oomph::Problem::adapt()</a>, <a class="el" href="problem_8cc_source.html#l14667">oomph::Problem::doc_errors()</a>, and <a class="el" href="problem_8cc_source.html#l14115">oomph::Problem::p_adapt()</a>.</p>
 
 </div>
 </div>
@@ -387,9 +387,9 @@ Public Member Functions</h2></td></tr>
 <p>Return vector of pointers to dofs in the element elem_pt. </p>
 <p>Get the vector of pointers to dofs in the element elem_pt Direct call to the function in the element. </p>
 
-<p class="definition">Definition at line <a class="el" href="assembly__handler_8cc_source.html#l00061">61</a> of file <a class="el" href="assembly__handler_8cc_source.html">assembly_handler.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="assembly__handler_8cc_source.html#l00057">57</a> of file <a class="el" href="assembly__handler_8cc_source.html">assembly_handler.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l00863">oomph::GeneralisedElement::dof_pt_vector()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l00859">oomph::GeneralisedElement::dof_pt_vector()</a>.</p>
 
 </div>
 </div>
@@ -436,9 +436,9 @@ Public Member Functions</h2></td></tr>
 <p>Return vector of dofs at time level t in the element elem_pt. </p>
 <p>Get the vector of dofs in the element elem_pt at time level t Direct call to the function in the element. </p>
 
-<p class="definition">Definition at line <a class="el" href="assembly__handler_8cc_source.html#l00053">53</a> of file <a class="el" href="assembly__handler_8cc_source.html">assembly_handler.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="assembly__handler_8cc_source.html#l00049">49</a> of file <a class="el" href="assembly__handler_8cc_source.html">assembly_handler.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l00837">oomph::GeneralisedElement::dof_vector()</a>, and <a class="el" href="cfortran_8h_source.html#l00572">t</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l00833">oomph::GeneralisedElement::dof_vector()</a>, and <a class="el" href="cfortran_8h_source.html#l00568">t</a>.</p>
 
 </div>
 </div>
@@ -481,11 +481,11 @@ Public Member Functions</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="classoomph_1_1HopfHandler.html#a9feb8087e8b9554164c0de002f4ec056">oomph::HopfHandler</a>, <a class="el" href="classoomph_1_1PitchForkHandler.html#ab29e58e25bd5bebd836e30015f01ac8d">oomph::PitchForkHandler</a>, <a class="el" href="classoomph_1_1FoldHandler.html#a30f2973860c13a183d5647a63b0c2ead">oomph::FoldHandler</a>, <a class="el" href="classoomph_1_1ParameterDerivativeHandler.html#a359b3b627532773b4606db1989f9c844">oomph::ParameterDerivativeHandler</a>, <a class="el" href="classoomph_1_1ParallelResidualsHandler.html#a0541d552e54eb2ca8681054180eafb87">oomph::ParallelResidualsHandler</a>, <a class="el" href="classoomph_1_1EigenProblemHandler.html#ab94bef9c8135c9d2701e96d8205c797d">oomph::EigenProblemHandler</a>, and <a class="el" href="classoomph_1_1ExplicitTimeStepHandler.html#a491d39988264739332c3e9c7dbb38344">oomph::ExplicitTimeStepHandler</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="assembly__handler_8cc_source.html#l00078">78</a> of file <a class="el" href="assembly__handler_8cc_source.html">assembly_handler.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="assembly__handler_8cc_source.html#l00074">74</a> of file <a class="el" href="assembly__handler_8cc_source.html">assembly_handler.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l00709">oomph::GeneralisedElement::eqn_number()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l00705">oomph::GeneralisedElement::eqn_number()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="assembly__handler_8h_source.html#l00292">oomph::ParallelResidualsHandler::eqn_number()</a>, <a class="el" href="assembly__handler_8h_source.html#l00358">oomph::ParameterDerivativeHandler::eqn_number()</a>, <a class="el" href="problem_8cc_source.html#l07974">oomph::Problem::get_hessian_vector_products()</a>, <a class="el" href="assembly__handler_8cc_source.html#l02995">oomph::PitchForkHandler::get_jacobian()</a>, <a class="el" href="problem_8cc_source.html#l03858">oomph::Problem::get_jacobian()</a>, <a class="el" href="problem_8cc_source.html#l06511">oomph::Problem::get_my_eqns()</a>, <a class="el" href="problem_8cc_source.html#l03678">oomph::Problem::get_residuals()</a>, <a class="el" href="problem_8cc_source.html#l06558">oomph::Problem::parallel_sparse_assemble()</a>, <a class="el" href="assembly__handler_8cc_source.html#l02539">oomph::PitchForkHandler::PitchForkHandler()</a>, <a class="el" href="frontal__solver_8cc_source.html#l00904">oomph::HSL_MA42::reorder_elements()</a>, <a class="el" href="problem_8cc_source.html#l00225">oomph::Problem::setup_element_count_per_dof()</a>, <a class="el" href="frontal__solver_8cc_source.html#l00131">oomph::HSL_MA42::solve()</a>, <a class="el" href="problem_8cc_source.html#l04919">oomph::Problem::sparse_assemble_row_or_column_compressed_with_lists()</a>, <a class="el" href="problem_8cc_source.html#l04574">oomph::Problem::sparse_assemble_row_or_column_compressed_with_maps()</a>, <a class="el" href="problem_8cc_source.html#l06059">oomph::Problem::sparse_assemble_row_or_column_compressed_with_two_arrays()</a>, <a class="el" href="problem_8cc_source.html#l05693">oomph::Problem::sparse_assemble_row_or_column_compressed_with_two_vectors()</a>, and <a class="el" href="problem_8cc_source.html#l05334">oomph::Problem::sparse_assemble_row_or_column_compressed_with_vectors_of_pairs()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="assembly__handler_8h_source.html#l00288">oomph::ParallelResidualsHandler::eqn_number()</a>, <a class="el" href="assembly__handler_8h_source.html#l00354">oomph::ParameterDerivativeHandler::eqn_number()</a>, <a class="el" href="problem_8cc_source.html#l07970">oomph::Problem::get_hessian_vector_products()</a>, <a class="el" href="assembly__handler_8cc_source.html#l02991">oomph::PitchForkHandler::get_jacobian()</a>, <a class="el" href="problem_8cc_source.html#l03854">oomph::Problem::get_jacobian()</a>, <a class="el" href="problem_8cc_source.html#l06507">oomph::Problem::get_my_eqns()</a>, <a class="el" href="problem_8cc_source.html#l03674">oomph::Problem::get_residuals()</a>, <a class="el" href="problem_8cc_source.html#l06554">oomph::Problem::parallel_sparse_assemble()</a>, <a class="el" href="assembly__handler_8cc_source.html#l02535">oomph::PitchForkHandler::PitchForkHandler()</a>, <a class="el" href="frontal__solver_8cc_source.html#l00900">oomph::HSL_MA42::reorder_elements()</a>, <a class="el" href="problem_8cc_source.html#l00221">oomph::Problem::setup_element_count_per_dof()</a>, <a class="el" href="frontal__solver_8cc_source.html#l00127">oomph::HSL_MA42::solve()</a>, <a class="el" href="problem_8cc_source.html#l04915">oomph::Problem::sparse_assemble_row_or_column_compressed_with_lists()</a>, <a class="el" href="problem_8cc_source.html#l04570">oomph::Problem::sparse_assemble_row_or_column_compressed_with_maps()</a>, <a class="el" href="problem_8cc_source.html#l06055">oomph::Problem::sparse_assemble_row_or_column_compressed_with_two_arrays()</a>, <a class="el" href="problem_8cc_source.html#l05689">oomph::Problem::sparse_assemble_row_or_column_compressed_with_two_vectors()</a>, and <a class="el" href="problem_8cc_source.html#l05330">oomph::Problem::sparse_assemble_row_or_column_compressed_with_vectors_of_pairs()</a>.</p>
 
 </div>
 </div>
@@ -534,9 +534,9 @@ Public Member Functions</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="classoomph_1_1ParallelResidualsHandler.html#adea071e3131e4e84b7c3e9400892fb17">oomph::ParallelResidualsHandler</a>, <a class="el" href="classoomph_1_1EigenProblemHandler.html#aa88f56b5c724c41e0c2926434ae920da">oomph::EigenProblemHandler</a>, and <a class="el" href="classoomph_1_1ExplicitTimeStepHandler.html#a842529121fbe177ea6900d668d8b2a65">oomph::ExplicitTimeStepHandler</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="assembly__handler_8cc_source.html#l00103">103</a> of file <a class="el" href="assembly__handler_8cc_source.html">assembly_handler.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="assembly__handler_8cc_source.html#l00099">99</a> of file <a class="el" href="assembly__handler_8cc_source.html">assembly_handler.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="assembly__handler_8cc_source.html#l00094">get_jacobian()</a>.</p>
+<p class="reference">References <a class="el" href="assembly__handler_8cc_source.html#l00090">get_jacobian()</a>.</p>
 
 </div>
 </div>
@@ -591,11 +591,11 @@ Public Member Functions</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="classoomph_1_1HopfHandler.html#a59fb2c41d850cfe1fdccc3e97ca75135">oomph::HopfHandler</a>, <a class="el" href="classoomph_1_1PitchForkHandler.html#aa16d6770f6d46b7db4101f417373b191">oomph::PitchForkHandler</a>, and <a class="el" href="classoomph_1_1FoldHandler.html#a674cf9fe7c065e54c95813c2baeea84c">oomph::FoldHandler</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="assembly__handler_8cc_source.html#l00127">127</a> of file <a class="el" href="assembly__handler_8cc_source.html">assembly_handler.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="assembly__handler_8cc_source.html#l00123">123</a> of file <a class="el" href="assembly__handler_8cc_source.html">assembly_handler.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l01042">oomph::GeneralisedElement::get_djacobian_dparameter()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l01038">oomph::GeneralisedElement::get_djacobian_dparameter()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="assembly__handler_8h_source.html#l00373">oomph::ParameterDerivativeHandler::get_jacobian()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="assembly__handler_8h_source.html#l00369">oomph::ParameterDerivativeHandler::get_jacobian()</a>.</p>
 
 </div>
 </div>
@@ -644,11 +644,11 @@ Public Member Functions</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="classoomph_1_1HopfHandler.html#a2953368ecc48dc22f8ea1f563064ece2">oomph::HopfHandler</a>, <a class="el" href="classoomph_1_1PitchForkHandler.html#a6510803afcbcfce1ae5b1c1c5d82a541">oomph::PitchForkHandler</a>, and <a class="el" href="classoomph_1_1FoldHandler.html#ad98b98488b683fa3ad9497b662e6e5b6">oomph::FoldHandler</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="assembly__handler_8cc_source.html#l00114">114</a> of file <a class="el" href="assembly__handler_8cc_source.html">assembly_handler.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="assembly__handler_8cc_source.html#l00110">110</a> of file <a class="el" href="assembly__handler_8cc_source.html">assembly_handler.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l01030">oomph::GeneralisedElement::get_dresiduals_dparameter()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l01026">oomph::GeneralisedElement::get_dresiduals_dparameter()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="assembly__handler_8h_source.html#l00364">oomph::ParameterDerivativeHandler::get_residuals()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="assembly__handler_8h_source.html#l00360">oomph::ParameterDerivativeHandler::get_residuals()</a>.</p>
 
 </div>
 </div>
@@ -681,9 +681,9 @@ Public Member Functions</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="classoomph_1_1HopfHandler.html#a9d1ee586e6274cfa0baa15f82b9fa0ae">oomph::HopfHandler</a>, <a class="el" href="classoomph_1_1PitchForkHandler.html#a9d5e1388fe0ede6834a249b98168b71a">oomph::PitchForkHandler</a>, and <a class="el" href="classoomph_1_1FoldHandler.html#aca97058722ccc1482ae8180ea8dde74c">oomph::FoldHandler</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="assembly__handler_8cc_source.html#l00179">179</a> of file <a class="el" href="assembly__handler_8cc_source.html">assembly_handler.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="assembly__handler_8cc_source.html#l00175">175</a> of file <a class="el" href="assembly__handler_8cc_source.html">assembly_handler.cc</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="problem_8cc_source.html#l10006">oomph::Problem::get_bifurcation_eigenfunction()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="problem_8cc_source.html#l10002">oomph::Problem::get_bifurcation_eigenfunction()</a>.</p>
 
 </div>
 </div>
@@ -738,11 +738,11 @@ Public Member Functions</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="classoomph_1_1HopfHandler.html#a74b0266ee15bcb294dbb946156095f8c">oomph::HopfHandler</a>, <a class="el" href="classoomph_1_1PitchForkHandler.html#a85e7dba2d21c9fe95a575a115cf3ee9f">oomph::PitchForkHandler</a>, and <a class="el" href="classoomph_1_1FoldHandler.html#aa633b80f1ebdb322350c6832fe6c2b6c">oomph::FoldHandler</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="assembly__handler_8cc_source.html#l00142">142</a> of file <a class="el" href="assembly__handler_8cc_source.html">assembly_handler.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="assembly__handler_8cc_source.html#l00138">138</a> of file <a class="el" href="assembly__handler_8cc_source.html">assembly_handler.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l01079">oomph::GeneralisedElement::get_hessian_vector_products()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l01075">oomph::GeneralisedElement::get_hessian_vector_products()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="problem_8cc_source.html#l07974">oomph::Problem::get_hessian_vector_products()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="problem_8cc_source.html#l07970">oomph::Problem::get_hessian_vector_products()</a>.</p>
 
 </div>
 </div>
@@ -789,9 +789,9 @@ Public Member Functions</h2></td></tr>
 <p>Compute the vectors that when taken as a dot product with other history values give the inner product over the element. </p>
 <p>Compute the vectors that when taken as a dot product with other history values give the inner product over the element. In other words if we call get_inner_product_vectors({0,1},output) output[0] will be a vector such that dofs.output[0] gives the inner product of current dofs with themselves. </p>
 
-<p class="definition">Definition at line <a class="el" href="assembly__handler_8cc_source.html#l00215">215</a> of file <a class="el" href="assembly__handler_8cc_source.html">assembly_handler.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="assembly__handler_8cc_source.html#l00211">211</a> of file <a class="el" href="assembly__handler_8cc_source.html">assembly_handler.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l01102">oomph::GeneralisedElement::get_inner_product_vectors()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l01098">oomph::GeneralisedElement::get_inner_product_vectors()</a>.</p>
 
 </div>
 </div>
@@ -838,9 +838,9 @@ Public Member Functions</h2></td></tr>
 <p>Compute the inner products of the given vector of pairs of history values over the element. </p>
 <p>========================================================================== Compute the inner products of the given vector of pairs of history values over the element. The values of the index in the pair may be the same. </p>
 
-<p class="definition">Definition at line <a class="el" href="assembly__handler_8cc_source.html#l00200">200</a> of file <a class="el" href="assembly__handler_8cc_source.html">assembly_handler.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="assembly__handler_8cc_source.html#l00196">196</a> of file <a class="el" href="assembly__handler_8cc_source.html">assembly_handler.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l01091">oomph::GeneralisedElement::get_inner_products()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l01087">oomph::GeneralisedElement::get_inner_products()</a>.</p>
 
 </div>
 </div>
@@ -890,11 +890,11 @@ Public Member Functions</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="classoomph_1_1HopfHandler.html#ab36c50421f53accced01dd9e04d904ef">oomph::HopfHandler</a>, <a class="el" href="classoomph_1_1PitchForkHandler.html#aa6728813a099111bee2b6c79dec20fc4">oomph::PitchForkHandler</a>, <a class="el" href="classoomph_1_1FoldHandler.html#ad1bec54a2e0c5bd483ff0bf633bd6542">oomph::FoldHandler</a>, <a class="el" href="classoomph_1_1ParameterDerivativeHandler.html#a0bdfd879c1e63cc74923cf956b4f4310">oomph::ParameterDerivativeHandler</a>, <a class="el" href="classoomph_1_1ParallelResidualsHandler.html#a366186bb0905d7251390ec726fe33797">oomph::ParallelResidualsHandler</a>, <a class="el" href="classoomph_1_1EigenProblemHandler.html#aaaf7c3aa3713030ff4859117941b3a39">oomph::EigenProblemHandler</a>, <a class="el" href="classoomph_1_1ExplicitTimeStepHandler.html#ad2c849833e4b35199a79d9d9965af32f">oomph::ExplicitTimeStepHandler</a>, and <a class="el" href="classoomph_1_1FpPreconditionerAssemblyHandler.html#a6360dd27d3530576487cb7e239dfe17e">oomph::FpPreconditionerAssemblyHandler</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="assembly__handler_8cc_source.html#l00094">94</a> of file <a class="el" href="assembly__handler_8cc_source.html">assembly_handler.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="assembly__handler_8cc_source.html#l00090">90</a> of file <a class="el" href="assembly__handler_8cc_source.html">assembly_handler.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l00986">oomph::GeneralisedElement::get_jacobian()</a>, and <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l00982">oomph::GeneralisedElement::get_jacobian()</a>, and <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="assembly__handler_8cc_source.html#l00103">get_all_vectors_and_matrices()</a>, <a class="el" href="problem_8cc_source.html#l07974">oomph::Problem::get_hessian_vector_products()</a>, <a class="el" href="assembly__handler_8h_source.html#l00306">oomph::ParallelResidualsHandler::get_jacobian()</a>, <a class="el" href="problem_8cc_source.html#l03858">oomph::Problem::get_jacobian()</a>, <a class="el" href="frontal__solver_8cc_source.html#l00131">oomph::HSL_MA42::solve()</a>, and <a class="el" href="frontal__solver_8cc_source.html#l00054">oomph::HSL_MA42::solve_for_one_dof()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="assembly__handler_8cc_source.html#l00099">get_all_vectors_and_matrices()</a>, <a class="el" href="problem_8cc_source.html#l07970">oomph::Problem::get_hessian_vector_products()</a>, <a class="el" href="assembly__handler_8h_source.html#l00302">oomph::ParallelResidualsHandler::get_jacobian()</a>, <a class="el" href="problem_8cc_source.html#l03854">oomph::Problem::get_jacobian()</a>, <a class="el" href="frontal__solver_8cc_source.html#l00127">oomph::HSL_MA42::solve()</a>, and <a class="el" href="frontal__solver_8cc_source.html#l00050">oomph::HSL_MA42::solve_for_one_dof()</a>.</p>
 
 </div>
 </div>
@@ -937,11 +937,11 @@ Public Member Functions</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="classoomph_1_1HopfHandler.html#a61a4006161da6532a9acfec0f979aafa">oomph::HopfHandler</a>, <a class="el" href="classoomph_1_1PitchForkHandler.html#a461b24284da88b9489d720e484a6925c">oomph::PitchForkHandler</a>, <a class="el" href="classoomph_1_1FoldHandler.html#abfbec6da3dffeaf3b4df0ee4955101fd">oomph::FoldHandler</a>, <a class="el" href="classoomph_1_1ParameterDerivativeHandler.html#a8ba1dbc805c00ac75e6d5d53f1b014c1">oomph::ParameterDerivativeHandler</a>, <a class="el" href="classoomph_1_1ParallelResidualsHandler.html#a9a4e40b86cfb1db2b4c770d8d7241ad1">oomph::ParallelResidualsHandler</a>, <a class="el" href="classoomph_1_1EigenProblemHandler.html#a0dc97e08638986970c7ca5f3903c8b6d">oomph::EigenProblemHandler</a>, <a class="el" href="classoomph_1_1ExplicitTimeStepHandler.html#aef8ab1b61aef072b2bcb061dd287a00f">oomph::ExplicitTimeStepHandler</a>, and <a class="el" href="classoomph_1_1FpPreconditionerAssemblyHandler.html#adfebe7f48f6fc715c258e1733218b12b">oomph::FpPreconditionerAssemblyHandler</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="assembly__handler_8cc_source.html#l00086">86</a> of file <a class="el" href="assembly__handler_8cc_source.html">assembly_handler.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="assembly__handler_8cc_source.html#l00082">82</a> of file <a class="el" href="assembly__handler_8cc_source.html">assembly_handler.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l00977">oomph::GeneralisedElement::get_residuals()</a>, and <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l00973">oomph::GeneralisedElement::get_residuals()</a>, and <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="assembly__handler_8h_source.html#l00316">oomph::ParallelResidualsHandler::get_all_vectors_and_matrices()</a>, <a class="el" href="assembly__handler_8h_source.html#l00298">oomph::ParallelResidualsHandler::get_residuals()</a>, and <a class="el" href="problem_8cc_source.html#l03678">oomph::Problem::get_residuals()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="assembly__handler_8h_source.html#l00312">oomph::ParallelResidualsHandler::get_all_vectors_and_matrices()</a>, <a class="el" href="assembly__handler_8h_source.html#l00294">oomph::ParallelResidualsHandler::get_residuals()</a>, and <a class="el" href="problem_8cc_source.html#l03674">oomph::Problem::get_residuals()</a>.</p>
 
 </div>
 </div>
@@ -987,9 +987,9 @@ Public Member Functions</h2></td></tr>
 
 <p>Return the t-th level of storage associated with the i-th (local) dof stored in the problem. </p>
 
-<p class="definition">Definition at line <a class="el" href="assembly__handler_8cc_source.html#l00067">67</a> of file <a class="el" href="assembly__handler_8cc_source.html">assembly_handler.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="assembly__handler_8cc_source.html#l00063">63</a> of file <a class="el" href="assembly__handler_8cc_source.html">assembly_handler.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="problem_8h_source.html#l01715">oomph::Problem::dof_pt()</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, and <a class="el" href="cfortran_8h_source.html#l00572">t</a>.</p>
+<p class="reference">References <a class="el" href="problem_8h_source.html#l01711">oomph::Problem::dof_pt()</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, and <a class="el" href="cfortran_8h_source.html#l00568">t</a>.</p>
 
 </div>
 </div>
@@ -1022,11 +1022,11 @@ Public Member Functions</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="classoomph_1_1HopfHandler.html#a8d1b73ec4e9b8b27252b4bacf2ef7f38">oomph::HopfHandler</a>, <a class="el" href="classoomph_1_1PitchForkHandler.html#ae066fa45e9f1bf10601286ca2d083a42">oomph::PitchForkHandler</a>, <a class="el" href="classoomph_1_1FoldHandler.html#af8e766d1faa7867a0161329566865867">oomph::FoldHandler</a>, <a class="el" href="classoomph_1_1ParameterDerivativeHandler.html#a341d4e7cfaab7e66df43913d775a6871">oomph::ParameterDerivativeHandler</a>, <a class="el" href="classoomph_1_1ParallelResidualsHandler.html#a16eb9ec097e85c5da57b2e588d9683b6">oomph::ParallelResidualsHandler</a>, <a class="el" href="classoomph_1_1EigenProblemHandler.html#ae9e44eeceee6e19c60c51b08195730eb">oomph::EigenProblemHandler</a>, and <a class="el" href="classoomph_1_1ExplicitTimeStepHandler.html#a723bec764e9e59025f052f6ca0135181">oomph::ExplicitTimeStepHandler</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="assembly__handler_8cc_source.html#l00046">46</a> of file <a class="el" href="assembly__handler_8cc_source.html">assembly_handler.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="assembly__handler_8cc_source.html#l00042">42</a> of file <a class="el" href="assembly__handler_8cc_source.html">assembly_handler.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l00834">oomph::GeneralisedElement::ndof()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l00830">oomph::GeneralisedElement::ndof()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="problem_8cc_source.html#l07974">oomph::Problem::get_hessian_vector_products()</a>, <a class="el" href="problem_8cc_source.html#l03858">oomph::Problem::get_jacobian()</a>, <a class="el" href="problem_8cc_source.html#l06511">oomph::Problem::get_my_eqns()</a>, <a class="el" href="problem_8cc_source.html#l03678">oomph::Problem::get_residuals()</a>, <a class="el" href="assembly__handler_8h_source.html#l00287">oomph::ParallelResidualsHandler::ndof()</a>, <a class="el" href="assembly__handler_8h_source.html#l00353">oomph::ParameterDerivativeHandler::ndof()</a>, <a class="el" href="problem_8cc_source.html#l06558">oomph::Problem::parallel_sparse_assemble()</a>, <a class="el" href="assembly__handler_8cc_source.html#l02539">oomph::PitchForkHandler::PitchForkHandler()</a>, <a class="el" href="frontal__solver_8cc_source.html#l00904">oomph::HSL_MA42::reorder_elements()</a>, <a class="el" href="problem_8cc_source.html#l00225">oomph::Problem::setup_element_count_per_dof()</a>, <a class="el" href="frontal__solver_8cc_source.html#l00131">oomph::HSL_MA42::solve()</a>, <a class="el" href="frontal__solver_8cc_source.html#l00054">oomph::HSL_MA42::solve_for_one_dof()</a>, <a class="el" href="problem_8cc_source.html#l04919">oomph::Problem::sparse_assemble_row_or_column_compressed_with_lists()</a>, <a class="el" href="problem_8cc_source.html#l04574">oomph::Problem::sparse_assemble_row_or_column_compressed_with_maps()</a>, <a class="el" href="problem_8cc_source.html#l06059">oomph::Problem::sparse_assemble_row_or_column_compressed_with_two_arrays()</a>, <a class="el" href="problem_8cc_source.html#l05693">oomph::Problem::sparse_assemble_row_or_column_compressed_with_two_vectors()</a>, and <a class="el" href="problem_8cc_source.html#l05334">oomph::Problem::sparse_assemble_row_or_column_compressed_with_vectors_of_pairs()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="problem_8cc_source.html#l07970">oomph::Problem::get_hessian_vector_products()</a>, <a class="el" href="problem_8cc_source.html#l03854">oomph::Problem::get_jacobian()</a>, <a class="el" href="problem_8cc_source.html#l06507">oomph::Problem::get_my_eqns()</a>, <a class="el" href="problem_8cc_source.html#l03674">oomph::Problem::get_residuals()</a>, <a class="el" href="assembly__handler_8h_source.html#l00283">oomph::ParallelResidualsHandler::ndof()</a>, <a class="el" href="assembly__handler_8h_source.html#l00349">oomph::ParameterDerivativeHandler::ndof()</a>, <a class="el" href="problem_8cc_source.html#l06554">oomph::Problem::parallel_sparse_assemble()</a>, <a class="el" href="assembly__handler_8cc_source.html#l02535">oomph::PitchForkHandler::PitchForkHandler()</a>, <a class="el" href="frontal__solver_8cc_source.html#l00900">oomph::HSL_MA42::reorder_elements()</a>, <a class="el" href="problem_8cc_source.html#l00221">oomph::Problem::setup_element_count_per_dof()</a>, <a class="el" href="frontal__solver_8cc_source.html#l00127">oomph::HSL_MA42::solve()</a>, <a class="el" href="frontal__solver_8cc_source.html#l00050">oomph::HSL_MA42::solve_for_one_dof()</a>, <a class="el" href="problem_8cc_source.html#l04915">oomph::Problem::sparse_assemble_row_or_column_compressed_with_lists()</a>, <a class="el" href="problem_8cc_source.html#l04570">oomph::Problem::sparse_assemble_row_or_column_compressed_with_maps()</a>, <a class="el" href="problem_8cc_source.html#l06055">oomph::Problem::sparse_assemble_row_or_column_compressed_with_two_arrays()</a>, <a class="el" href="problem_8cc_source.html#l05689">oomph::Problem::sparse_assemble_row_or_column_compressed_with_two_vectors()</a>, and <a class="el" href="problem_8cc_source.html#l05330">oomph::Problem::sparse_assemble_row_or_column_compressed_with_vectors_of_pairs()</a>.</p>
 
 </div>
 </div>
@@ -1058,9 +1058,9 @@ Public Member Functions</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="classoomph_1_1PitchForkHandler.html#a23a67d7212e25108e40cf9b4606f4478">oomph::PitchForkHandler</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="assembly__handler_8h_source.html#l00165">165</a> of file <a class="el" href="assembly__handler_8h_source.html">assembly_handler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="assembly__handler_8h_source.html#l00161">161</a> of file <a class="el" href="assembly__handler_8h_source.html">assembly_handler.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="problem_8cc_source.html#l16404">oomph::Problem::synchronise_all_dofs()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="problem_8cc_source.html#l16400">oomph::Problem::synchronise_all_dofs()</a>.</p>
 
 </div>
 </div>
@@ -1096,7 +1096,7 @@ Public Member Functions</h2></td></tr>
     <footer>
       <div class="container">
         <div class="text-muted" style="float:right;">Generated by <a href="http://www.doxygen.org/index.html">
-          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Tue Jul 6 2021 22:55:40
+          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Fri Jul 9 2021 20:50:59
         </div>
       </div>
     </footer>

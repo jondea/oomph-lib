@@ -275,7 +275,7 @@ Finally, some elements employ mappings that involve additional, generalised coor
 \end{DoxyCode}
  While this is all pretty straightforward, it does make the argument list of the \mbox{\hyperlink{classoomph_1_1Node}{Node}} constructors rather lengthy. 
 
-Definition at line 851 of file nodes.\+h.
+Definition at line 847 of file nodes.\+h.
 
 
 
@@ -292,7 +292,7 @@ Function pointer to auxiliary node update function.
 
 
 
-Definition at line 858 of file nodes.\+h.
+Definition at line 854 of file nodes.\+h.
 
 
 
@@ -309,7 +309,7 @@ Default constructor.
 
 
 
-Definition at line 1517 of file nodes.\+cc.
+Definition at line 1513 of file nodes.\+cc.
 
 
 
@@ -328,7 +328,7 @@ References oomph\+::\+Leak\+Check\+Names\+::\+Node\+\_\+build.
 
 \mbox{\hyperlink{classoomph_1_1Steady}{Steady}} Constructor, allocates storage for initial\+\_\+n\+\_\+value values at a node of spatial dimension N\+Dim. nposition\+\_\+type\+: \# of coordinate types needed in the mapping between local and global coordinates (e.\+g. 1 for Lagrange-\/type elements; 2 for 1D Hermite elements; 4 for 2D Hermite elements, etc). 
 
-Definition at line 1535 of file nodes.\+cc.
+Definition at line 1531 of file nodes.\+cc.
 
 
 
@@ -348,7 +348,7 @@ Unsteady constructor for a node of spatial dimension n\+\_\+dim. Allocates stora
 Unsteady Constructor for a node of spatial dimension n\+\_\+dim. Allocates storage for initial\+\_\+n\+\_\+value values with history values as required by timestepper. n\+\_\+position\+\_\+type\+: \# of coordinate types needed in the mapping between local and global coordinates ~\newline
  (e.\+g. 1 for Lagrange-\/type elements; 2 for 1D Hermite elements; 4 for 2D Hermite elements) 
 
-Definition at line 1583 of file nodes.\+cc.
+Definition at line 1579 of file nodes.\+cc.
 
 
 
@@ -366,7 +366,7 @@ Destructor\+: Clean up the memory allocated for nodal position.
 
 Destructor to clean up the memory allocated for nodal position. 
 
-Definition at line 1628 of file nodes.\+cc.
+Definition at line 1624 of file nodes.\+cc.
 
 
 
@@ -384,7 +384,7 @@ Broken copy constructor.
 
 
 
-Definition at line 948 of file nodes.\+h.
+Definition at line 944 of file nodes.\+h.
 
 
 
@@ -405,7 +405,7 @@ Broken interface for adding the node to the mesh boundary b Essentially here for
 
 Interface for function to add the node to the mesh boundary b. Broken here in order to report run-\/time errors. Must be overloaded by all boundary nodes 
 
-Definition at line 2257 of file nodes.\+cc.
+Definition at line 2253 of file nodes.\+cc.
 
 
 
@@ -431,7 +431,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1SolidNode_a20562ea5133c1150b6999
 
 
 
-Definition at line 2671 of file nodes.\+cc.
+Definition at line 2667 of file nodes.\+cc.
 
 
 
@@ -457,7 +457,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1SpineNode_a0fbb7845412caffe3908f
 
 
 
-Definition at line 1523 of file nodes.\+h.
+Definition at line 1519 of file nodes.\+h.
 
 
 
@@ -479,7 +479,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1SpineNode_a420fcf9b30eea60930829
 
 
 
-Definition at line 1531 of file nodes.\+h.
+Definition at line 1527 of file nodes.\+h.
 
 
 
@@ -505,7 +505,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1SolidNode_ae0f41fc05338192c3e9d4
 
 
 
-Definition at line 499 of file nodes.\+cc.
+Definition at line 495 of file nodes.\+cc.
 
 
 
@@ -521,7 +521,7 @@ Have boundary coordinates been set up? Broken virtual interface provides run-\/t
 
 Interface for function to report if boundary coordinates have been set up for this node Broken here in order to report run-\/time errors. Must be overloaded by all boundary nodes 
 
-Definition at line 2243 of file nodes.\+cc.
+Definition at line 2239 of file nodes.\+cc.
 
 \mbox{\Hypertarget{classoomph_1_1Node_a8758650a2e6d7312ad070bb8ce327c4b}\label{classoomph_1_1Node_a8758650a2e6d7312ad070bb8ce327c4b}} 
 \index{oomph::Node@{oomph::Node}!constrain\_positions@{constrain\_positions}}
@@ -539,7 +539,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1SolidNode_a08b51c4154b8c399fa021
 
 
 
-Definition at line 1263 of file nodes.\+h.
+Definition at line 1259 of file nodes.\+h.
 
 
 
@@ -557,7 +557,7 @@ Return pointer to copied node (null if the current node is not a copy -- always 
 
 
 
-Definition at line 1041 of file nodes.\+h.
+Definition at line 1037 of file nodes.\+h.
 
 
 
@@ -575,7 +575,7 @@ Copy all nodal data from specified \mbox{\hyperlink{classoomph_1_1Node}{Node}} o
 
 
 
-Definition at line 1834 of file nodes.\+cc.
+Definition at line 1830 of file nodes.\+cc.
 
 
 
@@ -601,7 +601,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1SolidNode_a33be0ea0fc6c0575d20f3
 
 
 
-Definition at line 982 of file nodes.\+h.
+Definition at line 978 of file nodes.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1Node_ad3d37ea1c80500645fa32cc43f1f29ce}\label{classoomph_1_1Node_ad3d37ea1c80500645fa32cc43f1f29ce}} 
 \index{oomph::Node@{oomph::Node}!dposition\_dt@{dposition\_dt}}
@@ -615,7 +615,7 @@ Return the i-\/th component of nodal velocity\+: dx/dt, either directly or via h
 
 Return the i-\/th component of nodal velocity\+: dx/dt / Use the hanging node representation if required. 
 
-Definition at line 2556 of file nodes.\+cc.
+Definition at line 2552 of file nodes.\+cc.
 
 
 
@@ -637,7 +637,7 @@ Return the i-\/th component of j-\/th derivative of nodal position\+: d$^\wedge$
 
 Return the i-\/th component of j-\/th derivative of nodal position\+: d$^\wedge$jx/dt$^\wedge$j. Use the hanging node representation. 
 
-Definition at line 2580 of file nodes.\+cc.
+Definition at line 2576 of file nodes.\+cc.
 
 
 
@@ -655,7 +655,7 @@ i-\/th component of j-\/th time derivative (velocity) of the generalised positio
 
 i-\/th component of j-\/th time derivative (velocity) of the generalised position, d$^\wedge$jx(k,i)/dt$^\wedge$j. `Type'\+: k; Coordinate direction\+: i. Use the hanging node representation. 
 
-Definition at line 2631 of file nodes.\+cc.
+Definition at line 2627 of file nodes.\+cc.
 
 
 
@@ -673,7 +673,7 @@ i-\/th component of time derivative (velocity) of the generalised position, dx(k
 
 i-\/th component of time derivative (velocity) of the generalised position, dx(k,i)/dt. `Type'\+: k; Coordinate direction\+: i. Use the hanging node representation 
 
-Definition at line 2605 of file nodes.\+cc.
+Definition at line 2601 of file nodes.\+cc.
 
 
 
@@ -699,7 +699,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1SolidNode_aad56eb7d55fcd10b3aaa3
 
 
 
-Definition at line 1892 of file nodes.\+cc.
+Definition at line 1888 of file nodes.\+cc.
 
 
 
@@ -721,7 +721,7 @@ Return the i-\/th component of nodal velocity\+: dx/dt.
 
 
 
-Definition at line 1735 of file nodes.\+cc.
+Definition at line 1731 of file nodes.\+cc.
 
 
 
@@ -743,7 +743,7 @@ Return the i-\/th component of j-\/th derivative of nodal position\+: d$^\wedge$
 
 Return the i-\/th component of j-\/th derivative of nodal position\+: d$^\wedge$jx/dt$^\wedge$j. 
 
-Definition at line 1759 of file nodes.\+cc.
+Definition at line 1755 of file nodes.\+cc.
 
 
 
@@ -761,7 +761,7 @@ i-\/th component of j-\/th time derivative (velocity) of the generalised positio
 
 
 
-Definition at line 1808 of file nodes.\+cc.
+Definition at line 1804 of file nodes.\+cc.
 
 
 
@@ -779,7 +779,7 @@ i-\/th component of time derivative (velocity) of the generalised position, dx(k
 
 
 
-Definition at line 1783 of file nodes.\+cc.
+Definition at line 1779 of file nodes.\+cc.
 
 
 
@@ -801,7 +801,7 @@ Return a pointer to set of mesh boundaries that this node occupies; this will be
 
 
 
-Definition at line 1283 of file nodes.\+h.
+Definition at line 1279 of file nodes.\+h.
 
 
 
@@ -819,7 +819,7 @@ Return the vector of the k-\/th generalised boundary coordinates on mesh boundar
 
 Interface for function to get the k-\/th generalised boundary coordinate of the node on boundary b. Broken here in order to provide run-\/time error reporting. Must be overloaded by all boundary nodes. 
 
-Definition at line 2301 of file nodes.\+cc.
+Definition at line 2297 of file nodes.\+cc.
 
 
 
@@ -837,7 +837,7 @@ Return the vector of coordinates on mesh boundary b Broken virtual interface pro
 
 
 
-Definition at line 1327 of file nodes.\+h.
+Definition at line 1323 of file nodes.\+h.
 
 
 
@@ -855,7 +855,7 @@ Code that encapsulates the hanging status of the node (incl. the geometric hangi
 
 
 
-Definition at line 1132 of file nodes.\+h.
+Definition at line 1128 of file nodes.\+h.
 
 
 
@@ -877,7 +877,7 @@ Return pointer to hanging node data (this refers to the geometric hanging node s
 
 
 
-Definition at line 1147 of file nodes.\+h.
+Definition at line 1143 of file nodes.\+h.
 
 
 
@@ -899,7 +899,7 @@ Return pointer to hanging node data for value i (const version)
 
 
 
-Definition at line 1162 of file nodes.\+h.
+Definition at line 1158 of file nodes.\+h.
 
 
 
@@ -918,7 +918,7 @@ Boolean to indicate if node has a pointer to and auxiliary update function. ~\ne
 
 
 
-Definition at line 1500 of file nodes.\+h.
+Definition at line 1496 of file nodes.\+h.
 
 
 
@@ -940,7 +940,7 @@ Test whether the node is geometrically hanging.
 
 
 
-Definition at line 1206 of file nodes.\+h.
+Definition at line 1202 of file nodes.\+h.
 
 
 
@@ -962,7 +962,7 @@ Test whether the i-\/th value is hanging.
 
 
 
-Definition at line 1219 of file nodes.\+h.
+Definition at line 1215 of file nodes.\+h.
 
 
 
@@ -980,7 +980,7 @@ Test whether node is obsolete.
 
 
 
-Definition at line 1353 of file nodes.\+h.
+Definition at line 1349 of file nodes.\+h.
 
 
 
@@ -1002,7 +1002,7 @@ Test whether the \mbox{\hyperlink{classoomph_1_1Node}{Node}} lies on a boundary.
 
 
 
-Definition at line 1289 of file nodes.\+h.
+Definition at line 1285 of file nodes.\+h.
 
 
 
@@ -1020,7 +1020,7 @@ Test whether the node lies on mesh boundary b. The \char`\"{}bulk\char`\"{} \mbo
 
 
 
-Definition at line 1294 of file nodes.\+h.
+Definition at line 1290 of file nodes.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1Node_aeb07848c19b83fd8b9690b8fcc200d56}\label{classoomph_1_1Node_aeb07848c19b83fd8b9690b8fcc200d56}} 
 \index{oomph::Node@{oomph::Node}!make\_periodic@{make\_periodic}}
@@ -1034,7 +1034,7 @@ Make the node periodic by copying the values from node\+\_\+pt. Note that the co
 
 Make the node periodic by copying values from node\+\_\+pt. Broken virtual (only implemented in Boundary\+Nodes) 
 
-Definition at line 2180 of file nodes.\+cc.
+Definition at line 2176 of file nodes.\+cc.
 
 
 
@@ -1052,7 +1052,7 @@ Make the nodes passed in the vector periodic\+\_\+nodes share the same data as t
 
 Make the nodes passed in periodic\+\_\+nodes\+\_\+pt periodic by copying values across from this node. At present all the positions will be assumed to be independent. Broken virtual (only implemented in Boundary\+Nodes) 
 
-Definition at line 2193 of file nodes.\+cc.
+Definition at line 2189 of file nodes.\+cc.
 
 \mbox{\Hypertarget{classoomph_1_1Node_a245b0e182ca0877bda9bbcb978807273}\label{classoomph_1_1Node_a245b0e182ca0877bda9bbcb978807273}} 
 \index{oomph::Node@{oomph::Node}!ncoordinates\_on\_boundary@{ncoordinates\_on\_boundary}}
@@ -1066,7 +1066,7 @@ Get the number of boundary coordinates on mesh boundary b. Broken virtual interf
 
 Interface to get the number of boundary coordinates on mesh boundary b. Broken here in order to provide run-\/time error reporting. Must be overloaded by all boundary nodes. 
 
-Definition at line 2285 of file nodes.\+cc.
+Definition at line 2281 of file nodes.\+cc.
 
 
 
@@ -1084,7 +1084,7 @@ Return (Eulerian) spatial dimension of the node.
 
 
 
-Definition at line 991 of file nodes.\+h.
+Definition at line 987 of file nodes.\+h.
 
 
 
@@ -1110,7 +1110,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1SpineNode_a46735b4f430014997c525
 
 
 
-Definition at line 1519 of file nodes.\+h.
+Definition at line 1515 of file nodes.\+h.
 
 
 
@@ -1132,7 +1132,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1SpineNode_afba3d62d2da3b8fa64219
 
 
 
-Definition at line 1527 of file nodes.\+h.
+Definition at line 1523 of file nodes.\+h.
 
 
 
@@ -1154,7 +1154,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1SolidNode_ae66793af1a576edd29523
 
 
 
-Definition at line 1481 of file nodes.\+h.
+Definition at line 1477 of file nodes.\+h.
 
 
 
@@ -1173,7 +1173,7 @@ Number of coordinate types needed in the mapping between local and global coordi
 
 
 
-Definition at line 965 of file nodes.\+h.
+Definition at line 961 of file nodes.\+h.
 
 
 
@@ -1195,7 +1195,7 @@ Broken assignment operator.
 
 
 
-Definition at line 954 of file nodes.\+h.
+Definition at line 950 of file nodes.\+h.
 
 
 
@@ -1213,7 +1213,7 @@ Output nodal position.
 
 Output nodal coordinates. 
 
-Definition at line 2656 of file nodes.\+cc.
+Definition at line 2652 of file nodes.\+cc.
 
 
 
@@ -1231,7 +1231,7 @@ Execute auxiliary update function (if any) -- this can be used to update any nod
 
 
 
-Definition at line 1509 of file nodes.\+h.
+Definition at line 1505 of file nodes.\+h.
 
 
 
@@ -1257,7 +1257,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1SolidNode_ab051ba65aed07fe75f6cf
 
 
 
-Definition at line 1122 of file nodes.\+h.
+Definition at line 1118 of file nodes.\+h.
 
 
 
@@ -1279,7 +1279,7 @@ Return vector of position of node at current time.
 
 
 
-Definition at line 1422 of file nodes.\+h.
+Definition at line 1418 of file nodes.\+h.
 
 
 
@@ -1301,7 +1301,7 @@ Return i-\/th nodal coordinate either directly or via hanging node representatio
 
 Return i-\/th nodal coordinate either directly or via hanging node representation. 
 
-Definition at line 2436 of file nodes.\+cc.
+Definition at line 2432 of file nodes.\+cc.
 
 
 
@@ -1319,7 +1319,7 @@ Return i-\/th nodal coordinate at time level t (t=0\+: current; t$>$0\+: previou
 
 Return i-\/th nodal coordinate at time level t (t=0\+: current; t$>$0\+: previous time level), either directly or via hanging node representation. 
 
-Definition at line 2465 of file nodes.\+cc.
+Definition at line 2461 of file nodes.\+cc.
 
 
 
@@ -1337,7 +1337,7 @@ Compute \mbox{\hyperlink{classoomph_1_1Vector}{Vector}} of nodal position at tim
 
 Compute \mbox{\hyperlink{classoomph_1_1Vector}{Vector}} of nodal position at timestep t (t=0\+: current; t$>$0\+: previous timestep), either directly or via hanging node representation. 
 
-Definition at line 2425 of file nodes.\+cc.
+Definition at line 2421 of file nodes.\+cc.
 
 
 
@@ -1355,7 +1355,7 @@ Compute \mbox{\hyperlink{classoomph_1_1Vector}{Vector}} of nodal positions eithe
 
 Compute \mbox{\hyperlink{classoomph_1_1Vector}{Vector}} of nodal positions either directly or via hanging node representation 
 
-Definition at line 2413 of file nodes.\+cc.
+Definition at line 2409 of file nodes.\+cc.
 
 
 
@@ -1377,7 +1377,7 @@ Return generalised nodal coordinate either directly or via hanging node represen
 
 Return generalised nodal coordinate either directly or via hanging node representation. 
 
-Definition at line 2495 of file nodes.\+cc.
+Definition at line 2491 of file nodes.\+cc.
 
 
 
@@ -1399,7 +1399,7 @@ Return generalised nodal coordinate at time level t (t=0\+: current; t$>$0\+: pr
 
 Return generalised nodal coordinate at time level t (t=0\+: current; t$>$0\+: previous time level), either directly or via hanging node representation. 
 
-Definition at line 2525 of file nodes.\+cc.
+Definition at line 2521 of file nodes.\+cc.
 
 
 
@@ -1421,7 +1421,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1SolidNode_aa8d9a8e77ccc142be7776
 
 
 
-Definition at line 1047 of file nodes.\+h.
+Definition at line 1043 of file nodes.\+h.
 
 
 
@@ -1443,7 +1443,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1SolidNode_aa20d88cc797c6635bfd63
 
 
 
-Definition at line 1050 of file nodes.\+h.
+Definition at line 1046 of file nodes.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1Node_a89175b154594ba5b1a6cdde6f385dc71}\label{classoomph_1_1Node_a89175b154594ba5b1a6cdde6f385dc71}} 
 \index{oomph::Node@{oomph::Node}!position\_time\_stepper\_pt@{position\_time\_stepper\_pt}}
@@ -1457,7 +1457,7 @@ Return a pointer to the position timestepper.
 
 
 
-Definition at line 968 of file nodes.\+h.
+Definition at line 964 of file nodes.\+h.
 
 
 
@@ -1479,7 +1479,7 @@ Return a pointer to the position timestepper (const version).
 
 
 
-Definition at line 971 of file nodes.\+h.
+Definition at line 967 of file nodes.\+h.
 
 
 
@@ -1497,7 +1497,7 @@ Return the i-\/th value stored at the \mbox{\hyperlink{classoomph_1_1Node}{Node}
 
 
 
-Definition at line 1357 of file nodes.\+h.
+Definition at line 1353 of file nodes.\+h.
 
 
 
@@ -1519,7 +1519,7 @@ Return the i-\/th value at time level t (t=0\+: present, t$>$0\+: previous). Thi
 
 
 
-Definition at line 1362 of file nodes.\+h.
+Definition at line 1358 of file nodes.\+h.
 
 
 
@@ -1537,7 +1537,7 @@ Read nodal position and associated data from file for restart.
 
 Read nodal positions and associated data from file for restart. 
 
-Definition at line 1919 of file nodes.\+cc.
+Definition at line 1915 of file nodes.\+cc.
 
 
 
@@ -1567,7 +1567,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1SolidNode_a8884dfe9e2808883e90c7
 
 
 
-Definition at line 2726 of file nodes.\+cc.
+Definition at line 2722 of file nodes.\+cc.
 
 
 
@@ -1589,7 +1589,7 @@ Broken interface for removing the node from the mesh boundary b Here to provide 
 
 Interface for function to remove the node from the mesh boundary b. Broken here in order to report run-\/time erorrs. Must be overloaded by all boundary nodes 
 
-Definition at line 2272 of file nodes.\+cc.
+Definition at line 2268 of file nodes.\+cc.
 
 
 
@@ -1611,7 +1611,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1Data_ac68583834c9bef47f5c37c89
 
 
 
-Definition at line 2089 of file nodes.\+cc.
+Definition at line 2085 of file nodes.\+cc.
 
 
 
@@ -1634,7 +1634,7 @@ Set pointer to auxiliary update function -- this can be used to update any nodal
 
 
 
-Definition at line 1489 of file nodes.\+h.
+Definition at line 1485 of file nodes.\+h.
 
 
 
@@ -1652,7 +1652,7 @@ Set the vector of the k-\/th generalised boundary coordinates on mesh boundary b
 
 Interface for function to set the k-\/th generalised boundary coordinate of the node on boundary b. Broken here to provide run-\/time error reports. Must be overloaded by all boundary nodes. 
 
-Definition at line 2315 of file nodes.\+cc.
+Definition at line 2311 of file nodes.\+cc.
 
 
 
@@ -1670,7 +1670,7 @@ Set the vector of coordinates on mesh boundary b Broken virtual interface provid
 
 
 
-Definition at line 1335 of file nodes.\+h.
+Definition at line 1331 of file nodes.\+h.
 
 
 
@@ -1688,7 +1688,7 @@ Set the hanging data for the i-\/th value. (hang\+\_\+pt=0 to make non-\/hanging
 
 Set the hanging data for the i-\/th value. If node is already hanging, simply overwrite the appropriate entry. If the node isn\textquotesingle{}t hanging (because it might not be hanging geometrically), create the \mbox{\hyperlink{classoomph_1_1Vector}{Vector}} of hanging pointers and make the other entries point to the node\textquotesingle{}s geometric hanging data. Set hang\+\_\+pt=0 to make entry explicitly non-\/hanging. Use \mbox{\hyperlink{classoomph_1_1Node_a2517b670b4494f5421f5ec0d92cf8bb0}{Node\+::set\+\_\+nonhanging()}} to unhang everything and clear up storage. 
 
-Definition at line 1997 of file nodes.\+cc.
+Definition at line 1993 of file nodes.\+cc.
 
 
 
@@ -1710,7 +1710,7 @@ Mark node as non-\/obsolete.
 
 
 
-Definition at line 1350 of file nodes.\+h.
+Definition at line 1346 of file nodes.\+h.
 
 
 
@@ -1732,7 +1732,7 @@ Label node as non-\/hanging node by removing all hanging node data.
 
 
 
-Definition at line 2204 of file nodes.\+cc.
+Definition at line 2200 of file nodes.\+cc.
 
 
 
@@ -1754,7 +1754,7 @@ Mark node as obsolete.
 
 
 
-Definition at line 1347 of file nodes.\+h.
+Definition at line 1343 of file nodes.\+h.
 
 
 
@@ -1780,7 +1780,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1SolidNode_a12b206264401d5b2ff6ae
 
 
 
-Definition at line 1678 of file nodes.\+cc.
+Definition at line 1674 of file nodes.\+cc.
 
 
 
@@ -1802,7 +1802,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1SolidNode_a1959abfbb37f775a4d680
 
 
 
-Definition at line 1267 of file nodes.\+h.
+Definition at line 1263 of file nodes.\+h.
 
 
 
@@ -1824,7 +1824,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1SolidNode_a0df372aae692d679cfcee
 
 
 
-Definition at line 1126 of file nodes.\+h.
+Definition at line 1122 of file nodes.\+h.
 
 
 
@@ -1846,7 +1846,7 @@ Return vector of values calculated using value(vector).
 
 
 
-Definition at line 1399 of file nodes.\+h.
+Definition at line 1395 of file nodes.\+h.
 
 
 
@@ -1868,7 +1868,7 @@ Return i-\/th value (dofs or pinned) at this node either directly or via hanging
 
 Return i-\/th value (free or pinned) at this node either directly or via hanging node representation. 
 
-Definition at line 2328 of file nodes.\+cc.
+Definition at line 2324 of file nodes.\+cc.
 
 
 
@@ -1890,7 +1890,7 @@ Return i-\/th value at time level t (t=0\+: present, t$>$0\+: previous) either d
 
 Return i-\/th value (free or pinned) at this node at time level t either directly or via hanging node representation. 
 
-Definition at line 2354 of file nodes.\+cc.
+Definition at line 2350 of file nodes.\+cc.
 
 
 
@@ -1908,7 +1908,7 @@ Compute \mbox{\hyperlink{classoomph_1_1Vector}{Vector}} of values (dofs or pinne
 
 Compute \mbox{\hyperlink{classoomph_1_1Vector}{Vector}} of values (dofs or pinned) at this node at time level t (t=0\+: present; t$>$0\+: previous) either directly or via hanging node representation. 
 
-Definition at line 2396 of file nodes.\+cc.
+Definition at line 2392 of file nodes.\+cc.
 
 
 
@@ -1926,7 +1926,7 @@ Compute \mbox{\hyperlink{classoomph_1_1Vector}{Vector}} of values for the \mbox{
 
 Compute \mbox{\hyperlink{classoomph_1_1Vector}{Vector}} of values (dofs or pinned) at this \mbox{\hyperlink{classoomph_1_1Data}{Data}} object either directly or via hanging node representation. 
 
-Definition at line 2380 of file nodes.\+cc.
+Definition at line 2376 of file nodes.\+cc.
 
 
 
@@ -1944,7 +1944,7 @@ Return the i-\/th nodal coordinate.
 
 
 
-Definition at line 994 of file nodes.\+h.
+Definition at line 990 of file nodes.\+h.
 
 
 
@@ -1966,7 +1966,7 @@ Return the i-\/th nodal coordinate (const version).
 
 
 
-Definition at line 1003 of file nodes.\+h.
+Definition at line 999 of file nodes.\+h.
 
 
 
@@ -1984,7 +1984,7 @@ Return the position x(i) at previous timestep t (t=0\+: present; t$>$0 previous 
 
 
 
-Definition at line 1013 of file nodes.\+h.
+Definition at line 1009 of file nodes.\+h.
 
 
 
@@ -2002,7 +2002,7 @@ Return the position x(i) at previous timestep t (t=0\+: present; t$>$0 previous 
 
 
 
-Definition at line 1023 of file nodes.\+h.
+Definition at line 1019 of file nodes.\+h.
 
 
 
@@ -2021,7 +2021,7 @@ Reference to the generalised position x(k,i). ~\newline
 
 `Type'\+: k; Coordinate direction\+: i. 
 
-Definition at line 1054 of file nodes.\+h.
+Definition at line 1050 of file nodes.\+h.
 
 
 
@@ -2043,7 +2043,7 @@ Reference to the generalised position x(k,i). `Type'\+: k; Coordinate direction\
 
 
 
-Definition at line 1064 of file nodes.\+h.
+Definition at line 1060 of file nodes.\+h.
 
 
 
@@ -2061,7 +2061,7 @@ Reference to the generalised position x(k,i) at the previous timestep \mbox{[}t=
 
 
 
-Definition at line 1075 of file nodes.\+h.
+Definition at line 1071 of file nodes.\+h.
 
 
 
@@ -2079,7 +2079,7 @@ Reference to the generalised position x(k,i) at the previous timestep \mbox{[}t=
 
 
 
-Definition at line 1087 of file nodes.\+h.
+Definition at line 1083 of file nodes.\+h.
 
 
 
@@ -2097,7 +2097,7 @@ Private function to check that the arguemnts to the position functions are in ra
 
 Private function to check that the arguments are within the range of the stored coordinates, position types and time history values. 
 
-Definition at line 1469 of file nodes.\+cc.
+Definition at line 1465 of file nodes.\+cc.
 
 
 
@@ -2119,7 +2119,7 @@ Direct access to the pointer to the i-\/th stored coordinate data.
 
 
 
-Definition at line 906 of file nodes.\+h.
+Definition at line 902 of file nodes.\+h.
 
 
 
@@ -2138,7 +2138,7 @@ Direct access to the i-\/th coordinate at time level t ~\newline
 
 (t=0\+: present; t$>$0\+: previous) 
 
-Definition at line 1108 of file nodes.\+h.
+Definition at line 1104 of file nodes.\+h.
 
 
 
@@ -2159,7 +2159,7 @@ to construct periodic Nodes
 
 
 
-Definition at line 862 of file nodes.\+h.
+Definition at line 858 of file nodes.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1Node_acdfb367cd4c2661ea1edf78baa40014c}\label{classoomph_1_1Node_acdfb367cd4c2661ea1edf78baa40014c}} 
 \index{oomph::Node@{oomph::Node}!operator$<$$<$@{operator$<$$<$}}
@@ -2171,7 +2171,7 @@ Output operator\+: output location and all values at all times, along with any e
 
 \mbox{\hyperlink{classoomph_1_1Node}{Node}} output operator\+: output equation numbers and values at all times, along with any extra information stored for the timestepper. 
 
-Definition at line 359 of file nodes.\+cc.
+Definition at line 355 of file nodes.\+cc.
 
 
 
@@ -2189,7 +2189,7 @@ Pointer to auxiliary update function -- this can be used to update any nodal val
 
 
 
-Definition at line 912 of file nodes.\+h.
+Definition at line 908 of file nodes.\+h.
 
 
 
@@ -2207,7 +2207,7 @@ C-\/style array of pointers to hanging node info. It\textquotesingle{}s set to N
 
 
 
-Definition at line 890 of file nodes.\+h.
+Definition at line 886 of file nodes.\+h.
 
 
 
@@ -2225,7 +2225,7 @@ Eulerian dimension of the node.
 
 
 
-Definition at line 893 of file nodes.\+h.
+Definition at line 889 of file nodes.\+h.
 
 
 
@@ -2244,7 +2244,7 @@ Static \char`\"{}\+Magic number\char`\"{} used to indicate that there is no inde
 
 Static \char`\"{}\+Magic number\char`\"{} passed as independent\+\_\+position when there is no independent position in the periodic node. For example, in a periodic mesh. 
 
-Definition at line 918 of file nodes.\+h.
+Definition at line 914 of file nodes.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1Node_aa5419b3f46cb65976e1e1311eed9419d}\label{classoomph_1_1Node_aa5419b3f46cb65976e1e1311eed9419d}} 
 \index{oomph::Node@{oomph::Node}!Nposition\_type@{Nposition\_type}}
@@ -2258,7 +2258,7 @@ Number of coordinate types used in the mapping between local and global coordina
 
 
 
-Definition at line 899 of file nodes.\+h.
+Definition at line 895 of file nodes.\+h.
 
 
 
@@ -2277,7 +2277,7 @@ Flag to indicate that the \mbox{\hyperlink{classoomph_1_1Node}{Node}} has become
 
 
 
-Definition at line 903 of file nodes.\+h.
+Definition at line 899 of file nodes.\+h.
 
 
 
@@ -2295,7 +2295,7 @@ Pointer to the timestepper associated with the position data.
 
 
 
-Definition at line 880 of file nodes.\+h.
+Definition at line 876 of file nodes.\+h.
 
 
 
@@ -2313,7 +2313,7 @@ Array of pointers to the data holding the Eulerian positions. The storage format
 
 
 
-Definition at line 877 of file nodes.\+h.
+Definition at line 873 of file nodes.\+h.
 
 
 

@@ -89,7 +89,7 @@ class oomph\+::\+Boundary\+Node$<$ N\+O\+D\+E\+\_\+\+T\+Y\+P\+E $>$}
 
 A template Class for Boundary\+Nodes; that is Nodes that M\+AY live on the boundary of a \mbox{\hyperlink{classoomph_1_1Mesh}{Mesh}}. The class is formed by a simple composition of the template parameter N\+O\+D\+E\+\_\+\+T\+Y\+PE, which must be a \mbox{\hyperlink{classoomph_1_1Node}{Node}} class and the \mbox{\hyperlink{classoomph_1_1BoundaryNodeBase}{Boundary\+Node\+Base}} class. Final overloading of functions is always in favour of the \mbox{\hyperlink{classoomph_1_1BoundaryNodeBase}{Boundary\+Node\+Base}} implementation; i.\+e. these nodes can live on boundaries. 
 
-Definition at line 67 of file nodes.\+h.
+Definition at line 63 of file nodes.\+h.
 
 
 
@@ -107,7 +107,7 @@ Default Constructor.
 
 
 
-Definition at line 2241 of file nodes.\+h.
+Definition at line 2237 of file nodes.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1BoundaryNode_a3d76a60cda13edec1549693fc6e49214}\label{classoomph_1_1BoundaryNode_a3d76a60cda13edec1549693fc6e49214}} 
 \index{oomph::BoundaryNode$<$ NODE\_TYPE $>$@{oomph::BoundaryNode$<$ NODE\_TYPE $>$}!BoundaryNode@{BoundaryNode}}
@@ -123,7 +123,7 @@ Definition at line 2241 of file nodes.\+h.
 
 
 
-Definition at line 2250 of file nodes.\+h.
+Definition at line 2246 of file nodes.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1BoundaryNode_a1a18c0a20d10ae670671de9600846edb}\label{classoomph_1_1BoundaryNode_a1a18c0a20d10ae670671de9600846edb}} 
 \index{oomph::BoundaryNode$<$ NODE\_TYPE $>$@{oomph::BoundaryNode$<$ NODE\_TYPE $>$}!BoundaryNode@{BoundaryNode}}
@@ -139,7 +139,7 @@ Unsteady constructor for a \mbox{\hyperlink{classoomph_1_1BoundaryNode}{Boundary
 
 
 
-Definition at line 2263 of file nodes.\+h.
+Definition at line 2259 of file nodes.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1BoundaryNode_a65d27f75e6e015ceb1978be7d3cd83bc}\label{classoomph_1_1BoundaryNode_a65d27f75e6e015ceb1978be7d3cd83bc}} 
 \index{oomph::BoundaryNode$<$ NODE\_TYPE $>$@{oomph::BoundaryNode$<$ NODE\_TYPE $>$}!BoundaryNode@{BoundaryNode}}
@@ -154,7 +154,7 @@ Definition at line 2263 of file nodes.\+h.
 
 
 
-Definition at line 2277 of file nodes.\+h.
+Definition at line 2273 of file nodes.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1BoundaryNode_a969b9b49766f702d755c71f3981cfe98}\label{classoomph_1_1BoundaryNode_a969b9b49766f702d755c71f3981cfe98}} 
 \index{oomph::BoundaryNode$<$ NODE\_TYPE $>$@{oomph::BoundaryNode$<$ NODE\_TYPE $>$}!BoundaryNode@{BoundaryNode}}
@@ -169,7 +169,7 @@ Unsteady constructor for Solid-\/type boundary nodes Allocates storage for initi
 
 
 
-Definition at line 2292 of file nodes.\+h.
+Definition at line 2288 of file nodes.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1BoundaryNode_a29f6d775e2f97943ad0588ed4df5de51}\label{classoomph_1_1BoundaryNode_a29f6d775e2f97943ad0588ed4df5de51}} 
 \index{oomph::BoundaryNode$<$ NODE\_TYPE $>$@{oomph::BoundaryNode$<$ NODE\_TYPE $>$}!````~BoundaryNode@{$\sim$BoundaryNode}}
@@ -184,7 +184,7 @@ Destructor resets pointers if.
 
 
 
-Definition at line 2303 of file nodes.\+h.
+Definition at line 2299 of file nodes.\+h.
 
 
 
@@ -203,7 +203,7 @@ Broken copy constructor.
 
 
 
-Definition at line 2353 of file nodes.\+h.
+Definition at line 2349 of file nodes.\+h.
 
 
 
@@ -225,7 +225,7 @@ Add the node to mesh boundary b, final overload.
 
 
 
-Definition at line 2386 of file nodes.\+h.
+Definition at line 2382 of file nodes.\+h.
 
 
 
@@ -240,7 +240,7 @@ void \mbox{\hyperlink{classoomph_1_1BoundaryNode}{oomph\+::\+Boundary\+Node}}$<$
 
 Member function to allocates storage for a given number of additional degrees of freedom, n\+\_\+additional\+\_\+value, associated with a particular face\+\_\+id to the \mbox{\hyperlink{classoomph_1_1Node}{Node}} node\+\_\+pt. Needs to be filled in here so that access to the nodal values is available. 
 
-Definition at line 2504 of file nodes.\+h.
+Definition at line 2500 of file nodes.\+h.
 
 
 
@@ -259,7 +259,7 @@ Overload the equation assignment operation.
 
 
 
-Definition at line 2623 of file nodes.\+h.
+Definition at line 2619 of file nodes.\+h.
 
 
 
@@ -278,7 +278,7 @@ Have boundary coordinates been set up?
 
 
 
-Definition at line 2365 of file nodes.\+h.
+Definition at line 2361 of file nodes.\+h.
 
 
 
@@ -297,7 +297,7 @@ Copy over additional information so that if the node is periodic it can remain a
 
 
 
-Definition at line 2149 of file nodes.\+h.
+Definition at line 2145 of file nodes.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1BoundaryNode_a8310f571e69ee1d3f9de4fd4ac32c656}\label{classoomph_1_1BoundaryNode_a8310f571e69ee1d3f9de4fd4ac32c656}} 
 \index{oomph::BoundaryNode$<$ NODE\_TYPE $>$@{oomph::BoundaryNode$<$ NODE\_TYPE $>$}!clear\_copied\_pointers@{clear\_copied\_pointers}}
@@ -312,7 +312,7 @@ Clear pointers to the copied data used when we have periodic nodes. The shallow 
 
 
 
-Definition at line 2193 of file nodes.\+h.
+Definition at line 2189 of file nodes.\+h.
 
 
 
@@ -331,7 +331,7 @@ Return pointer to copied node (null if the current node is not a copy)
 
 
 
-Definition at line 2617 of file nodes.\+h.
+Definition at line 2613 of file nodes.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1BoundaryNode_af0ed7828ec05bded2cd8d1c5576fbe5d}\label{classoomph_1_1BoundaryNode_af0ed7828ec05bded2cd8d1c5576fbe5d}} 
 \index{oomph::BoundaryNode$<$ NODE\_TYPE $>$@{oomph::BoundaryNode$<$ NODE\_TYPE $>$}!get\_boundaries\_pt@{get\_boundaries\_pt}}
@@ -346,7 +346,7 @@ Access to pointer to set of mesh boundaries that this node occupies; N\+U\+LL if
 
 
 
-Definition at line 2373 of file nodes.\+h.
+Definition at line 2369 of file nodes.\+h.
 
 
 
@@ -365,7 +365,7 @@ Return the vector of k-\/th generalised boundary coordinates on mesh boundary b 
 
 
 
-Definition at line 2416 of file nodes.\+h.
+Definition at line 2412 of file nodes.\+h.
 
 
 
@@ -384,7 +384,7 @@ Return the vector of coordinates on mesh boundary b Final overload.
 
 
 
-Definition at line 2403 of file nodes.\+h.
+Definition at line 2399 of file nodes.\+h.
 
 
 
@@ -403,7 +403,7 @@ Return a boolean to indicate whether the data contains any copied values. If the
 
 
 
-Definition at line 2605 of file nodes.\+h.
+Definition at line 2601 of file nodes.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1BoundaryNode_a787efb1b118065987222b4c40c15570d}\label{classoomph_1_1BoundaryNode_a787efb1b118065987222b4c40c15570d}} 
 \index{oomph::BoundaryNode$<$ NODE\_TYPE $>$@{oomph::BoundaryNode$<$ NODE\_TYPE $>$}!is\_a\_copy@{is\_a\_copy}}
@@ -418,7 +418,7 @@ Return a boolean to indicate whether the i-\/th value is a copied value. If the 
 
 
 
-Definition at line 2611 of file nodes.\+h.
+Definition at line 2607 of file nodes.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1BoundaryNode_a70e488e087d1da3ec13c4412935e5644}\label{classoomph_1_1BoundaryNode_a70e488e087d1da3ec13c4412935e5644}} 
 \index{oomph::BoundaryNode$<$ NODE\_TYPE $>$@{oomph::BoundaryNode$<$ NODE\_TYPE $>$}!is\_on\_boundary@{is\_on\_boundary}}
@@ -433,7 +433,7 @@ Test whether the node lies on a boundary Final overload.
 
 
 
-Definition at line 2378 of file nodes.\+h.
+Definition at line 2374 of file nodes.\+h.
 
 
 
@@ -456,7 +456,7 @@ Test whether the node lies on mesh boundary b Final overload.
 
 
 
-Definition at line 2382 of file nodes.\+h.
+Definition at line 2378 of file nodes.\+h.
 
 
 
@@ -475,7 +475,7 @@ Make the node periodic.
 
 
 
-Definition at line 2595 of file nodes.\+h.
+Definition at line 2591 of file nodes.\+h.
 
 
 
@@ -493,7 +493,7 @@ Make the node periodic.
 
 
 
-Definition at line 2682 of file nodes.\+h.
+Definition at line 2678 of file nodes.\+h.
 
 
 
@@ -512,7 +512,7 @@ Make the nodes passed in periodic\+\_\+nodes periodic from this node.
 
 
 
-Definition at line 2600 of file nodes.\+h.
+Definition at line 2596 of file nodes.\+h.
 
 
 
@@ -531,7 +531,7 @@ Get the number of boundary coordinates on mesh boundary b.
 
 
 
-Definition at line 2395 of file nodes.\+h.
+Definition at line 2391 of file nodes.\+h.
 
 
 
@@ -550,7 +550,7 @@ Return the number of values associated with the i-\/th face element field. If no
 
 
 
-Definition at line 2438 of file nodes.\+h.
+Definition at line 2434 of file nodes.\+h.
 
 
 
@@ -569,7 +569,7 @@ Broken assignment operator.
 
 
 
-Definition at line 2359 of file nodes.\+h.
+Definition at line 2355 of file nodes.\+h.
 
 
 
@@ -588,7 +588,7 @@ Remover the node from mesh boundary b, final overload.
 
 
 
-Definition at line 2390 of file nodes.\+h.
+Definition at line 2386 of file nodes.\+h.
 
 
 
@@ -607,7 +607,7 @@ Set pointers to the copied data used when we have periodic nodes.
 
 
 
-Definition at line 2105 of file nodes.\+h.
+Definition at line 2101 of file nodes.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1BoundaryNode_a8ceaf97ad0211572e251091f84e4f607}\label{classoomph_1_1BoundaryNode_a8ceaf97ad0211572e251091f84e4f607}} 
 \index{oomph::BoundaryNode$<$ NODE\_TYPE $>$@{oomph::BoundaryNode$<$ NODE\_TYPE $>$}!resize@{resize}}
@@ -622,7 +622,7 @@ Resize the number of equations.
 
 
 
-Definition at line 2648 of file nodes.\+h.
+Definition at line 2644 of file nodes.\+h.
 
 
 
@@ -641,7 +641,7 @@ Set the vector of k-\/th generalised boundary coordinates on mesh boundary b. Fi
 
 
 
-Definition at line 2422 of file nodes.\+h.
+Definition at line 2418 of file nodes.\+h.
 
 
 
@@ -660,7 +660,7 @@ Set the vector of coordinates on mesh boundary b Final overload.
 
 
 
-Definition at line 2409 of file nodes.\+h.
+Definition at line 2405 of file nodes.\+h.
 
 
 

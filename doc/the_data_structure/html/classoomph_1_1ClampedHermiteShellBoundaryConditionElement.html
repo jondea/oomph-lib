@@ -1516,7 +1516,7 @@ Additional Inherited Members</h2></td></tr>
 <b>Note</b> <b>1</b>: Note that the introduction of the Lagrange multiplier adds two additional values (relative to the number of values before the addition of the <a class="el" href="classoomph_1_1FaceElement.html">FaceElement</a>) to the nodes. This ensures that nodes that are shared by adjacent FaceElements are not resized repeatedly but also means that this won't work if two "edges" of the shell (that share a node) are subject to different constraints, each applied with its own independent Lagrange multiplier. In such cases a modified version of this class must be written. <br  />
  <b>Note</b> <b>2</b>: The <a class="el" href="classoomph_1_1FaceGeometry.html">FaceGeometry</a> for a <a class="el" href="classoomph_1_1HermiteShellElement.html">HermiteShellElement</a> is the 1D two-node element <a class="el" href="classoomph_1_1SolidQHermiteElement.html">SolidQHermiteElement&lt;1&gt;</a> which has four shape functions (two nodes, two types &ndash; representing the shape functions that interpolate the value and the derivative). These are the "correct" shape functions for the interpolation of the Lagrange multiplier and the isoparametric representation of the geometry. However, when applying the contribution from the constraint equation to the bulk equations, we have to take all four types of dof into account so the element has to reset the number of positional dofs to four. To avoid any clashes we overload (the relevant subset of) the access functions to the shape functions and their derivatives and set the shape functions associated with the spurious positional dofs to zero. This is a bit hacky but the only way (?) this can be done... </p>
 
-<p class="definition">Definition at line <a class="el" href="shell__elements_8h_source.html#l00604">604</a> of file <a class="el" href="shell__elements_8h_source.html">shell_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shell__elements_8h_source.html#l00600">600</a> of file <a class="el" href="shell__elements_8h_source.html">shell_elements.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ac2c060fc25233cb0c73fdff218c25922"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac2c060fc25233cb0c73fdff218c25922">&#9670;&nbsp;</a></span>ClampedHermiteShellBoundaryConditionElement() <span class="overload">[1/3]</span></h2>
@@ -1547,9 +1547,9 @@ Additional Inherited Members</h2></td></tr>
 <p>Constructor, takes the pointer to the "bulk" element and the face index. </p>
 <p>Constructor, takes the pointer to the "bulk" element, the index of the fixed local coordinate and its value represented by an integer (+/- 1), indicating that the face is located at the max. or min. value of the "fixed" local coordinate in the bulk element. </p>
 
-<p class="definition">Definition at line <a class="el" href="shell__elements_8cc_source.html#l01422">1422</a> of file <a class="el" href="shell__elements_8cc_source.html">shell_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shell__elements_8cc_source.html#l01418">1418</a> of file <a class="el" href="shell__elements_8cc_source.html">shell_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8cc_source.html#l05005">oomph::FiniteElement::build_face_element()</a>, <a class="el" href="elements_8h_source.html#l04660">oomph::FaceElement::bulk_position_type()</a>, <a class="el" href="elements_8h_source.html#l04681">oomph::FaceElement::bulk_position_type_resize()</a>, <a class="el" href="elements_8h_source.html#l04501">oomph::FaceElement::face_index()</a>, <a class="el" href="shell__elements_8h_source.html#l00744">Normal_to_clamping_plane</a>, <a class="el" href="elements_8h_source.html#l04715">oomph::FaceElement::resize_nodes()</a>, and <a class="el" href="elements_8h_source.html#l01372">oomph::FiniteElement::set_nnodal_position_type()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8cc_source.html#l05001">oomph::FiniteElement::build_face_element()</a>, <a class="el" href="elements_8h_source.html#l04656">oomph::FaceElement::bulk_position_type()</a>, <a class="el" href="elements_8h_source.html#l04677">oomph::FaceElement::bulk_position_type_resize()</a>, <a class="el" href="elements_8h_source.html#l04497">oomph::FaceElement::face_index()</a>, <a class="el" href="shell__elements_8h_source.html#l00740">Normal_to_clamping_plane</a>, <a class="el" href="elements_8h_source.html#l04711">oomph::FaceElement::resize_nodes()</a>, and <a class="el" href="elements_8h_source.html#l01368">oomph::FiniteElement::set_nnodal_position_type()</a>.</p>
 
 </div>
 </div>
@@ -1578,7 +1578,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Broken empty constructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="shell__elements_8h_source.html#l00618">618</a> of file <a class="el" href="shell__elements_8h_source.html">shell_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shell__elements_8h_source.html#l00614">614</a> of file <a class="el" href="shell__elements_8h_source.html">shell_elements.h</a>.</p>
 
 </div>
 </div>
@@ -1608,9 +1608,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Broken copy constructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="shell__elements_8h_source.html#l00627">627</a> of file <a class="el" href="shell__elements_8h_source.html">shell_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shell__elements_8h_source.html#l00623">623</a> of file <a class="el" href="shell__elements_8h_source.html">shell_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="oomph__utilities_8cc_source.html#l00218">oomph::BrokenCopy::broken_copy()</a>.</p>
+<p class="reference">References <a class="el" href="oomph__utilities_8cc_source.html#l00214">oomph::BrokenCopy::broken_copy()</a>.</p>
 
 </div>
 </div>
@@ -1659,9 +1659,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1FiniteElement.html#a9db1456b827131c21a991ac9fedf4b0c">oomph::FiniteElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="shell__elements_8h_source.html#l00679">679</a> of file <a class="el" href="shell__elements_8h_source.html">shell_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shell__elements_8h_source.html#l00675">675</a> of file <a class="el" href="shell__elements_8h_source.html">shell_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, <a class="el" href="shape_8h_source.html#l00262">oomph::Shape::nindex1()</a>, <a class="el" href="shape_8h_source.html#l00489">oomph::DShape::nindex1()</a>, <a class="el" href="shape_8h_source.html#l00265">oomph::Shape::nindex2()</a>, <a class="el" href="shape_8h_source.html#l00492">oomph::DShape::nindex2()</a>, <a class="el" href="shape_8h_source.html#l00495">oomph::DShape::nindex3()</a>, and <a class="el" href="cfortran_8h_source.html#l00572">s</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, <a class="el" href="shape_8h_source.html#l00258">oomph::Shape::nindex1()</a>, <a class="el" href="shape_8h_source.html#l00485">oomph::DShape::nindex1()</a>, <a class="el" href="shape_8h_source.html#l00261">oomph::Shape::nindex2()</a>, <a class="el" href="shape_8h_source.html#l00488">oomph::DShape::nindex2()</a>, <a class="el" href="shape_8h_source.html#l00491">oomph::DShape::nindex3()</a>, and <a class="el" href="cfortran_8h_source.html#l00568">s</a>.</p>
 
 </div>
 </div>
@@ -1694,9 +1694,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1GeneralisedElement.html#a310c97f515e8504a48179c0e72c550d7">oomph::GeneralisedElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="shell__elements_8cc_source.html#l01490">1490</a> of file <a class="el" href="shell__elements_8cc_source.html">shell_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shell__elements_8cc_source.html#l01486">1486</a> of file <a class="el" href="shell__elements_8cc_source.html">shell_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l04604">oomph::FaceElement::bulk_element_pt()</a>, <a class="el" href="shell__elements_8cc_source.html#l00074">oomph::KirchhoffLoveShellEquations::get_normal()</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="elements_8h_source.html#l01925">oomph::FiniteElement::integral_pt()</a>, <a class="el" href="elements_8cc_source.html#l05116">oomph::FaceElement::J_eulerian()</a>, <a class="el" href="classoomph_1_1Integral.html#a1a2122f99a87c18649bafdd9ed739758">oomph::Integral::knot()</a>, <a class="el" href="elements_8cc_source.html#l06213">oomph::FaceElement::local_coordinate_in_bulk()</a>, <a class="el" href="elements_8h_source.html#l04296">oomph::FaceElement::Nbulk_value</a>, <a class="el" href="elements_8h_source.html#l02163">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l01403">oomph::FiniteElement::nodal_local_eqn()</a>, <a class="el" href="elements_8h_source.html#l02126">oomph::FiniteElement::node_pt()</a>, <a class="el" href="shell__elements_8h_source.html#l00744">Normal_to_clamping_plane</a>, <a class="el" href="classoomph_1_1Integral.html#a1a270de9d99a1fcf1d25a6c1017f65fa">oomph::Integral::nweight()</a>, <a class="el" href="elements_8h_source.html#l04011">oomph::SolidFiniteElement::position_local_eqn()</a>, <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>, <a class="el" href="cfortran_8h_source.html#l00572">s</a>, <a class="el" href="shell__elements_8h_source.html#l00661">shape()</a>, <a class="el" href="nodes_8cc_source.html#l02328">oomph::Node::value()</a>, <a class="el" href="quadtree_8h_source.html#l00060">oomph::QuadTreeNames::W</a>, <a class="el" href="classoomph_1_1Integral.html#ac65335e2aab120b285b3d6c294507b06">oomph::Integral::weight()</a>, and <a class="el" href="nodes_8h_source.html#l01054">oomph::Node::x_gen()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l04600">oomph::FaceElement::bulk_element_pt()</a>, <a class="el" href="shell__elements_8cc_source.html#l00070">oomph::KirchhoffLoveShellEquations::get_normal()</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="elements_8h_source.html#l01921">oomph::FiniteElement::integral_pt()</a>, <a class="el" href="elements_8cc_source.html#l05112">oomph::FaceElement::J_eulerian()</a>, <a class="el" href="classoomph_1_1Integral.html#a1a2122f99a87c18649bafdd9ed739758">oomph::Integral::knot()</a>, <a class="el" href="elements_8cc_source.html#l06209">oomph::FaceElement::local_coordinate_in_bulk()</a>, <a class="el" href="elements_8h_source.html#l04292">oomph::FaceElement::Nbulk_value</a>, <a class="el" href="elements_8h_source.html#l02159">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l01399">oomph::FiniteElement::nodal_local_eqn()</a>, <a class="el" href="elements_8h_source.html#l02122">oomph::FiniteElement::node_pt()</a>, <a class="el" href="shell__elements_8h_source.html#l00740">Normal_to_clamping_plane</a>, <a class="el" href="classoomph_1_1Integral.html#a1a270de9d99a1fcf1d25a6c1017f65fa">oomph::Integral::nweight()</a>, <a class="el" href="elements_8h_source.html#l04007">oomph::SolidFiniteElement::position_local_eqn()</a>, <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>, <a class="el" href="cfortran_8h_source.html#l00568">s</a>, <a class="el" href="shell__elements_8h_source.html#l00657">shape()</a>, <a class="el" href="nodes_8cc_source.html#l02324">oomph::Node::value()</a>, <a class="el" href="quadtree_8h_source.html#l00056">oomph::QuadTreeNames::W</a>, <a class="el" href="classoomph_1_1Integral.html#ac65335e2aab120b285b3d6c294507b06">oomph::Integral::weight()</a>, and <a class="el" href="nodes_8h_source.html#l01050">oomph::Node::x_gen()</a>.</p>
 
 </div>
 </div>
@@ -1729,9 +1729,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1GeneralisedElement.html#a069f59bfc3e607a5bebba52c6314d777">oomph::GeneralisedElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="shell__elements_8cc_source.html#l01773">1773</a> of file <a class="el" href="shell__elements_8cc_source.html">shell_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shell__elements_8cc_source.html#l01769">1769</a> of file <a class="el" href="shell__elements_8cc_source.html">shell_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l00709">oomph::GeneralisedElement::eqn_number()</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, <a class="el" href="elements_8h_source.html#l02369">oomph::FiniteElement::nnodal_position_type()</a>, <a class="el" href="elements_8h_source.html#l02163">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l02387">oomph::FiniteElement::nodal_dimension()</a>, <a class="el" href="elements_8h_source.html#l01403">oomph::FiniteElement::nodal_local_eqn()</a>, <a class="el" href="elements_8h_source.html#l02126">oomph::FiniteElement::node_pt()</a>, <a class="el" href="nodes_8h_source.html#l00448">oomph::Data::nvalue()</a>, and <a class="el" href="elements_8h_source.html#l04011">oomph::SolidFiniteElement::position_local_eqn()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l00705">oomph::GeneralisedElement::eqn_number()</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, <a class="el" href="elements_8h_source.html#l02365">oomph::FiniteElement::nnodal_position_type()</a>, <a class="el" href="elements_8h_source.html#l02159">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l02383">oomph::FiniteElement::nodal_dimension()</a>, <a class="el" href="elements_8h_source.html#l01399">oomph::FiniteElement::nodal_local_eqn()</a>, <a class="el" href="elements_8h_source.html#l02122">oomph::FiniteElement::node_pt()</a>, <a class="el" href="nodes_8h_source.html#l00444">oomph::Data::nvalue()</a>, and <a class="el" href="elements_8h_source.html#l04007">oomph::SolidFiniteElement::position_local_eqn()</a>.</p>
 
 </div>
 </div>
@@ -1762,7 +1762,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1GeneralisedElement.html#a0c6037a870597b35dcf1c780710b9a56">oomph::GeneralisedElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="shell__elements_8h_source.html#l00726">726</a> of file <a class="el" href="shell__elements_8h_source.html">shell_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shell__elements_8h_source.html#l00722">722</a> of file <a class="el" href="shell__elements_8h_source.html">shell_elements.h</a>.</p>
 
 </div>
 </div>
@@ -1792,9 +1792,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Broken assignment operator. </p>
 
-<p class="definition">Definition at line <a class="el" href="shell__elements_8h_source.html#l00635">635</a> of file <a class="el" href="shell__elements_8h_source.html">shell_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shell__elements_8h_source.html#l00631">631</a> of file <a class="el" href="shell__elements_8h_source.html">shell_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="oomph__utilities_8cc_source.html#l00201">oomph::BrokenCopy::broken_assign()</a>.</p>
+<p class="reference">References <a class="el" href="oomph__utilities_8cc_source.html#l00197">oomph::BrokenCopy::broken_assign()</a>.</p>
 
 </div>
 </div>
@@ -1825,9 +1825,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1FiniteElement.html#a72cddd09f8ddbee1a20a1ff404c6943e">oomph::FiniteElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="shell__elements_8h_source.html#l00716">716</a> of file <a class="el" href="shell__elements_8h_source.html">shell_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shell__elements_8h_source.html#l00712">712</a> of file <a class="el" href="shell__elements_8h_source.html">shell_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l02916">oomph::FiniteElement::output()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l02912">oomph::FiniteElement::output()</a>.</p>
 
 </div>
 </div>
@@ -1869,9 +1869,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1FiniteElement.html#adfaee690bb0608f03320eeb9d110d48c">oomph::FiniteElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="shell__elements_8h_source.html#l00721">721</a> of file <a class="el" href="shell__elements_8h_source.html">shell_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shell__elements_8h_source.html#l00717">717</a> of file <a class="el" href="shell__elements_8h_source.html">shell_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l02916">oomph::FiniteElement::output()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l02912">oomph::FiniteElement::output()</a>.</p>
 
 </div>
 </div>
@@ -1902,9 +1902,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1FiniteElement.html#a2ad98a3d2ef4999f1bef62c0ff13f2a7">oomph::FiniteElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="shell__elements_8h_source.html#l00709">709</a> of file <a class="el" href="shell__elements_8h_source.html">shell_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shell__elements_8h_source.html#l00705">705</a> of file <a class="el" href="shell__elements_8h_source.html">shell_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l02916">oomph::FiniteElement::output()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l02912">oomph::FiniteElement::output()</a>.</p>
 
 </div>
 </div>
@@ -1946,9 +1946,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1FiniteElement.html#afa9d9b2670f999b43e6679c9dd28c457">oomph::FiniteElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="shell__elements_8cc_source.html#l01653">1653</a> of file <a class="el" href="shell__elements_8cc_source.html">shell_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shell__elements_8cc_source.html#l01649">1649</a> of file <a class="el" href="shell__elements_8cc_source.html">shell_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l04604">oomph::FaceElement::bulk_element_pt()</a>, <a class="el" href="cfortran_8h_source.html#l00575">e</a>, <a class="el" href="shell__elements_8cc_source.html#l00074">oomph::KirchhoffLoveShellEquations::get_normal()</a>, <a class="el" href="elements_8h_source.html#l01925">oomph::FiniteElement::integral_pt()</a>, <a class="el" href="elements_8cc_source.html#l03881">oomph::FiniteElement::interpolated_x()</a>, <a class="el" href="elements_8h_source.html#l04411">oomph::FaceElement::interpolated_x()</a>, <a class="el" href="elements_8cc_source.html#l06954">oomph::SolidFiniteElement::interpolated_xi()</a>, <a class="el" href="elements_8h_source.html#l04772">oomph::SolidFaceElement::interpolated_xi()</a>, <a class="el" href="elements_8cc_source.html#l05116">oomph::FaceElement::J_eulerian()</a>, <a class="el" href="elements_8cc_source.html#l05204">oomph::FaceElement::J_eulerian_at_knot()</a>, <a class="el" href="classoomph_1_1Integral.html#a1a2122f99a87c18649bafdd9ed739758">oomph::Integral::knot()</a>, <a class="el" href="elements_8cc_source.html#l06213">oomph::FaceElement::local_coordinate_in_bulk()</a>, <a class="el" href="elements_8h_source.html#l04296">oomph::FaceElement::Nbulk_value</a>, <a class="el" href="elements_8h_source.html#l02126">oomph::FiniteElement::node_pt()</a>, <a class="el" href="shell__elements_8h_source.html#l00744">Normal_to_clamping_plane</a>, <a class="el" href="classoomph_1_1Integral.html#a1a270de9d99a1fcf1d25a6c1017f65fa">oomph::Integral::nweight()</a>, <a class="el" href="oomph__definitions_8cc_source.html#l00326">oomph::oomph_info</a>, <a class="el" href="cfortran_8h_source.html#l00572">s</a>, <a class="el" href="shell__elements_8h_source.html#l00661">shape()</a>, and <a class="el" href="nodes_8cc_source.html#l02328">oomph::Node::value()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l04600">oomph::FaceElement::bulk_element_pt()</a>, <a class="el" href="cfortran_8h_source.html#l00571">e</a>, <a class="el" href="shell__elements_8cc_source.html#l00070">oomph::KirchhoffLoveShellEquations::get_normal()</a>, <a class="el" href="elements_8h_source.html#l01921">oomph::FiniteElement::integral_pt()</a>, <a class="el" href="elements_8cc_source.html#l03877">oomph::FiniteElement::interpolated_x()</a>, <a class="el" href="elements_8h_source.html#l04407">oomph::FaceElement::interpolated_x()</a>, <a class="el" href="elements_8cc_source.html#l06950">oomph::SolidFiniteElement::interpolated_xi()</a>, <a class="el" href="elements_8h_source.html#l04768">oomph::SolidFaceElement::interpolated_xi()</a>, <a class="el" href="elements_8cc_source.html#l05112">oomph::FaceElement::J_eulerian()</a>, <a class="el" href="elements_8cc_source.html#l05200">oomph::FaceElement::J_eulerian_at_knot()</a>, <a class="el" href="classoomph_1_1Integral.html#a1a2122f99a87c18649bafdd9ed739758">oomph::Integral::knot()</a>, <a class="el" href="elements_8cc_source.html#l06209">oomph::FaceElement::local_coordinate_in_bulk()</a>, <a class="el" href="elements_8h_source.html#l04292">oomph::FaceElement::Nbulk_value</a>, <a class="el" href="elements_8h_source.html#l02122">oomph::FiniteElement::node_pt()</a>, <a class="el" href="shell__elements_8h_source.html#l00740">Normal_to_clamping_plane</a>, <a class="el" href="classoomph_1_1Integral.html#a1a270de9d99a1fcf1d25a6c1017f65fa">oomph::Integral::nweight()</a>, <a class="el" href="oomph__definitions_8cc_source.html#l00322">oomph::oomph_info</a>, <a class="el" href="cfortran_8h_source.html#l00568">s</a>, <a class="el" href="shell__elements_8h_source.html#l00657">shape()</a>, and <a class="el" href="nodes_8cc_source.html#l02324">oomph::Node::value()</a>.</p>
 
 </div>
 </div>
@@ -1978,9 +1978,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Set normal vector to clamping plane. </p>
 
-<p class="definition">Definition at line <a class="el" href="shell__elements_8h_source.html#l00642">642</a> of file <a class="el" href="shell__elements_8h_source.html">shell_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shell__elements_8h_source.html#l00638">638</a> of file <a class="el" href="shell__elements_8h_source.html">shell_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="shell__elements_8h_source.html#l00744">Normal_to_clamping_plane</a>.</p>
+<p class="reference">References <a class="el" href="shell__elements_8h_source.html#l00740">Normal_to_clamping_plane</a>.</p>
 
 </div>
 </div>
@@ -2022,11 +2022,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classoomph_1_1FiniteElement.html#a58a25b6859ddd43b7bfe64a19fee5023">oomph::FiniteElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="shell__elements_8h_source.html#l00661">661</a> of file <a class="el" href="shell__elements_8h_source.html">shell_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shell__elements_8h_source.html#l00657">657</a> of file <a class="el" href="shell__elements_8h_source.html">shell_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, <a class="el" href="shape_8h_source.html#l00262">oomph::Shape::nindex1()</a>, <a class="el" href="shape_8h_source.html#l00265">oomph::Shape::nindex2()</a>, <a class="el" href="cfortran_8h_source.html#l00572">s</a>, and <a class="el" href="shape_8h_source.html#l00549">oomph::OneDimLagrange::shape()</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, <a class="el" href="shape_8h_source.html#l00258">oomph::Shape::nindex1()</a>, <a class="el" href="shape_8h_source.html#l00261">oomph::Shape::nindex2()</a>, <a class="el" href="cfortran_8h_source.html#l00568">s</a>, and <a class="el" href="shape_8h_source.html#l00545">oomph::OneDimLagrange::shape()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="shell__elements_8cc_source.html#l01490">fill_in_contribution_to_residuals()</a>, and <a class="el" href="shell__elements_8cc_source.html#l01653">output()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="shell__elements_8cc_source.html#l01486">fill_in_contribution_to_residuals()</a>, and <a class="el" href="shell__elements_8cc_source.html#l01649">output()</a>.</p>
 
 </div>
 </div>
@@ -2053,9 +2053,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Normal vector to the clamping plane. </p>
 
-<p class="definition">Definition at line <a class="el" href="shell__elements_8h_source.html#l00744">744</a> of file <a class="el" href="shell__elements_8h_source.html">shell_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shell__elements_8h_source.html#l00740">740</a> of file <a class="el" href="shell__elements_8h_source.html">shell_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="shell__elements_8cc_source.html#l01422">ClampedHermiteShellBoundaryConditionElement()</a>, <a class="el" href="shell__elements_8cc_source.html#l01490">fill_in_contribution_to_residuals()</a>, <a class="el" href="shell__elements_8cc_source.html#l01653">output()</a>, and <a class="el" href="shell__elements_8h_source.html#l00642">set_symmetry_line()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="shell__elements_8cc_source.html#l01418">ClampedHermiteShellBoundaryConditionElement()</a>, <a class="el" href="shell__elements_8cc_source.html#l01486">fill_in_contribution_to_residuals()</a>, <a class="el" href="shell__elements_8cc_source.html#l01649">output()</a>, and <a class="el" href="shell__elements_8h_source.html#l00638">set_symmetry_line()</a>.</p>
 
 </div>
 </div>
@@ -2091,7 +2091,7 @@ Additional Inherited Members</h2></td></tr>
     <footer>
       <div class="container">
         <div class="text-muted" style="float:right;">Generated by <a href="http://www.doxygen.org/index.html">
-          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Tue Jul 6 2021 22:55:58
+          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Fri Jul 9 2021 20:51:16
         </div>
       </div>
     </footer>

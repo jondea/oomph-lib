@@ -77,7 +77,7 @@ class oomph\+::\+Womersley\+Impedance\+Tube\+Base$<$ E\+L\+E\+M\+E\+N\+T, D\+I\+
 Base class for Womersley impedance tube. Allows the computation of the inlet pressure p\+\_\+in into a uniform tube of specified length that is assumed to convey fully-\/developed, but time-\/dependent flow with a presribed instantaneous flow rate, q. Also computes the derivative dp\+\_\+in/dq required when this is used to determine impedance-\/type outlet boundary conditions in a Navier-\/\+Stokes computation. ~\newline
  
 
-Definition at line 1120 of file womersley\+\_\+elements.\+h.
+Definition at line 1116 of file womersley\+\_\+elements.\+h.
 
 
 
@@ -95,7 +95,7 @@ Function pointer to fct that prescribes volume flux q=fct(t) -- mainly used for 
 
 
 
-Definition at line 1128 of file womersley\+\_\+elements.\+h.
+Definition at line 1124 of file womersley\+\_\+elements.\+h.
 
 
 
@@ -113,7 +113,7 @@ Constructor\+: Specify length of tube and pointer to function that specifies the
 
 
 
-Definition at line 1133 of file womersley\+\_\+elements.\+h.
+Definition at line 1129 of file womersley\+\_\+elements.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1WomersleyImpedanceTubeBase_a79e8b7fb0c3edb3956aef7cf7c8bf719}\label{classoomph_1_1WomersleyImpedanceTubeBase_a79e8b7fb0c3edb3956aef7cf7c8bf719}} 
 \index{oomph::WomersleyImpedanceTubeBase$<$ ELEMENT, DIM $>$@{oomph::WomersleyImpedanceTubeBase$<$ ELEMENT, DIM $>$}!WomersleyImpedanceTubeBase@{WomersleyImpedanceTubeBase}}
@@ -128,7 +128,7 @@ Constructor\+: Specify length of tube and the pointer to the mesh of either Navi
 
 
 
-Definition at line 1156 of file womersley\+\_\+elements.\+h.
+Definition at line 1152 of file womersley\+\_\+elements.\+h.
 
 
 
@@ -165,7 +165,7 @@ Implements \mbox{\hyperlink{classoomph_1_1TemplateFreeWomersleyImpedanceTubeBase
 
 
 
-Definition at line 1428 of file womersley\+\_\+elements.\+h.
+Definition at line 1424 of file womersley\+\_\+elements.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1WomersleyImpedanceTubeBase_abdb65e815a6b49ffb2b4ac180c968ccc}\label{classoomph_1_1WomersleyImpedanceTubeBase_abdb65e815a6b49ffb2b4ac180c968ccc}} 
 \index{oomph::WomersleyImpedanceTubeBase$<$ ELEMENT, DIM $>$@{oomph::WomersleyImpedanceTubeBase$<$ ELEMENT, DIM $>$}!p\_out@{p\_out}}
@@ -180,7 +180,7 @@ Access fct to outlet pressure.
 
 
 
-Definition at line 1224 of file womersley\+\_\+elements.\+h.
+Definition at line 1220 of file womersley\+\_\+elements.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1WomersleyImpedanceTubeBase_a64f2f3eeb09a5637b32661baab3ac1e4}\label{classoomph_1_1WomersleyImpedanceTubeBase_a64f2f3eeb09a5637b32661baab3ac1e4}} 
 \index{oomph::WomersleyImpedanceTubeBase$<$ ELEMENT, DIM $>$@{oomph::WomersleyImpedanceTubeBase$<$ ELEMENT, DIM $>$}!precompute\_aux\_integrals@{precompute\_aux\_integrals}}
@@ -195,7 +195,7 @@ Precompute auxiliary integrals required for the computation of the Jacobian in t
 
 
 
-Definition at line 1454 of file womersley\+\_\+elements.\+h.
+Definition at line 1450 of file womersley\+\_\+elements.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1WomersleyImpedanceTubeBase_a8524aff02e221d6fd8d9cfe58c2ef596}\label{classoomph_1_1WomersleyImpedanceTubeBase_a8524aff02e221d6fd8d9cfe58c2ef596}} 
 \index{oomph::WomersleyImpedanceTubeBase$<$ ELEMENT, DIM $>$@{oomph::WomersleyImpedanceTubeBase$<$ ELEMENT, DIM $>$}!setup@{setup}}
@@ -210,7 +210,7 @@ Set up the Womersley tubes so that a subsequent call to get\+\_\+response(...) c
 
 
 
-Definition at line 1238 of file womersley\+\_\+elements.\+h.
+Definition at line 1234 of file womersley\+\_\+elements.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1WomersleyImpedanceTubeBase_a912ef51e8ac9c44e80566126da7d591f}\label{classoomph_1_1WomersleyImpedanceTubeBase_a912ef51e8ac9c44e80566126da7d591f}} 
 \index{oomph::WomersleyImpedanceTubeBase$<$ ELEMENT, DIM $>$@{oomph::WomersleyImpedanceTubeBase$<$ ELEMENT, DIM $>$}!setup@{setup}}
@@ -225,7 +225,7 @@ Set up the Womersley tubes so that a subsequent call to get\+\_\+response(...) c
 
 By default, we do want to suppress the output from the Newton solver
 
-Definition at line 1258 of file womersley\+\_\+elements.\+h.
+Definition at line 1254 of file womersley\+\_\+elements.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1WomersleyImpedanceTubeBase_ad5796e64a6f25944dc9be6489149f513}\label{classoomph_1_1WomersleyImpedanceTubeBase_ad5796e64a6f25944dc9be6489149f513}} 
 \index{oomph::WomersleyImpedanceTubeBase$<$ ELEMENT, DIM $>$@{oomph::WomersleyImpedanceTubeBase$<$ ELEMENT, DIM $>$}!shift\_time\_values@{shift\_time\_values}}
@@ -240,7 +240,7 @@ Shift history values to allow coputation of next timestep. Note\+: When used wit
 
 
 
-Definition at line 1364 of file womersley\+\_\+elements.\+h.
+Definition at line 1360 of file womersley\+\_\+elements.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1WomersleyImpedanceTubeBase_aa321d54eb9f818975854f8f3cc568256}\label{classoomph_1_1WomersleyImpedanceTubeBase_aa321d54eb9f818975854f8f3cc568256}} 
 \index{oomph::WomersleyImpedanceTubeBase$<$ ELEMENT, DIM $>$@{oomph::WomersleyImpedanceTubeBase$<$ ELEMENT, DIM $>$}!total\_volume\_flux\_into\_impedance\_tube@{total\_volume\_flux\_into\_impedance\_tube}}
@@ -255,7 +255,7 @@ Compute total current volume flux into the \char`\"{}impedance tube\char`\"{} th
 
 
 
-Definition at line 1390 of file womersley\+\_\+elements.\+h.
+Definition at line 1386 of file womersley\+\_\+elements.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1WomersleyImpedanceTubeBase_a59aa99fe9771f53ee482218da67d87c7}\label{classoomph_1_1WomersleyImpedanceTubeBase_a59aa99fe9771f53ee482218da67d87c7}} 
 \index{oomph::WomersleyImpedanceTubeBase$<$ ELEMENT, DIM $>$@{oomph::WomersleyImpedanceTubeBase$<$ ELEMENT, DIM $>$}!womersley\_problem\_pt@{womersley\_problem\_pt}}
@@ -270,7 +270,7 @@ Access to underlying Womersley problem.
 
 
 
-Definition at line 1354 of file womersley\+\_\+elements.\+h.
+Definition at line 1350 of file womersley\+\_\+elements.\+h.
 
 
 
@@ -288,7 +288,7 @@ Pointer to auxiliary integral, containing the derivative of the total volume flu
 
 
 
-Definition at line 1520 of file womersley\+\_\+elements.\+h.
+Definition at line 1516 of file womersley\+\_\+elements.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1WomersleyImpedanceTubeBase_a7363d921cd306353eae884b9cfe5c8e9}\label{classoomph_1_1WomersleyImpedanceTubeBase_a7363d921cd306353eae884b9cfe5c8e9}} 
 \index{oomph::WomersleyImpedanceTubeBase$<$ ELEMENT, DIM $>$@{oomph::WomersleyImpedanceTubeBase$<$ ELEMENT, DIM $>$}!Current\_volume\_flux\_pt@{Current\_volume\_flux\_pt}}
@@ -303,7 +303,7 @@ Pointer to double that specifies the currently imposed instantaneous volume flux
 
 
 
-Definition at line 1499 of file womersley\+\_\+elements.\+h.
+Definition at line 1495 of file womersley\+\_\+elements.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1WomersleyImpedanceTubeBase_a4f6f0c9043ea66a5b0c3a623cf1e7354}\label{classoomph_1_1WomersleyImpedanceTubeBase_a4f6f0c9043ea66a5b0c3a623cf1e7354}} 
 \index{oomph::WomersleyImpedanceTubeBase$<$ ELEMENT, DIM $>$@{oomph::WomersleyImpedanceTubeBase$<$ ELEMENT, DIM $>$}!Dp\_in\_dq@{Dp\_in\_dq}}
@@ -318,7 +318,7 @@ Derivative of inflow pressure w.\+r.\+t. instantaenous volume flux (Note\+: Can 
 
 
 
-Definition at line 1493 of file womersley\+\_\+elements.\+h.
+Definition at line 1489 of file womersley\+\_\+elements.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1WomersleyImpedanceTubeBase_a3be3a17477e68ee912699b1cc8749ee7}\label{classoomph_1_1WomersleyImpedanceTubeBase_a3be3a17477e68ee912699b1cc8749ee7}} 
 \index{oomph::WomersleyImpedanceTubeBase$<$ ELEMENT, DIM $>$@{oomph::WomersleyImpedanceTubeBase$<$ ELEMENT, DIM $>$}!Length@{Length}}
@@ -333,7 +333,7 @@ Length of the tube.
 
 
 
-Definition at line 1489 of file womersley\+\_\+elements.\+h.
+Definition at line 1485 of file womersley\+\_\+elements.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1WomersleyImpedanceTubeBase_a59b41acf37d7bfce3c1a8676304915d7}\label{classoomph_1_1WomersleyImpedanceTubeBase_a59b41acf37d7bfce3c1a8676304915d7}} 
 \index{oomph::WomersleyImpedanceTubeBase$<$ ELEMENT, DIM $>$@{oomph::WomersleyImpedanceTubeBase$<$ ELEMENT, DIM $>$}!Navier\_stokes\_outflow\_mesh\_pt@{Navier\_stokes\_outflow\_mesh\_pt}}
@@ -348,7 +348,7 @@ Pointer to the mesh of Navier\+Stokes\+Impedance\+Traction\+Elements that are at
 
 
 
-Definition at line 1514 of file womersley\+\_\+elements.\+h.
+Definition at line 1510 of file womersley\+\_\+elements.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1WomersleyImpedanceTubeBase_afa4f6e203c33d02e82a92986b1aeee0d}\label{classoomph_1_1WomersleyImpedanceTubeBase_afa4f6e203c33d02e82a92986b1aeee0d}} 
 \index{oomph::WomersleyImpedanceTubeBase$<$ ELEMENT, DIM $>$@{oomph::WomersleyImpedanceTubeBase$<$ ELEMENT, DIM $>$}!P\_out@{P\_out}}
@@ -363,7 +363,7 @@ Outlet pressure.
 
 
 
-Definition at line 1506 of file womersley\+\_\+elements.\+h.
+Definition at line 1502 of file womersley\+\_\+elements.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1WomersleyImpedanceTubeBase_ae7d57d4ab999bc30db552a265fbadf92}\label{classoomph_1_1WomersleyImpedanceTubeBase_ae7d57d4ab999bc30db552a265fbadf92}} 
 \index{oomph::WomersleyImpedanceTubeBase$<$ ELEMENT, DIM $>$@{oomph::WomersleyImpedanceTubeBase$<$ ELEMENT, DIM $>$}!Prescribed\_volume\_flux\_fct\_pt@{Prescribed\_volume\_flux\_fct\_pt}}
@@ -378,7 +378,7 @@ Pointer to function that specifies the prescribed volume flux.
 
 
 
-Definition at line 1509 of file womersley\+\_\+elements.\+h.
+Definition at line 1505 of file womersley\+\_\+elements.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1WomersleyImpedanceTubeBase_a01ab12fe40acf7a477b892e7c7cd0831}\label{classoomph_1_1WomersleyImpedanceTubeBase_a01ab12fe40acf7a477b892e7c7cd0831}} 
 \index{oomph::WomersleyImpedanceTubeBase$<$ ELEMENT, DIM $>$@{oomph::WomersleyImpedanceTubeBase$<$ ELEMENT, DIM $>$}!Using\_flux\_control\_elements@{Using\_flux\_control\_elements}}
@@ -389,7 +389,7 @@ bool \mbox{\hyperlink{classoomph_1_1WomersleyImpedanceTubeBase}{oomph\+::\+Womer
 
 
 
-Definition at line 1526 of file womersley\+\_\+elements.\+h.
+Definition at line 1522 of file womersley\+\_\+elements.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1WomersleyImpedanceTubeBase_ab424ec7b47d3f31acd44dcf93be6b5e5}\label{classoomph_1_1WomersleyImpedanceTubeBase_ab424ec7b47d3f31acd44dcf93be6b5e5}} 
 \index{oomph::WomersleyImpedanceTubeBase$<$ ELEMENT, DIM $>$@{oomph::WomersleyImpedanceTubeBase$<$ ELEMENT, DIM $>$}!Womersley\_problem\_pt@{Womersley\_problem\_pt}}
@@ -404,7 +404,7 @@ Pointer to Womersley problem that determines the pressure gradient along the tub
 
 
 
-Definition at line 1503 of file womersley\+\_\+elements.\+h.
+Definition at line 1499 of file womersley\+\_\+elements.\+h.
 
 
 

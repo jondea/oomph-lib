@@ -103,7 +103,7 @@ int \mbox{\hyperlink{classoomph_1_1ElementWithMovingNodes_a7b02491715adf7a315631
 \doxysubsection{Detailed Description}
 A policy class that serves to establish the common interfaces for elements that contain moving nodes. This class provides storage for the geometric data that affect the update of all the nodes of the element, i.\+e. U\+S\+U\+A\+L\+LY all data that are using during a call to the Element\textquotesingle{}s \mbox{\hyperlink{classoomph_1_1FiniteElement_ac27d707cb4f7c1429793c0fdb2fd093b}{node\+\_\+update()}} function. In some cases (e.\+g. Fluid\+Interface\+Edge elements), \mbox{\hyperlink{classoomph_1_1FiniteElement_ac27d707cb4f7c1429793c0fdb2fd093b}{node\+\_\+update()}} is overloaded to perform an update of the bulk element, in which case the additional bulk geometric data become external data of the element and the function Generalised\+Element\+::update\+\_\+in\+\_\+external\+\_\+fd(i) is overloaded to also perform the bulk node update. The storage is populated during the assignment of the equation numbers via the \mbox{\hyperlink{classoomph_1_1ElementWithMovingNodes_a6d2fa178f36d4b8413a9ce4f24e9c87e}{complete\+\_\+setup\+\_\+of\+\_\+dependencies()}} function and then local equations numbers are assigned to these data, accessible via geometric\+\_\+data\+\_\+local\+\_\+eqn(n,i). Finally, a function is provided that calculates the terms in the jacobian matrix by due to these geometric data by finite differences. 
 
-Definition at line 75 of file element\+\_\+with\+\_\+moving\+\_\+nodes.\+h.
+Definition at line 71 of file element\+\_\+with\+\_\+moving\+\_\+nodes.\+h.
 
 
 
@@ -132,7 +132,7 @@ Shape\+\_\+derivs\+\_\+by\+\_\+fastest\+\_\+method&\\
 \end{DoxyEnumFields}
 
 
-Definition at line 80 of file element\+\_\+with\+\_\+moving\+\_\+nodes.\+h.
+Definition at line 76 of file element\+\_\+with\+\_\+moving\+\_\+nodes.\+h.
 
 
 
@@ -149,7 +149,7 @@ Constructor.
 
 
 
-Definition at line 85 of file element\+\_\+with\+\_\+moving\+\_\+nodes.\+h.
+Definition at line 81 of file element\+\_\+with\+\_\+moving\+\_\+nodes.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1ElementWithMovingNodes_a6b8b065876eeb3e896c4d8108e293942}\label{classoomph_1_1ElementWithMovingNodes_a6b8b065876eeb3e896c4d8108e293942}} 
 \index{oomph::ElementWithMovingNodes@{oomph::ElementWithMovingNodes}!ElementWithMovingNodes@{ElementWithMovingNodes}}
@@ -163,7 +163,7 @@ Broken copy constructor.
 
 
 
-Definition at line 100 of file element\+\_\+with\+\_\+moving\+\_\+nodes.\+h.
+Definition at line 96 of file element\+\_\+with\+\_\+moving\+\_\+nodes.\+h.
 
 
 
@@ -181,7 +181,7 @@ Virtual destructor (clean up and allocated memory)
 
 
 
-Definition at line 123 of file element\+\_\+with\+\_\+moving\+\_\+nodes.\+h.
+Definition at line 119 of file element\+\_\+with\+\_\+moving\+\_\+nodes.\+h.
 
 
 
@@ -202,7 +202,7 @@ Return whether shape derivatives are evaluated by fd.
 
 
 
-Definition at line 198 of file element\+\_\+with\+\_\+moving\+\_\+nodes.\+h.
+Definition at line 194 of file element\+\_\+with\+\_\+moving\+\_\+nodes.\+h.
 
 
 
@@ -220,7 +220,7 @@ Return a set of all geometric data associated with the element.
 
 Return a set of all geometric data associated with the element\textquotesingle{}s node update function 
 
-Definition at line 48 of file element\+\_\+with\+\_\+moving\+\_\+nodes.\+cc.
+Definition at line 44 of file element\+\_\+with\+\_\+moving\+\_\+nodes.\+cc.
 
 
 
@@ -248,7 +248,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1ElementWithSpecificMovingNodes_a
 
 
 
-Definition at line 199 of file element\+\_\+with\+\_\+moving\+\_\+nodes.\+cc.
+Definition at line 195 of file element\+\_\+with\+\_\+moving\+\_\+nodes.\+cc.
 
 
 
@@ -278,7 +278,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1ElementWithSpecificMovingNodes_a
 
 
 
-Definition at line 141 of file element\+\_\+with\+\_\+moving\+\_\+nodes.\+cc.
+Definition at line 137 of file element\+\_\+with\+\_\+moving\+\_\+nodes.\+cc.
 
 
 
@@ -308,7 +308,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1ElementWithSpecificMovingNodes_a
 
 
 
-Definition at line 173 of file element\+\_\+with\+\_\+moving\+\_\+nodes.\+cc.
+Definition at line 169 of file element\+\_\+with\+\_\+moving\+\_\+nodes.\+cc.
 
 
 
@@ -330,7 +330,7 @@ Insist that shape derivatives are always evaluated using the overloaded version 
 
 
 
-Definition at line 211 of file element\+\_\+with\+\_\+moving\+\_\+nodes.\+h.
+Definition at line 207 of file element\+\_\+with\+\_\+moving\+\_\+nodes.\+h.
 
 
 
@@ -348,7 +348,7 @@ Do not bypass the call to fill\+\_\+in\+\_\+jacobian\+\_\+from\+\_\+geometric\+\
 
 
 
-Definition at line 278 of file element\+\_\+with\+\_\+moving\+\_\+nodes.\+h.
+Definition at line 274 of file element\+\_\+with\+\_\+moving\+\_\+nodes.\+h.
 
 
 
@@ -366,7 +366,7 @@ Insist that shape derivatives are always evaluated by fd (using \mbox{\hyperlink
 
 
 
-Definition at line 203 of file element\+\_\+with\+\_\+moving\+\_\+nodes.\+h.
+Definition at line 199 of file element\+\_\+with\+\_\+moving\+\_\+nodes.\+h.
 
 
 
@@ -384,7 +384,7 @@ Bypass the call to fill\+\_\+in\+\_\+jacobian\+\_\+from\+\_\+geometric\+\_\+data
 
 
 
-Definition at line 274 of file element\+\_\+with\+\_\+moving\+\_\+nodes.\+h.
+Definition at line 270 of file element\+\_\+with\+\_\+moving\+\_\+nodes.\+h.
 
 
 
@@ -406,7 +406,7 @@ Evaluate shape derivatives by chain rule. Currently disabled by default because 
 
 
 
-Definition at line 225 of file element\+\_\+with\+\_\+moving\+\_\+nodes.\+h.
+Definition at line 221 of file element\+\_\+with\+\_\+moving\+\_\+nodes.\+h.
 
 
 
@@ -424,7 +424,7 @@ Evaluate shape derivatives by direct finite differencing.
 
 
 
-Definition at line 215 of file element\+\_\+with\+\_\+moving\+\_\+nodes.\+h.
+Definition at line 211 of file element\+\_\+with\+\_\+moving\+\_\+nodes.\+h.
 
 
 
@@ -442,7 +442,7 @@ Evaluate shape derivatives by (anticipated) fastest method. Currently disabled b
 
 
 
-Definition at line 249 of file element\+\_\+with\+\_\+moving\+\_\+nodes.\+h.
+Definition at line 245 of file element\+\_\+with\+\_\+moving\+\_\+nodes.\+h.
 
 
 
@@ -456,7 +456,7 @@ References Method\+\_\+for\+\_\+shape\+\_\+derivs, and Shape\+\_\+derivs\+\_\+by
 
 Calculate the contributions to the Jacobian matrix from the geometric data. This version computes the residuals vector before calculating the Jacobian terms 
 
-Definition at line 314 of file element\+\_\+with\+\_\+moving\+\_\+nodes.\+h.
+Definition at line 310 of file element\+\_\+with\+\_\+moving\+\_\+nodes.\+h.
 
 
 
@@ -474,7 +474,7 @@ Calculate the contributions to the Jacobian matrix from the geometric data. This
 
 Calculate the node-\/update--related entries in the Jacobian. The vector passed in residuals has to contain the nonlinear residuals, evaluated for the current values of the unknowns, in case F\+Ding is used to computed the derivatives. 
 
-Definition at line 318 of file element\+\_\+with\+\_\+moving\+\_\+nodes.\+cc.
+Definition at line 314 of file element\+\_\+with\+\_\+moving\+\_\+nodes.\+cc.
 
 
 
@@ -496,7 +496,7 @@ Return the local equation number corresponding to the i-\/th value at the n-\/th
 
 
 
-Definition at line 137 of file element\+\_\+with\+\_\+moving\+\_\+nodes.\+h.
+Definition at line 133 of file element\+\_\+with\+\_\+moving\+\_\+nodes.\+h.
 
 
 
@@ -518,7 +518,7 @@ Compute derivatives of the nodal coordinates w.\+r.\+t. to the geometric dofs. D
 
 
 
-Definition at line 543 of file element\+\_\+with\+\_\+moving\+\_\+nodes.\+cc.
+Definition at line 539 of file element\+\_\+with\+\_\+moving\+\_\+nodes.\+cc.
 
 
 
@@ -544,7 +544,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1FiniteElement_a0eea5ad6500576d
 
 
 
-Definition at line 187 of file element\+\_\+with\+\_\+moving\+\_\+nodes.\+h.
+Definition at line 183 of file element\+\_\+with\+\_\+moving\+\_\+nodes.\+h.
 
 
 
@@ -562,7 +562,7 @@ Test whether the call to fill\+\_\+in\+\_\+jacobian\+\_\+from\+\_\+geometric\+\_
 
 
 
-Definition at line 282 of file element\+\_\+with\+\_\+moving\+\_\+nodes.\+h.
+Definition at line 278 of file element\+\_\+with\+\_\+moving\+\_\+nodes.\+h.
 
 
 
@@ -580,7 +580,7 @@ Access to method (enumerated flag) for determination of shape derivs.
 
 
 
-Definition at line 271 of file element\+\_\+with\+\_\+moving\+\_\+nodes.\+h.
+Definition at line 267 of file element\+\_\+with\+\_\+moving\+\_\+nodes.\+h.
 
 
 
@@ -606,7 +606,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1GeomObject_a19d325347e19964e12
 
 
 
-Definition at line 340 of file element\+\_\+with\+\_\+moving\+\_\+nodes.\+h.
+Definition at line 336 of file element\+\_\+with\+\_\+moving\+\_\+nodes.\+h.
 
 
 
@@ -628,7 +628,7 @@ Number of geometric dofs.
 
 
 
-Definition at line 133 of file element\+\_\+with\+\_\+moving\+\_\+nodes.\+h.
+Definition at line 129 of file element\+\_\+with\+\_\+moving\+\_\+nodes.\+h.
 
 
 
@@ -646,7 +646,7 @@ Broken assignment operator.
 
 
 
-Definition at line 106 of file element\+\_\+with\+\_\+moving\+\_\+nodes.\+h.
+Definition at line 102 of file element\+\_\+with\+\_\+moving\+\_\+nodes.\+h.
 
 
 
@@ -667,7 +667,7 @@ Set flag to true to bypass calculation of Jacobain entries resulting from geomet
 
 
 
-Definition at line 354 of file element\+\_\+with\+\_\+moving\+\_\+nodes.\+h.
+Definition at line 350 of file element\+\_\+with\+\_\+moving\+\_\+nodes.\+h.
 
 
 
@@ -685,7 +685,7 @@ Boolean to decide if shape derivatives are to be evaluated by fd (using \mbox{\h
 
 
 
-Definition at line 360 of file element\+\_\+with\+\_\+moving\+\_\+nodes.\+h.
+Definition at line 356 of file element\+\_\+with\+\_\+moving\+\_\+nodes.\+h.
 
 
 
@@ -703,7 +703,7 @@ Referenced by are\+\_\+dresidual\+\_\+dnodal\+\_\+coordinates\+\_\+always\+\_\+e
 
 
 
-Definition at line 334 of file element\+\_\+with\+\_\+moving\+\_\+nodes.\+h.
+Definition at line 330 of file element\+\_\+with\+\_\+moving\+\_\+nodes.\+h.
 
 
 
@@ -721,7 +721,7 @@ Array to hold local eqn number information for the geometric \mbox{\hyperlink{cl
 
 
 
-Definition at line 346 of file element\+\_\+with\+\_\+moving\+\_\+nodes.\+h.
+Definition at line 342 of file element\+\_\+with\+\_\+moving\+\_\+nodes.\+h.
 
 
 
@@ -739,7 +739,7 @@ Choose method for evaluation of shape derivatives (this takes one of the values 
 
 
 
-Definition at line 364 of file element\+\_\+with\+\_\+moving\+\_\+nodes.\+h.
+Definition at line 360 of file element\+\_\+with\+\_\+moving\+\_\+nodes.\+h.
 
 
 
@@ -757,7 +757,7 @@ Number of geometric dofs (computed on the fly when equation numbers are set up)
 
 
 
-Definition at line 350 of file element\+\_\+with\+\_\+moving\+\_\+nodes.\+h.
+Definition at line 346 of file element\+\_\+with\+\_\+moving\+\_\+nodes.\+h.
 
 
 

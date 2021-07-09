@@ -55,7 +55,7 @@ void \mbox{\hyperlink{classoomph_1_1DoubleVectorWithHaloEntries_a1aab1a84c6a82a7
 ===================================================================== An extension of \mbox{\hyperlink{classoomph_1_1DoubleVector}{Double\+Vector}} that allows access to certain global entries that are not stored locally. Synchronisation of these values must be performed manually by calling the \mbox{\hyperlink{classoomph_1_1DoubleVectorWithHaloEntries_a6d5b6e2c1c80d4fb468c851030d62492}{synchronise()}} function. Synchronisation can only be from the haloed to the halo, but the local halo entries can all be summed and stored in the \hypertarget{classoomph_1_1DoubleVectorWithHaloEntries_autotoc_md3}{}\doxysubsection{haloed value.}\label{classoomph_1_1DoubleVectorWithHaloEntries_autotoc_md3}
 
 
-Definition at line 147 of file double\+\_\+vector\+\_\+with\+\_\+halo.\+h.
+Definition at line 143 of file double\+\_\+vector\+\_\+with\+\_\+halo.\+h.
 
 
 
@@ -72,7 +72,7 @@ Constructor for an uninitialized \mbox{\hyperlink{classoomph_1_1DoubleVectorWith
 
 
 
-Definition at line 159 of file double\+\_\+vector\+\_\+with\+\_\+halo.\+h.
+Definition at line 155 of file double\+\_\+vector\+\_\+with\+\_\+halo.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1DoubleVectorWithHaloEntries_a11d1cd58eeb7f5d125f76537f49a1c42}\label{classoomph_1_1DoubleVectorWithHaloEntries_a11d1cd58eeb7f5d125f76537f49a1c42}} 
 \index{oomph::DoubleVectorWithHaloEntries@{oomph::DoubleVectorWithHaloEntries}!DoubleVectorWithHaloEntries@{DoubleVectorWithHaloEntries}}
@@ -86,7 +86,7 @@ Constructor. Assembles a \mbox{\hyperlink{classoomph_1_1DoubleVectorWithHaloEntr
 
 
 
-Definition at line 165 of file double\+\_\+vector\+\_\+with\+\_\+halo.\+h.
+Definition at line 161 of file double\+\_\+vector\+\_\+with\+\_\+halo.\+h.
 
 
 
@@ -104,7 +104,7 @@ Constructor. Assembles a \mbox{\hyperlink{classoomph_1_1DoubleVectorWithHaloEntr
 
 
 
-Definition at line 179 of file double\+\_\+vector\+\_\+with\+\_\+halo.\+h.
+Definition at line 175 of file double\+\_\+vector\+\_\+with\+\_\+halo.\+h.
 
 
 
@@ -122,7 +122,7 @@ Destructor.
 
 
 
-Definition at line 190 of file double\+\_\+vector\+\_\+with\+\_\+halo.\+h.
+Definition at line 186 of file double\+\_\+vector\+\_\+with\+\_\+halo.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1DoubleVectorWithHaloEntries_a9bef4c069e52aa1aa394e8b0b75d3367}\label{classoomph_1_1DoubleVectorWithHaloEntries_a9bef4c069e52aa1aa394e8b0b75d3367}} 
 \index{oomph::DoubleVectorWithHaloEntries@{oomph::DoubleVectorWithHaloEntries}!DoubleVectorWithHaloEntries@{DoubleVectorWithHaloEntries}}
@@ -136,7 +136,7 @@ Copy constructor from any \mbox{\hyperlink{classoomph_1_1DoubleVector}{Double\+V
 
 
 
-Definition at line 194 of file double\+\_\+vector\+\_\+with\+\_\+halo.\+h.
+Definition at line 190 of file double\+\_\+vector\+\_\+with\+\_\+halo.\+h.
 
 
 
@@ -154,7 +154,7 @@ Copy constructor from any \mbox{\hyperlink{classoomph_1_1DoubleVector}{Double\+V
 
 
 
-Definition at line 202 of file double\+\_\+vector\+\_\+with\+\_\+halo.\+h.
+Definition at line 198 of file double\+\_\+vector\+\_\+with\+\_\+halo.\+h.
 
 
 
@@ -175,7 +175,7 @@ Construct the halo scheme and storage for the halo data.
 
 
 
-Definition at line 343 of file double\+\_\+vector\+\_\+with\+\_\+halo.\+cc.
+Definition at line 339 of file double\+\_\+vector\+\_\+with\+\_\+halo.\+cc.
 
 
 
@@ -197,7 +197,7 @@ Direct access to global entry.
 
 
 
-Definition at line 219 of file double\+\_\+vector\+\_\+with\+\_\+halo.\+h.
+Definition at line 215 of file double\+\_\+vector\+\_\+with\+\_\+halo.\+h.
 
 
 
@@ -219,7 +219,7 @@ Direct access to the global entry (const version)
 
 
 
-Definition at line 266 of file double\+\_\+vector\+\_\+with\+\_\+halo.\+h.
+Definition at line 262 of file double\+\_\+vector\+\_\+with\+\_\+halo.\+h.
 
 
 
@@ -237,7 +237,7 @@ Access function for halo scheme.
 
 
 
-Definition at line 321 of file double\+\_\+vector\+\_\+with\+\_\+halo.\+h.
+Definition at line 317 of file double\+\_\+vector\+\_\+with\+\_\+halo.\+h.
 
 
 
@@ -259,7 +259,7 @@ Access function for halo scheme (const version)
 
 
 
-Definition at line 324 of file double\+\_\+vector\+\_\+with\+\_\+halo.\+h.
+Definition at line 320 of file double\+\_\+vector\+\_\+with\+\_\+halo.\+h.
 
 
 
@@ -277,7 +277,7 @@ assignment operator
 
 
 
-Definition at line 211 of file double\+\_\+vector\+\_\+with\+\_\+halo.\+h.
+Definition at line 207 of file double\+\_\+vector\+\_\+with\+\_\+halo.\+h.
 
 
 
@@ -293,7 +293,7 @@ Sum all the data, store in the master (haloed) data and then synchronise
 
 Gather all ther data from multiple processors and sum the result which will be stored in the master copy and then synchronised to all copies. This requires two \char`\"{}all to all\char`\"{} communications 
 
-Definition at line 297 of file double\+\_\+vector\+\_\+with\+\_\+halo.\+cc.
+Definition at line 293 of file double\+\_\+vector\+\_\+with\+\_\+halo.\+cc.
 
 
 
@@ -315,7 +315,7 @@ Synchronise the halo data.
 
 Synchronise the halo data within the vector. This requires one \char`\"{}all to all\char`\"{} communnication. 
 
-Definition at line 253 of file double\+\_\+vector\+\_\+with\+\_\+halo.\+cc.
+Definition at line 249 of file double\+\_\+vector\+\_\+with\+\_\+halo.\+cc.
 
 
 
@@ -340,7 +340,7 @@ Pointer to the lookup scheme that stores information about on which processor th
 
 
 
-Definition at line 151 of file double\+\_\+vector\+\_\+with\+\_\+halo.\+h.
+Definition at line 147 of file double\+\_\+vector\+\_\+with\+\_\+halo.\+h.
 
 
 
@@ -358,7 +358,7 @@ Referenced by build\+\_\+halo\+\_\+scheme(), global\+\_\+value(), halo\+\_\+sche
 
 
 
-Definition at line 154 of file double\+\_\+vector\+\_\+with\+\_\+halo.\+h.
+Definition at line 150 of file double\+\_\+vector\+\_\+with\+\_\+halo.\+h.
 
 
 

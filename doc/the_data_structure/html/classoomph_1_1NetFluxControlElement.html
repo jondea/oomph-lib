@@ -482,7 +482,7 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class for an element that controls the net fluid flux across a boundary by the imposition of an unknown applied pressure to the Navier-Stokes equations. This element is used with a mesh of <a class="el" href="classoomph_1_1NavierStokesFluxControlElement.html">NavierStokesFluxControlElement</a> elements which are attached to the boundary. Note: <a class="el" href="classoomph_1_1NetFluxControlElement.html#a7b7d3a32fcad5b06fe6a49f05f2c01a9" title="This function returns the residuals, but adds nothing to the Jacobian as this element&#39;s Jacobian cont...">fill_in_contribution_to_jacobian()</a> does not calculate Jacobian contributions for this element as they are calculated by NavierStokesFluxControlElement::fill_in_contribution_to_jacobian(...) </p>
 
-<p class="definition">Definition at line <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00111">111</a> of file <a class="el" href="navier__stokes__flux__control__elements_8h_source.html">navier_stokes_flux_control_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00107">107</a> of file <a class="el" href="navier__stokes__flux__control__elements_8h_source.html">navier_stokes_flux_control_elements.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aa855e7600ca93b005e63c8b2d4484f45"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa855e7600ca93b005e63c8b2d4484f45">&#9670;&nbsp;</a></span>NetFluxControlElement() <span class="overload">[1/2]</span></h2>
@@ -520,9 +520,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Constructor takes a mesh of <a class="el" href="classoomph_1_1TemplateFreeNavierStokesFluxControlElementBase.html">TemplateFreeNavierStokesFluxControlElementBase</a> elements that impose the pressure to control the flux, plus a pointer to the double which contains the desired flux value. </p>
 
-<p class="definition">Definition at line <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00119">119</a> of file <a class="el" href="navier__stokes__flux__control__elements_8h_source.html">navier_stokes_flux_control_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00115">115</a> of file <a class="el" href="navier__stokes__flux__control__elements_8h_source.html">navier_stokes_flux_control_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8cc_source.html#l00066">oomph::GeneralisedElement::add_internal_data()</a>, <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00074">oomph::TemplateFreeNavierStokesFluxControlElementBase::add_pressure_data()</a>, <a class="el" href="the__data__structure_8txt_source.html#l00148">Data</a>, <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00335">Dof_number_for_unknown</a>, <a class="el" href="cfortran_8h_source.html#l00575">e</a>, <a class="el" href="mesh_8h_source.html#l00462">oomph::Mesh::element_pt()</a>, <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00325">Flux_control_mesh_pt</a>, <a class="el" href="mesh_8h_source.html#l00587">oomph::Mesh::nelement()</a>, and <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00321">Pressure_data_pt</a>.</p>
+<p class="reference">References <a class="el" href="elements_8cc_source.html#l00062">oomph::GeneralisedElement::add_internal_data()</a>, <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00070">oomph::TemplateFreeNavierStokesFluxControlElementBase::add_pressure_data()</a>, <a class="el" href="the__data__structure_8txt_source.html#l00148">Data</a>, <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00331">Dof_number_for_unknown</a>, <a class="el" href="cfortran_8h_source.html#l00571">e</a>, <a class="el" href="mesh_8h_source.html#l00458">oomph::Mesh::element_pt()</a>, <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00321">Flux_control_mesh_pt</a>, <a class="el" href="mesh_8h_source.html#l00583">oomph::Mesh::nelement()</a>, and <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00317">Pressure_data_pt</a>.</p>
 
 </div>
 </div>
@@ -551,7 +551,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Empty Destructor - <a class="el" href="classoomph_1_1Data.html" title="A class that represents a collection of data; each Data object may contain many different individual ...">Data</a> gets deleted automatically. </p>
 
-<p class="definition">Definition at line <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00156">156</a> of file <a class="el" href="navier__stokes__flux__control__elements_8h_source.html">navier_stokes_flux_control_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00152">152</a> of file <a class="el" href="navier__stokes__flux__control__elements_8h_source.html">navier_stokes_flux_control_elements.h</a>.</p>
 
 </div>
 </div>
@@ -581,9 +581,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Broken copy constructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00159">159</a> of file <a class="el" href="navier__stokes__flux__control__elements_8h_source.html">navier_stokes_flux_control_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00155">155</a> of file <a class="el" href="navier__stokes__flux__control__elements_8h_source.html">navier_stokes_flux_control_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="oomph__utilities_8cc_source.html#l00218">oomph::BrokenCopy::broken_copy()</a>.</p>
+<p class="reference">References <a class="el" href="oomph__utilities_8cc_source.html#l00214">oomph::BrokenCopy::broken_copy()</a>.</p>
 
 </div>
 </div>
@@ -614,9 +614,9 @@ Additional Inherited Members</h2></td></tr>
 <p>Broken assignment operator. </p>
 <p>Spatial dimension of the problem </p>
 
-<p class="definition">Definition at line <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00176">176</a> of file <a class="el" href="navier__stokes__flux__control__elements_8h_source.html">navier_stokes_flux_control_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00172">172</a> of file <a class="el" href="navier__stokes__flux__control__elements_8h_source.html">navier_stokes_flux_control_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00338">Dim</a>.</p>
+<p class="reference">References <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00334">Dim</a>.</p>
 
 </div>
 </div>
@@ -645,9 +645,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Function to set / get the nodal value of the "DOF type" to which the degree of freedom in this element (the pressure that enforces the required volume flux!) is added to. This should be set to the Navier-Stokes pressure DOF type (usually the dimension of the problem, for example, in 3D, the DOF types for single-physics Navier-Stokes elements are usually labelled 0, 1, 2, 3 for u, v and w velocities and pressure respectively. It is important to note that this is dimension dependent, so should not be hard coded in!! In particularly, this should not simply be set to the dimension of the problem if there is further splitting of the velocity DOF types) if this element is added to a fluid mesh containing Navier-Stokes elements. </p>
 
-<p class="definition">Definition at line <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00238">238</a> of file <a class="el" href="navier__stokes__flux__control__elements_8h_source.html">navier_stokes_flux_control_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00234">234</a> of file <a class="el" href="navier__stokes__flux__control__elements_8h_source.html">navier_stokes_flux_control_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00335">Dof_number_for_unknown</a>.</p>
+<p class="reference">References <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00331">Dof_number_for_unknown</a>.</p>
 
 </div>
 </div>
@@ -690,9 +690,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1GeneralisedElement.html#a6ae09fc0d68e4309ac1b03583d252845">oomph::GeneralisedElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00196">196</a> of file <a class="el" href="navier__stokes__flux__control__elements_8h_source.html">navier_stokes_flux_control_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00192">192</a> of file <a class="el" href="navier__stokes__flux__control__elements_8h_source.html">navier_stokes_flux_control_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00280">fill_in_generic_residual_contribution_flux_control()</a>, and <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>.</p>
+<p class="reference">References <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00276">fill_in_generic_residual_contribution_flux_control()</a>, and <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>.</p>
 
 </div>
 </div>
@@ -724,9 +724,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1GeneralisedElement.html#a310c97f515e8504a48179c0e72c550d7">oomph::GeneralisedElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00186">186</a> of file <a class="el" href="navier__stokes__flux__control__elements_8h_source.html">navier_stokes_flux_control_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00182">182</a> of file <a class="el" href="navier__stokes__flux__control__elements_8h_source.html">navier_stokes_flux_control_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00280">fill_in_generic_residual_contribution_flux_control()</a>, and <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>.</p>
+<p class="reference">References <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00276">fill_in_generic_residual_contribution_flux_control()</a>, and <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>.</p>
 
 </div>
 </div>
@@ -756,11 +756,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>This function returns the residuals for the flux control master element. </p>
 
-<p class="definition">Definition at line <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00280">280</a> of file <a class="el" href="navier__stokes__flux__control__elements_8h_source.html">navier_stokes_flux_control_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00276">276</a> of file <a class="el" href="navier__stokes__flux__control__elements_8h_source.html">navier_stokes_flux_control_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00575">e</a>, <a class="el" href="mesh_8h_source.html#l00462">oomph::Mesh::element_pt()</a>, <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00325">Flux_control_mesh_pt</a>, <a class="el" href="classoomph_1_1TemplateFreeNavierStokesFluxControlElementBase.html#a32bc6e84461a78a1637f05f0a2e2185a">oomph::TemplateFreeNavierStokesFluxControlElementBase::get_volume_flux()</a>, <a class="el" href="mesh_8h_source.html#l00587">oomph::Mesh::nelement()</a>, <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00328">Prescribed_flux_value_pt</a>, and <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00571">e</a>, <a class="el" href="mesh_8h_source.html#l00458">oomph::Mesh::element_pt()</a>, <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00321">Flux_control_mesh_pt</a>, <a class="el" href="classoomph_1_1TemplateFreeNavierStokesFluxControlElementBase.html#a32bc6e84461a78a1637f05f0a2e2185a">oomph::TemplateFreeNavierStokesFluxControlElementBase::get_volume_flux()</a>, <a class="el" href="mesh_8h_source.html#l00583">oomph::Mesh::nelement()</a>, <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00324">Prescribed_flux_value_pt</a>, and <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00196">fill_in_contribution_to_jacobian()</a>, and <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00186">fill_in_contribution_to_residuals()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00192">fill_in_contribution_to_jacobian()</a>, and <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00182">fill_in_contribution_to_residuals()</a>.</p>
 
 </div>
 </div>
@@ -794,9 +794,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="classoomph_1_1NetFluxControlElementForWomersleyPressureControl.html#a63f6761cad384044fae2c8339422c9df">oomph::NetFluxControlElementForWomersleyPressureControl</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00250">250</a> of file <a class="el" href="navier__stokes__flux__control__elements_8h_source.html">navier_stokes_flux_control_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00246">246</a> of file <a class="el" href="navier__stokes__flux__control__elements_8h_source.html">navier_stokes_flux_control_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00335">Dof_number_for_unknown</a>, and <a class="el" href="elements_8h_source.html#l00709">oomph::GeneralisedElement::eqn_number()</a>.</p>
+<p class="reference">References <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00331">Dof_number_for_unknown</a>, and <a class="el" href="elements_8h_source.html#l00705">oomph::GeneralisedElement::eqn_number()</a>.</p>
 
 </div>
 </div>
@@ -829,9 +829,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="classoomph_1_1NetFluxControlElementForWomersleyPressureControl.html#a538b22e5aceecf140d03e400a8848a33">oomph::NetFluxControlElementForWomersleyPressureControl</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00208">208</a> of file <a class="el" href="navier__stokes__flux__control__elements_8h_source.html">navier_stokes_flux_control_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00204">204</a> of file <a class="el" href="navier__stokes__flux__control__elements_8h_source.html">navier_stokes_flux_control_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00335">Dof_number_for_unknown</a>.</p>
+<p class="reference">References <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00331">Dof_number_for_unknown</a>.</p>
 
 </div>
 </div>
@@ -860,9 +860,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Function to return a pointer to the <a class="el" href="classoomph_1_1Data.html" title="A class that represents a collection of data; each Data object may contain many different individual ...">Data</a> object whose single value is the pressure applied by the <a class="el" href="classoomph_1_1NavierStokesFluxControlElement.html">NavierStokesFluxControlElement</a> elements. </p>
 
-<p class="definition">Definition at line <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00181">181</a> of file <a class="el" href="navier__stokes__flux__control__elements_8h_source.html">navier_stokes_flux_control_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00177">177</a> of file <a class="el" href="navier__stokes__flux__control__elements_8h_source.html">navier_stokes_flux_control_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00321">Pressure_data_pt</a>.</p>
+<p class="reference">References <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00317">Pressure_data_pt</a>.</p>
 
 </div>
 </div>
@@ -889,9 +889,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>spatial dim of NS system </p>
 
-<p class="definition">Definition at line <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00338">338</a> of file <a class="el" href="navier__stokes__flux__control__elements_8h_source.html">navier_stokes_flux_control_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00334">334</a> of file <a class="el" href="navier__stokes__flux__control__elements_8h_source.html">navier_stokes_flux_control_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00176">dim()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00172">dim()</a>.</p>
 
 </div>
 </div>
@@ -917,9 +917,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>The id number of the "DOF type" to which the degree of freedom in this element is added to. This should be set to the number id of the Navier-Stokes pressure DOF block (which is dimension dependent!) if this element is added to a fluid mesh containing navier stokes elements. </p>
 
-<p class="definition">Definition at line <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00335">335</a> of file <a class="el" href="navier__stokes__flux__control__elements_8h_source.html">navier_stokes_flux_control_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00331">331</a> of file <a class="el" href="navier__stokes__flux__control__elements_8h_source.html">navier_stokes_flux_control_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00238">dof_number_for_unknown()</a>, <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00250">get_dof_numbers_for_unknowns()</a>, <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00208">ndof_types()</a>, and <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00119">NetFluxControlElement()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00234">dof_number_for_unknown()</a>, <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00246">get_dof_numbers_for_unknowns()</a>, <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00204">ndof_types()</a>, and <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00115">NetFluxControlElement()</a>.</p>
 
 </div>
 </div>
@@ -945,9 +945,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p><a class="el" href="classoomph_1_1Mesh.html" title="A general mesh class.">Mesh</a> of elements which impose the pressure which controls the net flux. </p>
 
-<p class="definition">Definition at line <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00325">325</a> of file <a class="el" href="navier__stokes__flux__control__elements_8h_source.html">navier_stokes_flux_control_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00321">321</a> of file <a class="el" href="navier__stokes__flux__control__elements_8h_source.html">navier_stokes_flux_control_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00280">fill_in_generic_residual_contribution_flux_control()</a>, and <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00119">NetFluxControlElement()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00276">fill_in_generic_residual_contribution_flux_control()</a>, and <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00115">NetFluxControlElement()</a>.</p>
 
 </div>
 </div>
@@ -973,9 +973,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Pointer to the value that stores the prescribed flux. </p>
 
-<p class="definition">Definition at line <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00328">328</a> of file <a class="el" href="navier__stokes__flux__control__elements_8h_source.html">navier_stokes_flux_control_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00324">324</a> of file <a class="el" href="navier__stokes__flux__control__elements_8h_source.html">navier_stokes_flux_control_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00280">fill_in_generic_residual_contribution_flux_control()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00276">fill_in_generic_residual_contribution_flux_control()</a>.</p>
 
 </div>
 </div>
@@ -1001,9 +1001,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p><a class="el" href="classoomph_1_1Data.html" title="A class that represents a collection of data; each Data object may contain many different individual ...">Data</a> object whose single value is the pressure applied by the elements in the Flux_control_mesh_pt. </p>
 
-<p class="definition">Definition at line <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00321">321</a> of file <a class="el" href="navier__stokes__flux__control__elements_8h_source.html">navier_stokes_flux_control_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00317">317</a> of file <a class="el" href="navier__stokes__flux__control__elements_8h_source.html">navier_stokes_flux_control_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00119">NetFluxControlElement()</a>, and <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00181">pressure_data_pt()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00115">NetFluxControlElement()</a>, and <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00177">pressure_data_pt()</a>.</p>
 
 </div>
 </div>
@@ -1038,7 +1038,7 @@ Additional Inherited Members</h2></td></tr>
     <footer>
       <div class="container">
         <div class="text-muted" style="float:right;">Generated by <a href="http://www.doxygen.org/index.html">
-          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Tue Jul 6 2021 22:57:59
+          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Fri Jul 9 2021 20:53:03
         </div>
       </div>
     </footer>

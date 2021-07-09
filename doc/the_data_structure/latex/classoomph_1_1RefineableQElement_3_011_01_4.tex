@@ -71,7 +71,7 @@ Refinement is performed by binary tree procedures. When the element is subdivide
 
 The class provides a generic \mbox{\hyperlink{classoomph_1_1RefineableQElement_3_011_01_4_a32262f8b505be28cd71022fc27746a03}{Refineable\+Q\+Element$<$1$>$\+::build()}} function which deals with generic isoparametric Q\+Elements in which all values are associated with nodes. The \mbox{\hyperlink{classoomph_1_1RefineableElement_a26628ce36dfad028686adeb4694a9ef3}{Refineable\+Q\+Element$<$1$>$\+::further\+\_\+build()}} function provides an interface for any element-\/specific non-\/generic build operations. 
 
-Definition at line 69 of file refineable\+\_\+line\+\_\+element.\+h.
+Definition at line 65 of file refineable\+\_\+line\+\_\+element.\+h.
 
 
 
@@ -88,7 +88,7 @@ Shorthand for pointer to an argument-\/free void member function of the refineab
 
 
 
-Definition at line 77 of file refineable\+\_\+line\+\_\+element.\+h.
+Definition at line 73 of file refineable\+\_\+line\+\_\+element.\+h.
 
 
 
@@ -105,7 +105,7 @@ Constructor\+: Pass refinement level (default 0 = root)
 
 
 
-Definition at line 80 of file refineable\+\_\+line\+\_\+element.\+h.
+Definition at line 76 of file refineable\+\_\+line\+\_\+element.\+h.
 
 
 
@@ -123,7 +123,7 @@ Broken copy constructor.
 
 
 
-Definition at line 88 of file refineable\+\_\+line\+\_\+element.\+h.
+Definition at line 84 of file refineable\+\_\+line\+\_\+element.\+h.
 
 
 
@@ -141,7 +141,7 @@ Broken assignment operator.
 
 Destructor 
 
-Definition at line 104 of file refineable\+\_\+line\+\_\+element.\+h.
+Definition at line 100 of file refineable\+\_\+line\+\_\+element.\+h.
 
 
 
@@ -162,7 +162,7 @@ Line elements have no hanging nodes so this is deliberately left empty.
 
 
 
-Definition at line 176 of file refineable\+\_\+line\+\_\+element.\+h.
+Definition at line 172 of file refineable\+\_\+line\+\_\+element.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1RefineableQElement_3_011_01_4_a7506b79e754b71cd1a33dfe8dedb5b52}\label{classoomph_1_1RefineableQElement_3_011_01_4_a7506b79e754b71cd1a33dfe8dedb5b52}} 
 \index{oomph::RefineableQElement$<$ 1 $>$@{oomph::RefineableQElement$<$ 1 $>$}!binary\_tree\_pt@{binary\_tree\_pt}}
@@ -176,7 +176,7 @@ Pointer to binary tree representation of this element.
 
 
 
-Definition at line 152 of file refineable\+\_\+line\+\_\+element.\+h.
+Definition at line 148 of file refineable\+\_\+line\+\_\+element.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1RefineableQElement_3_011_01_4_a39eca6ab43fcda520c1d9d17c907ccf2}\label{classoomph_1_1RefineableQElement_3_011_01_4_a39eca6ab43fcda520c1d9d17c907ccf2}} 
 \index{oomph::RefineableQElement$<$ 1 $>$@{oomph::RefineableQElement$<$ 1 $>$}!binary\_tree\_pt@{binary\_tree\_pt}}
@@ -190,7 +190,7 @@ Pointer to binary tree representation of this element (const version)
 
 
 
-Definition at line 156 of file refineable\+\_\+line\+\_\+element.\+h.
+Definition at line 152 of file refineable\+\_\+line\+\_\+element.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1RefineableQElement_3_011_01_4_a32262f8b505be28cd71022fc27746a03}\label{classoomph_1_1RefineableQElement_3_011_01_4_a32262f8b505be28cd71022fc27746a03}} 
 \index{oomph::RefineableQElement$<$ 1 $>$@{oomph::RefineableQElement$<$ 1 $>$}!build@{build}}
@@ -223,7 +223,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1RefineableSolidQElement_3_011_01
 
 
 
-Definition at line 208 of file refineable\+\_\+line\+\_\+element.\+cc.
+Definition at line 204 of file refineable\+\_\+line\+\_\+element.\+cc.
 
 
 
@@ -249,7 +249,7 @@ Implements \mbox{\hyperlink{classoomph_1_1RefineableElement_ae665f2d2eb0b6410ddc
 
 
 
-Definition at line 678 of file refineable\+\_\+line\+\_\+element.\+cc.
+Definition at line 674 of file refineable\+\_\+line\+\_\+element.\+cc.
 
 
 
@@ -267,7 +267,7 @@ If a neighbouring element has already created a node at a position corresponding
 
 If a neighbouring element has already created a node at a position corresponding to the local fractional position within the present element, s\+\_\+fraction, return a pointer to that node. If not, return N\+U\+LL (0). If the node is periodic the flag is\+\_\+periodic will be true. 
 
-Definition at line 97 of file refineable\+\_\+line\+\_\+element.\+cc.
+Definition at line 93 of file refineable\+\_\+line\+\_\+element.\+cc.
 
 
 
@@ -285,7 +285,7 @@ If a neighbouring element has already created a node at a position corresponding
 
 
 
-Definition at line 127 of file refineable\+\_\+line\+\_\+element.\+h.
+Definition at line 123 of file refineable\+\_\+line\+\_\+element.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1RefineableQElement_3_011_01_4_aa1ec4cdf297f9061f41c6e6cccb087e9}\label{classoomph_1_1RefineableQElement_3_011_01_4_aa1ec4cdf297f9061f41c6e6cccb087e9}} 
 \index{oomph::RefineableQElement$<$ 1 $>$@{oomph::RefineableQElement$<$ 1 $>$}!output\_corners@{output\_corners}}
@@ -299,7 +299,7 @@ Print corner nodes, using colour.
 
 Print corner nodes, use colour (default \char`\"{}\+B\+L\+A\+C\+K\char`\"{}) 
 
-Definition at line 647 of file refineable\+\_\+line\+\_\+element.\+cc.
+Definition at line 643 of file refineable\+\_\+line\+\_\+element.\+cc.
 
 
 
@@ -321,7 +321,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1RefineableElement_a9761852271f
 
 
 
-Definition at line 112 of file refineable\+\_\+line\+\_\+element.\+h.
+Definition at line 108 of file refineable\+\_\+line\+\_\+element.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1RefineableQElement_3_011_01_4_af45c2d218e992dc0d516015762e6db69}\label{classoomph_1_1RefineableQElement_3_011_01_4_af45c2d218e992dc0d516015762e6db69}} 
 \index{oomph::RefineableQElement$<$ 1 $>$@{oomph::RefineableQElement$<$ 1 $>$}!setup\_father\_bounds@{setup\_father\_bounds}}
@@ -339,7 +339,7 @@ Father\+\_\+bound\mbox{[}nnode\+\_\+1d\mbox{]}(nnode\+\_\+son,son\+\_\+type) = \
 
 so that node nnode\+\_\+son in element of type son\+\_\+type lies on boundary/ vertex Father\+\_\+bound\mbox{[}nnode\+\_\+1d\mbox{]}(nnode\+\_\+son,son\+\_\+type) in its father element. If the node doesn\textquotesingle{}t lie on a boundary the value is O\+M\+E\+GA. 
 
-Definition at line 53 of file refineable\+\_\+line\+\_\+element.\+cc.
+Definition at line 49 of file refineable\+\_\+line\+\_\+element.\+cc.
 
 
 
@@ -357,7 +357,7 @@ Line elements have no hanging nodes so this is deliberately left empty.
 
 
 
-Definition at line 173 of file refineable\+\_\+line\+\_\+element.\+h.
+Definition at line 169 of file refineable\+\_\+line\+\_\+element.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1RefineableQElement_3_011_01_4_a5fbb2a0069299ad4b036e8be047dc809}\label{classoomph_1_1RefineableQElement_3_011_01_4_a5fbb2a0069299ad4b036e8be047dc809}} 
 \index{oomph::RefineableQElement$<$ 1 $>$@{oomph::RefineableQElement$<$ 1 $>$}!setup\_hanging\_nodes@{setup\_hanging\_nodes}}
@@ -375,7 +375,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1RefineableElement_a54806551f79
 
 
 
-Definition at line 160 of file refineable\+\_\+line\+\_\+element.\+h.
+Definition at line 156 of file refineable\+\_\+line\+\_\+element.\+h.
 
 
 
@@ -393,7 +393,7 @@ Coincidence between son nodal points and father boundaries\+: ~\newline
 
 Static matrix for coincidence between son nodal points and father boundaries 
 
-Definition at line 166 of file refineable\+\_\+line\+\_\+element.\+h.
+Definition at line 162 of file refineable\+\_\+line\+\_\+element.\+h.
 
 
 

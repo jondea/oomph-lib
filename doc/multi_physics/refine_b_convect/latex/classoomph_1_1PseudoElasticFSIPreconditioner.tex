@@ -85,7 +85,7 @@ bool \mbox{\hyperlink{classoomph_1_1PseudoElasticFSIPreconditioner_aa9eab77e9d4d
 \doxysubsection{Detailed Description}
 Preconditioner for F\+SI problems with pseudo-\/elastic fluid node updates. Note\+: Navier\+Stokes\+Schur\+Complement\+Preconditioner is applied to the Navier Stokes subsidiary system. Default solid preconditioner is Super\+L\+U\+Preconditioner. {\bfseries{Enumeration}} of Elastic D\+OF types in the Pseudo-\/\+Elastic Elements The method get\+\_\+dof\+\_\+types\+\_\+for\+\_\+unknowns() must be implemented such that D\+O\+Fs subject be Lagrange multiplier and D\+O\+Fs N\+OT subject to Lagrange multiplier have different labels. For example in a 3D problem there are 6 D\+OF types and the following labelling must be implemented\+: 0 -\/ x displacement (without lagr mult traction) 1 -\/ y displacement (without lagr mult traction) 2 -\/ z displacement (without lagr mult traction) 3 -\/ x displacement (with lagr mult traction) 4 -\/ y displacement (with lagr mult traction) 5 -\/ z displacement (with lagr mult traction) 
 
-Definition at line 64 of file pseudo\+\_\+elastic\+\_\+fsi\+\_\+preconditioner.\+h.
+Definition at line 60 of file pseudo\+\_\+elastic\+\_\+fsi\+\_\+preconditioner.\+h.
 
 
 
@@ -102,7 +102,7 @@ constructor -\/ just set defaults. Specify the spatial dimension of the fluid an
 
 
 
-Definition at line 73 of file pseudo\+\_\+elastic\+\_\+fsi\+\_\+preconditioner.\+h.
+Definition at line 69 of file pseudo\+\_\+elastic\+\_\+fsi\+\_\+preconditioner.\+h.
 
 
 
@@ -116,7 +116,7 @@ References Fluid\+\_\+and\+\_\+pseudo\+\_\+elastic\+\_\+mesh\+\_\+pt, Fluid\+\_\
 
 
 
-Definition at line 109 of file pseudo\+\_\+elastic\+\_\+fsi\+\_\+preconditioner.\+h.
+Definition at line 105 of file pseudo\+\_\+elastic\+\_\+fsi\+\_\+preconditioner.\+h.
 
 
 
@@ -134,7 +134,7 @@ Broken copy constructor.
 
 
 
-Definition at line 135 of file pseudo\+\_\+elastic\+\_\+fsi\+\_\+preconditioner.\+h.
+Definition at line 131 of file pseudo\+\_\+elastic\+\_\+fsi\+\_\+preconditioner.\+h.
 
 
 
@@ -151,7 +151,7 @@ Broken assignment operator.
 
 clean up memory method 
 
-Definition at line 38 of file pseudo\+\_\+elastic\+\_\+fsi\+\_\+preconditioner.\+cc.
+Definition at line 34 of file pseudo\+\_\+elastic\+\_\+fsi\+\_\+preconditioner.\+cc.
 
 
 
@@ -173,7 +173,7 @@ Call to use the Super\+L\+U\+Preconditioner is used for the Navier Stokes subsid
 
 
 
-Definition at line 211 of file pseudo\+\_\+elastic\+\_\+fsi\+\_\+preconditioner.\+h.
+Definition at line 207 of file pseudo\+\_\+elastic\+\_\+fsi\+\_\+preconditioner.\+h.
 
 
 
@@ -192,7 +192,7 @@ Call to use the Navier Stokes Schur complement preconditioner. ~\newline
 
 
 
-Definition at line 206 of file pseudo\+\_\+elastic\+\_\+fsi\+\_\+preconditioner.\+h.
+Definition at line 202 of file pseudo\+\_\+elastic\+\_\+fsi\+\_\+preconditioner.\+h.
 
 
 
@@ -210,7 +210,7 @@ Access function to the Navier Stokes Schur complement preconditioner.
 
 
 
-Definition at line 199 of file pseudo\+\_\+elastic\+\_\+fsi\+\_\+preconditioner.\+h.
+Definition at line 195 of file pseudo\+\_\+elastic\+\_\+fsi\+\_\+preconditioner.\+h.
 
 
 
@@ -228,7 +228,7 @@ Apply the preconditioner.
 
 
 
-Definition at line 286 of file pseudo\+\_\+elastic\+\_\+fsi\+\_\+preconditioner.\+cc.
+Definition at line 282 of file pseudo\+\_\+elastic\+\_\+fsi\+\_\+preconditioner.\+cc.
 
 \mbox{\Hypertarget{classoomph_1_1PseudoElasticFSIPreconditioner_af10b20ad8e90cd99ba35326f1207d6a7}\label{classoomph_1_1PseudoElasticFSIPreconditioner_af10b20ad8e90cd99ba35326f1207d6a7}} 
 \index{oomph::PseudoElasticFSIPreconditioner@{oomph::PseudoElasticFSIPreconditioner}!pseudo\_elastic\_preconditioner\_pt@{pseudo\_elastic\_preconditioner\_pt}}
@@ -242,7 +242,7 @@ Access function to the pseudo elastic subsidiary preconditioner.
 
 
 
-Definition at line 192 of file pseudo\+\_\+elastic\+\_\+fsi\+\_\+preconditioner.\+h.
+Definition at line 188 of file pseudo\+\_\+elastic\+\_\+fsi\+\_\+preconditioner.\+h.
 
 
 
@@ -260,7 +260,7 @@ specify the mesh containing the combined fluid/pseudo solid elements
 
 
 
-Definition at line 161 of file pseudo\+\_\+elastic\+\_\+fsi\+\_\+preconditioner.\+h.
+Definition at line 157 of file pseudo\+\_\+elastic\+\_\+fsi\+\_\+preconditioner.\+h.
 
 
 
@@ -278,7 +278,7 @@ specify the mesh containing the lagrange multiplier elements
 
 
 
-Definition at line 173 of file pseudo\+\_\+elastic\+\_\+fsi\+\_\+preconditioner.\+h.
+Definition at line 169 of file pseudo\+\_\+elastic\+\_\+fsi\+\_\+preconditioner.\+h.
 
 
 
@@ -296,7 +296,7 @@ specify the mesh containing the solid elements
 
 
 
-Definition at line 167 of file pseudo\+\_\+elastic\+\_\+fsi\+\_\+preconditioner.\+h.
+Definition at line 163 of file pseudo\+\_\+elastic\+\_\+fsi\+\_\+preconditioner.\+h.
 
 
 
@@ -314,7 +314,7 @@ speicify a non default solid preconditioner. This preconditioner will not delete
 
 
 
-Definition at line 180 of file pseudo\+\_\+elastic\+\_\+fsi\+\_\+preconditioner.\+h.
+Definition at line 176 of file pseudo\+\_\+elastic\+\_\+fsi\+\_\+preconditioner.\+h.
 
 
 
@@ -332,7 +332,7 @@ Setup the precoonditioner.
 
 
 
-Definition at line 56 of file pseudo\+\_\+elastic\+\_\+fsi\+\_\+preconditioner.\+cc.
+Definition at line 52 of file pseudo\+\_\+elastic\+\_\+fsi\+\_\+preconditioner.\+cc.
 
 
 
@@ -353,7 +353,7 @@ the dimension of the fluid
 
 
 
-Definition at line 260 of file pseudo\+\_\+elastic\+\_\+fsi\+\_\+preconditioner.\+h.
+Definition at line 256 of file pseudo\+\_\+elastic\+\_\+fsi\+\_\+preconditioner.\+h.
 
 
 
@@ -371,7 +371,7 @@ Mesh containing the combined fluid and pseudo solid element.
 
 
 
-Definition at line 251 of file pseudo\+\_\+elastic\+\_\+fsi\+\_\+preconditioner.\+h.
+Definition at line 247 of file pseudo\+\_\+elastic\+\_\+fsi\+\_\+preconditioner.\+h.
 
 
 
@@ -389,7 +389,7 @@ fluid onto pseudosolid matrix vector operator
 
 
 
-Definition at line 239 of file pseudo\+\_\+elastic\+\_\+fsi\+\_\+preconditioner.\+h.
+Definition at line 235 of file pseudo\+\_\+elastic\+\_\+fsi\+\_\+preconditioner.\+h.
 
 
 
@@ -407,7 +407,7 @@ Mesh containing the lagrange multiplier elements.
 
 
 
-Definition at line 257 of file pseudo\+\_\+elastic\+\_\+fsi\+\_\+preconditioner.\+h.
+Definition at line 253 of file pseudo\+\_\+elastic\+\_\+fsi\+\_\+preconditioner.\+h.
 
 
 
@@ -421,7 +421,7 @@ Referenced by Pseudo\+Elastic\+F\+S\+I\+Preconditioner(), set\+\_\+lagrange\+\_\
 
 
 
-Definition at line 248 of file pseudo\+\_\+elastic\+\_\+fsi\+\_\+preconditioner.\+h.
+Definition at line 244 of file pseudo\+\_\+elastic\+\_\+fsi\+\_\+preconditioner.\+h.
 
 
 
@@ -439,7 +439,7 @@ pointer to the navier stokes precondtioner
 
 
 
-Definition at line 221 of file pseudo\+\_\+elastic\+\_\+fsi\+\_\+preconditioner.\+h.
+Definition at line 217 of file pseudo\+\_\+elastic\+\_\+fsi\+\_\+preconditioner.\+h.
 
 
 
@@ -457,7 +457,7 @@ Navier Stokes Schur complement preconditioner.
 
 
 
-Definition at line 225 of file pseudo\+\_\+elastic\+\_\+fsi\+\_\+preconditioner.\+h.
+Definition at line 221 of file pseudo\+\_\+elastic\+\_\+fsi\+\_\+preconditioner.\+h.
 
 
 
@@ -475,7 +475,7 @@ pointer to the pseudo solid preconditioner
 
 
 
-Definition at line 218 of file pseudo\+\_\+elastic\+\_\+fsi\+\_\+preconditioner.\+h.
+Definition at line 214 of file pseudo\+\_\+elastic\+\_\+fsi\+\_\+preconditioner.\+h.
 
 
 
@@ -493,7 +493,7 @@ solid onto fluid matrix vector operatio
 
 
 
-Definition at line 242 of file pseudo\+\_\+elastic\+\_\+fsi\+\_\+preconditioner.\+h.
+Definition at line 238 of file pseudo\+\_\+elastic\+\_\+fsi\+\_\+preconditioner.\+h.
 
 
 
@@ -511,7 +511,7 @@ Mesh containing the solid elements.
 
 
 
-Definition at line 254 of file pseudo\+\_\+elastic\+\_\+fsi\+\_\+preconditioner.\+h.
+Definition at line 250 of file pseudo\+\_\+elastic\+\_\+fsi\+\_\+preconditioner.\+h.
 
 
 
@@ -529,7 +529,7 @@ boolean flag to indicate whether the Solid preconditioner is a block preconditio
 
 
 
-Definition at line 236 of file pseudo\+\_\+elastic\+\_\+fsi\+\_\+preconditioner.\+h.
+Definition at line 232 of file pseudo\+\_\+elastic\+\_\+fsi\+\_\+preconditioner.\+h.
 
 
 
@@ -547,7 +547,7 @@ pointer to the solid preconditioner
 
 
 
-Definition at line 228 of file pseudo\+\_\+elastic\+\_\+fsi\+\_\+preconditioner.\+h.
+Definition at line 224 of file pseudo\+\_\+elastic\+\_\+fsi\+\_\+preconditioner.\+h.
 
 
 
@@ -565,7 +565,7 @@ solid onto pseudo solid matrix vector operatio
 
 
 
-Definition at line 245 of file pseudo\+\_\+elastic\+\_\+fsi\+\_\+preconditioner.\+h.
+Definition at line 241 of file pseudo\+\_\+elastic\+\_\+fsi\+\_\+preconditioner.\+h.
 
 
 
@@ -583,7 +583,7 @@ If true the Navier Stokes Schur complement preconditioner is used. Otherwise Sup
 
 
 
-Definition at line 265 of file pseudo\+\_\+elastic\+\_\+fsi\+\_\+preconditioner.\+h.
+Definition at line 261 of file pseudo\+\_\+elastic\+\_\+fsi\+\_\+preconditioner.\+h.
 
 
 
@@ -601,7 +601,7 @@ boolean flag to indicate whether default Solid preconditioner is used
 
 
 
-Definition at line 232 of file pseudo\+\_\+elastic\+\_\+fsi\+\_\+preconditioner.\+h.
+Definition at line 228 of file pseudo\+\_\+elastic\+\_\+fsi\+\_\+preconditioner.\+h.
 
 
 

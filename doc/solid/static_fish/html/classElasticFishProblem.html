@@ -166,7 +166,7 @@ class ElasticFishProblem&lt; ELEMENT &gt;</h3>
 
 <p>Boundary-driven elastic deformation of fish-shaped domain. </p>
 
-<p class="definition">Definition at line <a class="el" href="static__fish_8cc_source.html#l00185">185</a> of file <a class="el" href="static__fish_8cc_source.html">static_fish.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="static__fish_8cc_source.html#l00181">181</a> of file <a class="el" href="static__fish_8cc_source.html">static_fish.cc</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="adf9fdb0b94ac76b7fdb34bc7fa809a41"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adf9fdb0b94ac76b7fdb34bc7fa809a41">&#9670;&nbsp;</a></span>ElasticFishProblem()</h2>
@@ -184,9 +184,9 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Constructor: </p>
 
-<p class="definition">Definition at line <a class="el" href="static__fish_8cc_source.html#l00241">241</a> of file <a class="el" href="static__fish_8cc_source.html">static_fish.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="static__fish_8cc_source.html#l00237">237</a> of file <a class="el" href="static__fish_8cc_source.html">static_fish.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="static__fish_8cc_source.html#l00164">Global_Physical_Variables::body_force()</a>, and <a class="el" href="static__fish_8cc_source.html#l00149">Global_Physical_Variables::Constitutive_law_pt</a>.</p>
+<p class="reference">References <a class="el" href="static__fish_8cc_source.html#l00160">Global_Physical_Variables::body_force()</a>, and <a class="el" href="static__fish_8cc_source.html#l00145">Global_Physical_Variables::Constitutive_law_pt</a>.</p>
 
 </div>
 </div>
@@ -218,7 +218,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Update after adapt: Pin all redundant pressure nodes (if required) </p>
 
-<p class="definition">Definition at line <a class="el" href="static__fish_8cc_source.html#l00222">222</a> of file <a class="el" href="static__fish_8cc_source.html">static_fish.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="static__fish_8cc_source.html#l00218">218</a> of file <a class="el" href="static__fish_8cc_source.html">static_fish.cc</a>.</p>
 
 </div>
 </div>
@@ -249,7 +249,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Update function (empty) </p>
 
-<p class="definition">Definition at line <a class="el" href="static__fish_8cc_source.html#l00204">204</a> of file <a class="el" href="static__fish_8cc_source.html">static_fish.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="static__fish_8cc_source.html#l00200">200</a> of file <a class="el" href="static__fish_8cc_source.html">static_fish.cc</a>.</p>
 
 </div>
 </div>
@@ -281,7 +281,7 @@ template&lt;class ELEMENT &gt; </div>
 <p>Update before solve: We're dealing with a static problem so the nodal positions before the next solve merely serve as initial conditions. For meshes that are very strongly refined near the boundary, the update of the displacement boundary conditions (which only moves the SolidNodes <em>on</em> the boundary), can lead to strongly distorted meshes. This can cause the Newton method to fail --&gt; the overall method is actually more robust if we use the nodal positions as determined by the Domain/MacroElement- based mesh update as initial guesses. <br  />
  </p>
 
-<p class="definition">Definition at line <a class="el" href="static__fish_8cc_source.html#l00215">215</a> of file <a class="el" href="static__fish_8cc_source.html">static_fish.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="static__fish_8cc_source.html#l00211">211</a> of file <a class="el" href="static__fish_8cc_source.html">static_fish.cc</a>.</p>
 
 </div>
 </div>
@@ -305,7 +305,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Doc the solution. </p>
 
-<p class="definition">Definition at line <a class="el" href="static__fish_8cc_source.html#l00331">331</a> of file <a class="el" href="static__fish_8cc_source.html">static_fish.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="static__fish_8cc_source.html#l00327">327</a> of file <a class="el" href="static__fish_8cc_source.html">static_fish.cc</a>.</p>
 
 </div>
 </div>
@@ -336,7 +336,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Access function for the mesh. </p>
 
-<p class="definition">Definition at line <a class="el" href="static__fish_8cc_source.html#l00197">197</a> of file <a class="el" href="static__fish_8cc_source.html">static_fish.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="static__fish_8cc_source.html#l00193">193</a> of file <a class="el" href="static__fish_8cc_source.html">static_fish.cc</a>.</p>
 
 </div>
 </div>
@@ -357,11 +357,11 @@ template&lt;class ELEMENT &gt; </div>
 <p>Run simulation. </p>
 <p>Run the problem. </p>
 
-<p class="definition">Definition at line <a class="el" href="static__fish_8cc_source.html#l00358">358</a> of file <a class="el" href="static__fish_8cc_source.html">static_fish.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="static__fish_8cc_source.html#l00354">354</a> of file <a class="el" href="static__fish_8cc_source.html">static_fish.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="static__fish_8cc_source.html#l00161">Global_Physical_Variables::Gravity</a>.</p>
+<p class="reference">References <a class="el" href="static__fish_8cc_source.html#l00157">Global_Physical_Variables::Gravity</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="static__fish_8cc_source.html#l00396">main()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="static__fish_8cc_source.html#l00392">main()</a>.</p>
 
 </div>
 </div>
@@ -388,7 +388,7 @@ template&lt;class ELEMENT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="static__fish_8cc_source.html#l00233">233</a> of file <a class="el" href="static__fish_8cc_source.html">static_fish.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="static__fish_8cc_source.html#l00229">229</a> of file <a class="el" href="static__fish_8cc_source.html">static_fish.cc</a>.</p>
 
 </div>
 </div>
@@ -423,7 +423,7 @@ template&lt;class ELEMENT &gt; </div>
     <footer>
       <div class="container">
         <div class="text-muted" style="float:right;">Generated by <a href="http://www.doxygen.org/index.html">
-          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Tue Jul 6 2021 23:17:17
+          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Fri Jul 9 2021 21:09:06
         </div>
       </div>
     </footer>

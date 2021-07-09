@@ -247,7 +247,7 @@ Additional Inherited Members</h2></td></tr>
 <p> This simulates the case where the centre of the ring is mounted on an elastic spring of stiffness <img class="formulaInl" alt="$ k_{stiff} $" src="form_6.png"/> and loaded by the force <img class="formulaInl" alt="$ f_{load}. $" src="form_7.png"/> The "load" is specified by the Data object <code>load_pt()</code>. <br  />
  </p>
 
-<p class="definition">Definition at line <a class="el" href="circle__as__generalised__element_8h_source.html#l00059">59</a> of file <a class="el" href="circle__as__generalised__element_8h_source.html">circle_as_generalised_element.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="circle__as__generalised__element_8h_source.html#l00055">55</a> of file <a class="el" href="circle__as__generalised__element_8h_source.html">circle_as_generalised_element.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a7e68f18d76acb6297405ca2a38b64898"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7e68f18d76acb6297405ca2a38b64898">&#9670;&nbsp;</a></span>ElasticallySupportedRingElement()</h2>
@@ -291,9 +291,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Constructor: Build ring from doubles that describe the geometry: x and y positions of centre and the radius. Initialise stiffness to 1.0. By default, no load is set. </p>
 
-<p class="definition">Definition at line <a class="el" href="circle__as__generalised__element_8h_source.html#l00068">68</a> of file <a class="el" href="circle__as__generalised__element_8h_source.html">circle_as_generalised_element.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="circle__as__generalised__element_8h_source.html#l00064">64</a> of file <a class="el" href="circle__as__generalised__element_8h_source.html">circle_as_generalised_element.h</a>.</p>
 
-<p class="reference">References <a class="el" href="circle_8h_source.html#l00228">oomph::GeneralCircle::Geom_data_pt</a>, <a class="el" href="circle__as__generalised__element_8h_source.html#l00270">Internal_geometric_data_index</a>, and <a class="el" href="circle_8h_source.html#l00231">oomph::GeneralCircle::Must_clean_up</a>.</p>
+<p class="reference">References <a class="el" href="circle_8h_source.html#l00224">oomph::GeneralCircle::Geom_data_pt</a>, <a class="el" href="circle__as__generalised__element_8h_source.html#l00266">Internal_geometric_data_index</a>, and <a class="el" href="circle_8h_source.html#l00227">oomph::GeneralCircle::Must_clean_up</a>.</p>
 
 </div>
 </div>
@@ -322,7 +322,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Destructor: </p>
 
-<p class="definition">Definition at line <a class="el" href="circle__as__generalised__element_8h_source.html#l00092">92</a> of file <a class="el" href="circle__as__generalised__element_8h_source.html">circle_as_generalised_element.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="circle__as__generalised__element_8h_source.html#l00088">88</a> of file <a class="el" href="circle__as__generalised__element_8h_source.html">circle_as_generalised_element.h</a>.</p>
 
 </div>
 </div>
@@ -369,11 +369,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Compute element residual Vector (only if flag=0) and also the element Jacobian matrix (if flag=1) </p>
 
-<p class="definition">Definition at line <a class="el" href="circle__as__generalised__element_8h_source.html#l00201">201</a> of file <a class="el" href="circle__as__generalised__element_8h_source.html">circle_as_generalised_element.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="circle__as__generalised__element_8h_source.html#l00197">197</a> of file <a class="el" href="circle__as__generalised__element_8h_source.html">circle_as_generalised_element.h</a>.</p>
 
-<p class="reference">References <a class="el" href="circle__as__generalised__element_8h_source.html#l00266">External_load_index</a>, <a class="el" href="circle__as__generalised__element_8h_source.html#l00270">Internal_geometric_data_index</a>, <a class="el" href="circle__as__generalised__element_8h_source.html#l00262">K_stiff</a>, <a class="el" href="circle__as__generalised__element_8h_source.html#l00132">load()</a>, and <a class="el" href="circle_8h_source.html#l00212">oomph::GeneralCircle::y_c()</a>.</p>
+<p class="reference">References <a class="el" href="circle__as__generalised__element_8h_source.html#l00262">External_load_index</a>, <a class="el" href="circle__as__generalised__element_8h_source.html#l00266">Internal_geometric_data_index</a>, <a class="el" href="circle__as__generalised__element_8h_source.html#l00258">K_stiff</a>, <a class="el" href="circle__as__generalised__element_8h_source.html#l00128">load()</a>, and <a class="el" href="circle_8h_source.html#l00208">oomph::GeneralCircle::y_c()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="circle__as__generalised__element_8h_source.html#l00183">get_jacobian()</a>, and <a class="el" href="circle__as__generalised__element_8h_source.html#l00171">get_residuals()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="circle__as__generalised__element_8h_source.html#l00179">get_jacobian()</a>, and <a class="el" href="circle__as__generalised__element_8h_source.html#l00167">get_residuals()</a>.</p>
 
 </div>
 </div>
@@ -413,9 +413,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Compute element residual Vector and element Jacobian matrix (wrapper) </p>
 
-<p class="definition">Definition at line <a class="el" href="circle__as__generalised__element_8h_source.html#l00183">183</a> of file <a class="el" href="circle__as__generalised__element_8h_source.html">circle_as_generalised_element.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="circle__as__generalised__element_8h_source.html#l00179">179</a> of file <a class="el" href="circle__as__generalised__element_8h_source.html">circle_as_generalised_element.h</a>.</p>
 
-<p class="reference">References <a class="el" href="circle__as__generalised__element_8h_source.html#l00201">fill_in_generic_residual_contribution()</a>.</p>
+<p class="reference">References <a class="el" href="circle__as__generalised__element_8h_source.html#l00197">fill_in_generic_residual_contribution()</a>.</p>
 
 </div>
 </div>
@@ -445,9 +445,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Compute element residual vector (wrapper) </p>
 
-<p class="definition">Definition at line <a class="el" href="circle__as__generalised__element_8h_source.html#l00171">171</a> of file <a class="el" href="circle__as__generalised__element_8h_source.html">circle_as_generalised_element.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="circle__as__generalised__element_8h_source.html#l00167">167</a> of file <a class="el" href="circle__as__generalised__element_8h_source.html">circle_as_generalised_element.h</a>.</p>
 
-<p class="reference">References <a class="el" href="circle__as__generalised__element_8h_source.html#l00201">fill_in_generic_residual_contribution()</a>.</p>
+<p class="reference">References <a class="el" href="circle__as__generalised__element_8h_source.html#l00197">fill_in_generic_residual_contribution()</a>.</p>
 
 </div>
 </div>
@@ -476,11 +476,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Access function for the spring stiffness. </p>
 
-<p class="definition">Definition at line <a class="el" href="circle__as__generalised__element_8h_source.html#l00148">148</a> of file <a class="el" href="circle__as__generalised__element_8h_source.html">circle_as_generalised_element.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="circle__as__generalised__element_8h_source.html#l00144">144</a> of file <a class="el" href="circle__as__generalised__element_8h_source.html">circle_as_generalised_element.h</a>.</p>
 
-<p class="reference">References <a class="el" href="circle__as__generalised__element_8h_source.html#l00262">K_stiff</a>.</p>
+<p class="reference">References <a class="el" href="circle__as__generalised__element_8h_source.html#l00258">K_stiff</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="geom__object__element_8cc_source.html#l00102">GeomObjectAsGeneralisedElementProblem::GeomObjectAsGeneralisedElementProblem()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="geom__object__element_8cc_source.html#l00098">GeomObjectAsGeneralisedElementProblem::GeomObjectAsGeneralisedElementProblem()</a>.</p>
 
 </div>
 </div>
@@ -509,11 +509,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>"Load" acting on the ring </p>
 
-<p class="definition">Definition at line <a class="el" href="circle__as__generalised__element_8h_source.html#l00132">132</a> of file <a class="el" href="circle__as__generalised__element_8h_source.html">circle_as_generalised_element.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="circle__as__generalised__element_8h_source.html#l00128">128</a> of file <a class="el" href="circle__as__generalised__element_8h_source.html">circle_as_generalised_element.h</a>.</p>
 
-<p class="reference">References <a class="el" href="circle__as__generalised__element_8h_source.html#l00266">External_load_index</a>, and <a class="el" href="circle__as__generalised__element_8h_source.html#l00273">Load_data_has_been_set</a>.</p>
+<p class="reference">References <a class="el" href="circle__as__generalised__element_8h_source.html#l00262">External_load_index</a>, and <a class="el" href="circle__as__generalised__element_8h_source.html#l00269">Load_data_has_been_set</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="circle__as__generalised__element_8h_source.html#l00201">fill_in_generic_residual_contribution()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="circle__as__generalised__element_8h_source.html#l00197">fill_in_generic_residual_contribution()</a>.</p>
 
 </div>
 </div>
@@ -542,9 +542,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Pin the vertical displacement. </p>
 
-<p class="definition">Definition at line <a class="el" href="circle__as__generalised__element_8h_source.html#l00152">152</a> of file <a class="el" href="circle__as__generalised__element_8h_source.html">circle_as_generalised_element.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="circle__as__generalised__element_8h_source.html#l00148">148</a> of file <a class="el" href="circle__as__generalised__element_8h_source.html">circle_as_generalised_element.h</a>.</p>
 
-<p class="reference">References <a class="el" href="circle__as__generalised__element_8h_source.html#l00270">Internal_geometric_data_index</a>.</p>
+<p class="reference">References <a class="el" href="circle__as__generalised__element_8h_source.html#l00266">Internal_geometric_data_index</a>.</p>
 
 </div>
 </div>
@@ -574,11 +574,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Set pointer to Data object that specifies the "load" on the <a class="el" href="classoomph_1_1ElasticallySupportedRingElement.html" title="GeneralCircle &quot;upgraded&quot; to a GeneralisedElement: Circular ring whose position is given by.">ElasticallySupportedRingElement</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="circle__as__generalised__element_8h_source.html#l00102">102</a> of file <a class="el" href="circle__as__generalised__element_8h_source.html">circle_as_generalised_element.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="circle__as__generalised__element_8h_source.html#l00098">98</a> of file <a class="el" href="circle__as__generalised__element_8h_source.html">circle_as_generalised_element.h</a>.</p>
 
-<p class="reference">References <a class="el" href="circle__as__generalised__element_8h_source.html#l00266">External_load_index</a>, and <a class="el" href="circle__as__generalised__element_8h_source.html#l00273">Load_data_has_been_set</a>.</p>
+<p class="reference">References <a class="el" href="circle__as__generalised__element_8h_source.html#l00262">External_load_index</a>, and <a class="el" href="circle__as__generalised__element_8h_source.html#l00269">Load_data_has_been_set</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="geom__object__element_8cc_source.html#l00102">GeomObjectAsGeneralisedElementProblem::GeomObjectAsGeneralisedElementProblem()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="geom__object__element_8cc_source.html#l00098">GeomObjectAsGeneralisedElementProblem::GeomObjectAsGeneralisedElementProblem()</a>.</p>
 
 </div>
 </div>
@@ -607,9 +607,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Unpin the vertical displacement. </p>
 
-<p class="definition">Definition at line <a class="el" href="circle__as__generalised__element_8h_source.html#l00161">161</a> of file <a class="el" href="circle__as__generalised__element_8h_source.html">circle_as_generalised_element.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="circle__as__generalised__element_8h_source.html#l00157">157</a> of file <a class="el" href="circle__as__generalised__element_8h_source.html">circle_as_generalised_element.h</a>.</p>
 
-<p class="reference">References <a class="el" href="circle__as__generalised__element_8h_source.html#l00270">Internal_geometric_data_index</a>.</p>
+<p class="reference">References <a class="el" href="circle__as__generalised__element_8h_source.html#l00266">Internal_geometric_data_index</a>.</p>
 
 </div>
 </div>
@@ -636,9 +636,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Index of the location of the load Data in the element's array of external data. </p>
 
-<p class="definition">Definition at line <a class="el" href="circle__as__generalised__element_8h_source.html#l00266">266</a> of file <a class="el" href="circle__as__generalised__element_8h_source.html">circle_as_generalised_element.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="circle__as__generalised__element_8h_source.html#l00262">262</a> of file <a class="el" href="circle__as__generalised__element_8h_source.html">circle_as_generalised_element.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="circle__as__generalised__element_8h_source.html#l00201">fill_in_generic_residual_contribution()</a>, <a class="el" href="circle__as__generalised__element_8h_source.html#l00132">load()</a>, and <a class="el" href="circle__as__generalised__element_8h_source.html#l00102">set_load_pt()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="circle__as__generalised__element_8h_source.html#l00197">fill_in_generic_residual_contribution()</a>, <a class="el" href="circle__as__generalised__element_8h_source.html#l00128">load()</a>, and <a class="el" href="circle__as__generalised__element_8h_source.html#l00098">set_load_pt()</a>.</p>
 
 </div>
 </div>
@@ -664,9 +664,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Index of the location of the geometric Data in the element's array of internal data. </p>
 
-<p class="definition">Definition at line <a class="el" href="circle__as__generalised__element_8h_source.html#l00270">270</a> of file <a class="el" href="circle__as__generalised__element_8h_source.html">circle_as_generalised_element.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="circle__as__generalised__element_8h_source.html#l00266">266</a> of file <a class="el" href="circle__as__generalised__element_8h_source.html">circle_as_generalised_element.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="circle__as__generalised__element_8h_source.html#l00068">ElasticallySupportedRingElement()</a>, <a class="el" href="circle__as__generalised__element_8h_source.html#l00201">fill_in_generic_residual_contribution()</a>, <a class="el" href="circle__as__generalised__element_8h_source.html#l00152">pin_yc()</a>, and <a class="el" href="circle__as__generalised__element_8h_source.html#l00161">unpin_yc()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="circle__as__generalised__element_8h_source.html#l00064">ElasticallySupportedRingElement()</a>, <a class="el" href="circle__as__generalised__element_8h_source.html#l00197">fill_in_generic_residual_contribution()</a>, <a class="el" href="circle__as__generalised__element_8h_source.html#l00148">pin_yc()</a>, and <a class="el" href="circle__as__generalised__element_8h_source.html#l00157">unpin_yc()</a>.</p>
 
 </div>
 </div>
@@ -692,9 +692,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Stiffness of the ring's "elastic" support. </p>
 
-<p class="definition">Definition at line <a class="el" href="circle__as__generalised__element_8h_source.html#l00262">262</a> of file <a class="el" href="circle__as__generalised__element_8h_source.html">circle_as_generalised_element.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="circle__as__generalised__element_8h_source.html#l00258">258</a> of file <a class="el" href="circle__as__generalised__element_8h_source.html">circle_as_generalised_element.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="circle__as__generalised__element_8h_source.html#l00201">fill_in_generic_residual_contribution()</a>, and <a class="el" href="circle__as__generalised__element_8h_source.html#l00148">k_stiff()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="circle__as__generalised__element_8h_source.html#l00197">fill_in_generic_residual_contribution()</a>, and <a class="el" href="circle__as__generalised__element_8h_source.html#l00144">k_stiff()</a>.</p>
 
 </div>
 </div>
@@ -720,9 +720,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Flag to indicate that load data has been set. </p>
 
-<p class="definition">Definition at line <a class="el" href="circle__as__generalised__element_8h_source.html#l00273">273</a> of file <a class="el" href="circle__as__generalised__element_8h_source.html">circle_as_generalised_element.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="circle__as__generalised__element_8h_source.html#l00269">269</a> of file <a class="el" href="circle__as__generalised__element_8h_source.html">circle_as_generalised_element.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="circle__as__generalised__element_8h_source.html#l00132">load()</a>, and <a class="el" href="circle__as__generalised__element_8h_source.html#l00102">set_load_pt()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="circle__as__generalised__element_8h_source.html#l00128">load()</a>, and <a class="el" href="circle__as__generalised__element_8h_source.html#l00098">set_load_pt()</a>.</p>
 
 </div>
 </div>
@@ -757,7 +757,7 @@ Additional Inherited Members</h2></td></tr>
     <footer>
       <div class="container">
         <div class="text-muted" style="float:right;">Generated by <a href="http://www.doxygen.org/index.html">
-          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Tue Jul 6 2021 23:20:03
+          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Fri Jul 9 2021 21:11:26
         </div>
       </div>
     </footer>

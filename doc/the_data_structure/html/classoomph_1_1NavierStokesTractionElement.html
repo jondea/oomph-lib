@@ -1276,7 +1276,7 @@ class oomph::NavierStokesTractionElement&lt; ELEMENT &gt;</h3>
 
 <p>A class for elements that allow the imposition of an applied traction to the Navier&ndash;Stokes equations The geometrical information can be read from the FaceGeometry&lt;ELEMENT&gt; class and and thus, we can be generic enough without the need to have a separate equations class </p>
 
-<p class="definition">Definition at line <a class="el" href="fluid__traction__elements_8h_source.html#l00058">58</a> of file <a class="el" href="fluid__traction__elements_8h_source.html">fluid_traction_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fluid__traction__elements_8h_source.html#l00054">54</a> of file <a class="el" href="fluid__traction__elements_8h_source.html">fluid_traction_elements.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af7905c7123e02a63ed41b4c7c2ad468d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af7905c7123e02a63ed41b4c7c2ad468d">&#9670;&nbsp;</a></span>NavierStokesTractionElement()</h2>
@@ -1321,9 +1321,9 @@ template&lt;class ELEMENT &gt; </div>
 </div><div class="memdoc">
 <p>Constructor, which takes a "bulk" element and the value of the index and its limit </p>
 
-<p class="definition">Definition at line <a class="el" href="fluid__traction__elements_8h_source.html#l00136">136</a> of file <a class="el" href="fluid__traction__elements_8h_source.html">fluid_traction_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fluid__traction__elements_8h_source.html#l00132">132</a> of file <a class="el" href="fluid__traction__elements_8h_source.html">fluid_traction_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8cc_source.html#l05005">oomph::FiniteElement::build_face_element()</a>, <a class="el" href="fluid__traction__elements_8h_source.html#l00130">oomph::NavierStokesTractionElement&lt; ELEMENT &gt;::Dim</a>, <a class="el" href="elements_8h_source.html#l02499">oomph::FiniteElement::dim()</a>, <a class="el" href="elements_8h_source.html#l04501">oomph::FaceElement::face_index()</a>, <a class="el" href="elements_8h_source.html#l02373">oomph::FiniteElement::has_hanging_nodes()</a>, <a class="el" href="nodes_8h_source.html#l00991">oomph::Node::ndim()</a>, <a class="el" href="elements_8h_source.html#l02126">oomph::FiniteElement::node_pt()</a>, and <a class="el" href="fluid__traction__elements_8h_source.html#l00065">oomph::NavierStokesTractionElement&lt; ELEMENT &gt;::Traction_fct_pt</a>.</p>
+<p class="reference">References <a class="el" href="elements_8cc_source.html#l05001">oomph::FiniteElement::build_face_element()</a>, <a class="el" href="fluid__traction__elements_8h_source.html#l00126">oomph::NavierStokesTractionElement&lt; ELEMENT &gt;::Dim</a>, <a class="el" href="elements_8h_source.html#l02495">oomph::FiniteElement::dim()</a>, <a class="el" href="elements_8h_source.html#l04497">oomph::FaceElement::face_index()</a>, <a class="el" href="elements_8h_source.html#l02369">oomph::FiniteElement::has_hanging_nodes()</a>, <a class="el" href="nodes_8h_source.html#l00987">oomph::Node::ndim()</a>, <a class="el" href="elements_8h_source.html#l02122">oomph::FiniteElement::node_pt()</a>, and <a class="el" href="fluid__traction__elements_8h_source.html#l00061">oomph::NavierStokesTractionElement&lt; ELEMENT &gt;::Traction_fct_pt</a>.</p>
 
 </div>
 </div>
@@ -1354,7 +1354,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Destructor should not delete anything. </p>
 
-<p class="definition">Definition at line <a class="el" href="fluid__traction__elements_8h_source.html#l00181">181</a> of file <a class="el" href="fluid__traction__elements_8h_source.html">fluid_traction_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fluid__traction__elements_8h_source.html#l00177">177</a> of file <a class="el" href="fluid__traction__elements_8h_source.html">fluid_traction_elements.h</a>.</p>
 
 </div>
 </div>
@@ -1401,9 +1401,9 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Reimplemented in <a class="el" href="classoomph_1_1RefineableNavierStokesTractionElement.html#a67eea13f9a419e35576b6183f0438bab">oomph::RefineableNavierStokesTractionElement&lt; ELEMENT &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="fluid__traction__elements_8h_source.html#l00198">198</a> of file <a class="el" href="fluid__traction__elements_8h_source.html">fluid_traction_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fluid__traction__elements_8h_source.html#l00194">194</a> of file <a class="el" href="fluid__traction__elements_8h_source.html">fluid_traction_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="fluid__traction__elements_8h_source.html#l00229">oomph::NavierStokesTractionElement&lt; ELEMENT &gt;::fill_in_generic_residual_contribution_fluid_traction()</a>, and <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>.</p>
+<p class="reference">References <a class="el" href="fluid__traction__elements_8h_source.html#l00225">oomph::NavierStokesTractionElement&lt; ELEMENT &gt;::fill_in_generic_residual_contribution_fluid_traction()</a>, and <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>.</p>
 
 </div>
 </div>
@@ -1439,9 +1439,9 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Reimplemented in <a class="el" href="classoomph_1_1RefineableNavierStokesTractionElement.html#a994d2a7986cd7802f9062de227bf9481">oomph::RefineableNavierStokesTractionElement&lt; ELEMENT &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="fluid__traction__elements_8h_source.html#l00189">189</a> of file <a class="el" href="fluid__traction__elements_8h_source.html">fluid_traction_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fluid__traction__elements_8h_source.html#l00185">185</a> of file <a class="el" href="fluid__traction__elements_8h_source.html">fluid_traction_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l00228">oomph::GeneralisedElement::Dummy_matrix</a>, <a class="el" href="fluid__traction__elements_8h_source.html#l00229">oomph::NavierStokesTractionElement&lt; ELEMENT &gt;::fill_in_generic_residual_contribution_fluid_traction()</a>, and <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l00224">oomph::GeneralisedElement::Dummy_matrix</a>, <a class="el" href="fluid__traction__elements_8h_source.html#l00225">oomph::NavierStokesTractionElement&lt; ELEMENT &gt;::fill_in_generic_residual_contribution_fluid_traction()</a>, and <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>.</p>
 
 </div>
 </div>
@@ -1491,11 +1491,11 @@ template&lt;class ELEMENT &gt; </div>
  </p>
 <p>Function that returns the residuals for the imposed traction Navier_Stokes equations </p>
 
-<p class="definition">Definition at line <a class="el" href="fluid__traction__elements_8h_source.html#l00229">229</a> of file <a class="el" href="fluid__traction__elements_8h_source.html">fluid_traction_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fluid__traction__elements_8h_source.html#l00225">225</a> of file <a class="el" href="fluid__traction__elements_8h_source.html">fluid_traction_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="multi__domain_8cc_source.html#l00066">oomph::Multi_domain_functions::Dim</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>, and <a class="el" href="quadtree_8h_source.html#l00060">oomph::QuadTreeNames::W</a>.</p>
+<p class="reference">References <a class="el" href="multi__domain_8cc_source.html#l00062">oomph::Multi_domain_functions::Dim</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>, and <a class="el" href="quadtree_8h_source.html#l00056">oomph::QuadTreeNames::W</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="fluid__traction__elements_8h_source.html#l00198">oomph::NavierStokesTractionElement&lt; ELEMENT &gt;::fill_in_contribution_to_jacobian()</a>, and <a class="el" href="fluid__traction__elements_8h_source.html#l00189">oomph::NavierStokesTractionElement&lt; ELEMENT &gt;::fill_in_contribution_to_residuals()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="fluid__traction__elements_8h_source.html#l00194">oomph::NavierStokesTractionElement&lt; ELEMENT &gt;::fill_in_contribution_to_jacobian()</a>, and <a class="el" href="fluid__traction__elements_8h_source.html#l00185">oomph::NavierStokesTractionElement&lt; ELEMENT &gt;::fill_in_contribution_to_residuals()</a>.</p>
 
 </div>
 </div>
@@ -1549,9 +1549,9 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Function to calculate the traction applied to the fluid. </p>
 
-<p class="definition">Definition at line <a class="el" href="fluid__traction__elements_8h_source.html#l00104">104</a> of file <a class="el" href="fluid__traction__elements_8h_source.html">fluid_traction_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fluid__traction__elements_8h_source.html#l00100">100</a> of file <a class="el" href="fluid__traction__elements_8h_source.html">fluid_traction_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="fluid__traction__elements_8h_source.html#l00130">oomph::NavierStokesTractionElement&lt; ELEMENT &gt;::Dim</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, and <a class="el" href="fluid__traction__elements_8h_source.html#l00065">oomph::NavierStokesTractionElement&lt; ELEMENT &gt;::Traction_fct_pt</a>.</p>
+<p class="reference">References <a class="el" href="fluid__traction__elements_8h_source.html#l00126">oomph::NavierStokesTractionElement&lt; ELEMENT &gt;::Dim</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, and <a class="el" href="fluid__traction__elements_8h_source.html#l00061">oomph::NavierStokesTractionElement&lt; ELEMENT &gt;::Traction_fct_pt</a>.</p>
 
 </div>
 </div>
@@ -1585,9 +1585,9 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1FiniteElement.html#a2ad98a3d2ef4999f1bef62c0ff13f2a7">oomph::FiniteElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="fluid__traction__elements_8h_source.html#l00206">206</a> of file <a class="el" href="fluid__traction__elements_8h_source.html">fluid_traction_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fluid__traction__elements_8h_source.html#l00202">202</a> of file <a class="el" href="fluid__traction__elements_8h_source.html">fluid_traction_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l02916">oomph::FiniteElement::output()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l02912">oomph::FiniteElement::output()</a>.</p>
 
 </div>
 </div>
@@ -1631,9 +1631,9 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1FiniteElement.html#afa9d9b2670f999b43e6679c9dd28c457">oomph::FiniteElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="fluid__traction__elements_8h_source.html#l00209">209</a> of file <a class="el" href="fluid__traction__elements_8h_source.html">fluid_traction_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fluid__traction__elements_8h_source.html#l00205">205</a> of file <a class="el" href="fluid__traction__elements_8h_source.html">fluid_traction_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l02916">oomph::FiniteElement::output()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l02912">oomph::FiniteElement::output()</a>.</p>
 
 </div>
 </div>
@@ -1682,9 +1682,9 @@ template&lt;class ELEMENT &gt; </div>
 <p>Function to compute the shape and test functions and to return the Jacobian of mapping <br  />
  </p>
 
-<p class="definition">Definition at line <a class="el" href="fluid__traction__elements_8h_source.html#l00088">88</a> of file <a class="el" href="fluid__traction__elements_8h_source.html">fluid_traction_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fluid__traction__elements_8h_source.html#l00084">84</a> of file <a class="el" href="fluid__traction__elements_8h_source.html">fluid_traction_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="elements_8cc_source.html#l05204">oomph::FaceElement::J_eulerian_at_knot()</a>, <a class="el" href="elements_8h_source.html#l02163">oomph::FiniteElement::nnode()</a>, and <a class="el" href="elements_8cc_source.html#l03160">oomph::FiniteElement::shape_at_knot()</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="elements_8cc_source.html#l05200">oomph::FaceElement::J_eulerian_at_knot()</a>, <a class="el" href="elements_8h_source.html#l02159">oomph::FiniteElement::nnode()</a>, and <a class="el" href="elements_8cc_source.html#l03156">oomph::FiniteElement::shape_at_knot()</a>.</p>
 
 </div>
 </div>
@@ -1726,9 +1726,9 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Access function that returns the local equation numbers for velocity components. u_local_eqn(n,i) = local equation number or &lt; 0 if pinned. The default is to asssume that n is the local node number and the i-th velocity component is the i-th unknown stored at the node. </p>
 
-<p class="definition">Definition at line <a class="el" href="fluid__traction__elements_8h_source.html#l00083">83</a> of file <a class="el" href="fluid__traction__elements_8h_source.html">fluid_traction_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fluid__traction__elements_8h_source.html#l00079">79</a> of file <a class="el" href="fluid__traction__elements_8h_source.html">fluid_traction_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, and <a class="el" href="elements_8h_source.html#l01403">oomph::FiniteElement::nodal_local_eqn()</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, and <a class="el" href="elements_8h_source.html#l01399">oomph::FiniteElement::nodal_local_eqn()</a>.</p>
 
 </div>
 </div>
@@ -1778,9 +1778,9 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1FaceElement.html#a58c9f93705c7741f76c8487d152e68a6">oomph::FaceElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="fluid__traction__elements_8h_source.html#l00074">74</a> of file <a class="el" href="fluid__traction__elements_8h_source.html">fluid_traction_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fluid__traction__elements_8h_source.html#l00070">70</a> of file <a class="el" href="fluid__traction__elements_8h_source.html">fluid_traction_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, and <a class="el" href="elements_8h_source.html#l04381">oomph::FaceElement::zeta_nodal()</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, and <a class="el" href="elements_8h_source.html#l04377">oomph::FaceElement::zeta_nodal()</a>.</p>
 
 </div>
 </div>
@@ -1809,9 +1809,9 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>The highest dimension of the problem. </p>
 
-<p class="definition">Definition at line <a class="el" href="fluid__traction__elements_8h_source.html#l00130">130</a> of file <a class="el" href="fluid__traction__elements_8h_source.html">fluid_traction_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fluid__traction__elements_8h_source.html#l00126">126</a> of file <a class="el" href="fluid__traction__elements_8h_source.html">fluid_traction_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="fluid__traction__elements_8h_source.html#l00104">oomph::NavierStokesTractionElement&lt; ELEMENT &gt;::get_traction()</a>, and <a class="el" href="fluid__traction__elements_8h_source.html#l00136">oomph::NavierStokesTractionElement&lt; ELEMENT &gt;::NavierStokesTractionElement()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="fluid__traction__elements_8h_source.html#l00100">oomph::NavierStokesTractionElement&lt; ELEMENT &gt;::get_traction()</a>, and <a class="el" href="fluid__traction__elements_8h_source.html#l00132">oomph::NavierStokesTractionElement&lt; ELEMENT &gt;::NavierStokesTractionElement()</a>.</p>
 
 </div>
 </div>
@@ -1837,7 +1837,7 @@ template&lt;class ELEMENT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fluid__traction__elements_8h_source.html#l00184">184</a> of file <a class="el" href="fluid__traction__elements_8h_source.html">fluid_traction_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fluid__traction__elements_8h_source.html#l00180">180</a> of file <a class="el" href="fluid__traction__elements_8h_source.html">fluid_traction_elements.h</a>.</p>
 
 </div>
 </div>
@@ -1865,9 +1865,9 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Pointer to an imposed traction function. </p>
 
-<p class="definition">Definition at line <a class="el" href="fluid__traction__elements_8h_source.html#l00065">65</a> of file <a class="el" href="fluid__traction__elements_8h_source.html">fluid_traction_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fluid__traction__elements_8h_source.html#l00061">61</a> of file <a class="el" href="fluid__traction__elements_8h_source.html">fluid_traction_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="fluid__traction__elements_8h_source.html#l00104">oomph::NavierStokesTractionElement&lt; ELEMENT &gt;::get_traction()</a>, and <a class="el" href="fluid__traction__elements_8h_source.html#l00136">oomph::NavierStokesTractionElement&lt; ELEMENT &gt;::NavierStokesTractionElement()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="fluid__traction__elements_8h_source.html#l00100">oomph::NavierStokesTractionElement&lt; ELEMENT &gt;::get_traction()</a>, and <a class="el" href="fluid__traction__elements_8h_source.html#l00132">oomph::NavierStokesTractionElement&lt; ELEMENT &gt;::NavierStokesTractionElement()</a>.</p>
 
 </div>
 </div>
@@ -1902,7 +1902,7 @@ template&lt;class ELEMENT &gt; </div>
     <footer>
       <div class="container">
         <div class="text-muted" style="float:right;">Generated by <a href="http://www.doxygen.org/index.html">
-          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Tue Jul 6 2021 22:57:58
+          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Fri Jul 9 2021 20:53:03
         </div>
       </div>
     </footer>

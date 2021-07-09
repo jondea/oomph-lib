@@ -46,7 +46,7 @@ Typedef for function pointer to to function that translates spatial error into w
 
 
 
-Definition at line 94 of file partitioning.\+h.
+Definition at line 90 of file partitioning.\+h.
 
 
 
@@ -63,7 +63,7 @@ Default function that translates spatial error into weight for \mbox{\hyperlink{
 
 Default function that translates spatial error into weight for \mbox{\hyperlink{namespaceoomph_1_1METIS}{M\+E\+T\+IS}} partitioning (unit weight regardless of input) 
 
-Definition at line 53 of file partitioning.\+cc.
+Definition at line 49 of file partitioning.\+cc.
 
 
 
@@ -93,7 +93,7 @@ Objective\+:
 \item objective=1\+: minimise total communications volume.
 \end{DoxyItemize}The partioning is based on the dof graph of the complete mesh by taking into account which global equation numbers are affected by each element and connecting elements which affect the same global equation number. Partitioning is done such that all elements associated with the same tree root move together. Non-\/refineable elements are treated as their own root elements. If the optional boolean flag is set to true (it defaults to false) each processor assigns a dumb-\/but-\/repeatable equidistribution of its non-\/halo elements over the domains and outputs the input that would have gone into \mbox{\hyperlink{namespaceoomph_1_1METIS}{M\+E\+T\+IS}} in the file metis\+\_\+input\+\_\+for\+\_\+validation.\+dat 
 
-Definition at line 523 of file partitioning.\+cc.
+Definition at line 519 of file partitioning.\+cc.
 
 
 
@@ -139,7 +139,7 @@ Use \mbox{\hyperlink{namespaceoomph_1_1METIS}{M\+E\+T\+IS}} to assign each eleme
 \item objective=1\+: minimise total communications volume.
 \end{DoxyItemize}Partioning is based on dual graph of mesh. 
 
-Definition at line 122 of file partitioning.\+cc.
+Definition at line 118 of file partitioning.\+cc.
 
 
 
@@ -161,7 +161,7 @@ Partition mesh uniformly by dividing elements equally over the partitions, in th
 
 Partition mesh uniformly by dividing elements equally over the partitions, in the order in which they are returned by problem. On return, element\+\_\+domain\mbox{[}ielem\mbox{]} contains the number of the domain \mbox{[}0,1,...,ndomain-\/1\mbox{]} to which element ielem has been assigned. 
 
-Definition at line 78 of file partitioning.\+cc.
+Definition at line 74 of file partitioning.\+cc.
 
 
 
@@ -182,7 +182,7 @@ Function pointer to to function that translates spatial error into weight for \m
 
 
 
-Definition at line 63 of file partitioning.\+cc.
+Definition at line 59 of file partitioning.\+cc.
 
 
 

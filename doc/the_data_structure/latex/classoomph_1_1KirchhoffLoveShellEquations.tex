@@ -116,7 +116,7 @@ static double \mbox{\hyperlink{classoomph_1_1KirchhoffLoveShellEquations_a746594
 \doxysubsection{Detailed Description}
 A class for elements that solves the equations of Kirchhoff Love shell thin-\/shell theory 
 
-Definition at line 53 of file shell\+\_\+elements.\+h.
+Definition at line 49 of file shell\+\_\+elements.\+h.
 
 
 
@@ -133,7 +133,7 @@ Constructor\+: Initialise physical parameter values to defaults.
 
 
 
-Definition at line 145 of file shell\+\_\+elements.\+h.
+Definition at line 141 of file shell\+\_\+elements.\+h.
 
 
 
@@ -154,7 +154,7 @@ Invert a D\+IM by D\+IM matrix.
 
 \mbox{\hyperlink{classoomph_1_1Matrix}{Matrix}} inversion for 2 dimensions. 
 
-Definition at line 295 of file shell\+\_\+elements.\+h.
+Definition at line 291 of file shell\+\_\+elements.\+h.
 
 
 
@@ -172,7 +172,7 @@ Set to disable the calculation of membrane terms.
 
 
 
-Definition at line 209 of file shell\+\_\+elements.\+h.
+Definition at line 205 of file shell\+\_\+elements.\+h.
 
 
 
@@ -190,7 +190,7 @@ Set to renable the calculation of membrane terms (default)
 
 
 
-Definition at line 212 of file shell\+\_\+elements.\+h.
+Definition at line 208 of file shell\+\_\+elements.\+h.
 
 
 
@@ -216,7 +216,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1FSIDiagHermiteShellElement_a5e48
 
 
 
-Definition at line 706 of file shell\+\_\+elements.\+cc.
+Definition at line 702 of file shell\+\_\+elements.\+cc.
 
 
 
@@ -242,7 +242,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1GeneralisedElement_a310c97f515
 
 
 
-Definition at line 240 of file shell\+\_\+elements.\+h.
+Definition at line 236 of file shell\+\_\+elements.\+h.
 
 
 
@@ -260,7 +260,7 @@ Return the residuals for the equations of KL shell theory.
 
 short Helper function to Return the residuals for the equations of KL shell theory. This is used to prevent a call of fill\+\_\+in\+\_\+contribution\+\_\+to\+\_\+residuals in the function fill\+\_\+in\+\_\+contribution\+\_\+to\+\_\+jacobian that can lead to virtual inheritance woes if this element is ever used as part of a multi-\/physics element. 
 
-Definition at line 348 of file shell\+\_\+elements.\+cc.
+Definition at line 344 of file shell\+\_\+elements.\+cc.
 
 
 
@@ -283,7 +283,7 @@ Get potential (strain) and kinetic energy of the element.
 Compute the potential (strain) and kinetic energy of the element. ~\newline
  
 
-Definition at line 739 of file shell\+\_\+elements.\+cc.
+Definition at line 735 of file shell\+\_\+elements.\+cc.
 
 
 
@@ -301,7 +301,7 @@ Get normal vector.
 
 Get normal to the shell. 
 
-Definition at line 74 of file shell\+\_\+elements.\+cc.
+Definition at line 70 of file shell\+\_\+elements.\+cc.
 
 
 
@@ -323,7 +323,7 @@ Get strain and bending tensors; returns pair comprising the determinant of the u
 
 Get strain and bending tensors. 
 
-Definition at line 152 of file shell\+\_\+elements.\+cc.
+Definition at line 148 of file shell\+\_\+elements.\+cc.
 
 
 
@@ -341,7 +341,7 @@ Return the wall thickness to undeformed radius ratio.
 
 
 
-Definition at line 218 of file shell\+\_\+elements.\+h.
+Definition at line 214 of file shell\+\_\+elements.\+h.
 
 
 
@@ -363,7 +363,7 @@ Return a pointer to the non-\/dim wall thickness.
 
 
 
-Definition at line 227 of file shell\+\_\+elements.\+h.
+Definition at line 223 of file shell\+\_\+elements.\+h.
 
 
 
@@ -381,7 +381,7 @@ Return the timescale ratio (non-\/dimensional density)
 
 
 
-Definition at line 221 of file shell\+\_\+elements.\+h.
+Definition at line 217 of file shell\+\_\+elements.\+h.
 
 
 
@@ -403,7 +403,7 @@ Return a pointer to timescale ratio (nondim density)
 
 
 
-Definition at line 230 of file shell\+\_\+elements.\+h.
+Definition at line 226 of file shell\+\_\+elements.\+h.
 
 
 
@@ -421,7 +421,7 @@ Get integral of instantaneous rate of work done on the wall due to the load retu
 
 Get integral of instantaneous rate of work done on the wall due to the load returned by the virtual function load\+\_\+vector\+\_\+for\+\_\+rate\+\_\+of\+\_\+work\+\_\+computation(...). In the current class the latter function simply de-\/references the external load but this can be overloaded in derived classes (e.\+g. in F\+SI elements) to determine the rate of work done by individual constituents of this load (e.\+g. the fluid load in an F\+SI problem). 
 
-Definition at line 1036 of file shell\+\_\+elements.\+cc.
+Definition at line 1032 of file shell\+\_\+elements.\+cc.
 
 
 
@@ -447,7 +447,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1FSIDiagHermiteShellElement_a1ef9
 
 
 
-Definition at line 179 of file shell\+\_\+elements.\+h.
+Definition at line 175 of file shell\+\_\+elements.\+h.
 
 
 
@@ -474,7 +474,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1FSIDiagHermiteShellElement_ad57f
 
 
 
-Definition at line 131 of file shell\+\_\+elements.\+h.
+Definition at line 127 of file shell\+\_\+elements.\+h.
 
 
 
@@ -496,7 +496,7 @@ Return the Poisson\textquotesingle{}s ratio.
 
 
 
-Definition at line 215 of file shell\+\_\+elements.\+h.
+Definition at line 211 of file shell\+\_\+elements.\+h.
 
 
 
@@ -518,7 +518,7 @@ Return a pointer to the Poisson ratio.
 
 
 
-Definition at line 224 of file shell\+\_\+elements.\+h.
+Definition at line 220 of file shell\+\_\+elements.\+h.
 
 
 
@@ -544,7 +544,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1HermiteShellElement_a126ebcc5033
 
 
 
-Definition at line 281 of file shell\+\_\+elements.\+h.
+Definition at line 277 of file shell\+\_\+elements.\+h.
 
 
 
@@ -570,7 +570,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1HermiteShellElement_a805a6e65b4d
 
 
 
-Definition at line 284 of file shell\+\_\+elements.\+h.
+Definition at line 280 of file shell\+\_\+elements.\+h.
 
 
 
@@ -596,7 +596,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1HermiteShellElement_af2313040b66
 
 
 
-Definition at line 274 of file shell\+\_\+elements.\+h.
+Definition at line 270 of file shell\+\_\+elements.\+h.
 
 
 
@@ -622,7 +622,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1HermiteShellElement_a2f76280c3af
 
 
 
-Definition at line 277 of file shell\+\_\+elements.\+h.
+Definition at line 273 of file shell\+\_\+elements.\+h.
 
 
 
@@ -640,7 +640,7 @@ Return (i,j)-\/th component of second Piola Kirchhoff membrane prestress.
 
 
 
-Definition at line 202 of file shell\+\_\+elements.\+h.
+Definition at line 198 of file shell\+\_\+elements.\+h.
 
 
 
@@ -662,7 +662,7 @@ Set pointer to (i,j)-\/th component of second Piola Kirchhoff membrane prestress
 
 
 
-Definition at line 192 of file shell\+\_\+elements.\+h.
+Definition at line 188 of file shell\+\_\+elements.\+h.
 
 
 
@@ -680,7 +680,7 @@ Return a reference to geometric object that specifies the shell\textquotesingle{
 
 
 
-Definition at line 234 of file shell\+\_\+elements.\+h.
+Definition at line 230 of file shell\+\_\+elements.\+h.
 
 
 
@@ -698,7 +698,7 @@ Default load function (zero traction)
 
 
 
-Definition at line 55 of file shell\+\_\+elements.\+cc.
+Definition at line 51 of file shell\+\_\+elements.\+cc.
 
 
 
@@ -723,7 +723,7 @@ Static default value for the thickness ratio.
 
 Static default value for non-\/dim wall thickness (1/20) 
 
-Definition at line 64 of file shell\+\_\+elements.\+h.
+Definition at line 60 of file shell\+\_\+elements.\+h.
 
 
 
@@ -741,7 +741,7 @@ Static default value for the timescale ratio (1.\+0 for natural scaling)
 
 Static default value for timescale ratio (1.\+0 for natural scaling) 
 
-Definition at line 61 of file shell\+\_\+elements.\+h.
+Definition at line 57 of file shell\+\_\+elements.\+h.
 
 
 
@@ -759,7 +759,7 @@ Static default value for the Poisson\textquotesingle{}s ratio.
 
 Default value for the Poisson ratio\+: 0.\+49 for no particular reason. 
 
-Definition at line 58 of file shell\+\_\+elements.\+h.
+Definition at line 54 of file shell\+\_\+elements.\+h.
 
 
 
@@ -777,7 +777,7 @@ Pointer to dimensionless wall thickness.
 
 
 
-Definition at line 73 of file shell\+\_\+elements.\+h.
+Definition at line 69 of file shell\+\_\+elements.\+h.
 
 
 
@@ -795,7 +795,7 @@ Boolean flag to ignore membrane terms.
 
 
 
-Definition at line 67 of file shell\+\_\+elements.\+h.
+Definition at line 63 of file shell\+\_\+elements.\+h.
 
 
 
@@ -813,7 +813,7 @@ Pointer to timescale ratio (non-\/dimensional density)
 
 
 
-Definition at line 76 of file shell\+\_\+elements.\+h.
+Definition at line 72 of file shell\+\_\+elements.\+h.
 
 
 
@@ -831,7 +831,7 @@ Access to the load vector function pointer.
 
 
 
-Definition at line 167 of file shell\+\_\+elements.\+h.
+Definition at line 163 of file shell\+\_\+elements.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1KirchhoffLoveShellEquations_a9f4a216ad08e35795d0a3a6080fb9ce0}\label{classoomph_1_1KirchhoffLoveShellEquations_a9f4a216ad08e35795d0a3a6080fb9ce0}} 
 \index{oomph::KirchhoffLoveShellEquations@{oomph::KirchhoffLoveShellEquations}!Load\_vector\_fct\_pt@{Load\_vector\_fct\_pt}}
@@ -845,7 +845,7 @@ Pointer to load vector function\+: Its arguments are\+: Lagrangian coordinate, E
 
 
 
-Definition at line 102 of file shell\+\_\+elements.\+h.
+Definition at line 98 of file shell\+\_\+elements.\+h.
 
 
 
@@ -863,7 +863,7 @@ Pointer to Poisson\textquotesingle{}s ratio.
 
 
 
-Definition at line 70 of file shell\+\_\+elements.\+h.
+Definition at line 66 of file shell\+\_\+elements.\+h.
 
 
 
@@ -881,7 +881,7 @@ Pointer to membrane pre-\/stress terms -- should probably generalise this to fun
 
 
 
-Definition at line 80 of file shell\+\_\+elements.\+h.
+Definition at line 76 of file shell\+\_\+elements.\+h.
 
 
 
@@ -899,7 +899,7 @@ Pointer to the \mbox{\hyperlink{classoomph_1_1GeomObject}{Geom\+Object}} that sp
 
 
 
-Definition at line 110 of file shell\+\_\+elements.\+h.
+Definition at line 106 of file shell\+\_\+elements.\+h.
 
 
 
@@ -917,7 +917,7 @@ Static default for prestress (set to zero)
 
 
 
-Definition at line 83 of file shell\+\_\+elements.\+h.
+Definition at line 79 of file shell\+\_\+elements.\+h.
 
 
 

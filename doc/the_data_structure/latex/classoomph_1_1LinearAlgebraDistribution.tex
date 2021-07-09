@@ -91,7 +91,7 @@ std\+::ostream \& \mbox{\hyperlink{classoomph_1_1LinearAlgebraDistribution_a30dc
 \doxysubsection{Detailed Description}
 Describes the distribution of a distributable linear algebra type object. Typically this is a container (such as a \mbox{\hyperlink{classoomph_1_1DoubleVector}{Double\+Vector}}) or an operator (e.\+g \mbox{\hyperlink{classoomph_1_1Preconditioner}{Preconditioner}} or \mbox{\hyperlink{classoomph_1_1LinearSolver}{Linear\+Solver}}). This object is used in both serial and parallel implementations. In the serial context (no M\+PI) this just contains an integer indicating the number of rows. In parallel either each processor holds a subset of the set of global rows. (each processor contains only a single continuous block of rows -\/ parametised with variables denoting the first row and the number of local rows) or, all rows are be duplicated across all processors. In parallel this object also contains an \mbox{\hyperlink{classoomph_1_1OomphCommunicator}{Oomph\+Communicator}} object which primarily contains the M\+P\+I\+\_\+\+Comm communicator associated with this object. 
 
-Definition at line 68 of file linear\+\_\+algebra\+\_\+distribution.\+h.
+Definition at line 64 of file linear\+\_\+algebra\+\_\+distribution.\+h.
 
 
 
@@ -108,7 +108,7 @@ Default Constructor -\/ creates a Distribution that has not been setup.
 
 
 
-Definition at line 75 of file linear\+\_\+algebra\+\_\+distribution.\+h.
+Definition at line 71 of file linear\+\_\+algebra\+\_\+distribution.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1LinearAlgebraDistribution_ae8714449bcd3d63c7bb7ebe7e6e01c7a}\label{classoomph_1_1LinearAlgebraDistribution_ae8714449bcd3d63c7bb7ebe7e6e01c7a}} 
 \index{oomph::LinearAlgebraDistribution@{oomph::LinearAlgebraDistribution}!LinearAlgebraDistribution@{LinearAlgebraDistribution}}
@@ -122,7 +122,7 @@ Constructor. Takes the first\+\_\+row, nrow\+\_\+local (both for this processor)
 
 
 
-Definition at line 80 of file linear\+\_\+algebra\+\_\+distribution.\+h.
+Definition at line 76 of file linear\+\_\+algebra\+\_\+distribution.\+h.
 
 
 
@@ -140,7 +140,7 @@ Constructor. Takes the number of global rows and uniformly distributes them over
 
 
 
-Definition at line 92 of file linear\+\_\+algebra\+\_\+distribution.\+h.
+Definition at line 88 of file linear\+\_\+algebra\+\_\+distribution.\+h.
 
 
 
@@ -158,7 +158,7 @@ Constructor. Takes the first\+\_\+row, nrow\+\_\+local (both for this processor)
 
 
 
-Definition at line 103 of file linear\+\_\+algebra\+\_\+distribution.\+h.
+Definition at line 99 of file linear\+\_\+algebra\+\_\+distribution.\+h.
 
 
 
@@ -176,7 +176,7 @@ Constructor. Takes the number of global rows and uniformly distributes them over
 
 
 
-Definition at line 115 of file linear\+\_\+algebra\+\_\+distribution.\+h.
+Definition at line 111 of file linear\+\_\+algebra\+\_\+distribution.\+h.
 
 
 
@@ -194,7 +194,7 @@ Copy Constructor.
 
 
 
-Definition at line 124 of file linear\+\_\+algebra\+\_\+distribution.\+h.
+Definition at line 120 of file linear\+\_\+algebra\+\_\+distribution.\+h.
 
 
 
@@ -212,7 +212,7 @@ pointer based copy constructor
 
 
 
-Definition at line 131 of file linear\+\_\+algebra\+\_\+distribution.\+h.
+Definition at line 127 of file linear\+\_\+algebra\+\_\+distribution.\+h.
 
 
 
@@ -230,7 +230,7 @@ Destructor.
 
 
 
-Definition at line 138 of file linear\+\_\+algebra\+\_\+distribution.\+h.
+Definition at line 134 of file linear\+\_\+algebra\+\_\+distribution.\+h.
 
 
 
@@ -251,7 +251,7 @@ Copy the argument distribution. Also a helper method for the =assignment operato
 
 helper method for the =assignment operator and copy constructor 
 
-Definition at line 222 of file linear\+\_\+algebra\+\_\+distribution.\+cc.
+Definition at line 218 of file linear\+\_\+algebra\+\_\+distribution.\+cc.
 
 
 
@@ -269,7 +269,7 @@ Copy the argument distribution. Also a helper method for the =assignment operato
 
 
 
-Definition at line 172 of file linear\+\_\+algebra\+\_\+distribution.\+h.
+Definition at line 168 of file linear\+\_\+algebra\+\_\+distribution.\+h.
 
 
 
@@ -287,7 +287,7 @@ Sets the distribution. Takes first\+\_\+row, nrow\+\_\+local and nrow as argumen
 
 Sets the distribution. Takes first\+\_\+row, local\+\_\+nrow and global\+\_\+nrow as arguments. If global\+\_\+nrow is not provided or equal to 0 then it is computed automatically 
 
-Definition at line 41 of file linear\+\_\+algebra\+\_\+distribution.\+cc.
+Definition at line 37 of file linear\+\_\+algebra\+\_\+distribution.\+cc.
 
 
 
@@ -309,7 +309,7 @@ Build the \mbox{\hyperlink{classoomph_1_1LinearAlgebraDistribution}{Linear\+Alge
 
 Uniformly distribute global\+\_\+nrow over all processors where processors 0 holds approximately the first global\+\_\+nrow/n\+\_\+proc, processor 1 holds the next global\+\_\+nrow/n\+\_\+proc and so on... 
 
-Definition at line 170 of file linear\+\_\+algebra\+\_\+distribution.\+cc.
+Definition at line 166 of file linear\+\_\+algebra\+\_\+distribution.\+cc.
 
 
 
@@ -323,7 +323,7 @@ References Comm\+\_\+pt, Distributed, First\+\_\+row, Nrow, and Nrow\+\_\+local.
 
 if the communicator\+\_\+pt is null then the distribution is not setup then false is returned, otherwise return true 
 
-Definition at line 350 of file linear\+\_\+algebra\+\_\+distribution.\+h.
+Definition at line 346 of file linear\+\_\+algebra\+\_\+distribution.\+h.
 
 
 
@@ -345,7 +345,7 @@ clears the distribution
 
 
 
-Definition at line 178 of file linear\+\_\+algebra\+\_\+distribution.\+h.
+Definition at line 174 of file linear\+\_\+algebra\+\_\+distribution.\+h.
 
 
 
@@ -367,7 +367,7 @@ const access to the communicator pointer
 
 
 
-Definition at line 343 of file linear\+\_\+algebra\+\_\+distribution.\+h.
+Definition at line 339 of file linear\+\_\+algebra\+\_\+distribution.\+h.
 
 
 
@@ -389,7 +389,7 @@ access function to the distributed -\/ indicates whether the distribution is ser
 
 
 
-Definition at line 337 of file linear\+\_\+algebra\+\_\+distribution.\+h.
+Definition at line 333 of file linear\+\_\+algebra\+\_\+distribution.\+h.
 
 
 
@@ -411,7 +411,7 @@ access function for the first row on this processor. If not distributed then thi
 
 
 
-Definition at line 268 of file linear\+\_\+algebra\+\_\+distribution.\+h.
+Definition at line 264 of file linear\+\_\+algebra\+\_\+distribution.\+h.
 
 
 
@@ -433,7 +433,7 @@ access function for the first row on the p-\/th processor
 
 
 
-Definition at line 297 of file linear\+\_\+algebra\+\_\+distribution.\+h.
+Definition at line 293 of file linear\+\_\+algebra\+\_\+distribution.\+h.
 
 
 
@@ -451,7 +451,7 @@ return the first\+\_\+row \mbox{\hyperlink{classoomph_1_1Vector}{Vector}}
 
 
 
-Definition at line 412 of file linear\+\_\+algebra\+\_\+distribution.\+h.
+Definition at line 408 of file linear\+\_\+algebra\+\_\+distribution.\+h.
 
 
 
@@ -473,7 +473,7 @@ return the local index corresponding to the global index
 
 
 
-Definition at line 373 of file linear\+\_\+algebra\+\_\+distribution.\+h.
+Definition at line 369 of file linear\+\_\+algebra\+\_\+distribution.\+h.
 
 
 
@@ -491,7 +491,7 @@ access function to the number of global rows.
 
 
 
-Definition at line 193 of file linear\+\_\+algebra\+\_\+distribution.\+h.
+Definition at line 189 of file linear\+\_\+algebra\+\_\+distribution.\+h.
 
 
 
@@ -513,7 +513,7 @@ access function for the num of local rows on this processor. If no M\+PI then Nr
 
 
 
-Definition at line 200 of file linear\+\_\+algebra\+\_\+distribution.\+h.
+Definition at line 196 of file linear\+\_\+algebra\+\_\+distribution.\+h.
 
 
 
@@ -535,7 +535,7 @@ access function for the num of local rows on this processor. If no M\+PI the nro
 
 
 
-Definition at line 229 of file linear\+\_\+algebra\+\_\+distribution.\+h.
+Definition at line 225 of file linear\+\_\+algebra\+\_\+distribution.\+h.
 
 
 
@@ -553,7 +553,7 @@ return the nrow\+\_\+local \mbox{\hyperlink{classoomph_1_1Vector}{Vector}}
 
 
 
-Definition at line 406 of file linear\+\_\+algebra\+\_\+distribution.\+h.
+Definition at line 402 of file linear\+\_\+algebra\+\_\+distribution.\+h.
 
 
 
@@ -575,7 +575,7 @@ Referenced by build().
 
 
 
-Definition at line 363 of file linear\+\_\+algebra\+\_\+distribution.\+h.
+Definition at line 359 of file linear\+\_\+algebra\+\_\+distribution.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1LinearAlgebraDistribution_a0339adfd0ac99e1a443b7313063beaa9}\label{classoomph_1_1LinearAlgebraDistribution_a0339adfd0ac99e1a443b7313063beaa9}} 
 \index{oomph::LinearAlgebraDistribution@{oomph::LinearAlgebraDistribution}!operator=@{operator=}}
@@ -589,7 +589,7 @@ Assignment Operator.
 
 
 
-Definition at line 144 of file linear\+\_\+algebra\+\_\+distribution.\+h.
+Definition at line 140 of file linear\+\_\+algebra\+\_\+distribution.\+h.
 
 
 
@@ -607,7 +607,7 @@ References build().
 
 operator== 
 
-Definition at line 266 of file linear\+\_\+algebra\+\_\+distribution.\+cc.
+Definition at line 262 of file linear\+\_\+algebra\+\_\+distribution.\+cc.
 
 
 
@@ -625,7 +625,7 @@ return the processor rank of the global row number i
 
 
 
-Definition at line 395 of file linear\+\_\+algebra\+\_\+distribution.\+h.
+Definition at line 391 of file linear\+\_\+algebra\+\_\+distribution.\+h.
 
 
 
@@ -650,7 +650,7 @@ $<$$<$ operator
 
 
 
-Definition at line 315 of file linear\+\_\+algebra\+\_\+distribution.\+cc.
+Definition at line 311 of file linear\+\_\+algebra\+\_\+distribution.\+cc.
 
 
 
@@ -667,7 +667,7 @@ the pointer to the M\+PI communicator object in this distribution
 
 
 
-Definition at line 434 of file linear\+\_\+algebra\+\_\+distribution.\+h.
+Definition at line 430 of file linear\+\_\+algebra\+\_\+distribution.\+h.
 
 
 
@@ -681,7 +681,7 @@ Referenced by build(), built(), clear(), communicator\+\_\+pt(), first\+\_\+row(
 
 flag to indicate whether this distribution describes an object that is distributed over the processors of Comm\+\_\+pt (true) or duplicated over the processors of Comm\+\_\+pt (false) 
 
-Definition at line 431 of file linear\+\_\+algebra\+\_\+distribution.\+h.
+Definition at line 427 of file linear\+\_\+algebra\+\_\+distribution.\+h.
 
 
 
@@ -699,7 +699,7 @@ the first row on this processor
 
 
 
-Definition at line 426 of file linear\+\_\+algebra\+\_\+distribution.\+h.
+Definition at line 422 of file linear\+\_\+algebra\+\_\+distribution.\+h.
 
 
 
@@ -717,7 +717,7 @@ the number of global rows
 
 
 
-Definition at line 420 of file linear\+\_\+algebra\+\_\+distribution.\+h.
+Definition at line 416 of file linear\+\_\+algebra\+\_\+distribution.\+h.
 
 
 
@@ -735,7 +735,7 @@ the number of local rows on the processor
 
 
 
-Definition at line 423 of file linear\+\_\+algebra\+\_\+distribution.\+h.
+Definition at line 419 of file linear\+\_\+algebra\+\_\+distribution.\+h.
 
 
 

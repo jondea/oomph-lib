@@ -342,7 +342,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="textblock"><p>The "real" implementation of the implicit midpoint rule. Implemented by calculation of residuals etc. at half step. This requires non-trivial modifications to the element's residual and Jacobian calculation functions to interpolate values to the midpoint. As such <a class="el" href="classoomph_1_1IMRByBDF.html">IMRByBDF</a> should be preferred.</p>
 <p>However this class must be used when multiple different time steppers are being used simultaneously for different parts of the problem. </p>
 
-<p class="definition">Definition at line <a class="el" href="implicit__midpoint__rule_8h_source.html#l00163">163</a> of file <a class="el" href="implicit__midpoint__rule_8h_source.html">implicit_midpoint_rule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="implicit__midpoint__rule_8h_source.html#l00159">159</a> of file <a class="el" href="implicit__midpoint__rule_8h_source.html">implicit_midpoint_rule.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aa28c3f9d2eea177280f0868e16127285"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa28c3f9d2eea177280f0868e16127285">&#9670;&nbsp;</a></span>IMR() <span class="overload">[1/2]</span></h2>
@@ -374,7 +374,7 @@ Additional Inherited Members</h2></td></tr>
 <li>Didn't properly interpolate time/values/x/derivatives in jacobian/residual (all of these MUST be evaluated at the midpoint). </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="implicit__midpoint__rule_8h_source.html#l00173">173</a> of file <a class="el" href="implicit__midpoint__rule_8h_source.html">implicit_midpoint_rule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="implicit__midpoint__rule_8h_source.html#l00169">169</a> of file <a class="el" href="implicit__midpoint__rule_8h_source.html">implicit_midpoint_rule.h</a>.</p>
 
 </div>
 </div>
@@ -403,7 +403,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Destructor, predictor_pt handled by base. </p>
 
-<p class="definition">Definition at line <a class="el" href="implicit__midpoint__rule_8h_source.html#l00176">176</a> of file <a class="el" href="implicit__midpoint__rule_8h_source.html">implicit_midpoint_rule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="implicit__midpoint__rule_8h_source.html#l00172">172</a> of file <a class="el" href="implicit__midpoint__rule_8h_source.html">implicit_midpoint_rule.h</a>.</p>
 
 </div>
 </div>
@@ -433,7 +433,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Inaccessible copy constructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="implicit__midpoint__rule_8h_source.html#l00200">200</a> of file <a class="el" href="implicit__midpoint__rule_8h_source.html">implicit_midpoint_rule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="implicit__midpoint__rule_8h_source.html#l00196">196</a> of file <a class="el" href="implicit__midpoint__rule_8h_source.html">implicit_midpoint_rule.h</a>.</p>
 
 </div>
 </div>
@@ -465,7 +465,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classoomph_1_1IMRBase.html#a93df756c834f8ba27956b8efb2af3636">oomph::IMRBase</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="implicit__midpoint__rule_8h_source.html#l00195">195</a> of file <a class="el" href="implicit__midpoint__rule_8h_source.html">implicit_midpoint_rule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="implicit__midpoint__rule_8h_source.html#l00191">191</a> of file <a class="el" href="implicit__midpoint__rule_8h_source.html">implicit_midpoint_rule.h</a>.</p>
 
 </div>
 </div>
@@ -495,7 +495,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Inaccessible assignment operator. </p>
 
-<p class="definition">Definition at line <a class="el" href="implicit__midpoint__rule_8h_source.html#l00203">203</a> of file <a class="el" href="implicit__midpoint__rule_8h_source.html">implicit_midpoint_rule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="implicit__midpoint__rule_8h_source.html#l00199">199</a> of file <a class="el" href="implicit__midpoint__rule_8h_source.html">implicit_midpoint_rule.h</a>.</p>
 
 </div>
 </div>
@@ -526,9 +526,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classoomph_1_1IMRBase.html#a36b8a37b4c0bb9e8cca821bfb74fd373">oomph::IMRBase</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="implicit__midpoint__rule_8h_source.html#l00179">179</a> of file <a class="el" href="implicit__midpoint__rule_8h_source.html">implicit_midpoint_rule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="implicit__midpoint__rule_8h_source.html#l00175">175</a> of file <a class="el" href="implicit__midpoint__rule_8h_source.html">implicit_midpoint_rule.h</a>.</p>
 
-<p class="reference">References <a class="el" href="timesteppers_8h_source.html#l00137">oomph::Time::dt()</a>, <a class="el" href="timesteppers_8h_source.html#l00224">oomph::TimeStepper::Time_pt</a>, and <a class="el" href="timesteppers_8h_source.html#l00227">oomph::TimeStepper::Weight</a>.</p>
+<p class="reference">References <a class="el" href="timesteppers_8h_source.html#l00133">oomph::Time::dt()</a>, <a class="el" href="timesteppers_8h_source.html#l00220">oomph::TimeStepper::Time_pt</a>, and <a class="el" href="timesteppers_8h_source.html#l00223">oomph::TimeStepper::Weight</a>.</p>
 
 </div>
 </div>
@@ -563,7 +563,7 @@ Additional Inherited Members</h2></td></tr>
     <footer>
       <div class="container">
         <div class="text-muted" style="float:right;">Generated by <a href="http://www.doxygen.org/index.html">
-          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Tue Jul 6 2021 22:57:43
+          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Fri Jul 9 2021 20:52:50
         </div>
       </div>
     </footer>

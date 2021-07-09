@@ -105,7 +105,7 @@ class oomph\+::\+Bretherton\+Spine\+Mesh$<$ E\+L\+E\+M\+E\+N\+T, I\+N\+T\+E\+R\+
 
 \mbox{\hyperlink{classoomph_1_1Mesh}{Mesh}} for 2D Bretherton problem -- based on single layer mesh. Templated by spine-\/ified Navier-\/\+Stokes element type (e.\+g. \mbox{\hyperlink{classoomph_1_1SpineElement}{Spine\+Element}}$<$Q\+Crouzeix\+Raviart\+Element$<$2$>$ $>$ and the corresponding interface element (e.\+g. \mbox{\hyperlink{classoomph_1_1SpineLineFluidInterfaceElement}{Spine\+Line\+Fluid\+Interface\+Element}}$<$\mbox{\hyperlink{classoomph_1_1SpineElement}{Spine\+Element}}$<$Q\+Crouzeix\+Raviart\+Element$<$2$>$ $>$ $>$ 
 
-Definition at line 50 of file bretherton\+\_\+spine\+\_\+mesh.\+template.\+h.
+Definition at line 46 of file bretherton\+\_\+spine\+\_\+mesh.\+template.\+h.
 
 
 
@@ -154,7 +154,7 @@ Constructor. Arguments\+:
 \item time\+\_\+stepper\+\_\+pt\+: Pointer to timestepper; defaults to Static 
 \end{DoxyItemize}
 
-Definition at line 62 of file bretherton\+\_\+spine\+\_\+mesh.\+template.\+cc.
+Definition at line 58 of file bretherton\+\_\+spine\+\_\+mesh.\+template.\+cc.
 
 
 
@@ -176,7 +176,7 @@ Access functions for pointers to elements in bulk.
 
 
 
-Definition at line 94 of file bretherton\+\_\+spine\+\_\+mesh.\+template.\+h.
+Definition at line 90 of file bretherton\+\_\+spine\+\_\+mesh.\+template.\+h.
 
 
 
@@ -195,7 +195,7 @@ Pointer to control element (just under the symmetry line near the bubble tip, so
 
 
 
-Definition at line 184 of file bretherton\+\_\+spine\+\_\+mesh.\+template.\+h.
+Definition at line 180 of file bretherton\+\_\+spine\+\_\+mesh.\+template.\+h.
 
 
 
@@ -214,7 +214,7 @@ Recalculate the spine lengths after repositioning.
 
 Calculate the distance from the spine base to the free surface, i.\+e. the spine height. 
 
-Definition at line 1055 of file bretherton\+\_\+spine\+\_\+mesh.\+template.\+cc.
+Definition at line 1051 of file bretherton\+\_\+spine\+\_\+mesh.\+template.\+cc.
 
 
 
@@ -233,7 +233,7 @@ Initial reordering elements of the elements -- before the channel mesh is added.
 
 Reorder elements\+: Vertical stacks of elements, each topped by their interface element -- this is (currently) identical to the version in the \mbox{\hyperlink{classoomph_1_1SingleLayerSpineMesh}{Single\+Layer\+Spine\+Mesh}} but it\textquotesingle{}s important that element reordering is maintained in exactly this form so to be on the safe side, we move the function in here. 
 
-Definition at line 1016 of file bretherton\+\_\+spine\+\_\+mesh.\+template.\+cc.
+Definition at line 1012 of file bretherton\+\_\+spine\+\_\+mesh.\+template.\+cc.
 
 
 
@@ -256,7 +256,7 @@ Access functions for pointers to interface elements.
 
 
 
-Definition at line 87 of file bretherton\+\_\+spine\+\_\+mesh.\+template.\+h.
+Definition at line 83 of file bretherton\+\_\+spine\+\_\+mesh.\+template.\+h.
 
 
 
@@ -275,7 +275,7 @@ Number of elements in bulk.
 
 
 
-Definition at line 98 of file bretherton\+\_\+spine\+\_\+mesh.\+template.\+h.
+Definition at line 94 of file bretherton\+\_\+spine\+\_\+mesh.\+template.\+h.
 
 
 
@@ -290,7 +290,7 @@ unsigned \mbox{\hyperlink{classoomph_1_1BrethertonSpineMesh}{oomph\+::\+Brethert
 
 Number of free-\/surface spines (i.\+e. excluding the dummy spines in the channel region) 
 
-Definition at line 103 of file bretherton\+\_\+spine\+\_\+mesh.\+template.\+h.
+Definition at line 99 of file bretherton\+\_\+spine\+\_\+mesh.\+template.\+h.
 
 
 
@@ -309,7 +309,7 @@ Number of elements on interface.
 
 
 
-Definition at line 91 of file bretherton\+\_\+spine\+\_\+mesh.\+template.\+h.
+Definition at line 87 of file bretherton\+\_\+spine\+\_\+mesh.\+template.\+h.
 
 
 
@@ -324,7 +324,7 @@ void \mbox{\hyperlink{classoomph_1_1BrethertonSpineMesh}{oomph\+::\+Bretherton\+
 
 Pin all spines so the mesh can be used for computation without free surfaces 
 
-Definition at line 124 of file bretherton\+\_\+spine\+\_\+mesh.\+template.\+h.
+Definition at line 120 of file bretherton\+\_\+spine\+\_\+mesh.\+template.\+h.
 
 
 
@@ -343,7 +343,7 @@ Reposition the spines in response to changes in geometry.
 
 Reposition the spines that emenate from the lower wall. 
 
-Definition at line 1135 of file bretherton\+\_\+spine\+\_\+mesh.\+template.\+cc.
+Definition at line 1131 of file bretherton\+\_\+spine\+\_\+mesh.\+template.\+cc.
 
 
 
@@ -362,7 +362,7 @@ Set the pointer to the spine centre\textquotesingle{}s vertial fraction.
 
 
 
-Definition at line 192 of file bretherton\+\_\+spine\+\_\+mesh.\+template.\+h.
+Definition at line 188 of file bretherton\+\_\+spine\+\_\+mesh.\+template.\+h.
 
 
 
@@ -381,7 +381,7 @@ Read the value of the spine centre\textquotesingle{}s vertical fraction.
 
 
 
-Definition at line 188 of file bretherton\+\_\+spine\+\_\+mesh.\+template.\+h.
+Definition at line 184 of file bretherton\+\_\+spine\+\_\+mesh.\+template.\+h.
 
 
 
@@ -408,7 +408,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1SingleLayerSpineMesh_a364648c1
 
 
 
-Definition at line 136 of file bretherton\+\_\+spine\+\_\+mesh.\+template.\+h.
+Definition at line 132 of file bretherton\+\_\+spine\+\_\+mesh.\+template.\+h.
 
 
 
@@ -427,7 +427,7 @@ Update function for the nodes in the channel region ahead of the finger tip\+: N
 
 
 
-Definition at line 454 of file bretherton\+\_\+spine\+\_\+mesh.\+template.\+h.
+Definition at line 450 of file bretherton\+\_\+spine\+\_\+mesh.\+template.\+h.
 
 
 
@@ -450,7 +450,7 @@ Update function for the deposited film region in the lower part of the domain\+:
 
 
 
-Definition at line 199 of file bretherton\+\_\+spine\+\_\+mesh.\+template.\+h.
+Definition at line 195 of file bretherton\+\_\+spine\+\_\+mesh.\+template.\+h.
 
 
 
@@ -473,7 +473,7 @@ Update function for the deposited film region in the upper part of the domain\+:
 
 
 
-Definition at line 430 of file bretherton\+\_\+spine\+\_\+mesh.\+template.\+h.
+Definition at line 426 of file bretherton\+\_\+spine\+\_\+mesh.\+template.\+h.
 
 
 
@@ -496,7 +496,7 @@ Update function for the horizontal transitition region in the lower part of the 
 
 
 
-Definition at line 222 of file bretherton\+\_\+spine\+\_\+mesh.\+template.\+h.
+Definition at line 218 of file bretherton\+\_\+spine\+\_\+mesh.\+template.\+h.
 
 
 
@@ -519,7 +519,7 @@ Update function for the horizontal transitition region in the upper part of the 
 
 
 
-Definition at line 383 of file bretherton\+\_\+spine\+\_\+mesh.\+template.\+h.
+Definition at line 379 of file bretherton\+\_\+spine\+\_\+mesh.\+template.\+h.
 
 
 
@@ -542,7 +542,7 @@ Update function for the vertical transitition region in the lower part of the do
 
 
 
-Definition at line 268 of file bretherton\+\_\+spine\+\_\+mesh.\+template.\+h.
+Definition at line 264 of file bretherton\+\_\+spine\+\_\+mesh.\+template.\+h.
 
 
 
@@ -565,7 +565,7 @@ Update function for the vertical transitition region in the upper part of the do
 
 
 
-Definition at line 325 of file bretherton\+\_\+spine\+\_\+mesh.\+template.\+h.
+Definition at line 321 of file bretherton\+\_\+spine\+\_\+mesh.\+template.\+h.
 
 
 
@@ -591,7 +591,7 @@ Referenced by oomph\+::\+Bretherton\+Spine\+Mesh$<$ E\+L\+E\+M\+E\+N\+T, I\+N\+T
 
 
 
-Definition at line 534 of file bretherton\+\_\+spine\+\_\+mesh.\+template.\+h.
+Definition at line 530 of file bretherton\+\_\+spine\+\_\+mesh.\+template.\+h.
 
 
 
@@ -610,7 +610,7 @@ Pointer to control element (just under the symmetry line near the bubble tip; th
 
 
 
-Definition at line 531 of file bretherton\+\_\+spine\+\_\+mesh.\+template.\+h.
+Definition at line 527 of file bretherton\+\_\+spine\+\_\+mesh.\+template.\+h.
 
 
 
@@ -629,7 +629,7 @@ Default spine fraction.
 
 
 
-Definition at line 526 of file bretherton\+\_\+spine\+\_\+mesh.\+template.\+h.
+Definition at line 522 of file bretherton\+\_\+spine\+\_\+mesh.\+template.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1BrethertonSpineMesh_a3d711e1bc9d751ab14662f6839a900e3}\label{classoomph_1_1BrethertonSpineMesh_a3d711e1bc9d751ab14662f6839a900e3}} 
 \index{oomph::BrethertonSpineMesh$<$ ELEMENT, INTERFACE\_ELEMENT $>$@{oomph::BrethertonSpineMesh$<$ ELEMENT, INTERFACE\_ELEMENT $>$}!H@{H}}
@@ -644,7 +644,7 @@ Thickness of deposited film.
 
 
 
-Definition at line 502 of file bretherton\+\_\+spine\+\_\+mesh.\+template.\+h.
+Definition at line 498 of file bretherton\+\_\+spine\+\_\+mesh.\+template.\+h.
 
 
 
@@ -663,7 +663,7 @@ Referenced by oomph\+::\+Bretherton\+Spine\+Mesh$<$ E\+L\+E\+M\+E\+N\+T, I\+N\+T
 
 
 
-Definition at line 537 of file bretherton\+\_\+spine\+\_\+mesh.\+template.\+h.
+Definition at line 533 of file bretherton\+\_\+spine\+\_\+mesh.\+template.\+h.
 
 
 
@@ -682,7 +682,7 @@ Pointer to geometric object that represents the lower wall.
 
 
 
-Definition at line 508 of file bretherton\+\_\+spine\+\_\+mesh.\+template.\+h.
+Definition at line 504 of file bretherton\+\_\+spine\+\_\+mesh.\+template.\+h.
 
 
 
@@ -701,7 +701,7 @@ Number of elements across the deposited film.
 
 
 
-Definition at line 499 of file bretherton\+\_\+spine\+\_\+mesh.\+template.\+h.
+Definition at line 495 of file bretherton\+\_\+spine\+\_\+mesh.\+template.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1BrethertonSpineMesh_a1e58d18dd2231c785008efa07260e8da}\label{classoomph_1_1BrethertonSpineMesh_a1e58d18dd2231c785008efa07260e8da}} 
 \index{oomph::BrethertonSpineMesh$<$ ELEMENT, INTERFACE\_ELEMENT $>$@{oomph::BrethertonSpineMesh$<$ ELEMENT, INTERFACE\_ELEMENT $>$}!Nhalf@{Nhalf}}
@@ -716,7 +716,7 @@ Number of elements in vertical transition region (there are twice as many elemen
 
 
 
-Definition at line 496 of file bretherton\+\_\+spine\+\_\+mesh.\+template.\+h.
+Definition at line 492 of file bretherton\+\_\+spine\+\_\+mesh.\+template.\+h.
 
 
 
@@ -735,7 +735,7 @@ Number of elements along wall in deposited film region.
 
 
 
-Definition at line 486 of file bretherton\+\_\+spine\+\_\+mesh.\+template.\+h.
+Definition at line 482 of file bretherton\+\_\+spine\+\_\+mesh.\+template.\+h.
 
 
 
@@ -754,7 +754,7 @@ Number of elements along wall in horizontal transition region.
 
 
 
-Definition at line 489 of file bretherton\+\_\+spine\+\_\+mesh.\+template.\+h.
+Definition at line 485 of file bretherton\+\_\+spine\+\_\+mesh.\+template.\+h.
 
 
 
@@ -773,7 +773,7 @@ Number of elements along wall in channel region.
 
 
 
-Definition at line 492 of file bretherton\+\_\+spine\+\_\+mesh.\+template.\+h.
+Definition at line 488 of file bretherton\+\_\+spine\+\_\+mesh.\+template.\+h.
 
 
 
@@ -792,7 +792,7 @@ Pointer to vertical fraction of the spine centre.
 
 
 
-Definition at line 523 of file bretherton\+\_\+spine\+\_\+mesh.\+template.\+h.
+Definition at line 519 of file bretherton\+\_\+spine\+\_\+mesh.\+template.\+h.
 
 
 
@@ -811,7 +811,7 @@ Pointer to geometric object that represents the upper wall.
 
 
 
-Definition at line 505 of file bretherton\+\_\+spine\+\_\+mesh.\+template.\+h.
+Definition at line 501 of file bretherton\+\_\+spine\+\_\+mesh.\+template.\+h.
 
 
 
@@ -830,7 +830,7 @@ Wall coordinate of end of liquid filled region (inflow)
 
 
 
-Definition at line 514 of file bretherton\+\_\+spine\+\_\+mesh.\+template.\+h.
+Definition at line 510 of file bretherton\+\_\+spine\+\_\+mesh.\+template.\+h.
 
 
 
@@ -849,7 +849,7 @@ Start coordinate on wall.
 
 
 
-Definition at line 511 of file bretherton\+\_\+spine\+\_\+mesh.\+template.\+h.
+Definition at line 507 of file bretherton\+\_\+spine\+\_\+mesh.\+template.\+h.
 
 
 
@@ -868,7 +868,7 @@ Wall coordinate of end of transition region.
 
 
 
-Definition at line 520 of file bretherton\+\_\+spine\+\_\+mesh.\+template.\+h.
+Definition at line 516 of file bretherton\+\_\+spine\+\_\+mesh.\+template.\+h.
 
 
 
@@ -887,7 +887,7 @@ Wall coordinate of start of the transition region.
 
 
 
-Definition at line 517 of file bretherton\+\_\+spine\+\_\+mesh.\+template.\+h.
+Definition at line 513 of file bretherton\+\_\+spine\+\_\+mesh.\+template.\+h.
 
 
 

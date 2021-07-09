@@ -85,7 +85,7 @@ double $\ast$ \mbox{\hyperlink{classoomph_1_1FluidInterfaceBoundingElement_abf47
 \doxysubsection{Detailed Description}
 Base class for elements at the boundary of free surfaces or interfaces, used typically to impose contact angle boundary conditions. The elemental dimensions are one less than those of the surface elements, or two less than those of the original bulk elements. Thus in two-\/dimensional and axi-\/symmetric problems, are points, but in three-\/dimensional problems, they are lines. These boundaries may be in contact with a solid surface, in which case the normal to that surface must be provided. 
 
-Definition at line 58 of file interface\+\_\+elements.\+h.
+Definition at line 54 of file interface\+\_\+elements.\+h.
 
 
 
@@ -102,7 +102,7 @@ Function pointer to a wall unit normal function. Returns the unit normal on the 
 
 
 
-Definition at line 64 of file interface\+\_\+elements.\+h.
+Definition at line 60 of file interface\+\_\+elements.\+h.
 
 
 
@@ -119,7 +119,7 @@ Constructor.
 
 
 
-Definition at line 141 of file interface\+\_\+elements.\+h.
+Definition at line 137 of file interface\+\_\+elements.\+h.
 
 
 
@@ -137,7 +137,7 @@ Empty helper function to calculate the additional contributions arising from the
 
 
 
-Definition at line 232 of file interface\+\_\+elements.\+h.
+Definition at line 228 of file interface\+\_\+elements.\+h.
 
 
 
@@ -155,7 +155,7 @@ Return the value of the capillary number.
 
 
 
-Definition at line 174 of file interface\+\_\+elements.\+h.
+Definition at line 170 of file interface\+\_\+elements.\+h.
 
 
 
@@ -177,7 +177,7 @@ Access function to the pointer specifying the capillary number.
 
 
 
-Definition at line 171 of file interface\+\_\+elements.\+h.
+Definition at line 167 of file interface\+\_\+elements.\+h.
 
 
 
@@ -195,7 +195,7 @@ Return value of the contact angle.
 
 
 
-Definition at line 195 of file interface\+\_\+elements.\+h.
+Definition at line 191 of file interface\+\_\+elements.\+h.
 
 
 
@@ -217,7 +217,7 @@ Access function to the pointer specifying the prescribed contact angle.
 
 
 
-Definition at line 168 of file interface\+\_\+elements.\+h.
+Definition at line 164 of file interface\+\_\+elements.\+h.
 
 
 
@@ -235,7 +235,7 @@ Calculate the residuals.
 
 
 
-Definition at line 212 of file interface\+\_\+elements.\+h.
+Definition at line 208 of file interface\+\_\+elements.\+h.
 
 
 
@@ -289,7 +289,7 @@ Overload the C-\/style output function.
 
 
 
-Definition at line 249 of file interface\+\_\+elements.\+h.
+Definition at line 245 of file interface\+\_\+elements.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1FluidInterfaceBoundingElement_ae85ea987a06275a03ad6d0e3710871da}\label{classoomph_1_1FluidInterfaceBoundingElement_ae85ea987a06275a03ad6d0e3710871da}} 
 \index{oomph::FluidInterfaceBoundingElement@{oomph::FluidInterfaceBoundingElement}!output@{output}}
@@ -303,7 +303,7 @@ C-\/style Output function.
 
 
 
-Definition at line 252 of file interface\+\_\+elements.\+h.
+Definition at line 248 of file interface\+\_\+elements.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1FluidInterfaceBoundingElement_a81adc5ae89ddfa120f587c61b972622f}\label{classoomph_1_1FluidInterfaceBoundingElement_a81adc5ae89ddfa120f587c61b972622f}} 
 \index{oomph::FluidInterfaceBoundingElement@{oomph::FluidInterfaceBoundingElement}!output@{output}}
@@ -317,7 +317,7 @@ Overload the output function.
 
 
 
-Definition at line 242 of file interface\+\_\+elements.\+h.
+Definition at line 238 of file interface\+\_\+elements.\+h.
 
 
 
@@ -335,7 +335,7 @@ Output function.
 
 
 
-Definition at line 245 of file interface\+\_\+elements.\+h.
+Definition at line 241 of file interface\+\_\+elements.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1FluidInterfaceBoundingElement_a6b0de0d11dfcfc912e2f56fbd6359ebe}\label{classoomph_1_1FluidInterfaceBoundingElement_a6b0de0d11dfcfc912e2f56fbd6359ebe}} 
 \index{oomph::FluidInterfaceBoundingElement@{oomph::FluidInterfaceBoundingElement}!reset\_after\_external\_fd@{reset\_after\_external\_fd}}
@@ -349,7 +349,7 @@ We require a final node update in the bulk element after all finite differencing
 
 
 
-Definition at line 132 of file interface\+\_\+elements.\+h.
+Definition at line 128 of file interface\+\_\+elements.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1FluidInterfaceBoundingElement_a7347eb5984a18ffb1cfea1f9240badee}\label{classoomph_1_1FluidInterfaceBoundingElement_a7347eb5984a18ffb1cfea1f9240badee}} 
 \index{oomph::FluidInterfaceBoundingElement@{oomph::FluidInterfaceBoundingElement}!reset\_in\_external\_fd@{reset\_in\_external\_fd}}
@@ -363,7 +363,7 @@ The only external data are these geometric data so We can omit the reset functio
 
 
 
-Definition at line 128 of file interface\+\_\+elements.\+h.
+Definition at line 124 of file interface\+\_\+elements.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1FluidInterfaceBoundingElement_a8566c5bed5c87717fcb155d398ed8c8f}\label{classoomph_1_1FluidInterfaceBoundingElement_a8566c5bed5c87717fcb155d398ed8c8f}} 
 \index{oomph::FluidInterfaceBoundingElement@{oomph::FluidInterfaceBoundingElement}!set\_contact\_angle@{set\_contact\_angle}}
@@ -377,7 +377,7 @@ Set a pointer to the desired contact angle. Optional boolean (defaults to true) 
 
 Set a pointer to the desired contact angle. Optional boolean (defaults to true) chooses strong imposition via hijacking (true) or weak imposition via addition to momentum equation (false). The default strong imposition is appropriate for static contact problems. 
 
-Definition at line 52 of file interface\+\_\+elements.\+cc.
+Definition at line 48 of file interface\+\_\+elements.\+cc.
 
 
 
@@ -395,7 +395,7 @@ Access for nodal index at which the velocity components are stored.
 
 
 
-Definition at line 154 of file interface\+\_\+elements.\+h.
+Definition at line 150 of file interface\+\_\+elements.\+h.
 
 
 
@@ -413,7 +413,7 @@ The geometric data of the parent element is included as external data and so a (
 
 
 
-Definition at line 119 of file interface\+\_\+elements.\+h.
+Definition at line 115 of file interface\+\_\+elements.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1FluidInterfaceBoundingElement_a1a715427e2037278891c06afd5d096fb}\label{classoomph_1_1FluidInterfaceBoundingElement_a1a715427e2037278891c06afd5d096fb}} 
 \index{oomph::FluidInterfaceBoundingElement@{oomph::FluidInterfaceBoundingElement}!wall\_unit\_normal@{wall\_unit\_normal}}
@@ -427,7 +427,7 @@ Function that returns the unit normal of the bounding wall directed out of the f
 
 
 
-Definition at line 97 of file interface\+\_\+elements.\+h.
+Definition at line 93 of file interface\+\_\+elements.\+h.
 
 
 
@@ -449,7 +449,7 @@ Access function\+: Pointer to wall unit normal function.
 
 
 
-Definition at line 146 of file interface\+\_\+elements.\+h.
+Definition at line 142 of file interface\+\_\+elements.\+h.
 
 
 
@@ -467,7 +467,7 @@ Access function\+: Pointer to wall unit normal function. Const version.
 
 
 
-Definition at line 150 of file interface\+\_\+elements.\+h.
+Definition at line 146 of file interface\+\_\+elements.\+h.
 
 
 
@@ -488,7 +488,7 @@ Pointer to the desired value of the capillary number.
 
 
 
-Definition at line 76 of file interface\+\_\+elements.\+h.
+Definition at line 72 of file interface\+\_\+elements.\+h.
 
 
 
@@ -506,7 +506,7 @@ Flag used to determine whether the contact angle is to be used (0 if not), and w
 
 
 
-Definition at line 84 of file interface\+\_\+elements.\+h.
+Definition at line 80 of file interface\+\_\+elements.\+h.
 
 
 
@@ -524,7 +524,7 @@ Pointer to the desired value of the contact angle (if any)
 
 
 
-Definition at line 73 of file interface\+\_\+elements.\+h.
+Definition at line 69 of file interface\+\_\+elements.\+h.
 
 
 
@@ -542,7 +542,7 @@ Index at which the i-\/th velocity component is stored in the element\textquotes
 
 
 
-Definition at line 88 of file interface\+\_\+elements.\+h.
+Definition at line 84 of file interface\+\_\+elements.\+h.
 
 
 
@@ -560,7 +560,7 @@ Pointer to a wall normal function that returns the wall unit normal as a functio
 
 
 
-Definition at line 70 of file interface\+\_\+elements.\+h.
+Definition at line 66 of file interface\+\_\+elements.\+h.
 
 
 

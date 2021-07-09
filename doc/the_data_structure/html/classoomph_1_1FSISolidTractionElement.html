@@ -1649,7 +1649,7 @@ class oomph::FSISolidTractionElement&lt; ELEMENT, DIM &gt;</h3>
 
 <p><a class="el" href="classoomph_1_1SolidTractionElement.html">SolidTractionElement</a> "upgraded" to a <a class="el" href="classoomph_1_1FSIWallElement.html" title="This is a base class for all SolidFiniteElements that participate in FSI computations....">FSIWallElement</a> (and thus, by inheritance, a <a class="el" href="classoomph_1_1GeomObject.html">GeomObject</a>), so it can be used in FSI. The element is templated by the bulk solid element and the spatial (Eulerian) dimension of the bulk element. </p>
 
-<p class="definition">Definition at line <a class="el" href="solid__traction__elements_8h_source.html#l00789">789</a> of file <a class="el" href="solid__traction__elements_8h_source.html">solid_traction_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solid__traction__elements_8h_source.html#l00785">785</a> of file <a class="el" href="solid__traction__elements_8h_source.html">solid_traction_elements.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a6b1f461ae72d6ecbd9e1b1175ee9da5d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6b1f461ae72d6ecbd9e1b1175ee9da5d">&#9670;&nbsp;</a></span>FSISolidTractionElement()</h2>
@@ -1695,9 +1695,9 @@ template&lt;class ELEMENT , unsigned DIM&gt; </div>
 
 <p>Constructor: Create element as <a class="el" href="classoomph_1_1FSIWallElement.html" title="This is a base class for all SolidFiniteElements that participate in FSI computations....">FSIWallElement</a> (and thus, by inheritance, a <a class="el" href="classoomph_1_1GeomObject.html">GeomObject</a>) with DIM-1 Lagrangian and DIM Eulerian coordinates. By default, we assume that the normal vector computed by the underlying <a class="el" href="classoomph_1_1FaceElement.html">FaceElement</a> points into the fluid. If this is not the case, overwrite this with the access function <a class="el" href="classoomph_1_1FSISolidTractionElement.html#aaa745c32fe53e76ac0b9d1b00a05fe36" title="Set the normal computed by underlying FaceElement to point out of the fluid.">FSISolidTractionElement::set_normal_pointing_out_of_fluid()</a> Constructor for <a class="el" href="classoomph_1_1GeomObject.html">GeomObject</a> is called explicitly because of virtual inheritance! </p>
 
-<p class="definition">Definition at line <a class="el" href="solid__traction__elements_8h_source.html#l00811">811</a> of file <a class="el" href="solid__traction__elements_8h_source.html">solid_traction_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solid__traction__elements_8h_source.html#l00807">807</a> of file <a class="el" href="solid__traction__elements_8h_source.html">solid_traction_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="fsi_8cc_source.html#l00124">oomph::FSIWallElement::setup_fsi_wall_element()</a>.</p>
+<p class="reference">References <a class="el" href="fsi_8cc_source.html#l00120">oomph::FSIWallElement::setup_fsi_wall_element()</a>.</p>
 
 </div>
 </div>
@@ -1728,7 +1728,7 @@ template&lt;class ELEMENT , unsigned DIM&gt; </div>
 
 <p>Destructor: empty. </p>
 
-<p class="definition">Definition at line <a class="el" href="solid__traction__elements_8h_source.html#l00824">824</a> of file <a class="el" href="solid__traction__elements_8h_source.html">solid_traction_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solid__traction__elements_8h_source.html#l00820">820</a> of file <a class="el" href="solid__traction__elements_8h_source.html">solid_traction_elements.h</a>.</p>
 
 </div>
 </div>
@@ -1771,7 +1771,7 @@ template&lt;class ELEMENT , unsigned DIM&gt; </div>
 
 <p>Derivative of position vector w.r.t. the <a class="el" href="classoomph_1_1SolidFiniteElement.html" title="SolidFiniteElement class.">SolidFiniteElement</a>'s Lagrangian coordinates; evaluated at current time. </p>
 
-<p class="definition">Definition at line <a class="el" href="solid__traction__elements_8h_source.html#l00837">837</a> of file <a class="el" href="solid__traction__elements_8h_source.html">solid_traction_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solid__traction__elements_8h_source.html#l00833">833</a> of file <a class="el" href="solid__traction__elements_8h_source.html">solid_traction_elements.h</a>.</p>
 
 </div>
 </div>
@@ -1817,9 +1817,9 @@ template&lt;class ELEMENT , unsigned DIM&gt; </div>
 
 <p>Reimplemented in <a class="el" href="classoomph_1_1RefineableFSISolidTractionElement.html#a886a6bcb5722c9535f6f78ccefdc0646">oomph::RefineableFSISolidTractionElement&lt; ELEMENT, DIM &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="solid__traction__elements_8h_source.html#l00848">848</a> of file <a class="el" href="solid__traction__elements_8h_source.html">solid_traction_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solid__traction__elements_8h_source.html#l00844">844</a> of file <a class="el" href="solid__traction__elements_8h_source.html">solid_traction_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="solid__traction__elements_8h_source.html#l00182">oomph::SolidTractionElement&lt; ELEMENT &gt;::fill_in_contribution_to_jacobian()</a>, <a class="el" href="element__with__external__element_8h_source.html#l00329">oomph::ElementWithExternalElement::fill_in_jacobian_from_external_interaction_by_fd()</a>, and <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>.</p>
+<p class="reference">References <a class="el" href="solid__traction__elements_8h_source.html#l00178">oomph::SolidTractionElement&lt; ELEMENT &gt;::fill_in_contribution_to_jacobian()</a>, <a class="el" href="element__with__external__element_8h_source.html#l00325">oomph::ElementWithExternalElement::fill_in_jacobian_from_external_interaction_by_fd()</a>, and <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>.</p>
 
 </div>
 </div>
@@ -1855,9 +1855,9 @@ template&lt;class ELEMENT , unsigned DIM&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1GeneralisedElement.html#a069f59bfc3e607a5bebba52c6314d777">oomph::GeneralisedElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="solid__traction__elements_8h_source.html#l00997">997</a> of file <a class="el" href="solid__traction__elements_8h_source.html">solid_traction_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solid__traction__elements_8h_source.html#l00993">993</a> of file <a class="el" href="solid__traction__elements_8h_source.html">solid_traction_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, and <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, and <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>.</p>
 
 </div>
 </div>
@@ -1920,11 +1920,11 @@ template&lt;class ELEMENT , unsigned DIM&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1SolidTractionElement.html#ace61448de38dc67cbc0f7b42ed743eff">oomph::SolidTractionElement&lt; ELEMENT &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="solid__traction__elements_8h_source.html#l00864">864</a> of file <a class="el" href="solid__traction__elements_8h_source.html">solid_traction_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solid__traction__elements_8h_source.html#l00860">860</a> of file <a class="el" href="solid__traction__elements_8h_source.html">solid_traction_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="fsi_8cc_source.html#l00166">oomph::FSIWallElement::fluid_load_vector()</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, <a class="el" href="solid__traction__elements_8h_source.html#l00797">oomph::FSISolidTractionElement&lt; ELEMENT, DIM &gt;::Normal_points_into_fluid</a>, and <a class="el" href="solid__traction__elements_8h_source.html#l00286">oomph::SolidTractionElement&lt; ELEMENT &gt;::traction()</a>.</p>
+<p class="reference">References <a class="el" href="fsi_8cc_source.html#l00162">oomph::FSIWallElement::fluid_load_vector()</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, <a class="el" href="solid__traction__elements_8h_source.html#l00793">oomph::FSISolidTractionElement&lt; ELEMENT, DIM &gt;::Normal_points_into_fluid</a>, and <a class="el" href="solid__traction__elements_8h_source.html#l00282">oomph::SolidTractionElement&lt; ELEMENT &gt;::traction()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="solid__traction__elements_8h_source.html#l00890">oomph::FSISolidTractionElement&lt; ELEMENT, DIM &gt;::output()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="solid__traction__elements_8h_source.html#l00886">oomph::FSISolidTractionElement&lt; ELEMENT, DIM &gt;::output()</a>.</p>
 
 </div>
 </div>
@@ -1957,7 +1957,7 @@ template&lt;class ELEMENT , unsigned DIM&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1GeneralisedElement.html#a0c6037a870597b35dcf1c780710b9a56">oomph::GeneralisedElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="solid__traction__elements_8h_source.html#l00971">971</a> of file <a class="el" href="solid__traction__elements_8h_source.html">solid_traction_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solid__traction__elements_8h_source.html#l00967">967</a> of file <a class="el" href="solid__traction__elements_8h_source.html">solid_traction_elements.h</a>.</p>
 
 </div>
 </div>
@@ -2001,9 +2001,9 @@ template&lt;class ELEMENT , unsigned DIM&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1SolidTractionElement.html#a13a5bbe49c2d7ad5079e3354a34f248e">oomph::SolidTractionElement&lt; ELEMENT &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="solid__traction__elements_8h_source.html#l00890">890</a> of file <a class="el" href="solid__traction__elements_8h_source.html">solid_traction_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solid__traction__elements_8h_source.html#l00886">886</a> of file <a class="el" href="solid__traction__elements_8h_source.html">solid_traction_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l02499">oomph::FiniteElement::dim()</a>, <a class="el" href="solid__traction__elements_8h_source.html#l00864">oomph::FSISolidTractionElement&lt; ELEMENT, DIM &gt;::get_traction()</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="elements_8h_source.html#l01925">oomph::FiniteElement::integral_pt()</a>, <a class="el" href="elements_8cc_source.html#l03881">oomph::FiniteElement::interpolated_x()</a>, <a class="el" href="elements_8h_source.html#l01158">oomph::GeneralisedElement::is_halo()</a>, <a class="el" href="classoomph_1_1Integral.html#a1a2122f99a87c18649bafdd9ed739758">oomph::Integral::knot()</a>, <a class="el" href="classoomph_1_1Integral.html#a1a270de9d99a1fcf1d25a6c1017f65fa">oomph::Integral::nweight()</a>, <a class="el" href="elements_8cc_source.html#l05876">oomph::FaceElement::outer_unit_normal()</a>, <a class="el" href="cfortran_8h_source.html#l00572">s</a>, and <a class="el" href="solid__traction__elements_8h_source.html#l00286">oomph::SolidTractionElement&lt; ELEMENT &gt;::traction()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l02495">oomph::FiniteElement::dim()</a>, <a class="el" href="solid__traction__elements_8h_source.html#l00860">oomph::FSISolidTractionElement&lt; ELEMENT, DIM &gt;::get_traction()</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="elements_8h_source.html#l01921">oomph::FiniteElement::integral_pt()</a>, <a class="el" href="elements_8cc_source.html#l03877">oomph::FiniteElement::interpolated_x()</a>, <a class="el" href="elements_8h_source.html#l01154">oomph::GeneralisedElement::is_halo()</a>, <a class="el" href="classoomph_1_1Integral.html#a1a2122f99a87c18649bafdd9ed739758">oomph::Integral::knot()</a>, <a class="el" href="classoomph_1_1Integral.html#a1a270de9d99a1fcf1d25a6c1017f65fa">oomph::Integral::nweight()</a>, <a class="el" href="elements_8cc_source.html#l05872">oomph::FaceElement::outer_unit_normal()</a>, <a class="el" href="cfortran_8h_source.html#l00568">s</a>, and <a class="el" href="solid__traction__elements_8h_source.html#l00282">oomph::SolidTractionElement&lt; ELEMENT &gt;::traction()</a>.</p>
 
 </div>
 </div>
@@ -2034,9 +2034,9 @@ template&lt;class ELEMENT , unsigned DIM&gt; </div>
 
 <p>Set the normal computed by underlying <a class="el" href="classoomph_1_1FaceElement.html">FaceElement</a> to point into the fluid. </p>
 
-<p class="definition">Definition at line <a class="el" href="solid__traction__elements_8h_source.html#l00829">829</a> of file <a class="el" href="solid__traction__elements_8h_source.html">solid_traction_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solid__traction__elements_8h_source.html#l00825">825</a> of file <a class="el" href="solid__traction__elements_8h_source.html">solid_traction_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="solid__traction__elements_8h_source.html#l00797">oomph::FSISolidTractionElement&lt; ELEMENT, DIM &gt;::Normal_points_into_fluid</a>.</p>
+<p class="reference">References <a class="el" href="solid__traction__elements_8h_source.html#l00793">oomph::FSISolidTractionElement&lt; ELEMENT, DIM &gt;::Normal_points_into_fluid</a>.</p>
 
 </div>
 </div>
@@ -2067,9 +2067,9 @@ template&lt;class ELEMENT , unsigned DIM&gt; </div>
 
 <p>Set the normal computed by underlying <a class="el" href="classoomph_1_1FaceElement.html">FaceElement</a> to point out of the fluid. </p>
 
-<p class="definition">Definition at line <a class="el" href="solid__traction__elements_8h_source.html#l00833">833</a> of file <a class="el" href="solid__traction__elements_8h_source.html">solid_traction_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solid__traction__elements_8h_source.html#l00829">829</a> of file <a class="el" href="solid__traction__elements_8h_source.html">solid_traction_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="solid__traction__elements_8h_source.html#l00797">oomph::FSISolidTractionElement&lt; ELEMENT, DIM &gt;::Normal_points_into_fluid</a>.</p>
+<p class="reference">References <a class="el" href="solid__traction__elements_8h_source.html#l00793">oomph::FSISolidTractionElement&lt; ELEMENT, DIM &gt;::Normal_points_into_fluid</a>.</p>
 
 </div>
 </div>
@@ -2098,9 +2098,9 @@ template&lt;class ELEMENT , unsigned DIM&gt; </div>
 
 <p>Boolean flag to indicate whether the normal is directed into the fluid. </p>
 
-<p class="definition">Definition at line <a class="el" href="solid__traction__elements_8h_source.html#l00797">797</a> of file <a class="el" href="solid__traction__elements_8h_source.html">solid_traction_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solid__traction__elements_8h_source.html#l00793">793</a> of file <a class="el" href="solid__traction__elements_8h_source.html">solid_traction_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="solid__traction__elements_8h_source.html#l00864">oomph::FSISolidTractionElement&lt; ELEMENT, DIM &gt;::get_traction()</a>, <a class="el" href="solid__traction__elements_8h_source.html#l00829">oomph::FSISolidTractionElement&lt; ELEMENT, DIM &gt;::set_normal_pointing_into_fluid()</a>, and <a class="el" href="solid__traction__elements_8h_source.html#l00833">oomph::FSISolidTractionElement&lt; ELEMENT, DIM &gt;::set_normal_pointing_out_of_fluid()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="solid__traction__elements_8h_source.html#l00860">oomph::FSISolidTractionElement&lt; ELEMENT, DIM &gt;::get_traction()</a>, <a class="el" href="solid__traction__elements_8h_source.html#l00825">oomph::FSISolidTractionElement&lt; ELEMENT, DIM &gt;::set_normal_pointing_into_fluid()</a>, and <a class="el" href="solid__traction__elements_8h_source.html#l00829">oomph::FSISolidTractionElement&lt; ELEMENT, DIM &gt;::set_normal_pointing_out_of_fluid()</a>.</p>
 
 </div>
 </div>
@@ -2128,7 +2128,7 @@ template&lt;class ELEMENT , unsigned DIM&gt; </div>
 
 <p>Broken overloaded reference to the traction function pointer. It doesn't make sense to specify an external traction. </p>
 
-<p class="definition">Definition at line <a class="el" href="solid__traction__elements_8h_source.html#l00955">955</a> of file <a class="el" href="solid__traction__elements_8h_source.html">solid_traction_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solid__traction__elements_8h_source.html#l00951">951</a> of file <a class="el" href="solid__traction__elements_8h_source.html">solid_traction_elements.h</a>.</p>
 
 </div>
 </div>
@@ -2163,7 +2163,7 @@ template&lt;class ELEMENT , unsigned DIM&gt; </div>
     <footer>
       <div class="container">
         <div class="text-muted" style="float:right;">Generated by <a href="http://www.doxygen.org/index.html">
-          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Tue Jul 6 2021 22:57:24
+          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Fri Jul 9 2021 20:52:34
         </div>
       </div>
     </footer>

@@ -195,7 +195,7 @@ Private Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class to keep track of discrete/continous time. It is essential to have a single <a class="el" href="classoomph_1_1Time.html" title="Class to keep track of discrete/continous time. It is essential to have a single Time object when usi...">Time</a> object when using multiple time-stepping schemes; e.g., in fluid-structure interaction problems, it is common to use different schemes for the fluid and solid domains. Storage is allocated for the current value of the (continuous) time and a limited history of previous timesteps. The number of previous timesteps must be equal to the number required by the "highest order" scheme. </p>
 
-<p class="definition">Definition at line <a class="el" href="timesteppers_8h_source.html#l00067">67</a> of file <a class="el" href="timesteppers_8h_source.html">timesteppers.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="timesteppers_8h_source.html#l00063">63</a> of file <a class="el" href="timesteppers_8h_source.html">timesteppers.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aed3c6b92973210d2347fc5be372e41a8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aed3c6b92973210d2347fc5be372e41a8">&#9670;&nbsp;</a></span>Time() <span class="overload">[1/3]</span></h2>
@@ -222,7 +222,7 @@ Private Attributes</h2></td></tr>
 
 <p>Constructor: Do not allocate any storage for previous timesteps, but set the initial value of the time to zero. </p>
 
-<p class="definition">Definition at line <a class="el" href="timesteppers_8h_source.html#l00081">81</a> of file <a class="el" href="timesteppers_8h_source.html">timesteppers.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="timesteppers_8h_source.html#l00077">77</a> of file <a class="el" href="timesteppers_8h_source.html">timesteppers.h</a>.</p>
 
 </div>
 </div>
@@ -252,9 +252,9 @@ Private Attributes</h2></td></tr>
 
 <p>Constructor: Pass the number of timesteps to be stored and set the initial value of time to zero. </p>
 
-<p class="definition">Definition at line <a class="el" href="timesteppers_8h_source.html#l00085">85</a> of file <a class="el" href="timesteppers_8h_source.html">timesteppers.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="timesteppers_8h_source.html#l00081">81</a> of file <a class="el" href="timesteppers_8h_source.html">timesteppers.h</a>.</p>
 
-<p class="reference">References <a class="el" href="timesteppers_8h_source.html#l00075">Dt</a>, and <a class="el" href="timesteppers_8h_source.html#l00133">ndt()</a>.</p>
+<p class="reference">References <a class="el" href="timesteppers_8h_source.html#l00071">Dt</a>, and <a class="el" href="timesteppers_8h_source.html#l00129">ndt()</a>.</p>
 
 </div>
 </div>
@@ -284,9 +284,9 @@ Private Attributes</h2></td></tr>
 
 <p>Broken copy constructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="timesteppers_8h_source.html#l00093">93</a> of file <a class="el" href="timesteppers_8h_source.html">timesteppers.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="timesteppers_8h_source.html#l00089">89</a> of file <a class="el" href="timesteppers_8h_source.html">timesteppers.h</a>.</p>
 
-<p class="reference">References <a class="el" href="oomph__utilities_8cc_source.html#l00218">oomph::BrokenCopy::broken_copy()</a>.</p>
+<p class="reference">References <a class="el" href="oomph__utilities_8cc_source.html#l00214">oomph::BrokenCopy::broken_copy()</a>.</p>
 
 </div>
 </div>
@@ -315,7 +315,7 @@ Private Attributes</h2></td></tr>
 
 <p>Destructor: empty. </p>
 
-<p class="definition">Definition at line <a class="el" href="timesteppers_8h_source.html#l00127">127</a> of file <a class="el" href="timesteppers_8h_source.html">timesteppers.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="timesteppers_8h_source.html#l00123">123</a> of file <a class="el" href="timesteppers_8h_source.html">timesteppers.h</a>.</p>
 
 </div>
 </div>
@@ -345,11 +345,11 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Return the value of the t-th stored timestep (t=0: present; t&gt;0: previous). </p>
 
-<p class="definition">Definition at line <a class="el" href="timesteppers_8h_source.html#l00137">137</a> of file <a class="el" href="timesteppers_8h_source.html">timesteppers.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="timesteppers_8h_source.html#l00133">133</a> of file <a class="el" href="timesteppers_8h_source.html">timesteppers.h</a>.</p>
 
-<p class="reference">References <a class="el" href="timesteppers_8h_source.html#l00075">Dt</a>, and <a class="el" href="cfortran_8h_source.html#l00572">t</a>.</p>
+<p class="reference">References <a class="el" href="timesteppers_8h_source.html#l00071">Dt</a>, and <a class="el" href="cfortran_8h_source.html#l00568">t</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="implicit__midpoint__rule_8cc_source.html#l00208">oomph::IMRByBDF::actions_after_timestep()</a>, <a class="el" href="implicit__midpoint__rule_8cc_source.html#l00144">oomph::IMRByBDF::actions_before_timestep()</a>, <a class="el" href="problem_8cc_source.html#l10969">oomph::Problem::adaptive_unsteady_newton_solve()</a>, <a class="el" href="problem_8cc_source.html#l11536">oomph::Problem::calculate_predictions()</a>, <a class="el" href="problem_8cc_source.html#l11746">oomph::Problem::copy()</a>, <a class="el" href="problem_8cc_source.html#l11916">oomph::Problem::dump()</a>, <a class="el" href="problem_8cc_source.html#l10821">oomph::Problem::explicit_timestep()</a>, <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html#l01222">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::extrapolated_strain_rate()</a>, <a class="el" href="generalised__newtonian__axisym__navier__stokes__elements_8cc_source.html#l00966">oomph::GeneralisedNewtonianAxisymmetricNavierStokesEquations::extrapolated_strain_rate()</a>, <a class="el" href="pseudo__buckling__ring_8h_source.html#l00443">oomph::PseudoBucklingRing::position()</a>, <a class="el" href="trapezoid__rule_8h_source.html#l00099">oomph::TR::set_error_weights()</a>, <a class="el" href="timesteppers_8h_source.html#l01097">oomph::NewmarkBDF&lt; NSTEPS &gt;::set_newmark_veloc_weights()</a>, <a class="el" href="trapezoid__rule_8h_source.html#l00107">oomph::TR::set_predictor_weights()</a>, <a class="el" href="trapezoid__rule_8h_source.html#l00091">oomph::TR::set_weights()</a>, <a class="el" href="implicit__midpoint__rule_8h_source.html#l00179">oomph::IMR::set_weights()</a>, <a class="el" href="implicit__midpoint__rule_8h_source.html#l00227">oomph::IMRByBDF::set_weights()</a>, <a class="el" href="trapezoid__rule_8h_source.html#l00200">oomph::TR::shift_time_values()</a>, <a class="el" href="explicit__timesteppers_8cc_source.html#l00446">oomph::EBDF3::timestep()</a>, <a class="el" href="problem_8cc_source.html#l10863">oomph::Problem::unsteady_newton_solve()</a>, and <a class="el" href="segregated__fsi__solver_8cc_source.html#l01086">oomph::SegregatableFSIProblem::unsteady_segregated_solve()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="implicit__midpoint__rule_8cc_source.html#l00204">oomph::IMRByBDF::actions_after_timestep()</a>, <a class="el" href="implicit__midpoint__rule_8cc_source.html#l00140">oomph::IMRByBDF::actions_before_timestep()</a>, <a class="el" href="problem_8cc_source.html#l10965">oomph::Problem::adaptive_unsteady_newton_solve()</a>, <a class="el" href="problem_8cc_source.html#l11532">oomph::Problem::calculate_predictions()</a>, <a class="el" href="problem_8cc_source.html#l11742">oomph::Problem::copy()</a>, <a class="el" href="problem_8cc_source.html#l11912">oomph::Problem::dump()</a>, <a class="el" href="problem_8cc_source.html#l10817">oomph::Problem::explicit_timestep()</a>, <a class="el" href="generalised__newtonian__navier__stokes__elements_8cc_source.html#l01218">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::extrapolated_strain_rate()</a>, <a class="el" href="generalised__newtonian__axisym__navier__stokes__elements_8cc_source.html#l00962">oomph::GeneralisedNewtonianAxisymmetricNavierStokesEquations::extrapolated_strain_rate()</a>, <a class="el" href="pseudo__buckling__ring_8h_source.html#l00439">oomph::PseudoBucklingRing::position()</a>, <a class="el" href="trapezoid__rule_8h_source.html#l00095">oomph::TR::set_error_weights()</a>, <a class="el" href="timesteppers_8h_source.html#l01093">oomph::NewmarkBDF&lt; NSTEPS &gt;::set_newmark_veloc_weights()</a>, <a class="el" href="trapezoid__rule_8h_source.html#l00103">oomph::TR::set_predictor_weights()</a>, <a class="el" href="trapezoid__rule_8h_source.html#l00087">oomph::TR::set_weights()</a>, <a class="el" href="implicit__midpoint__rule_8h_source.html#l00175">oomph::IMR::set_weights()</a>, <a class="el" href="implicit__midpoint__rule_8h_source.html#l00223">oomph::IMRByBDF::set_weights()</a>, <a class="el" href="trapezoid__rule_8h_source.html#l00196">oomph::TR::shift_time_values()</a>, <a class="el" href="explicit__timesteppers_8cc_source.html#l00442">oomph::EBDF3::timestep()</a>, <a class="el" href="problem_8cc_source.html#l10859">oomph::Problem::unsteady_newton_solve()</a>, and <a class="el" href="segregated__fsi__solver_8cc_source.html#l01082">oomph::SegregatableFSIProblem::unsteady_segregated_solve()</a>.</p>
 
 </div>
 </div>
@@ -378,9 +378,9 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Return the value of the t-th stored timestep (t=0: present; t&gt;0: previous), const version. </p>
 
-<p class="definition">Definition at line <a class="el" href="timesteppers_8h_source.html#l00141">141</a> of file <a class="el" href="timesteppers_8h_source.html">timesteppers.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="timesteppers_8h_source.html#l00137">137</a> of file <a class="el" href="timesteppers_8h_source.html">timesteppers.h</a>.</p>
 
-<p class="reference">References <a class="el" href="timesteppers_8h_source.html#l00075">Dt</a>, and <a class="el" href="cfortran_8h_source.html#l00572">t</a>.</p>
+<p class="reference">References <a class="el" href="timesteppers_8h_source.html#l00071">Dt</a>, and <a class="el" href="cfortran_8h_source.html#l00568">t</a>.</p>
 
 </div>
 </div>
@@ -410,11 +410,11 @@ Private Attributes</h2></td></tr>
 
 <p>Set all timesteps to the same value, dt. </p>
 
-<p class="definition">Definition at line <a class="el" href="timesteppers_8h_source.html#l00109">109</a> of file <a class="el" href="timesteppers_8h_source.html">timesteppers.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="timesteppers_8h_source.html#l00105">105</a> of file <a class="el" href="timesteppers_8h_source.html">timesteppers.h</a>.</p>
 
-<p class="reference">References <a class="el" href="timesteppers_8h_source.html#l00075">Dt</a>, and <a class="el" href="timesteppers_8h_source.html#l00133">ndt()</a>.</p>
+<p class="reference">References <a class="el" href="timesteppers_8h_source.html#l00071">Dt</a>, and <a class="el" href="timesteppers_8h_source.html#l00129">ndt()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="problem_8cc_source.html#l13100">oomph::Problem::initialise_dt()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="problem_8cc_source.html#l13096">oomph::Problem::initialise_dt()</a>.</p>
 
 </div>
 </div>
@@ -445,9 +445,9 @@ Private Attributes</h2></td></tr>
 <p>Set the value of the timesteps to be equal to the values passed in a vector <br  />
  </p>
 
-<p class="definition">Definition at line <a class="el" href="timesteppers_8h_source.html#l00117">117</a> of file <a class="el" href="timesteppers_8h_source.html">timesteppers.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="timesteppers_8h_source.html#l00113">113</a> of file <a class="el" href="timesteppers_8h_source.html">timesteppers.h</a>.</p>
 
-<p class="reference">References <a class="el" href="timesteppers_8h_source.html#l00075">Dt</a>, and <a class="el" href="cfortran_8h_source.html#l00607">i</a>.</p>
+<p class="reference">References <a class="el" href="timesteppers_8h_source.html#l00071">Dt</a>, and <a class="el" href="cfortran_8h_source.html#l00603">i</a>.</p>
 
 </div>
 </div>
@@ -476,11 +476,11 @@ Private Attributes</h2></td></tr>
 
 <p>Return the number of timesteps stored. </p>
 
-<p class="definition">Definition at line <a class="el" href="timesteppers_8h_source.html#l00133">133</a> of file <a class="el" href="timesteppers_8h_source.html">timesteppers.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="timesteppers_8h_source.html#l00129">129</a> of file <a class="el" href="timesteppers_8h_source.html">timesteppers.h</a>.</p>
 
-<p class="reference">References <a class="el" href="timesteppers_8h_source.html#l00075">Dt</a>.</p>
+<p class="reference">References <a class="el" href="timesteppers_8h_source.html#l00071">Dt</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="problem_8cc_source.html#l01535">oomph::Problem::add_time_stepper_pt()</a>, <a class="el" href="problem_8cc_source.html#l11746">oomph::Problem::copy()</a>, <a class="el" href="problem_8cc_source.html#l11916">oomph::Problem::dump()</a>, <a class="el" href="timesteppers_8h_source.html#l00109">initialise_dt()</a>, <a class="el" href="timesteppers_8h_source.html#l00085">Time()</a>, and <a class="el" href="timesteppers_8h_source.html#l00145">time()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="problem_8cc_source.html#l01531">oomph::Problem::add_time_stepper_pt()</a>, <a class="el" href="problem_8cc_source.html#l11742">oomph::Problem::copy()</a>, <a class="el" href="problem_8cc_source.html#l11912">oomph::Problem::dump()</a>, <a class="el" href="timesteppers_8h_source.html#l00105">initialise_dt()</a>, <a class="el" href="timesteppers_8h_source.html#l00081">Time()</a>, and <a class="el" href="timesteppers_8h_source.html#l00141">time()</a>.</p>
 
 </div>
 </div>
@@ -510,9 +510,9 @@ Private Attributes</h2></td></tr>
 
 <p>Broken assignment operator. </p>
 
-<p class="definition">Definition at line <a class="el" href="timesteppers_8h_source.html#l00099">99</a> of file <a class="el" href="timesteppers_8h_source.html">timesteppers.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="timesteppers_8h_source.html#l00095">95</a> of file <a class="el" href="timesteppers_8h_source.html">timesteppers.h</a>.</p>
 
-<p class="reference">References <a class="el" href="oomph__utilities_8cc_source.html#l00201">oomph::BrokenCopy::broken_assign()</a>.</p>
+<p class="reference">References <a class="el" href="oomph__utilities_8cc_source.html#l00197">oomph::BrokenCopy::broken_assign()</a>.</p>
 
 </div>
 </div>
@@ -542,11 +542,11 @@ Private Attributes</h2></td></tr>
 
 <p>Resize the vector holding the number of previous timesteps and initialise the new values to zero. </p>
 
-<p class="definition">Definition at line <a class="el" href="timesteppers_8h_source.html#l00106">106</a> of file <a class="el" href="timesteppers_8h_source.html">timesteppers.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="timesteppers_8h_source.html#l00102">102</a> of file <a class="el" href="timesteppers_8h_source.html">timesteppers.h</a>.</p>
 
-<p class="reference">References <a class="el" href="timesteppers_8h_source.html#l00075">Dt</a>.</p>
+<p class="reference">References <a class="el" href="timesteppers_8h_source.html#l00071">Dt</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="problem_8cc_source.html#l01535">oomph::Problem::add_time_stepper_pt()</a>, <a class="el" href="problem_8cc_source.html#l11746">oomph::Problem::copy()</a>, and <a class="el" href="problem_8cc_source.html#l12140">oomph::Problem::read()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="problem_8cc_source.html#l01531">oomph::Problem::add_time_stepper_pt()</a>, <a class="el" href="problem_8cc_source.html#l11742">oomph::Problem::copy()</a>, and <a class="el" href="problem_8cc_source.html#l12136">oomph::Problem::read()</a>.</p>
 
 </div>
 </div>
@@ -575,11 +575,11 @@ Private Attributes</h2></td></tr>
 
 <p>Update all stored values of dt by shifting each value along the array. This function must be called before starting to solve at a new time level. </p>
 
-<p class="definition">Definition at line <a class="el" href="timesteppers_8h_source.html#l00166">166</a> of file <a class="el" href="timesteppers_8h_source.html">timesteppers.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="timesteppers_8h_source.html#l00162">162</a> of file <a class="el" href="timesteppers_8h_source.html">timesteppers.h</a>.</p>
 
-<p class="reference">References <a class="el" href="timesteppers_8h_source.html#l00075">Dt</a>, and <a class="el" href="cfortran_8h_source.html#l00607">i</a>.</p>
+<p class="reference">References <a class="el" href="timesteppers_8h_source.html#l00071">Dt</a>, and <a class="el" href="cfortran_8h_source.html#l00603">i</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="problem_8cc_source.html#l11513">oomph::Problem::shift_time_values()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="problem_8cc_source.html#l11509">oomph::Problem::shift_time_values()</a>.</p>
 
 </div>
 </div>
@@ -608,11 +608,11 @@ Private Attributes</h2></td></tr>
 
 <p>Return the current value of the continuous time. </p>
 
-<p class="definition">Definition at line <a class="el" href="timesteppers_8h_source.html#l00130">130</a> of file <a class="el" href="timesteppers_8h_source.html">timesteppers.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="timesteppers_8h_source.html#l00126">126</a> of file <a class="el" href="timesteppers_8h_source.html">timesteppers.h</a>.</p>
 
-<p class="reference">References <a class="el" href="timesteppers_8h_source.html#l00072">Continuous_time</a>.</p>
+<p class="reference">References <a class="el" href="timesteppers_8h_source.html#l00068">Continuous_time</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pseudo__buckling__ring_8h_source.html#l00409">oomph::PseudoBucklingRing::accel()</a>, <a class="el" href="implicit__midpoint__rule_8cc_source.html#l00208">oomph::IMRByBDF::actions_after_timestep()</a>, <a class="el" href="implicit__midpoint__rule_8cc_source.html#l00144">oomph::IMRByBDF::actions_before_timestep()</a>, <a class="el" href="problem_8cc_source.html#l10969">oomph::Problem::adaptive_unsteady_newton_solve()</a>, <a class="el" href="periodic__orbit__handler_8h_source.html#l00118">oomph::PeriodicOrbitTimeDiscretisation::assign_initial_data_values()</a>, <a class="el" href="time__harmonic__linear__elasticity__elements_8h_source.html#l00200">oomph::TimeHarmonicLinearElasticityEquationsBase&lt; DIM &gt;::body_force()</a>, <a class="el" href="linear__elasticity__elements_8h_source.html#l00243">oomph::LinearElasticityEquationsBase&lt; DIM &gt;::body_force()</a>, <a class="el" href="solid__elements_8h_source.html#l00249">oomph::PVDEquationsBase&lt; DIM &gt;::body_force()</a>, <a class="el" href="timesteppers_8h_source.html#l00406">oomph::TimeStepper::check_predicted_values_up_to_date()</a>, <a class="el" href="problem_8cc_source.html#l11746">oomph::Problem::copy()</a>, <a class="el" href="problem_8cc_source.html#l11916">oomph::Problem::dump()</a>, <a class="el" href="axisym__linear__elasticity__elements_8cc_source.html#l00170">oomph::AxisymmetricLinearElasticityEquations::fill_in_generic_contribution_to_residuals_axisymmetric_linear_elasticity()</a>, <a class="el" href="axisym__poroelasticity__elements_8cc_source.html#l00533">oomph::AxisymmetricPoroelasticityEquations::fill_in_generic_residual_contribution()</a>, <a class="el" href="refineable__axisym__navier__stokes__elements_8cc_source.html#l00044">oomph::RefineableAxisymmetricNavierStokesEquations::fill_in_generic_residual_contribution_axi_nst()</a>, <a class="el" href="generalised__newtonian__refineable__axisym__navier__stokes__elements_8cc_source.html#l00044">oomph::RefineableGeneralisedNewtonianAxisymmetricNavierStokesEquations::fill_in_generic_residual_contribution_axi_nst()</a>, <a class="el" href="axisym__navier__stokes__elements_8cc_source.html#l00910">oomph::AxisymmetricNavierStokesEquations::fill_in_generic_residual_contribution_axi_nst()</a>, <a class="el" href="generalised__newtonian__axisym__navier__stokes__elements_8cc_source.html#l01161">oomph::GeneralisedNewtonianAxisymmetricNavierStokesEquations::fill_in_generic_residual_contribution_axi_nst()</a>, <a class="el" href="periodic__orbit__handler_8cc_source.html#l00082">oomph::PeriodicOrbitEquations::fill_in_generic_residual_contribution_orbit()</a>, <a class="el" href="spherical__navier__stokes__elements_8cc_source.html#l01572">oomph::SphericalNavierStokesEquations::fill_in_generic_residual_contribution_spherical_nst()</a>, <a class="el" href="refineable__spherical__navier__stokes__elements_8cc_source.html#l00044">oomph::RefineableSphericalNavierStokesEquations::fill_in_generic_residual_contribution_spherical_nst()</a>, <a class="el" href="refineable__axisym__navier__stokes__elements_8cc_source.html#l00941">oomph::RefineableAxisymmetricNavierStokesEquations::get_dresidual_dnodal_coordinates()</a>, <a class="el" href="generalised__newtonian__refineable__axisym__navier__stokes__elements_8cc_source.html#l01479">oomph::RefineableGeneralisedNewtonianAxisymmetricNavierStokesEquations::get_dresidual_dnodal_coordinates()</a>, <a class="el" href="axisym__navier__stokes__elements_8cc_source.html#l01532">oomph::AxisymmetricNavierStokesEquations::get_dresidual_dnodal_coordinates()</a>, <a class="el" href="generalised__newtonian__axisym__navier__stokes__elements_8cc_source.html#l02364">oomph::GeneralisedNewtonianAxisymmetricNavierStokesEquations::get_dresidual_dnodal_coordinates()</a>, <a class="el" href="advection__diffusion__reaction__elements_8h_source.html#l00338">oomph::AdvectionDiffusionReactionEquations&lt; NREAGENT, DIM &gt;::get_wind_adv_diff_react()</a>, <a class="el" href="periodic__orbit__handler_8cc_source.html#l00035">oomph::PeriodicOrbitEquations::orbit_output()</a>, <a class="el" href="axisym__linear__elasticity__traction__elements_8h_source.html#l00203">oomph::AxisymmetricLinearElasticityTractionElement&lt; ELEMENT &gt;::output()</a>, <a class="el" href="axisym__poroelasticity__face__elements_8h_source.html#l00259">oomph::AxisymmetricPoroelasticityTractionElement&lt; POROELASTICITY_BULK_ELEMENT &gt;::output()</a>, <a class="el" href="axisym__fluid__traction__elements_8h_source.html#l00320">oomph::AxisymmetricNavierStokesTractionElement&lt; ELEMENT &gt;::output()</a>, <a class="el" href="axisym__poroelasticity__face__elements_8h_source.html#l01071">oomph::FSILinearisedAxisymPoroelasticTractionElement&lt; POROELASTICITY_BULK_ELEMENT, NAVIER_STOKES_BULK_ELEMENT &gt;::output()</a>, <a class="el" href="pseudo__buckling__ring_8h_source.html#l00339">oomph::PseudoBucklingRing::position()</a>, <a class="el" href="problem_8cc_source.html#l12140">oomph::Problem::read()</a>, <a class="el" href="axisym__fluid__traction__elements_8h_source.html#l00205">oomph::AxisymmetricNavierStokesTractionElement&lt; ELEMENT &gt;::scalar_value_paraview()</a>, <a class="el" href="elastic__problems_8h_source.html#l00374">oomph::SolidICProblem::set_newmark_initial_condition_consistently()</a>, <a class="el" href="elastic__problems_8h_source.html#l00230">oomph::SolidICProblem::set_newmark_initial_condition_directly()</a>, <a class="el" href="elastic__problems_8cc_source.html#l00542">oomph::SolidICProblem::set_static_initial_condition()</a>, <a class="el" href="periodic__orbit__handler_8h_source.html#l00229">oomph::PeriodicOrbitEquations::time()</a>, <a class="el" href="timesteppers_8h_source.html#l00324">oomph::TimeStepper::time()</a>, <a class="el" href="problem_8cc_source.html#l11417">oomph::Problem::time()</a>, <a class="el" href="problem_8cc_source.html#l10863">oomph::Problem::unsteady_newton_solve()</a>, <a class="el" href="segregated__fsi__solver_8cc_source.html#l01086">oomph::SegregatableFSIProblem::unsteady_segregated_solve()</a>, and <a class="el" href="pseudo__buckling__ring_8h_source.html#l00375">oomph::PseudoBucklingRing::veloc()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pseudo__buckling__ring_8h_source.html#l00405">oomph::PseudoBucklingRing::accel()</a>, <a class="el" href="implicit__midpoint__rule_8cc_source.html#l00204">oomph::IMRByBDF::actions_after_timestep()</a>, <a class="el" href="implicit__midpoint__rule_8cc_source.html#l00140">oomph::IMRByBDF::actions_before_timestep()</a>, <a class="el" href="problem_8cc_source.html#l10965">oomph::Problem::adaptive_unsteady_newton_solve()</a>, <a class="el" href="periodic__orbit__handler_8h_source.html#l00114">oomph::PeriodicOrbitTimeDiscretisation::assign_initial_data_values()</a>, <a class="el" href="time__harmonic__linear__elasticity__elements_8h_source.html#l00196">oomph::TimeHarmonicLinearElasticityEquationsBase&lt; DIM &gt;::body_force()</a>, <a class="el" href="linear__elasticity__elements_8h_source.html#l00239">oomph::LinearElasticityEquationsBase&lt; DIM &gt;::body_force()</a>, <a class="el" href="solid__elements_8h_source.html#l00245">oomph::PVDEquationsBase&lt; DIM &gt;::body_force()</a>, <a class="el" href="timesteppers_8h_source.html#l00402">oomph::TimeStepper::check_predicted_values_up_to_date()</a>, <a class="el" href="problem_8cc_source.html#l11742">oomph::Problem::copy()</a>, <a class="el" href="problem_8cc_source.html#l11912">oomph::Problem::dump()</a>, <a class="el" href="axisym__linear__elasticity__elements_8cc_source.html#l00166">oomph::AxisymmetricLinearElasticityEquations::fill_in_generic_contribution_to_residuals_axisymmetric_linear_elasticity()</a>, <a class="el" href="axisym__poroelasticity__elements_8cc_source.html#l00529">oomph::AxisymmetricPoroelasticityEquations::fill_in_generic_residual_contribution()</a>, <a class="el" href="refineable__axisym__navier__stokes__elements_8cc_source.html#l00040">oomph::RefineableAxisymmetricNavierStokesEquations::fill_in_generic_residual_contribution_axi_nst()</a>, <a class="el" href="generalised__newtonian__refineable__axisym__navier__stokes__elements_8cc_source.html#l00040">oomph::RefineableGeneralisedNewtonianAxisymmetricNavierStokesEquations::fill_in_generic_residual_contribution_axi_nst()</a>, <a class="el" href="axisym__navier__stokes__elements_8cc_source.html#l00906">oomph::AxisymmetricNavierStokesEquations::fill_in_generic_residual_contribution_axi_nst()</a>, <a class="el" href="generalised__newtonian__axisym__navier__stokes__elements_8cc_source.html#l01157">oomph::GeneralisedNewtonianAxisymmetricNavierStokesEquations::fill_in_generic_residual_contribution_axi_nst()</a>, <a class="el" href="periodic__orbit__handler_8cc_source.html#l00078">oomph::PeriodicOrbitEquations::fill_in_generic_residual_contribution_orbit()</a>, <a class="el" href="spherical__navier__stokes__elements_8cc_source.html#l01568">oomph::SphericalNavierStokesEquations::fill_in_generic_residual_contribution_spherical_nst()</a>, <a class="el" href="refineable__spherical__navier__stokes__elements_8cc_source.html#l00040">oomph::RefineableSphericalNavierStokesEquations::fill_in_generic_residual_contribution_spherical_nst()</a>, <a class="el" href="refineable__axisym__navier__stokes__elements_8cc_source.html#l00937">oomph::RefineableAxisymmetricNavierStokesEquations::get_dresidual_dnodal_coordinates()</a>, <a class="el" href="generalised__newtonian__refineable__axisym__navier__stokes__elements_8cc_source.html#l01475">oomph::RefineableGeneralisedNewtonianAxisymmetricNavierStokesEquations::get_dresidual_dnodal_coordinates()</a>, <a class="el" href="axisym__navier__stokes__elements_8cc_source.html#l01528">oomph::AxisymmetricNavierStokesEquations::get_dresidual_dnodal_coordinates()</a>, <a class="el" href="generalised__newtonian__axisym__navier__stokes__elements_8cc_source.html#l02360">oomph::GeneralisedNewtonianAxisymmetricNavierStokesEquations::get_dresidual_dnodal_coordinates()</a>, <a class="el" href="advection__diffusion__reaction__elements_8h_source.html#l00334">oomph::AdvectionDiffusionReactionEquations&lt; NREAGENT, DIM &gt;::get_wind_adv_diff_react()</a>, <a class="el" href="periodic__orbit__handler_8cc_source.html#l00031">oomph::PeriodicOrbitEquations::orbit_output()</a>, <a class="el" href="axisym__linear__elasticity__traction__elements_8h_source.html#l00199">oomph::AxisymmetricLinearElasticityTractionElement&lt; ELEMENT &gt;::output()</a>, <a class="el" href="axisym__poroelasticity__face__elements_8h_source.html#l00255">oomph::AxisymmetricPoroelasticityTractionElement&lt; POROELASTICITY_BULK_ELEMENT &gt;::output()</a>, <a class="el" href="axisym__fluid__traction__elements_8h_source.html#l00316">oomph::AxisymmetricNavierStokesTractionElement&lt; ELEMENT &gt;::output()</a>, <a class="el" href="axisym__poroelasticity__face__elements_8h_source.html#l01067">oomph::FSILinearisedAxisymPoroelasticTractionElement&lt; POROELASTICITY_BULK_ELEMENT, NAVIER_STOKES_BULK_ELEMENT &gt;::output()</a>, <a class="el" href="pseudo__buckling__ring_8h_source.html#l00335">oomph::PseudoBucklingRing::position()</a>, <a class="el" href="problem_8cc_source.html#l12136">oomph::Problem::read()</a>, <a class="el" href="axisym__fluid__traction__elements_8h_source.html#l00201">oomph::AxisymmetricNavierStokesTractionElement&lt; ELEMENT &gt;::scalar_value_paraview()</a>, <a class="el" href="elastic__problems_8h_source.html#l00370">oomph::SolidICProblem::set_newmark_initial_condition_consistently()</a>, <a class="el" href="elastic__problems_8h_source.html#l00226">oomph::SolidICProblem::set_newmark_initial_condition_directly()</a>, <a class="el" href="elastic__problems_8cc_source.html#l00538">oomph::SolidICProblem::set_static_initial_condition()</a>, <a class="el" href="periodic__orbit__handler_8h_source.html#l00225">oomph::PeriodicOrbitEquations::time()</a>, <a class="el" href="timesteppers_8h_source.html#l00320">oomph::TimeStepper::time()</a>, <a class="el" href="problem_8cc_source.html#l11413">oomph::Problem::time()</a>, <a class="el" href="problem_8cc_source.html#l10859">oomph::Problem::unsteady_newton_solve()</a>, <a class="el" href="segregated__fsi__solver_8cc_source.html#l01082">oomph::SegregatableFSIProblem::unsteady_segregated_solve()</a>, and <a class="el" href="pseudo__buckling__ring_8h_source.html#l00371">oomph::PseudoBucklingRing::veloc()</a>.</p>
 
 </div>
 </div>
@@ -642,9 +642,9 @@ Private Attributes</h2></td></tr>
 
 <p>Return the value of the continuous time at the t-th previous time level (t=0: current; t&gt;0 previous). </p>
 
-<p class="definition">Definition at line <a class="el" href="timesteppers_8h_source.html#l00145">145</a> of file <a class="el" href="timesteppers_8h_source.html">timesteppers.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="timesteppers_8h_source.html#l00141">141</a> of file <a class="el" href="timesteppers_8h_source.html">timesteppers.h</a>.</p>
 
-<p class="reference">References <a class="el" href="timesteppers_8h_source.html#l00072">Continuous_time</a>, <a class="el" href="timesteppers_8h_source.html#l00075">Dt</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="timesteppers_8h_source.html#l00133">ndt()</a>, <a class="el" href="oomph__definitions_8cc_source.html#l00293">oomph::Global_string_for_annotation::string()</a>, <a class="el" href="cfortran_8h_source.html#l00572">t</a>, and <a class="el" href="oomph__utilities_8h_source.html#l00196">oomph::StringConversion::to_string()</a>.</p>
+<p class="reference">References <a class="el" href="timesteppers_8h_source.html#l00068">Continuous_time</a>, <a class="el" href="timesteppers_8h_source.html#l00071">Dt</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="timesteppers_8h_source.html#l00129">ndt()</a>, <a class="el" href="oomph__definitions_8cc_source.html#l00289">oomph::Global_string_for_annotation::string()</a>, <a class="el" href="cfortran_8h_source.html#l00568">t</a>, and <a class="el" href="oomph__utilities_8h_source.html#l00192">oomph::StringConversion::to_string()</a>.</p>
 
 </div>
 </div>
@@ -671,9 +671,9 @@ Private Attributes</h2></td></tr>
 
 <p>Pointer to the value of the continuous time. </p>
 
-<p class="definition">Definition at line <a class="el" href="timesteppers_8h_source.html#l00072">72</a> of file <a class="el" href="timesteppers_8h_source.html">timesteppers.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="timesteppers_8h_source.html#l00068">68</a> of file <a class="el" href="timesteppers_8h_source.html">timesteppers.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="timesteppers_8h_source.html#l00130">time()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="timesteppers_8h_source.html#l00126">time()</a>.</p>
 
 </div>
 </div>
@@ -699,9 +699,9 @@ Private Attributes</h2></td></tr>
 
 <p><a class="el" href="classoomph_1_1Vector.html">Vector</a> that stores the values of the current and previous timesteps. </p>
 
-<p class="definition">Definition at line <a class="el" href="timesteppers_8h_source.html#l00075">75</a> of file <a class="el" href="timesteppers_8h_source.html">timesteppers.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="timesteppers_8h_source.html#l00071">71</a> of file <a class="el" href="timesteppers_8h_source.html">timesteppers.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="timesteppers_8h_source.html#l00137">dt()</a>, <a class="el" href="timesteppers_8h_source.html#l00109">initialise_dt()</a>, <a class="el" href="timesteppers_8h_source.html#l00133">ndt()</a>, <a class="el" href="timesteppers_8h_source.html#l00106">resize()</a>, <a class="el" href="timesteppers_8h_source.html#l00166">shift_dt()</a>, <a class="el" href="timesteppers_8h_source.html#l00085">Time()</a>, and <a class="el" href="timesteppers_8h_source.html#l00145">time()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="timesteppers_8h_source.html#l00133">dt()</a>, <a class="el" href="timesteppers_8h_source.html#l00105">initialise_dt()</a>, <a class="el" href="timesteppers_8h_source.html#l00129">ndt()</a>, <a class="el" href="timesteppers_8h_source.html#l00102">resize()</a>, <a class="el" href="timesteppers_8h_source.html#l00162">shift_dt()</a>, <a class="el" href="timesteppers_8h_source.html#l00081">Time()</a>, and <a class="el" href="timesteppers_8h_source.html#l00141">time()</a>.</p>
 
 </div>
 </div>
@@ -736,7 +736,7 @@ Private Attributes</h2></td></tr>
     <footer>
       <div class="container">
         <div class="text-muted" style="float:right;">Generated by <a href="http://www.doxygen.org/index.html">
-          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Tue Jul 6 2021 22:59:49
+          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Fri Jul 9 2021 20:54:39
         </div>
       </div>
     </footer>

@@ -69,7 +69,7 @@ class oomph\+::\+Hermite\+Quad\+Mesh$<$ E\+L\+E\+M\+E\+N\+T $>$}
 
 A two dimensional Hermite bicubic element quadrilateral mesh for a topologically rectangular domain. The geometry of the problem must be prescribed using the \mbox{\hyperlink{classoomph_1_1TopologicallyRectangularDomain}{Topologically\+Rectangular\+Domain}}. Non uniform node spacing can be prescribed using a function pointer. 
 
-Definition at line 58 of file hermite\+\_\+element\+\_\+quad\+\_\+mesh.\+template.\+h.
+Definition at line 54 of file hermite\+\_\+element\+\_\+quad\+\_\+mesh.\+template.\+h.
 
 
 
@@ -88,7 +88,7 @@ Mesh Spacing Function Pointer -\/ an optional function pointer to prescibe the n
 
 
 
-Definition at line 69 of file hermite\+\_\+element\+\_\+quad\+\_\+mesh.\+template.\+h.
+Definition at line 65 of file hermite\+\_\+element\+\_\+quad\+\_\+mesh.\+template.\+h.
 
 
 
@@ -106,7 +106,7 @@ Mesh Constructor (for a uniformly spaced mesh). Takes the following arguments \+
 
 
 
-Definition at line 81 of file hermite\+\_\+element\+\_\+quad\+\_\+mesh.\+template.\+h.
+Definition at line 77 of file hermite\+\_\+element\+\_\+quad\+\_\+mesh.\+template.\+h.
 
 
 
@@ -125,7 +125,7 @@ Mesh Constructor (for a non-\/uniformly spaced mesh). Takes the following argume
 
 build the mesh
 
-Definition at line 120 of file hermite\+\_\+element\+\_\+quad\+\_\+mesh.\+template.\+h.
+Definition at line 116 of file hermite\+\_\+element\+\_\+quad\+\_\+mesh.\+template.\+h.
 
 
 
@@ -144,7 +144,7 @@ Destructor -\/ does nothing -\/ handled in mesh base class.
 
 
 
-Definition at line 149 of file hermite\+\_\+element\+\_\+quad\+\_\+mesh.\+template.\+h.
+Definition at line 145 of file hermite\+\_\+element\+\_\+quad\+\_\+mesh.\+template.\+h.
 
 
 
@@ -162,7 +162,7 @@ Generic mesh construction function to build the mesh.
 
 
 
-Definition at line 607 of file hermite\+\_\+element\+\_\+quad\+\_\+mesh.\+template.\+cc.
+Definition at line 603 of file hermite\+\_\+element\+\_\+quad\+\_\+mesh.\+template.\+cc.
 
 
 
@@ -181,7 +181,7 @@ computes the generalised position of the node at position (node\+\_\+num\+\_\+x,
 
 
 
-Definition at line 210 of file hermite\+\_\+element\+\_\+quad\+\_\+mesh.\+template.\+cc.
+Definition at line 206 of file hermite\+\_\+element\+\_\+quad\+\_\+mesh.\+template.\+cc.
 
 \mbox{\Hypertarget{classoomph_1_1HermiteQuadMesh_a745a06530e60580e95826bedcf2e3e01}\label{classoomph_1_1HermiteQuadMesh_a745a06530e60580e95826bedcf2e3e01}} 
 \index{oomph::HermiteQuadMesh$<$ ELEMENT $>$@{oomph::HermiteQuadMesh$<$ ELEMENT $>$}!macro\_coordinate\_position@{macro\_coordinate\_position}}
@@ -196,7 +196,7 @@ returns the macro element position of the node that is the x-\/th node along fro
 
 
 
-Definition at line 163 of file hermite\+\_\+element\+\_\+quad\+\_\+mesh.\+template.\+h.
+Definition at line 159 of file hermite\+\_\+element\+\_\+quad\+\_\+mesh.\+template.\+h.
 
 
 
@@ -215,7 +215,7 @@ Access function for number of elements in mesh in each dimension.
 
 
 
-Definition at line 153 of file hermite\+\_\+element\+\_\+quad\+\_\+mesh.\+template.\+h.
+Definition at line 149 of file hermite\+\_\+element\+\_\+quad\+\_\+mesh.\+template.\+h.
 
 
 
@@ -234,7 +234,7 @@ sets the generalised position of the node (i.\+e. -\/ x\+\_\+i, dx\+\_\+i/ds\+\_
 
 
 
-Definition at line 125 of file hermite\+\_\+element\+\_\+quad\+\_\+mesh.\+template.\+cc.
+Definition at line 121 of file hermite\+\_\+element\+\_\+quad\+\_\+mesh.\+template.\+cc.
 
 \mbox{\Hypertarget{classoomph_1_1HermiteQuadMesh_abaac1dedc4a2e578b73b0d849c9a68e8}\label{classoomph_1_1HermiteQuadMesh_abaac1dedc4a2e578b73b0d849c9a68e8}} 
 \index{oomph::HermiteQuadMesh$<$ ELEMENT $>$@{oomph::HermiteQuadMesh$<$ ELEMENT $>$}!set\_position\_of\_node@{set\_position\_of\_node}}
@@ -249,7 +249,7 @@ sets the generalised position of the node (i.\+e. -\/ x\+\_\+i, dx\+\_\+i/ds\+\_
 
 
 
-Definition at line 54 of file hermite\+\_\+element\+\_\+quad\+\_\+mesh.\+template.\+cc.
+Definition at line 50 of file hermite\+\_\+element\+\_\+quad\+\_\+mesh.\+template.\+cc.
 
 \mbox{\Hypertarget{classoomph_1_1HermiteQuadMesh_a6eefe872b5bf8a06174b536d9727ea44}\label{classoomph_1_1HermiteQuadMesh_a6eefe872b5bf8a06174b536d9727ea44}} 
 \index{oomph::HermiteQuadMesh$<$ ELEMENT $>$@{oomph::HermiteQuadMesh$<$ ELEMENT $>$}!setup\_boundary\_element\_info@{setup\_boundary\_element\_info}}
@@ -260,7 +260,7 @@ virtual void \mbox{\hyperlink{classoomph_1_1HermiteQuadMesh}{oomph\+::\+Hermite\
 
 Setup lookup schemes which establish whic elements are located next to mesh\textquotesingle{}s boundaries (wrapper to suppress doc). Specific version for \mbox{\hyperlink{classoomph_1_1HermiteQuadMesh}{Hermite\+Quad\+Mesh}} to ensure that the order of the elements in Boundary\+\_\+element\+\_\+pt matches the actual order along the boundary. This is required when hijacking the Biharmonic\+Element to apply the Biharmonic\+Fluid\+Boundary\+Element in Biharmonic\+Fluid\+Problem\+::impose\+\_\+traction\+\_\+free\+\_\+edge(...) 
 
-Definition at line 219 of file hermite\+\_\+element\+\_\+quad\+\_\+mesh.\+template.\+h.
+Definition at line 215 of file hermite\+\_\+element\+\_\+quad\+\_\+mesh.\+template.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1HermiteQuadMesh_a0e4cd3df0828e87a762c61b09121e1c0}\label{classoomph_1_1HermiteQuadMesh_a0e4cd3df0828e87a762c61b09121e1c0}} 
 \index{oomph::HermiteQuadMesh$<$ ELEMENT $>$@{oomph::HermiteQuadMesh$<$ ELEMENT $>$}!setup\_boundary\_element\_info@{setup\_boundary\_element\_info}}
@@ -275,7 +275,7 @@ Setup lookup schemes which establish which elements are located next to which bo
 
 
 
-Definition at line 1263 of file hermite\+\_\+element\+\_\+quad\+\_\+mesh.\+template.\+cc.
+Definition at line 1259 of file hermite\+\_\+element\+\_\+quad\+\_\+mesh.\+template.\+cc.
 
 
 
@@ -293,7 +293,7 @@ Pointer to the topologically rectangular domain which prescribes the problem dom
 
 
 
-Definition at line 245 of file hermite\+\_\+element\+\_\+quad\+\_\+mesh.\+template.\+h.
+Definition at line 241 of file hermite\+\_\+element\+\_\+quad\+\_\+mesh.\+template.\+h.
 
 
 
@@ -312,7 +312,7 @@ number of elements in each coordinate direction
 
 
 
-Definition at line 237 of file hermite\+\_\+element\+\_\+quad\+\_\+mesh.\+template.\+h.
+Definition at line 233 of file hermite\+\_\+element\+\_\+quad\+\_\+mesh.\+template.\+h.
 
 
 
@@ -331,7 +331,7 @@ non uniform mesh spacing function pointer
 
 
 
-Definition at line 248 of file hermite\+\_\+element\+\_\+quad\+\_\+mesh.\+template.\+h.
+Definition at line 244 of file hermite\+\_\+element\+\_\+quad\+\_\+mesh.\+template.\+h.
 
 
 
@@ -351,7 +351,7 @@ boolean variable to determine whether the mesh is periodic in the ~\newline
 
 
 
-Definition at line 241 of file hermite\+\_\+element\+\_\+quad\+\_\+mesh.\+template.\+h.
+Definition at line 237 of file hermite\+\_\+element\+\_\+quad\+\_\+mesh.\+template.\+h.
 
 
 

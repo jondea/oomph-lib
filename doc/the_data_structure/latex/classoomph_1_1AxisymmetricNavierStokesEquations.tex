@@ -228,7 +228,7 @@ We non-\/dimensionalise the equations, using problem-\/specific reference quanti
 The non-\/dimensional form of the axisymmetric Navier-\/\+Stokes equations is then given by \[ R_{\rho} Re\left(St\frac{\partial u}{\partial t} + {u}\frac{\partial u}{\partial r} - \frac{{v}^2}{r} + {w}\frac{\partial u}{\partial z} \right) = B_r\left(r,z,t\right)+ R_\rho \frac{Re}{Fr} G_r + \frac{1}{r} \frac{\partial\left({r}\sigma_{rr}\right)}{\partial r} - \frac{\sigma_{\theta\theta}}{r} + \frac{\partial\sigma_{rz}}{\partial z}, \] \[ R_{\rho} Re\left(St\frac{\partial w}{\partial t} + {u}\frac{\partial w}{\partial r} + {w}\frac{\partial w}{\partial z} \right) = B_z\left(r,z,t\right)+ R_\rho \frac{Re}{Fr} G_z+ \frac{1}{r}\frac{\partial\left({r}\sigma_{zr}\right)}{\partial r} + \frac{\partial\sigma_{zz}}{\partial z}, \] \[ R_{\rho} Re\left(St\frac{\partial v}{\partial t} + {u}\frac{\partial v}{\partial r} + \frac{u v}{r} +{w}\frac{\partial v}{\partial z} \right)= B_\theta\left(r,z,t\right)+ R_\rho \frac{Re}{Fr} G_\theta+ \frac{1}{r}\frac{\partial\left({r}\sigma_{\theta r}\right)}{\partial r} + \frac{\sigma_{r\theta}}{r} + \frac{\partial\sigma_{\theta z}}{\partial z}, \] and \[ \frac{1}{r}\frac{\partial\left(ru\right)}{\partial r} + \frac{\partial w}{\partial z} = Q. \] Here the non-\/dimensional, symmetric stress tensor is defined as\+: \[ \sigma_{rr} = -p + 2R_\mu \frac{\partial u}{\partial r}, \qquad \sigma_{\theta\theta} = -p +2R_\mu \frac{u}{r}, \] \[ \sigma_{zz} = -p + 2R_\mu \frac{\partial w}{\partial z}, \qquad \sigma_{rz} = R_\mu \left(\frac{\partial u}{\partial z} + \frac{\partial w}{\partial r}\right), \] \[ \sigma_{\theta r} = R_\mu r \frac{\partial}{\partial r}\left(\frac{v}{r}\right), \qquad \sigma_{\theta z} = R_\mu \frac{\partial v}{\partial z}. \] and the dimensionless parameters \[ Re = \frac{UL\rho_{ref}}{\mu_{ref}}, \qquad St = \frac{L}{UT}, \qquad Fr = \frac{U^2}{gL}, \] are the Reynolds number, Strouhal number and Froude number respectively. $ R_\rho=\rho/\rho_{ref} $ and $ R_\mu(T) =\mu(T)/\mu_{ref}$ represent the ratios of the fluid\textquotesingle{}s density and its dynamic viscosity, relative to the density and viscosity values used to form the non-\/dimensional parameters (By default, $ R_\rho = R_\mu = 1 $; other values tend to be used in problems involving multiple fluids). ~\newline
  
 
-Definition at line 221 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 217 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -245,7 +245,7 @@ Constructor\+: N\+U\+LL the body force and source function.
 
 
 
-Definition at line 474 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 470 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -270,7 +270,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1FiniteElement_a73c79a1f1e5b1d3
 
 
 
-Definition at line 233 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
+Definition at line 229 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
 
 
 
@@ -292,7 +292,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1FiniteElement_a7f67853506dc73f
 
 
 
-Definition at line 164 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
+Definition at line 160 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
 
 
 
@@ -314,7 +314,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1FiniteElement_a782a540035dc31c
 
 
 
-Definition at line 1208 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 1204 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -332,7 +332,7 @@ Density ratio for element\+: Element\textquotesingle{}s density relative to the 
 
 
 
-Definition at line 530 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 526 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -354,7 +354,7 @@ Pointer to Density ratio.
 
 
 
-Definition at line 533 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 529 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -380,7 +380,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1RefineableAxisymmetricNavierStok
 
 
 
-Definition at line 987 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 983 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -402,7 +402,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1FiniteElement_a625ea6d3f9baccf
 
 
 
-Definition at line 607 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 603 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -420,7 +420,7 @@ Return integral of dissipation over element.
 
 
 
-Definition at line 586 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
+Definition at line 582 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
 
 
 
@@ -438,7 +438,7 @@ Return dissipation at local coordinate s.
 
 
 
-Definition at line 690 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
+Definition at line 686 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
 
 
 
@@ -502,7 +502,7 @@ i-\/th component of du/dt at local node n. Uses suitably interpolated value for 
 
 
 
-Definition at line 579 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 575 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -528,7 +528,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1FiniteElement_a92ef8967fa4e2d6
 
 
 
-Definition at line 616 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 612 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -546,7 +546,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1GeneralisedElement_a2d6e3c918e
 
 
 
-Definition at line 891 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 887 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -568,7 +568,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1GeneralisedElement_a90ee6ee39d
 
 
 
-Definition at line 879 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 875 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -590,7 +590,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1GeneralisedElement_a64d31806fc
 
 
 
-Definition at line 867 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 863 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -616,7 +616,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1RefineableAxisymmetricNavierStok
 
 
 
-Definition at line 3051 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
+Definition at line 3047 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
 
 
 
@@ -638,7 +638,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1GeneralisedElement_a6ae09fc0d6
 
 
 
-Definition at line 839 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 835 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -656,7 +656,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1GeneralisedElement_a2b6294a730
 
 
 
-Definition at line 849 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 845 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -678,7 +678,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1GeneralisedElement_a310c97f515
 
 
 
-Definition at line 828 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 824 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -701,7 +701,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1RefineableAxisymmetricNavierStok
 
 
 
-Definition at line 2362 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
+Definition at line 2358 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
 
 
 
@@ -729,7 +729,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1RefineableAxisymmetricNavierStok
 
 
 
-Definition at line 910 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
+Definition at line 906 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
 
 
 
@@ -751,7 +751,7 @@ Referenced by fill\+\_\+in\+\_\+contribution\+\_\+to\+\_\+jacobian(), fill\+\_\+
 
 
 
-Definition at line 523 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 519 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -773,7 +773,7 @@ Pointer to \mbox{\hyperlink{classoomph_1_1Vector}{Vector}} of gravitational comp
 
 
 
-Definition at line 526 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 522 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -795,7 +795,7 @@ Calculate the body force fct at a given time and Eulerian position.
 
 
 
-Definition at line 329 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 325 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -817,7 +817,7 @@ Get gradient of body force term at (Eulerian) position x. Computed via function 
 
 
 
-Definition at line 351 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 347 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -847,7 +847,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1RefineableAxisymmetricNavierStok
 
 
 
-Definition at line 1532 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
+Definition at line 1528 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
 
 
 
@@ -869,7 +869,7 @@ Implements \mbox{\hyperlink{classoomph_1_1NavierStokesElementWithDiagonalMassMat
 
 
 
-Definition at line 69 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
+Definition at line 65 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
 
 
 
@@ -887,7 +887,7 @@ Calculate the source fct at given time and Eulerian position.
 
 
 
-Definition at line 389 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 385 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -905,7 +905,7 @@ Referenced by oomph\+::\+Refineable\+Axisymmetric\+Navier\+Stokes\+Equations\+::
 
 Get gradient of source term at (Eulerian) position x. Computed via function pointer (if set) or by finite differencing (default) 
 
-Definition at line 402 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 398 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -928,7 +928,7 @@ Calculate the viscosity ratio relative to the viscosity used in the definition o
 
 
 
-Definition at line 437 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 433 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -950,7 +950,7 @@ Return FE interpolated derivatives w.\+r.\+t. nodal coordinates X\+\_\+\{pq\} of
 
 
 
-Definition at line 1150 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 1146 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -964,7 +964,7 @@ References oomph\+::\+Finite\+Element\+::d\+\_\+dshape\+\_\+eulerian\+\_\+dnodal
 
 Return FE interpolated derivatives of velocity component u\mbox{[}i\mbox{]} w.\+r.\+t spatial local coordinate direction s\mbox{[}j\mbox{]} at local coordinate s 
 
-Definition at line 1059 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 1055 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -978,7 +978,7 @@ References oomph\+::\+Finite\+Element\+::dshape\+\_\+local(), i, oomph\+::\+Fini
 
 Return FE interpolated derivatives of velocity component u\mbox{[}i\mbox{]} w.\+r.\+t time at local coordinate s 
 
-Definition at line 1123 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 1119 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -992,7 +992,7 @@ References du\+\_\+dt\+\_\+axi\+\_\+nst(), i, oomph\+::\+Finite\+Element\+::nnod
 
 Return FE interpolated derivatives of velocity component u\mbox{[}i\mbox{]} w.\+r.\+t spatial global coordinate direction x\mbox{[}j\mbox{]} at local coordinate s 
 
-Definition at line 1091 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 1087 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1014,7 +1014,7 @@ Return FE interpolated pressure at local coordinate s.
 
 
 
-Definition at line 1037 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 1033 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1036,7 +1036,7 @@ Return FE interpolated velocity u\mbox{[}i\mbox{]} at local coordinate s.
 
 
 
-Definition at line 956 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 952 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1054,7 +1054,7 @@ Return FE interpolated velocity u\mbox{[}i\mbox{]} at local coordinate s.
 
 
 
-Definition at line 929 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 925 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1072,7 +1072,7 @@ Compute vector of FE interpolated velocity u at local coordinate s.
 
 
 
-Definition at line 904 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 900 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1094,7 +1094,7 @@ Get integral of kinetic energy over element.
 
 Get integral of kinetic energy over element\+: 
 
-Definition at line 815 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
+Definition at line 811 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
 
 
 
@@ -1112,7 +1112,7 @@ Return the number of velocity components for use in general Fluid\+Interface cla
 
 
 
-Definition at line 574 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 570 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1AxisymmetricNavierStokesEquations_a89edaffb4913131cc14a5f6e45ed117a}\label{classoomph_1_1AxisymmetricNavierStokesEquations_a89edaffb4913131cc14a5f6e45ed117a}} 
 \index{oomph::AxisymmetricNavierStokesEquations@{oomph::AxisymmetricNavierStokesEquations}!npres\_axi\_nst@{npres\_axi\_nst}}
@@ -1148,7 +1148,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1FiniteElement_a865e2e5586552ba
 
 
 
-Definition at line 664 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 660 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1AxisymmetricNavierStokesEquations_a61129dd7505ac363862946bd8b3ea5bf}\label{classoomph_1_1AxisymmetricNavierStokesEquations_a61129dd7505ac363862946bd8b3ea5bf}} 
 \index{oomph::AxisymmetricNavierStokesEquations@{oomph::AxisymmetricNavierStokesEquations}!output@{output}}
@@ -1170,7 +1170,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1AxisymmetricQTaylorHoodElement_a
 
 
 
-Definition at line 777 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 773 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1196,7 +1196,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1AxisymmetricQTaylorHoodElement_a
 
 
 
-Definition at line 534 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
+Definition at line 530 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
 
 
 
@@ -1222,7 +1222,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1AxisymmetricQTaylorHoodElement_a
 
 
 
-Definition at line 764 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 760 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1248,7 +1248,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1AxisymmetricTTaylorHoodElement_a
 
 
 
-Definition at line 492 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
+Definition at line 488 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
 
 
 
@@ -1270,7 +1270,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1FiniteElement_a2a8426dccd57b92
 
 
 
-Definition at line 361 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
+Definition at line 357 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
 
 
 
@@ -1292,7 +1292,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1FiniteElement_a22b695c714f60ee
 
 
 
-Definition at line 302 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
+Definition at line 298 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
 
 
 
@@ -1311,7 +1311,7 @@ Output function\+: x,y,\mbox{[}z\mbox{]},u,v,\mbox{[}w\mbox{]} in tecplot format
 Output function\+: Velocities only ~\newline
  x,y,\mbox{[}z\mbox{]},u,v,\mbox{[}w\mbox{]} in tecplot format at specified previous timestep (t=0\+: present; t$>$0\+: previous timestep). Specified number of plot points in each coordinate direction. 
 
-Definition at line 422 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
+Definition at line 418 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
 
 
 
@@ -1369,7 +1369,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1AxisymmetricQTaylorHoodElement_a
 
 
 
-Definition at line 626 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 622 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1395,7 +1395,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1FiniteElement_a8bf3f75b55d4e67
 
 
 
-Definition at line 743 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 739 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1413,7 +1413,7 @@ References i, interpolated\+\_\+p\+\_\+axi\+\_\+nst(), interpolated\+\_\+u\+\_\+
 
 Return pressure integrated over the element. 
 
-Definition at line 861 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
+Definition at line 857 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
 
 
 
@@ -1463,7 +1463,7 @@ Reynolds number.
 
 
 
-Definition at line 499 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 495 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1485,7 +1485,7 @@ Global inverse Froude number.
 
 
 
-Definition at line 511 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 507 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1507,7 +1507,7 @@ Pointer to global inverse Froude number.
 
 
 
-Definition at line 514 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 510 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1529,7 +1529,7 @@ Global Reynolds number multiplied by inverse Rossby number.
 
 
 
-Definition at line 517 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 513 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1551,7 +1551,7 @@ Pointer to global inverse Froude number.
 
 
 
-Definition at line 520 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 516 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1573,7 +1573,7 @@ Pointer to Reynolds number.
 
 
 
-Definition at line 505 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 501 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1595,7 +1595,7 @@ Product of Reynolds and Strouhal number (=Womersley number)
 
 
 
-Definition at line 502 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 498 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1617,7 +1617,7 @@ Pointer to product of Reynolds and Strouhal number (=Womersley number)
 
 
 
-Definition at line 508 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 504 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1643,7 +1643,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1FiniteElement_a49cc2d4f7ed5772
 
 
 
-Definition at line 714 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 710 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1665,7 +1665,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1FiniteElement_a02cf8832a5e2886
 
 
 
-Definition at line 671 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 667 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1683,7 +1683,7 @@ Strain-\/rate tensor\+: $ e_{ij} $ where $ i,j = r,z,\theta $ (in that order)
 
 Get strain-\/rate tensor\+: $ e_{ij} $ where $ i,j = r,z,\theta $ (in that order) 
 
-Definition at line 719 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
+Definition at line 715 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
 
 
 
@@ -1705,7 +1705,7 @@ Compute traction (on the viscous scale) at local coordinate s for outer unit nor
 
 
 
-Definition at line 643 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
+Definition at line 639 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
 
 
 
@@ -1727,7 +1727,7 @@ Return the index at which the i-\/th unknown velocity component.
 
 is stored. The default value, i, is appropriate for single-\/physics problems. In derived multi-\/physics elements, this function should be overloaded to reflect the chosen storage scheme. Note that these equations require that the unknowns are always stored at the same indices at each node. 
 
-Definition at line 562 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 558 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1749,7 +1749,7 @@ Return the index at which the i-\/th unknown velocity component is stored with a
 
 
 
-Definition at line 569 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 565 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1767,7 +1767,7 @@ Viscosity ratio for element\+: Element\textquotesingle{}s viscosity relative to 
 
 
 
-Definition at line 537 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 533 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1789,7 +1789,7 @@ Pointer to Viscosity Ratio.
 
 
 
-Definition at line 540 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 536 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1814,7 +1814,7 @@ Boolean flag to indicate if A\+LE formulation is disabled when the time-\/deriva
 
 
 
-Definition at line 282 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 278 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1832,7 +1832,7 @@ Access function for the body-\/force pointer.
 
 
 
-Definition at line 543 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 539 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1850,7 +1850,7 @@ Pointer to body force function.
 
 
 
-Definition at line 271 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 267 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1868,7 +1868,7 @@ Static default value for the gravity vector.
 
 Navier-\/\+Stokes equations default gravity vector. 
 
-Definition at line 237 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 233 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1886,7 +1886,7 @@ Static default value for the physical constants (all initialised to zero)
 
 Navier--Stokes equations static data. 
 
-Definition at line 231 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 227 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1904,7 +1904,7 @@ Static default value for the physical ratios (all are initialised to one)
 
 
 
-Definition at line 234 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 230 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1922,7 +1922,7 @@ Pointer to the density ratio (relative to the density used in the definition of 
 
 
 
-Definition at line 249 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 245 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1940,7 +1940,7 @@ Pointer to global gravity \mbox{\hyperlink{classoomph_1_1Vector}{Vector}}.
 
 
 
-Definition at line 268 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 264 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1958,7 +1958,7 @@ Referenced by Axisymmetric\+Navier\+Stokes\+Equations(), oomph\+::\+Refineable\+
 
 Navier--Stokes equations static data. 
 
-Definition at line 494 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 490 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1976,7 +1976,7 @@ Static \char`\"{}magic\char`\"{} number that indicates that the pressure is not 
 
 \char`\"{}\+Magic\char`\"{} negative number that indicates that the pressure is not stored at a node. This cannot be -\/1 because that represents the positional hanging scheme in the hanging\+\_\+pt object of nodes 
 
-Definition at line 228 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 224 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1994,7 +1994,7 @@ Pointer to global Reynolds number.
 
 
 
-Definition at line 254 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 250 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -2013,7 +2013,7 @@ Pointer to global Reynolds number x inverse Froude number (= Bond number / Capil
 
 
 
-Definition at line 261 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 257 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -2031,7 +2031,7 @@ Pointer to global Reynolds number x inverse Rossby number (used when in a rotati
 
 
 
-Definition at line 265 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 261 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -2049,7 +2049,7 @@ Pointer to global Reynolds number x Strouhal number (=Womersley)
 
 
 
-Definition at line 257 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 253 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -2067,7 +2067,7 @@ Access function for the source-\/function pointer.
 
 
 
-Definition at line 549 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 545 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -2085,7 +2085,7 @@ Pointer to volumetric source function.
 
 
 
-Definition at line 276 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 272 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -2103,7 +2103,7 @@ Pointer to the viscosity ratio (relative to the viscosity used in the definition
 
 
 
-Definition at line 245 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 241 of file axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 

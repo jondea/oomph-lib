@@ -170,7 +170,7 @@ class SimpleSpineMesh&lt; ELEMENT &gt;</h3>
 
 <p>Simple spine mesh class derived from standard 2D mesh. Vertical lines of nodes are located on spines. </p>
 
-<p class="definition">Definition at line <a class="el" href="simple__spine__channel_8cc_source.html#l00093">93</a> of file <a class="el" href="simple__spine__channel_8cc_source.html">simple_spine_channel.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simple__spine__channel_8cc_source.html#l00089">89</a> of file <a class="el" href="simple__spine__channel_8cc_source.html">simple_spine_channel.cc</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a671d96f0143dfeb7aaba8af56c0c0620"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a671d96f0143dfeb7aaba8af56c0c0620">&#9670;&nbsp;</a></span>HeightFctPt</h2>
@@ -188,7 +188,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Function pointer to function, h(x), that may be used to specify the "height" of the domain, by assigning the function values to the spine heights. </p>
 
-<p class="definition">Definition at line <a class="el" href="simple__spine__channel_8cc_source.html#l00114">114</a> of file <a class="el" href="simple__spine__channel_8cc_source.html">simple_spine_channel.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simple__spine__channel_8cc_source.html#l00110">110</a> of file <a class="el" href="simple__spine__channel_8cc_source.html">simple_spine_channel.cc</a>.</p>
 
 </div>
 </div>
@@ -249,9 +249,9 @@ template&lt;class ELEMENT &gt; </div>
 <p>Constructor for spine 2D mesh: Pass number of elements in x-direction, number of elements in y-direction, axial length and height of layer, pointer to geometric object that specifies the substrate (the lower wall) and pointer to timestepper (defaults to Static timestepper).</p>
 <p>The mesh contains a layer of spine-ified fluid elements (of type ELEMENT; e.g SpineElement&lt;QCrouzeixRaviartElement&lt;2&gt;) </p>
 
-<p class="definition">Definition at line <a class="el" href="simple__spine__channel_8cc_source.html#l00210">210</a> of file <a class="el" href="simple__spine__channel_8cc_source.html">simple_spine_channel.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simple__spine__channel_8cc_source.html#l00206">206</a> of file <a class="el" href="simple__spine__channel_8cc_source.html">simple_spine_channel.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="spine__channel_8txt_source.html#l00434">Spine</a>, and <a class="el" href="simple__spine__channel_8cc_source.html#l00194">SimpleSpineMesh&lt; ELEMENT &gt;::Substrate_pt</a>.</p>
+<p class="reference">References <a class="el" href="spine__channel_8txt_source.html#l00434">Spine</a>, and <a class="el" href="simple__spine__channel_8cc_source.html#l00190">SimpleSpineMesh&lt; ELEMENT &gt;::Substrate_pt</a>.</p>
 
 </div>
 </div>
@@ -284,7 +284,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Height function &ndash; this is called by <a class="el" href="classSimpleSpineMesh.html#a2248fb8df448b0a02377a0cfb6f57851" title="Update the spine heights according to the function specified by height_fct_pt().">update_spine_heights()</a> when spine heights are assigned. </p>
 
-<p class="definition">Definition at line <a class="el" href="simple__spine__channel_8cc_source.html#l00125">125</a> of file <a class="el" href="simple__spine__channel_8cc_source.html">simple_spine_channel.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simple__spine__channel_8cc_source.html#l00121">121</a> of file <a class="el" href="simple__spine__channel_8cc_source.html">simple_spine_channel.cc</a>.</p>
 
 </div>
 </div>
@@ -315,7 +315,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Access function: Pointer to height function. </p>
 
-<p class="definition">Definition at line <a class="el" href="simple__spine__channel_8cc_source.html#l00117">117</a> of file <a class="el" href="simple__spine__channel_8cc_source.html">simple_spine_channel.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simple__spine__channel_8cc_source.html#l00113">113</a> of file <a class="el" href="simple__spine__channel_8cc_source.html">simple_spine_channel.cc</a>.</p>
 
 </div>
 </div>
@@ -347,7 +347,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>General node update function implements pure virtual function defined in SpineMesh base class and performs specific node update actions: Nodes are located along vertical "spines" that emanate from the "substrate" (the lower wall) specified by a GeomObject. </p>
 
-<p class="definition">Definition at line <a class="el" href="simple__spine__channel_8cc_source.html#l00161">161</a> of file <a class="el" href="simple__spine__channel_8cc_source.html">simple_spine_channel.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simple__spine__channel_8cc_source.html#l00157">157</a> of file <a class="el" href="simple__spine__channel_8cc_source.html">simple_spine_channel.cc</a>.</p>
 
 </div>
 </div>
@@ -378,7 +378,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Update the spine heights according to the function specified by <a class="el" href="classSimpleSpineMesh.html#af84290225b4aea3fd6ba27ad979059a0" title="Access function: Pointer to height function.">height_fct_pt()</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="simple__spine__channel_8cc_source.html#l00141">141</a> of file <a class="el" href="simple__spine__channel_8cc_source.html">simple_spine_channel.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simple__spine__channel_8cc_source.html#l00137">137</a> of file <a class="el" href="simple__spine__channel_8cc_source.html">simple_spine_channel.cc</a>.</p>
 
 </div>
 </div>
@@ -407,7 +407,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Default height. </p>
 
-<p class="definition">Definition at line <a class="el" href="simple__spine__channel_8cc_source.html#l00188">188</a> of file <a class="el" href="simple__spine__channel_8cc_source.html">simple_spine_channel.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simple__spine__channel_8cc_source.html#l00184">184</a> of file <a class="el" href="simple__spine__channel_8cc_source.html">simple_spine_channel.cc</a>.</p>
 
 </div>
 </div>
@@ -435,7 +435,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Pointer to height function. </p>
 
-<p class="definition">Definition at line <a class="el" href="simple__spine__channel_8cc_source.html#l00191">191</a> of file <a class="el" href="simple__spine__channel_8cc_source.html">simple_spine_channel.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simple__spine__channel_8cc_source.html#l00187">187</a> of file <a class="el" href="simple__spine__channel_8cc_source.html">simple_spine_channel.cc</a>.</p>
 
 </div>
 </div>
@@ -463,9 +463,9 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Pointer to GeomObject that specifies the "substrate" (the lower wall) </p>
 
-<p class="definition">Definition at line <a class="el" href="simple__spine__channel_8cc_source.html#l00194">194</a> of file <a class="el" href="simple__spine__channel_8cc_source.html">simple_spine_channel.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simple__spine__channel_8cc_source.html#l00190">190</a> of file <a class="el" href="simple__spine__channel_8cc_source.html">simple_spine_channel.cc</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="simple__spine__channel_8cc_source.html#l00210">SimpleSpineMesh&lt; ELEMENT &gt;::SimpleSpineMesh()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="simple__spine__channel_8cc_source.html#l00206">SimpleSpineMesh&lt; ELEMENT &gt;::SimpleSpineMesh()</a>.</p>
 
 </div>
 </div>
@@ -500,7 +500,7 @@ template&lt;class ELEMENT &gt; </div>
     <footer>
       <div class="container">
         <div class="text-muted" style="float:right;">Generated by <a href="http://www.doxygen.org/index.html">
-          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Tue Jul 6 2021 23:10:27
+          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Fri Jul 9 2021 21:03:31
         </div>
       </div>
     </footer>

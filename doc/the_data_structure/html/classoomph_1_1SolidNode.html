@@ -757,7 +757,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="textblock"><p>A Class for nodes that deform elastically (i.e. position is an unknown in the problem). The idea is that the Eulerian positions are stored in a <a class="el" href="classoomph_1_1Data.html" title="A class that represents a collection of data; each Data object may contain many different individual ...">Data</a> object and the Lagrangian coordinates are stored in addition. The pointer that addresses the Eulerian positions is set to the pointer to Value in the <a class="el" href="classoomph_1_1Data.html" title="A class that represents a collection of data; each Data object may contain many different individual ...">Data</a> object. Hence, <a class="el" href="classoomph_1_1SolidNode.html" title="A Class for nodes that deform elastically (i.e. position is an unknown in the problem)....">SolidNode</a> uses knowledge of the internal structure of <a class="el" href="classoomph_1_1Data.html" title="A class that represents a collection of data; each Data object may contain many different individual ...">Data</a> and must be a friend of the <a class="el" href="classoomph_1_1Data.html" title="A class that represents a collection of data; each Data object may contain many different individual ...">Data</a> class. In order to allow a mesh to deform via an elastic-style equation in deforming-domain problems, the positions are stored separately from the values, so that elastic problems may be combined with any other type of problem. <br  />
  </p>
 
-<p class="definition">Definition at line <a class="el" href="nodes_8h_source.html#l01568">1568</a> of file <a class="el" href="nodes_8h_source.html">nodes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nodes_8h_source.html#l01564">1564</a> of file <a class="el" href="nodes_8h_source.html">nodes.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a7f6839c0a4abd087be6a68601b558da2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7f6839c0a4abd087be6a68601b558da2">&#9670;&nbsp;</a></span>SolidNode() <span class="overload">[1/4]</span></h2>
@@ -784,7 +784,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Default Constructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="nodes_8h_source.html#l01594">1594</a> of file <a class="el" href="nodes_8h_source.html">nodes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nodes_8h_source.html#l01590">1590</a> of file <a class="el" href="nodes_8h_source.html">nodes.h</a>.</p>
 
 </div>
 </div>
@@ -835,9 +835,9 @@ Additional Inherited Members</h2></td></tr>
 <p><a class="el" href="classoomph_1_1Steady.html">Steady</a> constructor. The node has n_lagrangian Lagrangian coordinates of n_lagrangian_type types (1 for Lagrange elements, 2 for 1D Hermite etc.). The Eulerian dimension of the <a class="el" href="classoomph_1_1Node.html" title="Nodes are derived from Data, but, in addition, have a definite (Eulerian) position in a space of a gi...">Node</a> is n_dim and we have n_position_type (generalised) Eulerian coordinates. There are initial_n_value values stored at this node. </p>
 <p><a class="el" href="classoomph_1_1Steady.html">Steady</a> constructor. The node has NLgrangian Lagrangian coordinates of n_lagrangian_type types (1 for Lagrange elements, 2 for 1D Hermite etc.). The Eulerian dimension of the <a class="el" href="classoomph_1_1Node.html" title="Nodes are derived from Data, but, in addition, have a definite (Eulerian) position in a space of a gi...">Node</a> is n_dim and we have n_position_type (generalised) Eulerian coordinates. There are initial_n_value values stored at this node and NAdditional_solid additional values associated with the solid equations are stored in a separate <a class="el" href="classoomph_1_1Data.html" title="A class that represents a collection of data; each Data object may contain many different individual ...">Data</a> object at the node. </p>
 
-<p class="definition">Definition at line <a class="el" href="nodes_8cc_source.html#l03255">3255</a> of file <a class="el" href="nodes_8cc_source.html">nodes.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nodes_8cc_source.html#l03251">3251</a> of file <a class="el" href="nodes_8cc_source.html">nodes.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="nodes_8cc_source.html#l00235">oomph::Data::Data()</a>, <a class="el" href="nodes_8h_source.html#l00893">oomph::Node::Ndim</a>, <a class="el" href="nodes_8h_source.html#l00899">oomph::Node::Nposition_type</a>, <a class="el" href="nodes_8h_source.html#l00116">oomph::Data::Value</a>, <a class="el" href="nodes_8h_source.html#l01586">Variable_position_pt</a>, <a class="el" href="nodes_8h_source.html#l00877">oomph::Node::X_position</a>, and <a class="el" href="nodes_8h_source.html#l01589">Xi_position</a>.</p>
+<p class="reference">References <a class="el" href="nodes_8cc_source.html#l00231">oomph::Data::Data()</a>, <a class="el" href="nodes_8h_source.html#l00889">oomph::Node::Ndim</a>, <a class="el" href="nodes_8h_source.html#l00895">oomph::Node::Nposition_type</a>, <a class="el" href="nodes_8h_source.html#l00112">oomph::Data::Value</a>, <a class="el" href="nodes_8h_source.html#l01582">Variable_position_pt</a>, <a class="el" href="nodes_8h_source.html#l00873">oomph::Node::X_position</a>, and <a class="el" href="nodes_8h_source.html#l01585">Xi_position</a>.</p>
 
 </div>
 </div>
@@ -898,9 +898,9 @@ Additional Inherited Members</h2></td></tr>
  Allocates storage for initial_n_value nodal values with history values as required by timestepper. The node has NLgrangian Lagrangian coordinates of n_lagrangian_type types (1 for Lagrange elements, 2 for 1D Hermite etc.)/ The Eulerian dimension of the <a class="el" href="classoomph_1_1Node.html" title="Nodes are derived from Data, but, in addition, have a definite (Eulerian) position in a space of a gi...">Node</a> is n_dim and we have n_position_type generalised Eulerian coordinates. <br  />
  </p>
 
-<p class="definition">Definition at line <a class="el" href="nodes_8cc_source.html#l03287">3287</a> of file <a class="el" href="nodes_8cc_source.html">nodes.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nodes_8cc_source.html#l03283">3283</a> of file <a class="el" href="nodes_8cc_source.html">nodes.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="nodes_8cc_source.html#l00235">oomph::Data::Data()</a>, <a class="el" href="nodes_8h_source.html#l00116">oomph::Data::Value</a>, <a class="el" href="nodes_8h_source.html#l01586">Variable_position_pt</a>, <a class="el" href="nodes_8h_source.html#l00877">oomph::Node::X_position</a>, and <a class="el" href="nodes_8h_source.html#l01589">Xi_position</a>.</p>
+<p class="reference">References <a class="el" href="nodes_8cc_source.html#l00231">oomph::Data::Data()</a>, <a class="el" href="nodes_8h_source.html#l00112">oomph::Data::Value</a>, <a class="el" href="nodes_8h_source.html#l01582">Variable_position_pt</a>, <a class="el" href="nodes_8h_source.html#l00873">oomph::Node::X_position</a>, and <a class="el" href="nodes_8h_source.html#l01585">Xi_position</a>.</p>
 
 </div>
 </div>
@@ -930,9 +930,9 @@ Additional Inherited Members</h2></td></tr>
 <p>Destructor that cleans up the additional memory allocated in SolidNodes. </p>
 <p>Destructor to clean up the memory allocated for nodal positions and additional solid variables </p>
 
-<p class="definition">Definition at line <a class="el" href="nodes_8cc_source.html#l03315">3315</a> of file <a class="el" href="nodes_8cc_source.html">nodes.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nodes_8cc_source.html#l03311">3311</a> of file <a class="el" href="nodes_8cc_source.html">nodes.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="nodes_8h_source.html#l01586">Variable_position_pt</a>, <a class="el" href="nodes_8h_source.html#l00877">oomph::Node::X_position</a>, and <a class="el" href="nodes_8h_source.html#l01589">Xi_position</a>.</p>
+<p class="reference">References <a class="el" href="nodes_8h_source.html#l01582">Variable_position_pt</a>, <a class="el" href="nodes_8h_source.html#l00873">oomph::Node::X_position</a>, and <a class="el" href="nodes_8h_source.html#l01585">Xi_position</a>.</p>
 
 </div>
 </div>
@@ -962,9 +962,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Broken copy constructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="nodes_8h_source.html#l01627">1627</a> of file <a class="el" href="nodes_8h_source.html">nodes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nodes_8h_source.html#l01623">1623</a> of file <a class="el" href="nodes_8h_source.html">nodes.h</a>.</p>
 
-<p class="reference">References <a class="el" href="oomph__utilities_8cc_source.html#l00218">oomph::BrokenCopy::broken_copy()</a>.</p>
+<p class="reference">References <a class="el" href="oomph__utilities_8cc_source.html#l00214">oomph::BrokenCopy::broken_copy()</a>.</p>
 
 </div>
 </div>
@@ -998,9 +998,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1Data.html#a1d3f7c4200506d11fea3c647fe498f5d">oomph::Data</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="nodes_8cc_source.html#l03695">3695</a> of file <a class="el" href="nodes_8cc_source.html">nodes.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nodes_8cc_source.html#l03691">3691</a> of file <a class="el" href="nodes_8cc_source.html">nodes.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="nodes_8cc_source.html#l01181">oomph::Data::add_eqn_numbers_to_vector()</a>, and <a class="el" href="nodes_8h_source.html#l01586">Variable_position_pt</a>.</p>
+<p class="reference">References <a class="el" href="nodes_8cc_source.html#l01177">oomph::Data::add_eqn_numbers_to_vector()</a>, and <a class="el" href="nodes_8h_source.html#l01582">Variable_position_pt</a>.</p>
 
 </div>
 </div>
@@ -1033,9 +1033,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1Data.html#a314ae9723424aa30d1275ab213d38936">oomph::Data</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="nodes_8cc_source.html#l03589">3589</a> of file <a class="el" href="nodes_8cc_source.html">nodes.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nodes_8cc_source.html#l03585">3585</a> of file <a class="el" href="nodes_8cc_source.html">nodes.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="nodes_8cc_source.html#l01041">oomph::Data::add_value_pt_to_map()</a>.</p>
+<p class="reference">References <a class="el" href="nodes_8cc_source.html#l01037">oomph::Data::add_value_pt_to_map()</a>.</p>
 
 </div>
 </div>
@@ -1068,11 +1068,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1Node.html#a11400682e1fd2851777234a779e8bf8d">oomph::Node</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="nodes_8cc_source.html#l03603">3603</a> of file <a class="el" href="nodes_8cc_source.html">nodes.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nodes_8cc_source.html#l03599">3599</a> of file <a class="el" href="nodes_8cc_source.html">nodes.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="nodes_8cc_source.html#l02671">oomph::Node::add_values_to_vector()</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="nodes_8h_source.html#l01733">nlagrangian()</a>, <a class="el" href="nodes_8h_source.html#l01737">nlagrangian_type()</a>, and <a class="el" href="nodes_8h_source.html#l01589">Xi_position</a>.</p>
+<p class="reference">References <a class="el" href="nodes_8cc_source.html#l02667">oomph::Node::add_values_to_vector()</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="nodes_8h_source.html#l01729">nlagrangian()</a>, <a class="el" href="nodes_8h_source.html#l01733">nlagrangian_type()</a>, and <a class="el" href="nodes_8h_source.html#l01585">Xi_position</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="triangle__mesh_8template_8cc_source.html#l18121">oomph::RefineableTriangleMesh&lt; ELEMENT &gt;::get_required_nodal_information_helper()</a>, and <a class="el" href="triangle__mesh_8template_8cc_source.html#l26534">oomph::RefineableTriangleMesh&lt; ELEMENT &gt;::get_required_nodal_information_load_balance_helper()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="triangle__mesh_8template_8cc_source.html#l18117">oomph::RefineableTriangleMesh&lt; ELEMENT &gt;::get_required_nodal_information_helper()</a>, and <a class="el" href="triangle__mesh_8template_8cc_source.html#l26530">oomph::RefineableTriangleMesh&lt; ELEMENT &gt;::get_required_nodal_information_load_balance_helper()</a>.</p>
 
 </div>
 </div>
@@ -1115,9 +1115,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1Node.html#a5f727227a1c8fdc7d5d422492b98cefd">oomph::Node</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="nodes_8cc_source.html#l03546">3546</a> of file <a class="el" href="nodes_8cc_source.html">nodes.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nodes_8cc_source.html#l03542">3542</a> of file <a class="el" href="nodes_8cc_source.html">nodes.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="nodes_8cc_source.html#l00861">oomph::Data::assign_eqn_numbers()</a>, and <a class="el" href="nodes_8h_source.html#l01586">Variable_position_pt</a>.</p>
+<p class="reference">References <a class="el" href="nodes_8cc_source.html#l00857">oomph::Data::assign_eqn_numbers()</a>, and <a class="el" href="nodes_8h_source.html#l01582">Variable_position_pt</a>.</p>
 
 </div>
 </div>
@@ -1148,9 +1148,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1Node.html#a8758650a2e6d7312ad070bb8ce327c4b">oomph::Node</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="nodes_8h_source.html#l01726">1726</a> of file <a class="el" href="nodes_8h_source.html">nodes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nodes_8h_source.html#l01722">1722</a> of file <a class="el" href="nodes_8h_source.html">nodes.h</a>.</p>
 
-<p class="reference">References <a class="el" href="nodes_8h_source.html#l00425">oomph::Data::constrain_all()</a>, and <a class="el" href="nodes_8h_source.html#l01586">Variable_position_pt</a>.</p>
+<p class="reference">References <a class="el" href="nodes_8h_source.html#l00421">oomph::Data::constrain_all()</a>, and <a class="el" href="nodes_8h_source.html#l01582">Variable_position_pt</a>.</p>
 
 </div>
 </div>
@@ -1173,11 +1173,11 @@ Additional Inherited Members</h2></td></tr>
 <p>Copy nodal positions and associated data from specified node object. </p>
 <p>Copy nodal positions and associated data from specified node object </p>
 
-<p class="definition">Definition at line <a class="el" href="nodes_8cc_source.html#l03330">3330</a> of file <a class="el" href="nodes_8cc_source.html">nodes.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nodes_8cc_source.html#l03326">3326</a> of file <a class="el" href="nodes_8cc_source.html">nodes.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="nodes_8cc_source.html#l00561">oomph::Data::copy()</a>, <a class="el" href="nodes_8h_source.html#l01579">Nlagrangian</a>, <a class="el" href="nodes_8h_source.html#l01733">nlagrangian()</a>, <a class="el" href="nodes_8h_source.html#l01583">Nlagrangian_type</a>, <a class="el" href="nodes_8h_source.html#l01737">nlagrangian_type()</a>, <a class="el" href="nodes_8h_source.html#l01586">Variable_position_pt</a>, <a class="el" href="nodes_8h_source.html#l01654">variable_position_pt()</a>, and <a class="el" href="nodes_8h_source.html#l01589">Xi_position</a>.</p>
+<p class="reference">References <a class="el" href="nodes_8cc_source.html#l00557">oomph::Data::copy()</a>, <a class="el" href="nodes_8h_source.html#l01575">Nlagrangian</a>, <a class="el" href="nodes_8h_source.html#l01729">nlagrangian()</a>, <a class="el" href="nodes_8h_source.html#l01579">Nlagrangian_type</a>, <a class="el" href="nodes_8h_source.html#l01733">nlagrangian_type()</a>, <a class="el" href="nodes_8h_source.html#l01582">Variable_position_pt</a>, <a class="el" href="nodes_8h_source.html#l01650">variable_position_pt()</a>, and <a class="el" href="nodes_8h_source.html#l01585">Xi_position</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mesh_8cc_source.html#l02680">oomph::Mesh::convert_to_boundary_node()</a>, and <a class="el" href="problem_8cc_source.html#l11746">oomph::Problem::copy()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mesh_8cc_source.html#l02676">oomph::Mesh::convert_to_boundary_node()</a>, and <a class="el" href="problem_8cc_source.html#l11742">oomph::Problem::copy()</a>.</p>
 
 </div>
 </div>
@@ -1220,11 +1220,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1Data.html#a2dae16e2dcff9a40029f834c83364df5">oomph::Data</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="nodes_8cc_source.html#l03565">3565</a> of file <a class="el" href="nodes_8cc_source.html">nodes.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nodes_8cc_source.html#l03561">3561</a> of file <a class="el" href="nodes_8cc_source.html">nodes.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="nodes_8cc_source.html#l00905">oomph::Data::describe_dofs()</a>, <a class="el" href="oomph__definitions_8cc_source.html#l00293">oomph::Global_string_for_annotation::string()</a>, and <a class="el" href="nodes_8h_source.html#l01586">Variable_position_pt</a>.</p>
+<p class="reference">References <a class="el" href="nodes_8cc_source.html#l00901">oomph::Data::describe_dofs()</a>, <a class="el" href="oomph__definitions_8cc_source.html#l00289">oomph::Global_string_for_annotation::string()</a>, and <a class="el" href="nodes_8h_source.html#l01582">Variable_position_pt</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="elements_8cc_source.html#l06729">oomph::SolidFiniteElement::describe_solid_local_dofs()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="elements_8cc_source.html#l06725">oomph::SolidFiniteElement::describe_solid_local_dofs()</a>.</p>
 
 </div>
 </div>
@@ -1257,9 +1257,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1Node.html#ab5d4bea7ffc69a82fde5720a2a6d784c">oomph::Node</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="nodes_8cc_source.html#l03473">3473</a> of file <a class="el" href="nodes_8cc_source.html">nodes.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nodes_8cc_source.html#l03469">3469</a> of file <a class="el" href="nodes_8cc_source.html">nodes.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="nodes_8cc_source.html#l00533">oomph::Data::does_pointer_correspond_to_value()</a>, and <a class="el" href="nodes_8h_source.html#l01586">Variable_position_pt</a>.</p>
+<p class="reference">References <a class="el" href="nodes_8cc_source.html#l00529">oomph::Data::does_pointer_correspond_to_value()</a>, and <a class="el" href="nodes_8h_source.html#l01582">Variable_position_pt</a>.</p>
 
 </div>
 </div>
@@ -1292,9 +1292,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1Node.html#acd8bb142619d639d9bbfe813d0ba08df">oomph::Node</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="nodes_8cc_source.html#l03370">3370</a> of file <a class="el" href="nodes_8cc_source.html">nodes.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nodes_8cc_source.html#l03366">3366</a> of file <a class="el" href="nodes_8cc_source.html">nodes.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="nodes_8cc_source.html#l01892">oomph::Node::dump()</a>, <a class="el" href="nodes_8h_source.html#l01579">Nlagrangian</a>, <a class="el" href="nodes_8h_source.html#l01583">Nlagrangian_type</a>, and <a class="el" href="nodes_8h_source.html#l01589">Xi_position</a>.</p>
+<p class="reference">References <a class="el" href="nodes_8cc_source.html#l01888">oomph::Node::dump()</a>, <a class="el" href="nodes_8h_source.html#l01575">Nlagrangian</a>, <a class="el" href="nodes_8h_source.html#l01579">Nlagrangian_type</a>, and <a class="el" href="nodes_8h_source.html#l01585">Xi_position</a>.</p>
 
 </div>
 </div>
@@ -1317,11 +1317,11 @@ Additional Inherited Members</h2></td></tr>
 <p>Return lagrangian coordinate either directly or via hanging node representation. </p>
 <p>Return lagrangian coordinate either directly or via hanging node representation. </p>
 
-<p class="definition">Definition at line <a class="el" href="nodes_8cc_source.html#l03487">3487</a> of file <a class="el" href="nodes_8cc_source.html">nodes.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nodes_8cc_source.html#l03483">3483</a> of file <a class="el" href="nodes_8cc_source.html">nodes.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="nodes_8h_source.html#l01147">oomph::Node::hanging_pt()</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="nodes_8h_source.html#l01206">oomph::Node::is_hanging()</a>, <a class="el" href="nodes_8h_source.html#l00735">oomph::HangInfo::master_node_pt()</a>, <a class="el" href="nodes_8h_source.html#l00752">oomph::HangInfo::master_weight()</a>, <a class="el" href="nodes_8h_source.html#l00732">oomph::HangInfo::nmaster()</a>, and <a class="el" href="nodes_8h_source.html#l01740">xi()</a>.</p>
+<p class="reference">References <a class="el" href="nodes_8h_source.html#l01143">oomph::Node::hanging_pt()</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="nodes_8h_source.html#l01202">oomph::Node::is_hanging()</a>, <a class="el" href="nodes_8h_source.html#l00731">oomph::HangInfo::master_node_pt()</a>, <a class="el" href="nodes_8h_source.html#l00748">oomph::HangInfo::master_weight()</a>, <a class="el" href="nodes_8h_source.html#l00728">oomph::HangInfo::nmaster()</a>, and <a class="el" href="nodes_8h_source.html#l01736">xi()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="refineable__mesh_8cc_source.html#l00898">oomph::TreeBasedRefineableMeshBase::adapt_mesh()</a>, <a class="el" href="mesh_8cc_source.html#l09179">oomph::Mesh::delete_all_external_storage()</a>, and <a class="el" href="refineable__mesh_8cc_source.html#l04292">oomph::TreeBasedRefineableMeshBase::p_adapt_mesh()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="refineable__mesh_8cc_source.html#l00894">oomph::TreeBasedRefineableMeshBase::adapt_mesh()</a>, <a class="el" href="mesh_8cc_source.html#l09175">oomph::Mesh::delete_all_external_storage()</a>, and <a class="el" href="refineable__mesh_8cc_source.html#l04288">oomph::TreeBasedRefineableMeshBase::p_adapt_mesh()</a>.</p>
 
 </div>
 </div>
@@ -1354,9 +1354,9 @@ Additional Inherited Members</h2></td></tr>
 <p>Return generalised lagrangian coordinate either directly or via hanging node representation. </p>
 <p>Return generalised lagrangian coordinate either directly or via hanging node representation. </p>
 
-<p class="definition">Definition at line <a class="el" href="nodes_8cc_source.html#l03516">3516</a> of file <a class="el" href="nodes_8cc_source.html">nodes.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nodes_8cc_source.html#l03512">3512</a> of file <a class="el" href="nodes_8cc_source.html">nodes.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="nodes_8h_source.html#l01147">oomph::Node::hanging_pt()</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="nodes_8h_source.html#l01206">oomph::Node::is_hanging()</a>, <a class="el" href="nodes_8h_source.html#l00735">oomph::HangInfo::master_node_pt()</a>, <a class="el" href="nodes_8h_source.html#l00752">oomph::HangInfo::master_weight()</a>, <a class="el" href="nodes_8h_source.html#l00732">oomph::HangInfo::nmaster()</a>, and <a class="el" href="nodes_8h_source.html#l01759">xi_gen()</a>.</p>
+<p class="reference">References <a class="el" href="nodes_8h_source.html#l01143">oomph::Node::hanging_pt()</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="nodes_8h_source.html#l01202">oomph::Node::is_hanging()</a>, <a class="el" href="nodes_8h_source.html#l00731">oomph::HangInfo::master_node_pt()</a>, <a class="el" href="nodes_8h_source.html#l00748">oomph::HangInfo::master_weight()</a>, <a class="el" href="nodes_8h_source.html#l00728">oomph::HangInfo::nmaster()</a>, and <a class="el" href="nodes_8h_source.html#l01755">xi_gen()</a>.</p>
 
 </div>
 </div>
@@ -1385,11 +1385,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Return number of lagrangian coordinates. </p>
 
-<p class="definition">Definition at line <a class="el" href="nodes_8h_source.html#l01733">1733</a> of file <a class="el" href="nodes_8h_source.html">nodes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nodes_8h_source.html#l01729">1729</a> of file <a class="el" href="nodes_8h_source.html">nodes.h</a>.</p>
 
-<p class="reference">References <a class="el" href="nodes_8h_source.html#l01579">Nlagrangian</a>.</p>
+<p class="reference">References <a class="el" href="nodes_8h_source.html#l01575">Nlagrangian</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="refineable__mesh_8cc_source.html#l00898">oomph::TreeBasedRefineableMeshBase::adapt_mesh()</a>, <a class="el" href="nodes_8cc_source.html#l03603">add_values_to_vector()</a>, <a class="el" href="hermite__elements_8cc_source.html#l01298">oomph::SolidQHermiteElement&lt; 2 &gt;::build_face_element()</a>, <a class="el" href="Telements_8cc_source.html#l00953">oomph::SolidTBubbleEnrichedElement&lt; 2, NNODE_1D &gt;::build_face_element()</a>, <a class="el" href="Qelements_8h_source.html#l01757">oomph::SolidQElement&lt; 1, NNODE_1D &gt;::build_face_element()</a>, <a class="el" href="Qelements_8h_source.html#l01928">oomph::SolidQElement&lt; 2, NNODE_1D &gt;::build_face_element()</a>, <a class="el" href="Qelements_8h_source.html#l02110">oomph::SolidQElement&lt; 3, NNODE_1D &gt;::build_face_element()</a>, <a class="el" href="Telements_8h_source.html#l03714">oomph::SolidTElement&lt; 1, NNODE_1D &gt;::build_face_element()</a>, <a class="el" href="Telements_8h_source.html#l03780">oomph::SolidTElement&lt; 2, NNODE_1D &gt;::build_face_element()</a>, <a class="el" href="Telements_8h_source.html#l03847">oomph::SolidTElement&lt; 3, NNODE_1D &gt;::build_face_element()</a>, <a class="el" href="nodes_8cc_source.html#l03330">copy()</a>, <a class="el" href="mesh_8cc_source.html#l09179">oomph::Mesh::delete_all_external_storage()</a>, <a class="el" href="missing__masters_8cc_source.html#l00662">oomph::Missing_masters_functions::get_required_master_nodal_information_helper()</a>, <a class="el" href="multi__domain_8cc_source.html#l00899">oomph::Multi_domain_functions::get_required_master_nodal_information_helper()</a>, <a class="el" href="refineable__mesh_8cc_source.html#l04292">oomph::TreeBasedRefineableMeshBase::p_adapt_mesh()</a>, <a class="el" href="nodes_8cc_source.html#l03650">read_values_from_vector()</a>, and <a class="el" href="mesh_8cc_source.html#l09539">oomph::SolidMesh::set_lagrangian_nodal_coordinates()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="refineable__mesh_8cc_source.html#l00894">oomph::TreeBasedRefineableMeshBase::adapt_mesh()</a>, <a class="el" href="nodes_8cc_source.html#l03599">add_values_to_vector()</a>, <a class="el" href="hermite__elements_8cc_source.html#l01294">oomph::SolidQHermiteElement&lt; 2 &gt;::build_face_element()</a>, <a class="el" href="Telements_8cc_source.html#l00949">oomph::SolidTBubbleEnrichedElement&lt; 2, NNODE_1D &gt;::build_face_element()</a>, <a class="el" href="Qelements_8h_source.html#l01753">oomph::SolidQElement&lt; 1, NNODE_1D &gt;::build_face_element()</a>, <a class="el" href="Qelements_8h_source.html#l01924">oomph::SolidQElement&lt; 2, NNODE_1D &gt;::build_face_element()</a>, <a class="el" href="Qelements_8h_source.html#l02106">oomph::SolidQElement&lt; 3, NNODE_1D &gt;::build_face_element()</a>, <a class="el" href="Telements_8h_source.html#l03710">oomph::SolidTElement&lt; 1, NNODE_1D &gt;::build_face_element()</a>, <a class="el" href="Telements_8h_source.html#l03776">oomph::SolidTElement&lt; 2, NNODE_1D &gt;::build_face_element()</a>, <a class="el" href="Telements_8h_source.html#l03843">oomph::SolidTElement&lt; 3, NNODE_1D &gt;::build_face_element()</a>, <a class="el" href="nodes_8cc_source.html#l03326">copy()</a>, <a class="el" href="mesh_8cc_source.html#l09175">oomph::Mesh::delete_all_external_storage()</a>, <a class="el" href="missing__masters_8cc_source.html#l00658">oomph::Missing_masters_functions::get_required_master_nodal_information_helper()</a>, <a class="el" href="multi__domain_8cc_source.html#l00895">oomph::Multi_domain_functions::get_required_master_nodal_information_helper()</a>, <a class="el" href="refineable__mesh_8cc_source.html#l04288">oomph::TreeBasedRefineableMeshBase::p_adapt_mesh()</a>, <a class="el" href="nodes_8cc_source.html#l03646">read_values_from_vector()</a>, and <a class="el" href="mesh_8cc_source.html#l09535">oomph::SolidMesh::set_lagrangian_nodal_coordinates()</a>.</p>
 
 </div>
 </div>
@@ -1418,11 +1418,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Number of types of Lagrangian coordinates used to interpolate the Lagrangian coordinates within the element. </p>
 
-<p class="definition">Definition at line <a class="el" href="nodes_8h_source.html#l01737">1737</a> of file <a class="el" href="nodes_8h_source.html">nodes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nodes_8h_source.html#l01733">1733</a> of file <a class="el" href="nodes_8h_source.html">nodes.h</a>.</p>
 
-<p class="reference">References <a class="el" href="nodes_8h_source.html#l01583">Nlagrangian_type</a>.</p>
+<p class="reference">References <a class="el" href="nodes_8h_source.html#l01579">Nlagrangian_type</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="nodes_8cc_source.html#l03603">add_values_to_vector()</a>, <a class="el" href="refineable__quad__element_8h_source.html#l00288">oomph::RefineableSolidQElement&lt; 2 &gt;::build()</a>, <a class="el" href="refineable__brick__element_8h_source.html#l00301">oomph::RefineableSolidQElement&lt; 3 &gt;::build()</a>, <a class="el" href="nodes_8cc_source.html#l03330">copy()</a>, <a class="el" href="missing__masters_8cc_source.html#l00662">oomph::Missing_masters_functions::get_required_master_nodal_information_helper()</a>, <a class="el" href="multi__domain_8cc_source.html#l00899">oomph::Multi_domain_functions::get_required_master_nodal_information_helper()</a>, <a class="el" href="projection_8h_source.html#l00726">oomph::ProjectionProblem&lt; PROJECTABLE_ELEMENT &gt;::project()</a>, <a class="el" href="nodes_8cc_source.html#l03650">read_values_from_vector()</a>, and <a class="el" href="mesh_8cc_source.html#l09539">oomph::SolidMesh::set_lagrangian_nodal_coordinates()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="nodes_8cc_source.html#l03599">add_values_to_vector()</a>, <a class="el" href="refineable__quad__element_8h_source.html#l00284">oomph::RefineableSolidQElement&lt; 2 &gt;::build()</a>, <a class="el" href="refineable__brick__element_8h_source.html#l00297">oomph::RefineableSolidQElement&lt; 3 &gt;::build()</a>, <a class="el" href="nodes_8cc_source.html#l03326">copy()</a>, <a class="el" href="missing__masters_8cc_source.html#l00658">oomph::Missing_masters_functions::get_required_master_nodal_information_helper()</a>, <a class="el" href="multi__domain_8cc_source.html#l00895">oomph::Multi_domain_functions::get_required_master_nodal_information_helper()</a>, <a class="el" href="projection_8h_source.html#l00722">oomph::ProjectionProblem&lt; PROJECTABLE_ELEMENT &gt;::project()</a>, <a class="el" href="nodes_8cc_source.html#l03646">read_values_from_vector()</a>, and <a class="el" href="mesh_8cc_source.html#l09535">oomph::SolidMesh::set_lagrangian_nodal_coordinates()</a>.</p>
 
 </div>
 </div>
@@ -1454,9 +1454,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1Node.html#aecf8c979266300d3609de2b4ddfa3cc8">oomph::Node</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="nodes_8h_source.html#l01838">1838</a> of file <a class="el" href="nodes_8h_source.html">nodes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nodes_8h_source.html#l01834">1834</a> of file <a class="el" href="nodes_8h_source.html">nodes.h</a>.</p>
 
-<p class="reference">References <a class="el" href="nodes_8h_source.html#l01509">oomph::Node::perform_auxiliary_node_update_fct()</a>.</p>
+<p class="reference">References <a class="el" href="nodes_8h_source.html#l01505">oomph::Node::perform_auxiliary_node_update_fct()</a>.</p>
 
 </div>
 </div>
@@ -1486,9 +1486,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Broken assignment operator. </p>
 
-<p class="definition">Definition at line <a class="el" href="nodes_8h_source.html#l01633">1633</a> of file <a class="el" href="nodes_8h_source.html">nodes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nodes_8h_source.html#l01629">1629</a> of file <a class="el" href="nodes_8h_source.html">nodes.h</a>.</p>
 
-<p class="reference">References <a class="el" href="oomph__utilities_8cc_source.html#l00201">oomph::BrokenCopy::broken_assign()</a>.</p>
+<p class="reference">References <a class="el" href="oomph__utilities_8cc_source.html#l00197">oomph::BrokenCopy::broken_assign()</a>.</p>
 
 </div>
 </div>
@@ -1519,9 +1519,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1Node.html#a3f0d0e77ba866ce8ad3c5c012b647080">oomph::Node</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="nodes_8h_source.html#l01711">1711</a> of file <a class="el" href="nodes_8h_source.html">nodes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nodes_8h_source.html#l01707">1707</a> of file <a class="el" href="nodes_8h_source.html">nodes.h</a>.</p>
 
-<p class="reference">References <a class="el" href="nodes_8h_source.html#l00389">oomph::Data::pin_all()</a>, <a class="el" href="nodes_8h_source.html#l01122">oomph::Node::pin_all()</a>, and <a class="el" href="nodes_8h_source.html#l01586">Variable_position_pt</a>.</p>
+<p class="reference">References <a class="el" href="nodes_8h_source.html#l00385">oomph::Data::pin_all()</a>, <a class="el" href="nodes_8h_source.html#l01118">oomph::Node::pin_all()</a>, and <a class="el" href="nodes_8h_source.html#l01582">Variable_position_pt</a>.</p>
 
 </div>
 </div>
@@ -1551,11 +1551,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Pin the nodal position. </p>
 
-<p class="definition">Definition at line <a class="el" href="nodes_8h_source.html#l01693">1693</a> of file <a class="el" href="nodes_8h_source.html">nodes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nodes_8h_source.html#l01689">1689</a> of file <a class="el" href="nodes_8h_source.html">nodes.h</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="nodes_8h_source.html#l00899">oomph::Node::Nposition_type</a>, <a class="el" href="nodes_8h_source.html#l00383">oomph::Data::pin()</a>, and <a class="el" href="nodes_8h_source.html#l01586">Variable_position_pt</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="nodes_8h_source.html#l00895">oomph::Node::Nposition_type</a>, <a class="el" href="nodes_8h_source.html#l00379">oomph::Data::pin()</a>, and <a class="el" href="nodes_8h_source.html#l01582">Variable_position_pt</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="refineable__brick__element_8cc_source.html#l01233">oomph::RefineableQElement&lt; 3 &gt;::build()</a>, <a class="el" href="refineable__quad__element_8cc_source.html#l00604">oomph::RefineableQElement&lt; 2 &gt;::build()</a>, <a class="el" href="hp__refineable__elements_8cc_source.html#l01935">oomph::PRefineableQElement&lt; 2, INITIAL_NNODE_1D &gt;::p_refine()</a>, <a class="el" href="hp__refineable__elements_8cc_source.html#l05874">oomph::PRefineableQElement&lt; 3, INITIAL_NNODE_1D &gt;::p_refine()</a>, <a class="el" href="projection_8h_source.html#l01467">oomph::ProjectionProblem&lt; PROJECTABLE_ELEMENT &gt;::pin_all()</a>, <a class="el" href="projection_8h_source.html#l01623">oomph::ProjectionProblem&lt; PROJECTABLE_ELEMENT &gt;::pin_dofs_of_coordinate()</a>, <a class="el" href="refineable__brick__spectral__element_8h_source.html#l00090">oomph::RefineableQSpectralElement&lt; 3 &gt;::rebuild_from_sons()</a>, <a class="el" href="refineable__quad__spectral__element_8h_source.html#l00090">oomph::RefineableQSpectralElement&lt; 2 &gt;::rebuild_from_sons()</a>, <a class="el" href="hp__refineable__elements_8cc_source.html#l03139">oomph::PRefineableQElement&lt; 2, INITIAL_NNODE_1D &gt;::rebuild_from_sons()</a>, <a class="el" href="hp__refineable__elements_8cc_source.html#l07370">oomph::PRefineableQElement&lt; 3, INITIAL_NNODE_1D &gt;::rebuild_from_sons()</a>, and <a class="el" href="elastic__problems_8cc_source.html#l00359">oomph::SolidICProblem::reset_original_state()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="refineable__brick__element_8cc_source.html#l01229">oomph::RefineableQElement&lt; 3 &gt;::build()</a>, <a class="el" href="refineable__quad__element_8cc_source.html#l00600">oomph::RefineableQElement&lt; 2 &gt;::build()</a>, <a class="el" href="hp__refineable__elements_8cc_source.html#l01931">oomph::PRefineableQElement&lt; 2, INITIAL_NNODE_1D &gt;::p_refine()</a>, <a class="el" href="hp__refineable__elements_8cc_source.html#l05870">oomph::PRefineableQElement&lt; 3, INITIAL_NNODE_1D &gt;::p_refine()</a>, <a class="el" href="projection_8h_source.html#l01463">oomph::ProjectionProblem&lt; PROJECTABLE_ELEMENT &gt;::pin_all()</a>, <a class="el" href="projection_8h_source.html#l01619">oomph::ProjectionProblem&lt; PROJECTABLE_ELEMENT &gt;::pin_dofs_of_coordinate()</a>, <a class="el" href="refineable__brick__spectral__element_8h_source.html#l00086">oomph::RefineableQSpectralElement&lt; 3 &gt;::rebuild_from_sons()</a>, <a class="el" href="refineable__quad__spectral__element_8h_source.html#l00086">oomph::RefineableQSpectralElement&lt; 2 &gt;::rebuild_from_sons()</a>, <a class="el" href="hp__refineable__elements_8cc_source.html#l03135">oomph::PRefineableQElement&lt; 2, INITIAL_NNODE_1D &gt;::rebuild_from_sons()</a>, <a class="el" href="hp__refineable__elements_8cc_source.html#l07366">oomph::PRefineableQElement&lt; 3, INITIAL_NNODE_1D &gt;::rebuild_from_sons()</a>, and <a class="el" href="elastic__problems_8cc_source.html#l00355">oomph::SolidICProblem::reset_original_state()</a>.</p>
 
 </div>
 </div>
@@ -1595,9 +1595,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Pin the generalised nodal position. &lsquo;Type&rsquo;: k; Coordinate direction: i. </p>
 
-<p class="definition">Definition at line <a class="el" href="nodes_8h_source.html#l01698">1698</a> of file <a class="el" href="nodes_8h_source.html">nodes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nodes_8h_source.html#l01694">1694</a> of file <a class="el" href="nodes_8h_source.html">nodes.h</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="nodes_8h_source.html#l00899">oomph::Node::Nposition_type</a>, <a class="el" href="nodes_8h_source.html#l00383">oomph::Data::pin()</a>, and <a class="el" href="nodes_8h_source.html#l01586">Variable_position_pt</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="nodes_8h_source.html#l00895">oomph::Node::Nposition_type</a>, <a class="el" href="nodes_8h_source.html#l00379">oomph::Data::pin()</a>, and <a class="el" href="nodes_8h_source.html#l01582">Variable_position_pt</a>.</p>
 
 </div>
 </div>
@@ -1638,11 +1638,11 @@ Additional Inherited Members</h2></td></tr>
 <p>Return the equation number for generalised Eulerian coordinate: type of coordinate: k, coordinate direction: i. <br  />
  </p>
 
-<p class="definition">Definition at line <a class="el" href="nodes_8h_source.html#l01679">1679</a> of file <a class="el" href="nodes_8h_source.html">nodes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nodes_8h_source.html#l01675">1675</a> of file <a class="el" href="nodes_8h_source.html">nodes.h</a>.</p>
 
-<p class="reference">References <a class="el" href="nodes_8h_source.html#l00365">oomph::Data::eqn_number()</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="nodes_8h_source.html#l00899">oomph::Node::Nposition_type</a>, and <a class="el" href="nodes_8h_source.html#l01586">Variable_position_pt</a>.</p>
+<p class="reference">References <a class="el" href="nodes_8h_source.html#l00361">oomph::Data::eqn_number()</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="nodes_8h_source.html#l00895">oomph::Node::Nposition_type</a>, and <a class="el" href="nodes_8h_source.html#l01582">Variable_position_pt</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="elements_8cc_source.html#l06753">oomph::SolidFiniteElement::assign_solid_local_eqn_numbers()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="elements_8cc_source.html#l06749">oomph::SolidFiniteElement::assign_solid_local_eqn_numbers()</a>.</p>
 
 </div>
 </div>
@@ -1673,9 +1673,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1Node.html#a80fe9192b35baa5321e8d0ffba4b8b8a">oomph::Node</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="nodes_8h_source.html#l01671">1671</a> of file <a class="el" href="nodes_8h_source.html">nodes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nodes_8h_source.html#l01667">1667</a> of file <a class="el" href="nodes_8h_source.html">nodes.h</a>.</p>
 
-<p class="reference">References <a class="el" href="nodes_8h_source.html#l00255">oomph::Data::is_a_copy()</a>, and <a class="el" href="nodes_8h_source.html#l01586">Variable_position_pt</a>.</p>
+<p class="reference">References <a class="el" href="nodes_8h_source.html#l00251">oomph::Data::is_a_copy()</a>, and <a class="el" href="nodes_8h_source.html#l01582">Variable_position_pt</a>.</p>
 
 </div>
 </div>
@@ -1707,9 +1707,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1Node.html#a0e1ad244c2b109fb54a2fa6430d6ad5b">oomph::Node</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="nodes_8h_source.html#l01674">1674</a> of file <a class="el" href="nodes_8h_source.html">nodes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nodes_8h_source.html#l01670">1670</a> of file <a class="el" href="nodes_8h_source.html">nodes.h</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="nodes_8h_source.html#l00255">oomph::Data::is_a_copy()</a>, <a class="el" href="nodes_8h_source.html#l00899">oomph::Node::Nposition_type</a>, and <a class="el" href="nodes_8h_source.html#l01586">Variable_position_pt</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="nodes_8h_source.html#l00251">oomph::Data::is_a_copy()</a>, <a class="el" href="nodes_8h_source.html#l00895">oomph::Node::Nposition_type</a>, and <a class="el" href="nodes_8h_source.html#l01582">Variable_position_pt</a>.</p>
 
 </div>
 </div>
@@ -1739,11 +1739,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Test whether the i-th coordinate is pinned, 0: false; 1: true. </p>
 
-<p class="definition">Definition at line <a class="el" href="nodes_8h_source.html#l01684">1684</a> of file <a class="el" href="nodes_8h_source.html">nodes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nodes_8h_source.html#l01680">1680</a> of file <a class="el" href="nodes_8h_source.html">nodes.h</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="nodes_8h_source.html#l00403">oomph::Data::is_pinned()</a>, <a class="el" href="nodes_8h_source.html#l00899">oomph::Node::Nposition_type</a>, and <a class="el" href="nodes_8h_source.html#l01586">Variable_position_pt</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="nodes_8h_source.html#l00399">oomph::Data::is_pinned()</a>, <a class="el" href="nodes_8h_source.html#l00895">oomph::Node::Nposition_type</a>, and <a class="el" href="nodes_8h_source.html#l01582">Variable_position_pt</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="elastic__problems_8cc_source.html#l00203">oomph::SolidICProblem::backup_original_state()</a>, <a class="el" href="refineable__quad__element_8cc_source.html#l02087">oomph::RefineableSolidQElement&lt; 2 &gt;::get_edge_solid_bcs()</a>, <a class="el" href="refineable__brick__element_8cc_source.html#l02777">oomph::RefineableSolidQElement&lt; 3 &gt;::get_face_solid_bcs()</a>, and <a class="el" href="problem_8cc_source.html#l04301">oomph::Problem::set_pinned_values_to_zero()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="elastic__problems_8cc_source.html#l00199">oomph::SolidICProblem::backup_original_state()</a>, <a class="el" href="refineable__quad__element_8cc_source.html#l02083">oomph::RefineableSolidQElement&lt; 2 &gt;::get_edge_solid_bcs()</a>, <a class="el" href="refineable__brick__element_8cc_source.html#l02773">oomph::RefineableSolidQElement&lt; 3 &gt;::get_face_solid_bcs()</a>, and <a class="el" href="problem_8cc_source.html#l04297">oomph::Problem::set_pinned_values_to_zero()</a>.</p>
 
 </div>
 </div>
@@ -1783,9 +1783,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Test whether the k-th type of the i-th coordinate is pinned 0: false; 1: true. </p>
 
-<p class="definition">Definition at line <a class="el" href="nodes_8h_source.html#l01689">1689</a> of file <a class="el" href="nodes_8h_source.html">nodes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nodes_8h_source.html#l01685">1685</a> of file <a class="el" href="nodes_8h_source.html">nodes.h</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="nodes_8h_source.html#l00403">oomph::Data::is_pinned()</a>, <a class="el" href="nodes_8h_source.html#l00899">oomph::Node::Nposition_type</a>, and <a class="el" href="nodes_8h_source.html#l01586">Variable_position_pt</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="nodes_8h_source.html#l00399">oomph::Data::is_pinned()</a>, <a class="el" href="nodes_8h_source.html#l00895">oomph::Node::Nposition_type</a>, and <a class="el" href="nodes_8h_source.html#l01582">Variable_position_pt</a>.</p>
 
 </div>
 </div>
@@ -1808,11 +1808,11 @@ Additional Inherited Members</h2></td></tr>
 <p>Read nodal positions (variable and fixed) and associated data from file for restart. </p>
 <p>Read nodal positions and associated data to file for restart. </p>
 
-<p class="definition">Definition at line <a class="el" href="nodes_8cc_source.html#l03390">3390</a> of file <a class="el" href="nodes_8cc_source.html">nodes.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nodes_8cc_source.html#l03386">3386</a> of file <a class="el" href="nodes_8cc_source.html">nodes.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="nodes_8h_source.html#l01579">Nlagrangian</a>, <a class="el" href="nodes_8h_source.html#l01583">Nlagrangian_type</a>, <a class="el" href="nodes_8cc_source.html#l01919">oomph::Node::read()</a>, <a class="el" href="oomph__definitions_8cc_source.html#l00293">oomph::Global_string_for_annotation::string()</a>, and <a class="el" href="nodes_8h_source.html#l01589">Xi_position</a>.</p>
+<p class="reference">References <a class="el" href="nodes_8h_source.html#l01575">Nlagrangian</a>, <a class="el" href="nodes_8h_source.html#l01579">Nlagrangian_type</a>, <a class="el" href="nodes_8cc_source.html#l01915">oomph::Node::read()</a>, <a class="el" href="oomph__definitions_8cc_source.html#l00289">oomph::Global_string_for_annotation::string()</a>, and <a class="el" href="nodes_8h_source.html#l01585">Xi_position</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mesh_8cc_source.html#l01132">oomph::Mesh::read()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mesh_8cc_source.html#l01128">oomph::Mesh::read()</a>.</p>
 
 </div>
 </div>
@@ -1855,9 +1855,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1Data.html#ae958e52df6ede2a08f957db4ee685ca7">oomph::Data</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="nodes_8cc_source.html#l03707">3707</a> of file <a class="el" href="nodes_8cc_source.html">nodes.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nodes_8cc_source.html#l03703">3703</a> of file <a class="el" href="nodes_8cc_source.html">nodes.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="nodes_8cc_source.html#l01216">oomph::Data::read_eqn_numbers_from_vector()</a>, and <a class="el" href="nodes_8h_source.html#l01586">Variable_position_pt</a>.</p>
+<p class="reference">References <a class="el" href="nodes_8cc_source.html#l01212">oomph::Data::read_eqn_numbers_from_vector()</a>, and <a class="el" href="nodes_8h_source.html#l01582">Variable_position_pt</a>.</p>
 
 </div>
 </div>
@@ -1900,11 +1900,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1Node.html#accb033ab8ed4f96331014f7c4cd131f9">oomph::Node</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="nodes_8cc_source.html#l03650">3650</a> of file <a class="el" href="nodes_8cc_source.html">nodes.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nodes_8cc_source.html#l03646">3646</a> of file <a class="el" href="nodes_8cc_source.html">nodes.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="nodes_8h_source.html#l01733">nlagrangian()</a>, <a class="el" href="nodes_8h_source.html#l01737">nlagrangian_type()</a>, <a class="el" href="nodes_8cc_source.html#l02726">oomph::Node::read_values_from_vector()</a>, and <a class="el" href="nodes_8h_source.html#l01589">Xi_position</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="nodes_8h_source.html#l01729">nlagrangian()</a>, <a class="el" href="nodes_8h_source.html#l01733">nlagrangian_type()</a>, <a class="el" href="nodes_8cc_source.html#l02722">oomph::Node::read_values_from_vector()</a>, and <a class="el" href="nodes_8h_source.html#l01585">Xi_position</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="triangle__mesh_8template_8cc_source.html#l19187">oomph::RefineableTriangleMesh&lt; ELEMENT &gt;::construct_new_halo_node_helper()</a>, and <a class="el" href="triangle__mesh_8template_8cc_source.html#l27652">oomph::RefineableTriangleMesh&lt; ELEMENT &gt;::construct_new_node_load_balance_helper()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="triangle__mesh_8template_8cc_source.html#l19183">oomph::RefineableTriangleMesh&lt; ELEMENT &gt;::construct_new_halo_node_helper()</a>, and <a class="el" href="triangle__mesh_8template_8cc_source.html#l27648">oomph::RefineableTriangleMesh&lt; ELEMENT &gt;::construct_new_node_load_balance_helper()</a>.</p>
 
 </div>
 </div>
@@ -1927,9 +1927,9 @@ Additional Inherited Members</h2></td></tr>
 <p>Set the variable position data from an external data object. </p>
 <p>Set the variable position data from an external source. This is mainly used when setting periodic solid problems. </p>
 
-<p class="definition">Definition at line <a class="el" href="nodes_8cc_source.html#l03435">3435</a> of file <a class="el" href="nodes_8cc_source.html">nodes.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nodes_8cc_source.html#l03431">3431</a> of file <a class="el" href="nodes_8cc_source.html">nodes.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="nodes_8h_source.html#l00099">oomph::Data::CopiedData</a>, <a class="el" href="nodes_8h_source.html#l00116">oomph::Data::Value</a>, <a class="el" href="nodes_8h_source.html#l01586">Variable_position_pt</a>, and <a class="el" href="nodes_8h_source.html#l00877">oomph::Node::X_position</a>.</p>
+<p class="reference">References <a class="el" href="nodes_8h_source.html#l00095">oomph::Data::CopiedData</a>, <a class="el" href="nodes_8h_source.html#l00112">oomph::Data::Value</a>, <a class="el" href="nodes_8h_source.html#l01582">Variable_position_pt</a>, and <a class="el" href="nodes_8h_source.html#l00873">oomph::Node::X_position</a>.</p>
 
 </div>
 </div>
@@ -1972,9 +1972,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1Node.html#a15d3962d66d92de44e32edc9c5c2fedf">oomph::Node</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="nodes_8cc_source.html#l03451">3451</a> of file <a class="el" href="nodes_8cc_source.html">nodes.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nodes_8cc_source.html#l03447">3447</a> of file <a class="el" href="nodes_8cc_source.html">nodes.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="nodes_8h_source.html#l00880">oomph::Node::Position_time_stepper_pt</a>, <a class="el" href="nodes_8h_source.html#l00968">oomph::Node::position_time_stepper_pt()</a>, <a class="el" href="nodes_8cc_source.html#l00392">oomph::Data::set_time_stepper()</a>, <a class="el" href="nodes_8h_source.html#l00116">oomph::Data::Value</a>, <a class="el" href="nodes_8h_source.html#l01586">Variable_position_pt</a>, and <a class="el" href="nodes_8h_source.html#l00877">oomph::Node::X_position</a>.</p>
+<p class="reference">References <a class="el" href="nodes_8h_source.html#l00876">oomph::Node::Position_time_stepper_pt</a>, <a class="el" href="nodes_8h_source.html#l00964">oomph::Node::position_time_stepper_pt()</a>, <a class="el" href="nodes_8cc_source.html#l00388">oomph::Data::set_time_stepper()</a>, <a class="el" href="nodes_8h_source.html#l00112">oomph::Data::Value</a>, <a class="el" href="nodes_8h_source.html#l01582">Variable_position_pt</a>, and <a class="el" href="nodes_8h_source.html#l00873">oomph::Node::X_position</a>.</p>
 
 </div>
 </div>
@@ -2005,9 +2005,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1Node.html#ac23aaa36891269f3c9a832618f0c8c2c">oomph::Node</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="nodes_8h_source.html#l01730">1730</a> of file <a class="el" href="nodes_8h_source.html">nodes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nodes_8h_source.html#l01726">1726</a> of file <a class="el" href="nodes_8h_source.html">nodes.h</a>.</p>
 
-<p class="reference">References <a class="el" href="nodes_8h_source.html#l00432">oomph::Data::unconstrain_all()</a>, and <a class="el" href="nodes_8h_source.html#l01586">Variable_position_pt</a>.</p>
+<p class="reference">References <a class="el" href="nodes_8h_source.html#l00428">oomph::Data::unconstrain_all()</a>, and <a class="el" href="nodes_8h_source.html#l01582">Variable_position_pt</a>.</p>
 
 </div>
 </div>
@@ -2038,9 +2038,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1Node.html#a8ef38470acf00f344c9567bcc9cbd000">oomph::Node</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="nodes_8h_source.html#l01718">1718</a> of file <a class="el" href="nodes_8h_source.html">nodes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nodes_8h_source.html#l01714">1714</a> of file <a class="el" href="nodes_8h_source.html">nodes.h</a>.</p>
 
-<p class="reference">References <a class="el" href="nodes_8h_source.html#l00396">oomph::Data::unpin_all()</a>, <a class="el" href="nodes_8h_source.html#l01126">oomph::Node::unpin_all()</a>, and <a class="el" href="nodes_8h_source.html#l01586">Variable_position_pt</a>.</p>
+<p class="reference">References <a class="el" href="nodes_8h_source.html#l00392">oomph::Data::unpin_all()</a>, <a class="el" href="nodes_8h_source.html#l01122">oomph::Node::unpin_all()</a>, and <a class="el" href="nodes_8h_source.html#l01582">Variable_position_pt</a>.</p>
 
 </div>
 </div>
@@ -2070,11 +2070,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Unpin the nodal position. </p>
 
-<p class="definition">Definition at line <a class="el" href="nodes_8h_source.html#l01702">1702</a> of file <a class="el" href="nodes_8h_source.html">nodes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nodes_8h_source.html#l01698">1698</a> of file <a class="el" href="nodes_8h_source.html">nodes.h</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="nodes_8h_source.html#l00899">oomph::Node::Nposition_type</a>, <a class="el" href="nodes_8h_source.html#l00386">oomph::Data::unpin()</a>, and <a class="el" href="nodes_8h_source.html#l01586">Variable_position_pt</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="nodes_8h_source.html#l00895">oomph::Node::Nposition_type</a>, <a class="el" href="nodes_8h_source.html#l00382">oomph::Data::unpin()</a>, and <a class="el" href="nodes_8h_source.html#l01582">Variable_position_pt</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="elastic__problems_8cc_source.html#l00054">oomph::SolidICProblem::setup_problem()</a>, <a class="el" href="projection_8h_source.html#l01534">oomph::ProjectionProblem&lt; PROJECTABLE_ELEMENT &gt;::unpin_all()</a>, and <a class="el" href="projection_8h_source.html#l01598">oomph::ProjectionProblem&lt; PROJECTABLE_ELEMENT &gt;::unpin_dofs_of_coordinate()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="elastic__problems_8cc_source.html#l00050">oomph::SolidICProblem::setup_problem()</a>, <a class="el" href="projection_8h_source.html#l01530">oomph::ProjectionProblem&lt; PROJECTABLE_ELEMENT &gt;::unpin_all()</a>, and <a class="el" href="projection_8h_source.html#l01594">oomph::ProjectionProblem&lt; PROJECTABLE_ELEMENT &gt;::unpin_dofs_of_coordinate()</a>.</p>
 
 </div>
 </div>
@@ -2114,9 +2114,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Unpin the generalised nodal position. &lsquo;Type&rsquo;: k; Coordinate direction: i. </p>
 
-<p class="definition">Definition at line <a class="el" href="nodes_8h_source.html#l01707">1707</a> of file <a class="el" href="nodes_8h_source.html">nodes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nodes_8h_source.html#l01703">1703</a> of file <a class="el" href="nodes_8h_source.html">nodes.h</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="nodes_8h_source.html#l00899">oomph::Node::Nposition_type</a>, <a class="el" href="nodes_8h_source.html#l00386">oomph::Data::unpin()</a>, and <a class="el" href="nodes_8h_source.html#l01586">Variable_position_pt</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="nodes_8h_source.html#l00895">oomph::Node::Nposition_type</a>, <a class="el" href="nodes_8h_source.html#l00382">oomph::Data::unpin()</a>, and <a class="el" href="nodes_8h_source.html#l01582">Variable_position_pt</a>.</p>
 
 </div>
 </div>
@@ -2145,9 +2145,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Return the variable_position data (const version) </p>
 
-<p class="definition">Definition at line <a class="el" href="nodes_8h_source.html#l01651">1651</a> of file <a class="el" href="nodes_8h_source.html">nodes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nodes_8h_source.html#l01647">1647</a> of file <a class="el" href="nodes_8h_source.html">nodes.h</a>.</p>
 
-<p class="reference">References <a class="el" href="nodes_8h_source.html#l01586">Variable_position_pt</a>.</p>
+<p class="reference">References <a class="el" href="nodes_8h_source.html#l01582">Variable_position_pt</a>.</p>
 
 </div>
 </div>
@@ -2176,11 +2176,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Pointer to variable_position data (const version) </p>
 
-<p class="definition">Definition at line <a class="el" href="nodes_8h_source.html#l01654">1654</a> of file <a class="el" href="nodes_8h_source.html">nodes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nodes_8h_source.html#l01650">1650</a> of file <a class="el" href="nodes_8h_source.html">nodes.h</a>.</p>
 
-<p class="reference">References <a class="el" href="nodes_8h_source.html#l01586">Variable_position_pt</a>.</p>
+<p class="reference">References <a class="el" href="nodes_8h_source.html#l01582">Variable_position_pt</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="periodic__orbit__handler_8h_source.html#l01022">oomph::PeriodicOrbitAssemblyHandler&lt; NNODE_1D &gt;::adapt_temporal_mesh()</a>, <a class="el" href="nodes_8h_source.html#l02623">oomph::BoundaryNode&lt; NODE_TYPE &gt;::assign_eqn_numbers()</a>, <a class="el" href="element__with__external__element_8cc_source.html#l00226">oomph::ElementWithExternalElement::assign_external_interaction_data_local_eqn_numbers()</a>, <a class="el" href="elements_8cc_source.html#l00656">oomph::GeneralisedElement::assign_local_eqn_numbers()</a>, <a class="el" href="mesh_8cc_source.html#l03347">oomph::Mesh::classify_halo_and_haloed_nodes()</a>, <a class="el" href="missing__masters_8template_8cc_source.html#l00249">oomph::Missing_masters_functions::construct_new_external_halo_master_node_helper()</a>, <a class="el" href="multi__domain_8template_8cc_source.html#l02050">oomph::Multi_domain_functions::construct_new_external_halo_master_node_helper()</a>, <a class="el" href="missing__masters_8cc_source.html#l01255">oomph::Missing_masters_functions::construct_new_external_halo_node_helper()</a>, <a class="el" href="multi__domain_8cc_source.html#l01333">oomph::Multi_domain_functions::construct_new_external_halo_node_helper()</a>, <a class="el" href="triangle__mesh_8template_8cc_source.html#l19187">oomph::RefineableTriangleMesh&lt; ELEMENT &gt;::construct_new_halo_node_helper()</a>, <a class="el" href="triangle__mesh_8template_8cc_source.html#l27652">oomph::RefineableTriangleMesh&lt; ELEMENT &gt;::construct_new_node_load_balance_helper()</a>, <a class="el" href="nodes_8cc_source.html#l03330">copy()</a>, <a class="el" href="displacement__control__element_8h_source.html#l00130">oomph::DisplacementControlElement::DisplacementControlElement()</a>, <a class="el" href="fsi_8h_source.html#l00751">oomph::FSI_functions::doc_fsi()</a>, <a class="el" href="missing__masters_8cc_source.html#l00662">oomph::Missing_masters_functions::get_required_master_nodal_information_helper()</a>, <a class="el" href="multi__domain_8cc_source.html#l00899">oomph::Multi_domain_functions::get_required_master_nodal_information_helper()</a>, <a class="el" href="missing__masters_8cc_source.html#l00439">oomph::Missing_masters_functions::get_required_nodal_information_helper()</a>, <a class="el" href="multi__domain_8cc_source.html#l00643">oomph::Multi_domain_functions::get_required_nodal_information_helper()</a>, <a class="el" href="triangle__mesh_8template_8cc_source.html#l18121">oomph::RefineableTriangleMesh&lt; ELEMENT &gt;::get_required_nodal_information_helper()</a>, <a class="el" href="triangle__mesh_8template_8cc_source.html#l26534">oomph::RefineableTriangleMesh&lt; ELEMENT &gt;::get_required_nodal_information_load_balance_helper()</a>, <a class="el" href="hijacked__elements_8h_source.html#l00227">oomph::Hijacked&lt; SpineElement&lt; FaceGeometry&lt; ELEMENT &gt; &gt; &gt;::hijack_nodal_position_value()</a>, <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00922">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::pin_all_non_pressure_dofs()</a>, <a class="el" href="navier__stokes__elements_8h_source.html#l01282">oomph::NavierStokesEquations&lt; DIM &gt;::pin_all_non_pressure_dofs()</a>, <a class="el" href="discontinuous__galerkin__equal__order__pressure__spacetime__navier__stokes__elements_8h_source.html#l01708">oomph::SpaceTimeNavierStokesEquations&lt; DIM &gt;::pin_all_non_pressure_dofs()</a>, <a class="el" href="mixed__order__petrov__galerkin__space__time__navier__stokes__elements_8h_source.html#l01736">oomph::SpaceTimeNavierStokesMixedOrderEquations&lt; DIM &gt;::pin_all_non_pressure_dofs()</a>, <a class="el" href="problem_8cc_source.html#l02554">oomph::Problem::remove_duplicate_data()</a>, <a class="el" href="navier__stokes__preconditioners_8h_source.html#l01121">oomph::NavierStokesSchurComplementPreconditioner::reset_pin_status()</a>, and <a class="el" href="problem_8cc_source.html#l16654">oomph::Problem::synchronise_eqn_numbers()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="periodic__orbit__handler_8h_source.html#l01018">oomph::PeriodicOrbitAssemblyHandler&lt; NNODE_1D &gt;::adapt_temporal_mesh()</a>, <a class="el" href="nodes_8h_source.html#l02619">oomph::BoundaryNode&lt; NODE_TYPE &gt;::assign_eqn_numbers()</a>, <a class="el" href="element__with__external__element_8cc_source.html#l00222">oomph::ElementWithExternalElement::assign_external_interaction_data_local_eqn_numbers()</a>, <a class="el" href="elements_8cc_source.html#l00652">oomph::GeneralisedElement::assign_local_eqn_numbers()</a>, <a class="el" href="mesh_8cc_source.html#l03343">oomph::Mesh::classify_halo_and_haloed_nodes()</a>, <a class="el" href="missing__masters_8template_8cc_source.html#l00245">oomph::Missing_masters_functions::construct_new_external_halo_master_node_helper()</a>, <a class="el" href="multi__domain_8template_8cc_source.html#l02046">oomph::Multi_domain_functions::construct_new_external_halo_master_node_helper()</a>, <a class="el" href="missing__masters_8cc_source.html#l01251">oomph::Missing_masters_functions::construct_new_external_halo_node_helper()</a>, <a class="el" href="multi__domain_8cc_source.html#l01329">oomph::Multi_domain_functions::construct_new_external_halo_node_helper()</a>, <a class="el" href="triangle__mesh_8template_8cc_source.html#l19183">oomph::RefineableTriangleMesh&lt; ELEMENT &gt;::construct_new_halo_node_helper()</a>, <a class="el" href="triangle__mesh_8template_8cc_source.html#l27648">oomph::RefineableTriangleMesh&lt; ELEMENT &gt;::construct_new_node_load_balance_helper()</a>, <a class="el" href="nodes_8cc_source.html#l03326">copy()</a>, <a class="el" href="displacement__control__element_8h_source.html#l00126">oomph::DisplacementControlElement::DisplacementControlElement()</a>, <a class="el" href="fsi_8h_source.html#l00747">oomph::FSI_functions::doc_fsi()</a>, <a class="el" href="missing__masters_8cc_source.html#l00658">oomph::Missing_masters_functions::get_required_master_nodal_information_helper()</a>, <a class="el" href="multi__domain_8cc_source.html#l00895">oomph::Multi_domain_functions::get_required_master_nodal_information_helper()</a>, <a class="el" href="missing__masters_8cc_source.html#l00435">oomph::Missing_masters_functions::get_required_nodal_information_helper()</a>, <a class="el" href="multi__domain_8cc_source.html#l00639">oomph::Multi_domain_functions::get_required_nodal_information_helper()</a>, <a class="el" href="triangle__mesh_8template_8cc_source.html#l18117">oomph::RefineableTriangleMesh&lt; ELEMENT &gt;::get_required_nodal_information_helper()</a>, <a class="el" href="triangle__mesh_8template_8cc_source.html#l26530">oomph::RefineableTriangleMesh&lt; ELEMENT &gt;::get_required_nodal_information_load_balance_helper()</a>, <a class="el" href="hijacked__elements_8h_source.html#l00223">oomph::Hijacked&lt; SpineElement&lt; FaceGeometry&lt; ELEMENT &gt; &gt; &gt;::hijack_nodal_position_value()</a>, <a class="el" href="generalised__newtonian__navier__stokes__elements_8h_source.html#l00918">oomph::GeneralisedNewtonianNavierStokesEquations&lt; DIM &gt;::pin_all_non_pressure_dofs()</a>, <a class="el" href="navier__stokes__elements_8h_source.html#l01278">oomph::NavierStokesEquations&lt; DIM &gt;::pin_all_non_pressure_dofs()</a>, <a class="el" href="discontinuous__galerkin__equal__order__pressure__spacetime__navier__stokes__elements_8h_source.html#l01704">oomph::SpaceTimeNavierStokesEquations&lt; DIM &gt;::pin_all_non_pressure_dofs()</a>, <a class="el" href="mixed__order__petrov__galerkin__space__time__navier__stokes__elements_8h_source.html#l01732">oomph::SpaceTimeNavierStokesMixedOrderEquations&lt; DIM &gt;::pin_all_non_pressure_dofs()</a>, <a class="el" href="problem_8cc_source.html#l02550">oomph::Problem::remove_duplicate_data()</a>, <a class="el" href="navier__stokes__preconditioners_8h_source.html#l01117">oomph::NavierStokesSchurComplementPreconditioner::reset_pin_status()</a>, and <a class="el" href="problem_8cc_source.html#l16650">oomph::Problem::synchronise_eqn_numbers()</a>.</p>
 
 </div>
 </div>
@@ -2210,11 +2210,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reference to i-th Lagrangian position. </p>
 
-<p class="definition">Definition at line <a class="el" href="nodes_8h_source.html#l01740">1740</a> of file <a class="el" href="nodes_8h_source.html">nodes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nodes_8h_source.html#l01736">1736</a> of file <a class="el" href="nodes_8h_source.html">nodes.h</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="nodes_8h_source.html#l01583">Nlagrangian_type</a>, <a class="el" href="nodes_8cc_source.html#l03216">xi_gen_range_check()</a>, and <a class="el" href="nodes_8h_source.html#l01589">Xi_position</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="nodes_8h_source.html#l01579">Nlagrangian_type</a>, <a class="el" href="nodes_8cc_source.html#l03212">xi_gen_range_check()</a>, and <a class="el" href="nodes_8h_source.html#l01585">Xi_position</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mesh__smooth_8h_source.html#l00408">oomph::NonLinearElasticitySmoothMesh&lt; ELEMENT &gt;::actions_before_newton_solve()</a>, <a class="el" href="refineable__mesh_8cc_source.html#l00898">oomph::TreeBasedRefineableMeshBase::adapt_mesh()</a>, <a class="el" href="refineable__quad__element_8h_source.html#l00288">oomph::RefineableSolidQElement&lt; 2 &gt;::build()</a>, <a class="el" href="refineable__brick__element_8h_source.html#l00301">oomph::RefineableSolidQElement&lt; 3 &gt;::build()</a>, <a class="el" href="circular__shell__mesh_8template_8cc_source.html#l00047">oomph::CircularCylindricalShellMesh&lt; ELEMENT &gt;::build_mesh()</a>, <a class="el" href="mesh_8cc_source.html#l09179">oomph::Mesh::delete_all_external_storage()</a>, <a class="el" href="error__estimator_8h_source.html#l00484">oomph::DummyErrorEstimator::DummyErrorEstimator()</a>, <a class="el" href="error__estimator_8h_source.html#l00621">oomph::DummyErrorEstimator::get_element_errors()</a>, <a class="el" href="nodes_8cc_source.html#l03487">lagrangian_position()</a>, <a class="el" href="mesh__smooth_8h_source.html#l00550">oomph::LinearElasticitySmoothMesh&lt; LINEAR_ELASTICITY_ELEMENT &gt;::operator()()</a>, <a class="el" href="mesh__smooth_8h_source.html#l00687">oomph::PoissonSmoothMesh&lt; POISSON_ELEMENT &gt;::operator()()</a>, <a class="el" href="refineable__mesh_8cc_source.html#l04292">oomph::TreeBasedRefineableMeshBase::p_adapt_mesh()</a>, and <a class="el" href="rectangular__quadmesh_8template_8h_source.html#l00471">oomph::ElasticRectangularQuadMesh&lt; ELEMENT &gt;::set_boundary_coordinates()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mesh__smooth_8h_source.html#l00404">oomph::NonLinearElasticitySmoothMesh&lt; ELEMENT &gt;::actions_before_newton_solve()</a>, <a class="el" href="refineable__mesh_8cc_source.html#l00894">oomph::TreeBasedRefineableMeshBase::adapt_mesh()</a>, <a class="el" href="refineable__quad__element_8h_source.html#l00284">oomph::RefineableSolidQElement&lt; 2 &gt;::build()</a>, <a class="el" href="refineable__brick__element_8h_source.html#l00297">oomph::RefineableSolidQElement&lt; 3 &gt;::build()</a>, <a class="el" href="circular__shell__mesh_8template_8cc_source.html#l00043">oomph::CircularCylindricalShellMesh&lt; ELEMENT &gt;::build_mesh()</a>, <a class="el" href="mesh_8cc_source.html#l09175">oomph::Mesh::delete_all_external_storage()</a>, <a class="el" href="error__estimator_8h_source.html#l00480">oomph::DummyErrorEstimator::DummyErrorEstimator()</a>, <a class="el" href="error__estimator_8h_source.html#l00617">oomph::DummyErrorEstimator::get_element_errors()</a>, <a class="el" href="nodes_8cc_source.html#l03483">lagrangian_position()</a>, <a class="el" href="mesh__smooth_8h_source.html#l00546">oomph::LinearElasticitySmoothMesh&lt; LINEAR_ELASTICITY_ELEMENT &gt;::operator()()</a>, <a class="el" href="mesh__smooth_8h_source.html#l00683">oomph::PoissonSmoothMesh&lt; POISSON_ELEMENT &gt;::operator()()</a>, <a class="el" href="refineable__mesh_8cc_source.html#l04288">oomph::TreeBasedRefineableMeshBase::p_adapt_mesh()</a>, and <a class="el" href="rectangular__quadmesh_8template_8h_source.html#l00467">oomph::ElasticRectangularQuadMesh&lt; ELEMENT &gt;::set_boundary_coordinates()</a>.</p>
 
 </div>
 </div>
@@ -2244,9 +2244,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reference to i-th Lagrangian position (const version) </p>
 
-<p class="definition">Definition at line <a class="el" href="nodes_8h_source.html#l01749">1749</a> of file <a class="el" href="nodes_8h_source.html">nodes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nodes_8h_source.html#l01745">1745</a> of file <a class="el" href="nodes_8h_source.html">nodes.h</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="nodes_8h_source.html#l01583">Nlagrangian_type</a>, <a class="el" href="nodes_8cc_source.html#l03216">xi_gen_range_check()</a>, and <a class="el" href="nodes_8h_source.html#l01589">Xi_position</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="nodes_8h_source.html#l01579">Nlagrangian_type</a>, <a class="el" href="nodes_8cc_source.html#l03212">xi_gen_range_check()</a>, and <a class="el" href="nodes_8h_source.html#l01585">Xi_position</a>.</p>
 
 </div>
 </div>
@@ -2286,11 +2286,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reference to the generalised Lagrangian position. &lsquo;Type&rsquo;: k; 'Coordinate direction: i. </p>
 
-<p class="definition">Definition at line <a class="el" href="nodes_8h_source.html#l01759">1759</a> of file <a class="el" href="nodes_8h_source.html">nodes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nodes_8h_source.html#l01755">1755</a> of file <a class="el" href="nodes_8h_source.html">nodes.h</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="nodes_8h_source.html#l01583">Nlagrangian_type</a>, <a class="el" href="nodes_8cc_source.html#l03216">xi_gen_range_check()</a>, and <a class="el" href="nodes_8h_source.html#l01589">Xi_position</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="nodes_8h_source.html#l01579">Nlagrangian_type</a>, <a class="el" href="nodes_8cc_source.html#l03212">xi_gen_range_check()</a>, and <a class="el" href="nodes_8h_source.html#l01585">Xi_position</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="circular__shell__mesh_8template_8cc_source.html#l00047">oomph::CircularCylindricalShellMesh&lt; ELEMENT &gt;::build_mesh()</a>, <a class="el" href="nodes_8cc_source.html#l03516">lagrangian_position_gen()</a>, <a class="el" href="projection_8h_source.html#l00726">oomph::ProjectionProblem&lt; PROJECTABLE_ELEMENT &gt;::project()</a>, and <a class="el" href="mesh_8cc_source.html#l09539">oomph::SolidMesh::set_lagrangian_nodal_coordinates()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="circular__shell__mesh_8template_8cc_source.html#l00043">oomph::CircularCylindricalShellMesh&lt; ELEMENT &gt;::build_mesh()</a>, <a class="el" href="nodes_8cc_source.html#l03512">lagrangian_position_gen()</a>, <a class="el" href="projection_8h_source.html#l00722">oomph::ProjectionProblem&lt; PROJECTABLE_ELEMENT &gt;::project()</a>, and <a class="el" href="mesh_8cc_source.html#l09535">oomph::SolidMesh::set_lagrangian_nodal_coordinates()</a>.</p>
 
 </div>
 </div>
@@ -2330,9 +2330,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reference to the generalised Lagrangian position. &lsquo;Type&rsquo;: k; 'Coordinate direction: i. (const version. </p>
 
-<p class="definition">Definition at line <a class="el" href="nodes_8h_source.html#l01769">1769</a> of file <a class="el" href="nodes_8h_source.html">nodes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nodes_8h_source.html#l01765">1765</a> of file <a class="el" href="nodes_8h_source.html">nodes.h</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="nodes_8h_source.html#l01583">Nlagrangian_type</a>, <a class="el" href="nodes_8cc_source.html#l03216">xi_gen_range_check()</a>, and <a class="el" href="nodes_8h_source.html#l01589">Xi_position</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="nodes_8h_source.html#l01579">Nlagrangian_type</a>, <a class="el" href="nodes_8cc_source.html#l03212">xi_gen_range_check()</a>, and <a class="el" href="nodes_8h_source.html#l01585">Xi_position</a>.</p>
 
 </div>
 </div>
@@ -2373,11 +2373,11 @@ Additional Inherited Members</h2></td></tr>
 <p>Private function to check that the arguments to the position functions are in range. </p>
 <p>Private function to check that the argument is within the range of stored Lagrangain coordinates and position types. </p>
 
-<p class="definition">Definition at line <a class="el" href="nodes_8cc_source.html#l03216">3216</a> of file <a class="el" href="nodes_8cc_source.html">nodes.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nodes_8cc_source.html#l03212">3212</a> of file <a class="el" href="nodes_8cc_source.html">nodes.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="nodes_8h_source.html#l01579">Nlagrangian</a>, and <a class="el" href="nodes_8h_source.html#l01583">Nlagrangian_type</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="nodes_8h_source.html#l01575">Nlagrangian</a>, and <a class="el" href="nodes_8h_source.html#l01579">Nlagrangian_type</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="nodes_8h_source.html#l01740">xi()</a>, and <a class="el" href="nodes_8h_source.html#l01759">xi_gen()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="nodes_8h_source.html#l01736">xi()</a>, and <a class="el" href="nodes_8h_source.html#l01755">xi_gen()</a>.</p>
 
 </div>
 </div>
@@ -2404,9 +2404,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Number of Lagrangian coordinates of the node. </p>
 
-<p class="definition">Definition at line <a class="el" href="nodes_8h_source.html#l01579">1579</a> of file <a class="el" href="nodes_8h_source.html">nodes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nodes_8h_source.html#l01575">1575</a> of file <a class="el" href="nodes_8h_source.html">nodes.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="nodes_8cc_source.html#l03330">copy()</a>, <a class="el" href="nodes_8cc_source.html#l03370">dump()</a>, <a class="el" href="nodes_8h_source.html#l01733">nlagrangian()</a>, <a class="el" href="nodes_8cc_source.html#l03390">read()</a>, and <a class="el" href="nodes_8cc_source.html#l03216">xi_gen_range_check()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="nodes_8cc_source.html#l03326">copy()</a>, <a class="el" href="nodes_8cc_source.html#l03366">dump()</a>, <a class="el" href="nodes_8h_source.html#l01729">nlagrangian()</a>, <a class="el" href="nodes_8cc_source.html#l03386">read()</a>, and <a class="el" href="nodes_8cc_source.html#l03212">xi_gen_range_check()</a>.</p>
 
 </div>
 </div>
@@ -2432,9 +2432,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Number of types of Lagrangian coordinates used to interpolate the Lagrangian coordinates within the element. </p>
 
-<p class="definition">Definition at line <a class="el" href="nodes_8h_source.html#l01583">1583</a> of file <a class="el" href="nodes_8h_source.html">nodes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nodes_8h_source.html#l01579">1579</a> of file <a class="el" href="nodes_8h_source.html">nodes.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="nodes_8cc_source.html#l03330">copy()</a>, <a class="el" href="nodes_8cc_source.html#l03370">dump()</a>, <a class="el" href="nodes_8h_source.html#l01737">nlagrangian_type()</a>, <a class="el" href="nodes_8cc_source.html#l03390">read()</a>, <a class="el" href="nodes_8h_source.html#l01740">xi()</a>, <a class="el" href="nodes_8h_source.html#l01759">xi_gen()</a>, and <a class="el" href="nodes_8cc_source.html#l03216">xi_gen_range_check()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="nodes_8cc_source.html#l03326">copy()</a>, <a class="el" href="nodes_8cc_source.html#l03366">dump()</a>, <a class="el" href="nodes_8h_source.html#l01733">nlagrangian_type()</a>, <a class="el" href="nodes_8cc_source.html#l03386">read()</a>, <a class="el" href="nodes_8h_source.html#l01736">xi()</a>, <a class="el" href="nodes_8h_source.html#l01755">xi_gen()</a>, and <a class="el" href="nodes_8cc_source.html#l03212">xi_gen_range_check()</a>.</p>
 
 </div>
 </div>
@@ -2460,9 +2460,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Pointer to data that will hold variable positions in elastic nodes. </p>
 
-<p class="definition">Definition at line <a class="el" href="nodes_8h_source.html#l01586">1586</a> of file <a class="el" href="nodes_8h_source.html">nodes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nodes_8h_source.html#l01582">1582</a> of file <a class="el" href="nodes_8h_source.html">nodes.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="nodes_8cc_source.html#l03695">add_eqn_numbers_to_vector()</a>, <a class="el" href="nodes_8cc_source.html#l03546">assign_eqn_numbers()</a>, <a class="el" href="nodes_8h_source.html#l01726">constrain_positions()</a>, <a class="el" href="nodes_8cc_source.html#l03330">copy()</a>, <a class="el" href="nodes_8cc_source.html#l03565">describe_dofs()</a>, <a class="el" href="nodes_8cc_source.html#l03473">does_pointer_correspond_to_position_data()</a>, <a class="el" href="nodes_8h_source.html#l01711">pin_all()</a>, <a class="el" href="nodes_8h_source.html#l01693">pin_position()</a>, <a class="el" href="nodes_8h_source.html#l01679">position_eqn_number()</a>, <a class="el" href="nodes_8h_source.html#l01671">position_is_a_copy()</a>, <a class="el" href="nodes_8h_source.html#l01684">position_is_pinned()</a>, <a class="el" href="nodes_8cc_source.html#l03707">read_eqn_numbers_from_vector()</a>, <a class="el" href="nodes_8cc_source.html#l03435">set_external_variable_position_pt()</a>, <a class="el" href="nodes_8cc_source.html#l03451">set_position_time_stepper()</a>, <a class="el" href="nodes_8cc_source.html#l03255">SolidNode()</a>, <a class="el" href="nodes_8h_source.html#l01730">unconstrain_positions()</a>, <a class="el" href="nodes_8h_source.html#l01718">unpin_all()</a>, <a class="el" href="nodes_8h_source.html#l01702">unpin_position()</a>, <a class="el" href="nodes_8h_source.html#l01651">variable_position()</a>, <a class="el" href="nodes_8h_source.html#l01654">variable_position_pt()</a>, and <a class="el" href="nodes_8cc_source.html#l03315">~SolidNode()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="nodes_8cc_source.html#l03691">add_eqn_numbers_to_vector()</a>, <a class="el" href="nodes_8cc_source.html#l03542">assign_eqn_numbers()</a>, <a class="el" href="nodes_8h_source.html#l01722">constrain_positions()</a>, <a class="el" href="nodes_8cc_source.html#l03326">copy()</a>, <a class="el" href="nodes_8cc_source.html#l03561">describe_dofs()</a>, <a class="el" href="nodes_8cc_source.html#l03469">does_pointer_correspond_to_position_data()</a>, <a class="el" href="nodes_8h_source.html#l01707">pin_all()</a>, <a class="el" href="nodes_8h_source.html#l01689">pin_position()</a>, <a class="el" href="nodes_8h_source.html#l01675">position_eqn_number()</a>, <a class="el" href="nodes_8h_source.html#l01667">position_is_a_copy()</a>, <a class="el" href="nodes_8h_source.html#l01680">position_is_pinned()</a>, <a class="el" href="nodes_8cc_source.html#l03703">read_eqn_numbers_from_vector()</a>, <a class="el" href="nodes_8cc_source.html#l03431">set_external_variable_position_pt()</a>, <a class="el" href="nodes_8cc_source.html#l03447">set_position_time_stepper()</a>, <a class="el" href="nodes_8cc_source.html#l03251">SolidNode()</a>, <a class="el" href="nodes_8h_source.html#l01726">unconstrain_positions()</a>, <a class="el" href="nodes_8h_source.html#l01714">unpin_all()</a>, <a class="el" href="nodes_8h_source.html#l01698">unpin_position()</a>, <a class="el" href="nodes_8h_source.html#l01647">variable_position()</a>, <a class="el" href="nodes_8h_source.html#l01650">variable_position_pt()</a>, and <a class="el" href="nodes_8cc_source.html#l03311">~SolidNode()</a>.</p>
 
 </div>
 </div>
@@ -2488,9 +2488,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Storage for the Lagrangian positions. </p>
 
-<p class="definition">Definition at line <a class="el" href="nodes_8h_source.html#l01589">1589</a> of file <a class="el" href="nodes_8h_source.html">nodes.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nodes_8h_source.html#l01585">1585</a> of file <a class="el" href="nodes_8h_source.html">nodes.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="nodes_8cc_source.html#l03603">add_values_to_vector()</a>, <a class="el" href="nodes_8cc_source.html#l03330">copy()</a>, <a class="el" href="nodes_8cc_source.html#l03370">dump()</a>, <a class="el" href="nodes_8cc_source.html#l03390">read()</a>, <a class="el" href="nodes_8cc_source.html#l03650">read_values_from_vector()</a>, <a class="el" href="nodes_8cc_source.html#l03255">SolidNode()</a>, <a class="el" href="nodes_8h_source.html#l01740">xi()</a>, <a class="el" href="nodes_8h_source.html#l01759">xi_gen()</a>, and <a class="el" href="nodes_8cc_source.html#l03315">~SolidNode()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="nodes_8cc_source.html#l03599">add_values_to_vector()</a>, <a class="el" href="nodes_8cc_source.html#l03326">copy()</a>, <a class="el" href="nodes_8cc_source.html#l03366">dump()</a>, <a class="el" href="nodes_8cc_source.html#l03386">read()</a>, <a class="el" href="nodes_8cc_source.html#l03646">read_values_from_vector()</a>, <a class="el" href="nodes_8cc_source.html#l03251">SolidNode()</a>, <a class="el" href="nodes_8h_source.html#l01736">xi()</a>, <a class="el" href="nodes_8h_source.html#l01755">xi_gen()</a>, and <a class="el" href="nodes_8cc_source.html#l03311">~SolidNode()</a>.</p>
 
 </div>
 </div>
@@ -2526,7 +2526,7 @@ Additional Inherited Members</h2></td></tr>
     <footer>
       <div class="container">
         <div class="text-muted" style="float:right;">Generated by <a href="http://www.doxygen.org/index.html">
-          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Tue Jul 6 2021 22:59:26
+          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Fri Jul 9 2021 20:54:19
         </div>
       </div>
     </footer>

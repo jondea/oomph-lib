@@ -181,7 +181,7 @@ Protected Attributes</h2></td></tr>
 <div class="textblock"><p>===================================================================== A Base class for oomph-lib run-time exception (error and warning) handling.</p>
 <p>The class can only be instantiated by the derived classes <a class="el" href="classoomph_1_1OomphLibError.html">OomphLibError</a> and <a class="el" href="classoomph_1_1OomphLibWarning.html">OomphLibWarning</a>. The (protected) constructor combines its string arguments into a standard format for uniform exception reports which are written to the specified output stream. </p>
 
-<p class="definition">Definition at line <a class="el" href="oomph__definitions_8h_source.html#l00177">177</a> of file <a class="el" href="oomph__definitions_8h_source.html">oomph_definitions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oomph__definitions_8h_source.html#l00173">173</a> of file <a class="el" href="oomph__definitions_8h_source.html">oomph_definitions.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a2bcc47316fcc96608e79bec5ab49f82b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2bcc47316fcc96608e79bec5ab49f82b">&#9670;&nbsp;</a></span>OomphLibException()</h2>
@@ -250,9 +250,9 @@ Protected Attributes</h2></td></tr>
 <p>Constructor takes the error description, function name and a location string provided by the OOMPH_EXCEPTION_LOCATION macro and combines them into a standard header. The exception type will be the string "WARNING" or "ERROR" and the message is written to the exception_stream, with a specified output_width. Optionally provide a traceback of the function calls. </p>
 <p>The <a class="el" href="classoomph_1_1OomphLibException.html">OomphLibException</a> constructor takes the error description, function name, a location string provided by the OOMPH_EXCEPTION_LOCATION and an exception type "WARNING" or "ERROR" and combines them into a standard error message that is written to the exception stream. The output_width of the message can also be specified. Optionally provide a traceback of the function calls. </p>
 
-<p class="definition">Definition at line <a class="el" href="oomph__definitions_8cc_source.html#l00154">154</a> of file <a class="el" href="oomph__definitions_8cc_source.html">oomph_definitions.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oomph__definitions_8cc_source.html#l00150">150</a> of file <a class="el" href="oomph__definitions_8cc_source.html">oomph_definitions.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="oomph__definitions_8h_source.html#l00213">Exception_stream_pt</a>, <a class="el" href="oomph__definitions_8h_source.html#l00216">Exception_stringstream_pt</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="stacktrace_8h_source.html#l00051">print_stacktrace()</a>, <a class="el" href="oomph__definitions_8cc_source.html#l00293">oomph::Global_string_for_annotation::string()</a>, and <a class="el" href="oomph__definitions_8h_source.html#l00220">Suppress_error_message</a>.</p>
+<p class="reference">References <a class="el" href="oomph__definitions_8h_source.html#l00209">Exception_stream_pt</a>, <a class="el" href="oomph__definitions_8h_source.html#l00212">Exception_stringstream_pt</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="stacktrace_8h_source.html#l00047">print_stacktrace()</a>, <a class="el" href="oomph__definitions_8cc_source.html#l00289">oomph::Global_string_for_annotation::string()</a>, and <a class="el" href="oomph__definitions_8h_source.html#l00216">Suppress_error_message</a>.</p>
 
 </div>
 </div>
@@ -289,9 +289,9 @@ Protected Attributes</h2></td></tr>
 <p>created in the constructor (unless suppresed)</p>
 <p>The <a class="el" href="classoomph_1_1OomphLibException.html">OomphLibException</a> destructor actually spawns the error message </p>
 
-<p class="definition">Definition at line <a class="el" href="oomph__definitions_8cc_source.html#l00136">136</a> of file <a class="el" href="oomph__definitions_8cc_source.html">oomph_definitions.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oomph__definitions_8cc_source.html#l00132">132</a> of file <a class="el" href="oomph__definitions_8cc_source.html">oomph_definitions.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="oomph__definitions_8h_source.html#l00216">Exception_stringstream_pt</a>, and <a class="el" href="oomph__definitions_8h_source.html#l00220">Suppress_error_message</a>.</p>
+<p class="reference">References <a class="el" href="oomph__definitions_8h_source.html#l00212">Exception_stringstream_pt</a>, and <a class="el" href="oomph__definitions_8h_source.html#l00216">Suppress_error_message</a>.</p>
 
 </div>
 </div>
@@ -321,11 +321,11 @@ Protected Attributes</h2></td></tr>
 
 <p>Suppress issueing of the error message in destructor (useful if error is caught successfully!) </p>
 
-<p class="definition">Definition at line <a class="el" href="oomph__definitions_8h_source.html#l00184">184</a> of file <a class="el" href="oomph__definitions_8h_source.html">oomph_definitions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oomph__definitions_8h_source.html#l00180">180</a> of file <a class="el" href="oomph__definitions_8h_source.html">oomph_definitions.h</a>.</p>
 
-<p class="reference">References <a class="el" href="oomph__definitions_8h_source.html#l00220">Suppress_error_message</a>, and <a class="el" href="oomph__definitions_8cc_source.html#l00080">oomph::TerminateHelper::suppress_exception_error_messages()</a>.</p>
+<p class="reference">References <a class="el" href="oomph__definitions_8h_source.html#l00216">Suppress_error_message</a>, and <a class="el" href="oomph__definitions_8cc_source.html#l00076">oomph::TerminateHelper::suppress_exception_error_messages()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="elements_8cc_source.html#l04620">oomph::FiniteElement::locate_zeta()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="elements_8cc_source.html#l04616">oomph::FiniteElement::locate_zeta()</a>.</p>
 
 </div>
 </div>
@@ -353,9 +353,9 @@ Protected Attributes</h2></td></tr>
 <p>Exception stream to which we write message in destructor <br  />
  </p>
 
-<p class="definition">Definition at line <a class="el" href="oomph__definitions_8h_source.html#l00213">213</a> of file <a class="el" href="oomph__definitions_8h_source.html">oomph_definitions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oomph__definitions_8h_source.html#l00209">209</a> of file <a class="el" href="oomph__definitions_8h_source.html">oomph_definitions.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="oomph__definitions_8cc_source.html#l00154">OomphLibException()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="oomph__definitions_8cc_source.html#l00150">OomphLibException()</a>.</p>
 
 </div>
 </div>
@@ -381,9 +381,9 @@ Protected Attributes</h2></td></tr>
 
 <p>String stream that records the error message. </p>
 
-<p class="definition">Definition at line <a class="el" href="oomph__definitions_8h_source.html#l00216">216</a> of file <a class="el" href="oomph__definitions_8h_source.html">oomph_definitions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oomph__definitions_8h_source.html#l00212">212</a> of file <a class="el" href="oomph__definitions_8h_source.html">oomph_definitions.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="oomph__definitions_8cc_source.html#l00154">OomphLibException()</a>, and <a class="el" href="oomph__definitions_8cc_source.html#l00136">~OomphLibException()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="oomph__definitions_8cc_source.html#l00150">OomphLibException()</a>, and <a class="el" href="oomph__definitions_8cc_source.html#l00132">~OomphLibException()</a>.</p>
 
 </div>
 </div>
@@ -409,9 +409,9 @@ Protected Attributes</h2></td></tr>
 
 <p>Boolean to suppress issuing of the error message in destructor (useful if error is caught successfully!) </p>
 
-<p class="definition">Definition at line <a class="el" href="oomph__definitions_8h_source.html#l00220">220</a> of file <a class="el" href="oomph__definitions_8h_source.html">oomph_definitions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oomph__definitions_8h_source.html#l00216">216</a> of file <a class="el" href="oomph__definitions_8h_source.html">oomph_definitions.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="oomph__definitions_8h_source.html#l00184">disable_error_message()</a>, <a class="el" href="oomph__definitions_8cc_source.html#l00154">OomphLibException()</a>, and <a class="el" href="oomph__definitions_8cc_source.html#l00136">~OomphLibException()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="oomph__definitions_8h_source.html#l00180">disable_error_message()</a>, <a class="el" href="oomph__definitions_8cc_source.html#l00150">OomphLibException()</a>, and <a class="el" href="oomph__definitions_8cc_source.html#l00132">~OomphLibException()</a>.</p>
 
 </div>
 </div>
@@ -447,7 +447,7 @@ Protected Attributes</h2></td></tr>
     <footer>
       <div class="container">
         <div class="text-muted" style="float:right;">Generated by <a href="http://www.doxygen.org/index.html">
-          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Tue Jul 6 2021 22:58:03
+          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Fri Jul 9 2021 20:53:07
         </div>
       </div>
     </footer>

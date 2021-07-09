@@ -163,7 +163,7 @@ int $\ast$ \mbox{\hyperlink{classoomph_1_1ElementWithExternalElement_ae4da8e21a1
 \doxysubsection{Detailed Description}
 This is a base class for all elements that require external sources (e.\+g. F\+SI, multi-\/domain problems such as Helmholtz, multi-\/mesh Boussinesq convection, etc.). It provides storage for the source element and corresponding local coordinate at each integration point, and allows use of locate\+\_\+zeta to obtain such source elements. In addition separate storage is allocated for all field data in the external elements and all geometric data that can affect the field data in the external elements. Generic finite difference routines are provided to calculate entries in the Jacobian from the data of the external elements. 
 
-Definition at line 59 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
+Definition at line 55 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
 
 
 
@@ -180,7 +180,7 @@ Constructor. Initialise member data and pointers to data associated with the ext
 
 
 
-Definition at line 65 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
+Definition at line 61 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1ElementWithExternalElement_a50c9f65653e46d6e018b31c0d941d391}\label{classoomph_1_1ElementWithExternalElement_a50c9f65653e46d6e018b31c0d941d391}} 
 \index{oomph::ElementWithExternalElement@{oomph::ElementWithExternalElement}!````~ElementWithExternalElement@{$\sim$ElementWithExternalElement}}
@@ -194,7 +194,7 @@ The destructor, clean up any allocated memory.
 
 Destructor, clean up any memory allocated for the equation numbering schemes and storage for the external elements. 
 
-Definition at line 40 of file element\+\_\+with\+\_\+external\+\_\+element.\+cc.
+Definition at line 36 of file element\+\_\+with\+\_\+external\+\_\+element.\+cc.
 
 
 
@@ -212,7 +212,7 @@ Broken copy constructor.
 
 
 
-Definition at line 87 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
+Definition at line 83 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
 
 
 
@@ -233,7 +233,7 @@ Are we including external geometric data in the element\textquotesingle{}s Jacob
 
 
 
-Definition at line 238 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
+Definition at line 234 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
 
 
 
@@ -255,7 +255,7 @@ Are we including external data in the element\textquotesingle{}s Jacobian.
 
 
 
-Definition at line 242 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
+Definition at line 238 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
 
 
 
@@ -277,7 +277,7 @@ Assign the local equation numbers for those \mbox{\hyperlink{classoomph_1_1Data}
 
 This function determines the all \mbox{\hyperlink{classoomph_1_1Data}{Data}} in external elemetns that affects the residuals of the element and adds their global equation numbers to the local-\/to-\/global look-\/up scheme. Note that we only include \mbox{\hyperlink{classoomph_1_1Data}{Data}} items into the element\textquotesingle{}s External\+\_\+interaction\+\_\+data if they are not already included in the element\textquotesingle{}s nodal positional \mbox{\hyperlink{classoomph_1_1Data}{Data}}, its internal or external \mbox{\hyperlink{classoomph_1_1Data}{Data}}. 
 
-Definition at line 226 of file element\+\_\+with\+\_\+external\+\_\+element.\+cc.
+Definition at line 222 of file element\+\_\+with\+\_\+external\+\_\+element.\+cc.
 
 
 
@@ -303,7 +303,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1GeneralisedElement_aa4884467f3
 
 
 
-Definition at line 304 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
+Definition at line 300 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
 
 
 
@@ -321,7 +321,7 @@ Helper function to check that storage has actually been allocated.
 
 
 
-Definition at line 501 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
+Definition at line 497 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
 
 
 
@@ -351,7 +351,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1FSIImposeDisplacementByLagrangeM
 
 
 
-Definition at line 188 of file element\+\_\+with\+\_\+external\+\_\+element.\+cc.
+Definition at line 184 of file element\+\_\+with\+\_\+external\+\_\+element.\+cc.
 
 
 
@@ -373,7 +373,7 @@ Access function to get source element\textquotesingle{}s local coords for specif
 
 
 
-Definition at line 146 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
+Definition at line 142 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
 
 
 
@@ -395,7 +395,7 @@ Access function to get source element\textquotesingle{}s coords, const version.
 
 
 
-Definition at line 161 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
+Definition at line 157 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
 
 
 
@@ -413,7 +413,7 @@ Access function to source element for specified interaction index at specified i
 
 
 
-Definition at line 117 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
+Definition at line 113 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
 
 
 
@@ -435,7 +435,7 @@ Access function to source element, const version.
 
 
 
-Definition at line 131 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
+Definition at line 127 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
 
 
 
@@ -453,7 +453,7 @@ Is the external geometric data taken into account when forming the Jacobian?
 
 
 
-Definition at line 286 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
+Definition at line 282 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
 
 
 
@@ -476,7 +476,7 @@ Return vector of pointers to the field \mbox{\hyperlink{classoomph_1_1Data}{Data
 
 
 
-Definition at line 216 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
+Definition at line 212 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
 
 
 
@@ -499,7 +499,7 @@ Return vector of pointers to the geometric \mbox{\hyperlink{classoomph_1_1Data}{
 
 
 
-Definition at line 247 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
+Definition at line 243 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
 
 
 
@@ -525,7 +525,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1RefineableFSIImposeDisplacementB
 
 
 
-Definition at line 412 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
+Definition at line 408 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
 
 
 
@@ -547,7 +547,7 @@ Calculate the contributions to the jacobian from all enternal interaction degree
 
 
 
-Definition at line 344 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
+Definition at line 340 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
 
 
 
@@ -566,7 +566,7 @@ Calculate the contributions to the jacobian from all external interaction degree
 
 
 
-Definition at line 329 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
+Definition at line 325 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
 
 
 
@@ -588,7 +588,7 @@ Calculate the contributions to the jacobian from the enternal interaction degree
 
 
 
-Definition at line 370 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
+Definition at line 366 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
 
 
 
@@ -607,7 +607,7 @@ Calculate the contributions to the jacobian from the external interaction degree
 
 This function calculates the entries of Jacobian matrix, used in the Newton method, associated with the external interaction degrees of freedom for external fields. It does this using finite differences, rather than an analytical formulation, so can be done in total generality. 
 
-Definition at line 611 of file element\+\_\+with\+\_\+external\+\_\+element.\+cc.
+Definition at line 607 of file element\+\_\+with\+\_\+external\+\_\+element.\+cc.
 
 
 
@@ -629,7 +629,7 @@ Calculate the contributions to the jacobian from the external interaction degree
 
 
 
-Definition at line 396 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
+Definition at line 392 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
 
 
 
@@ -648,7 +648,7 @@ Calculate the contributions to the jacobian from the external interaction degree
 
 This function calculates the entries of Jacobian matrix, used in the Newton method, associated with the external interaction degrees of freedom for external geometric data. It does this using finite differences, rather than an analytical formulation, so can be done in total generality. 
 
-Definition at line 693 of file element\+\_\+with\+\_\+external\+\_\+element.\+cc.
+Definition at line 689 of file element\+\_\+with\+\_\+external\+\_\+element.\+cc.
 
 
 
@@ -670,7 +670,7 @@ Flush the storage for external elements.
 
 Clear the storage for pointers to external elements and their associated local coordinates. 
 
-Definition at line 109 of file element\+\_\+with\+\_\+external\+\_\+element.\+cc.
+Definition at line 105 of file element\+\_\+with\+\_\+external\+\_\+element.\+cc.
 
 
 
@@ -697,7 +697,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1FSIWallElement_a16256fcbc5ddc279
 
 
 
-Definition at line 136 of file element\+\_\+with\+\_\+external\+\_\+element.\+cc.
+Definition at line 132 of file element\+\_\+with\+\_\+external\+\_\+element.\+cc.
 
 
 
@@ -723,7 +723,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1FSIWallElement_a27ef2e85f3486083
 
 
 
-Definition at line 161 of file element\+\_\+with\+\_\+external\+\_\+element.\+cc.
+Definition at line 157 of file element\+\_\+with\+\_\+external\+\_\+element.\+cc.
 
 
 
@@ -745,7 +745,7 @@ Do not include any external geometric data when computing the element\textquotes
 
 
 
-Definition at line 265 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
+Definition at line 261 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
 
 
 
@@ -767,7 +767,7 @@ Do not include any external interaction data when computing the element\textquot
 
 
 
-Definition at line 269 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
+Definition at line 265 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
 
 
 
@@ -789,7 +789,7 @@ Do include external geometric data when computing the element\textquotesingle{}s
 
 
 
-Definition at line 275 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
+Definition at line 271 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
 
 
 
@@ -811,7 +811,7 @@ Do include external geometric data when computing the element\textquotesingle{}s
 
 
 
-Definition at line 281 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
+Definition at line 277 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
 
 
 
@@ -833,7 +833,7 @@ Initialise storage for pointers to external elements and their local coordinates
 
 Initialise storage for source elements and their associated local coordinates for the specified number of interactions. 
 
-Definition at line 68 of file element\+\_\+with\+\_\+external\+\_\+element.\+cc.
+Definition at line 64 of file element\+\_\+with\+\_\+external\+\_\+element.\+cc.
 
 
 
@@ -855,7 +855,7 @@ Return the number of \mbox{\hyperlink{classoomph_1_1Data}{Data}} items that affe
 
 
 
-Definition at line 211 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
+Definition at line 207 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
 
 
 
@@ -878,7 +878,7 @@ Return the number of geometric \mbox{\hyperlink{classoomph_1_1Data}{Data}} items
 
 
 
-Definition at line 234 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
+Definition at line 230 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
 
 
 
@@ -900,7 +900,7 @@ Return the number of interactions in the element.
 
 
 
-Definition at line 193 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
+Definition at line 189 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
 
 
 
@@ -922,7 +922,7 @@ Broken assignment operator.
 
 
 
-Definition at line 93 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
+Definition at line 89 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
 
 
 
@@ -940,7 +940,7 @@ Output by plotting vector from integration point to corresponding point in exter
 
 Output by plotting vector from integration point to corresponding point in external element for specified interaction index 
 
-Definition at line 770 of file element\+\_\+with\+\_\+external\+\_\+element.\+cc.
+Definition at line 766 of file element\+\_\+with\+\_\+external\+\_\+element.\+cc.
 
 
 
@@ -958,7 +958,7 @@ Helper function for range checking in the access functions.
 
 
 
-Definition at line 526 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
+Definition at line 522 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
 
 
 
@@ -984,7 +984,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1FSIWallElement_a5ba540936e15a03a
 
 
 
-Definition at line 441 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
+Definition at line 437 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
 
 
 
@@ -1006,7 +1006,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1FSIAxisymFoepplvonKarmanElement_
 
 
 
-Definition at line 468 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
+Definition at line 464 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
 
 
 
@@ -1028,7 +1028,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1FSIWallElement_adc6d07122f1624e2
 
 
 
-Definition at line 454 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
+Definition at line 450 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
 
 
 
@@ -1054,7 +1054,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1FSIAxisymFoepplvonKarmanElement_
 
 
 
-Definition at line 481 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
+Definition at line 477 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
 
 
 
@@ -1076,7 +1076,7 @@ Set the number of interactions in the element This function is usually called in
 
 
 
-Definition at line 189 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
+Definition at line 185 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
 
 
 
@@ -1098,7 +1098,7 @@ Helper function to check if storage has actually been allocated.
 
 
 
-Definition at line 100 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
+Definition at line 96 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
 
 
 
@@ -1116,7 +1116,7 @@ Function that is called before the finite differencing of any external interacti
 
 
 
-Definition at line 435 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
+Definition at line 431 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
 
 
 
@@ -1138,7 +1138,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1FSIAxisymFoepplvonKarmanElement_
 
 
 
-Definition at line 462 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
+Definition at line 458 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
 
 
 
@@ -1160,7 +1160,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1FSIWallElement_ab427113ed6de36a5
 
 
 
-Definition at line 447 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
+Definition at line 443 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
 
 
 
@@ -1182,7 +1182,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1FSIAxisymFoepplvonKarmanElement_
 
 
 
-Definition at line 474 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
+Definition at line 470 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
 
 
 
@@ -1203,7 +1203,7 @@ Boolean flag to indicate whether to include the external geometric data.
 
 
 
-Definition at line 488 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
+Definition at line 484 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
 
 
 
@@ -1221,7 +1221,7 @@ Boolean flag to indicate whether to include the external data.
 
 
 
-Definition at line 485 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
+Definition at line 481 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
 
 
 
@@ -1240,7 +1240,7 @@ Storage for vectors of local coordinates in external elements that correspond to
 
 
 
-Definition at line 587 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
+Definition at line 583 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
 
 
 
@@ -1258,7 +1258,7 @@ Storage for pointers to elements that provide contributions to the residuals of 
 
 
 
-Definition at line 582 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
+Definition at line 578 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
 
 
 
@@ -1276,7 +1276,7 @@ Storage for the index of the values in the external field data that affect the i
 
 
 
-Definition at line 591 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
+Definition at line 587 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
 
 
 
@@ -1294,7 +1294,7 @@ Storage for the local equation number associated with the external field data th
 
 
 
-Definition at line 595 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
+Definition at line 591 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
 
 
 
@@ -1308,7 +1308,7 @@ Referenced by assign\+\_\+external\+\_\+interaction\+\_\+data\+\_\+local\+\_\+eq
 
 Storage for pointers to external field \mbox{\hyperlink{classoomph_1_1Data}{Data}} that affect the interactions in the elemenet 
 
-Definition at line 492 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
+Definition at line 488 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
 
 
 
@@ -1326,7 +1326,7 @@ Storage for the index of the values in the external geometric data that affect t
 
 
 
-Definition at line 600 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
+Definition at line 596 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
 
 
 
@@ -1344,7 +1344,7 @@ Storage for the local equation number associated with the external geometric dat
 
 
 
-Definition at line 604 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
+Definition at line 600 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
 
 
 
@@ -1358,7 +1358,7 @@ Referenced by assign\+\_\+external\+\_\+interaction\+\_\+data\+\_\+local\+\_\+eq
 
 Storage for pointers to external geometric \mbox{\hyperlink{classoomph_1_1Data}{Data}} that affect the interactions in the elemenet 
 
-Definition at line 496 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
+Definition at line 492 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
 
 
 
@@ -1376,7 +1376,7 @@ Number of entries in the external element storage schemes (Nintergation\+\_\+pt 
 
 
 
-Definition at line 570 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
+Definition at line 566 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
 
 
 
@@ -1394,7 +1394,7 @@ Number of external interaction field data.
 
 
 
-Definition at line 573 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
+Definition at line 569 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
 
 
 
@@ -1412,7 +1412,7 @@ Number of external interaction geometric data.
 
 
 
-Definition at line 576 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
+Definition at line 572 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
 
 
 
@@ -1430,7 +1430,7 @@ Number of interactions.
 
 
 
-Definition at line 563 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
+Definition at line 559 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
 
 
 
@@ -1448,7 +1448,7 @@ Number of intergation point in the element.
 
 
 
-Definition at line 566 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
+Definition at line 562 of file element\+\_\+with\+\_\+external\+\_\+element.\+h.
 
 
 

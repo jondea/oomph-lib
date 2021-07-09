@@ -53,7 +53,7 @@ Class that contains data for hanging nodes.
 
 To ensure inter-\/element continuity, the values and nodal positions of hanging nodes must be linear combinations of the values and positions on certain adjacent \char`\"{}master\char`\"{} nodes. For every hanging node $ J $ , \[ {\bf U}_J = \sum_{K} {\bf U}_{K} \omega_{JK} \] and \[ {\bf X}_J = \sum_{K} {\bf X}_{K} \omega_{JK} \], where $ {\bf U}_I $ and $ {\bf U}_I $ are Vectors containing the nodal values and positions of node $ I $ respectively; the sum is taken over the hanging node\textquotesingle{}s master nodes $ K $ and $ \omega_{JK} $ are suitable weights. This class provides storage and access functions for the pointers to the master nodes and their associated weights. 
 
-Definition at line 683 of file nodes.\+h.
+Definition at line 679 of file nodes.\+h.
 
 
 
@@ -70,7 +70,7 @@ Default constructor, initialise vectors to have size zero.
 
 
 
-Definition at line 688 of file nodes.\+h.
+Definition at line 684 of file nodes.\+h.
 
 
 
@@ -88,7 +88,7 @@ Alternative constructor when the number of master nodes is known.
 
 
 
-Definition at line 696 of file nodes.\+h.
+Definition at line 692 of file nodes.\+h.
 
 
 
@@ -106,7 +106,7 @@ Delete the storage.
 
 
 
-Definition at line 706 of file nodes.\+h.
+Definition at line 702 of file nodes.\+h.
 
 
 
@@ -124,7 +124,7 @@ Broken copy constructor.
 
 
 
-Definition at line 720 of file nodes.\+h.
+Definition at line 716 of file nodes.\+h.
 
 
 
@@ -145,7 +145,7 @@ Add (pointer to) master node and corresponding weight to the internally stored (
 
 Add (pointer to) master node and corresponding weight to the internally stored (pointers to) master nodes and weights. 
 
-Definition at line 1432 of file nodes.\+cc.
+Definition at line 1428 of file nodes.\+cc.
 
 
 
@@ -163,7 +163,7 @@ Return a pointer to the i-\/th master node.
 
 
 
-Definition at line 735 of file nodes.\+h.
+Definition at line 731 of file nodes.\+h.
 
 
 
@@ -185,7 +185,7 @@ Return weight for dofs on i-\/th master node.
 
 
 
-Definition at line 752 of file nodes.\+h.
+Definition at line 748 of file nodes.\+h.
 
 
 
@@ -207,7 +207,7 @@ Return the number of master nodes.
 
 
 
-Definition at line 732 of file nodes.\+h.
+Definition at line 728 of file nodes.\+h.
 
 
 
@@ -229,7 +229,7 @@ Broken assignment operator.
 
 
 
-Definition at line 726 of file nodes.\+h.
+Definition at line 722 of file nodes.\+h.
 
 
 
@@ -247,7 +247,7 @@ Check that the argument is within the range of stored data values.
 
 Check that the argument is within the range of stored master nodes 
 
-Definition at line 1397 of file nodes.\+cc.
+Definition at line 1393 of file nodes.\+cc.
 
 
 
@@ -269,7 +269,7 @@ Set the pointer to the i-\/th master node and its weight.
 
 
 
-Definition at line 1417 of file nodes.\+cc.
+Definition at line 1413 of file nodes.\+cc.
 
 
 
@@ -294,7 +294,7 @@ C-\/style array of pointers to nodes that this hanging node depends on.
 
 
 
-Definition at line 783 of file nodes.\+h.
+Definition at line 779 of file nodes.\+h.
 
 
 
@@ -312,7 +312,7 @@ C-\/style array of weights for the dofs on the master nodes.
 
 
 
-Definition at line 786 of file nodes.\+h.
+Definition at line 782 of file nodes.\+h.
 
 
 
@@ -330,7 +330,7 @@ Number of master nodes required by this hanging node.
 
 
 
-Definition at line 789 of file nodes.\+h.
+Definition at line 785 of file nodes.\+h.
 
 
 

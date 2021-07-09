@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.7.6)  6 JUL 2021 23:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.7.9)  9 JUL 2021 21:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -826,12 +826,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [6]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 454.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 450.
 [7]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 454.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 450.
 (./refman.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 454.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 454.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 450.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 450.
 Package rerunfilecheck Info: File `refman.out' has not changed.
 (rerunfilecheck)             Checksum: 2275AAF58C361643DD5CB23288D6BD25;1170.
  ) ) 
@@ -905,7 +905,7 @@ hare/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/urw/helvetic/uhvb8ac.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1
 /urw/helvetic/uhvro8a.pfb>
-Output written on refman.pdf (7 pages, 402442 bytes).
+Output written on refman.pdf (7 pages, 402065 bytes).
 PDF statistics:
  197 PDF objects out of 1000 (max. 8388607)
  167 compressed objects within 2 object streams

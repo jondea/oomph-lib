@@ -208,7 +208,7 @@ In addition, there are a number of interfaces that specify element-\/specific ta
 
 In mixed element different sets of nodes are used to interpolate different unknowns. Interfaces are provided for functions that can be used to find the position of the nodes that interpolate the different unknowns. These functions are used to setup hanging node information automatically in particular elements, e.\+g. Taylor Hood Navier--Stokes. The default implementation assumes that the elements are isoparameteric. 
 
-Definition at line 101 of file refineable\+\_\+elements.\+h.
+Definition at line 97 of file refineable\+\_\+elements.\+h.
 
 
 
@@ -225,7 +225,7 @@ Constructor, calls the \mbox{\hyperlink{classoomph_1_1FiniteElement}{Finite\+Ele
 
 
 
-Definition at line 197 of file refineable\+\_\+elements.\+h.
+Definition at line 193 of file refineable\+\_\+elements.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1RefineableElement_ae38105494105430513f05c3cd22b8f48}\label{classoomph_1_1RefineableElement_ae38105494105430513f05c3cd22b8f48}} 
 \index{oomph::RefineableElement@{oomph::RefineableElement}!````~RefineableElement@{$\sim$RefineableElement}}
@@ -239,7 +239,7 @@ Destructor, delete the allocated storage for the hanging equations.
 
 Destructor (needed here because of I\+BM xlC compiler under A\+IX) Delete the storage allocated for the local equations. 
 
-Definition at line 42 of file refineable\+\_\+elements.\+cc.
+Definition at line 38 of file refineable\+\_\+elements.\+cc.
 
 
 
@@ -257,7 +257,7 @@ Broken copy constructor.
 
 
 
-Definition at line 207 of file refineable\+\_\+elements.\+h.
+Definition at line 203 of file refineable\+\_\+elements.\+h.
 
 
 
@@ -282,7 +282,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1FiniteElement_aa595f0f0672996c
 
 
 
-Definition at line 186 of file refineable\+\_\+elements.\+cc.
+Definition at line 182 of file refineable\+\_\+elements.\+cc.
 
 
 
@@ -307,7 +307,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1FiniteElement_a613c731bee7d3a3
 
 
 
-Definition at line 82 of file refineable\+\_\+elements.\+cc.
+Definition at line 78 of file refineable\+\_\+elements.\+cc.
 
 
 
@@ -330,7 +330,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1FiniteElement_aa62df89ea3850a5
 
 
 
-Definition at line 142 of file refineable\+\_\+elements.\+cc.
+Definition at line 138 of file refineable\+\_\+elements.\+cc.
 
 
 
@@ -348,7 +348,7 @@ Assign the local equation numbers for hanging node variables.
 
 Assign the local hang eqn. 
 
-Definition at line 313 of file refineable\+\_\+elements.\+cc.
+Definition at line 309 of file refineable\+\_\+elements.\+cc.
 
 
 
@@ -374,7 +374,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1FiniteElement_a4136e6f2a0d782f
 
 
 
-Definition at line 450 of file refineable\+\_\+elements.\+h.
+Definition at line 446 of file refineable\+\_\+elements.\+h.
 
 
 
@@ -420,7 +420,7 @@ Static helper function that is used to check that the value\+\_\+id is in range.
 
 Helper function that is used to check that the value\+\_\+id is in the range allowed by the element. The number of continuously interpolated values and the value\+\_\+id must be passed as arguments. 
 
-Definition at line 54 of file refineable\+\_\+elements.\+cc.
+Definition at line 50 of file refineable\+\_\+elements.\+cc.
 
 
 
@@ -438,7 +438,7 @@ Final operations that must be performed when the element is no longer active in 
 
 Deactivate the element by marking setting all local pointers to obsolete nodes to zero 
 
-Definition at line 296 of file refineable\+\_\+elements.\+cc.
+Definition at line 292 of file refineable\+\_\+elements.\+cc.
 
 
 
@@ -460,7 +460,7 @@ Deselect the element for refinement.
 
 
 
-Definition at line 306 of file refineable\+\_\+elements.\+h.
+Definition at line 302 of file refineable\+\_\+elements.\+h.
 
 
 
@@ -482,7 +482,7 @@ No unrefinement will be performed by merging the four sons of this element.
 
 
 
-Definition at line 312 of file refineable\+\_\+elements.\+h.
+Definition at line 308 of file refineable\+\_\+elements.\+h.
 
 
 
@@ -504,7 +504,7 @@ Suppress of any refinement for this element.
 
 
 
-Definition at line 233 of file refineable\+\_\+elements.\+h.
+Definition at line 229 of file refineable\+\_\+elements.\+h.
 
 
 
@@ -522,7 +522,7 @@ Emnable refinement for this element.
 
 
 
-Definition at line 236 of file refineable\+\_\+elements.\+h.
+Definition at line 232 of file refineable\+\_\+elements.\+h.
 
 
 
@@ -540,7 +540,7 @@ Return a pointer to the father element.
 
 
 
-Definition at line 472 of file refineable\+\_\+elements.\+h.
+Definition at line 468 of file refineable\+\_\+elements.\+h.
 
 
 
@@ -566,7 +566,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1FiniteElement_a4a79882efb07751
 
 
 
-Definition at line 679 of file refineable\+\_\+elements.\+cc.
+Definition at line 675 of file refineable\+\_\+elements.\+cc.
 
 
 
@@ -588,7 +588,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1PRefineableQCrouzeixRaviartEleme
 
 
 
-Definition at line 519 of file refineable\+\_\+elements.\+h.
+Definition at line 515 of file refineable\+\_\+elements.\+h.
 
 
 
@@ -611,7 +611,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1RefineableQElement_3_012_01_4_a0
 
 
 
-Definition at line 529 of file refineable\+\_\+elements.\+h.
+Definition at line 525 of file refineable\+\_\+elements.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1RefineableElement_a83d4f26d6f427a6c9001c65c4263c622}\label{classoomph_1_1RefineableElement_a83d4f26d6f427a6c9001c65c4263c622}} 
 \index{oomph::RefineableElement@{oomph::RefineableElement}!get\_dresidual\_dnodal\_coordinates@{get\_dresidual\_dnodal\_coordinates}}
@@ -633,7 +633,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1RefineableSpaceTimeNavierStokesE
 
 
 
-Definition at line 598 of file refineable\+\_\+elements.\+cc.
+Definition at line 594 of file refineable\+\_\+elements.\+cc.
 
 
 
@@ -651,7 +651,7 @@ Return a pointer to the \char`\"{}father\char`\"{} element at the specified refi
 
 
 
-Definition at line 487 of file refineable\+\_\+elements.\+h.
+Definition at line 483 of file refineable\+\_\+elements.\+h.
 
 
 
@@ -691,7 +691,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1PRefineableQCrouzeixRaviartEleme
 
 
 
-Definition at line 369 of file refineable\+\_\+elements.\+h.
+Definition at line 365 of file refineable\+\_\+elements.\+h.
 
 
 
@@ -717,7 +717,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1RefineableQTaylorHoodSpaceTimeEl
 
 
 
-Definition at line 406 of file refineable\+\_\+elements.\+h.
+Definition at line 402 of file refineable\+\_\+elements.\+h.
 
 
 
@@ -745,7 +745,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1FiniteElement_aee5883ba2e46425
 
 
 
-Definition at line 523 of file refineable\+\_\+elements.\+cc.
+Definition at line 519 of file refineable\+\_\+elements.\+cc.
 
 
 
@@ -767,7 +767,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1PRefineableQElement_3_013_00_01I
 
 
 
-Definition at line 513 of file refineable\+\_\+elements.\+h.
+Definition at line 509 of file refineable\+\_\+elements.\+h.
 
 
 
@@ -789,7 +789,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1RefineableQTaylorHoodSpaceTimeEl
 
 
 
-Definition at line 424 of file refineable\+\_\+elements.\+h.
+Definition at line 420 of file refineable\+\_\+elements.\+h.
 
 
 
@@ -815,7 +815,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1RefineableQTaylorHoodSpaceTimeEl
 
 
 
-Definition at line 389 of file refineable\+\_\+elements.\+h.
+Definition at line 385 of file refineable\+\_\+elements.\+h.
 
 
 
@@ -837,7 +837,7 @@ Access function that returns the local equation number for the hanging node vari
 
 
 
-Definition at line 268 of file refineable\+\_\+elements.\+h.
+Definition at line 264 of file refineable\+\_\+elements.\+h.
 
 
 
@@ -863,7 +863,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1RefineableQTaylorHoodSpaceTimeEl
 
 
 
-Definition at line 398 of file refineable\+\_\+elements.\+h.
+Definition at line 394 of file refineable\+\_\+elements.\+h.
 
 
 
@@ -885,7 +885,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1FiniteElement_a470aa4b64c3789e
 
 
 
-Definition at line 224 of file refineable\+\_\+elements.\+cc.
+Definition at line 220 of file refineable\+\_\+elements.\+cc.
 
 
 
@@ -903,7 +903,7 @@ Max. allowed discrepancy in element integrity check.
 
 
 
-Definition at line 436 of file refineable\+\_\+elements.\+h.
+Definition at line 432 of file refineable\+\_\+elements.\+h.
 
 
 
@@ -947,7 +947,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1RefineableQTaylorHoodSpaceTimeEl
 
 
 
-Definition at line 414 of file refineable\+\_\+elements.\+h.
+Definition at line 410 of file refineable\+\_\+elements.\+h.
 
 
 
@@ -973,7 +973,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1RefineableQTaylorHoodSpaceTimeEl
 
 
 
-Definition at line 419 of file refineable\+\_\+elements.\+h.
+Definition at line 415 of file refineable\+\_\+elements.\+h.
 
 
 
@@ -999,7 +999,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1PRefineableElement_a18a6ec418784
 
 
 
-Definition at line 350 of file refineable\+\_\+elements.\+h.
+Definition at line 346 of file refineable\+\_\+elements.\+h.
 
 
 
@@ -1021,7 +1021,7 @@ Number of shape-\/controlling nodes = the number of non-\/hanging nodes plus the
 
 
 
-Definition at line 547 of file refineable\+\_\+elements.\+h.
+Definition at line 543 of file refineable\+\_\+elements.\+h.
 
 
 
@@ -1043,7 +1043,7 @@ Element number (for debugging/plotting)
 
 
 
-Definition at line 353 of file refineable\+\_\+elements.\+h.
+Definition at line 349 of file refineable\+\_\+elements.\+h.
 
 
 
@@ -1065,7 +1065,7 @@ Broken assignment operator.
 
 
 
-Definition at line 213 of file refineable\+\_\+elements.\+h.
+Definition at line 209 of file refineable\+\_\+elements.\+h.
 
 
 
@@ -1087,7 +1087,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1PRefineableQElement_3_013_00_01I
 
 
 
-Definition at line 516 of file refineable\+\_\+elements.\+h.
+Definition at line 512 of file refineable\+\_\+elements.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1RefineableElement_a33324be27833fa4b78279d17158215fa}\label{classoomph_1_1RefineableElement_a33324be27833fa4b78279d17158215fa}} 
 \index{oomph::RefineableElement@{oomph::RefineableElement}!rebuild\_from\_sons@{rebuild\_from\_sons}}
@@ -1119,7 +1119,7 @@ Flag to indicate suppression of any refinement.
 
 
 
-Definition at line 230 of file refineable\+\_\+elements.\+h.
+Definition at line 226 of file refineable\+\_\+elements.\+h.
 
 
 
@@ -1141,7 +1141,7 @@ Return the Refinement level.
 
 
 
-Definition at line 300 of file refineable\+\_\+elements.\+h.
+Definition at line 296 of file refineable\+\_\+elements.\+h.
 
 
 
@@ -1167,7 +1167,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1RefineableQElement_3_012_01_4_aa
 
 
 
-Definition at line 226 of file refineable\+\_\+elements.\+h.
+Definition at line 222 of file refineable\+\_\+elements.\+h.
 
 
 
@@ -1186,7 +1186,7 @@ Pointer to the root element in refinement hierarchy (must be implemented in spec
 
 
 
-Definition at line 463 of file refineable\+\_\+elements.\+h.
+Definition at line 459 of file refineable\+\_\+elements.\+h.
 
 
 
@@ -1208,7 +1208,7 @@ Select the element for refinement.
 
 
 
-Definition at line 303 of file refineable\+\_\+elements.\+h.
+Definition at line 299 of file refineable\+\_\+elements.\+h.
 
 
 
@@ -1230,7 +1230,7 @@ Unrefinement will be performed by merging the four sons of this element.
 
 
 
-Definition at line 309 of file refineable\+\_\+elements.\+h.
+Definition at line 305 of file refineable\+\_\+elements.\+h.
 
 
 
@@ -1248,7 +1248,7 @@ Set element number (for debugging/plotting)
 
 
 
-Definition at line 356 of file refineable\+\_\+elements.\+h.
+Definition at line 352 of file refineable\+\_\+elements.\+h.
 
 
 
@@ -1266,7 +1266,7 @@ Set the refinement level.
 
 
 
-Definition at line 296 of file refineable\+\_\+elements.\+h.
+Definition at line 292 of file refineable\+\_\+elements.\+h.
 
 
 
@@ -1284,7 +1284,7 @@ Set pointer to quadtree representation of this element.
 
 
 
-Definition at line 222 of file refineable\+\_\+elements.\+h.
+Definition at line 218 of file refineable\+\_\+elements.\+h.
 
 
 
@@ -1310,7 +1310,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1RefineableQElement_3_012_01_4_a7
 
 
 
-Definition at line 524 of file refineable\+\_\+elements.\+h.
+Definition at line 520 of file refineable\+\_\+elements.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1RefineableElement_a638aa460036a87f73a2bbba92b13c69f}\label{classoomph_1_1RefineableElement_a638aa460036a87f73a2bbba92b13c69f}} 
 \index{oomph::RefineableElement@{oomph::RefineableElement}!shape\_controlling\_node\_lookup@{shape\_controlling\_node\_lookup}}
@@ -1324,7 +1324,7 @@ Return lookup scheme for unique number associated with any of the nodes that act
 
 
 
-Definition at line 556 of file refineable\+\_\+elements.\+h.
+Definition at line 552 of file refineable\+\_\+elements.\+h.
 
 
 
@@ -1346,7 +1346,7 @@ Has the element been selected for unrefinement?
 
 
 
-Definition at line 318 of file refineable\+\_\+elements.\+h.
+Definition at line 314 of file refineable\+\_\+elements.\+h.
 
 
 
@@ -1369,7 +1369,7 @@ Split the element into the number of sons to be constructed and return a vector 
 
 
 
-Definition at line 244 of file refineable\+\_\+elements.\+h.
+Definition at line 240 of file refineable\+\_\+elements.\+h.
 
 
 
@@ -1391,7 +1391,7 @@ Has the element been selected for refinement?
 
 
 
-Definition at line 315 of file refineable\+\_\+elements.\+h.
+Definition at line 311 of file refineable\+\_\+elements.\+h.
 
 
 
@@ -1413,7 +1413,7 @@ Access function\+: Pointer to quadtree representation of this element.
 
 
 
-Definition at line 219 of file refineable\+\_\+elements.\+h.
+Definition at line 215 of file refineable\+\_\+elements.\+h.
 
 
 
@@ -1435,7 +1435,7 @@ Unbuild the element, i.\+e. mark the nodes that were created during its creation
 
 
 
-Definition at line 326 of file refineable\+\_\+elements.\+h.
+Definition at line 322 of file refineable\+\_\+elements.\+h.
 
 
 
@@ -1460,7 +1460,7 @@ Storage for local equation numbers of hanging node variables (values stored at m
 
 
 
-Definition at line 173 of file refineable\+\_\+elements.\+h.
+Definition at line 169 of file refineable\+\_\+elements.\+h.
 
 
 
@@ -1478,7 +1478,7 @@ Max. allowed discrepancy in element integrity check.
 
 
 
-Definition at line 124 of file refineable\+\_\+elements.\+h.
+Definition at line 120 of file refineable\+\_\+elements.\+h.
 
 
 
@@ -1496,7 +1496,7 @@ Global element number -- for plotting/validation purposes.
 
 
 
-Definition at line 121 of file refineable\+\_\+elements.\+h.
+Definition at line 117 of file refineable\+\_\+elements.\+h.
 
 
 
@@ -1514,7 +1514,7 @@ Refinement level.
 
 
 
-Definition at line 109 of file refineable\+\_\+elements.\+h.
+Definition at line 105 of file refineable\+\_\+elements.\+h.
 
 
 
@@ -1532,7 +1532,7 @@ Flag to indicate suppression of any refinement.
 
 
 
-Definition at line 115 of file refineable\+\_\+elements.\+h.
+Definition at line 111 of file refineable\+\_\+elements.\+h.
 
 
 
@@ -1550,7 +1550,7 @@ Lookup scheme for unique number associated with any of the nodes that actively c
 
 
 
-Definition at line 178 of file refineable\+\_\+elements.\+h.
+Definition at line 174 of file refineable\+\_\+elements.\+h.
 
 
 
@@ -1568,7 +1568,7 @@ Flag for unrefinement.
 
 
 
-Definition at line 118 of file refineable\+\_\+elements.\+h.
+Definition at line 114 of file refineable\+\_\+elements.\+h.
 
 
 
@@ -1586,7 +1586,7 @@ Flag for refinement.
 
 
 
-Definition at line 112 of file refineable\+\_\+elements.\+h.
+Definition at line 108 of file refineable\+\_\+elements.\+h.
 
 
 
@@ -1604,7 +1604,7 @@ A pointer to a general tree object.
 
 
 
-Definition at line 106 of file refineable\+\_\+elements.\+h.
+Definition at line 102 of file refineable\+\_\+elements.\+h.
 
 
 

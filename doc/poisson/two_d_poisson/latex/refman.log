@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.7.6)  6 JUL 2021 23:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.7.9)  9 JUL 2021 20:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -826,28 +826,25 @@ LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 10.79993pt on input line 395.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 10.79993pt on input line 395.
-[7]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[8]
-Underfull \hbox (badness 945) in paragraph at lines 505--506
+[7] [8]
+Underfull \hbox (badness 945) in paragraph at lines 501--502
 []\T1/phv/m/n/10 ...and many oth-ers. See the [][] \T1/pcr/m/n/10 Linear Solver
 s Tutorial[][] \T1/phv/m/n/10 for a more de-tailed dis-cus-sion of
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 534.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 530.
 [9]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 534.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 530.
 (./refman.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 534.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 534.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 530.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 530.
 Package rerunfilecheck Info: File `refman.out' has not changed.
 (rerunfilecheck)             Checksum: BEF3BD6909163B3CBE8BFA5EDC489E37;2654.
  ) ) 
 Here is how much of TeX's memory you used:
  16238 strings out of 483183
  234160 string characters out of 5966293
- 511403 words of memory out of 5000000
+ 510403 words of memory out of 5000000
  30898 multiletter control sequences out of 15000+600000
  570264 words of font info for 65 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -908,7 +905,7 @@ m/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8ac.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on refman.pdf (9 pages, 181375 bytes).
+Output written on refman.pdf (9 pages, 181040 bytes).
 PDF statistics:
  290 PDF objects out of 1000 (max. 8388607)
  261 compressed objects within 3 object streams

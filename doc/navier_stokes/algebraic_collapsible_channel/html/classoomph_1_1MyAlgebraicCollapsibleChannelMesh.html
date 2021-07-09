@@ -182,7 +182,7 @@ class oomph::MyAlgebraicCollapsibleChannelMesh&lt; ELEMENT &gt;</h3>
 
 <p>Collapsible channel mesh with algebraic node update. </p>
 
-<p class="definition">Definition at line <a class="el" href="my__alg__channel__mesh_8h_source.html#l00052">52</a> of file <a class="el" href="my__alg__channel__mesh_8h_source.html">my_alg_channel_mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="my__alg__channel__mesh_8h_source.html#l00048">48</a> of file <a class="el" href="my__alg__channel__mesh_8h_source.html">my_alg_channel_mesh.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a1a77973034fec46c16a41d1f4d250b0a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1a77973034fec46c16a41d1f4d250b0a">&#9670;&nbsp;</a></span>MyAlgebraicCollapsibleChannelMesh() <span class="overload">[1/2]</span></h2>
@@ -271,9 +271,9 @@ template&lt;class ELEMENT &gt; </div>
 <p>Constructor: Pass number of elements in upstream/collapsible/ downstream segment and across the channel; lengths of upstream/ collapsible/downstream segments and width of channel, pointer to GeomObject that defines the collapsible segment, and pointer to TimeStepper (defaults to the default timestepper, Steady). <br  />
  </p>
 
-<p class="definition">Definition at line <a class="el" href="my__alg__channel__mesh_8h_source.html#l00064">64</a> of file <a class="el" href="my__alg__channel__mesh_8h_source.html">my_alg_channel_mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="my__alg__channel__mesh_8h_source.html#l00060">60</a> of file <a class="el" href="my__alg__channel__mesh_8h_source.html">my_alg_channel_mesh.h</a>.</p>
 
-<p class="reference">References <a class="el" href="my__alg__channel__mesh_8h_source.html#l00272">oomph::MyAlgebraicCollapsibleChannelMesh&lt; ELEMENT &gt;::setup_algebraic_node_update()</a>.</p>
+<p class="reference">References <a class="el" href="my__alg__channel__mesh_8h_source.html#l00268">oomph::MyAlgebraicCollapsibleChannelMesh&lt; ELEMENT &gt;::setup_algebraic_node_update()</a>.</p>
 
 </div>
 </div>
@@ -370,9 +370,9 @@ template&lt;class ELEMENT &gt; </div>
 <p>Constructor: Pass number of elements in upstream/collapsible/ downstream segment and across the channel; lengths of upstream/ collapsible/downstream segments and width of channel, pointer to GeomObject that defines the collapsible segment, function pointer to "boundary layer squash function", and pointer to TimeStepper (defaults to the default timestepper, Steady). <br  />
  </p>
 
-<p class="definition">Definition at line <a class="el" href="my__alg__channel__mesh_8h_source.html#l00092">92</a> of file <a class="el" href="my__alg__channel__mesh_8h_source.html">my_alg_channel_mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="my__alg__channel__mesh_8h_source.html#l00088">88</a> of file <a class="el" href="my__alg__channel__mesh_8h_source.html">my_alg_channel_mesh.h</a>.</p>
 
-<p class="reference">References <a class="el" href="my__alg__channel__mesh_8h_source.html#l00272">oomph::MyAlgebraicCollapsibleChannelMesh&lt; ELEMENT &gt;::setup_algebraic_node_update()</a>.</p>
+<p class="reference">References <a class="el" href="my__alg__channel__mesh_8h_source.html#l00268">oomph::MyAlgebraicCollapsibleChannelMesh&lt; ELEMENT &gt;::setup_algebraic_node_update()</a>.</p>
 
 </div>
 </div>
@@ -403,7 +403,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Destructor: empty. </p>
 
-<p class="definition">Definition at line <a class="el" href="my__alg__channel__mesh_8h_source.html#l00122">122</a> of file <a class="el" href="my__alg__channel__mesh_8h_source.html">my_alg_channel_mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="my__alg__channel__mesh_8h_source.html#l00118">118</a> of file <a class="el" href="my__alg__channel__mesh_8h_source.html">my_alg_channel_mesh.h</a>.</p>
 
 </div>
 </div>
@@ -439,7 +439,7 @@ template&lt;class ELEMENT &gt; </div>
 <p>Update nodal position at time level t (t=0: present; t&gt;0: previous) </p>
 <p>Perform algebraic mesh update at time level t (t=0: present; t&gt;0: previous) </p>
 
-<p class="definition">Definition at line <a class="el" href="my__alg__channel__mesh_8h_source.html#l00359">359</a> of file <a class="el" href="my__alg__channel__mesh_8h_source.html">my_alg_channel_mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="my__alg__channel__mesh_8h_source.html#l00355">355</a> of file <a class="el" href="my__alg__channel__mesh_8h_source.html">my_alg_channel_mesh.h</a>.</p>
 
 <p class="reference">References <a class="el" href="algebraic__collapsible__channel_8txt_source.html#l00071">node_pt</a>, and <a class="el" href="algebraic__collapsible__channel_8txt_source.html#l00087">t</a>.</p>
 
@@ -473,9 +473,9 @@ template&lt;class ELEMENT &gt; </div>
 <p>Function pointer for function that squashes the mesh near the walls. Default trivial mapping (the identity) leaves vertical nodal positions unchanged. Mapping is used in underlying CollapsibleChannelDomain. This (deliberately broken) function overloads the one in the CollapsibleChannelMesh base class. <br  />
  </p>
 
-<p class="definition">Definition at line <a class="el" href="my__alg__channel__mesh_8h_source.html#l00130">130</a> of file <a class="el" href="my__alg__channel__mesh_8h_source.html">my_alg_channel_mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="my__alg__channel__mesh_8h_source.html#l00126">126</a> of file <a class="el" href="my__alg__channel__mesh_8h_source.html">my_alg_channel_mesh.h</a>.</p>
 
-<p class="reference">References <a class="el" href="my__alg__channel__mesh_8h_source.html#l00165">oomph::MyAlgebraicCollapsibleChannelMesh&lt; ELEMENT &gt;::Dummy_fct_pt</a>.</p>
+<p class="reference">References <a class="el" href="my__alg__channel__mesh_8h_source.html#l00161">oomph::MyAlgebraicCollapsibleChannelMesh&lt; ELEMENT &gt;::Dummy_fct_pt</a>.</p>
 
 </div>
 </div>
@@ -504,11 +504,11 @@ template&lt;class ELEMENT &gt; </div>
 <p>Function to setup the algebraic node update. </p>
 <p>Setup algebraic mesh update &ndash; assumes that mesh has initially been set up with the wall in its undeformed position. </p>
 
-<p class="definition">Definition at line <a class="el" href="my__alg__channel__mesh_8h_source.html#l00272">272</a> of file <a class="el" href="my__alg__channel__mesh_8h_source.html">my_alg_channel_mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="my__alg__channel__mesh_8h_source.html#l00268">268</a> of file <a class="el" href="my__alg__channel__mesh_8h_source.html">my_alg_channel_mesh.h</a>.</p>
 
 <p class="reference">References <a class="el" href="algebraic__collapsible__channel_8txt_source.html#l00047">AlgebraicNode</a>, and <a class="el" href="algebraic__collapsible__channel_8txt_source.html#l00071">node_pt</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="my__alg__channel__mesh_8h_source.html#l00064">oomph::MyAlgebraicCollapsibleChannelMesh&lt; ELEMENT &gt;::MyAlgebraicCollapsibleChannelMesh()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="my__alg__channel__mesh_8h_source.html#l00060">oomph::MyAlgebraicCollapsibleChannelMesh&lt; ELEMENT &gt;::MyAlgebraicCollapsibleChannelMesh()</a>.</p>
 
 </div>
 </div>
@@ -540,7 +540,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Update the geometric references that are used to update node after mesh adaptation. Empty &ndash; no update of node update required. </p>
 
-<p class="definition">Definition at line <a class="el" href="my__alg__channel__mesh_8h_source.html#l00156">156</a> of file <a class="el" href="my__alg__channel__mesh_8h_source.html">my_alg_channel_mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="my__alg__channel__mesh_8h_source.html#l00152">152</a> of file <a class="el" href="my__alg__channel__mesh_8h_source.html">my_alg_channel_mesh.h</a>.</p>
 
 </div>
 </div>
@@ -569,9 +569,9 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Dummy function pointer. </p>
 
-<p class="definition">Definition at line <a class="el" href="my__alg__channel__mesh_8h_source.html#l00165">165</a> of file <a class="el" href="my__alg__channel__mesh_8h_source.html">my_alg_channel_mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="my__alg__channel__mesh_8h_source.html#l00161">161</a> of file <a class="el" href="my__alg__channel__mesh_8h_source.html">my_alg_channel_mesh.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="my__alg__channel__mesh_8h_source.html#l00130">oomph::MyAlgebraicCollapsibleChannelMesh&lt; ELEMENT &gt;::bl_squash_fct_pt()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="my__alg__channel__mesh_8h_source.html#l00126">oomph::MyAlgebraicCollapsibleChannelMesh&lt; ELEMENT &gt;::bl_squash_fct_pt()</a>.</p>
 
 </div>
 </div>
@@ -606,7 +606,7 @@ template&lt;class ELEMENT &gt; </div>
     <footer>
       <div class="container">
         <div class="text-muted" style="float:right;">Generated by <a href="http://www.doxygen.org/index.html">
-          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Tue Jul 6 2021 23:11:16
+          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Fri Jul 9 2021 21:04:11
         </div>
       </div>
     </footer>

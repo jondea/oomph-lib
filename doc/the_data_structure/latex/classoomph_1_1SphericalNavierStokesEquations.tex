@@ -222,7 +222,7 @@ A class for elements that solve the Navier--Stokes equations, in axisymmetric sp
 We also provide all functions required to use this element in F\+SI problems, by deriving it from the \mbox{\hyperlink{classoomph_1_1FSIFluidElement}{F\+S\+I\+Fluid\+Element}} base class. ~\newline
  
 
-Definition at line 60 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 56 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -239,7 +239,7 @@ Function pointer to body force function fct(t,x,f(x)) x is a Vector!
 
 
 
-Definition at line 68 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 64 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1SphericalNavierStokesEquations_abd522fea532c3de15dbe80205e53bdf8}\label{classoomph_1_1SphericalNavierStokesEquations_abd522fea532c3de15dbe80205e53bdf8}} 
 \index{oomph::SphericalNavierStokesEquations@{oomph::SphericalNavierStokesEquations}!SphericalNavierStokesSourceFctPt@{SphericalNavierStokesSourceFctPt}}
@@ -253,7 +253,7 @@ Function pointer to source function fct(t,x) x is a Vector!
 
 
 
-Definition at line 73 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 69 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -270,7 +270,7 @@ Constructor\+: N\+U\+LL the body force and source function and make sure the A\+
 
 
 
-Definition at line 217 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 213 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -287,7 +287,7 @@ References Default\+\_\+\+Gravity\+\_\+vector, Default\+\_\+\+Physical\+\_\+\+Co
 
 
 
-Definition at line 541 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 537 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -301,7 +301,7 @@ References re().
 
 
 
-Definition at line 556 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 552 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -315,7 +315,7 @@ References re().
 
 
 
-Definition at line 571 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 567 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -333,7 +333,7 @@ Access function for the body-\/force pointer.
 
 
 
-Definition at line 284 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 280 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -355,7 +355,7 @@ Access function for the body-\/force pointer. Const version.
 
 
 
-Definition at line 288 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 284 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -377,7 +377,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1FiniteElement_a73c79a1f1e5b1d3
 
 
 
-Definition at line 245 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
+Definition at line 241 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
 
 
 
@@ -399,7 +399,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1FiniteElement_a7f67853506dc73f
 
 
 
-Definition at line 166 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
+Definition at line 162 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
 
 
 
@@ -418,7 +418,7 @@ Validate against exact velocity solution Solution is provided via direct coding.
 \item need two extras to deal with the derivatives in the energy norm
 \end{DoxyItemize}
 
-Definition at line 323 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
+Definition at line 319 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
 
 
 
@@ -432,7 +432,7 @@ References cot(), i, oomph\+::\+Finite\+Element\+::integral\+\_\+pt(), interpola
 
 
 
-Definition at line 481 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
+Definition at line 477 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
 
 
 
@@ -446,7 +446,7 @@ References i, interpolated\+\_\+dudx\+\_\+spherical\+\_\+nst(), interpolated\+\_
 
 Include a cot function to simplify the NS momentum and jacobian expressions 
 
-Definition at line 212 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 208 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -464,7 +464,7 @@ Get integral of time derivative of kinetic energy over element.
 
 Get integral of time derivative of kinetic energy over element\+: 
 
-Definition at line 1419 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
+Definition at line 1415 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
 
 
 
@@ -482,7 +482,7 @@ Density ratio for element\+: Element\textquotesingle{}s density relative to the 
 
 
 
-Definition at line 260 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 256 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -504,7 +504,7 @@ Pointer to Density ratio.
 
 
 
-Definition at line 263 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 259 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -530,7 +530,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1FiniteElement_a625ea6d3f9baccf
 
 
 
-Definition at line 355 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 351 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -548,7 +548,7 @@ Return integral of dissipation over element.
 
 
 
-Definition at line 1089 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
+Definition at line 1085 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
 
 
 
@@ -570,7 +570,7 @@ Return dissipation at local coordinate s.
 
 
 
-Definition at line 1176 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
+Definition at line 1172 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
 
 
 
@@ -620,7 +620,7 @@ i-\/th component of du/dt at local node n. Uses suitably interpolated value for 
 
 
 
-Definition at line 327 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 323 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -646,7 +646,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1FiniteElement_a92ef8967fa4e2d6
 
 
 
-Definition at line 364 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 360 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -660,7 +660,7 @@ References A\+L\+E\+\_\+is\+\_\+disabled.
 
 
 
-Definition at line 525 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
+Definition at line 521 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
 
 
 
@@ -682,7 +682,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1FiniteElement_a0ae7af222af38a0
 
 
 
-Definition at line 597 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 593 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -704,7 +704,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1GeneralisedElement_a2b6294a730
 
 
 
-Definition at line 608 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 604 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -726,7 +726,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1GeneralisedElement_a310c97f515
 
 
 
-Definition at line 586 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 582 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -750,7 +750,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1RefineableSphericalNavierStokesE
 
 
 
-Definition at line 1572 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
+Definition at line 1568 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
 
 
 
@@ -786,7 +786,7 @@ Full output function\+: x,y,\mbox{[}z\mbox{]},u,v,\mbox{[}w\mbox{]},p,du/dt,dv/d
 
 
 
-Definition at line 468 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 464 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -805,7 +805,7 @@ Full output function\+: x,y,\mbox{[}z\mbox{]},u,v,\mbox{[}w\mbox{]},p,du/dt,dv/d
 Full output function\+: x,y,\mbox{[}z\mbox{]},u,v,\mbox{[}w\mbox{]},p,du/dt,dv/dt,\mbox{[}dw/dt\mbox{]},dissipation in tecplot format. Specified number of plot points in each coordinate direction ~\newline
  
 
-Definition at line 915 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
+Definition at line 911 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
 
 
 
@@ -823,7 +823,7 @@ References dissipation(), oomph\+::\+Finite\+Element\+::dnodal\+\_\+position\+\_
 
 
 
-Definition at line 278 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 274 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -845,7 +845,7 @@ Pointer to \mbox{\hyperlink{classoomph_1_1Vector}{Vector}} of gravitational comp
 
 
 
-Definition at line 281 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 277 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -867,7 +867,7 @@ Calculate the body force at a given time and local and/or Eulerian position. Thi
 
 
 
-Definition at line 171 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 167 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -894,7 +894,7 @@ Implements \mbox{\hyperlink{classoomph_1_1FSIFluidElement_acf10e6a716b5e0f743579
 
 
 
-Definition at line 419 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 415 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -916,7 +916,7 @@ Implements \mbox{\hyperlink{classoomph_1_1NavierStokesElementWithDiagonalMassMat
 
 
 
-Definition at line 67 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
+Definition at line 63 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
 
 
 
@@ -935,7 +935,7 @@ Calculate the source fct at given time and Eulerian position ~\newline
 
 
 
-Definition at line 192 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 188 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -955,7 +955,7 @@ Compute traction (on the viscous scale) exerted onto the fluid at local coordina
 Compute traction (on the viscous scale) exerted onto the fluid at local coordinate s. N has to be outer unit normal to the fluid. ~\newline
  
 
-Definition at line 1143 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
+Definition at line 1139 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
 
 
 
@@ -977,7 +977,7 @@ Compute the vorticity vector at local coordinate s.
 
 Compute 2D vorticity vector at local coordinate s (return in one and only component of vorticity vector 
 
-Definition at line 1302 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
+Definition at line 1298 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
 
 
 
@@ -999,7 +999,7 @@ Return matrix entry dudx(i,j) of the FE interpolated velocity derivative at loca
 
 
 
-Definition at line 666 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 662 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1021,7 +1021,7 @@ Return FE interpolated pressure at local coordinate s.
 
 
 
-Definition at line 692 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 688 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1043,7 +1043,7 @@ Return FE interpolated velocity u\mbox{[}i\mbox{]} at local coordinate s.
 
 
 
-Definition at line 642 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 638 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1061,7 +1061,7 @@ Compute vector of FE interpolated velocity u at local coordinate s.
 
 
 
-Definition at line 618 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 614 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1083,7 +1083,7 @@ Get integral of kinetic energy over element.
 
 Get integral of kinetic energy over element\+: 
 
-Definition at line 1375 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
+Definition at line 1371 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
 
 
 
@@ -1127,7 +1127,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1QSphericalTaylorHoodElement_aa45
 
 
 
-Definition at line 455 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 451 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1153,7 +1153,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1QSphericalTaylorHoodElement_ad8e
 
 
 
-Definition at line 868 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
+Definition at line 864 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
 
 
 
@@ -1179,7 +1179,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1QSphericalTaylorHoodElement_af38
 
 
 
-Definition at line 443 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 439 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1205,7 +1205,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1QSphericalTaylorHoodElement_ac4e
 
 
 
-Definition at line 801 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
+Definition at line 797 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
 
 
 
@@ -1227,7 +1227,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1FiniteElement_a2a8426dccd57b92
 
 
 
-Definition at line 671 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
+Definition at line 667 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
 
 
 
@@ -1249,7 +1249,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1FiniteElement_a22b695c714f60ee
 
 
 
-Definition at line 611 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
+Definition at line 607 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
 
 
 
@@ -1268,7 +1268,7 @@ Output function\+: x,y,\mbox{[}z\mbox{]},u,v,\mbox{[}w\mbox{]} in tecplot format
 Output function\+: Velocities only ~\newline
  x,y,\mbox{[}z\mbox{]},u,v,\mbox{[}w\mbox{]} in tecplot format at specified previous timestep (t=0\+: present; t$>$0\+: previous timestep). Specified number of plot points in each coordinate direction. 
 
-Definition at line 730 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
+Definition at line 726 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
 
 
 
@@ -1286,7 +1286,7 @@ Output function\+: x,y,\mbox{[}z\mbox{]}, \mbox{[}omega\+\_\+x,omega\+\_\+y,\mbo
 
 Output function for vorticity. x,y,\mbox{[}z\mbox{]},\mbox{[}omega\+\_\+x,omega\+\_\+y,\mbox{[}and/or omega\+\_\+z\mbox{]}\mbox{]} in tecplot format. Specified number of plot points in each coordinate direction. 
 
-Definition at line 1046 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
+Definition at line 1042 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
 
 
 
@@ -1326,7 +1326,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1QSphericalTaylorHoodElement_a8d7
 
 
 
-Definition at line 379 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 375 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1366,7 +1366,7 @@ Referenced by fill\+\_\+in\+\_\+generic\+\_\+residual\+\_\+contribution\+\_\+sph
 
 Return pressure integrated over the element. 
 
-Definition at line 1523 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
+Definition at line 1519 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
 
 
 
@@ -1416,7 +1416,7 @@ Reynolds number.
 
 
 
-Definition at line 240 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 236 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1438,7 +1438,7 @@ Global inverse Froude number.
 
 
 
-Definition at line 266 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 262 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1456,7 +1456,7 @@ Pointer to global inverse Froude number.
 
 
 
-Definition at line 269 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 265 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1478,7 +1478,7 @@ Global Reynolds number multiplied by inverse Rossby number.
 
 
 
-Definition at line 272 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 268 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1500,7 +1500,7 @@ Pointer to global inverse Froude number.
 
 
 
-Definition at line 275 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 271 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1522,7 +1522,7 @@ Pointer to Reynolds number.
 
 
 
-Definition at line 246 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 242 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1544,7 +1544,7 @@ Product of Reynolds and Strouhal number (=Womersley number)
 
 
 
-Definition at line 243 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 239 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1566,7 +1566,7 @@ Pointer to product of Reynolds and Strouhal number (=Womersley number)
 
 
 
-Definition at line 249 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 245 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1588,7 +1588,7 @@ Access function for the source-\/function pointer.
 
 
 
-Definition at line 292 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 288 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1610,7 +1610,7 @@ Access function for the source-\/function pointer. Const version.
 
 
 
-Definition at line 295 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 291 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1628,7 +1628,7 @@ Strain-\/rate tensor\+: 1/2 (du\+\_\+i/dx\+\_\+j + du\+\_\+j/dx\+\_\+i)
 
 Get strain-\/rate tensor\+: 1/2 (du\+\_\+i/dx\+\_\+j + du\+\_\+j/dx\+\_\+i) 
 
-Definition at line 1199 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
+Definition at line 1195 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
 
 
 
@@ -1650,7 +1650,7 @@ Return the index at which the i-\/th unknown velocity component.
 
 is stored. The default value, i, is appropriate for single-\/physics problems. In derived multi-\/physics elements, this function should be overloaded to reflect the chosen storage scheme. Note that these equations require that the unknowns are always stored at the same indices at each node. 
 
-Definition at line 321 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 317 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1672,7 +1672,7 @@ Velocity i at local node n. Uses suitably interpolated value for hanging nodes. 
 
 
 
-Definition at line 306 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 302 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1690,7 +1690,7 @@ Velocity i at local node n at timestep t (t=0\+: present; t$>$0\+: previous). Us
 
 
 
-Definition at line 311 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 307 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1708,7 +1708,7 @@ Viscosity ratio for element\+: Element\textquotesingle{}s viscosity relative to 
 
 
 
-Definition at line 253 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 249 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1726,7 +1726,7 @@ Pointer to Viscosity Ratio.
 
 
 
-Definition at line 256 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 252 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1751,7 +1751,7 @@ Boolean flag to indicate if A\+LE formulation is disabled when time-\/derivative
 
 
 
-Definition at line 131 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 127 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1769,7 +1769,7 @@ Pointer to body force function.
 
 
 
-Definition at line 123 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 119 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1787,7 +1787,7 @@ Static default value for the gravity vector.
 
 Navier-\/\+Stokes equations default gravity vector. 
 
-Definition at line 89 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 85 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1805,7 +1805,7 @@ Static default value for the physical constants (all initialised to zero)
 
 Navier--Stokes equations static data. 
 
-Definition at line 83 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 79 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1823,7 +1823,7 @@ Static default value for the physical ratios (all are initialised to one)
 
 Navier--Stokes equations static data. 
 
-Definition at line 86 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 82 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1841,7 +1841,7 @@ Pointer to the density ratio (relative to the density used in the definition of 
 
 
 
-Definition at line 101 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 97 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1859,7 +1859,7 @@ Pointer to global gravity \mbox{\hyperlink{classoomph_1_1Vector}{Vector}}.
 
 
 
-Definition at line 120 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 116 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1877,7 +1877,7 @@ Referenced by oomph\+::\+Refineable\+Spherical\+Navier\+Stokes\+Equations\+::fur
 
 Navier--Stokes equations static data. 
 
-Definition at line 235 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 231 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1SphericalNavierStokesEquations_a6e9d12a0f822100dea121402eabcab1d}\label{classoomph_1_1SphericalNavierStokesEquations_a6e9d12a0f822100dea121402eabcab1d}} 
 \index{oomph::SphericalNavierStokesEquations@{oomph::SphericalNavierStokesEquations}!Pressure\_not\_stored\_at\_node@{Pressure\_not\_stored\_at\_node}}
@@ -1891,7 +1891,7 @@ Static \char`\"{}magic\char`\"{} number that indicates that the pressure is not 
 
 \char`\"{}\+Magic\char`\"{} negative number that indicates that the pressure is not stored at a node. This cannot be -\/1 because that represents the positional hanging scheme in the hanging\+\_\+pt object of nodes 
 
-Definition at line 80 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 76 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1909,7 +1909,7 @@ Pointer to global Reynolds number.
 
 
 
-Definition at line 106 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 102 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1928,7 +1928,7 @@ Pointer to global Reynolds number x inverse Froude number (= Bond number / Capil
 
 
 
-Definition at line 113 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 109 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1946,7 +1946,7 @@ Pointer to global Reynolds number x inverse Rossby number (used when in a rotati
 
 
 
-Definition at line 117 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 113 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1964,7 +1964,7 @@ Pointer to global Reynolds number x Strouhal number (=Womersley)
 
 
 
-Definition at line 109 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 105 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1982,7 +1982,7 @@ Pointer to volumetric source function.
 
 
 
-Definition at line 126 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 122 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -2000,7 +2000,7 @@ Pointer to the viscosity ratio (relative to the viscosity used in the definition
 
 
 
-Definition at line 97 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 93 of file spherical\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 

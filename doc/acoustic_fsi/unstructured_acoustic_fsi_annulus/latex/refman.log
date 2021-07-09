@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.7.6)  6 JUL 2021 23:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.7.9)  9 JUL 2021 21:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -913,7 +913,17 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [19]
-Underfull \hbox (badness 10000) in paragraph at lines 1453--1455
+Underfull \hbox (badness 10000) in paragraph at lines 1449--1451
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1449--1451
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1451--1452
 
  []
 
@@ -923,27 +933,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 1453--1455
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1455--1456
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1457--1459
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1457--1459
+Underfull \hbox (badness 10000) in paragraph at lines 1453--1455
 
  []
 
 [20]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1465.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1461.
 [21]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1465.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1461.
 (./refman.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1465.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1465.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1461.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1461.
 
 Package rerunfilecheck Info: File `refman.out' has not changed.
 (rerunfilecheck)             Checksum: 89435BDB42852B8BF242DF267B4C3423;1444.
@@ -955,7 +955,7 @@ Here is how much of TeX's memory you used:
  30883 multiletter control sequences out of 15000+600000
  564798 words of font info for 63 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 55i,15n,96p,938b,418s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,15n,96p,938b,430s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{unstructured__acoustic__fsi__annulus_8txt_a63ae
 d466ac0ff5870a2e767e8e4a75bd} has been referenced but does not exist, replaced 
 by a fixed one
@@ -1060,7 +1060,7 @@ fonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8
 a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8ac.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on refman.pdf (21 pages, 320877 bytes).
+Output written on refman.pdf (21 pages, 320597 bytes).
 PDF statistics:
  392 PDF objects out of 1000 (max. 8388607)
  345 compressed objects within 4 object streams

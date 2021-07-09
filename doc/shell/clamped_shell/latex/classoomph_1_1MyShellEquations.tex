@@ -95,7 +95,7 @@ class oomph\+::\+My\+Shell\+Equations$<$ D\+I\+M, N\+N\+O\+D\+E\+\_\+1\+D $>$}
 
 A class for all subparametric elements that solve the linear shell equations. This contains the generic maths. Shape functions, geometric mapping etc. must get implemented in derived class. 
 
-Definition at line 65 of file unstructured\+\_\+clamped\+\_\+curved\+\_\+shell.\+cc.
+Definition at line 61 of file unstructured\+\_\+clamped\+\_\+curved\+\_\+shell.\+cc.
 
 
 
@@ -114,7 +114,7 @@ Function pointer to gradient of source function fct(x,g(x)) -- x is a Vector! ~\
 
 
 
-Definition at line 77 of file unstructured\+\_\+clamped\+\_\+curved\+\_\+shell.\+cc.
+Definition at line 73 of file unstructured\+\_\+clamped\+\_\+curved\+\_\+shell.\+cc.
 
 \mbox{\Hypertarget{classoomph_1_1MyShellEquations_a056d2488b6e65787f5c9935a321b7a9b}\label{classoomph_1_1MyShellEquations_a056d2488b6e65787f5c9935a321b7a9b}} 
 \index{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$@{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$}!SourceFctPt@{SourceFctPt}}
@@ -130,7 +130,7 @@ Function pointer to source function fct(x,f(x)) -- x is a Vector! ~\newline
 
 
 
-Definition at line 72 of file unstructured\+\_\+clamped\+\_\+curved\+\_\+shell.\+cc.
+Definition at line 68 of file unstructured\+\_\+clamped\+\_\+curved\+\_\+shell.\+cc.
 
 
 
@@ -148,7 +148,7 @@ Constructor (must initialise the Source\+\_\+fct\+\_\+pt to null)
 
 
 
-Definition at line 82 of file unstructured\+\_\+clamped\+\_\+curved\+\_\+shell.\+cc.
+Definition at line 78 of file unstructured\+\_\+clamped\+\_\+curved\+\_\+shell.\+cc.
 
 \mbox{\Hypertarget{classoomph_1_1MyShellEquations_af92d9d503350b3c84d309b1e70911e27}\label{classoomph_1_1MyShellEquations_af92d9d503350b3c84d309b1e70911e27}} 
 \index{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$@{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$}!MyShellEquations@{MyShellEquations}}
@@ -163,7 +163,7 @@ Broken copy constructor.
 
 
 
-Definition at line 86 of file unstructured\+\_\+clamped\+\_\+curved\+\_\+shell.\+cc.
+Definition at line 82 of file unstructured\+\_\+clamped\+\_\+curved\+\_\+shell.\+cc.
 
 
 
@@ -183,7 +183,7 @@ Validate against exact solution
 
 Solution is provided via function pointer. Plot error at a given number of plot points. 
 
-Definition at line 1401 of file unstructured\+\_\+clamped\+\_\+curved\+\_\+shell.\+cc.
+Definition at line 1397 of file unstructured\+\_\+clamped\+\_\+curved\+\_\+shell.\+cc.
 
 \mbox{\Hypertarget{classoomph_1_1MyShellEquations_a6a62a37fa44a5001c167071f9bf80c2f}\label{classoomph_1_1MyShellEquations_a6a62a37fa44a5001c167071f9bf80c2f}} 
 \index{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$@{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$}!compute\_error@{compute\_error}}
@@ -198,7 +198,7 @@ Dummy, time dependent error checker.
 
 
 
-Definition at line 146 of file unstructured\+\_\+clamped\+\_\+curved\+\_\+shell.\+cc.
+Definition at line 142 of file unstructured\+\_\+clamped\+\_\+curved\+\_\+shell.\+cc.
 
 \mbox{\Hypertarget{classoomph_1_1MyShellEquations_af8f15f0d678c85535bbc3390399dafdd}\label{classoomph_1_1MyShellEquations_af8f15f0d678c85535bbc3390399dafdd}} 
 \index{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$@{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$}!d2shape\_and\_d2test\_eulerian\_at\_knot\_shell@{d2shape\_and\_d2test\_eulerian\_at\_knot\_shell}}
@@ -265,7 +265,7 @@ Add the element\textquotesingle{}s contribution to its residual vector (wrapper)
 
 
 
-Definition at line 198 of file unstructured\+\_\+clamped\+\_\+curved\+\_\+shell.\+cc.
+Definition at line 194 of file unstructured\+\_\+clamped\+\_\+curved\+\_\+shell.\+cc.
 
 \mbox{\Hypertarget{classoomph_1_1MyShellEquations_a39b639b46ce1b2fcd53465b02da47f78}\label{classoomph_1_1MyShellEquations_a39b639b46ce1b2fcd53465b02da47f78}} 
 \index{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$@{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$}!fill\_in\_generic\_residual\_contribution\_shell@{fill\_in\_generic\_residual\_contribution\_shell}}
@@ -288,7 +288,7 @@ compute the second derivative of a displacement in tangential and normal coordin
 
 find residuals for the first and second tangential directions
 
-Definition at line 642 of file unstructured\+\_\+clamped\+\_\+curved\+\_\+shell.\+cc.
+Definition at line 638 of file unstructured\+\_\+clamped\+\_\+curved\+\_\+shell.\+cc.
 
 
 
@@ -303,7 +303,7 @@ virtual void \mbox{\hyperlink{classoomph_1_1MyShellEquations}{oomph\+::\+My\+She
 
 Get source term at (Eulerian) position x. This function is virtual to allow overloading in multi-\/physics problems where the strength of the source function might be determined by another system of equations. 
 
-Definition at line 177 of file unstructured\+\_\+clamped\+\_\+curved\+\_\+shell.\+cc.
+Definition at line 173 of file unstructured\+\_\+clamped\+\_\+curved\+\_\+shell.\+cc.
 
 \mbox{\Hypertarget{classoomph_1_1MyShellEquations_a6f170026c39f99db20110a6d6e76e6c0}\label{classoomph_1_1MyShellEquations_a6f170026c39f99db20110a6d6e76e6c0}} 
 \index{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$@{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$}!interpolated\_u\_shell@{interpolated\_u\_shell}}
@@ -320,7 +320,7 @@ Add the element\textquotesingle{}s contribution to its residual vector and eleme
 
 compute displacement u in cartesian coordinate displacement component in y direction is identical with normal dirention
 
-Definition at line 220 of file unstructured\+\_\+clamped\+\_\+curved\+\_\+shell.\+cc.
+Definition at line 216 of file unstructured\+\_\+clamped\+\_\+curved\+\_\+shell.\+cc.
 
 \mbox{\Hypertarget{classoomph_1_1MyShellEquations_aa8411334811e9b382d2c96051ac4b2ba}\label{classoomph_1_1MyShellEquations_aa8411334811e9b382d2c96051ac4b2ba}} 
 \index{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$@{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$}!output@{output}}
@@ -335,7 +335,7 @@ C\+\_\+style output with default number of plot points.
 
 
 
-Definition at line 110 of file unstructured\+\_\+clamped\+\_\+curved\+\_\+shell.\+cc.
+Definition at line 106 of file unstructured\+\_\+clamped\+\_\+curved\+\_\+shell.\+cc.
 
 \mbox{\Hypertarget{classoomph_1_1MyShellEquations_adc1fcb6052b2cd07efe4d7d841ed6723}\label{classoomph_1_1MyShellEquations_adc1fcb6052b2cd07efe4d7d841ed6723}} 
 \index{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$@{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$}!output@{output}}
@@ -354,7 +354,7 @@ x,y,u or x,y,z,u
 
 nplot points in each coordinate direction 
 
-Definition at line 1303 of file unstructured\+\_\+clamped\+\_\+curved\+\_\+shell.\+cc.
+Definition at line 1299 of file unstructured\+\_\+clamped\+\_\+curved\+\_\+shell.\+cc.
 
 \mbox{\Hypertarget{classoomph_1_1MyShellEquations_aa5434267aa4c3a6f0b86d9afbb18f0a5}\label{classoomph_1_1MyShellEquations_aa5434267aa4c3a6f0b86d9afbb18f0a5}} 
 \index{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$@{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$}!output@{output}}
@@ -369,7 +369,7 @@ Output with default number of plot points.
 
 
 
-Definition at line 99 of file unstructured\+\_\+clamped\+\_\+curved\+\_\+shell.\+cc.
+Definition at line 95 of file unstructured\+\_\+clamped\+\_\+curved\+\_\+shell.\+cc.
 
 \mbox{\Hypertarget{classoomph_1_1MyShellEquations_ad4ad93d1ef0640f5ded693e0bc46aeb6}\label{classoomph_1_1MyShellEquations_ad4ad93d1ef0640f5ded693e0bc46aeb6}} 
 \index{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$@{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$}!output@{output}}
@@ -388,7 +388,7 @@ x,y,u or x,y,z,u
 
 nplot points in each coordinate direction 
 
-Definition at line 1250 of file unstructured\+\_\+clamped\+\_\+curved\+\_\+shell.\+cc.
+Definition at line 1246 of file unstructured\+\_\+clamped\+\_\+curved\+\_\+shell.\+cc.
 
 \mbox{\Hypertarget{classoomph_1_1MyShellEquations_a7022e91eaf4bff9044e46549bbe0c3f5}\label{classoomph_1_1MyShellEquations_a7022e91eaf4bff9044e46549bbe0c3f5}} 
 \index{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$@{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$}!output\_fct@{output\_fct}}
@@ -407,7 +407,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1BellShellElement_a5589f860978d78
 
 
 
-Definition at line 127 of file unstructured\+\_\+clamped\+\_\+curved\+\_\+shell.\+cc.
+Definition at line 123 of file unstructured\+\_\+clamped\+\_\+curved\+\_\+shell.\+cc.
 
 \mbox{\Hypertarget{classoomph_1_1MyShellEquations_a882f6447d8e204962a3f2a350c6315c4}\label{classoomph_1_1MyShellEquations_a882f6447d8e204962a3f2a350c6315c4}} 
 \index{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$@{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$}!output\_fct@{output\_fct}}
@@ -426,7 +426,7 @@ Solution is provided via function pointer. Plot at a given number of plot points
 
 x,y,u\+\_\+exact or x,y,z,u\+\_\+exact 
 
-Definition at line 1343 of file unstructured\+\_\+clamped\+\_\+curved\+\_\+shell.\+cc.
+Definition at line 1339 of file unstructured\+\_\+clamped\+\_\+curved\+\_\+shell.\+cc.
 
 \mbox{\Hypertarget{classoomph_1_1MyShellEquations_ab78a1d617fdd782b3e60ffd89e0c4737}\label{classoomph_1_1MyShellEquations_ab78a1d617fdd782b3e60ffd89e0c4737}} 
 \index{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$@{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$}!self\_test@{self\_test}}
@@ -441,7 +441,7 @@ Self-\/test\+: Return 0 for OK.
 
 
 
-Definition at line 1217 of file unstructured\+\_\+clamped\+\_\+curved\+\_\+shell.\+cc.
+Definition at line 1213 of file unstructured\+\_\+clamped\+\_\+curved\+\_\+shell.\+cc.
 
 \mbox{\Hypertarget{classoomph_1_1MyShellEquations_a1ade98830b556492e11aef07cf34d3ed}\label{classoomph_1_1MyShellEquations_a1ade98830b556492e11aef07cf34d3ed}} 
 \index{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$@{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$}!source\_fct\_gradient\_pt@{source\_fct\_gradient\_pt}}
@@ -456,7 +456,7 @@ Access function\+: Pointer to gradient of source function.
 
 
 
-Definition at line 163 of file unstructured\+\_\+clamped\+\_\+curved\+\_\+shell.\+cc.
+Definition at line 159 of file unstructured\+\_\+clamped\+\_\+curved\+\_\+shell.\+cc.
 
 \mbox{\Hypertarget{classoomph_1_1MyShellEquations_aeb57d576c45c382206c6af6b8b06b575}\label{classoomph_1_1MyShellEquations_aeb57d576c45c382206c6af6b8b06b575}} 
 \index{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$@{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$}!source\_fct\_gradient\_pt@{source\_fct\_gradient\_pt}}
@@ -471,7 +471,7 @@ Access function\+: Pointer to gradient source function. Const version.
 
 
 
-Definition at line 167 of file unstructured\+\_\+clamped\+\_\+curved\+\_\+shell.\+cc.
+Definition at line 163 of file unstructured\+\_\+clamped\+\_\+curved\+\_\+shell.\+cc.
 
 \mbox{\Hypertarget{classoomph_1_1MyShellEquations_a8aee1d7092584b9ad7095dfd905f5893}\label{classoomph_1_1MyShellEquations_a8aee1d7092584b9ad7095dfd905f5893}} 
 \index{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$@{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$}!source\_fct\_pt@{source\_fct\_pt}}
@@ -486,7 +486,7 @@ Access function\+: Pointer to source function.
 
 
 
-Definition at line 157 of file unstructured\+\_\+clamped\+\_\+curved\+\_\+shell.\+cc.
+Definition at line 153 of file unstructured\+\_\+clamped\+\_\+curved\+\_\+shell.\+cc.
 
 \mbox{\Hypertarget{classoomph_1_1MyShellEquations_a3cf0287a7fcc34f88c011805ae18fdcb}\label{classoomph_1_1MyShellEquations_a3cf0287a7fcc34f88c011805ae18fdcb}} 
 \index{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$@{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$}!source\_fct\_pt@{source\_fct\_pt}}
@@ -501,7 +501,7 @@ Access function\+: Pointer to source function. Const version.
 
 
 
-Definition at line 160 of file unstructured\+\_\+clamped\+\_\+curved\+\_\+shell.\+cc.
+Definition at line 156 of file unstructured\+\_\+clamped\+\_\+curved\+\_\+shell.\+cc.
 
 \mbox{\Hypertarget{classoomph_1_1MyShellEquations_a983c9be2c162eccec2f41c391722f0aa}\label{classoomph_1_1MyShellEquations_a983c9be2c162eccec2f41c391722f0aa}} 
 \index{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$@{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$}!u\_index\_shell@{u\_index\_shell}}
@@ -516,7 +516,7 @@ Return the index at which the unknown value is stored. In derived multi-\/physic
 
 
 
-Definition at line 96 of file unstructured\+\_\+clamped\+\_\+curved\+\_\+shell.\+cc.
+Definition at line 92 of file unstructured\+\_\+clamped\+\_\+curved\+\_\+shell.\+cc.
 
 \mbox{\Hypertarget{classoomph_1_1MyShellEquations_acf40f3e2413d4640be3ba3664b8d0426}\label{classoomph_1_1MyShellEquations_acf40f3e2413d4640be3ba3664b8d0426}} 
 \index{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$@{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$}!undeformed\_midplane\_pt@{undeformed\_midplane\_pt}}
@@ -531,7 +531,7 @@ Access function\+: Undeformed shell.
 
 
 
-Definition at line 171 of file unstructured\+\_\+clamped\+\_\+curved\+\_\+shell.\+cc.
+Definition at line 167 of file unstructured\+\_\+clamped\+\_\+curved\+\_\+shell.\+cc.
 
 
 
@@ -549,7 +549,7 @@ Pointer to wall thickness.
 
 
 
-Definition at line 392 of file unstructured\+\_\+clamped\+\_\+curved\+\_\+shell.\+cc.
+Definition at line 388 of file unstructured\+\_\+clamped\+\_\+curved\+\_\+shell.\+cc.
 
 \mbox{\Hypertarget{classoomph_1_1MyShellEquations_a6201b3eced8396c6e2246df94c946537}\label{classoomph_1_1MyShellEquations_a6201b3eced8396c6e2246df94c946537}} 
 \index{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$@{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$}!Lambda\_sq\_pt@{Lambda\_sq\_pt}}
@@ -564,7 +564,7 @@ Pointer to Timescale ratio.
 
 
 
-Definition at line 395 of file unstructured\+\_\+clamped\+\_\+curved\+\_\+shell.\+cc.
+Definition at line 391 of file unstructured\+\_\+clamped\+\_\+curved\+\_\+shell.\+cc.
 
 \mbox{\Hypertarget{classoomph_1_1MyShellEquations_a909b1e9608109048d446f86ca3c7d02d}\label{classoomph_1_1MyShellEquations_a909b1e9608109048d446f86ca3c7d02d}} 
 \index{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$@{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$}!Sigma0\_pt@{Sigma0\_pt}}
@@ -579,7 +579,7 @@ Pointer to axial prestress.
 
 
 
-Definition at line 389 of file unstructured\+\_\+clamped\+\_\+curved\+\_\+shell.\+cc.
+Definition at line 385 of file unstructured\+\_\+clamped\+\_\+curved\+\_\+shell.\+cc.
 
 \mbox{\Hypertarget{classoomph_1_1MyShellEquations_ab45cb2cb03c75c4410fa4288f9a8be90}\label{classoomph_1_1MyShellEquations_ab45cb2cb03c75c4410fa4288f9a8be90}} 
 \index{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$@{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$}!Source\_fct\_gradient\_pt@{Source\_fct\_gradient\_pt}}
@@ -594,7 +594,7 @@ Pointer to gradient of source function.
 
 
 
-Definition at line 383 of file unstructured\+\_\+clamped\+\_\+curved\+\_\+shell.\+cc.
+Definition at line 379 of file unstructured\+\_\+clamped\+\_\+curved\+\_\+shell.\+cc.
 
 \mbox{\Hypertarget{classoomph_1_1MyShellEquations_a60988a3591e836a2afecf416d1287985}\label{classoomph_1_1MyShellEquations_a60988a3591e836a2afecf416d1287985}} 
 \index{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$@{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$}!Source\_fct\_pt@{Source\_fct\_pt}}
@@ -609,7 +609,7 @@ Pointer to source function\+:
 
 
 
-Definition at line 380 of file unstructured\+\_\+clamped\+\_\+curved\+\_\+shell.\+cc.
+Definition at line 376 of file unstructured\+\_\+clamped\+\_\+curved\+\_\+shell.\+cc.
 
 \mbox{\Hypertarget{classoomph_1_1MyShellEquations_acf0107874213e70145eae84dfb3d4b5a}\label{classoomph_1_1MyShellEquations_acf0107874213e70145eae84dfb3d4b5a}} 
 \index{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$@{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$}!Undeformed\_midplane\_pt@{Undeformed\_midplane\_pt}}
@@ -624,7 +624,7 @@ Pointer to undeformed beam\+:
 
 
 
-Definition at line 386 of file unstructured\+\_\+clamped\+\_\+curved\+\_\+shell.\+cc.
+Definition at line 382 of file unstructured\+\_\+clamped\+\_\+curved\+\_\+shell.\+cc.
 
 
 

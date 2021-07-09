@@ -87,7 +87,7 @@ class oomph\+::\+My\+Biharmonic\+Equations$<$ D\+I\+M, N\+N\+O\+D\+E\+\_\+1\+D $
 
 A class for all subparametric elements that solve the 2D-\/ Biharmonic equations. \[ \frac{\partial^4 u}{\partial x_i^4} = f(x_j) \] This contains the generic maths. Shape functions, geometric mapping etc. must get implemented in derived class. 
 
-Definition at line 68 of file structured\+\_\+2d\+\_\+biharmonic\+\_\+bellelement.\+cc.
+Definition at line 64 of file structured\+\_\+2d\+\_\+biharmonic\+\_\+bellelement.\+cc.
 
 
 
@@ -106,7 +106,7 @@ Function pointer to gradient of source function fct(x,g(x)) -- x is a Vector! ~\
 
 
 
-Definition at line 80 of file structured\+\_\+2d\+\_\+biharmonic\+\_\+bellelement.\+cc.
+Definition at line 76 of file structured\+\_\+2d\+\_\+biharmonic\+\_\+bellelement.\+cc.
 
 \mbox{\Hypertarget{classoomph_1_1MyBiharmonicEquations_a17bd58054c66229016eb1c52eab36bc1}\label{classoomph_1_1MyBiharmonicEquations_a17bd58054c66229016eb1c52eab36bc1}} 
 \index{oomph::MyBiharmonicEquations$<$ DIM, NNODE\_1D $>$@{oomph::MyBiharmonicEquations$<$ DIM, NNODE\_1D $>$}!SourceFctPt@{SourceFctPt}}
@@ -122,7 +122,7 @@ Function pointer to source function fct(x,f(x)) -- x is a Vector! ~\newline
 
 
 
-Definition at line 75 of file structured\+\_\+2d\+\_\+biharmonic\+\_\+bellelement.\+cc.
+Definition at line 71 of file structured\+\_\+2d\+\_\+biharmonic\+\_\+bellelement.\+cc.
 
 
 
@@ -140,7 +140,7 @@ Constructor (must initialise the Source\+\_\+fct\+\_\+pt to null)
 
 
 
-Definition at line 85 of file structured\+\_\+2d\+\_\+biharmonic\+\_\+bellelement.\+cc.
+Definition at line 81 of file structured\+\_\+2d\+\_\+biharmonic\+\_\+bellelement.\+cc.
 
 \mbox{\Hypertarget{classoomph_1_1MyBiharmonicEquations_a3cf0e0a63e46219b94195aa4ab926316}\label{classoomph_1_1MyBiharmonicEquations_a3cf0e0a63e46219b94195aa4ab926316}} 
 \index{oomph::MyBiharmonicEquations$<$ DIM, NNODE\_1D $>$@{oomph::MyBiharmonicEquations$<$ DIM, NNODE\_1D $>$}!MyBiharmonicEquations@{MyBiharmonicEquations}}
@@ -155,7 +155,7 @@ Broken copy constructor.
 
 
 
-Definition at line 89 of file structured\+\_\+2d\+\_\+biharmonic\+\_\+bellelement.\+cc.
+Definition at line 85 of file structured\+\_\+2d\+\_\+biharmonic\+\_\+bellelement.\+cc.
 
 
 
@@ -175,7 +175,7 @@ Validate against exact solution
 
 Solution is provided via function pointer. Plot error at a given number of plot points. 
 
-Definition at line 835 of file structured\+\_\+2d\+\_\+biharmonic\+\_\+bellelement.\+cc.
+Definition at line 831 of file structured\+\_\+2d\+\_\+biharmonic\+\_\+bellelement.\+cc.
 
 
 
@@ -194,7 +194,7 @@ Dummy, time dependent error checker.
 
 
 
-Definition at line 151 of file structured\+\_\+2d\+\_\+biharmonic\+\_\+bellelement.\+cc.
+Definition at line 147 of file structured\+\_\+2d\+\_\+biharmonic\+\_\+bellelement.\+cc.
 
 \mbox{\Hypertarget{classoomph_1_1MyBiharmonicEquations_a85687f39c0fb72f25ce67f5867a83470}\label{classoomph_1_1MyBiharmonicEquations_a85687f39c0fb72f25ce67f5867a83470}} 
 \index{oomph::MyBiharmonicEquations$<$ DIM, NNODE\_1D $>$@{oomph::MyBiharmonicEquations$<$ DIM, NNODE\_1D $>$}!d2shape\_and\_d2test\_eulerian\_at\_knot\_biharmonic@{d2shape\_and\_d2test\_eulerian\_at\_knot\_biharmonic}}
@@ -257,7 +257,7 @@ void \mbox{\hyperlink{classoomph_1_1MyBiharmonicEquations}{oomph\+::\+My\+Biharm
 
 Add the element\textquotesingle{}s contribution to its residual vector and element Jacobian matrix (wrapper) 
 
-Definition at line 207 of file structured\+\_\+2d\+\_\+biharmonic\+\_\+bellelement.\+cc.
+Definition at line 203 of file structured\+\_\+2d\+\_\+biharmonic\+\_\+bellelement.\+cc.
 
 \mbox{\Hypertarget{classoomph_1_1MyBiharmonicEquations_a2f795bb316c3a9fc749639a8d3f8b5dd}\label{classoomph_1_1MyBiharmonicEquations_a2f795bb316c3a9fc749639a8d3f8b5dd}} 
 \index{oomph::MyBiharmonicEquations$<$ DIM, NNODE\_1D $>$@{oomph::MyBiharmonicEquations$<$ DIM, NNODE\_1D $>$}!fill\_in\_contribution\_to\_residuals@{fill\_in\_contribution\_to\_residuals}}
@@ -272,7 +272,7 @@ Add the element\textquotesingle{}s contribution to its residual vector (wrapper)
 
 
 
-Definition at line 197 of file structured\+\_\+2d\+\_\+biharmonic\+\_\+bellelement.\+cc.
+Definition at line 193 of file structured\+\_\+2d\+\_\+biharmonic\+\_\+bellelement.\+cc.
 
 \mbox{\Hypertarget{classoomph_1_1MyBiharmonicEquations_ad951338582f7807eb83999e09f7486ec}\label{classoomph_1_1MyBiharmonicEquations_ad951338582f7807eb83999e09f7486ec}} 
 \index{oomph::MyBiharmonicEquations$<$ DIM, NNODE\_1D $>$@{oomph::MyBiharmonicEquations$<$ DIM, NNODE\_1D $>$}!fill\_in\_generic\_residual\_contribution@{fill\_in\_generic\_residual\_contribution}}
@@ -288,7 +288,7 @@ Compute element residual Vector only (if flag=and/or element Jacobian matrix ~\n
 
 
 
-Definition at line 532 of file structured\+\_\+2d\+\_\+biharmonic\+\_\+bellelement.\+cc.
+Definition at line 528 of file structured\+\_\+2d\+\_\+biharmonic\+\_\+bellelement.\+cc.
 
 
 
@@ -303,7 +303,7 @@ virtual void \mbox{\hyperlink{classoomph_1_1MyBiharmonicEquations}{oomph\+::\+My
 
 Get source term at (Eulerian) position x. This function is virtual to allow overloading in multi-\/physics problems where the strength of the source function might be determined by another system of equations. 
 
-Definition at line 180 of file structured\+\_\+2d\+\_\+biharmonic\+\_\+bellelement.\+cc.
+Definition at line 176 of file structured\+\_\+2d\+\_\+biharmonic\+\_\+bellelement.\+cc.
 
 \mbox{\Hypertarget{classoomph_1_1MyBiharmonicEquations_ac451e7d6ebf1dd94f0a0c122e3882d53}\label{classoomph_1_1MyBiharmonicEquations_ac451e7d6ebf1dd94f0a0c122e3882d53}} 
 \index{oomph::MyBiharmonicEquations$<$ DIM, NNODE\_1D $>$@{oomph::MyBiharmonicEquations$<$ DIM, NNODE\_1D $>$}!interpolated\_u\_biharmonic@{interpolated\_u\_biharmonic}}
@@ -318,7 +318,7 @@ Return FE representation of function value unknown(s) at local coordinate s.
 
 
 
-Definition at line 216 of file structured\+\_\+2d\+\_\+biharmonic\+\_\+bellelement.\+cc.
+Definition at line 212 of file structured\+\_\+2d\+\_\+biharmonic\+\_\+bellelement.\+cc.
 
 \mbox{\Hypertarget{classoomph_1_1MyBiharmonicEquations_a2ee8f210f50cf3b43f2b31b5e16b704f}\label{classoomph_1_1MyBiharmonicEquations_a2ee8f210f50cf3b43f2b31b5e16b704f}} 
 \index{oomph::MyBiharmonicEquations$<$ DIM, NNODE\_1D $>$@{oomph::MyBiharmonicEquations$<$ DIM, NNODE\_1D $>$}!output@{output}}
@@ -333,7 +333,7 @@ C\+\_\+style output with default number of plot points.
 
 
 
-Definition at line 115 of file structured\+\_\+2d\+\_\+biharmonic\+\_\+bellelement.\+cc.
+Definition at line 111 of file structured\+\_\+2d\+\_\+biharmonic\+\_\+bellelement.\+cc.
 
 \mbox{\Hypertarget{classoomph_1_1MyBiharmonicEquations_a898e272a1af66eacb3ebe5ac2fbe7749}\label{classoomph_1_1MyBiharmonicEquations_a898e272a1af66eacb3ebe5ac2fbe7749}} 
 \index{oomph::MyBiharmonicEquations$<$ DIM, NNODE\_1D $>$@{oomph::MyBiharmonicEquations$<$ DIM, NNODE\_1D $>$}!output@{output}}
@@ -352,7 +352,7 @@ x,y,u or x,y,z,u
 
 nplot points in each coordinate direction 
 
-Definition at line 736 of file structured\+\_\+2d\+\_\+biharmonic\+\_\+bellelement.\+cc.
+Definition at line 732 of file structured\+\_\+2d\+\_\+biharmonic\+\_\+bellelement.\+cc.
 
 
 
@@ -371,7 +371,7 @@ Output with default number of plot points.
 
 
 
-Definition at line 104 of file structured\+\_\+2d\+\_\+biharmonic\+\_\+bellelement.\+cc.
+Definition at line 100 of file structured\+\_\+2d\+\_\+biharmonic\+\_\+bellelement.\+cc.
 
 \mbox{\Hypertarget{classoomph_1_1MyBiharmonicEquations_a9a2734695e94f83eb6d553a7090dbebd}\label{classoomph_1_1MyBiharmonicEquations_a9a2734695e94f83eb6d553a7090dbebd}} 
 \index{oomph::MyBiharmonicEquations$<$ DIM, NNODE\_1D $>$@{oomph::MyBiharmonicEquations$<$ DIM, NNODE\_1D $>$}!output@{output}}
@@ -390,7 +390,7 @@ x,y,u or x,y,z,u
 
 nplot points in each coordinate direction 
 
-Definition at line 684 of file structured\+\_\+2d\+\_\+biharmonic\+\_\+bellelement.\+cc.
+Definition at line 680 of file structured\+\_\+2d\+\_\+biharmonic\+\_\+bellelement.\+cc.
 
 
 
@@ -413,7 +413,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1BiharmonicBellElement_ac383ee9d4
 
 
 
-Definition at line 132 of file structured\+\_\+2d\+\_\+biharmonic\+\_\+bellelement.\+cc.
+Definition at line 128 of file structured\+\_\+2d\+\_\+biharmonic\+\_\+bellelement.\+cc.
 
 \mbox{\Hypertarget{classoomph_1_1MyBiharmonicEquations_a0f45f28eae4d25ddd9e53a769c3626a3}\label{classoomph_1_1MyBiharmonicEquations_a0f45f28eae4d25ddd9e53a769c3626a3}} 
 \index{oomph::MyBiharmonicEquations$<$ DIM, NNODE\_1D $>$@{oomph::MyBiharmonicEquations$<$ DIM, NNODE\_1D $>$}!output\_fct@{output\_fct}}
@@ -432,7 +432,7 @@ Solution is provided via function pointer. Plot at a given number of plot points
 
 x,y,u\+\_\+exact or x,y,z,u\+\_\+exact 
 
-Definition at line 776 of file structured\+\_\+2d\+\_\+biharmonic\+\_\+bellelement.\+cc.
+Definition at line 772 of file structured\+\_\+2d\+\_\+biharmonic\+\_\+bellelement.\+cc.
 
 
 
@@ -451,7 +451,7 @@ Self-\/test\+: Return 0 for OK.
 
 
 
-Definition at line 651 of file structured\+\_\+2d\+\_\+biharmonic\+\_\+bellelement.\+cc.
+Definition at line 647 of file structured\+\_\+2d\+\_\+biharmonic\+\_\+bellelement.\+cc.
 
 \mbox{\Hypertarget{classoomph_1_1MyBiharmonicEquations_a9da77a58e4d4a96e6cfe1eb708bca631}\label{classoomph_1_1MyBiharmonicEquations_a9da77a58e4d4a96e6cfe1eb708bca631}} 
 \index{oomph::MyBiharmonicEquations$<$ DIM, NNODE\_1D $>$@{oomph::MyBiharmonicEquations$<$ DIM, NNODE\_1D $>$}!source\_fct\_gradient\_pt@{source\_fct\_gradient\_pt}}
@@ -466,7 +466,7 @@ Access function\+: Pointer to gradient of source function.
 
 
 
-Definition at line 168 of file structured\+\_\+2d\+\_\+biharmonic\+\_\+bellelement.\+cc.
+Definition at line 164 of file structured\+\_\+2d\+\_\+biharmonic\+\_\+bellelement.\+cc.
 
 \mbox{\Hypertarget{classoomph_1_1MyBiharmonicEquations_a3c6a713fdc0847a374c58ef4760046ec}\label{classoomph_1_1MyBiharmonicEquations_a3c6a713fdc0847a374c58ef4760046ec}} 
 \index{oomph::MyBiharmonicEquations$<$ DIM, NNODE\_1D $>$@{oomph::MyBiharmonicEquations$<$ DIM, NNODE\_1D $>$}!source\_fct\_gradient\_pt@{source\_fct\_gradient\_pt}}
@@ -481,7 +481,7 @@ Access function\+: Pointer to gradient source function. Const version.
 
 
 
-Definition at line 172 of file structured\+\_\+2d\+\_\+biharmonic\+\_\+bellelement.\+cc.
+Definition at line 168 of file structured\+\_\+2d\+\_\+biharmonic\+\_\+bellelement.\+cc.
 
 \mbox{\Hypertarget{classoomph_1_1MyBiharmonicEquations_afbb201cb342fef337cfce82a776fa2b3}\label{classoomph_1_1MyBiharmonicEquations_afbb201cb342fef337cfce82a776fa2b3}} 
 \index{oomph::MyBiharmonicEquations$<$ DIM, NNODE\_1D $>$@{oomph::MyBiharmonicEquations$<$ DIM, NNODE\_1D $>$}!source\_fct\_pt@{source\_fct\_pt}}
@@ -496,7 +496,7 @@ Access function\+: Pointer to source function.
 
 
 
-Definition at line 162 of file structured\+\_\+2d\+\_\+biharmonic\+\_\+bellelement.\+cc.
+Definition at line 158 of file structured\+\_\+2d\+\_\+biharmonic\+\_\+bellelement.\+cc.
 
 \mbox{\Hypertarget{classoomph_1_1MyBiharmonicEquations_a1c2d7933266cf773e3729fb236bc13be}\label{classoomph_1_1MyBiharmonicEquations_a1c2d7933266cf773e3729fb236bc13be}} 
 \index{oomph::MyBiharmonicEquations$<$ DIM, NNODE\_1D $>$@{oomph::MyBiharmonicEquations$<$ DIM, NNODE\_1D $>$}!source\_fct\_pt@{source\_fct\_pt}}
@@ -511,7 +511,7 @@ Access function\+: Pointer to source function. Const version.
 
 
 
-Definition at line 165 of file structured\+\_\+2d\+\_\+biharmonic\+\_\+bellelement.\+cc.
+Definition at line 161 of file structured\+\_\+2d\+\_\+biharmonic\+\_\+bellelement.\+cc.
 
 \mbox{\Hypertarget{classoomph_1_1MyBiharmonicEquations_aecad5ed2e1534519b81e778c5dff6457}\label{classoomph_1_1MyBiharmonicEquations_aecad5ed2e1534519b81e778c5dff6457}} 
 \index{oomph::MyBiharmonicEquations$<$ DIM, NNODE\_1D $>$@{oomph::MyBiharmonicEquations$<$ DIM, NNODE\_1D $>$}!u\_index\_biharmonic@{u\_index\_biharmonic}}
@@ -526,7 +526,7 @@ Return the index at which the unknown value is stored. The default value, 0, is 
 
 
 
-Definition at line 101 of file structured\+\_\+2d\+\_\+biharmonic\+\_\+bellelement.\+cc.
+Definition at line 97 of file structured\+\_\+2d\+\_\+biharmonic\+\_\+bellelement.\+cc.
 
 
 
@@ -544,7 +544,7 @@ Pointer to gradient of source function.
 
 
 
-Definition at line 298 of file structured\+\_\+2d\+\_\+biharmonic\+\_\+bellelement.\+cc.
+Definition at line 294 of file structured\+\_\+2d\+\_\+biharmonic\+\_\+bellelement.\+cc.
 
 \mbox{\Hypertarget{classoomph_1_1MyBiharmonicEquations_aa96fd779e04f5c726f2535f43210e905}\label{classoomph_1_1MyBiharmonicEquations_aa96fd779e04f5c726f2535f43210e905}} 
 \index{oomph::MyBiharmonicEquations$<$ DIM, NNODE\_1D $>$@{oomph::MyBiharmonicEquations$<$ DIM, NNODE\_1D $>$}!Source\_fct\_pt@{Source\_fct\_pt}}
@@ -559,7 +559,7 @@ Pointer to source function\+:
 
 
 
-Definition at line 295 of file structured\+\_\+2d\+\_\+biharmonic\+\_\+bellelement.\+cc.
+Definition at line 291 of file structured\+\_\+2d\+\_\+biharmonic\+\_\+bellelement.\+cc.
 
 
 

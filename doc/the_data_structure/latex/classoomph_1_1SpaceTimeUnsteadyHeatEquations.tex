@@ -202,7 +202,7 @@ class oomph\+::\+Space\+Time\+Unsteady\+Heat\+Equations$<$ S\+P\+A\+T\+I\+A\+L\+
 
 A class for all isoparametric elements that solve the Space\+Time\+Unsteady\+Heat equations. \[ \frac{\partial^2 u}{\partial x_i^2}=\frac{\partial u}{\partial t}+f(t,x_j) \] This contains the generic maths. \mbox{\hyperlink{classoomph_1_1Shape}{Shape}} functions, geometric mapping etc. must get implemented in derived class. Note that this class assumes an isoparametric formulation, i.\+e. that the scalar unknown is interpolated using the same shape funcitons as the position. 
 
-Definition at line 82 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 78 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -220,7 +220,7 @@ Function pointer to source function fct(t,x,f(x,t)) -- x is a Vector! D\+R\+A\+I
 
 
 
-Definition at line 90 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 86 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1SpaceTimeUnsteadyHeatEquations_a35294bb50e768e05875d0603d7ab1d39}\label{classoomph_1_1SpaceTimeUnsteadyHeatEquations_a35294bb50e768e05875d0603d7ab1d39}} 
 \index{oomph::SpaceTimeUnsteadyHeatEquations$<$ SPATIAL\_DIM $>$@{oomph::SpaceTimeUnsteadyHeatEquations$<$ SPATIAL\_DIM $>$}!SpaceTimeUnsteadyHeatSourceFctPt@{SpaceTimeUnsteadyHeatSourceFctPt}}
@@ -235,7 +235,7 @@ Function pointer to source function fct(t,x,f(x,t)) -- x is a Vector! D\+R\+A\+I
 
 
 
-Definition at line 90 of file discontinuous\+\_\+galerkin\+\_\+space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 86 of file discontinuous\+\_\+galerkin\+\_\+space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -253,7 +253,7 @@ Constructor\+: Initialises the Source\+\_\+fct\+\_\+pt to null and sets flag to 
 
 
 
-Definition at line 99 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 95 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -272,7 +272,7 @@ Broken copy constructor.
 
 
 
-Definition at line 110 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 106 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -291,7 +291,7 @@ Constructor\+: Initialises the Source\+\_\+fct\+\_\+pt to null and sets flag to 
 
 
 
-Definition at line 99 of file discontinuous\+\_\+galerkin\+\_\+space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 95 of file discontinuous\+\_\+galerkin\+\_\+space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -310,7 +310,7 @@ Broken copy constructor.
 
 
 
-Definition at line 112 of file discontinuous\+\_\+galerkin\+\_\+space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 108 of file discontinuous\+\_\+galerkin\+\_\+space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -332,7 +332,7 @@ Alpha parameter (thermal inertia)
 
 
 
-Definition at line 432 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 428 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -351,7 +351,7 @@ Alpha parameter (thermal inertia)
 
 
 
-Definition at line 434 of file discontinuous\+\_\+galerkin\+\_\+space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 430 of file discontinuous\+\_\+galerkin\+\_\+space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -370,7 +370,7 @@ Pointer to Alpha parameter (thermal inertia)
 
 
 
-Definition at line 440 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 436 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -389,7 +389,7 @@ Pointer to Alpha parameter (thermal inertia)
 
 
 
-Definition at line 442 of file discontinuous\+\_\+galerkin\+\_\+space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 438 of file discontinuous\+\_\+galerkin\+\_\+space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -408,7 +408,7 @@ Beta parameter (thermal conductivity)
 
 
 
-Definition at line 448 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 444 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -427,7 +427,7 @@ Beta parameter (thermal conductivity)
 
 
 
-Definition at line 450 of file discontinuous\+\_\+galerkin\+\_\+space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 446 of file discontinuous\+\_\+galerkin\+\_\+space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -446,7 +446,7 @@ Pointer to Beta parameter (thermal conductivity)
 
 
 
-Definition at line 456 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 452 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -465,7 +465,7 @@ Pointer to Beta parameter (thermal conductivity)
 
 
 
-Definition at line 458 of file discontinuous\+\_\+galerkin\+\_\+space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 454 of file discontinuous\+\_\+galerkin\+\_\+space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -490,7 +490,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1FiniteElement_a73c79a1f1e5b1d3
 
 
 
-Definition at line 528 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+cc.
+Definition at line 524 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+cc.
 
 
 
@@ -530,7 +530,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1FiniteElement_a7f67853506dc73f
 
 
 
-Definition at line 618 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+cc.
+Definition at line 614 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+cc.
 
 
 
@@ -568,7 +568,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1GeneralisedElement_af2025a472d
 
 
 
-Definition at line 240 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+cc.
+Definition at line 236 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+cc.
 
 
 
@@ -606,7 +606,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1FiniteElement_a625ea6d3f9baccf
 
 
 
-Definition at line 118 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 114 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -629,7 +629,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1FiniteElement_a625ea6d3f9baccf
 
 
 
-Definition at line 120 of file discontinuous\+\_\+galerkin\+\_\+space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 116 of file discontinuous\+\_\+galerkin\+\_\+space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -708,7 +708,7 @@ Calculate du/dt at the n-\/th local node. Uses suitably interpolated value for h
 
 
 
-Definition at line 599 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 595 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -727,7 +727,7 @@ Calculate du/dt at the n-\/th local node. Uses suitably interpolated value for h
 
 
 
-Definition at line 601 of file discontinuous\+\_\+galerkin\+\_\+space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 597 of file discontinuous\+\_\+galerkin\+\_\+space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -750,7 +750,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1FiniteElement_a92ef8967fa4e2d6
 
 
 
-Definition at line 129 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 125 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -773,7 +773,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1FiniteElement_a92ef8967fa4e2d6
 
 
 
-Definition at line 131 of file discontinuous\+\_\+galerkin\+\_\+space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 127 of file discontinuous\+\_\+galerkin\+\_\+space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -796,7 +796,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1FiniteElement_a0ae7af222af38a0
 
 
 
-Definition at line 512 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 508 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -819,7 +819,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1FiniteElement_a0ae7af222af38a0
 
 
 
-Definition at line 514 of file discontinuous\+\_\+galerkin\+\_\+space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 510 of file discontinuous\+\_\+galerkin\+\_\+space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -842,7 +842,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1GeneralisedElement_a310c97f515
 
 
 
-Definition at line 502 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 498 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -865,7 +865,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1GeneralisedElement_a310c97f515
 
 
 
-Definition at line 504 of file discontinuous\+\_\+galerkin\+\_\+space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 500 of file discontinuous\+\_\+galerkin\+\_\+space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -892,7 +892,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1RefineableSpaceTimeUnsteadyHeatE
 
 
 
-Definition at line 66 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+cc.
+Definition at line 62 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+cc.
 
 
 
@@ -930,7 +930,7 @@ Get flux\+: flux\mbox{[}i\mbox{]}=du/dx\+\_\+i.
 
 
 
-Definition at line 464 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 460 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -949,7 +949,7 @@ Get flux\+: flux\mbox{[}i\mbox{]}=du/dx\+\_\+i.
 
 
 
-Definition at line 466 of file discontinuous\+\_\+galerkin\+\_\+space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 462 of file discontinuous\+\_\+galerkin\+\_\+space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -968,7 +968,7 @@ Get source term at continous time t and (Eulerian) position x. Virtual so it can
 
 
 
-Definition at line 411 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 407 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -987,7 +987,7 @@ Get source term at continous time t and (Eulerian) position x. Virtual so it can
 
 
 
-Definition at line 413 of file discontinuous\+\_\+galerkin\+\_\+space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 409 of file discontinuous\+\_\+galerkin\+\_\+space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -1006,7 +1006,7 @@ Return FE representation of function value du/dt(s) at local coordinate s.
 
 
 
-Definition at line 613 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 609 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -1029,7 +1029,7 @@ Return FE representation of function value du/dt(s) at local coordinate s.
 
 
 
-Definition at line 615 of file discontinuous\+\_\+galerkin\+\_\+space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 611 of file discontinuous\+\_\+galerkin\+\_\+space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -1048,7 +1048,7 @@ Return FE representation of function value u(s) at local coordinate s at previou
 
 
 
-Definition at line 567 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 563 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -1067,7 +1067,7 @@ Return FE representation of function value u(s) at local coordinate s at previou
 
 
 
-Definition at line 569 of file discontinuous\+\_\+galerkin\+\_\+space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 565 of file discontinuous\+\_\+galerkin\+\_\+space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -1086,7 +1086,7 @@ Return FE representation of function value u(s) at local coordinate s.
 
 
 
-Definition at line 521 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 517 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -1109,7 +1109,7 @@ Return FE representation of function value u(s) at local coordinate s.
 
 
 
-Definition at line 523 of file discontinuous\+\_\+galerkin\+\_\+space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 519 of file discontinuous\+\_\+galerkin\+\_\+space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -1132,7 +1132,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1FiniteElement_a865e2e5586552ba
 
 
 
-Definition at line 209 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 205 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1SpaceTimeUnsteadyHeatEquations_a5cb8f7cecf3a6a730055bba7ab639d73}\label{classoomph_1_1SpaceTimeUnsteadyHeatEquations_a5cb8f7cecf3a6a730055bba7ab639d73}} 
 \index{oomph::SpaceTimeUnsteadyHeatEquations$<$ SPATIAL\_DIM $>$@{oomph::SpaceTimeUnsteadyHeatEquations$<$ SPATIAL\_DIM $>$}!nscalar\_paraview@{nscalar\_paraview}}
@@ -1151,7 +1151,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1FiniteElement_a865e2e5586552ba
 
 
 
-Definition at line 211 of file discontinuous\+\_\+galerkin\+\_\+space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 207 of file discontinuous\+\_\+galerkin\+\_\+space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1SpaceTimeUnsteadyHeatEquations_a49fb126a5c8c9129d9b6528d9905ebed}\label{classoomph_1_1SpaceTimeUnsteadyHeatEquations_a49fb126a5c8c9129d9b6528d9905ebed}} 
 \index{oomph::SpaceTimeUnsteadyHeatEquations$<$ SPATIAL\_DIM $>$@{oomph::SpaceTimeUnsteadyHeatEquations$<$ SPATIAL\_DIM $>$}!output@{output}}
@@ -1174,7 +1174,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1QUnsteadyHeatSpaceTimeElement_ac
 
 
 
-Definition at line 157 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 153 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -1201,7 +1201,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1QUnsteadyHeatSpaceTimeElement_ac
 
 
 
-Definition at line 159 of file discontinuous\+\_\+galerkin\+\_\+space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 155 of file discontinuous\+\_\+galerkin\+\_\+space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -1228,7 +1228,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1QUnsteadyHeatSpaceTimeElement_aa
 
 
 
-Definition at line 365 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+cc.
+Definition at line 361 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+cc.
 
 
 
@@ -1274,7 +1274,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1QUnsteadyHeatSpaceTimeElement_ac
 
 
 
-Definition at line 141 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 137 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -1301,7 +1301,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1QUnsteadyHeatSpaceTimeElement_ac
 
 
 
-Definition at line 143 of file discontinuous\+\_\+galerkin\+\_\+space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 139 of file discontinuous\+\_\+galerkin\+\_\+space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -1328,7 +1328,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1QUnsteadyHeatSpaceTimeElement_ac
 
 
 
-Definition at line 325 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+cc.
+Definition at line 321 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+cc.
 
 
 
@@ -1366,7 +1366,7 @@ C-\/style output FE representation of soln\+: x,y,u or x,y,z,u at nplot$^\wedge$
 
 Output function\+: x,t,u or x,y,t,u at nplot points in each coordinate direction 
 
-Definition at line 713 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+cc.
+Definition at line 709 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+cc.
 
 
 
@@ -1404,7 +1404,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1QUnsteadyHeatSpaceTimeElement_ab
 
 
 
-Definition at line 463 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+cc.
+Definition at line 459 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+cc.
 
 
 
@@ -1448,7 +1448,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1QUnsteadyHeatSpaceTimeElement_ad
 
 
 
-Definition at line 406 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+cc.
+Definition at line 402 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+cc.
 
 
 
@@ -1490,7 +1490,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1FiniteElement_a49cc2d4f7ed5772
 
 
 
-Definition at line 369 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 365 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -1513,7 +1513,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1FiniteElement_a49cc2d4f7ed5772
 
 
 
-Definition at line 371 of file discontinuous\+\_\+galerkin\+\_\+space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 367 of file discontinuous\+\_\+galerkin\+\_\+space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -1536,7 +1536,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1FiniteElement_ab566cc2b0a758b0
 
 
 
-Definition at line 308 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 304 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -1559,7 +1559,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1FiniteElement_ab566cc2b0a758b0
 
 
 
-Definition at line 310 of file discontinuous\+\_\+galerkin\+\_\+space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 306 of file discontinuous\+\_\+galerkin\+\_\+space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -1582,7 +1582,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1FiniteElement_ac6ce34f52481195
 
 
 
-Definition at line 254 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 250 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -1605,7 +1605,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1FiniteElement_ac6ce34f52481195
 
 
 
-Definition at line 256 of file discontinuous\+\_\+galerkin\+\_\+space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 252 of file discontinuous\+\_\+galerkin\+\_\+space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -1628,7 +1628,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1FiniteElement_a02cf8832a5e2886
 
 
 
-Definition at line 218 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 214 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -1651,7 +1651,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1FiniteElement_a02cf8832a5e2886
 
 
 
-Definition at line 220 of file discontinuous\+\_\+galerkin\+\_\+space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 216 of file discontinuous\+\_\+galerkin\+\_\+space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -1674,7 +1674,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1FiniteElement_af94c5a5e22175d5
 
 
 
-Definition at line 292 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+cc.
+Definition at line 288 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+cc.
 
 
 
@@ -1712,7 +1712,7 @@ Implements \mbox{\hyperlink{classoomph_1_1SpaceTimeUnsteadyHeatEquationsBase_a93
 
 
 
-Definition at line 394 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 390 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -1739,7 +1739,7 @@ Implements \mbox{\hyperlink{classoomph_1_1SpaceTimeUnsteadyHeatEquationsBase_a93
 
 
 
-Definition at line 396 of file discontinuous\+\_\+galerkin\+\_\+space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 392 of file discontinuous\+\_\+galerkin\+\_\+space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -1758,7 +1758,7 @@ Access function\+: Pointer to source function. Const version.
 
 
 
-Definition at line 402 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 398 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -1777,7 +1777,7 @@ Access function\+: Pointer to source function. Const version.
 
 
 
-Definition at line 404 of file discontinuous\+\_\+galerkin\+\_\+space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 400 of file discontinuous\+\_\+galerkin\+\_\+space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -1796,7 +1796,7 @@ Return the index at which the unknown value is stored. The default value, 0, is 
 
 
 
-Definition at line 557 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 553 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -1815,7 +1815,7 @@ Return the index at which the unknown value is stored. The default value, 0, is 
 
 
 
-Definition at line 559 of file discontinuous\+\_\+galerkin\+\_\+space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 555 of file discontinuous\+\_\+galerkin\+\_\+space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -1833,7 +1833,7 @@ Boolean flag to indicate if A\+LE formulation is disabled when time-\/derivative
 
 
 
-Definition at line 682 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 678 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -1852,7 +1852,7 @@ Pointer to Alpha parameter (thermal inertia)
 
 
 
-Definition at line 685 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 681 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -1871,7 +1871,7 @@ Pointer to Beta parameter (thermal conductivity)
 
 
 
-Definition at line 688 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 684 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -1890,7 +1890,7 @@ Static default value for the Alpha parameter (thermal inertia)\+: One for natura
 
 Default value for Alpha parameter (thermal inertia) 
 
-Definition at line 694 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 690 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -1909,7 +1909,7 @@ Static default value for the Beta parameter (thermal conductivity)\+: One for na
 
 Default value for Beta parameter (thermal conductivity) 
 
-Definition at line 698 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 694 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 
@@ -1928,7 +1928,7 @@ Pointer to source function\+:
 
 
 
-Definition at line 677 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
+Definition at line 673 of file space\+\_\+time\+\_\+unsteady\+\_\+heat\+\_\+elements.\+h.
 
 
 

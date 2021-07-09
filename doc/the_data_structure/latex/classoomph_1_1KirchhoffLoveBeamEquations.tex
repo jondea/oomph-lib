@@ -124,7 +124,7 @@ Need to specify\+:
 
 The governing equations can be switched from the principle of virtual displacements to a system of equations that forces the beam to deform into a shape specified by a \mbox{\hyperlink{classoomph_1_1SolidInitialCondition}{Solid\+Initial\+Condition}} object. If {\ttfamily \mbox{\hyperlink{classoomph_1_1SolidFiniteElement_abb6ff13ecd9068e25dba4b8a63ffe5b0}{Solid\+Finite\+Element\+::solid\+\_\+ic\+\_\+pt()}}!=0} we solve the the equations \[ \int_0^{L} \left( \frac{\partial^i {\bf R}_{IC}}{\partial t^i} - {\bf R}_w \right) \psi_{jk} \ d\xi = 0, \] where $ \partial^i {\bf R}_{IC}/\partial t^i$ is implemented by the \mbox{\hyperlink{classoomph_1_1SolidInitialCondition}{Solid\+Initial\+Condition}} object, pointed to by {\ttfamily Solid\+Finite\+Element\+::shell\+\_\+ic\+\_\+pt()}. 
 
-Definition at line 114 of file beam\+\_\+elements.\+h.
+Definition at line 110 of file beam\+\_\+elements.\+h.
 
 
 
@@ -142,7 +142,7 @@ Constructor. Set default values for all physical parameters and zero traction. ~
 
 
 
-Definition at line 179 of file beam\+\_\+elements.\+h.
+Definition at line 175 of file beam\+\_\+elements.\+h.
 
 
 
@@ -171,7 +171,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1FSIHermiteBeamElement_ab81052ae3
 
 
 
-Definition at line 534 of file beam\+\_\+elements.\+cc.
+Definition at line 530 of file beam\+\_\+elements.\+cc.
 
 
 
@@ -197,7 +197,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1GeneralisedElement_a310c97f515
 
 
 
-Definition at line 282 of file beam\+\_\+elements.\+h.
+Definition at line 278 of file beam\+\_\+elements.\+h.
 
 
 
@@ -215,7 +215,7 @@ Return the residuals for the equations of Kirchhoff-\/\+Love beam theory with li
 
 Return the residuals for the equations of Kirchhoff-\/\+Love beam theory with linear constitutive equations; if Solid\+\_\+ic\+\_\+pt!=0, we assign residuals which force the assignement of an initial shape/ veloc/accel to the dofs. 
 
-Definition at line 287 of file beam\+\_\+elements.\+cc.
+Definition at line 283 of file beam\+\_\+elements.\+cc.
 
 
 
@@ -237,7 +237,7 @@ Get potential (strain) and kinetic energy of the element.
 
 Compute the potential (strain) and kinetic energy of the element (wrapper function). 
 
-Definition at line 568 of file beam\+\_\+elements.\+cc.
+Definition at line 564 of file beam\+\_\+elements.\+cc.
 
 \mbox{\Hypertarget{classoomph_1_1KirchhoffLoveBeamEquations_ae003c588ad4e314538fcd04c9289a702}\label{classoomph_1_1KirchhoffLoveBeamEquations_ae003c588ad4e314538fcd04c9289a702}} 
 \index{oomph::KirchhoffLoveBeamEquations@{oomph::KirchhoffLoveBeamEquations}!get\_energy@{get\_energy}}
@@ -251,7 +251,7 @@ Get the potential energy due to stretching and bending and the kinetic energy of
 
 Compute the potential (strain) and kinetic energy of the element, breaking down the potential energy into stretching and bending components. 
 
-Definition at line 588 of file beam\+\_\+elements.\+cc.
+Definition at line 584 of file beam\+\_\+elements.\+cc.
 
 
 
@@ -269,7 +269,7 @@ Get position vector to and non-\/unit tangent vector on wall\+: dr/ds.
 
 
 
-Definition at line 190 of file beam\+\_\+elements.\+cc.
+Definition at line 186 of file beam\+\_\+elements.\+cc.
 
 
 
@@ -291,7 +291,7 @@ Get normal vector on wall.
 
 
 
-Definition at line 260 of file beam\+\_\+elements.\+h.
+Definition at line 256 of file beam\+\_\+elements.\+h.
 
 
 
@@ -313,7 +313,7 @@ Get position vector to and normal vector on wall.
 
 
 
-Definition at line 81 of file beam\+\_\+elements.\+cc.
+Definition at line 77 of file beam\+\_\+elements.\+cc.
 
 
 
@@ -331,7 +331,7 @@ Return the non-\/dimensional wall thickness.
 
 
 
-Definition at line 237 of file beam\+\_\+elements.\+h.
+Definition at line 233 of file beam\+\_\+elements.\+h.
 
 
 
@@ -353,7 +353,7 @@ Return a pointer to non-\/dim. wall thickness.
 
 
 
-Definition at line 250 of file beam\+\_\+elements.\+h.
+Definition at line 246 of file beam\+\_\+elements.\+h.
 
 
 
@@ -371,7 +371,7 @@ Return the timescale ratio (non-\/dimensional density)
 
 
 
-Definition at line 240 of file beam\+\_\+elements.\+h.
+Definition at line 236 of file beam\+\_\+elements.\+h.
 
 
 
@@ -393,7 +393,7 @@ Return a pointer to timescale ratio (nondim density)
 
 
 
-Definition at line 253 of file beam\+\_\+elements.\+h.
+Definition at line 249 of file beam\+\_\+elements.\+h.
 
 
 
@@ -415,7 +415,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1FSIHermiteBeamElement_aee4b8fcde
 
 
 
-Definition at line 207 of file beam\+\_\+elements.\+h.
+Definition at line 203 of file beam\+\_\+elements.\+h.
 
 
 
@@ -437,7 +437,7 @@ Return the axial prestress.
 
 
 
-Definition at line 243 of file beam\+\_\+elements.\+h.
+Definition at line 239 of file beam\+\_\+elements.\+h.
 
 
 
@@ -459,7 +459,7 @@ Return a pointer to axial prestress.
 
 
 
-Definition at line 246 of file beam\+\_\+elements.\+h.
+Definition at line 242 of file beam\+\_\+elements.\+h.
 
 
 
@@ -477,7 +477,7 @@ Return a Pointer to geometric object that specifies the beam\textquotesingle{}s 
 
 
 
-Definition at line 257 of file beam\+\_\+elements.\+h.
+Definition at line 253 of file beam\+\_\+elements.\+h.
 
 
 
@@ -495,7 +495,7 @@ Default profile function (constant thickness \textquotesingle{}h\+\_\+0\textquot
 
 Default wall profile function (constant thickness h\+\_\+0) 
 
-Definition at line 68 of file beam\+\_\+elements.\+cc.
+Definition at line 64 of file beam\+\_\+elements.\+cc.
 
 
 
@@ -513,7 +513,7 @@ Get the wall profile\+: Pass Lagrangian \& Eulerian coordinate and return the wa
 
 
 
-Definition at line 227 of file beam\+\_\+elements.\+h.
+Definition at line 223 of file beam\+\_\+elements.\+h.
 
 
 
@@ -535,7 +535,7 @@ Default load function (zero traction)
 
 
 
-Definition at line 56 of file beam\+\_\+elements.\+cc.
+Definition at line 52 of file beam\+\_\+elements.\+cc.
 
 
 
@@ -560,7 +560,7 @@ Static default value for non-\/dim wall thickness.
 
 Static default value for non-\/dim wall thickness (1/20) 
 
-Definition at line 127 of file beam\+\_\+elements.\+h.
+Definition at line 123 of file beam\+\_\+elements.\+h.
 
 
 
@@ -578,7 +578,7 @@ Static default value for timescale ratio (1.\+0 -- for natural scaling)
 
 Static default value for timescale ratio (1.\+0 for natural scaling) 
 
-Definition at line 123 of file beam\+\_\+elements.\+h.
+Definition at line 119 of file beam\+\_\+elements.\+h.
 
 
 
@@ -596,7 +596,7 @@ Static default value for 2nd Piola Kirchhoff prestress.
 
 Static default value for 2nd Piola Kirchhoff prestress (zero) 
 
-Definition at line 120 of file beam\+\_\+elements.\+h.
+Definition at line 116 of file beam\+\_\+elements.\+h.
 
 
 
@@ -614,7 +614,7 @@ Pointer to wall thickness.
 
 
 
-Definition at line 134 of file beam\+\_\+elements.\+h.
+Definition at line 130 of file beam\+\_\+elements.\+h.
 
 
 
@@ -632,7 +632,7 @@ Pointer to Timescale ratio (non-\/dim. density)
 
 
 
-Definition at line 137 of file beam\+\_\+elements.\+h.
+Definition at line 133 of file beam\+\_\+elements.\+h.
 
 
 
@@ -650,7 +650,7 @@ Reference to the load vector function pointer.
 
 
 
-Definition at line 194 of file beam\+\_\+elements.\+h.
+Definition at line 190 of file beam\+\_\+elements.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1KirchhoffLoveBeamEquations_a66707c32b8a08bcf6e8ed855066f9618}\label{classoomph_1_1KirchhoffLoveBeamEquations_a66707c32b8a08bcf6e8ed855066f9618}} 
 \index{oomph::KirchhoffLoveBeamEquations@{oomph::KirchhoffLoveBeamEquations}!Load\_vector\_fct\_pt@{Load\_vector\_fct\_pt}}
@@ -664,7 +664,7 @@ Pointer to load vector function\+: Its arguments are\+: Lagrangian coordinate, E
 
 
 
-Definition at line 152 of file beam\+\_\+elements.\+h.
+Definition at line 148 of file beam\+\_\+elements.\+h.
 
 
 
@@ -682,7 +682,7 @@ Pointer to axial prestress.
 
 
 
-Definition at line 130 of file beam\+\_\+elements.\+h.
+Definition at line 126 of file beam\+\_\+elements.\+h.
 
 
 
@@ -700,7 +700,7 @@ Pointer to the \mbox{\hyperlink{classoomph_1_1GeomObject}{Geom\+Object}} that sp
 
 
 
-Definition at line 173 of file beam\+\_\+elements.\+h.
+Definition at line 169 of file beam\+\_\+elements.\+h.
 
 
 
@@ -718,7 +718,7 @@ Reference to the wall thickness ratio profile function pointer.
 
 
 
-Definition at line 217 of file beam\+\_\+elements.\+h.
+Definition at line 213 of file beam\+\_\+elements.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1KirchhoffLoveBeamEquations_a6ca999fcdf45f0cf51b0a74a1025ed53}\label{classoomph_1_1KirchhoffLoveBeamEquations_a6ca999fcdf45f0cf51b0a74a1025ed53}} 
 \index{oomph::KirchhoffLoveBeamEquations@{oomph::KirchhoffLoveBeamEquations}!Wall\_profile\_fct\_pt@{Wall\_profile\_fct\_pt}}
@@ -732,7 +732,7 @@ Pointer to wall profile function\+: Its arguments are\+: Lagrangian coordinate, 
 
 
 
-Definition at line 167 of file beam\+\_\+elements.\+h.
+Definition at line 163 of file beam\+\_\+elements.\+h.
 
 
 

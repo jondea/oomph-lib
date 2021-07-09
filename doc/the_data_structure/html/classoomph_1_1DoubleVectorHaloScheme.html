@@ -191,7 +191,7 @@ Friends</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class that stores the halo/haloed entries required when using a <a class="el" href="classoomph_1_1DoubleVectorWithHaloEntries.html">DoubleVectorWithHaloEntries</a>. This is a separate class so thay many different Vectors can share the same object. The constructor requires the distribution of the <a class="el" href="classoomph_1_1DoubleVector.html" title="A vector in the mathematical sense, initially developed for linear algebra type applications....">DoubleVector</a> (if you pass in a different distribution things will go badly wrong) and a vector that specifies which GLOBAL eqn numbers are required on each processor. </p>
 
-<p class="definition">Definition at line <a class="el" href="double__vector__with__halo_8h_source.html#l00055">55</a> of file <a class="el" href="double__vector__with__halo_8h_source.html">double_vector_with_halo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="double__vector__with__halo_8h_source.html#l00051">51</a> of file <a class="el" href="double__vector__with__halo_8h_source.html">double_vector_with_halo.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ac3809f5cac00b082a66bbf706087627e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac3809f5cac00b082a66bbf706087627e">&#9670;&nbsp;</a></span>DoubleVectorHaloScheme()</h2>
@@ -221,9 +221,9 @@ Friends</h2></td></tr>
 
 <p>Constructor that sets up the required information communicating between all processors. Requires two "all to all" communications. Arguments are the distribution of the <a class="el" href="classoomph_1_1DoubleVector.html" title="A vector in the mathematical sense, initially developed for linear algebra type applications....">DoubleVector</a> and a <a class="el" href="classoomph_1_1Vector.html">Vector</a> of global unknowns required on this processor. </p>
 
-<p class="definition">Definition at line <a class="el" href="double__vector__with__halo_8cc_source.html#l00041">41</a> of file <a class="el" href="double__vector__with__halo_8cc_source.html">double_vector_with_halo.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="double__vector__with__halo_8cc_source.html#l00037">37</a> of file <a class="el" href="double__vector__with__halo_8cc_source.html">double_vector_with_halo.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="linear__algebra__distribution_8h_source.html#l00343">oomph::LinearAlgebraDistribution::communicator_pt()</a>, <a class="el" href="linear__algebra__distribution_8h_source.html#l00337">oomph::LinearAlgebraDistribution::distributed()</a>, <a class="el" href="linear__algebra__distribution_8h_source.html#l00268">oomph::LinearAlgebraDistribution::first_row()</a>, <a class="el" href="double__vector__with__halo_8h_source.html#l00088">Halo_displacement</a>, <a class="el" href="double__vector__with__halo_8h_source.html#l00080">Halo_eqns</a>, <a class="el" href="double__vector__with__halo_8h_source.html#l00084">Halo_n</a>, <a class="el" href="double__vector__with__halo_8h_source.html#l00075">Haloed_displacement</a>, <a class="el" href="double__vector__with__halo_8h_source.html#l00067">Haloed_eqns</a>, <a class="el" href="double__vector__with__halo_8h_source.html#l00071">Haloed_n</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="the__data__structure_8txt_source.html#l00391">i_global</a>, <a class="el" href="double__vector__with__halo_8h_source.html#l00063">Local_index</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, and <a class="el" href="linear__algebra__distribution_8h_source.html#l00395">oomph::LinearAlgebraDistribution::rank_of_global_row()</a>.</p>
+<p class="reference">References <a class="el" href="linear__algebra__distribution_8h_source.html#l00339">oomph::LinearAlgebraDistribution::communicator_pt()</a>, <a class="el" href="linear__algebra__distribution_8h_source.html#l00333">oomph::LinearAlgebraDistribution::distributed()</a>, <a class="el" href="linear__algebra__distribution_8h_source.html#l00264">oomph::LinearAlgebraDistribution::first_row()</a>, <a class="el" href="double__vector__with__halo_8h_source.html#l00084">Halo_displacement</a>, <a class="el" href="double__vector__with__halo_8h_source.html#l00076">Halo_eqns</a>, <a class="el" href="double__vector__with__halo_8h_source.html#l00080">Halo_n</a>, <a class="el" href="double__vector__with__halo_8h_source.html#l00071">Haloed_displacement</a>, <a class="el" href="double__vector__with__halo_8h_source.html#l00063">Haloed_eqns</a>, <a class="el" href="double__vector__with__halo_8h_source.html#l00067">Haloed_n</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="the__data__structure_8txt_source.html#l00391">i_global</a>, <a class="el" href="double__vector__with__halo_8h_source.html#l00059">Local_index</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, and <a class="el" href="linear__algebra__distribution_8h_source.html#l00391">oomph::LinearAlgebraDistribution::rank_of_global_row()</a>.</p>
 
 </div>
 </div>
@@ -253,11 +253,11 @@ Friends</h2></td></tr>
 
 <p>Return the pointer to the distirbution used to setup the halo information. </p>
 
-<p class="definition">Definition at line <a class="el" href="double__vector__with__halo_8h_source.html#l00108">108</a> of file <a class="el" href="double__vector__with__halo_8h_source.html">double_vector_with_halo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="double__vector__with__halo_8h_source.html#l00104">104</a> of file <a class="el" href="double__vector__with__halo_8h_source.html">double_vector_with_halo.h</a>.</p>
 
-<p class="reference">References <a class="el" href="double__vector__with__halo_8h_source.html#l00092">Distribution_pt</a>.</p>
+<p class="reference">References <a class="el" href="double__vector__with__halo_8h_source.html#l00088">Distribution_pt</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="problem_8h_source.html#l01655">oomph::Problem::global_dof_pt()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="problem_8h_source.html#l01651">oomph::Problem::global_dof_pt()</a>.</p>
 
 </div>
 </div>
@@ -287,11 +287,11 @@ Friends</h2></td></tr>
 
 <p>Return the local index associated with the global equation. </p>
 
-<p class="definition">Definition at line <a class="el" href="double__vector__with__halo_8h_source.html#l00117">117</a> of file <a class="el" href="double__vector__with__halo_8h_source.html">double_vector_with_halo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="double__vector__with__halo_8h_source.html#l00113">113</a> of file <a class="el" href="double__vector__with__halo_8h_source.html">double_vector_with_halo.h</a>.</p>
 
-<p class="reference">References <a class="el" href="double__vector__with__halo_8h_source.html#l00063">Local_index</a>.</p>
+<p class="reference">References <a class="el" href="double__vector__with__halo_8h_source.html#l00059">Local_index</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="problem_8h_source.html#l01655">oomph::Problem::global_dof_pt()</a>, and <a class="el" href="double__vector__with__halo_8h_source.html#l00219">oomph::DoubleVectorWithHaloEntries::global_value()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="problem_8h_source.html#l01651">oomph::Problem::global_dof_pt()</a>, and <a class="el" href="double__vector__with__halo_8h_source.html#l00215">oomph::DoubleVectorWithHaloEntries::global_value()</a>.</p>
 
 </div>
 </div>
@@ -320,9 +320,9 @@ Friends</h2></td></tr>
 
 <p>Return the number of halo values. </p>
 
-<p class="definition">Definition at line <a class="el" href="double__vector__with__halo_8h_source.html#l00104">104</a> of file <a class="el" href="double__vector__with__halo_8h_source.html">double_vector_with_halo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="double__vector__with__halo_8h_source.html#l00100">100</a> of file <a class="el" href="double__vector__with__halo_8h_source.html">double_vector_with_halo.h</a>.</p>
 
-<p class="reference">References <a class="el" href="double__vector__with__halo_8h_source.html#l00063">Local_index</a>.</p>
+<p class="reference">References <a class="el" href="double__vector__with__halo_8h_source.html#l00059">Local_index</a>.</p>
 
 </div>
 </div>
@@ -355,11 +355,11 @@ Friends</h2></td></tr>
 <p>Function that sets up a vector of pointers to halo data, index using the scheme in Local_index. </p>
 <p>Function that sets up a vector of pointers to halo data, index using the scheme in Local_index. The first arguement is a map of pointers to all halo data index by the global equation number. </p>
 
-<p class="definition">Definition at line <a class="el" href="double__vector__with__halo_8cc_source.html#l00210">210</a> of file <a class="el" href="double__vector__with__halo_8cc_source.html">double_vector_with_halo.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="double__vector__with__halo_8cc_source.html#l00206">206</a> of file <a class="el" href="double__vector__with__halo_8cc_source.html">double_vector_with_halo.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="double__vector__with__halo_8h_source.html#l00063">Local_index</a>.</p>
+<p class="reference">References <a class="el" href="double__vector__with__halo_8h_source.html#l00059">Local_index</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="problem_8cc_source.html#l00291">oomph::Problem::setup_dof_halo_scheme()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="problem_8cc_source.html#l00287">oomph::Problem::setup_dof_halo_scheme()</a>.</p>
 
 </div>
 </div>
@@ -386,7 +386,7 @@ Friends</h2></td></tr>
 
 <p>The <a class="el" href="classoomph_1_1DoubleVectorWithHaloEntries.html">DoubleVectorWithHaloEntries</a> should be able to access the private data. </p>
 
-<p class="definition">Definition at line <a class="el" href="double__vector__with__halo_8h_source.html#l00059">59</a> of file <a class="el" href="double__vector__with__halo_8h_source.html">double_vector_with_halo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="double__vector__with__halo_8h_source.html#l00055">55</a> of file <a class="el" href="double__vector__with__halo_8h_source.html">double_vector_with_halo.h</a>.</p>
 
 </div>
 </div>
@@ -413,9 +413,9 @@ Friends</h2></td></tr>
 
 <p>Store the distribution that was used to setup the halo scheme. </p>
 
-<p class="definition">Definition at line <a class="el" href="double__vector__with__halo_8h_source.html#l00092">92</a> of file <a class="el" href="double__vector__with__halo_8h_source.html">double_vector_with_halo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="double__vector__with__halo_8h_source.html#l00088">88</a> of file <a class="el" href="double__vector__with__halo_8h_source.html">double_vector_with_halo.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="double__vector__with__halo_8h_source.html#l00108">distribution_pt()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="double__vector__with__halo_8h_source.html#l00104">distribution_pt()</a>.</p>
 
 </div>
 </div>
@@ -441,9 +441,9 @@ Friends</h2></td></tr>
 
 <p>Storage for the offsets of the processor data in the receive buffer. </p>
 
-<p class="definition">Definition at line <a class="el" href="double__vector__with__halo_8h_source.html#l00088">88</a> of file <a class="el" href="double__vector__with__halo_8h_source.html">double_vector_with_halo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="double__vector__with__halo_8h_source.html#l00084">84</a> of file <a class="el" href="double__vector__with__halo_8h_source.html">double_vector_with_halo.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="double__vector__with__halo_8cc_source.html#l00041">DoubleVectorHaloScheme()</a>, <a class="el" href="double__vector__with__halo_8cc_source.html#l00297">oomph::DoubleVectorWithHaloEntries::sum_all_halo_and_haloed_values()</a>, and <a class="el" href="double__vector__with__halo_8cc_source.html#l00253">oomph::DoubleVectorWithHaloEntries::synchronise()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="double__vector__with__halo_8cc_source.html#l00037">DoubleVectorHaloScheme()</a>, <a class="el" href="double__vector__with__halo_8cc_source.html#l00293">oomph::DoubleVectorWithHaloEntries::sum_all_halo_and_haloed_values()</a>, and <a class="el" href="double__vector__with__halo_8cc_source.html#l00249">oomph::DoubleVectorWithHaloEntries::synchronise()</a>.</p>
 
 </div>
 </div>
@@ -469,9 +469,9 @@ Friends</h2></td></tr>
 
 <p>Storage for all the entries that are to be received from other processors (received_from_proc0,received_from_proc1,...received_from_procn) </p>
 
-<p class="definition">Definition at line <a class="el" href="double__vector__with__halo_8h_source.html#l00080">80</a> of file <a class="el" href="double__vector__with__halo_8h_source.html">double_vector_with_halo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="double__vector__with__halo_8h_source.html#l00076">76</a> of file <a class="el" href="double__vector__with__halo_8h_source.html">double_vector_with_halo.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="double__vector__with__halo_8cc_source.html#l00041">DoubleVectorHaloScheme()</a>, <a class="el" href="double__vector__with__halo_8cc_source.html#l00297">oomph::DoubleVectorWithHaloEntries::sum_all_halo_and_haloed_values()</a>, and <a class="el" href="double__vector__with__halo_8cc_source.html#l00253">oomph::DoubleVectorWithHaloEntries::synchronise()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="double__vector__with__halo_8cc_source.html#l00037">DoubleVectorHaloScheme()</a>, <a class="el" href="double__vector__with__halo_8cc_source.html#l00293">oomph::DoubleVectorWithHaloEntries::sum_all_halo_and_haloed_values()</a>, and <a class="el" href="double__vector__with__halo_8cc_source.html#l00249">oomph::DoubleVectorWithHaloEntries::synchronise()</a>.</p>
 
 </div>
 </div>
@@ -497,9 +497,9 @@ Friends</h2></td></tr>
 
 <p>Storage for the number of entries to be received from each other processor. </p>
 
-<p class="definition">Definition at line <a class="el" href="double__vector__with__halo_8h_source.html#l00084">84</a> of file <a class="el" href="double__vector__with__halo_8h_source.html">double_vector_with_halo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="double__vector__with__halo_8h_source.html#l00080">80</a> of file <a class="el" href="double__vector__with__halo_8h_source.html">double_vector_with_halo.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="double__vector__with__halo_8cc_source.html#l00041">DoubleVectorHaloScheme()</a>, <a class="el" href="double__vector__with__halo_8cc_source.html#l00297">oomph::DoubleVectorWithHaloEntries::sum_all_halo_and_haloed_values()</a>, and <a class="el" href="double__vector__with__halo_8cc_source.html#l00253">oomph::DoubleVectorWithHaloEntries::synchronise()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="double__vector__with__halo_8cc_source.html#l00037">DoubleVectorHaloScheme()</a>, <a class="el" href="double__vector__with__halo_8cc_source.html#l00293">oomph::DoubleVectorWithHaloEntries::sum_all_halo_and_haloed_values()</a>, and <a class="el" href="double__vector__with__halo_8cc_source.html#l00249">oomph::DoubleVectorWithHaloEntries::synchronise()</a>.</p>
 
 </div>
 </div>
@@ -525,9 +525,9 @@ Friends</h2></td></tr>
 
 <p>Storage for the offsets of the haloed entries for each processor in the packed Haloed_eqns array. </p>
 
-<p class="definition">Definition at line <a class="el" href="double__vector__with__halo_8h_source.html#l00075">75</a> of file <a class="el" href="double__vector__with__halo_8h_source.html">double_vector_with_halo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="double__vector__with__halo_8h_source.html#l00071">71</a> of file <a class="el" href="double__vector__with__halo_8h_source.html">double_vector_with_halo.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="double__vector__with__halo_8cc_source.html#l00041">DoubleVectorHaloScheme()</a>, <a class="el" href="double__vector__with__halo_8cc_source.html#l00297">oomph::DoubleVectorWithHaloEntries::sum_all_halo_and_haloed_values()</a>, and <a class="el" href="double__vector__with__halo_8cc_source.html#l00253">oomph::DoubleVectorWithHaloEntries::synchronise()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="double__vector__with__halo_8cc_source.html#l00037">DoubleVectorHaloScheme()</a>, <a class="el" href="double__vector__with__halo_8cc_source.html#l00293">oomph::DoubleVectorWithHaloEntries::sum_all_halo_and_haloed_values()</a>, and <a class="el" href="double__vector__with__halo_8cc_source.html#l00249">oomph::DoubleVectorWithHaloEntries::synchronise()</a>.</p>
 
 </div>
 </div>
@@ -553,9 +553,9 @@ Friends</h2></td></tr>
 
 <p>The haloed entries that will be sent in a format compatible with MPI_Alltoallv i.e. (send_to_proc0,send_to_proc1 ... send_to_procn) </p>
 
-<p class="definition">Definition at line <a class="el" href="double__vector__with__halo_8h_source.html#l00067">67</a> of file <a class="el" href="double__vector__with__halo_8h_source.html">double_vector_with_halo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="double__vector__with__halo_8h_source.html#l00063">63</a> of file <a class="el" href="double__vector__with__halo_8h_source.html">double_vector_with_halo.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="double__vector__with__halo_8cc_source.html#l00041">DoubleVectorHaloScheme()</a>, <a class="el" href="double__vector__with__halo_8cc_source.html#l00297">oomph::DoubleVectorWithHaloEntries::sum_all_halo_and_haloed_values()</a>, and <a class="el" href="double__vector__with__halo_8cc_source.html#l00253">oomph::DoubleVectorWithHaloEntries::synchronise()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="double__vector__with__halo_8cc_source.html#l00037">DoubleVectorHaloScheme()</a>, <a class="el" href="double__vector__with__halo_8cc_source.html#l00293">oomph::DoubleVectorWithHaloEntries::sum_all_halo_and_haloed_values()</a>, and <a class="el" href="double__vector__with__halo_8cc_source.html#l00249">oomph::DoubleVectorWithHaloEntries::synchronise()</a>.</p>
 
 </div>
 </div>
@@ -581,9 +581,9 @@ Friends</h2></td></tr>
 
 <p>Storage for the number of haloed entries to be sent to each processor. </p>
 
-<p class="definition">Definition at line <a class="el" href="double__vector__with__halo_8h_source.html#l00071">71</a> of file <a class="el" href="double__vector__with__halo_8h_source.html">double_vector_with_halo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="double__vector__with__halo_8h_source.html#l00067">67</a> of file <a class="el" href="double__vector__with__halo_8h_source.html">double_vector_with_halo.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="double__vector__with__halo_8cc_source.html#l00041">DoubleVectorHaloScheme()</a>, <a class="el" href="double__vector__with__halo_8cc_source.html#l00297">oomph::DoubleVectorWithHaloEntries::sum_all_halo_and_haloed_values()</a>, and <a class="el" href="double__vector__with__halo_8cc_source.html#l00253">oomph::DoubleVectorWithHaloEntries::synchronise()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="double__vector__with__halo_8cc_source.html#l00037">DoubleVectorHaloScheme()</a>, <a class="el" href="double__vector__with__halo_8cc_source.html#l00293">oomph::DoubleVectorWithHaloEntries::sum_all_halo_and_haloed_values()</a>, and <a class="el" href="double__vector__with__halo_8cc_source.html#l00249">oomph::DoubleVectorWithHaloEntries::synchronise()</a>.</p>
 
 </div>
 </div>
@@ -609,9 +609,9 @@ Friends</h2></td></tr>
 
 <p>Storage for the translation scheme from global unknown to local index in the additional storage vector. </p>
 
-<p class="definition">Definition at line <a class="el" href="double__vector__with__halo_8h_source.html#l00063">63</a> of file <a class="el" href="double__vector__with__halo_8h_source.html">double_vector_with_halo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="double__vector__with__halo_8h_source.html#l00059">59</a> of file <a class="el" href="double__vector__with__halo_8h_source.html">double_vector_with_halo.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="double__vector__with__halo_8cc_source.html#l00343">oomph::DoubleVectorWithHaloEntries::build_halo_scheme()</a>, <a class="el" href="double__vector__with__halo_8cc_source.html#l00041">DoubleVectorHaloScheme()</a>, <a class="el" href="double__vector__with__halo_8h_source.html#l00117">local_index()</a>, <a class="el" href="double__vector__with__halo_8h_source.html#l00104">n_halo_values()</a>, and <a class="el" href="double__vector__with__halo_8cc_source.html#l00210">setup_halo_dofs()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="double__vector__with__halo_8cc_source.html#l00339">oomph::DoubleVectorWithHaloEntries::build_halo_scheme()</a>, <a class="el" href="double__vector__with__halo_8cc_source.html#l00037">DoubleVectorHaloScheme()</a>, <a class="el" href="double__vector__with__halo_8h_source.html#l00113">local_index()</a>, <a class="el" href="double__vector__with__halo_8h_source.html#l00100">n_halo_values()</a>, and <a class="el" href="double__vector__with__halo_8cc_source.html#l00206">setup_halo_dofs()</a>.</p>
 
 </div>
 </div>
@@ -647,7 +647,7 @@ Friends</h2></td></tr>
     <footer>
       <div class="container">
         <div class="text-muted" style="float:right;">Generated by <a href="http://www.doxygen.org/index.html">
-          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Tue Jul 6 2021 22:56:07
+          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Fri Jul 9 2021 20:51:24
         </div>
       </div>
     </footer>

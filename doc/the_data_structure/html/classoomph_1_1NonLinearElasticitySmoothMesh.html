@@ -1180,7 +1180,7 @@ class oomph::NonLinearElasticitySmoothMesh&lt; ELEMENT &gt;</h3>
 </ul>
 <p>Template argument specifies type of element. It must be a pure solid mechanics element! This shouldn't cause any problems since mesh smoothing operations tend to be performed off-line so the mesh may as well be built with pure solid elements even if it is ultimately to be used with other element types. (This restriction could easily be avoided but would require double templating and would generally be messy...) </p>
 
-<p class="definition">Definition at line <a class="el" href="mesh__smooth_8h_source.html#l00105">105</a> of file <a class="el" href="mesh__smooth_8h_source.html">mesh_smooth.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mesh__smooth_8h_source.html#l00101">101</a> of file <a class="el" href="mesh__smooth_8h_source.html">mesh_smooth.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af452c1406ac93eea7dff91ab62f74e32"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af452c1406ac93eea7dff91ab62f74e32">&#9670;&nbsp;</a></span>~NonLinearElasticitySmoothMesh()</h2>
@@ -1209,7 +1209,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Destructor (empty) </p>
 
-<p class="definition">Definition at line <a class="el" href="mesh__smooth_8h_source.html#l00403">403</a> of file <a class="el" href="mesh__smooth_8h_source.html">mesh_smooth.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mesh__smooth_8h_source.html#l00399">399</a> of file <a class="el" href="mesh__smooth_8h_source.html">mesh_smooth.h</a>.</p>
 
 </div>
 </div>
@@ -1243,9 +1243,9 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1Problem.html#a0c8d70891f7369bb4bf8412fa1a08ecb">oomph::Problem</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="mesh__smooth_8h_source.html#l00408">408</a> of file <a class="el" href="mesh__smooth_8h_source.html">mesh_smooth.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mesh__smooth_8h_source.html#l00404">404</a> of file <a class="el" href="mesh__smooth_8h_source.html">mesh_smooth.h</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="nodes_8h_source.html#l00991">oomph::Node::ndim()</a>, <a class="el" href="mesh_8h_source.html#l00590">oomph::Mesh::nnode()</a>, <a class="el" href="mesh_8h_source.html#l02529">oomph::SolidMesh::node_pt()</a>, <a class="el" href="oomph__definitions_8cc_source.html#l00326">oomph::oomph_info</a>, <a class="el" href="mesh__smooth_8h_source.html#l00509">oomph::NonLinearElasticitySmoothMesh&lt; ELEMENT &gt;::Orig_mesh_pt</a>, <a class="el" href="mesh__smooth_8h_source.html#l00503">oomph::NonLinearElasticitySmoothMesh&lt; ELEMENT &gt;::Orig_node_pos</a>, <a class="el" href="mesh__smooth_8h_source.html#l00066">oomph::Helper_namespace_for_mesh_smoothing::Scale</a>, <a class="el" href="nodes_8h_source.html#l00994">oomph::Node::x()</a>, and <a class="el" href="nodes_8h_source.html#l01740">oomph::SolidNode::xi()</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="nodes_8h_source.html#l00987">oomph::Node::ndim()</a>, <a class="el" href="mesh_8h_source.html#l00586">oomph::Mesh::nnode()</a>, <a class="el" href="mesh_8h_source.html#l02525">oomph::SolidMesh::node_pt()</a>, <a class="el" href="oomph__definitions_8cc_source.html#l00322">oomph::oomph_info</a>, <a class="el" href="mesh__smooth_8h_source.html#l00505">oomph::NonLinearElasticitySmoothMesh&lt; ELEMENT &gt;::Orig_mesh_pt</a>, <a class="el" href="mesh__smooth_8h_source.html#l00499">oomph::NonLinearElasticitySmoothMesh&lt; ELEMENT &gt;::Orig_node_pos</a>, <a class="el" href="mesh__smooth_8h_source.html#l00062">oomph::Helper_namespace_for_mesh_smoothing::Scale</a>, <a class="el" href="nodes_8h_source.html#l00990">oomph::Node::x()</a>, and <a class="el" href="nodes_8h_source.html#l01736">oomph::SolidNode::xi()</a>.</p>
 
 </div>
 </div>
@@ -1276,11 +1276,11 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Backup nodal positions in dummy mesh to allow for reset after non-convergence of Newton method. </p>
 
-<p class="definition">Definition at line <a class="el" href="mesh__smooth_8h_source.html#l00429">429</a> of file <a class="el" href="mesh__smooth_8h_source.html">mesh_smooth.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mesh__smooth_8h_source.html#l00425">425</a> of file <a class="el" href="mesh__smooth_8h_source.html">mesh_smooth.h</a>.</p>
 
-<p class="reference">References <a class="el" href="mesh__smooth_8h_source.html#l00506">oomph::NonLinearElasticitySmoothMesh&lt; ELEMENT &gt;::Backup_node_pos</a>, <a class="el" href="mesh__smooth_8h_source.html#l00512">oomph::NonLinearElasticitySmoothMesh&lt; ELEMENT &gt;::Dummy_mesh_pt</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="nodes_8h_source.html#l00991">oomph::Node::ndim()</a>, <a class="el" href="mesh_8h_source.html#l00590">oomph::Mesh::nnode()</a>, <a class="el" href="mesh_8h_source.html#l02529">oomph::SolidMesh::node_pt()</a>, and <a class="el" href="nodes_8h_source.html#l00994">oomph::Node::x()</a>.</p>
+<p class="reference">References <a class="el" href="mesh__smooth_8h_source.html#l00502">oomph::NonLinearElasticitySmoothMesh&lt; ELEMENT &gt;::Backup_node_pos</a>, <a class="el" href="mesh__smooth_8h_source.html#l00508">oomph::NonLinearElasticitySmoothMesh&lt; ELEMENT &gt;::Dummy_mesh_pt</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="nodes_8h_source.html#l00987">oomph::Node::ndim()</a>, <a class="el" href="mesh_8h_source.html#l00586">oomph::Mesh::nnode()</a>, <a class="el" href="mesh_8h_source.html#l02525">oomph::SolidMesh::node_pt()</a>, and <a class="el" href="nodes_8h_source.html#l00990">oomph::Node::x()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mesh__smooth_8h_source.html#l00151">oomph::NonLinearElasticitySmoothMesh&lt; ELEMENT &gt;::operator()()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mesh__smooth_8h_source.html#l00147">oomph::NonLinearElasticitySmoothMesh&lt; ELEMENT &gt;::operator()()</a>.</p>
 
 </div>
 </div>
@@ -1312,11 +1312,11 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Doc the solution. </p>
 
-<p class="definition">Definition at line <a class="el" href="mesh__smooth_8h_source.html#l00464">464</a> of file <a class="el" href="mesh__smooth_8h_source.html">mesh_smooth.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mesh__smooth_8h_source.html#l00460">460</a> of file <a class="el" href="mesh__smooth_8h_source.html">mesh_smooth.h</a>.</p>
 
-<p class="reference">References <a class="el" href="mesh_8cc_source.html#l00864">oomph::Mesh::check_inverted_elements()</a>, <a class="el" href="oomph__utilities_8h_source.html#l00581">oomph::DocInfo::directory()</a>, <a class="el" href="mesh__smooth_8h_source.html#l00512">oomph::NonLinearElasticitySmoothMesh&lt; ELEMENT &gt;::Dummy_mesh_pt</a>, <a class="el" href="oomph__utilities_8h_source.html#l00596">oomph::DocInfo::is_doc_enabled()</a>, <a class="el" href="oomph__utilities_8h_source.html#l00599">oomph::DocInfo::number()</a>, <a class="el" href="oomph__definitions_8cc_source.html#l00326">oomph::oomph_info</a>, and <a class="el" href="mesh_8cc_source.html#l02124">oomph::Mesh::output()</a>.</p>
+<p class="reference">References <a class="el" href="mesh_8cc_source.html#l00860">oomph::Mesh::check_inverted_elements()</a>, <a class="el" href="oomph__utilities_8h_source.html#l00577">oomph::DocInfo::directory()</a>, <a class="el" href="mesh__smooth_8h_source.html#l00508">oomph::NonLinearElasticitySmoothMesh&lt; ELEMENT &gt;::Dummy_mesh_pt</a>, <a class="el" href="oomph__utilities_8h_source.html#l00592">oomph::DocInfo::is_doc_enabled()</a>, <a class="el" href="oomph__utilities_8h_source.html#l00595">oomph::DocInfo::number()</a>, <a class="el" href="oomph__definitions_8cc_source.html#l00322">oomph::oomph_info</a>, and <a class="el" href="mesh_8cc_source.html#l02120">oomph::Mesh::output()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mesh__smooth_8h_source.html#l00151">oomph::NonLinearElasticitySmoothMesh&lt; ELEMENT &gt;::operator()()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mesh__smooth_8h_source.html#l00147">oomph::NonLinearElasticitySmoothMesh&lt; ELEMENT &gt;::operator()()</a>.</p>
 
 </div>
 </div>
@@ -1370,9 +1370,9 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Functor to update the nodal positions in <a class="el" href="classoomph_1_1SolidMesh.html" title="General SolidMesh class.">SolidMesh</a> pointed to by orig_mesh_pt in response to the displacement of some of its nodes relative to their original position which must still be indicated by the nodes' Lagrangian position. copy_of_mesh_pt must be a deep copy of orig_mesh_pt, with the same boundary coordinates etc. This mesh is used as workspace and can be deleted afterwards. The vector controlled_boundary_id contains the ids of the mesh boundaries in orig_mesh_pt whose position is supposed to remain fixed (while the other nodes are re-positioned to avoid the inversion of elements). The final optional argument specifies the max. number of increments in which the mesh boundary is deformed. </p>
 
-<p class="definition">Definition at line <a class="el" href="mesh__smooth_8h_source.html#l00122">122</a> of file <a class="el" href="mesh__smooth_8h_source.html">mesh_smooth.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mesh__smooth_8h_source.html#l00118">118</a> of file <a class="el" href="mesh__smooth_8h_source.html">mesh_smooth.h</a>.</p>
 
-<p class="reference">References <a class="el" href="oomph__utilities_8h_source.html#l00593">oomph::DocInfo::disable_doc()</a>.</p>
+<p class="reference">References <a class="el" href="oomph__utilities_8h_source.html#l00589">oomph::DocInfo::disable_doc()</a>.</p>
 
 </div>
 </div>
@@ -1432,9 +1432,9 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Functor to update the nodal positions in <a class="el" href="classoomph_1_1SolidMesh.html" title="General SolidMesh class.">SolidMesh</a> pointed to by orig_mesh_pt in response to the displacement of some of its nodes relative to their original position which must still be indicated by the nodes' Lagrangian position. copy_of_mesh_pt must be a deep copy of orig_mesh_pt, with the same boundary coordinates etc. This mesh is used as workspace and can be deleted afterwards. The vector controlled_boundary_id contains the ids of the mesh boundaries in orig_mesh_pt whose position is supposed to remain fixed (while the other nodes are re-positioned to avoid the inversion of elements). The <a class="el" href="classoomph_1_1DocInfo.html" title="Information for documentation of results: Directory and file number to enable output in the form RESL...">DocInfo</a> allows allows the output of the intermediate meshes. The final optional argument specifies the max. number of increments in which the mesh boundary is deformed. </p>
 
-<p class="definition">Definition at line <a class="el" href="mesh__smooth_8h_source.html#l00151">151</a> of file <a class="el" href="mesh__smooth_8h_source.html">mesh_smooth.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mesh__smooth_8h_source.html#l00147">147</a> of file <a class="el" href="mesh__smooth_8h_source.html">mesh_smooth.h</a>.</p>
 
-<p class="reference">References <a class="el" href="problem_8h_source.html#l01300">oomph::Problem::add_sub_mesh()</a>, <a class="el" href="problem_8cc_source.html#l01972">oomph::Problem::assign_eqn_numbers()</a>, <a class="el" href="mesh__smooth_8h_source.html#l00429">oomph::NonLinearElasticitySmoothMesh&lt; ELEMENT &gt;::backup()</a>, <a class="el" href="mesh_8h_source.html#l00814">oomph::Mesh::boundary_element_pt()</a>, <a class="el" href="problem_8cc_source.html#l01479">oomph::Problem::build_global_mesh()</a>, <a class="el" href="mesh__smooth_8h_source.html#l00063">oomph::Helper_namespace_for_mesh_smoothing::Constitutive_law_pt</a>, <a class="el" href="mesh__smooth_8h_source.html#l00464">oomph::NonLinearElasticitySmoothMesh&lt; ELEMENT &gt;::doc_solution()</a>, <a class="el" href="mesh__smooth_8h_source.html#l00512">oomph::NonLinearElasticitySmoothMesh&lt; ELEMENT &gt;::Dummy_mesh_pt</a>, <a class="el" href="cfortran_8h_source.html#l00575">e</a>, <a class="el" href="mesh_8h_source.html#l00462">oomph::Mesh::element_pt()</a>, <a class="el" href="mesh_8h_source.html#l00870">oomph::Mesh::face_index_at_boundary()</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, <a class="el" href="mesh_8h_source.html#l00806">oomph::Mesh::nboundary()</a>, <a class="el" href="mesh_8h_source.html#l00852">oomph::Mesh::nboundary_element()</a>, <a class="el" href="nodes_8h_source.html#l00991">oomph::Node::ndim()</a>, <a class="el" href="mesh_8h_source.html#l00587">oomph::Mesh::nelement()</a>, <a class="el" href="problem_8cc_source.html#l08748">oomph::Problem::newton_solve()</a>, <a class="el" href="mesh_8h_source.html#l00590">oomph::Mesh::nnode()</a>, <a class="el" href="mesh_8h_source.html#l02529">oomph::SolidMesh::node_pt()</a>, <a class="el" href="oomph__utilities_8h_source.html#l00599">oomph::DocInfo::number()</a>, <a class="el" href="oomph__definitions_8cc_source.html#l00326">oomph::oomph_info</a>, <a class="el" href="mesh__smooth_8h_source.html#l00509">oomph::NonLinearElasticitySmoothMesh&lt; ELEMENT &gt;::Orig_mesh_pt</a>, <a class="el" href="mesh__smooth_8h_source.html#l00503">oomph::NonLinearElasticitySmoothMesh&lt; ELEMENT &gt;::Orig_node_pos</a>, <a class="el" href="mesh__smooth_8h_source.html#l00449">oomph::NonLinearElasticitySmoothMesh&lt; ELEMENT &gt;::reset()</a>, <a class="el" href="mesh__smooth_8h_source.html#l00066">oomph::Helper_namespace_for_mesh_smoothing::Scale</a>, <a class="el" href="mesh__smooth_8h_source.html#l00069">oomph::Helper_namespace_for_mesh_smoothing::Scale_increment</a>, <a class="el" href="elements_8h_source.html#l04366">oomph::FaceElement::set_boundary_number_in_bulk_mesh()</a>, <a class="el" href="solid__traction__elements_8h_source.html#l01229">oomph::ImposeDisplacementByLagrangeMultiplierElement&lt; ELEMENT &gt;::set_boundary_shape_geom_object_pt()</a>, <a class="el" href="mesh_8cc_source.html#l09539">oomph::SolidMesh::set_lagrangian_nodal_coordinates()</a>, and <a class="el" href="nodes_8h_source.html#l00994">oomph::Node::x()</a>.</p>
+<p class="reference">References <a class="el" href="problem_8h_source.html#l01296">oomph::Problem::add_sub_mesh()</a>, <a class="el" href="problem_8cc_source.html#l01968">oomph::Problem::assign_eqn_numbers()</a>, <a class="el" href="mesh__smooth_8h_source.html#l00425">oomph::NonLinearElasticitySmoothMesh&lt; ELEMENT &gt;::backup()</a>, <a class="el" href="mesh_8h_source.html#l00810">oomph::Mesh::boundary_element_pt()</a>, <a class="el" href="problem_8cc_source.html#l01475">oomph::Problem::build_global_mesh()</a>, <a class="el" href="mesh__smooth_8h_source.html#l00059">oomph::Helper_namespace_for_mesh_smoothing::Constitutive_law_pt</a>, <a class="el" href="mesh__smooth_8h_source.html#l00460">oomph::NonLinearElasticitySmoothMesh&lt; ELEMENT &gt;::doc_solution()</a>, <a class="el" href="mesh__smooth_8h_source.html#l00508">oomph::NonLinearElasticitySmoothMesh&lt; ELEMENT &gt;::Dummy_mesh_pt</a>, <a class="el" href="cfortran_8h_source.html#l00571">e</a>, <a class="el" href="mesh_8h_source.html#l00458">oomph::Mesh::element_pt()</a>, <a class="el" href="mesh_8h_source.html#l00866">oomph::Mesh::face_index_at_boundary()</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, <a class="el" href="mesh_8h_source.html#l00802">oomph::Mesh::nboundary()</a>, <a class="el" href="mesh_8h_source.html#l00848">oomph::Mesh::nboundary_element()</a>, <a class="el" href="nodes_8h_source.html#l00987">oomph::Node::ndim()</a>, <a class="el" href="mesh_8h_source.html#l00583">oomph::Mesh::nelement()</a>, <a class="el" href="problem_8cc_source.html#l08744">oomph::Problem::newton_solve()</a>, <a class="el" href="mesh_8h_source.html#l00586">oomph::Mesh::nnode()</a>, <a class="el" href="mesh_8h_source.html#l02525">oomph::SolidMesh::node_pt()</a>, <a class="el" href="oomph__utilities_8h_source.html#l00595">oomph::DocInfo::number()</a>, <a class="el" href="oomph__definitions_8cc_source.html#l00322">oomph::oomph_info</a>, <a class="el" href="mesh__smooth_8h_source.html#l00505">oomph::NonLinearElasticitySmoothMesh&lt; ELEMENT &gt;::Orig_mesh_pt</a>, <a class="el" href="mesh__smooth_8h_source.html#l00499">oomph::NonLinearElasticitySmoothMesh&lt; ELEMENT &gt;::Orig_node_pos</a>, <a class="el" href="mesh__smooth_8h_source.html#l00445">oomph::NonLinearElasticitySmoothMesh&lt; ELEMENT &gt;::reset()</a>, <a class="el" href="mesh__smooth_8h_source.html#l00062">oomph::Helper_namespace_for_mesh_smoothing::Scale</a>, <a class="el" href="mesh__smooth_8h_source.html#l00065">oomph::Helper_namespace_for_mesh_smoothing::Scale_increment</a>, <a class="el" href="elements_8h_source.html#l04362">oomph::FaceElement::set_boundary_number_in_bulk_mesh()</a>, <a class="el" href="solid__traction__elements_8h_source.html#l01225">oomph::ImposeDisplacementByLagrangeMultiplierElement&lt; ELEMENT &gt;::set_boundary_shape_geom_object_pt()</a>, <a class="el" href="mesh_8cc_source.html#l09535">oomph::SolidMesh::set_lagrangian_nodal_coordinates()</a>, and <a class="el" href="nodes_8h_source.html#l00990">oomph::Node::x()</a>.</p>
 
 </div>
 </div>
@@ -1464,11 +1464,11 @@ template&lt;class ELEMENT &gt; </div>
 </div><div class="memdoc">
 <p>Reset nodal positions in dummy mesh to allow for restart of Newton method with reduced increment in Scale </p>
 
-<p class="definition">Definition at line <a class="el" href="mesh__smooth_8h_source.html#l00449">449</a> of file <a class="el" href="mesh__smooth_8h_source.html">mesh_smooth.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mesh__smooth_8h_source.html#l00445">445</a> of file <a class="el" href="mesh__smooth_8h_source.html">mesh_smooth.h</a>.</p>
 
-<p class="reference">References <a class="el" href="mesh__smooth_8h_source.html#l00506">oomph::NonLinearElasticitySmoothMesh&lt; ELEMENT &gt;::Backup_node_pos</a>, <a class="el" href="mesh__smooth_8h_source.html#l00512">oomph::NonLinearElasticitySmoothMesh&lt; ELEMENT &gt;::Dummy_mesh_pt</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="nodes_8h_source.html#l00991">oomph::Node::ndim()</a>, <a class="el" href="mesh_8h_source.html#l00590">oomph::Mesh::nnode()</a>, <a class="el" href="mesh_8h_source.html#l02529">oomph::SolidMesh::node_pt()</a>, and <a class="el" href="nodes_8h_source.html#l00994">oomph::Node::x()</a>.</p>
+<p class="reference">References <a class="el" href="mesh__smooth_8h_source.html#l00502">oomph::NonLinearElasticitySmoothMesh&lt; ELEMENT &gt;::Backup_node_pos</a>, <a class="el" href="mesh__smooth_8h_source.html#l00508">oomph::NonLinearElasticitySmoothMesh&lt; ELEMENT &gt;::Dummy_mesh_pt</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="nodes_8h_source.html#l00987">oomph::Node::ndim()</a>, <a class="el" href="mesh_8h_source.html#l00586">oomph::Mesh::nnode()</a>, <a class="el" href="mesh_8h_source.html#l02525">oomph::SolidMesh::node_pt()</a>, and <a class="el" href="nodes_8h_source.html#l00990">oomph::Node::x()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mesh__smooth_8h_source.html#l00151">oomph::NonLinearElasticitySmoothMesh&lt; ELEMENT &gt;::operator()()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mesh__smooth_8h_source.html#l00147">oomph::NonLinearElasticitySmoothMesh&lt; ELEMENT &gt;::operator()()</a>.</p>
 
 </div>
 </div>
@@ -1497,9 +1497,9 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Backup nodal positions. </p>
 
-<p class="definition">Definition at line <a class="el" href="mesh__smooth_8h_source.html#l00506">506</a> of file <a class="el" href="mesh__smooth_8h_source.html">mesh_smooth.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mesh__smooth_8h_source.html#l00502">502</a> of file <a class="el" href="mesh__smooth_8h_source.html">mesh_smooth.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mesh__smooth_8h_source.html#l00429">oomph::NonLinearElasticitySmoothMesh&lt; ELEMENT &gt;::backup()</a>, and <a class="el" href="mesh__smooth_8h_source.html#l00449">oomph::NonLinearElasticitySmoothMesh&lt; ELEMENT &gt;::reset()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mesh__smooth_8h_source.html#l00425">oomph::NonLinearElasticitySmoothMesh&lt; ELEMENT &gt;::backup()</a>, and <a class="el" href="mesh__smooth_8h_source.html#l00445">oomph::NonLinearElasticitySmoothMesh&lt; ELEMENT &gt;::reset()</a>.</p>
 
 </div>
 </div>
@@ -1527,9 +1527,9 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Copy of mesh to work on. </p>
 
-<p class="definition">Definition at line <a class="el" href="mesh__smooth_8h_source.html#l00512">512</a> of file <a class="el" href="mesh__smooth_8h_source.html">mesh_smooth.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mesh__smooth_8h_source.html#l00508">508</a> of file <a class="el" href="mesh__smooth_8h_source.html">mesh_smooth.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mesh__smooth_8h_source.html#l00429">oomph::NonLinearElasticitySmoothMesh&lt; ELEMENT &gt;::backup()</a>, <a class="el" href="mesh__smooth_8h_source.html#l00464">oomph::NonLinearElasticitySmoothMesh&lt; ELEMENT &gt;::doc_solution()</a>, <a class="el" href="mesh__smooth_8h_source.html#l00151">oomph::NonLinearElasticitySmoothMesh&lt; ELEMENT &gt;::operator()()</a>, and <a class="el" href="mesh__smooth_8h_source.html#l00449">oomph::NonLinearElasticitySmoothMesh&lt; ELEMENT &gt;::reset()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mesh__smooth_8h_source.html#l00425">oomph::NonLinearElasticitySmoothMesh&lt; ELEMENT &gt;::backup()</a>, <a class="el" href="mesh__smooth_8h_source.html#l00460">oomph::NonLinearElasticitySmoothMesh&lt; ELEMENT &gt;::doc_solution()</a>, <a class="el" href="mesh__smooth_8h_source.html#l00147">oomph::NonLinearElasticitySmoothMesh&lt; ELEMENT &gt;::operator()()</a>, and <a class="el" href="mesh__smooth_8h_source.html#l00445">oomph::NonLinearElasticitySmoothMesh&lt; ELEMENT &gt;::reset()</a>.</p>
 
 </div>
 </div>
@@ -1557,9 +1557,9 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Bulk original mesh. </p>
 
-<p class="definition">Definition at line <a class="el" href="mesh__smooth_8h_source.html#l00509">509</a> of file <a class="el" href="mesh__smooth_8h_source.html">mesh_smooth.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mesh__smooth_8h_source.html#l00505">505</a> of file <a class="el" href="mesh__smooth_8h_source.html">mesh_smooth.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mesh__smooth_8h_source.html#l00408">oomph::NonLinearElasticitySmoothMesh&lt; ELEMENT &gt;::actions_before_newton_solve()</a>, and <a class="el" href="mesh__smooth_8h_source.html#l00151">oomph::NonLinearElasticitySmoothMesh&lt; ELEMENT &gt;::operator()()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mesh__smooth_8h_source.html#l00404">oomph::NonLinearElasticitySmoothMesh&lt; ELEMENT &gt;::actions_before_newton_solve()</a>, and <a class="el" href="mesh__smooth_8h_source.html#l00147">oomph::NonLinearElasticitySmoothMesh&lt; ELEMENT &gt;::operator()()</a>.</p>
 
 </div>
 </div>
@@ -1587,9 +1587,9 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Original nodal positions. </p>
 
-<p class="definition">Definition at line <a class="el" href="mesh__smooth_8h_source.html#l00503">503</a> of file <a class="el" href="mesh__smooth_8h_source.html">mesh_smooth.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mesh__smooth_8h_source.html#l00499">499</a> of file <a class="el" href="mesh__smooth_8h_source.html">mesh_smooth.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mesh__smooth_8h_source.html#l00408">oomph::NonLinearElasticitySmoothMesh&lt; ELEMENT &gt;::actions_before_newton_solve()</a>, and <a class="el" href="mesh__smooth_8h_source.html#l00151">oomph::NonLinearElasticitySmoothMesh&lt; ELEMENT &gt;::operator()()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mesh__smooth_8h_source.html#l00404">oomph::NonLinearElasticitySmoothMesh&lt; ELEMENT &gt;::actions_before_newton_solve()</a>, and <a class="el" href="mesh__smooth_8h_source.html#l00147">oomph::NonLinearElasticitySmoothMesh&lt; ELEMENT &gt;::operator()()</a>.</p>
 
 </div>
 </div>
@@ -1624,7 +1624,7 @@ template&lt;class ELEMENT &gt; </div>
     <footer>
       <div class="container">
         <div class="text-muted" style="float:right;">Generated by <a href="http://www.doxygen.org/index.html">
-          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Tue Jul 6 2021 22:58:00
+          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Fri Jul 9 2021 20:53:04
         </div>
       </div>
     </footer>

@@ -1273,7 +1273,7 @@ class oomph::NavierStokesSurfacePowerElement&lt; ELEMENT &gt;</h3>
 
 <p>A class of elements that allow the determination of the power input and various other fluxes over the domain boundaries. The element operates as a <a class="el" href="classoomph_1_1FaceElement.html">FaceElement</a> and attaches itself to a bulk element of the type specified by the template argument. </p>
 
-<p class="definition">Definition at line <a class="el" href="navier__stokes__surface__power__elements_8h_source.html#l00055">55</a> of file <a class="el" href="navier__stokes__surface__power__elements_8h_source.html">navier_stokes_surface_power_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="navier__stokes__surface__power__elements_8h_source.html#l00051">51</a> of file <a class="el" href="navier__stokes__surface__power__elements_8h_source.html">navier_stokes_surface_power_elements.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a4755269a509f63be1917ad5dd4061939"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4755269a509f63be1917ad5dd4061939">&#9670;&nbsp;</a></span>NavierStokesSurfacePowerElement()</h2>
@@ -1312,9 +1312,9 @@ template&lt;class ELEMENT &gt; </div>
 </div><div class="memdoc">
 <p>Constructor, which takes a "bulk" element and the value of the index and its limit </p>
 
-<p class="definition">Definition at line <a class="el" href="navier__stokes__surface__power__elements_8h_source.html#l00063">63</a> of file <a class="el" href="navier__stokes__surface__power__elements_8h_source.html">navier_stokes_surface_power_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="navier__stokes__surface__power__elements_8h_source.html#l00059">59</a> of file <a class="el" href="navier__stokes__surface__power__elements_8h_source.html">navier_stokes_surface_power_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8cc_source.html#l05005">oomph::FiniteElement::build_face_element()</a>, <a class="el" href="navier__stokes__surface__power__elements_8h_source.html#l00866">oomph::NavierStokesSurfacePowerElement&lt; ELEMENT &gt;::Dim</a>, <a class="el" href="elements_8h_source.html#l04501">oomph::FaceElement::face_index()</a>, <a class="el" href="nodes_8h_source.html#l00991">oomph::Node::ndim()</a>, and <a class="el" href="elements_8h_source.html#l02126">oomph::FiniteElement::node_pt()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8cc_source.html#l05001">oomph::FiniteElement::build_face_element()</a>, <a class="el" href="navier__stokes__surface__power__elements_8h_source.html#l00862">oomph::NavierStokesSurfacePowerElement&lt; ELEMENT &gt;::Dim</a>, <a class="el" href="elements_8h_source.html#l04497">oomph::FaceElement::face_index()</a>, <a class="el" href="nodes_8h_source.html#l00987">oomph::Node::ndim()</a>, and <a class="el" href="elements_8h_source.html#l02122">oomph::FiniteElement::node_pt()</a>.</p>
 
 </div>
 </div>
@@ -1346,7 +1346,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Get drag force (traction acting on fluid) </p>
 
-<p class="definition">Definition at line <a class="el" href="navier__stokes__surface__power__elements_8h_source.html#l00089">89</a> of file <a class="el" href="navier__stokes__surface__power__elements_8h_source.html">navier_stokes_surface_power_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="navier__stokes__surface__power__elements_8h_source.html#l00085">85</a> of file <a class="el" href="navier__stokes__surface__power__elements_8h_source.html">navier_stokes_surface_power_elements.h</a>.</p>
 
 </div>
 </div>
@@ -1378,9 +1378,9 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Get drag force (traction acting on fluid) Doc in outfile. </p>
 
-<p class="definition">Definition at line <a class="el" href="navier__stokes__surface__power__elements_8h_source.html#l00099">99</a> of file <a class="el" href="navier__stokes__surface__power__elements_8h_source.html">navier_stokes_surface_power_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="navier__stokes__surface__power__elements_8h_source.html#l00095">95</a> of file <a class="el" href="navier__stokes__surface__power__elements_8h_source.html">navier_stokes_surface_power_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l04604">oomph::FaceElement::bulk_element_pt()</a>, <a class="el" href="elements_8h_source.html#l02499">oomph::FiniteElement::dim()</a>, <a class="el" href="elements_8cc_source.html#l06245">oomph::FaceElement::get_local_coordinate_in_bulk()</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="elements_8h_source.html#l01925">oomph::FiniteElement::integral_pt()</a>, <a class="el" href="elements_8h_source.html#l04411">oomph::FaceElement::interpolated_x()</a>, <a class="el" href="elements_8cc_source.html#l05116">oomph::FaceElement::J_eulerian()</a>, <a class="el" href="classoomph_1_1Integral.html#a1a2122f99a87c18649bafdd9ed739758">oomph::Integral::knot()</a>, <a class="el" href="geom__objects_8h_source.html#l00185">oomph::GeomObject::ndim()</a>, <a class="el" href="classoomph_1_1Integral.html#a1a270de9d99a1fcf1d25a6c1017f65fa">oomph::Integral::nweight()</a>, <a class="el" href="elements_8cc_source.html#l05876">oomph::FaceElement::outer_unit_normal()</a>, <a class="el" href="cfortran_8h_source.html#l00572">s</a>, <a class="el" href="quadtree_8h_source.html#l00060">oomph::QuadTreeNames::W</a>, and <a class="el" href="classoomph_1_1Integral.html#ac65335e2aab120b285b3d6c294507b06">oomph::Integral::weight()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l04600">oomph::FaceElement::bulk_element_pt()</a>, <a class="el" href="elements_8h_source.html#l02495">oomph::FiniteElement::dim()</a>, <a class="el" href="elements_8cc_source.html#l06241">oomph::FaceElement::get_local_coordinate_in_bulk()</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="elements_8h_source.html#l01921">oomph::FiniteElement::integral_pt()</a>, <a class="el" href="elements_8h_source.html#l04407">oomph::FaceElement::interpolated_x()</a>, <a class="el" href="elements_8cc_source.html#l05112">oomph::FaceElement::J_eulerian()</a>, <a class="el" href="classoomph_1_1Integral.html#a1a2122f99a87c18649bafdd9ed739758">oomph::Integral::knot()</a>, <a class="el" href="geom__objects_8h_source.html#l00181">oomph::GeomObject::ndim()</a>, <a class="el" href="classoomph_1_1Integral.html#a1a270de9d99a1fcf1d25a6c1017f65fa">oomph::Integral::nweight()</a>, <a class="el" href="elements_8cc_source.html#l05872">oomph::FaceElement::outer_unit_normal()</a>, <a class="el" href="cfortran_8h_source.html#l00568">s</a>, <a class="el" href="quadtree_8h_source.html#l00056">oomph::QuadTreeNames::W</a>, and <a class="el" href="classoomph_1_1Integral.html#ac65335e2aab120b285b3d6c294507b06">oomph::Integral::weight()</a>.</p>
 
 </div>
 </div>
@@ -1411,7 +1411,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Get integral of kinetic energy flux. </p>
 
-<p class="definition">Definition at line <a class="el" href="navier__stokes__surface__power__elements_8h_source.html#l00581">581</a> of file <a class="el" href="navier__stokes__surface__power__elements_8h_source.html">navier_stokes_surface_power_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="navier__stokes__surface__power__elements_8h_source.html#l00577">577</a> of file <a class="el" href="navier__stokes__surface__power__elements_8h_source.html">navier_stokes_surface_power_elements.h</a>.</p>
 
 </div>
 </div>
@@ -1443,9 +1443,9 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Get integral of kinetic energy flux and doc. </p>
 
-<p class="definition">Definition at line <a class="el" href="navier__stokes__surface__power__elements_8h_source.html#l00590">590</a> of file <a class="el" href="navier__stokes__surface__power__elements_8h_source.html">navier_stokes_surface_power_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="navier__stokes__surface__power__elements_8h_source.html#l00586">586</a> of file <a class="el" href="navier__stokes__surface__power__elements_8h_source.html">navier_stokes_surface_power_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l04604">oomph::FaceElement::bulk_element_pt()</a>, <a class="el" href="elements_8h_source.html#l02499">oomph::FiniteElement::dim()</a>, <a class="el" href="elements_8cc_source.html#l06245">oomph::FaceElement::get_local_coordinate_in_bulk()</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="elements_8h_source.html#l01925">oomph::FiniteElement::integral_pt()</a>, <a class="el" href="elements_8h_source.html#l04411">oomph::FaceElement::interpolated_x()</a>, <a class="el" href="elements_8cc_source.html#l05116">oomph::FaceElement::J_eulerian()</a>, <a class="el" href="classoomph_1_1Integral.html#a1a2122f99a87c18649bafdd9ed739758">oomph::Integral::knot()</a>, <a class="el" href="geom__objects_8h_source.html#l00185">oomph::GeomObject::ndim()</a>, <a class="el" href="classoomph_1_1Integral.html#a1a270de9d99a1fcf1d25a6c1017f65fa">oomph::Integral::nweight()</a>, <a class="el" href="elements_8cc_source.html#l05876">oomph::FaceElement::outer_unit_normal()</a>, <a class="el" href="cfortran_8h_source.html#l00572">s</a>, <a class="el" href="quadtree_8h_source.html#l00060">oomph::QuadTreeNames::W</a>, and <a class="el" href="classoomph_1_1Integral.html#ac65335e2aab120b285b3d6c294507b06">oomph::Integral::weight()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l04600">oomph::FaceElement::bulk_element_pt()</a>, <a class="el" href="elements_8h_source.html#l02495">oomph::FiniteElement::dim()</a>, <a class="el" href="elements_8cc_source.html#l06241">oomph::FaceElement::get_local_coordinate_in_bulk()</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="elements_8h_source.html#l01921">oomph::FiniteElement::integral_pt()</a>, <a class="el" href="elements_8h_source.html#l04407">oomph::FaceElement::interpolated_x()</a>, <a class="el" href="elements_8cc_source.html#l05112">oomph::FaceElement::J_eulerian()</a>, <a class="el" href="classoomph_1_1Integral.html#a1a2122f99a87c18649bafdd9ed739758">oomph::Integral::knot()</a>, <a class="el" href="geom__objects_8h_source.html#l00181">oomph::GeomObject::ndim()</a>, <a class="el" href="classoomph_1_1Integral.html#a1a270de9d99a1fcf1d25a6c1017f65fa">oomph::Integral::nweight()</a>, <a class="el" href="elements_8cc_source.html#l05872">oomph::FaceElement::outer_unit_normal()</a>, <a class="el" href="cfortran_8h_source.html#l00568">s</a>, <a class="el" href="quadtree_8h_source.html#l00056">oomph::QuadTreeNames::W</a>, and <a class="el" href="classoomph_1_1Integral.html#ac65335e2aab120b285b3d6c294507b06">oomph::Integral::weight()</a>.</p>
 
 </div>
 </div>
@@ -1476,7 +1476,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Get integral of instantaneous rate of work done by the traction that's exerted onto the fluid. </p>
 
-<p class="definition">Definition at line <a class="el" href="navier__stokes__surface__power__elements_8h_source.html#l00225">225</a> of file <a class="el" href="navier__stokes__surface__power__elements_8h_source.html">navier_stokes_surface_power_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="navier__stokes__surface__power__elements_8h_source.html#l00221">221</a> of file <a class="el" href="navier__stokes__surface__power__elements_8h_source.html">navier_stokes_surface_power_elements.h</a>.</p>
 
 </div>
 </div>
@@ -1508,9 +1508,9 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Get integral of instantaneous rate of work done by the traction that's exerted onto the fluid. Doc in outfile. </p>
 
-<p class="definition">Definition at line <a class="el" href="navier__stokes__surface__power__elements_8h_source.html#l00235">235</a> of file <a class="el" href="navier__stokes__surface__power__elements_8h_source.html">navier_stokes_surface_power_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="navier__stokes__surface__power__elements_8h_source.html#l00231">231</a> of file <a class="el" href="navier__stokes__surface__power__elements_8h_source.html">navier_stokes_surface_power_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l04604">oomph::FaceElement::bulk_element_pt()</a>, <a class="el" href="elements_8h_source.html#l02499">oomph::FiniteElement::dim()</a>, <a class="el" href="elements_8cc_source.html#l06245">oomph::FaceElement::get_local_coordinate_in_bulk()</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="elements_8h_source.html#l01925">oomph::FiniteElement::integral_pt()</a>, <a class="el" href="elements_8h_source.html#l04411">oomph::FaceElement::interpolated_x()</a>, <a class="el" href="elements_8cc_source.html#l05116">oomph::FaceElement::J_eulerian()</a>, <a class="el" href="classoomph_1_1Integral.html#a1a2122f99a87c18649bafdd9ed739758">oomph::Integral::knot()</a>, <a class="el" href="geom__objects_8h_source.html#l00185">oomph::GeomObject::ndim()</a>, <a class="el" href="classoomph_1_1Integral.html#a1a270de9d99a1fcf1d25a6c1017f65fa">oomph::Integral::nweight()</a>, <a class="el" href="elements_8cc_source.html#l05876">oomph::FaceElement::outer_unit_normal()</a>, <a class="el" href="cfortran_8h_source.html#l00572">s</a>, <a class="el" href="quadtree_8h_source.html#l00060">oomph::QuadTreeNames::W</a>, and <a class="el" href="classoomph_1_1Integral.html#ac65335e2aab120b285b3d6c294507b06">oomph::Integral::weight()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l04600">oomph::FaceElement::bulk_element_pt()</a>, <a class="el" href="elements_8h_source.html#l02495">oomph::FiniteElement::dim()</a>, <a class="el" href="elements_8cc_source.html#l06241">oomph::FaceElement::get_local_coordinate_in_bulk()</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="elements_8h_source.html#l01921">oomph::FiniteElement::integral_pt()</a>, <a class="el" href="elements_8h_source.html#l04407">oomph::FaceElement::interpolated_x()</a>, <a class="el" href="elements_8cc_source.html#l05112">oomph::FaceElement::J_eulerian()</a>, <a class="el" href="classoomph_1_1Integral.html#a1a2122f99a87c18649bafdd9ed739758">oomph::Integral::knot()</a>, <a class="el" href="geom__objects_8h_source.html#l00181">oomph::GeomObject::ndim()</a>, <a class="el" href="classoomph_1_1Integral.html#a1a270de9d99a1fcf1d25a6c1017f65fa">oomph::Integral::nweight()</a>, <a class="el" href="elements_8cc_source.html#l05872">oomph::FaceElement::outer_unit_normal()</a>, <a class="el" href="cfortran_8h_source.html#l00568">s</a>, <a class="el" href="quadtree_8h_source.html#l00056">oomph::QuadTreeNames::W</a>, and <a class="el" href="classoomph_1_1Integral.html#ac65335e2aab120b285b3d6c294507b06">oomph::Integral::weight()</a>.</p>
 
 </div>
 </div>
@@ -1558,7 +1558,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Get integral of instantaneous rate of work done by the traction that's exerted onto the fluid, decomposed into pressure and normal and tangential viscous components. </p>
 
-<p class="definition">Definition at line <a class="el" href="navier__stokes__surface__power__elements_8h_source.html#l00383">383</a> of file <a class="el" href="navier__stokes__surface__power__elements_8h_source.html">navier_stokes_surface_power_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="navier__stokes__surface__power__elements_8h_source.html#l00379">379</a> of file <a class="el" href="navier__stokes__surface__power__elements_8h_source.html">navier_stokes_surface_power_elements.h</a>.</p>
 
 </div>
 </div>
@@ -1612,9 +1612,9 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Get integral of instantaneous rate of work done by the traction that's exerted onto the fluid, decomposed into pressure and normal and tangential viscous components. Doc in outfile. </p>
 
-<p class="definition">Definition at line <a class="el" href="navier__stokes__surface__power__elements_8h_source.html#l00399">399</a> of file <a class="el" href="navier__stokes__surface__power__elements_8h_source.html">navier_stokes_surface_power_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="navier__stokes__surface__power__elements_8h_source.html#l00395">395</a> of file <a class="el" href="navier__stokes__surface__power__elements_8h_source.html">navier_stokes_surface_power_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l04604">oomph::FaceElement::bulk_element_pt()</a>, <a class="el" href="elements_8h_source.html#l02499">oomph::FiniteElement::dim()</a>, <a class="el" href="elements_8cc_source.html#l06245">oomph::FaceElement::get_local_coordinate_in_bulk()</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="elements_8h_source.html#l01925">oomph::FiniteElement::integral_pt()</a>, <a class="el" href="elements_8h_source.html#l04411">oomph::FaceElement::interpolated_x()</a>, <a class="el" href="elements_8cc_source.html#l05116">oomph::FaceElement::J_eulerian()</a>, <a class="el" href="classoomph_1_1Integral.html#a1a2122f99a87c18649bafdd9ed739758">oomph::Integral::knot()</a>, <a class="el" href="geom__objects_8h_source.html#l00185">oomph::GeomObject::ndim()</a>, <a class="el" href="classoomph_1_1Integral.html#a1a270de9d99a1fcf1d25a6c1017f65fa">oomph::Integral::nweight()</a>, <a class="el" href="elements_8cc_source.html#l05876">oomph::FaceElement::outer_unit_normal()</a>, <a class="el" href="cfortran_8h_source.html#l00572">s</a>, <a class="el" href="quadtree_8h_source.html#l00060">oomph::QuadTreeNames::W</a>, and <a class="el" href="classoomph_1_1Integral.html#ac65335e2aab120b285b3d6c294507b06">oomph::Integral::weight()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l04600">oomph::FaceElement::bulk_element_pt()</a>, <a class="el" href="elements_8h_source.html#l02495">oomph::FiniteElement::dim()</a>, <a class="el" href="elements_8cc_source.html#l06241">oomph::FaceElement::get_local_coordinate_in_bulk()</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="elements_8h_source.html#l01921">oomph::FiniteElement::integral_pt()</a>, <a class="el" href="elements_8h_source.html#l04407">oomph::FaceElement::interpolated_x()</a>, <a class="el" href="elements_8cc_source.html#l05112">oomph::FaceElement::J_eulerian()</a>, <a class="el" href="classoomph_1_1Integral.html#a1a2122f99a87c18649bafdd9ed739758">oomph::Integral::knot()</a>, <a class="el" href="geom__objects_8h_source.html#l00181">oomph::GeomObject::ndim()</a>, <a class="el" href="classoomph_1_1Integral.html#a1a270de9d99a1fcf1d25a6c1017f65fa">oomph::Integral::nweight()</a>, <a class="el" href="elements_8cc_source.html#l05872">oomph::FaceElement::outer_unit_normal()</a>, <a class="el" href="cfortran_8h_source.html#l00568">s</a>, <a class="el" href="quadtree_8h_source.html#l00056">oomph::QuadTreeNames::W</a>, and <a class="el" href="classoomph_1_1Integral.html#ac65335e2aab120b285b3d6c294507b06">oomph::Integral::weight()</a>.</p>
 
 </div>
 </div>
@@ -1645,9 +1645,9 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Get integral of volume flux. </p>
 
-<p class="definition">Definition at line <a class="el" href="navier__stokes__surface__power__elements_8h_source.html#l00726">726</a> of file <a class="el" href="navier__stokes__surface__power__elements_8h_source.html">navier_stokes_surface_power_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="navier__stokes__surface__power__elements_8h_source.html#l00722">722</a> of file <a class="el" href="navier__stokes__surface__power__elements_8h_source.html">navier_stokes_surface_power_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00429">oomph::NavierStokesFluxControlElement&lt; ELEMENT &gt;::get_volume_flux()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="navier__stokes__flux__control__elements_8h_source.html#l00425">oomph::NavierStokesFluxControlElement&lt; ELEMENT &gt;::get_volume_flux()</a>.</p>
 
 </div>
 </div>
@@ -1679,9 +1679,9 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Get integral of volume flux and doc. </p>
 
-<p class="definition">Definition at line <a class="el" href="navier__stokes__surface__power__elements_8h_source.html#l00734">734</a> of file <a class="el" href="navier__stokes__surface__power__elements_8h_source.html">navier_stokes_surface_power_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="navier__stokes__surface__power__elements_8h_source.html#l00730">730</a> of file <a class="el" href="navier__stokes__surface__power__elements_8h_source.html">navier_stokes_surface_power_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l04604">oomph::FaceElement::bulk_element_pt()</a>, <a class="el" href="elements_8h_source.html#l02499">oomph::FiniteElement::dim()</a>, <a class="el" href="elements_8cc_source.html#l06245">oomph::FaceElement::get_local_coordinate_in_bulk()</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="elements_8h_source.html#l01925">oomph::FiniteElement::integral_pt()</a>, <a class="el" href="elements_8h_source.html#l04411">oomph::FaceElement::interpolated_x()</a>, <a class="el" href="elements_8cc_source.html#l05116">oomph::FaceElement::J_eulerian()</a>, <a class="el" href="classoomph_1_1Integral.html#a1a2122f99a87c18649bafdd9ed739758">oomph::Integral::knot()</a>, <a class="el" href="geom__objects_8h_source.html#l00185">oomph::GeomObject::ndim()</a>, <a class="el" href="classoomph_1_1Integral.html#a1a270de9d99a1fcf1d25a6c1017f65fa">oomph::Integral::nweight()</a>, <a class="el" href="elements_8cc_source.html#l05876">oomph::FaceElement::outer_unit_normal()</a>, <a class="el" href="cfortran_8h_source.html#l00572">s</a>, <a class="el" href="quadtree_8h_source.html#l00060">oomph::QuadTreeNames::W</a>, and <a class="el" href="classoomph_1_1Integral.html#ac65335e2aab120b285b3d6c294507b06">oomph::Integral::weight()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l04600">oomph::FaceElement::bulk_element_pt()</a>, <a class="el" href="elements_8h_source.html#l02495">oomph::FiniteElement::dim()</a>, <a class="el" href="elements_8cc_source.html#l06241">oomph::FaceElement::get_local_coordinate_in_bulk()</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="elements_8h_source.html#l01921">oomph::FiniteElement::integral_pt()</a>, <a class="el" href="elements_8h_source.html#l04407">oomph::FaceElement::interpolated_x()</a>, <a class="el" href="elements_8cc_source.html#l05112">oomph::FaceElement::J_eulerian()</a>, <a class="el" href="classoomph_1_1Integral.html#a1a2122f99a87c18649bafdd9ed739758">oomph::Integral::knot()</a>, <a class="el" href="geom__objects_8h_source.html#l00181">oomph::GeomObject::ndim()</a>, <a class="el" href="classoomph_1_1Integral.html#a1a270de9d99a1fcf1d25a6c1017f65fa">oomph::Integral::nweight()</a>, <a class="el" href="elements_8cc_source.html#l05872">oomph::FaceElement::outer_unit_normal()</a>, <a class="el" href="cfortran_8h_source.html#l00568">s</a>, <a class="el" href="quadtree_8h_source.html#l00056">oomph::QuadTreeNames::W</a>, and <a class="el" href="classoomph_1_1Integral.html#ac65335e2aab120b285b3d6c294507b06">oomph::Integral::weight()</a>.</p>
 
 </div>
 </div>
@@ -1731,9 +1731,9 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1FaceElement.html#a58c9f93705c7741f76c8487d152e68a6">oomph::FaceElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="navier__stokes__surface__power__elements_8h_source.html#l00082">82</a> of file <a class="el" href="navier__stokes__surface__power__elements_8h_source.html">navier_stokes_surface_power_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="navier__stokes__surface__power__elements_8h_source.html#l00078">78</a> of file <a class="el" href="navier__stokes__surface__power__elements_8h_source.html">navier_stokes_surface_power_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, and <a class="el" href="elements_8h_source.html#l04381">oomph::FaceElement::zeta_nodal()</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, and <a class="el" href="elements_8h_source.html#l04377">oomph::FaceElement::zeta_nodal()</a>.</p>
 
 </div>
 </div>
@@ -1762,9 +1762,9 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>The highest dimension of the problem. </p>
 
-<p class="definition">Definition at line <a class="el" href="navier__stokes__surface__power__elements_8h_source.html#l00866">866</a> of file <a class="el" href="navier__stokes__surface__power__elements_8h_source.html">navier_stokes_surface_power_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="navier__stokes__surface__power__elements_8h_source.html#l00862">862</a> of file <a class="el" href="navier__stokes__surface__power__elements_8h_source.html">navier_stokes_surface_power_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="navier__stokes__surface__power__elements_8h_source.html#l00063">oomph::NavierStokesSurfacePowerElement&lt; ELEMENT &gt;::NavierStokesSurfacePowerElement()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="navier__stokes__surface__power__elements_8h_source.html#l00059">oomph::NavierStokesSurfacePowerElement&lt; ELEMENT &gt;::NavierStokesSurfacePowerElement()</a>.</p>
 
 </div>
 </div>
@@ -1799,7 +1799,7 @@ template&lt;class ELEMENT &gt; </div>
     <footer>
       <div class="container">
         <div class="text-muted" style="float:right;">Generated by <a href="http://www.doxygen.org/index.html">
-          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Tue Jul 6 2021 22:57:58
+          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Fri Jul 9 2021 20:53:03
         </div>
       </div>
     </footer>

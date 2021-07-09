@@ -693,7 +693,7 @@ class oomph::BandedBlockTriangularPreconditioner&lt; MATRIX &gt;</h3>
 
 <p>General purpose block triangular preconditioner. By default this operates as an upper triangular preconditioner. Also, by default <a class="el" href="classoomph_1_1SuperLUPreconditioner.html" title="An interface to allow SuperLU to be used as an (exact) Preconditioner.">SuperLUPreconditioner</a> (or SuperLUDistPreconditioner) is used to solve the subsidiary systems, but other preconditioners can be used by setting them using passing a pointer to a function of type SubsidiaryPreconditionerFctPt to the method subsidiary_preconditioner_function_pt(). </p>
 
-<p class="definition">Definition at line <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00209">209</a> of file <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html">general_purpose_space_time_block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00205">205</a> of file <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html">general_purpose_space_time_block_preconditioner.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a79914bf8c1b0dc940deeb65072030f15"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a79914bf8c1b0dc940deeb65072030f15">&#9670;&nbsp;</a></span>BandedBlockTriangularPreconditioner() <span class="overload">[1/2]</span></h2>
@@ -722,9 +722,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Constructor. (By default this preconditioner is upper triangular). </p>
 
-<p class="definition">Definition at line <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00216">216</a> of file <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html">general_purpose_space_time_block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00212">212</a> of file <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html">general_purpose_space_time_block_preconditioner.h</a>.</p>
 
-<p class="reference">References <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00404">oomph::BandedBlockTriangularPreconditioner&lt; MATRIX &gt;::Block_bandwidth</a>, <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00415">oomph::BandedBlockTriangularPreconditioner&lt; MATRIX &gt;::Compute_memory_statistics</a>, <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00419">oomph::BandedBlockTriangularPreconditioner&lt; MATRIX &gt;::Memory_usage_in_bytes</a>, <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00411">oomph::BandedBlockTriangularPreconditioner&lt; MATRIX &gt;::Preconditioner_has_been_setup</a>, and <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00407">oomph::BandedBlockTriangularPreconditioner&lt; MATRIX &gt;::Upper_triangular</a>.</p>
+<p class="reference">References <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00400">oomph::BandedBlockTriangularPreconditioner&lt; MATRIX &gt;::Block_bandwidth</a>, <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00411">oomph::BandedBlockTriangularPreconditioner&lt; MATRIX &gt;::Compute_memory_statistics</a>, <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00415">oomph::BandedBlockTriangularPreconditioner&lt; MATRIX &gt;::Memory_usage_in_bytes</a>, <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00407">oomph::BandedBlockTriangularPreconditioner&lt; MATRIX &gt;::Preconditioner_has_been_setup</a>, and <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00403">oomph::BandedBlockTriangularPreconditioner&lt; MATRIX &gt;::Upper_triangular</a>.</p>
 
 </div>
 </div>
@@ -755,9 +755,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Destructor - delete the preconditioner matrices. </p>
 
-<p class="definition">Definition at line <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00237">237</a> of file <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html">general_purpose_space_time_block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00233">233</a> of file <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html">general_purpose_space_time_block_preconditioner.h</a>.</p>
 
-<p class="reference">References <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00245">oomph::BandedBlockTriangularPreconditioner&lt; MATRIX &gt;::clean_up_memory()</a>.</p>
+<p class="reference">References <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00241">oomph::BandedBlockTriangularPreconditioner&lt; MATRIX &gt;::clean_up_memory()</a>.</p>
 
 </div>
 </div>
@@ -789,9 +789,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Broken copy constructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00266">266</a> of file <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html">general_purpose_space_time_block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00262">262</a> of file <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html">general_purpose_space_time_block_preconditioner.h</a>.</p>
 
-<p class="reference">References <a class="el" href="oomph__utilities_8cc_source.html#l00218">oomph::BrokenCopy::broken_copy()</a>.</p>
+<p class="reference">References <a class="el" href="oomph__utilities_8cc_source.html#l00214">oomph::BrokenCopy::broken_copy()</a>.</p>
 
 </div>
 </div>
@@ -823,11 +823,11 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Get the block bandwidth of the preconditioner. </p>
 
-<p class="definition">Definition at line <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00297">297</a> of file <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html">general_purpose_space_time_block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00293">293</a> of file <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html">general_purpose_space_time_block_preconditioner.h</a>.</p>
 
-<p class="reference">References <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00404">oomph::BandedBlockTriangularPreconditioner&lt; MATRIX &gt;::Block_bandwidth</a>.</p>
+<p class="reference">References <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00400">oomph::BandedBlockTriangularPreconditioner&lt; MATRIX &gt;::Block_bandwidth</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00289">oomph::BandedBlockTriangularPreconditioner&lt; MATRIX &gt;::set_block_bandwidth()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00285">oomph::BandedBlockTriangularPreconditioner&lt; MATRIX &gt;::set_block_bandwidth()</a>.</p>
 
 </div>
 </div>
@@ -860,11 +860,11 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1GeneralPurposeBlockPreconditioner.html#a3272742d3c7f86327d33c5647af874e6">oomph::GeneralPurposeBlockPreconditioner&lt; MATRIX &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00245">245</a> of file <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html">general_purpose_space_time_block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00241">241</a> of file <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html">general_purpose_space_time_block_preconditioner.h</a>.</p>
 
-<p class="reference">References <a class="el" href="general__purpose__block__preconditioners_8h_source.html#l00116">oomph::GeneralPurposeBlockPreconditioner&lt; MATRIX &gt;::clean_up_memory()</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, and <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00397">oomph::BandedBlockTriangularPreconditioner&lt; MATRIX &gt;::Off_diagonal_matrix_vector_products</a>.</p>
+<p class="reference">References <a class="el" href="general__purpose__block__preconditioners_8h_source.html#l00112">oomph::GeneralPurposeBlockPreconditioner&lt; MATRIX &gt;::clean_up_memory()</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, and <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00393">oomph::BandedBlockTriangularPreconditioner&lt; MATRIX &gt;::Off_diagonal_matrix_vector_products</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00237">oomph::BandedBlockTriangularPreconditioner&lt; MATRIX &gt;::~BandedBlockTriangularPreconditioner()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00233">oomph::BandedBlockTriangularPreconditioner&lt; MATRIX &gt;::~BandedBlockTriangularPreconditioner()</a>.</p>
 
 </div>
 </div>
@@ -896,9 +896,9 @@ template&lt;typename MATRIX &gt; </div>
 <p>Don't document the memory usage! </p>
 <p>Set the appropriate flag to false</p>
 
-<p class="definition">Definition at line <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00337">337</a> of file <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html">general_purpose_space_time_block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00333">333</a> of file <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html">general_purpose_space_time_block_preconditioner.h</a>.</p>
 
-<p class="reference">References <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00415">oomph::BandedBlockTriangularPreconditioner&lt; MATRIX &gt;::Compute_memory_statistics</a>.</p>
+<p class="reference">References <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00411">oomph::BandedBlockTriangularPreconditioner&lt; MATRIX &gt;::Compute_memory_statistics</a>.</p>
 
 </div>
 </div>
@@ -930,9 +930,9 @@ template&lt;typename MATRIX &gt; </div>
 <p>Document the memory usage. </p>
 <p>Set the appropriate flag to true</p>
 
-<p class="definition">Definition at line <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00329">329</a> of file <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html">general_purpose_space_time_block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00325">325</a> of file <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html">general_purpose_space_time_block_preconditioner.h</a>.</p>
 
-<p class="reference">References <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00415">oomph::BandedBlockTriangularPreconditioner&lt; MATRIX &gt;::Compute_memory_statistics</a>.</p>
+<p class="reference">References <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00411">oomph::BandedBlockTriangularPreconditioner&lt; MATRIX &gt;::Compute_memory_statistics</a>.</p>
 
 </div>
 </div>
@@ -963,9 +963,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Get the memory statistics. </p>
 
-<p class="definition">Definition at line <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00345">345</a> of file <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html">general_purpose_space_time_block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00341">341</a> of file <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html">general_purpose_space_time_block_preconditioner.h</a>.</p>
 
-<p class="reference">References <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00415">oomph::BandedBlockTriangularPreconditioner&lt; MATRIX &gt;::Compute_memory_statistics</a>, <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00419">oomph::BandedBlockTriangularPreconditioner&lt; MATRIX &gt;::Memory_usage_in_bytes</a>, and <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00411">oomph::BandedBlockTriangularPreconditioner&lt; MATRIX &gt;::Preconditioner_has_been_setup</a>.</p>
+<p class="reference">References <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00411">oomph::BandedBlockTriangularPreconditioner&lt; MATRIX &gt;::Compute_memory_statistics</a>, <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00415">oomph::BandedBlockTriangularPreconditioner&lt; MATRIX &gt;::Memory_usage_in_bytes</a>, and <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00407">oomph::BandedBlockTriangularPreconditioner&lt; MATRIX &gt;::Preconditioner_has_been_setup</a>.</p>
 
 </div>
 </div>
@@ -996,9 +996,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Is this being used as an upper triangular preconditioner? </p>
 
-<p class="definition">Definition at line <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00321">321</a> of file <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html">general_purpose_space_time_block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00317">317</a> of file <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html">general_purpose_space_time_block_preconditioner.h</a>.</p>
 
-<p class="reference">References <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00407">oomph::BandedBlockTriangularPreconditioner&lt; MATRIX &gt;::Upper_triangular</a>.</p>
+<p class="reference">References <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00403">oomph::BandedBlockTriangularPreconditioner&lt; MATRIX &gt;::Upper_triangular</a>.</p>
 
 </div>
 </div>
@@ -1029,9 +1029,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Use as a lower triangular preconditioner. </p>
 
-<p class="definition">Definition at line <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00313">313</a> of file <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html">general_purpose_space_time_block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00309">309</a> of file <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html">general_purpose_space_time_block_preconditioner.h</a>.</p>
 
-<p class="reference">References <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00407">oomph::BandedBlockTriangularPreconditioner&lt; MATRIX &gt;::Upper_triangular</a>.</p>
+<p class="reference">References <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00403">oomph::BandedBlockTriangularPreconditioner&lt; MATRIX &gt;::Upper_triangular</a>.</p>
 
 </div>
 </div>
@@ -1063,9 +1063,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Broken assignment operator. </p>
 
-<p class="definition">Definition at line <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00274">274</a> of file <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html">general_purpose_space_time_block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00270">270</a> of file <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html">general_purpose_space_time_block_preconditioner.h</a>.</p>
 
-<p class="reference">References <a class="el" href="oomph__utilities_8cc_source.html#l00201">oomph::BrokenCopy::broken_assign()</a>.</p>
+<p class="reference">References <a class="el" href="oomph__utilities_8cc_source.html#l00197">oomph::BrokenCopy::broken_assign()</a>.</p>
 
 </div>
 </div>
@@ -1110,9 +1110,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Implements <a class="el" href="classoomph_1_1Preconditioner.html#ace1199369e4465cd2b9a34884bb64ec8">oomph::Preconditioner</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="general__purpose__space__time__block__preconditioner_8cc_source.html#l00601">601</a> of file <a class="el" href="general__purpose__space__time__block__preconditioner_8cc_source.html">general_purpose_space_time_block_preconditioner.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="general__purpose__space__time__block__preconditioner_8cc_source.html#l00597">597</a> of file <a class="el" href="general__purpose__space__time__block__preconditioner_8cc_source.html">general_purpose_space_time_block_preconditioner.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="linear__algebra__distribution_8h_source.html#l00474">oomph::DistributableLinearAlgebraObject::distribution_pt()</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="oomph__definitions_8cc_source.html#l00326">oomph::oomph_info</a>, and <a class="el" href="oomph__utilities_8cc_source.html#l00252">oomph::CumulativeTimings::start()</a>.</p>
+<p class="reference">References <a class="el" href="linear__algebra__distribution_8h_source.html#l00470">oomph::DistributableLinearAlgebraObject::distribution_pt()</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="oomph__definitions_8cc_source.html#l00322">oomph::oomph_info</a>, and <a class="el" href="oomph__utilities_8cc_source.html#l00248">oomph::CumulativeTimings::start()</a>.</p>
 
 </div>
 </div>
@@ -1144,9 +1144,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Set the block bandwidth of the preconditioner. </p>
 
-<p class="definition">Definition at line <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00289">289</a> of file <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html">general_purpose_space_time_block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00285">285</a> of file <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html">general_purpose_space_time_block_preconditioner.h</a>.</p>
 
-<p class="reference">References <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00297">oomph::BandedBlockTriangularPreconditioner&lt; MATRIX &gt;::block_bandwidth()</a>, and <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00404">oomph::BandedBlockTriangularPreconditioner&lt; MATRIX &gt;::Block_bandwidth</a>.</p>
+<p class="reference">References <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00293">oomph::BandedBlockTriangularPreconditioner&lt; MATRIX &gt;::block_bandwidth()</a>, and <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00400">oomph::BandedBlockTriangularPreconditioner&lt; MATRIX &gt;::Block_bandwidth</a>.</p>
 
 </div>
 </div>
@@ -1177,9 +1177,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Implements <a class="el" href="classoomph_1_1Preconditioner.html#af4886f4efe510e5c9b0eb19422943588">oomph::Preconditioner</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="general__purpose__space__time__block__preconditioner_8cc_source.html#l00222">222</a> of file <a class="el" href="general__purpose__space__time__block__preconditioner_8cc_source.html">general_purpose_space_time_block_preconditioner.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="general__purpose__space__time__block__preconditioner_8cc_source.html#l00218">218</a> of file <a class="el" href="general__purpose__space__time__block__preconditioner_8cc_source.html">general_purpose_space_time_block_preconditioner.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="oomph__definitions_8cc_source.html#l00094">oomph::TerminateHelper::clean_up_memory()</a>, <a class="el" href="superlu_8c_source.html#l00085">get_memory_usage_in_bytes()</a>, <a class="el" href="general__purpose__space__time__subsidiary__block__preconditioner_8h_source.html#l00369">oomph::GMRESBlockPreconditioner::get_memory_usage_in_bytes()</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="general__purpose__space__time__subsidiary__block__preconditioner_8h_source.html#l00422">oomph::GMRESBlockPreconditioner::navier_stokes_subsidiary_preconditioner_pt()</a>, <a class="el" href="matrices_8h_source.html#l01068">oomph::CRDoubleMatrix::nnz()</a>, <a class="el" href="matrices_8h_source.html#l00992">oomph::CRDoubleMatrix::nrow()</a>, <a class="el" href="oomph__definitions_8cc_source.html#l00326">oomph::oomph_info</a>, <a class="el" href="oomph__definitions_8cc_source.html#l00320">oomph::oomph_nullstream</a>, <a class="el" href="oomph__definitions_8h_source.html#l00473">oomph::OomphInfo::stream_pt()</a>, <a class="el" href="oomph__utilities_8cc_source.html#l01642">oomph::TimingHelpers::timer()</a>, and <a class="el" href="the__data__structure_8txt.html#aaa5287b1cf3ca06b3f413cb95bd1ec60">u()</a>.</p>
+<p class="reference">References <a class="el" href="oomph__definitions_8cc_source.html#l00090">oomph::TerminateHelper::clean_up_memory()</a>, <a class="el" href="superlu_8c_source.html#l00085">get_memory_usage_in_bytes()</a>, <a class="el" href="general__purpose__space__time__subsidiary__block__preconditioner_8h_source.html#l00365">oomph::GMRESBlockPreconditioner::get_memory_usage_in_bytes()</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="general__purpose__space__time__subsidiary__block__preconditioner_8h_source.html#l00418">oomph::GMRESBlockPreconditioner::navier_stokes_subsidiary_preconditioner_pt()</a>, <a class="el" href="matrices_8h_source.html#l01064">oomph::CRDoubleMatrix::nnz()</a>, <a class="el" href="matrices_8h_source.html#l00988">oomph::CRDoubleMatrix::nrow()</a>, <a class="el" href="oomph__definitions_8cc_source.html#l00322">oomph::oomph_info</a>, <a class="el" href="oomph__definitions_8cc_source.html#l00316">oomph::oomph_nullstream</a>, <a class="el" href="oomph__definitions_8h_source.html#l00469">oomph::OomphInfo::stream_pt()</a>, <a class="el" href="oomph__utilities_8cc_source.html#l01638">oomph::TimingHelpers::timer()</a>, and <a class="el" href="the__data__structure_8txt.html#aaa5287b1cf3ca06b3f413cb95bd1ec60">u()</a>.</p>
 
 </div>
 </div>
@@ -1210,9 +1210,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Use as an upper triangular preconditioner. </p>
 
-<p class="definition">Definition at line <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00305">305</a> of file <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html">general_purpose_space_time_block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00301">301</a> of file <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html">general_purpose_space_time_block_preconditioner.h</a>.</p>
 
-<p class="reference">References <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00407">oomph::BandedBlockTriangularPreconditioner&lt; MATRIX &gt;::Upper_triangular</a>.</p>
+<p class="reference">References <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00403">oomph::BandedBlockTriangularPreconditioner&lt; MATRIX &gt;::Upper_triangular</a>.</p>
 
 </div>
 </div>
@@ -1241,9 +1241,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Storage for the block bandwidth of the matrix. Defaults to -1 indicating that we assume every off-diagonal block is non-empty. If the matrix is block diagonal then the value is zero. </p>
 
-<p class="definition">Definition at line <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00404">404</a> of file <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html">general_purpose_space_time_block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00400">400</a> of file <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html">general_purpose_space_time_block_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00216">oomph::BandedBlockTriangularPreconditioner&lt; MATRIX &gt;::BandedBlockTriangularPreconditioner()</a>, <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00297">oomph::BandedBlockTriangularPreconditioner&lt; MATRIX &gt;::block_bandwidth()</a>, and <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00289">oomph::BandedBlockTriangularPreconditioner&lt; MATRIX &gt;::set_block_bandwidth()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00212">oomph::BandedBlockTriangularPreconditioner&lt; MATRIX &gt;::BandedBlockTriangularPreconditioner()</a>, <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00293">oomph::BandedBlockTriangularPreconditioner&lt; MATRIX &gt;::block_bandwidth()</a>, and <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00285">oomph::BandedBlockTriangularPreconditioner&lt; MATRIX &gt;::set_block_bandwidth()</a>.</p>
 
 </div>
 </div>
@@ -1271,9 +1271,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Flag to indicate whether or not to record the memory statistics this preconditioner. </p>
 
-<p class="definition">Definition at line <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00415">415</a> of file <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html">general_purpose_space_time_block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00411">411</a> of file <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html">general_purpose_space_time_block_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00216">oomph::BandedBlockTriangularPreconditioner&lt; MATRIX &gt;::BandedBlockTriangularPreconditioner()</a>, <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00337">oomph::BandedBlockTriangularPreconditioner&lt; MATRIX &gt;::disable_doc_memory_usage()</a>, <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00329">oomph::BandedBlockTriangularPreconditioner&lt; MATRIX &gt;::enable_doc_memory_usage()</a>, and <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00345">oomph::BandedBlockTriangularPreconditioner&lt; MATRIX &gt;::get_memory_usage_in_bytes()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00212">oomph::BandedBlockTriangularPreconditioner&lt; MATRIX &gt;::BandedBlockTriangularPreconditioner()</a>, <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00333">oomph::BandedBlockTriangularPreconditioner&lt; MATRIX &gt;::disable_doc_memory_usage()</a>, <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00325">oomph::BandedBlockTriangularPreconditioner&lt; MATRIX &gt;::enable_doc_memory_usage()</a>, and <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00341">oomph::BandedBlockTriangularPreconditioner&lt; MATRIX &gt;::get_memory_usage_in_bytes()</a>.</p>
 
 </div>
 </div>
@@ -1301,9 +1301,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Storage for the memory usage of the solver if the flag above is set to true (in bytes) </p>
 
-<p class="definition">Definition at line <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00419">419</a> of file <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html">general_purpose_space_time_block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00415">415</a> of file <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html">general_purpose_space_time_block_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00216">oomph::BandedBlockTriangularPreconditioner&lt; MATRIX &gt;::BandedBlockTriangularPreconditioner()</a>, and <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00345">oomph::BandedBlockTriangularPreconditioner&lt; MATRIX &gt;::get_memory_usage_in_bytes()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00212">oomph::BandedBlockTriangularPreconditioner&lt; MATRIX &gt;::BandedBlockTriangularPreconditioner()</a>, and <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00341">oomph::BandedBlockTriangularPreconditioner&lt; MATRIX &gt;::get_memory_usage_in_bytes()</a>.</p>
 
 </div>
 </div>
@@ -1331,9 +1331,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p><a class="el" href="classoomph_1_1Matrix.html" title="Abstract base class for matrices, templated by the type of object that is stored in them and the type...">Matrix</a> of matrix-vector product operators for the off diagonals. </p>
 
-<p class="definition">Definition at line <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00397">397</a> of file <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html">general_purpose_space_time_block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00393">393</a> of file <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html">general_purpose_space_time_block_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00245">oomph::BandedBlockTriangularPreconditioner&lt; MATRIX &gt;::clean_up_memory()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00241">oomph::BandedBlockTriangularPreconditioner&lt; MATRIX &gt;::clean_up_memory()</a>.</p>
 
 </div>
 </div>
@@ -1361,9 +1361,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Control flag is true if the preconditioner has been setup (used so we can wipe the data when the preconditioner is called again) </p>
 
-<p class="definition">Definition at line <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00411">411</a> of file <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html">general_purpose_space_time_block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00407">407</a> of file <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html">general_purpose_space_time_block_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00216">oomph::BandedBlockTriangularPreconditioner&lt; MATRIX &gt;::BandedBlockTriangularPreconditioner()</a>, and <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00345">oomph::BandedBlockTriangularPreconditioner&lt; MATRIX &gt;::get_memory_usage_in_bytes()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00212">oomph::BandedBlockTriangularPreconditioner&lt; MATRIX &gt;::BandedBlockTriangularPreconditioner()</a>, and <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00341">oomph::BandedBlockTriangularPreconditioner&lt; MATRIX &gt;::get_memory_usage_in_bytes()</a>.</p>
 
 </div>
 </div>
@@ -1391,9 +1391,9 @@ template&lt;typename MATRIX &gt; </div>
 
 <p>Boolean indicating upper or lower triangular. </p>
 
-<p class="definition">Definition at line <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00407">407</a> of file <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html">general_purpose_space_time_block_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00403">403</a> of file <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html">general_purpose_space_time_block_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00216">oomph::BandedBlockTriangularPreconditioner&lt; MATRIX &gt;::BandedBlockTriangularPreconditioner()</a>, <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00321">oomph::BandedBlockTriangularPreconditioner&lt; MATRIX &gt;::is_upper_triangular()</a>, <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00313">oomph::BandedBlockTriangularPreconditioner&lt; MATRIX &gt;::lower_triangular()</a>, and <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00305">oomph::BandedBlockTriangularPreconditioner&lt; MATRIX &gt;::upper_triangular()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00212">oomph::BandedBlockTriangularPreconditioner&lt; MATRIX &gt;::BandedBlockTriangularPreconditioner()</a>, <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00317">oomph::BandedBlockTriangularPreconditioner&lt; MATRIX &gt;::is_upper_triangular()</a>, <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00309">oomph::BandedBlockTriangularPreconditioner&lt; MATRIX &gt;::lower_triangular()</a>, and <a class="el" href="general__purpose__space__time__block__preconditioner_8h_source.html#l00301">oomph::BandedBlockTriangularPreconditioner&lt; MATRIX &gt;::upper_triangular()</a>.</p>
 
 </div>
 </div>
@@ -1429,7 +1429,7 @@ template&lt;typename MATRIX &gt; </div>
     <footer>
       <div class="container">
         <div class="text-muted" style="float:right;">Generated by <a href="http://www.doxygen.org/index.html">
-          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Tue Jul 6 2021 22:55:46
+          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Fri Jul 9 2021 20:51:04
         </div>
       </div>
     </footer>

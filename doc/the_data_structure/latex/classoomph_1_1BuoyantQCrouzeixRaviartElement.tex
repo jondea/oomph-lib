@@ -101,7 +101,7 @@ class oomph\+::\+Buoyant\+Q\+Crouzeix\+Raviart\+Element$<$ D\+I\+M $>$}
 
 A class that solves the Boussinesq approximation of the Navier--Stokes and energy equations by coupling two pre-\/existing classes. The \mbox{\hyperlink{classoomph_1_1QAdvectionDiffusionElement}{Q\+Advection\+Diffusion\+Element}} with bi-\/quadratic interpolation for the scalar variable (temperature) and \mbox{\hyperlink{classoomph_1_1QCrouzeixRaviartElement}{Q\+Crouzeix\+Raviart\+Element}} which solves the Navier--Stokes equations using bi-\/quadratic interpolation for the velocities and a discontinuous bi-\/linear interpolation for the pressure. Note that we are free to choose the order in which we store the variables at the nodes. In this case we choose to store the variables in the order fluid velocities followed by temperature. We must, therefore, overload the function \mbox{\hyperlink{classoomph_1_1AdvectionDiffusionEquations_aadffa26c42be5d4a1156a7467de48fb8}{Advection\+Diffusion\+Equations$<$\+D\+I\+M$>$\+::u\+\_\+index\+\_\+adv\+\_\+diff()}} to indicate that the temperature is stored at the D\+I\+M-\/th position not the 0-\/th. We do not need to overload the corresponding function in the Navier\+Stokes\+Equations$<$\+D\+I\+M$>$ class because the velocities are stored first. 
 
-Definition at line 71 of file boussinesq\+\_\+elements.\+h.
+Definition at line 67 of file boussinesq\+\_\+elements.\+h.
 
 
 
@@ -119,7 +119,7 @@ Constructor\+: call the underlying constructors and initialise the pointer to th
 
 
 
-Definition at line 89 of file boussinesq\+\_\+elements.\+h.
+Definition at line 85 of file boussinesq\+\_\+elements.\+h.
 
 
 
@@ -145,7 +145,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1AdvectionDiffusionEquations_ac
 
 
 
-Definition at line 256 of file boussinesq\+\_\+elements.\+h.
+Definition at line 252 of file boussinesq\+\_\+elements.\+h.
 
 
 
@@ -168,7 +168,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1AdvectionDiffusionEquations_a8
 
 
 
-Definition at line 244 of file boussinesq\+\_\+elements.\+h.
+Definition at line 240 of file boussinesq\+\_\+elements.\+h.
 
 
 
@@ -186,7 +186,7 @@ Set the default physical value to be zero.
 
 
 
-Definition at line 704 of file boussinesq\+\_\+elements.\+h.
+Definition at line 700 of file boussinesq\+\_\+elements.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1BuoyantQCrouzeixRaviartElement_a4898e9179aebf392f1ffdfdb3fbea4a3}\label{classoomph_1_1BuoyantQCrouzeixRaviartElement_a4898e9179aebf392f1ffdfdb3fbea4a3}} 
 \index{oomph::BuoyantQCrouzeixRaviartElement$<$ DIM $>$@{oomph::BuoyantQCrouzeixRaviartElement$<$ DIM $>$}!Default\_Physical\_Constant\_Value@{Default\_Physical\_Constant\_Value}}
@@ -196,7 +196,7 @@ Definition at line 704 of file boussinesq\+\_\+elements.\+h.
 
 
 
-Definition at line 706 of file boussinesq\+\_\+elements.\+h.
+Definition at line 702 of file boussinesq\+\_\+elements.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1BuoyantQCrouzeixRaviartElement_a534fc134280b7447eecc4cad46b2e4c5}\label{classoomph_1_1BuoyantQCrouzeixRaviartElement_a534fc134280b7447eecc4cad46b2e4c5}} 
 \index{oomph::BuoyantQCrouzeixRaviartElement$<$ DIM $>$@{oomph::BuoyantQCrouzeixRaviartElement$<$ DIM $>$}!disable\_ALE@{disable\_ALE}}
@@ -215,7 +215,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1AdvectionDiffusionEquations_aa
 
 
 
-Definition at line 115 of file boussinesq\+\_\+elements.\+h.
+Definition at line 111 of file boussinesq\+\_\+elements.\+h.
 
 
 
@@ -238,7 +238,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1AdvectionDiffusionEquations_a9
 
 
 
-Definition at line 123 of file boussinesq\+\_\+elements.\+h.
+Definition at line 119 of file boussinesq\+\_\+elements.\+h.
 
 
 
@@ -261,7 +261,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1AdvectionDiffusionEquations_a6
 
 
 
-Definition at line 319 of file boussinesq\+\_\+elements.\+h.
+Definition at line 315 of file boussinesq\+\_\+elements.\+h.
 
 
 
@@ -284,7 +284,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1AdvectionDiffusionEquations_a6
 
 
 
-Definition at line 483 of file boussinesq\+\_\+elements.\+h.
+Definition at line 479 of file boussinesq\+\_\+elements.\+h.
 
 
 
@@ -307,7 +307,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1AdvectionDiffusionEquations_a6
 
 
 
-Definition at line 658 of file boussinesq\+\_\+elements.\+h.
+Definition at line 654 of file boussinesq\+\_\+elements.\+h.
 
 
 
@@ -326,7 +326,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1AdvectionDiffusionEquations_ae
 
 
 
-Definition at line 328 of file boussinesq\+\_\+elements.\+h.
+Definition at line 324 of file boussinesq\+\_\+elements.\+h.
 
 
 
@@ -345,7 +345,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1AdvectionDiffusionEquations_ae
 
 
 
-Definition at line 504 of file boussinesq\+\_\+elements.\+h.
+Definition at line 500 of file boussinesq\+\_\+elements.\+h.
 
 
 
@@ -364,7 +364,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1AdvectionDiffusionEquations_ae
 
 
 
-Definition at line 678 of file boussinesq\+\_\+elements.\+h.
+Definition at line 674 of file boussinesq\+\_\+elements.\+h.
 
 
 
@@ -387,7 +387,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1AdvectionDiffusionEquations_ae
 
 
 
-Definition at line 301 of file boussinesq\+\_\+elements.\+h.
+Definition at line 297 of file boussinesq\+\_\+elements.\+h.
 
 
 
@@ -406,7 +406,7 @@ Helper function to get the off-\/diagonal blocks of the Jacobian matrix analytic
 
 
 
-Definition at line 528 of file boussinesq\+\_\+elements.\+h.
+Definition at line 524 of file boussinesq\+\_\+elements.\+h.
 
 
 
@@ -429,7 +429,7 @@ Helper function to get the off-\/diagonal blocks of the Jacobian matrix by finit
 
 
 
-Definition at line 346 of file boussinesq\+\_\+elements.\+h.
+Definition at line 342 of file boussinesq\+\_\+elements.\+h.
 
 
 
@@ -457,7 +457,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1NavierStokesEquations_a8a3f44d
 
 
 
-Definition at line 278 of file boussinesq\+\_\+elements.\+h.
+Definition at line 274 of file boussinesq\+\_\+elements.\+h.
 
 
 
@@ -480,7 +480,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1AdvectionDiffusionEquations_a3
 
 
 
-Definition at line 264 of file boussinesq\+\_\+elements.\+h.
+Definition at line 260 of file boussinesq\+\_\+elements.\+h.
 
 
 
@@ -503,7 +503,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1AdvectionDiffusionEquations_a7
 
 
 
-Definition at line 133 of file boussinesq\+\_\+elements.\+h.
+Definition at line 129 of file boussinesq\+\_\+elements.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1BuoyantQCrouzeixRaviartElement_a9ba77409f12b80862262f6695829055b}\label{classoomph_1_1BuoyantQCrouzeixRaviartElement_a9ba77409f12b80862262f6695829055b}} 
 \index{oomph::BuoyantQCrouzeixRaviartElement$<$ DIM $>$@{oomph::BuoyantQCrouzeixRaviartElement$<$ DIM $>$}!output@{output}}
@@ -522,7 +522,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1AdvectionDiffusionEquations_a0
 
 
 
-Definition at line 210 of file boussinesq\+\_\+elements.\+h.
+Definition at line 206 of file boussinesq\+\_\+elements.\+h.
 
 
 
@@ -545,7 +545,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1AdvectionDiffusionEquations_a0
 
 
 
-Definition at line 214 of file boussinesq\+\_\+elements.\+h.
+Definition at line 210 of file boussinesq\+\_\+elements.\+h.
 
 
 
@@ -568,7 +568,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1AdvectionDiffusionEquations_a3
 
 
 
-Definition at line 168 of file boussinesq\+\_\+elements.\+h.
+Definition at line 164 of file boussinesq\+\_\+elements.\+h.
 
 
 
@@ -592,7 +592,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1AdvectionDiffusionEquations_ad
 
 
 
-Definition at line 173 of file boussinesq\+\_\+elements.\+h.
+Definition at line 169 of file boussinesq\+\_\+elements.\+h.
 
 
 
@@ -615,7 +615,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1AdvectionDiffusionEquations_af
 
 
 
-Definition at line 226 of file boussinesq\+\_\+elements.\+h.
+Definition at line 222 of file boussinesq\+\_\+elements.\+h.
 
 
 
@@ -638,7 +638,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1AdvectionDiffusionEquations_ab
 
 
 
-Definition at line 218 of file boussinesq\+\_\+elements.\+h.
+Definition at line 214 of file boussinesq\+\_\+elements.\+h.
 
 
 
@@ -657,7 +657,7 @@ Access function for the Rayleigh number (const version)
 
 
 
-Definition at line 109 of file boussinesq\+\_\+elements.\+h.
+Definition at line 105 of file boussinesq\+\_\+elements.\+h.
 
 
 
@@ -680,7 +680,7 @@ Access function for the pointer to the Rayleigh number.
 
 
 
-Definition at line 112 of file boussinesq\+\_\+elements.\+h.
+Definition at line 108 of file boussinesq\+\_\+elements.\+h.
 
 
 
@@ -703,7 +703,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1QCrouzeixRaviartElement_a02594
 
 
 
-Definition at line 104 of file boussinesq\+\_\+elements.\+h.
+Definition at line 100 of file boussinesq\+\_\+elements.\+h.
 
 
 
@@ -726,7 +726,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1AdvectionDiffusionEquations_a3
 
 
 
-Definition at line 161 of file boussinesq\+\_\+elements.\+h.
+Definition at line 157 of file boussinesq\+\_\+elements.\+h.
 
 
 
@@ -749,7 +749,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1AdvectionDiffusionEquations_a7
 
 
 
-Definition at line 147 of file boussinesq\+\_\+elements.\+h.
+Definition at line 143 of file boussinesq\+\_\+elements.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1BuoyantQCrouzeixRaviartElement_acf5fa44f694c5374c61a964020437bf4}\label{classoomph_1_1BuoyantQCrouzeixRaviartElement_acf5fa44f694c5374c61a964020437bf4}} 
 \index{oomph::BuoyantQCrouzeixRaviartElement$<$ DIM $>$@{oomph::BuoyantQCrouzeixRaviartElement$<$ DIM $>$}!u\_index\_adv\_diff@{u\_index\_adv\_diff}}
@@ -768,7 +768,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1AdvectionDiffusionEquations_aa
 
 
 
-Definition at line 237 of file boussinesq\+\_\+elements.\+h.
+Definition at line 233 of file boussinesq\+\_\+elements.\+h.
 
 
 
@@ -787,7 +787,7 @@ Unpin p\+\_\+dof-\/th pressure dof.
 
 
 
-Definition at line 96 of file boussinesq\+\_\+elements.\+h.
+Definition at line 92 of file boussinesq\+\_\+elements.\+h.
 
 
 
@@ -809,7 +809,7 @@ The static default value of the Rayleigh number.
 
 
 
-Definition at line 82 of file boussinesq\+\_\+elements.\+h.
+Definition at line 78 of file boussinesq\+\_\+elements.\+h.
 
 
 
@@ -828,7 +828,7 @@ Pointer to a private data member, the Rayleigh number.
 
 
 
-Definition at line 79 of file boussinesq\+\_\+elements.\+h.
+Definition at line 75 of file boussinesq\+\_\+elements.\+h.
 
 
 

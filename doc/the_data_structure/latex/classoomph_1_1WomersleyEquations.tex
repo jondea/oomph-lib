@@ -108,7 +108,7 @@ Generally, the instantaneous value of the pressure gradient, g, is prescribed (a
 
 It is also possible to prescribe the flow rate through a mesh of Womersley elements and to determine the pressure gradient required to achieve this flow rate as an unknown. In that case the external pressure is treated as an external \mbox{\hyperlink{classoomph_1_1Data}{Data}} object that an associated \mbox{\hyperlink{classoomph_1_1ImposeFluxForWomersleyElement}{Impose\+Flux\+For\+Womersley\+Element}} is in charge of. Note that only the \mbox{\hyperlink{classoomph_1_1ImposeFluxForWomersleyElement}{Impose\+Flux\+For\+Womersley\+Element}} can set the pressure gradient \mbox{\hyperlink{classoomph_1_1Data}{Data}} object as external \mbox{\hyperlink{classoomph_1_1Data}{Data}}. This is because (counter to general practice) the \mbox{\hyperlink{classoomph_1_1WomersleyEquations}{Womersley\+Equations}} make contributions to the residuals of the Impose\+Flux\+For\+Womersley\+Elements in order to keep the elemental Jacobians as small as possible. 
 
-Definition at line 207 of file womersley\+\_\+elements.\+h.
+Definition at line 203 of file womersley\+\_\+elements.\+h.
 
 
 
@@ -126,7 +126,7 @@ Constructor\+: Initialises the Pressure\+\_\+gradient\+\_\+data\+\_\+pt to null.
 
 
 
-Definition at line 213 of file womersley\+\_\+elements.\+h.
+Definition at line 209 of file womersley\+\_\+elements.\+h.
 
 
 
@@ -145,7 +145,7 @@ Broken copy constructor.
 
 
 
-Definition at line 220 of file womersley\+\_\+elements.\+h.
+Definition at line 216 of file womersley\+\_\+elements.\+h.
 
 
 
@@ -173,7 +173,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1FiniteElement_a73c79a1f1e5b1d3
 
 
 
-Definition at line 569 of file womersley\+\_\+elements.\+cc.
+Definition at line 565 of file womersley\+\_\+elements.\+cc.
 
 
 
@@ -198,7 +198,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1FiniteElement_a7f67853506dc73f
 
 
 
-Definition at line 650 of file womersley\+\_\+elements.\+cc.
+Definition at line 646 of file womersley\+\_\+elements.\+cc.
 
 
 
@@ -247,7 +247,7 @@ du/dt at local node n. Uses suitably interpolated value for hanging nodes.
 
 
 
-Definition at line 277 of file womersley\+\_\+elements.\+h.
+Definition at line 273 of file womersley\+\_\+elements.\+h.
 
 
 
@@ -270,7 +270,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1FiniteElement_a0ae7af222af38a0
 
 
 
-Definition at line 405 of file womersley\+\_\+elements.\+h.
+Definition at line 401 of file womersley\+\_\+elements.\+h.
 
 
 
@@ -293,7 +293,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1GeneralisedElement_a310c97f515
 
 
 
-Definition at line 395 of file womersley\+\_\+elements.\+h.
+Definition at line 391 of file womersley\+\_\+elements.\+h.
 
 
 
@@ -317,7 +317,7 @@ flag=1\+: compute both flag=0\+: compute only residual \mbox{\hyperlink{classoom
 
 Pure version without hanging nodes 
 
-Definition at line 76 of file womersley\+\_\+elements.\+cc.
+Definition at line 72 of file womersley\+\_\+elements.\+cc.
 
 
 
@@ -340,7 +340,7 @@ Get flux\+: flux\mbox{[}i\mbox{]} = du/dx\+\_\+i.
 
 
 
-Definition at line 364 of file womersley\+\_\+elements.\+h.
+Definition at line 360 of file womersley\+\_\+elements.\+h.
 
 
 
@@ -359,7 +359,7 @@ Compute total volume flux through element.
 
 Compute volume flux through element. 
 
-Definition at line 236 of file womersley\+\_\+elements.\+cc.
+Definition at line 232 of file womersley\+\_\+elements.\+cc.
 
 
 
@@ -382,7 +382,7 @@ Return FE representation of function value u(s) at local coordinate s.
 
 
 
-Definition at line 414 of file womersley\+\_\+elements.\+h.
+Definition at line 410 of file womersley\+\_\+elements.\+h.
 
 
 
@@ -401,7 +401,7 @@ Broken assignment operator.
 
 
 
-Definition at line 227 of file womersley\+\_\+elements.\+h.
+Definition at line 223 of file womersley\+\_\+elements.\+h.
 
 
 
@@ -428,7 +428,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1QWomersleyElement_a2d73507033cac
 
 
 
-Definition at line 323 of file womersley\+\_\+elements.\+h.
+Definition at line 319 of file womersley\+\_\+elements.\+h.
 
 
 
@@ -459,7 +459,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1QWomersleyElement_aedac8e0c2b41e
 
 
 
-Definition at line 413 of file womersley\+\_\+elements.\+cc.
+Definition at line 409 of file womersley\+\_\+elements.\+cc.
 
 
 
@@ -486,7 +486,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1QWomersleyElement_a5a8951b6a947e
 
 
 
-Definition at line 305 of file womersley\+\_\+elements.\+h.
+Definition at line 301 of file womersley\+\_\+elements.\+h.
 
 
 
@@ -517,7 +517,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1QWomersleyElement_a98968ff614577
 
 
 
-Definition at line 374 of file womersley\+\_\+elements.\+cc.
+Definition at line 370 of file womersley\+\_\+elements.\+cc.
 
 
 
@@ -536,7 +536,7 @@ Output function\+: x,y,z\+\_\+out,0,0,u,0 to allow comparison against full Navie
 
 Output function\+: x,y,z\+\_\+out,0,0,u,0 to allow comparison against full Navier Stokes at n\+\_\+nplot x n\+\_\+plot points (2D) 
 
-Definition at line 335 of file womersley\+\_\+elements.\+cc.
+Definition at line 331 of file womersley\+\_\+elements.\+cc.
 
 
 
@@ -567,7 +567,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1QWomersleyElement_a2730f3cf9212c
 
 
 
-Definition at line 510 of file womersley\+\_\+elements.\+cc.
+Definition at line 506 of file womersley\+\_\+elements.\+cc.
 
 
 
@@ -598,7 +598,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1QWomersleyElement_ae15d32d03c1e6
 
 
 
-Definition at line 454 of file womersley\+\_\+elements.\+cc.
+Definition at line 450 of file womersley\+\_\+elements.\+cc.
 
 
 
@@ -621,7 +621,7 @@ Product of Reynolds and Strouhal number (=Womersley number)
 
 
 
-Definition at line 258 of file womersley\+\_\+elements.\+h.
+Definition at line 254 of file womersley\+\_\+elements.\+h.
 
 
 
@@ -640,7 +640,7 @@ Pointer to product of Reynolds and Strouhal number (=Womersley number)
 
 
 
-Definition at line 262 of file womersley\+\_\+elements.\+h.
+Definition at line 258 of file womersley\+\_\+elements.\+h.
 
 
 
@@ -663,7 +663,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1FiniteElement_af94c5a5e22175d5
 
 
 
-Definition at line 304 of file womersley\+\_\+elements.\+cc.
+Definition at line 300 of file womersley\+\_\+elements.\+cc.
 
 
 
@@ -682,7 +682,7 @@ Set pointer to pressure gradient (single-\/valued \mbox{\hyperlink{classoomph_1_
 
 
 
-Definition at line 500 of file womersley\+\_\+elements.\+h.
+Definition at line 496 of file womersley\+\_\+elements.\+h.
 
 
 
@@ -705,7 +705,7 @@ Read-\/only access to pointer to pressure gradient.
 
 
 
-Definition at line 251 of file womersley\+\_\+elements.\+h.
+Definition at line 247 of file womersley\+\_\+elements.\+h.
 
 
 
@@ -724,7 +724,7 @@ Set pointer to pressure gradient (single-\/valued \mbox{\hyperlink{classoomph_1_
 
 
 
-Definition at line 234 of file womersley\+\_\+elements.\+h.
+Definition at line 230 of file womersley\+\_\+elements.\+h.
 
 
 
@@ -743,7 +743,7 @@ Return the index at which the unknown value is stored. The default value, 0, is 
 
 
 
-Definition at line 272 of file womersley\+\_\+elements.\+h.
+Definition at line 268 of file womersley\+\_\+elements.\+h.
 
 
 
@@ -762,7 +762,7 @@ friend class \mbox{\hyperlink{classoomph_1_1ImposeFluxForWomersleyElement}{Impos
 
 
 
-Definition at line 485 of file womersley\+\_\+elements.\+h.
+Definition at line 481 of file womersley\+\_\+elements.\+h.
 
 
 
@@ -780,7 +780,7 @@ Static default value for the Womersley number.
 
 Default Womersley number. 
 
-Definition at line 480 of file womersley\+\_\+elements.\+h.
+Definition at line 476 of file womersley\+\_\+elements.\+h.
 
 
 
@@ -799,7 +799,7 @@ Pointer to pressure gradient \mbox{\hyperlink{classoomph_1_1Data}{Data}} (single
 
 
 
-Definition at line 474 of file womersley\+\_\+elements.\+h.
+Definition at line 470 of file womersley\+\_\+elements.\+h.
 
 
 
@@ -818,7 +818,7 @@ Pointer to global Reynolds number x Strouhal number (=Womersley)
 
 
 
-Definition at line 477 of file womersley\+\_\+elements.\+h.
+Definition at line 473 of file womersley\+\_\+elements.\+h.
 
 
 

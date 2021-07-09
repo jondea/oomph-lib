@@ -1390,7 +1390,7 @@ class oomph::FaceElementAsGeomObject&lt; ELEMENT &gt;</h3>
 <p>Class that is used to create <a class="el" href="classoomph_1_1FaceElement.html">FaceElement</a> from bulk elements and to provide these <a class="el" href="classoomph_1_1FaceElement.html">FaceElement</a> with a geometric object representation. The local coordinates of the FaceElements are used as the intrinisic coordinates for its <a class="el" href="classoomph_1_1GeomObject.html">GeomObject</a> representation.</p>
 <p>These elements are used primarily to set up the interaction terms in FSI problems and are expected to be created from meshes so that they lie on a particular boundary of the mesh. </p>
 
-<p class="definition">Definition at line <a class="el" href="face__element__as__geometric__object_8h_source.html#l00064">64</a> of file <a class="el" href="face__element__as__geometric__object_8h_source.html">face_element_as_geometric_object.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="face__element__as__geometric__object_8h_source.html#l00060">60</a> of file <a class="el" href="face__element__as__geometric__object_8h_source.html">face_element_as_geometric_object.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab93ac80cc645460ee51ba86823a883fe"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab93ac80cc645460ee51ba86823a883fe">&#9670;&nbsp;</a></span>FaceElementAsGeomObject() <span class="overload">[1/2]</span></h2>
@@ -1431,9 +1431,9 @@ template&lt;class ELEMENT &gt; </div>
 <p>Constructor which takes a pointer to a "bulk" element, to which this element is attached. The face index, indicates the face (of the bulk element) that is to be constructed. Note that this element tends to be constructed <br  />
  by the doubly templated <a class="el" href="classoomph_1_1Mesh.html#a93e1758501aeea3328291571ce501029" title="Constuct a Mesh of FACE_ELEMENTs along the b-th boundary of the mesh (which contains elements of type...">Mesh::build_face_mesh()</a> and therefore has to have the same interface as the the generic <a class="el" href="classoomph_1_1FaceElement.html">FaceElement</a> constructor. Hence the boundary number (within the mesh) on which this element is located must be setup afterwards! </p>
 
-<p class="definition">Definition at line <a class="el" href="face__element__as__geometric__object_8h_source.html#l00078">78</a> of file <a class="el" href="face__element__as__geometric__object_8h_source.html">face_element_as_geometric_object.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="face__element__as__geometric__object_8h_source.html#l00074">74</a> of file <a class="el" href="face__element__as__geometric__object_8h_source.html">face_element_as_geometric_object.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8cc_source.html#l05005">oomph::FiniteElement::build_face_element()</a>, <a class="el" href="elements_8h_source.html#l02499">oomph::FiniteElement::dim()</a>, <a class="el" href="elements_8h_source.html#l04501">oomph::FaceElement::face_index()</a>, <a class="el" href="elements_8h_source.html#l02387">oomph::FiniteElement::nodal_dimension()</a>, and <a class="el" href="geom__objects_8h_source.html#l00188">oomph::GeomObject::set_nlagrangian_and_ndim()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8cc_source.html#l05001">oomph::FiniteElement::build_face_element()</a>, <a class="el" href="elements_8h_source.html#l02495">oomph::FiniteElement::dim()</a>, <a class="el" href="elements_8h_source.html#l04497">oomph::FaceElement::face_index()</a>, <a class="el" href="elements_8h_source.html#l02383">oomph::FiniteElement::nodal_dimension()</a>, and <a class="el" href="geom__objects_8h_source.html#l00184">oomph::GeomObject::set_nlagrangian_and_ndim()</a>.</p>
 
 </div>
 </div>
@@ -1465,9 +1465,9 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Broken copy constructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="face__element__as__geometric__object_8h_source.html#l00096">96</a> of file <a class="el" href="face__element__as__geometric__object_8h_source.html">face_element_as_geometric_object.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="face__element__as__geometric__object_8h_source.html#l00092">92</a> of file <a class="el" href="face__element__as__geometric__object_8h_source.html">face_element_as_geometric_object.h</a>.</p>
 
-<p class="reference">References <a class="el" href="oomph__utilities_8cc_source.html#l00218">oomph::BrokenCopy::broken_copy()</a>.</p>
+<p class="reference">References <a class="el" href="oomph__utilities_8cc_source.html#l00214">oomph::BrokenCopy::broken_copy()</a>.</p>
 
 </div>
 </div>
@@ -1502,9 +1502,9 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1FiniteElement.html#a564ba080f68132762510b1ec9465b05d">oomph::FiniteElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="face__element__as__geometric__object_8h_source.html#l00175">175</a> of file <a class="el" href="face__element__as__geometric__object_8h_source.html">face_element_as_geometric_object.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="face__element__as__geometric__object_8h_source.html#l00171">171</a> of file <a class="el" href="face__element__as__geometric__object_8h_source.html">face_element_as_geometric_object.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l02116">oomph::FiniteElement::assign_all_generic_local_eqn_numbers()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l02112">oomph::FiniteElement::assign_all_generic_local_eqn_numbers()</a>.</p>
 
 </div>
 </div>
@@ -1548,9 +1548,9 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1ElementWithExternalElement.html#a2a1753bed2e822d399aa3525f1bdac4b">oomph::ElementWithExternalElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="face__element__as__geometric__object_8h_source.html#l00167">167</a> of file <a class="el" href="face__element__as__geometric__object_8h_source.html">face_element_as_geometric_object.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="face__element__as__geometric__object_8h_source.html#l00163">163</a> of file <a class="el" href="face__element__as__geometric__object_8h_source.html">face_element_as_geometric_object.h</a>.</p>
 
-<p class="reference">References <a class="el" href="element__with__external__element_8cc_source.html#l00188">oomph::ElementWithExternalElement::describe_local_dofs()</a>.</p>
+<p class="reference">References <a class="el" href="element__with__external__element_8cc_source.html#l00184">oomph::ElementWithExternalElement::describe_local_dofs()</a>.</p>
 
 </div>
 </div>
@@ -1594,7 +1594,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1ElementWithExternalElement.html#ae5fb09552a8271e891438f8d058ca1b8">oomph::ElementWithExternalElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="face__element__as__geometric__object_8h_source.html#l00140">140</a> of file <a class="el" href="face__element__as__geometric__object_8h_source.html">face_element_as_geometric_object.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="face__element__as__geometric__object_8h_source.html#l00136">136</a> of file <a class="el" href="face__element__as__geometric__object_8h_source.html">face_element_as_geometric_object.h</a>.</p>
 
 </div>
 </div>
@@ -1628,7 +1628,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1FiniteElement.html#aa119a9aaad3d2ebb54ff085726c3708d">oomph::FiniteElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="face__element__as__geometric__object_8h_source.html#l00126">126</a> of file <a class="el" href="face__element__as__geometric__object_8h_source.html">face_element_as_geometric_object.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="face__element__as__geometric__object_8h_source.html#l00122">122</a> of file <a class="el" href="face__element__as__geometric__object_8h_source.html">face_element_as_geometric_object.h</a>.</p>
 
 </div>
 </div>
@@ -1661,7 +1661,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1FiniteElement.html#ae09e3e0c01b6143d511f2626d2ee535c">oomph::FiniteElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="face__element__as__geometric__object_8h_source.html#l00121">121</a> of file <a class="el" href="face__element__as__geometric__object_8h_source.html">face_element_as_geometric_object.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="face__element__as__geometric__object_8h_source.html#l00117">117</a> of file <a class="el" href="face__element__as__geometric__object_8h_source.html">face_element_as_geometric_object.h</a>.</p>
 
 </div>
 </div>
@@ -1712,11 +1712,11 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1FaceElement.html#a58c9f93705c7741f76c8487d152e68a6">oomph::FaceElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="face__element__as__geometric__object_8h_source.html#l00114">114</a> of file <a class="el" href="face__element__as__geometric__object_8h_source.html">face_element_as_geometric_object.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="face__element__as__geometric__object_8h_source.html#l00110">110</a> of file <a class="el" href="face__element__as__geometric__object_8h_source.html">face_element_as_geometric_object.h</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, and <a class="el" href="elements_8h_source.html#l04381">oomph::FaceElement::zeta_nodal()</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, and <a class="el" href="elements_8h_source.html#l04377">oomph::FaceElement::zeta_nodal()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="face__element__as__geometric__object_8h_source.html#l00196">oomph::CompareBoundaryCoordinate&lt; ELEMENT &gt;::operator()()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="face__element__as__geometric__object_8h_source.html#l00192">oomph::CompareBoundaryCoordinate&lt; ELEMENT &gt;::operator()()</a>.</p>
 
 </div>
 </div>
@@ -1751,7 +1751,7 @@ template&lt;class ELEMENT &gt; </div>
     <footer>
       <div class="container">
         <div class="text-muted" style="float:right;">Generated by <a href="http://www.doxygen.org/index.html">
-          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Tue Jul 6 2021 22:56:15
+          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Fri Jul 9 2021 20:51:33
         </div>
       </div>
     </footer>

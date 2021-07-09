@@ -186,7 +186,7 @@ class DiskShockWaveProblem&lt; ELEMENT, TIMESTEPPER &gt;</h3>
 
 <p>"Shock" wave propagates through an impulsively loaded circular disk. </p>
 
-<p class="definition">Definition at line <a class="el" href="shock__disk_8cc_source.html#l00211">211</a> of file <a class="el" href="shock__disk_8cc_source.html">shock_disk.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shock__disk_8cc_source.html#l00207">207</a> of file <a class="el" href="shock__disk_8cc_source.html">shock_disk.cc</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae670d0120936f410134ba3e3b61aa880"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae670d0120936f410134ba3e3b61aa880">&#9670;&nbsp;</a></span>DiskShockWaveProblem()</h2>
@@ -205,9 +205,9 @@ template&lt;class ELEMENT , class TIMESTEPPER &gt; </div>
 <p>Constructor: </p>
 <p>Constructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="shock__disk_8cc_source.html#l00286">286</a> of file <a class="el" href="shock__disk_8cc_source.html">shock_disk.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shock__disk_8cc_source.html#l00282">282</a> of file <a class="el" href="shock__disk_8cc_source.html">shock_disk.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="shock__disk_8cc_source.html#l00071">Global_Physical_Variables::constant_pressure()</a>, and <a class="el" href="shock__disk_8cc_source.html#l00059">Global_Physical_Variables::Constitutive_law_pt</a>.</p>
+<p class="reference">References <a class="el" href="shock__disk_8cc_source.html#l00067">Global_Physical_Variables::constant_pressure()</a>, and <a class="el" href="shock__disk_8cc_source.html#l00055">Global_Physical_Variables::Constitutive_law_pt</a>.</p>
 
 </div>
 </div>
@@ -229,9 +229,9 @@ template&lt;class ELEMENT , class TIMESTEPPER &gt; </div>
 <p>Actions after adaption: Kill and then re-build the traction elements on boundary 1 and re-assign the equation numbers. </p>
 <p>Kill and then re-build the traction elements on boundary 1, pin redundant pressure dofs and re-assign the equation numbers. </p>
 
-<p class="definition">Definition at line <a class="el" href="shock__disk_8cc_source.html#l00440">440</a> of file <a class="el" href="shock__disk_8cc_source.html">shock_disk.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shock__disk_8cc_source.html#l00436">436</a> of file <a class="el" href="shock__disk_8cc_source.html">shock_disk.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="shock__disk_8cc_source.html#l00071">Global_Physical_Variables::constant_pressure()</a>.</p>
+<p class="reference">References <a class="el" href="shock__disk_8cc_source.html#l00067">Global_Physical_Variables::constant_pressure()</a>.</p>
 
 </div>
 </div>
@@ -262,7 +262,7 @@ template&lt;class ELEMENT , class TIMESTEPPER &gt; </div>
 
 <p>Update function (empty) </p>
 
-<p class="definition">Definition at line <a class="el" href="shock__disk_8cc_source.html#l00239">239</a> of file <a class="el" href="shock__disk_8cc_source.html">shock_disk.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shock__disk_8cc_source.html#l00235">235</a> of file <a class="el" href="shock__disk_8cc_source.html">shock_disk.cc</a>.</p>
 
 </div>
 </div>
@@ -293,7 +293,7 @@ template&lt;class ELEMENT , class TIMESTEPPER &gt; </div>
 
 <p>Update function (empty) </p>
 
-<p class="definition">Definition at line <a class="el" href="shock__disk_8cc_source.html#l00242">242</a> of file <a class="el" href="shock__disk_8cc_source.html">shock_disk.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shock__disk_8cc_source.html#l00238">238</a> of file <a class="el" href="shock__disk_8cc_source.html">shock_disk.cc</a>.</p>
 
 </div>
 </div>
@@ -318,7 +318,7 @@ template&lt;class ELEMENT , class TIMESTEPPER &gt; </div>
 <p>Doc displacement and velocity: label file with before and after. </p>
 <p>Doc displacement and veloc in displ_and_veloc*.dat. The int stage defaults to 0, in which case the '*' in the filename is simply the step number specified by the Problem's DocInfo object. If it's +/-1, the word "before" and "after" get inserted. This allows checking of the veloc/displacment interpolation during adaptive mesh refinement. </p>
 
-<p class="definition">Definition at line <a class="el" href="shock__disk_8cc_source.html#l00617">617</a> of file <a class="el" href="shock__disk_8cc_source.html">shock_disk.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shock__disk_8cc_source.html#l00613">613</a> of file <a class="el" href="shock__disk_8cc_source.html">shock_disk.cc</a>.</p>
 
 </div>
 </div>
@@ -338,7 +338,7 @@ template&lt;class ELEMENT , class TIMESTEPPER &gt; </div>
 
 <p>Doc the solution. </p>
 
-<p class="definition">Definition at line <a class="el" href="shock__disk_8cc_source.html#l00478">478</a> of file <a class="el" href="shock__disk_8cc_source.html">shock_disk.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shock__disk_8cc_source.html#l00474">474</a> of file <a class="el" href="shock__disk_8cc_source.html">shock_disk.cc</a>.</p>
 
 </div>
 </div>
@@ -363,7 +363,7 @@ template&lt;class ELEMENT , class TIMESTEPPER &gt; </div>
 <p>Dump problem-specific parameters values, then dump generic problem data. </p>
 <p>Dump the solution. </p>
 
-<p class="definition">Definition at line <a class="el" href="shock__disk_8cc_source.html#l00694">694</a> of file <a class="el" href="shock__disk_8cc_source.html">shock_disk.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shock__disk_8cc_source.html#l00690">690</a> of file <a class="el" href="shock__disk_8cc_source.html">shock_disk.cc</a>.</p>
 
 </div>
 </div>
@@ -388,7 +388,7 @@ template&lt;class ELEMENT , class TIMESTEPPER &gt; </div>
 <p>Read problem-specific parameter values, then recover generic problem data. </p>
 <p>Read solution from disk. </p>
 
-<p class="definition">Definition at line <a class="el" href="shock__disk_8cc_source.html#l00706">706</a> of file <a class="el" href="shock__disk_8cc_source.html">shock_disk.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shock__disk_8cc_source.html#l00702">702</a> of file <a class="el" href="shock__disk_8cc_source.html">shock_disk.cc</a>.</p>
 
 </div>
 </div>
@@ -412,11 +412,11 @@ template&lt;class ELEMENT , class TIMESTEPPER &gt; </div>
 
 <p>Run the problem; specify case_number to label output directory. </p>
 
-<p class="definition">Definition at line <a class="el" href="shock__disk_8cc_source.html#l00718">718</a> of file <a class="el" href="shock__disk_8cc_source.html">shock_disk.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shock__disk_8cc_source.html#l00714">714</a> of file <a class="el" href="shock__disk_8cc_source.html">shock_disk.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="shock__disk_8cc_source.html#l00068">Global_Physical_Variables::P</a>.</p>
+<p class="reference">References <a class="el" href="shock__disk_8cc_source.html#l00064">Global_Physical_Variables::P</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="shock__disk_8cc_source.html#l00842">main()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="shock__disk_8cc_source.html#l00838">main()</a>.</p>
 
 </div>
 </div>
@@ -447,7 +447,7 @@ template&lt;class ELEMENT , class TIMESTEPPER &gt; </div>
 
 <p>Access function for the solid mesh. </p>
 
-<p class="definition">Definition at line <a class="el" href="shock__disk_8cc_source.html#l00224">224</a> of file <a class="el" href="shock__disk_8cc_source.html">shock_disk.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shock__disk_8cc_source.html#l00220">220</a> of file <a class="el" href="shock__disk_8cc_source.html">shock_disk.cc</a>.</p>
 
 </div>
 </div>
@@ -478,7 +478,7 @@ template&lt;class ELEMENT , class TIMESTEPPER &gt; </div>
 
 <p>Access function for the mesh of surface traction elements. </p>
 
-<p class="definition">Definition at line <a class="el" href="shock__disk_8cc_source.html#l00230">230</a> of file <a class="el" href="shock__disk_8cc_source.html">shock_disk.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shock__disk_8cc_source.html#l00226">226</a> of file <a class="el" href="shock__disk_8cc_source.html">shock_disk.cc</a>.</p>
 
 </div>
 </div>
@@ -505,7 +505,7 @@ template&lt;class ELEMENT , class TIMESTEPPER &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="shock__disk_8cc_source.html#l00262">262</a> of file <a class="el" href="shock__disk_8cc_source.html">shock_disk.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shock__disk_8cc_source.html#l00258">258</a> of file <a class="el" href="shock__disk_8cc_source.html">shock_disk.cc</a>.</p>
 
 </div>
 </div>
@@ -533,7 +533,7 @@ template&lt;class ELEMENT , class TIMESTEPPER &gt; </div>
 
 <p>Pointer to solid mesh. </p>
 
-<p class="definition">Definition at line <a class="el" href="shock__disk_8cc_source.html#l00271">271</a> of file <a class="el" href="shock__disk_8cc_source.html">shock_disk.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shock__disk_8cc_source.html#l00267">267</a> of file <a class="el" href="shock__disk_8cc_source.html">shock_disk.cc</a>.</p>
 
 </div>
 </div>
@@ -561,7 +561,7 @@ template&lt;class ELEMENT , class TIMESTEPPER &gt; </div>
 
 <p>Trace file. </p>
 
-<p class="definition">Definition at line <a class="el" href="shock__disk_8cc_source.html#l00265">265</a> of file <a class="el" href="shock__disk_8cc_source.html">shock_disk.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shock__disk_8cc_source.html#l00261">261</a> of file <a class="el" href="shock__disk_8cc_source.html">shock_disk.cc</a>.</p>
 
 </div>
 </div>
@@ -589,7 +589,7 @@ template&lt;class ELEMENT , class TIMESTEPPER &gt; </div>
 
 <p>Vector of pointers to nodes whose position we're tracing. </p>
 
-<p class="definition">Definition at line <a class="el" href="shock__disk_8cc_source.html#l00268">268</a> of file <a class="el" href="shock__disk_8cc_source.html">shock_disk.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shock__disk_8cc_source.html#l00264">264</a> of file <a class="el" href="shock__disk_8cc_source.html">shock_disk.cc</a>.</p>
 
 </div>
 </div>
@@ -617,7 +617,7 @@ template&lt;class ELEMENT , class TIMESTEPPER &gt; </div>
 
 <p>Pointer to mesh of traction elements. </p>
 
-<p class="definition">Definition at line <a class="el" href="shock__disk_8cc_source.html#l00274">274</a> of file <a class="el" href="shock__disk_8cc_source.html">shock_disk.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shock__disk_8cc_source.html#l00270">270</a> of file <a class="el" href="shock__disk_8cc_source.html">shock_disk.cc</a>.</p>
 
 </div>
 </div>
@@ -652,7 +652,7 @@ template&lt;class ELEMENT , class TIMESTEPPER &gt; </div>
     <footer>
       <div class="container">
         <div class="text-muted" style="float:right;">Generated by <a href="http://www.doxygen.org/index.html">
-          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Tue Jul 6 2021 23:17:49
+          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Fri Jul 9 2021 21:09:33
         </div>
       </div>
     </footer>

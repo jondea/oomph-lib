@@ -226,7 +226,7 @@ Private Attributes</h2></td></tr>
 <div class="textblock"><p>FSI preconditioner. This extracts upper/lower triangular blocks in the 3x3 overall block matrix structure arising from the monolithic discretisation of FSI problems with algebraic node updates. Dofs are decomposed into fluid velocity, pressure and solid unknowns. NavierStokesSchurComplementPreconditioner is used as the inexact solver for the fluid block; SuperLU (in its incarnation as an "exact" preconditioner) is used for the solid block. By default we retain the fluid on solid off diagonal blocks. <br  />
  </p>
 
-<p class="definition">Definition at line <a class="el" href="fsi__preconditioners_8h_source.html#l00058">58</a> of file <a class="el" href="fsi__preconditioners_8h_source.html">fsi_preconditioners.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fsi__preconditioners_8h_source.html#l00054">54</a> of file <a class="el" href="fsi__preconditioners_8h_source.html">fsi_preconditioners.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aee06474cc9aabbde2dacb2cff1317a78"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aee06474cc9aabbde2dacb2cff1317a78">&#9670;&nbsp;</a></span>FSIPreconditioner() <span class="overload">[1/2]</span></h2>
@@ -254,9 +254,9 @@ Private Attributes</h2></td></tr>
 
 <p>Constructor: By default use block triangular form with retained fluid on solid terms. A problem pointer is required for the underlying NavierStokesSchurComplementPreconditioner. </p>
 
-<p class="definition">Definition at line <a class="el" href="fsi__preconditioners_8h_source.html#l00066">66</a> of file <a class="el" href="fsi__preconditioners_8h_source.html">fsi_preconditioners.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fsi__preconditioners_8h_source.html#l00062">62</a> of file <a class="el" href="fsi__preconditioners_8h_source.html">fsi_preconditioners.h</a>.</p>
 
-<p class="reference">References <a class="el" href="fsi__preconditioners_8h_source.html#l00260">Allow_multiple_element_type_in_navier_stokes_mesh</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00263">Allow_multiple_element_type_in_wall_mesh</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00250">Doc_time</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00233">Matrix_vector_product_0_1_pt</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00236">Matrix_vector_product_1_0_pt</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00253">Navier_stokes_mesh_pt</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00227">Navier_stokes_preconditioner_pt</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00239">Preconditioner_has_been_setup</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00247">Retain_fluid_onto_solid_terms</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00243">Retain_solid_onto_fluid_terms</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00230">Solid_preconditioner_pt</a>, and <a class="el" href="fsi__preconditioners_8h_source.html#l00256">Wall_mesh_pt</a>.</p>
+<p class="reference">References <a class="el" href="fsi__preconditioners_8h_source.html#l00256">Allow_multiple_element_type_in_navier_stokes_mesh</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00259">Allow_multiple_element_type_in_wall_mesh</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00246">Doc_time</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00229">Matrix_vector_product_0_1_pt</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00232">Matrix_vector_product_1_0_pt</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00249">Navier_stokes_mesh_pt</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00223">Navier_stokes_preconditioner_pt</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00235">Preconditioner_has_been_setup</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00243">Retain_fluid_onto_solid_terms</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00239">Retain_solid_onto_fluid_terms</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00226">Solid_preconditioner_pt</a>, and <a class="el" href="fsi__preconditioners_8h_source.html#l00252">Wall_mesh_pt</a>.</p>
 
 </div>
 </div>
@@ -285,9 +285,9 @@ Private Attributes</h2></td></tr>
 
 <p>Destructor: Clean up. </p>
 
-<p class="definition">Definition at line <a class="el" href="fsi__preconditioners_8h_source.html#l00102">102</a> of file <a class="el" href="fsi__preconditioners_8h_source.html">fsi_preconditioners.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fsi__preconditioners_8h_source.html#l00098">98</a> of file <a class="el" href="fsi__preconditioners_8h_source.html">fsi_preconditioners.h</a>.</p>
 
-<p class="reference">References <a class="el" href="fsi__preconditioners_8h_source.html#l00233">Matrix_vector_product_0_1_pt</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00236">Matrix_vector_product_1_0_pt</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00227">Navier_stokes_preconditioner_pt</a>, and <a class="el" href="fsi__preconditioners_8h_source.html#l00230">Solid_preconditioner_pt</a>.</p>
+<p class="reference">References <a class="el" href="fsi__preconditioners_8h_source.html#l00229">Matrix_vector_product_0_1_pt</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00232">Matrix_vector_product_1_0_pt</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00223">Navier_stokes_preconditioner_pt</a>, and <a class="el" href="fsi__preconditioners_8h_source.html#l00226">Solid_preconditioner_pt</a>.</p>
 
 </div>
 </div>
@@ -317,7 +317,7 @@ Private Attributes</h2></td></tr>
 
 <p>Broken copy constructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="fsi__preconditioners_8h_source.html#l00117">117</a> of file <a class="el" href="fsi__preconditioners_8h_source.html">fsi_preconditioners.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fsi__preconditioners_8h_source.html#l00113">113</a> of file <a class="el" href="fsi__preconditioners_8h_source.html">fsi_preconditioners.h</a>.</p>
 
 </div>
 </div>
@@ -347,9 +347,9 @@ Private Attributes</h2></td></tr>
 
 <p>Disable documentation of time. </p>
 
-<p class="definition">Definition at line <a class="el" href="fsi__preconditioners_8h_source.html#l00221">221</a> of file <a class="el" href="fsi__preconditioners_8h_source.html">fsi_preconditioners.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fsi__preconditioners_8h_source.html#l00217">217</a> of file <a class="el" href="fsi__preconditioners_8h_source.html">fsi_preconditioners.h</a>.</p>
 
-<p class="reference">References <a class="el" href="fsi__preconditioners_8h_source.html#l00250">Doc_time</a>.</p>
+<p class="reference">References <a class="el" href="fsi__preconditioners_8h_source.html#l00246">Doc_time</a>.</p>
 
 </div>
 </div>
@@ -378,9 +378,9 @@ Private Attributes</h2></td></tr>
 
 <p>Enable documentation of time. </p>
 
-<p class="definition">Definition at line <a class="el" href="fsi__preconditioners_8h_source.html#l00218">218</a> of file <a class="el" href="fsi__preconditioners_8h_source.html">fsi_preconditioners.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fsi__preconditioners_8h_source.html#l00214">214</a> of file <a class="el" href="fsi__preconditioners_8h_source.html">fsi_preconditioners.h</a>.</p>
 
-<p class="reference">References <a class="el" href="fsi__preconditioners_8h_source.html#l00250">Doc_time</a>.</p>
+<p class="reference">References <a class="el" href="fsi__preconditioners_8h_source.html#l00246">Doc_time</a>.</p>
 
 </div>
 </div>
@@ -409,9 +409,9 @@ Private Attributes</h2></td></tr>
 
 <p>Access function to the Navier Stokes preconditioner (inexact solver) </p>
 
-<p class="definition">Definition at line <a class="el" href="fsi__preconditioners_8h_source.html#l00212">212</a> of file <a class="el" href="fsi__preconditioners_8h_source.html">fsi_preconditioners.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fsi__preconditioners_8h_source.html#l00208">208</a> of file <a class="el" href="fsi__preconditioners_8h_source.html">fsi_preconditioners.h</a>.</p>
 
-<p class="reference">References <a class="el" href="fsi__preconditioners_8h_source.html#l00227">Navier_stokes_preconditioner_pt</a>.</p>
+<p class="reference">References <a class="el" href="fsi__preconditioners_8h_source.html#l00223">Navier_stokes_preconditioner_pt</a>.</p>
 
 </div>
 </div>
@@ -444,9 +444,9 @@ Private Attributes</h2></td></tr>
 <p>Apply preconditioner to r. </p>
 <p>Apply preconditioner to Vector r. </p>
 
-<p class="definition">Definition at line <a class="el" href="fsi__preconditioners_8h_source.html#l00385">385</a> of file <a class="el" href="fsi__preconditioners_8h_source.html">fsi_preconditioners.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fsi__preconditioners_8h_source.html#l00381">381</a> of file <a class="el" href="fsi__preconditioners_8h_source.html">fsi_preconditioners.h</a>.</p>
 
-<p class="reference">References <a class="el" href="fsi__preconditioners_8h_source.html#l00233">Matrix_vector_product_0_1_pt</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00236">Matrix_vector_product_1_0_pt</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00227">Navier_stokes_preconditioner_pt</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00247">Retain_fluid_onto_solid_terms</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00243">Retain_solid_onto_fluid_terms</a>, and <a class="el" href="fsi__preconditioners_8h_source.html#l00230">Solid_preconditioner_pt</a>.</p>
+<p class="reference">References <a class="el" href="fsi__preconditioners_8h_source.html#l00229">Matrix_vector_product_0_1_pt</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00232">Matrix_vector_product_1_0_pt</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00223">Navier_stokes_preconditioner_pt</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00243">Retain_fluid_onto_solid_terms</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00239">Retain_solid_onto_fluid_terms</a>, and <a class="el" href="fsi__preconditioners_8h_source.html#l00226">Solid_preconditioner_pt</a>.</p>
 
 </div>
 </div>
@@ -486,11 +486,11 @@ Private Attributes</h2></td></tr>
 
 <p>Setter function for the mesh containing the block-preconditionable Navier-Stokes elements. The optional argument indicates if there are more than one type of elements in same mesh. </p>
 
-<p class="definition">Definition at line <a class="el" href="fsi__preconditioners_8h_source.html#l00178">178</a> of file <a class="el" href="fsi__preconditioners_8h_source.html">fsi_preconditioners.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fsi__preconditioners_8h_source.html#l00174">174</a> of file <a class="el" href="fsi__preconditioners_8h_source.html">fsi_preconditioners.h</a>.</p>
 
-<p class="reference">References <a class="el" href="fsi__preconditioners_8h_source.html#l00260">Allow_multiple_element_type_in_navier_stokes_mesh</a>, and <a class="el" href="fsi__preconditioners_8h_source.html#l00253">Navier_stokes_mesh_pt</a>.</p>
+<p class="reference">References <a class="el" href="fsi__preconditioners_8h_source.html#l00256">Allow_multiple_element_type_in_navier_stokes_mesh</a>, and <a class="el" href="fsi__preconditioners_8h_source.html#l00249">Navier_stokes_mesh_pt</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="fsi__preconditioners_8h_source.html#l00279">setup()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="fsi__preconditioners_8h_source.html#l00275">setup()</a>.</p>
 
 </div>
 </div>
@@ -521,9 +521,9 @@ Private Attributes</h2></td></tr>
 <p>Broken assignment operator. </p>
 <p>Set solid preconditioner (deletes existing one) </p>
 
-<p class="definition">Definition at line <a class="el" href="fsi__preconditioners_8h_source.html#l00134">134</a> of file <a class="el" href="fsi__preconditioners_8h_source.html">fsi_preconditioners.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fsi__preconditioners_8h_source.html#l00130">130</a> of file <a class="el" href="fsi__preconditioners_8h_source.html">fsi_preconditioners.h</a>.</p>
 
-<p class="reference">References <a class="el" href="fsi__preconditioners_8h_source.html#l00145">solid_preconditioner_pt()</a>, and <a class="el" href="fsi__preconditioners_8h_source.html#l00230">Solid_preconditioner_pt</a>.</p>
+<p class="reference">References <a class="el" href="fsi__preconditioners_8h_source.html#l00141">solid_preconditioner_pt()</a>, and <a class="el" href="fsi__preconditioners_8h_source.html#l00226">Solid_preconditioner_pt</a>.</p>
 
 </div>
 </div>
@@ -563,9 +563,9 @@ Private Attributes</h2></td></tr>
 
 <p>Setter function for the mesh containing the block-preconditionable FSI solid elements. The optional argument indicates if there are more than one type of elements in the same mesh. </p>
 
-<p class="definition">Definition at line <a class="el" href="fsi__preconditioners_8h_source.html#l00192">192</a> of file <a class="el" href="fsi__preconditioners_8h_source.html">fsi_preconditioners.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fsi__preconditioners_8h_source.html#l00188">188</a> of file <a class="el" href="fsi__preconditioners_8h_source.html">fsi_preconditioners.h</a>.</p>
 
-<p class="reference">References <a class="el" href="fsi__preconditioners_8h_source.html#l00263">Allow_multiple_element_type_in_wall_mesh</a>, and <a class="el" href="fsi__preconditioners_8h_source.html#l00256">Wall_mesh_pt</a>.</p>
+<p class="reference">References <a class="el" href="fsi__preconditioners_8h_source.html#l00259">Allow_multiple_element_type_in_wall_mesh</a>, and <a class="el" href="fsi__preconditioners_8h_source.html#l00252">Wall_mesh_pt</a>.</p>
 
 </div>
 </div>
@@ -587,9 +587,9 @@ Private Attributes</h2></td></tr>
 <p>Setup the preconditioner. </p>
 <p>Setup the preconditioner. Note: Matrix must be a CRDoubleMatrix. </p>
 
-<p class="definition">Definition at line <a class="el" href="fsi__preconditioners_8h_source.html#l00279">279</a> of file <a class="el" href="fsi__preconditioners_8h_source.html">fsi_preconditioners.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fsi__preconditioners_8h_source.html#l00275">275</a> of file <a class="el" href="fsi__preconditioners_8h_source.html">fsi_preconditioners.h</a>.</p>
 
-<p class="reference">References <a class="el" href="fsi__preconditioners_8h_source.html#l00260">Allow_multiple_element_type_in_navier_stokes_mesh</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00263">Allow_multiple_element_type_in_wall_mesh</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00250">Doc_time</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00233">Matrix_vector_product_0_1_pt</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00236">Matrix_vector_product_1_0_pt</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00253">Navier_stokes_mesh_pt</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00227">Navier_stokes_preconditioner_pt</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00239">Preconditioner_has_been_setup</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00247">Retain_fluid_onto_solid_terms</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00243">Retain_solid_onto_fluid_terms</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00178">set_navier_stokes_mesh()</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00230">Solid_preconditioner_pt</a>, and <a class="el" href="fsi__preconditioners_8h_source.html#l00256">Wall_mesh_pt</a>.</p>
+<p class="reference">References <a class="el" href="fsi__preconditioners_8h_source.html#l00256">Allow_multiple_element_type_in_navier_stokes_mesh</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00259">Allow_multiple_element_type_in_wall_mesh</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00246">Doc_time</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00229">Matrix_vector_product_0_1_pt</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00232">Matrix_vector_product_1_0_pt</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00249">Navier_stokes_mesh_pt</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00223">Navier_stokes_preconditioner_pt</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00235">Preconditioner_has_been_setup</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00243">Retain_fluid_onto_solid_terms</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00239">Retain_solid_onto_fluid_terms</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00174">set_navier_stokes_mesh()</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00226">Solid_preconditioner_pt</a>, and <a class="el" href="fsi__preconditioners_8h_source.html#l00252">Wall_mesh_pt</a>.</p>
 
 </div>
 </div>
@@ -618,11 +618,11 @@ Private Attributes</h2></td></tr>
 
 <p>Read-only access to solid preconditoner (use set_... to set it) </p>
 
-<p class="definition">Definition at line <a class="el" href="fsi__preconditioners_8h_source.html#l00145">145</a> of file <a class="el" href="fsi__preconditioners_8h_source.html">fsi_preconditioners.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fsi__preconditioners_8h_source.html#l00141">141</a> of file <a class="el" href="fsi__preconditioners_8h_source.html">fsi_preconditioners.h</a>.</p>
 
-<p class="reference">References <a class="el" href="fsi__preconditioners_8h_source.html#l00230">Solid_preconditioner_pt</a>.</p>
+<p class="reference">References <a class="el" href="fsi__preconditioners_8h_source.html#l00226">Solid_preconditioner_pt</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="fsi__preconditioners_8h_source.html#l00134">set_solid_preconditioner_pt()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="fsi__preconditioners_8h_source.html#l00130">set_solid_preconditioner_pt()</a>.</p>
 
 </div>
 </div>
@@ -651,9 +651,9 @@ Private Attributes</h2></td></tr>
 
 <p>Switch to block-diagonal preconditioner. </p>
 
-<p class="definition">Definition at line <a class="el" href="fsi__preconditioners_8h_source.html#l00152">152</a> of file <a class="el" href="fsi__preconditioners_8h_source.html">fsi_preconditioners.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fsi__preconditioners_8h_source.html#l00148">148</a> of file <a class="el" href="fsi__preconditioners_8h_source.html">fsi_preconditioners.h</a>.</p>
 
-<p class="reference">References <a class="el" href="fsi__preconditioners_8h_source.html#l00247">Retain_fluid_onto_solid_terms</a>, and <a class="el" href="fsi__preconditioners_8h_source.html#l00243">Retain_solid_onto_fluid_terms</a>.</p>
+<p class="reference">References <a class="el" href="fsi__preconditioners_8h_source.html#l00243">Retain_fluid_onto_solid_terms</a>, and <a class="el" href="fsi__preconditioners_8h_source.html#l00239">Retain_solid_onto_fluid_terms</a>.</p>
 
 </div>
 </div>
@@ -682,9 +682,9 @@ Private Attributes</h2></td></tr>
 
 <p>Switch to block-triangular preconditioner in which action of fluid dofs onto solid equations is retained. </p>
 
-<p class="definition">Definition at line <a class="el" href="fsi__preconditioners_8h_source.html#l00160">160</a> of file <a class="el" href="fsi__preconditioners_8h_source.html">fsi_preconditioners.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fsi__preconditioners_8h_source.html#l00156">156</a> of file <a class="el" href="fsi__preconditioners_8h_source.html">fsi_preconditioners.h</a>.</p>
 
-<p class="reference">References <a class="el" href="fsi__preconditioners_8h_source.html#l00247">Retain_fluid_onto_solid_terms</a>, and <a class="el" href="fsi__preconditioners_8h_source.html#l00243">Retain_solid_onto_fluid_terms</a>.</p>
+<p class="reference">References <a class="el" href="fsi__preconditioners_8h_source.html#l00243">Retain_fluid_onto_solid_terms</a>, and <a class="el" href="fsi__preconditioners_8h_source.html#l00239">Retain_solid_onto_fluid_terms</a>.</p>
 
 </div>
 </div>
@@ -713,9 +713,9 @@ Private Attributes</h2></td></tr>
 
 <p>Switch to block-triangular preconditioner in which action of solid dofs onto fluid equations is retained. </p>
 
-<p class="definition">Definition at line <a class="el" href="fsi__preconditioners_8h_source.html#l00168">168</a> of file <a class="el" href="fsi__preconditioners_8h_source.html">fsi_preconditioners.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fsi__preconditioners_8h_source.html#l00164">164</a> of file <a class="el" href="fsi__preconditioners_8h_source.html">fsi_preconditioners.h</a>.</p>
 
-<p class="reference">References <a class="el" href="fsi__preconditioners_8h_source.html#l00247">Retain_fluid_onto_solid_terms</a>, and <a class="el" href="fsi__preconditioners_8h_source.html#l00243">Retain_solid_onto_fluid_terms</a>.</p>
+<p class="reference">References <a class="el" href="fsi__preconditioners_8h_source.html#l00243">Retain_fluid_onto_solid_terms</a>, and <a class="el" href="fsi__preconditioners_8h_source.html#l00239">Retain_solid_onto_fluid_terms</a>.</p>
 
 </div>
 </div>
@@ -741,9 +741,9 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Flag to indicate if there are multiple element types in the Navier-Stokes mesh. </p>
 
-<p class="definition">Definition at line <a class="el" href="fsi__preconditioners_8h_source.html#l00260">260</a> of file <a class="el" href="fsi__preconditioners_8h_source.html">fsi_preconditioners.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fsi__preconditioners_8h_source.html#l00256">256</a> of file <a class="el" href="fsi__preconditioners_8h_source.html">fsi_preconditioners.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="fsi__preconditioners_8h_source.html#l00066">FSIPreconditioner()</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00178">set_navier_stokes_mesh()</a>, and <a class="el" href="fsi__preconditioners_8h_source.html#l00279">setup()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="fsi__preconditioners_8h_source.html#l00062">FSIPreconditioner()</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00174">set_navier_stokes_mesh()</a>, and <a class="el" href="fsi__preconditioners_8h_source.html#l00275">setup()</a>.</p>
 
 </div>
 </div>
@@ -767,9 +767,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fsi__preconditioners_8h_source.html#l00263">263</a> of file <a class="el" href="fsi__preconditioners_8h_source.html">fsi_preconditioners.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fsi__preconditioners_8h_source.html#l00259">259</a> of file <a class="el" href="fsi__preconditioners_8h_source.html">fsi_preconditioners.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="fsi__preconditioners_8h_source.html#l00066">FSIPreconditioner()</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00192">set_wall_mesh()</a>, and <a class="el" href="fsi__preconditioners_8h_source.html#l00279">setup()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="fsi__preconditioners_8h_source.html#l00062">FSIPreconditioner()</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00188">set_wall_mesh()</a>, and <a class="el" href="fsi__preconditioners_8h_source.html#l00275">setup()</a>.</p>
 
 </div>
 </div>
@@ -795,9 +795,9 @@ Private Attributes</h2></td></tr>
 
 <p>Set Doc_time to true for outputting results of timings. </p>
 
-<p class="definition">Definition at line <a class="el" href="fsi__preconditioners_8h_source.html#l00250">250</a> of file <a class="el" href="fsi__preconditioners_8h_source.html">fsi_preconditioners.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fsi__preconditioners_8h_source.html#l00246">246</a> of file <a class="el" href="fsi__preconditioners_8h_source.html">fsi_preconditioners.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="fsi__preconditioners_8h_source.html#l00221">disable_doc_time()</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00218">enable_doc_time()</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00066">FSIPreconditioner()</a>, and <a class="el" href="fsi__preconditioners_8h_source.html#l00279">setup()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="fsi__preconditioners_8h_source.html#l00217">disable_doc_time()</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00214">enable_doc_time()</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00062">FSIPreconditioner()</a>, and <a class="el" href="fsi__preconditioners_8h_source.html#l00275">setup()</a>.</p>
 
 </div>
 </div>
@@ -823,9 +823,9 @@ Private Attributes</h2></td></tr>
 
 <p>Pointer to fluid/solid interaction matrix. </p>
 
-<p class="definition">Definition at line <a class="el" href="fsi__preconditioners_8h_source.html#l00233">233</a> of file <a class="el" href="fsi__preconditioners_8h_source.html">fsi_preconditioners.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fsi__preconditioners_8h_source.html#l00229">229</a> of file <a class="el" href="fsi__preconditioners_8h_source.html">fsi_preconditioners.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="fsi__preconditioners_8h_source.html#l00066">FSIPreconditioner()</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00385">preconditioner_solve()</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00279">setup()</a>, and <a class="el" href="fsi__preconditioners_8h_source.html#l00102">~FSIPreconditioner()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="fsi__preconditioners_8h_source.html#l00062">FSIPreconditioner()</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00381">preconditioner_solve()</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00275">setup()</a>, and <a class="el" href="fsi__preconditioners_8h_source.html#l00098">~FSIPreconditioner()</a>.</p>
 
 </div>
 </div>
@@ -851,9 +851,9 @@ Private Attributes</h2></td></tr>
 
 <p>Pointer to solid/fluid solid interaction matrix. </p>
 
-<p class="definition">Definition at line <a class="el" href="fsi__preconditioners_8h_source.html#l00236">236</a> of file <a class="el" href="fsi__preconditioners_8h_source.html">fsi_preconditioners.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fsi__preconditioners_8h_source.html#l00232">232</a> of file <a class="el" href="fsi__preconditioners_8h_source.html">fsi_preconditioners.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="fsi__preconditioners_8h_source.html#l00066">FSIPreconditioner()</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00385">preconditioner_solve()</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00279">setup()</a>, and <a class="el" href="fsi__preconditioners_8h_source.html#l00102">~FSIPreconditioner()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="fsi__preconditioners_8h_source.html#l00062">FSIPreconditioner()</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00381">preconditioner_solve()</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00275">setup()</a>, and <a class="el" href="fsi__preconditioners_8h_source.html#l00098">~FSIPreconditioner()</a>.</p>
 
 </div>
 </div>
@@ -879,9 +879,9 @@ Private Attributes</h2></td></tr>
 
 <p>Pointer to the navier stokes mesh. </p>
 
-<p class="definition">Definition at line <a class="el" href="fsi__preconditioners_8h_source.html#l00253">253</a> of file <a class="el" href="fsi__preconditioners_8h_source.html">fsi_preconditioners.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fsi__preconditioners_8h_source.html#l00249">249</a> of file <a class="el" href="fsi__preconditioners_8h_source.html">fsi_preconditioners.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="fsi__preconditioners_8h_source.html#l00066">FSIPreconditioner()</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00178">set_navier_stokes_mesh()</a>, and <a class="el" href="fsi__preconditioners_8h_source.html#l00279">setup()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="fsi__preconditioners_8h_source.html#l00062">FSIPreconditioner()</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00174">set_navier_stokes_mesh()</a>, and <a class="el" href="fsi__preconditioners_8h_source.html#l00275">setup()</a>.</p>
 
 </div>
 </div>
@@ -907,9 +907,9 @@ Private Attributes</h2></td></tr>
 
 <p>Pointer the Navier Stokes preconditioner (inexact solver) </p>
 
-<p class="definition">Definition at line <a class="el" href="fsi__preconditioners_8h_source.html#l00227">227</a> of file <a class="el" href="fsi__preconditioners_8h_source.html">fsi_preconditioners.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fsi__preconditioners_8h_source.html#l00223">223</a> of file <a class="el" href="fsi__preconditioners_8h_source.html">fsi_preconditioners.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="fsi__preconditioners_8h_source.html#l00066">FSIPreconditioner()</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00212">navier_stokes_preconditioner_pt()</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00385">preconditioner_solve()</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00279">setup()</a>, and <a class="el" href="fsi__preconditioners_8h_source.html#l00102">~FSIPreconditioner()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="fsi__preconditioners_8h_source.html#l00062">FSIPreconditioner()</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00208">navier_stokes_preconditioner_pt()</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00381">preconditioner_solve()</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00275">setup()</a>, and <a class="el" href="fsi__preconditioners_8h_source.html#l00098">~FSIPreconditioner()</a>.</p>
 
 </div>
 </div>
@@ -935,9 +935,9 @@ Private Attributes</h2></td></tr>
 
 <p>Boolean indicating the preconditioner has been set up. </p>
 
-<p class="definition">Definition at line <a class="el" href="fsi__preconditioners_8h_source.html#l00239">239</a> of file <a class="el" href="fsi__preconditioners_8h_source.html">fsi_preconditioners.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fsi__preconditioners_8h_source.html#l00235">235</a> of file <a class="el" href="fsi__preconditioners_8h_source.html">fsi_preconditioners.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="fsi__preconditioners_8h_source.html#l00066">FSIPreconditioner()</a>, and <a class="el" href="fsi__preconditioners_8h_source.html#l00279">setup()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="fsi__preconditioners_8h_source.html#l00062">FSIPreconditioner()</a>, and <a class="el" href="fsi__preconditioners_8h_source.html#l00275">setup()</a>.</p>
 
 </div>
 </div>
@@ -963,9 +963,9 @@ Private Attributes</h2></td></tr>
 
 <p>Boolean flag used to indicate that the fluid onto solid interaction terms are to be retained. </p>
 
-<p class="definition">Definition at line <a class="el" href="fsi__preconditioners_8h_source.html#l00247">247</a> of file <a class="el" href="fsi__preconditioners_8h_source.html">fsi_preconditioners.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fsi__preconditioners_8h_source.html#l00243">243</a> of file <a class="el" href="fsi__preconditioners_8h_source.html">fsi_preconditioners.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="fsi__preconditioners_8h_source.html#l00066">FSIPreconditioner()</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00385">preconditioner_solve()</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00279">setup()</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00152">use_block_diagonal_version()</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00160">use_block_triangular_version_with_fluid_on_solid()</a>, and <a class="el" href="fsi__preconditioners_8h_source.html#l00168">use_block_triangular_version_with_solid_on_fluid()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="fsi__preconditioners_8h_source.html#l00062">FSIPreconditioner()</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00381">preconditioner_solve()</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00275">setup()</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00148">use_block_diagonal_version()</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00156">use_block_triangular_version_with_fluid_on_solid()</a>, and <a class="el" href="fsi__preconditioners_8h_source.html#l00164">use_block_triangular_version_with_solid_on_fluid()</a>.</p>
 
 </div>
 </div>
@@ -991,9 +991,9 @@ Private Attributes</h2></td></tr>
 
 <p>Boolean flag used to indicate that the solid onto fluid interaction terms are to be retained. </p>
 
-<p class="definition">Definition at line <a class="el" href="fsi__preconditioners_8h_source.html#l00243">243</a> of file <a class="el" href="fsi__preconditioners_8h_source.html">fsi_preconditioners.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fsi__preconditioners_8h_source.html#l00239">239</a> of file <a class="el" href="fsi__preconditioners_8h_source.html">fsi_preconditioners.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="fsi__preconditioners_8h_source.html#l00066">FSIPreconditioner()</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00385">preconditioner_solve()</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00279">setup()</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00152">use_block_diagonal_version()</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00160">use_block_triangular_version_with_fluid_on_solid()</a>, and <a class="el" href="fsi__preconditioners_8h_source.html#l00168">use_block_triangular_version_with_solid_on_fluid()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="fsi__preconditioners_8h_source.html#l00062">FSIPreconditioner()</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00381">preconditioner_solve()</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00275">setup()</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00148">use_block_diagonal_version()</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00156">use_block_triangular_version_with_fluid_on_solid()</a>, and <a class="el" href="fsi__preconditioners_8h_source.html#l00164">use_block_triangular_version_with_solid_on_fluid()</a>.</p>
 
 </div>
 </div>
@@ -1019,9 +1019,9 @@ Private Attributes</h2></td></tr>
 
 <p>Pointer to the solid preconditioner (inexact solver) </p>
 
-<p class="definition">Definition at line <a class="el" href="fsi__preconditioners_8h_source.html#l00230">230</a> of file <a class="el" href="fsi__preconditioners_8h_source.html">fsi_preconditioners.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fsi__preconditioners_8h_source.html#l00226">226</a> of file <a class="el" href="fsi__preconditioners_8h_source.html">fsi_preconditioners.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="fsi__preconditioners_8h_source.html#l00066">FSIPreconditioner()</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00385">preconditioner_solve()</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00134">set_solid_preconditioner_pt()</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00279">setup()</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00145">solid_preconditioner_pt()</a>, and <a class="el" href="fsi__preconditioners_8h_source.html#l00102">~FSIPreconditioner()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="fsi__preconditioners_8h_source.html#l00062">FSIPreconditioner()</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00381">preconditioner_solve()</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00130">set_solid_preconditioner_pt()</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00275">setup()</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00141">solid_preconditioner_pt()</a>, and <a class="el" href="fsi__preconditioners_8h_source.html#l00098">~FSIPreconditioner()</a>.</p>
 
 </div>
 </div>
@@ -1047,9 +1047,9 @@ Private Attributes</h2></td></tr>
 
 <p>pointer to the solid mesh </p>
 
-<p class="definition">Definition at line <a class="el" href="fsi__preconditioners_8h_source.html#l00256">256</a> of file <a class="el" href="fsi__preconditioners_8h_source.html">fsi_preconditioners.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fsi__preconditioners_8h_source.html#l00252">252</a> of file <a class="el" href="fsi__preconditioners_8h_source.html">fsi_preconditioners.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="fsi__preconditioners_8h_source.html#l00066">FSIPreconditioner()</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00192">set_wall_mesh()</a>, and <a class="el" href="fsi__preconditioners_8h_source.html#l00279">setup()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="fsi__preconditioners_8h_source.html#l00062">FSIPreconditioner()</a>, <a class="el" href="fsi__preconditioners_8h_source.html#l00188">set_wall_mesh()</a>, and <a class="el" href="fsi__preconditioners_8h_source.html#l00275">setup()</a>.</p>
 
 </div>
 </div>
@@ -1084,7 +1084,7 @@ Private Attributes</h2></td></tr>
     <footer>
       <div class="container">
         <div class="text-muted" style="float:right;">Generated by <a href="http://www.doxygen.org/index.html">
-          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Tue Jul 6 2021 23:25:22
+          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Fri Jul 9 2021 21:15:46
         </div>
       </div>
     </footer>

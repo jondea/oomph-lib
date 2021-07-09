@@ -211,7 +211,7 @@ class SimpleShearProblem&lt; ELEMENT &gt;</h3>
 
 <p>Boundary-driven elastic deformation of fish-shaped domain. </p>
 
-<p class="definition">Definition at line <a class="el" href="refineable__simple__shear_8cc_source.html#l00141">141</a> of file <a class="el" href="refineable__simple__shear_8cc_source.html">refineable_simple_shear.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="refineable__simple__shear_8cc_source.html#l00137">137</a> of file <a class="el" href="refineable__simple__shear_8cc_source.html">refineable_simple_shear.cc</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ada0881781b3332f88362528be39613d2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ada0881781b3332f88362528be39613d2">&#9670;&nbsp;</a></span>SimpleShearProblem() <span class="overload">[1/2]</span></h2>
@@ -233,9 +233,9 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Constructor: </p>
 
-<p class="definition">Definition at line <a class="el" href="refineable__simple__shear_8cc_source.html#l00244">244</a> of file <a class="el" href="refineable__simple__shear_8cc_source.html">refineable_simple_shear.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="refineable__simple__shear_8cc_source.html#l00240">240</a> of file <a class="el" href="refineable__simple__shear_8cc_source.html">refineable_simple_shear.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="refineable__simple__shear_8cc_source.html#l00105">Global_Physical_Variables::Constitutive_law_pt</a>, <a class="el" href="refineable__simple__shear_8cc_source.html#l00156">SimpleShearProblem&lt; ELEMENT &gt;::mesh_pt()</a>, <a class="el" href="refineable__simple__shear_8cc_source.html#l00383">SimpleShearProblem&lt; ELEMENT &gt;::set_incompressible()</a>, and <a class="el" href="refineable__simple__shear_8cc_source.html#l00166">SimpleShearProblem&lt; ELEMENT &gt;::setup_boundary_conditions()</a>.</p>
+<p class="reference">References <a class="el" href="refineable__simple__shear_8cc_source.html#l00101">Global_Physical_Variables::Constitutive_law_pt</a>, <a class="el" href="refineable__simple__shear_8cc_source.html#l00152">SimpleShearProblem&lt; ELEMENT &gt;::mesh_pt()</a>, <a class="el" href="refineable__simple__shear_8cc_source.html#l00379">SimpleShearProblem&lt; ELEMENT &gt;::set_incompressible()</a>, and <a class="el" href="refineable__simple__shear_8cc_source.html#l00162">SimpleShearProblem&lt; ELEMENT &gt;::setup_boundary_conditions()</a>.</p>
 
 </div>
 </div>
@@ -289,7 +289,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Need to pin the redundent solid pressures after adaptation. </p>
 
-<p class="definition">Definition at line <a class="el" href="refineable__simple__shear_8cc_source.html#l00194">194</a> of file <a class="el" href="refineable__simple__shear_8cc_source.html">refineable_simple_shear.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="refineable__simple__shear_8cc_source.html#l00190">190</a> of file <a class="el" href="refineable__simple__shear_8cc_source.html">refineable_simple_shear.cc</a>.</p>
 
 </div>
 </div>
@@ -320,7 +320,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Update function (empty) </p>
 
-<p class="definition">Definition at line <a class="el" href="simple__shear_8cc_source.html#l00154">154</a> of file <a class="el" href="simple__shear_8cc_source.html">simple_shear.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simple__shear_8cc_source.html#l00150">150</a> of file <a class="el" href="simple__shear_8cc_source.html">simple_shear.cc</a>.</p>
 
 </div>
 </div>
@@ -351,7 +351,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Update function (empty) </p>
 
-<p class="definition">Definition at line <a class="el" href="refineable__simple__shear_8cc_source.html#l00164">164</a> of file <a class="el" href="refineable__simple__shear_8cc_source.html">refineable_simple_shear.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="refineable__simple__shear_8cc_source.html#l00160">160</a> of file <a class="el" href="refineable__simple__shear_8cc_source.html">refineable_simple_shear.cc</a>.</p>
 
 </div>
 </div>
@@ -383,7 +383,7 @@ template&lt;class ELEMENT &gt; </div>
 <p>Update before solve: We're dealing with a static problem so the nodal positions before the next solve merely serve as initial conditions. For meshes that are very strongly refined near the boundary, the update of the displacement boundary conditions (which only moves the SolidNodes <em>on</em> the boundary), can lead to strongly distorted meshes. This can cause the Newton method to fail --&gt; the overall method is actually more robust if we use the nodal positions as determined by the Domain/MacroElement- based mesh update as initial guesses. <br  />
  </p>
 
-<p class="definition">Definition at line <a class="el" href="simple__shear_8cc_source.html#l00165">165</a> of file <a class="el" href="simple__shear_8cc_source.html">simple_shear.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simple__shear_8cc_source.html#l00161">161</a> of file <a class="el" href="simple__shear_8cc_source.html">simple_shear.cc</a>.</p>
 
 </div>
 </div>
@@ -415,7 +415,7 @@ template&lt;class ELEMENT &gt; </div>
 <p>Update before solve: We're dealing with a static problem so the nodal positions before the next solve merely serve as initial conditions. For meshes that are very strongly refined near the boundary, the update of the displacement boundary conditions (which only moves the SolidNodes <em>on</em> the boundary), can lead to strongly distorted meshes. This can cause the Newton method to fail --&gt; the overall method is actually more robust if we use the nodal positions as determined by the Domain/MacroElement- based mesh update as initial guesses. <br  />
  </p>
 
-<p class="definition">Definition at line <a class="el" href="refineable__simple__shear_8cc_source.html#l00216">216</a> of file <a class="el" href="refineable__simple__shear_8cc_source.html">refineable_simple_shear.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="refineable__simple__shear_8cc_source.html#l00212">212</a> of file <a class="el" href="refineable__simple__shear_8cc_source.html">refineable_simple_shear.cc</a>.</p>
 
 </div>
 </div>
@@ -446,7 +446,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Shear the top. </p>
 
-<p class="definition">Definition at line <a class="el" href="simple__shear_8cc_source.html#l00173">173</a> of file <a class="el" href="simple__shear_8cc_source.html">simple_shear.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simple__shear_8cc_source.html#l00169">169</a> of file <a class="el" href="simple__shear_8cc_source.html">simple_shear.cc</a>.</p>
 
 </div>
 </div>
@@ -477,7 +477,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Shear the top. </p>
 
-<p class="definition">Definition at line <a class="el" href="refineable__simple__shear_8cc_source.html#l00224">224</a> of file <a class="el" href="refineable__simple__shear_8cc_source.html">refineable_simple_shear.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="refineable__simple__shear_8cc_source.html#l00220">220</a> of file <a class="el" href="refineable__simple__shear_8cc_source.html">refineable_simple_shear.cc</a>.</p>
 
 </div>
 </div>
@@ -523,7 +523,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Doc the solution. </p>
 
-<p class="definition">Definition at line <a class="el" href="refineable__simple__shear_8cc_source.html#l00285">285</a> of file <a class="el" href="refineable__simple__shear_8cc_source.html">refineable_simple_shear.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="refineable__simple__shear_8cc_source.html#l00281">281</a> of file <a class="el" href="refineable__simple__shear_8cc_source.html">refineable_simple_shear.cc</a>.</p>
 
 </div>
 </div>
@@ -554,7 +554,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Access function for the mesh. </p>
 
-<p class="definition">Definition at line <a class="el" href="simple__shear_8cc_source.html#l00147">147</a> of file <a class="el" href="simple__shear_8cc_source.html">simple_shear.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simple__shear_8cc_source.html#l00143">143</a> of file <a class="el" href="simple__shear_8cc_source.html">simple_shear.cc</a>.</p>
 
 </div>
 </div>
@@ -585,9 +585,9 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Access function for the mesh. </p>
 
-<p class="definition">Definition at line <a class="el" href="refineable__simple__shear_8cc_source.html#l00156">156</a> of file <a class="el" href="refineable__simple__shear_8cc_source.html">refineable_simple_shear.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="refineable__simple__shear_8cc_source.html#l00152">152</a> of file <a class="el" href="refineable__simple__shear_8cc_source.html">refineable_simple_shear.cc</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="refineable__simple__shear_8cc_source.html#l00244">SimpleShearProblem&lt; ELEMENT &gt;::SimpleShearProblem()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="refineable__simple__shear_8cc_source.html#l00240">SimpleShearProblem&lt; ELEMENT &gt;::SimpleShearProblem()</a>.</p>
 
 </div>
 </div>
@@ -634,11 +634,11 @@ template&lt;class ELEMENT &gt; </div>
 <p>Run simulation. </p>
 <p>Run the problem. </p>
 
-<p class="definition">Definition at line <a class="el" href="refineable__simple__shear_8cc_source.html#l00339">339</a> of file <a class="el" href="refineable__simple__shear_8cc_source.html">refineable_simple_shear.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="refineable__simple__shear_8cc_source.html#l00335">335</a> of file <a class="el" href="refineable__simple__shear_8cc_source.html">refineable_simple_shear.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="refineable__simple__shear_8cc_source.html#l00117">Global_Physical_Variables::Gravity</a>.</p>
+<p class="reference">References <a class="el" href="refineable__simple__shear_8cc_source.html#l00113">Global_Physical_Variables::Gravity</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="refineable__simple__shear_8cc_source.html#l00411">main()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="refineable__simple__shear_8cc_source.html#l00407">main()</a>.</p>
 
 </div>
 </div>
@@ -716,9 +716,9 @@ template&lt;class ELEMENT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="refineable__simple__shear_8cc_source.html#l00383">383</a> of file <a class="el" href="refineable__simple__shear_8cc_source.html">refineable_simple_shear.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="refineable__simple__shear_8cc_source.html#l00379">379</a> of file <a class="el" href="refineable__simple__shear_8cc_source.html">refineable_simple_shear.cc</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="refineable__simple__shear_8cc_source.html#l00391">SimpleShearProblem&lt; ELEMENT &gt;::set_incompressible()</a>, and <a class="el" href="refineable__simple__shear_8cc_source.html#l00244">SimpleShearProblem&lt; ELEMENT &gt;::SimpleShearProblem()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="refineable__simple__shear_8cc_source.html#l00387">SimpleShearProblem&lt; ELEMENT &gt;::set_incompressible()</a>, and <a class="el" href="refineable__simple__shear_8cc_source.html#l00240">SimpleShearProblem&lt; ELEMENT &gt;::SimpleShearProblem()</a>.</p>
 
 </div>
 </div>
@@ -756,7 +756,7 @@ template&lt;class ELEMENT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="simple__shear_8cc_source.html#l00341">341</a> of file <a class="el" href="simple__shear_8cc_source.html">simple_shear.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simple__shear_8cc_source.html#l00337">337</a> of file <a class="el" href="simple__shear_8cc_source.html">simple_shear.cc</a>.</p>
 
 </div>
 </div>
@@ -794,9 +794,9 @@ template&lt;class ELEMENT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="simple__shear_8cc_source.html#l00358">358</a> of file <a class="el" href="simple__shear_8cc_source.html">simple_shear.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simple__shear_8cc_source.html#l00354">354</a> of file <a class="el" href="simple__shear_8cc_source.html">simple_shear.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="refineable__simple__shear_8cc_source.html#l00383">SimpleShearProblem&lt; ELEMENT &gt;::set_incompressible()</a>.</p>
+<p class="reference">References <a class="el" href="refineable__simple__shear_8cc_source.html#l00379">SimpleShearProblem&lt; ELEMENT &gt;::set_incompressible()</a>.</p>
 
 </div>
 </div>
@@ -834,9 +834,9 @@ template&lt;class ELEMENT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="refineable__simple__shear_8cc_source.html#l00400">400</a> of file <a class="el" href="refineable__simple__shear_8cc_source.html">refineable_simple_shear.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="refineable__simple__shear_8cc_source.html#l00396">396</a> of file <a class="el" href="refineable__simple__shear_8cc_source.html">refineable_simple_shear.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="refineable__simple__shear_8cc_source.html#l00383">SimpleShearProblem&lt; ELEMENT &gt;::set_incompressible()</a>.</p>
+<p class="reference">References <a class="el" href="refineable__simple__shear_8cc_source.html#l00379">SimpleShearProblem&lt; ELEMENT &gt;::set_incompressible()</a>.</p>
 
 </div>
 </div>
@@ -874,9 +874,9 @@ template&lt;class ELEMENT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="simple__shear_8cc_source.html#l00349">349</a> of file <a class="el" href="simple__shear_8cc_source.html">simple_shear.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simple__shear_8cc_source.html#l00345">345</a> of file <a class="el" href="simple__shear_8cc_source.html">simple_shear.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="refineable__simple__shear_8cc_source.html#l00383">SimpleShearProblem&lt; ELEMENT &gt;::set_incompressible()</a>.</p>
+<p class="reference">References <a class="el" href="refineable__simple__shear_8cc_source.html#l00379">SimpleShearProblem&lt; ELEMENT &gt;::set_incompressible()</a>.</p>
 
 </div>
 </div>
@@ -914,9 +914,9 @@ template&lt;class ELEMENT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="refineable__simple__shear_8cc_source.html#l00391">391</a> of file <a class="el" href="refineable__simple__shear_8cc_source.html">refineable_simple_shear.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="refineable__simple__shear_8cc_source.html#l00387">387</a> of file <a class="el" href="refineable__simple__shear_8cc_source.html">refineable_simple_shear.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="refineable__simple__shear_8cc_source.html#l00383">SimpleShearProblem&lt; ELEMENT &gt;::set_incompressible()</a>.</p>
+<p class="reference">References <a class="el" href="refineable__simple__shear_8cc_source.html#l00379">SimpleShearProblem&lt; ELEMENT &gt;::set_incompressible()</a>.</p>
 
 </div>
 </div>
@@ -945,9 +945,9 @@ template&lt;class ELEMENT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="refineable__simple__shear_8cc_source.html#l00166">166</a> of file <a class="el" href="refineable__simple__shear_8cc_source.html">refineable_simple_shear.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="refineable__simple__shear_8cc_source.html#l00162">162</a> of file <a class="el" href="refineable__simple__shear_8cc_source.html">refineable_simple_shear.cc</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="refineable__simple__shear_8cc_source.html#l00244">SimpleShearProblem&lt; ELEMENT &gt;::SimpleShearProblem()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="refineable__simple__shear_8cc_source.html#l00240">SimpleShearProblem&lt; ELEMENT &gt;::SimpleShearProblem()</a>.</p>
 
 </div>
 </div>
@@ -974,7 +974,7 @@ template&lt;class ELEMENT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="refineable__simple__shear_8cc_source.html#l00143">143</a> of file <a class="el" href="refineable__simple__shear_8cc_source.html">refineable_simple_shear.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="refineable__simple__shear_8cc_source.html#l00139">139</a> of file <a class="el" href="refineable__simple__shear_8cc_source.html">refineable_simple_shear.cc</a>.</p>
 
 </div>
 </div>
@@ -1010,7 +1010,7 @@ template&lt;class ELEMENT &gt; </div>
     <footer>
       <div class="container">
         <div class="text-muted" style="float:right;">Generated by <a href="http://www.doxygen.org/index.html">
-          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Tue Jul 6 2021 23:18:57
+          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Fri Jul 9 2021 21:10:33
         </div>
       </div>
     </footer>

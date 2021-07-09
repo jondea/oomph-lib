@@ -740,7 +740,7 @@ Additional Inherited Members</h2></td></tr>
 <p>For general usage, an underlying geometric object must passed to the constructor and the position will be determined by applying rigid body motions to the underlying object based on the initial_centre_of_mass and initial_phi (angle), which default to zero. If these defaults are not suitable, the values must be set externally. In addition a mass and moment of inertia should also be set externally.</p>
 <p>If added to a mesh in the <a class="el" href="classoomph_1_1Problem.html" title="The Problem class.">Problem</a> (in its incarnation as a <a class="el" href="classoomph_1_1GeneralisedElement.html" title="A Generalised Element class.">GeneralisedElement</a>) the displacement/rotation of the body is computed in response to (i) user-specifiable applied forces and a torque and (ii) the net drag (and associated torque) from a mesh of elements that can exert a drag onto the body (typically Navier-Stokes FaceElements that apply a viscous drag to an immersed body, represented by the body.) </p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00101">101</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00097">97</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a7a43bfd54213becfb135b594720b0539"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7a43bfd54213becfb135b594720b0539">&#9670;&nbsp;</a></span>ExternalForceFctPt</h2>
@@ -756,7 +756,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Function pointer to function that specifies external force. </p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00108">108</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00104">104</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
 
 </div>
 </div>
@@ -774,7 +774,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Function pointer to function that specifies external torque. </p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00113">113</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00109">109</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
 
 </div>
 </div>
@@ -815,9 +815,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Default constructor that intialises everything to zero. This is expected to be called only from derived clases such as the <a class="el" href="classoomph_1_1ImmersedRigidBodyTriangleMeshPolygon.html">ImmersedRigidBodyTriangleMeshPolygon</a> that can provided their own <a class="el" href="classoomph_1_1ImmersedRigidBodyElement.html#a14f5acb186ecd1168dfa08dcf242c538" title="Overload the position to apply the rotation and translation.">position()</a> functions. </p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00122">122</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00118">118</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00264">initialise()</a>.</p>
+<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00260">initialise()</a>.</p>
 
 </div>
 </div>
@@ -863,9 +863,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Constructor that takes an underlying geometric object: and timestepper. </p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00142">142</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00138">138</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00264">initialise()</a>.</p>
+<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00260">initialise()</a>.</p>
 
 </div>
 </div>
@@ -894,9 +894,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Destuctor: Cleanup if required. </p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00200">200</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00196">196</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00512">Centre_displacement_data_pt</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00560">Displacement_data_is_internal</a>, and <a class="el" href="elements_8h_source.html#l00623">oomph::GeneralisedElement::internal_data_pt()</a>.</p>
+<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00508">Centre_displacement_data_pt</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00556">Displacement_data_is_internal</a>, and <a class="el" href="elements_8h_source.html#l00619">oomph::GeneralisedElement::internal_data_pt()</a>.</p>
 
 </div>
 </div>
@@ -943,11 +943,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Helper function to adjust the position in response to changes in position and angle of the solid about the centre of mass. </p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00417">417</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00413">413</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00512">Centre_displacement_data_pt</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00564">Include_geometric_rotation</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00499">Initial_centre_of_mass</a>, and <a class="el" href="nodes_8h_source.html#l00291">oomph::Data::value()</a>.</p>
+<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00508">Centre_displacement_data_pt</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00560">Include_geometric_rotation</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00495">Initial_centre_of_mass</a>, and <a class="el" href="nodes_8h_source.html#l00287">oomph::Data::value()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00178">position()</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00615">oomph::ImmersedRigidBodyTriangleMeshPolygon::position()</a>, and <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00548">oomph::ImmersedRigidBodyTriangleMeshPolygon::reset_reference_configuration()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00174">position()</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00611">oomph::ImmersedRigidBodyTriangleMeshPolygon::position()</a>, and <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00544">oomph::ImmersedRigidBodyTriangleMeshPolygon::reset_reference_configuration()</a>.</p>
 
 </div>
 </div>
@@ -976,9 +976,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Pointer to <a class="el" href="classoomph_1_1Data.html" title="A class that represents a collection of data; each Data object may contain many different individual ...">Data</a> for centre of gravity displacement. Values: 0: x-displ; 1: y-displ; 2: rotation angle. </p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00219">219</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00215">215</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00512">Centre_displacement_data_pt</a>.</p>
+<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00508">Centre_displacement_data_pt</a>.</p>
 
 </div>
 </div>
@@ -1008,11 +1008,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Return the equation number associated with the i-th centre of gravity displacment 0: x-displ; 1: y-displ; 2: rotation angle. </p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00457">457</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00453">453</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00560">Displacement_data_is_internal</a>, <a class="el" href="elements_8h_source.html#l00313">oomph::GeneralisedElement::external_local_eqn()</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00557">Index_for_centre_displacement</a>, and <a class="el" href="elements_8h_source.html#l00268">oomph::GeneralisedElement::internal_local_eqn()</a>.</p>
+<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00556">Displacement_data_is_internal</a>, <a class="el" href="elements_8h_source.html#l00309">oomph::GeneralisedElement::external_local_eqn()</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00553">Index_for_centre_displacement</a>, and <a class="el" href="elements_8h_source.html#l00264">oomph::GeneralisedElement::internal_local_eqn()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00300">get_residuals_rigid_body_generic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00296">get_residuals_rigid_body_generic()</a>.</p>
 
 </div>
 </div>
@@ -1041,9 +1041,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Get current centre of gravity. </p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00235">235</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00231">231</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00512">Centre_displacement_data_pt</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00499">Initial_centre_of_mass</a>, and <a class="el" href="nodes_8h_source.html#l00291">oomph::Data::value()</a>.</p>
+<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00508">Centre_displacement_data_pt</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00495">Initial_centre_of_mass</a>, and <a class="el" href="nodes_8h_source.html#l00287">oomph::Data::value()</a>.</p>
 
 </div>
 </div>
@@ -1072,9 +1072,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>rotation of centre of mass </p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00231">231</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00227">227</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00512">Centre_displacement_data_pt</a>, and <a class="el" href="nodes_8h_source.html#l00322">oomph::Data::value_pt()</a>.</p>
+<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00508">Centre_displacement_data_pt</a>, and <a class="el" href="nodes_8h_source.html#l00318">oomph::Data::value_pt()</a>.</p>
 
 </div>
 </div>
@@ -1103,9 +1103,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>x-displacement of centre of mass </p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00223">223</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00219">219</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00512">Centre_displacement_data_pt</a>, and <a class="el" href="nodes_8h_source.html#l00322">oomph::Data::value_pt()</a>.</p>
+<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00508">Centre_displacement_data_pt</a>, and <a class="el" href="nodes_8h_source.html#l00318">oomph::Data::value_pt()</a>.</p>
 
 </div>
 </div>
@@ -1134,9 +1134,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>y-displacement of centre of mass </p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00227">227</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00223">223</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00512">Centre_displacement_data_pt</a>, and <a class="el" href="nodes_8h_source.html#l00322">oomph::Data::value_pt()</a>.</p>
+<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00508">Centre_displacement_data_pt</a>, and <a class="el" href="nodes_8h_source.html#l00318">oomph::Data::value_pt()</a>.</p>
 
 </div>
 </div>
@@ -1165,11 +1165,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Delete the storage for the external data formed from hijacked data. </p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00482">482</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00478">478</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l00662">oomph::GeneralisedElement::external_data_pt()</a>, and <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00479">List_of_external_hijacked_data</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l00658">oomph::GeneralisedElement::external_data_pt()</a>, and <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00475">List_of_external_hijacked_data</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00363">flush_drag_mesh()</a>, and <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00205">set_drag_mesh()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00359">flush_drag_mesh()</a>, and <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00201">set_drag_mesh()</a>.</p>
 
 </div>
 </div>
@@ -1198,11 +1198,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Access function for the the density ratio. </p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00410">410</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00406">406</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00544">Density_ratio_pt</a>.</p>
+<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00540">Density_ratio_pt</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00300">get_residuals_rigid_body_generic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00296">get_residuals_rigid_body_generic()</a>.</p>
 
 </div>
 </div>
@@ -1231,9 +1231,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Access function for the pointer to the density ratio. </p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00407">407</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00403">403</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00544">Density_ratio_pt</a>.</p>
+<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00540">Density_ratio_pt</a>.</p>
 
 </div>
 </div>
@@ -1282,9 +1282,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1GeomObject.html#aa46469e491d25eda8dbe213f07152974">oomph::GeomObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00050">50</a> of file <a class="el" href="immersed__rigid__body__elements_8cc_source.html">immersed_rigid_body_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00046">46</a> of file <a class="el" href="immersed__rigid__body__elements_8cc_source.html">immersed_rigid_body_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00512">Centre_displacement_data_pt</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00517">Geom_object_pt</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00564">Include_geometric_rotation</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00499">Initial_centre_of_mass</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00178">position()</a>, <a class="el" href="classoomph_1_1GeomObject.html#a0d04c9d4667817f3ef24bb660fd56065">oomph::GeomObject::position()</a>, <a class="el" href="timesteppers_8h_source.html#l00474">oomph::TimeStepper::time_derivative()</a>, <a class="el" href="nodes_8h_source.html#l00246">oomph::Data::time_stepper_pt()</a>, and <a class="el" href="nodes_8h_source.html#l00291">oomph::Data::value()</a>.</p>
+<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00508">Centre_displacement_data_pt</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00513">Geom_object_pt</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00560">Include_geometric_rotation</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00495">Initial_centre_of_mass</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00174">position()</a>, <a class="el" href="classoomph_1_1GeomObject.html#a0d04c9d4667817f3ef24bb660fd56065">oomph::GeomObject::position()</a>, <a class="el" href="timesteppers_8h_source.html#l00470">oomph::TimeStepper::time_derivative()</a>, <a class="el" href="nodes_8h_source.html#l00242">oomph::Data::time_stepper_pt()</a>, and <a class="el" href="nodes_8h_source.html#l00287">oomph::Data::value()</a>.</p>
 
 </div>
 </div>
@@ -1313,11 +1313,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Access fct to mesh containing face elements that allow the computation of the drag on the body. </p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00356">356</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00352">352</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00529">Drag_mesh_pt</a>.</p>
+<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00525">Drag_mesh_pt</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00205">set_drag_mesh()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00201">set_drag_mesh()</a>.</p>
 
 </div>
 </div>
@@ -1346,9 +1346,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Access to function pointer to function that specifies external force. </p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00348">348</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00344">344</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00521">External_force_fct_pt</a>.</p>
+<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00517">External_force_fct_pt</a>.</p>
 
 </div>
 </div>
@@ -1377,9 +1377,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Access to function pointer to function that specifies external torque. </p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00352">352</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00348">348</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00525">External_torque_fct_pt</a>.</p>
+<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00521">External_torque_fct_pt</a>.</p>
 
 </div>
 </div>
@@ -1421,9 +1421,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1GeneralisedElement.html#a6ae09fc0d68e4309ac1b03583d252845">oomph::GeneralisedElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00283">283</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00279">279</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8cc_source.html#l01158">oomph::GeneralisedElement::fill_in_jacobian_from_external_by_fd()</a>, <a class="el" href="elements_8cc_source.html#l01064">oomph::GeneralisedElement::fill_in_jacobian_from_internal_by_fd()</a>, <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00300">get_residuals_rigid_body_generic()</a>, and <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8cc_source.html#l01154">oomph::GeneralisedElement::fill_in_jacobian_from_external_by_fd()</a>, <a class="el" href="elements_8cc_source.html#l01060">oomph::GeneralisedElement::fill_in_jacobian_from_internal_by_fd()</a>, <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00296">get_residuals_rigid_body_generic()</a>, and <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>.</p>
 
 </div>
 </div>
@@ -1455,9 +1455,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1GeneralisedElement.html#a310c97f515e8504a48179c0e72c550d7">oomph::GeneralisedElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00274">274</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00270">270</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l00228">oomph::GeneralisedElement::Dummy_matrix</a>, <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00300">get_residuals_rigid_body_generic()</a>, and <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l00224">oomph::GeneralisedElement::Dummy_matrix</a>, <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00296">get_residuals_rigid_body_generic()</a>, and <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>.</p>
 
 </div>
 </div>
@@ -1486,9 +1486,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Function to clear the drag mesh and all associated external data. </p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00363">363</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00359">359</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00482">delete_external_hijacked_data()</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00529">Drag_mesh_pt</a>, and <a class="el" href="elements_8cc_source.html#l00365">oomph::GeneralisedElement::flush_external_data()</a>.</p>
+<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00478">delete_external_hijacked_data()</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00525">Drag_mesh_pt</a>, and <a class="el" href="elements_8cc_source.html#l00361">oomph::GeneralisedElement::flush_external_data()</a>.</p>
 
 </div>
 </div>
@@ -1517,11 +1517,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Access function for gravity. </p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00385">385</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00381">381</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00532">G_pt</a>.</p>
+<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00528">G_pt</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00300">get_residuals_rigid_body_generic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00296">get_residuals_rigid_body_generic()</a>.</p>
 
 </div>
 </div>
@@ -1550,9 +1550,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Access function to the direction of gravity. </p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00382">382</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00378">378</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00532">G_pt</a>.</p>
+<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00528">G_pt</a>.</p>
 
 </div>
 </div>
@@ -1584,9 +1584,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1GeomObject.html#ae1940fc6a3050e645c3882f2f6f3a202">oomph::GeomObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00378">378</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00374">374</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00512">Centre_displacement_data_pt</a>.</p>
+<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00508">Centre_displacement_data_pt</a>.</p>
 
 </div>
 </div>
@@ -1625,11 +1625,11 @@ Additional Inherited Members</h2></td></tr>
 <p>Get force and torque from specified fct pointers and drag mesh. </p>
 <p>Obtain the external force and torque on the body from specified function pointers and also from a drag mesh, if there is one </p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00151">151</a> of file <a class="el" href="immersed__rigid__body__elements_8cc_source.html">immersed_rigid_body_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00147">147</a> of file <a class="el" href="immersed__rigid__body__elements_8cc_source.html">immersed_rigid_body_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00529">Drag_mesh_pt</a>, <a class="el" href="cfortran_8h_source.html#l00575">e</a>, <a class="el" href="mesh_8h_source.html#l00462">oomph::Mesh::element_pt()</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00521">External_force_fct_pt</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00525">External_torque_fct_pt</a>, and <a class="el" href="mesh_8h_source.html#l00587">oomph::Mesh::nelement()</a>.</p>
+<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00525">Drag_mesh_pt</a>, <a class="el" href="cfortran_8h_source.html#l00571">e</a>, <a class="el" href="mesh_8h_source.html#l00458">oomph::Mesh::element_pt()</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00517">External_force_fct_pt</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00521">External_torque_fct_pt</a>, and <a class="el" href="mesh_8h_source.html#l00583">oomph::Mesh::nelement()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00300">get_residuals_rigid_body_generic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00296">get_residuals_rigid_body_generic()</a>.</p>
 
 </div>
 </div>
@@ -1676,11 +1676,11 @@ Additional Inherited Members</h2></td></tr>
 <p>Get residuals and/or Jacobian. </p>
 <p>Calculate the contributions to the residuals and the jacobian. </p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00300">300</a> of file <a class="el" href="immersed__rigid__body__elements_8cc_source.html">immersed_rigid_body_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00296">296</a> of file <a class="el" href="immersed__rigid__body__elements_8cc_source.html">immersed_rigid_body_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00512">Centre_displacement_data_pt</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00457">centre_displacement_local_eqn()</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00410">density_ratio()</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00385">g()</a>, <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00151">get_force_and_torque()</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00505">Mass</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00508">Moment_of_inertia</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00391">re()</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00404">re_invfr()</a>, <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00397">st()</a>, <a class="el" href="timesteppers_8h_source.html#l00324">oomph::TimeStepper::time()</a>, <a class="el" href="timesteppers_8h_source.html#l00474">oomph::TimeStepper::time_derivative()</a>, <a class="el" href="nodes_8h_source.html#l00246">oomph::Data::time_stepper_pt()</a>, and <a class="el" href="timesteppers_8h_source.html#l00557">oomph::TimeStepper::weight()</a>.</p>
+<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00508">Centre_displacement_data_pt</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00453">centre_displacement_local_eqn()</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00406">density_ratio()</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00381">g()</a>, <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00147">get_force_and_torque()</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00501">Mass</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00504">Moment_of_inertia</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00387">re()</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00400">re_invfr()</a>, <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00393">st()</a>, <a class="el" href="timesteppers_8h_source.html#l00320">oomph::TimeStepper::time()</a>, <a class="el" href="timesteppers_8h_source.html#l00470">oomph::TimeStepper::time_derivative()</a>, <a class="el" href="nodes_8h_source.html#l00242">oomph::Data::time_stepper_pt()</a>, and <a class="el" href="timesteppers_8h_source.html#l00553">oomph::TimeStepper::weight()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00283">fill_in_contribution_to_jacobian()</a>, and <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00274">fill_in_contribution_to_residuals()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00279">fill_in_contribution_to_jacobian()</a>, and <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00270">fill_in_contribution_to_residuals()</a>.</p>
 
 </div>
 </div>
@@ -1710,9 +1710,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Access function for the initial centre of mass. </p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00170">170</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00166">166</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, and <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00499">Initial_centre_of_mass</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, and <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00495">Initial_centre_of_mass</a>.</p>
 
 </div>
 </div>
@@ -1742,9 +1742,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Access function for the initial centre of mass (const version) </p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00174">174</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00170">170</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, and <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00499">Initial_centre_of_mass</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, and <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00495">Initial_centre_of_mass</a>.</p>
 
 </div>
 </div>
@@ -1773,9 +1773,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Access function for the initial angle. </p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00167">167</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00163">163</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00502">Initial_Phi</a>.</p>
+<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00498">Initial_Phi</a>.</p>
 
 </div>
 </div>
@@ -1806,11 +1806,11 @@ Additional Inherited Members</h2></td></tr>
 <p>Initialisation function. </p>
 <p>Initialise the internal data. </p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00264">264</a> of file <a class="el" href="immersed__rigid__body__elements_8cc_source.html">immersed_rigid_body_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00260">260</a> of file <a class="el" href="immersed__rigid__body__elements_8cc_source.html">immersed_rigid_body_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8cc_source.html#l00293">oomph::GeneralisedElement::add_external_data()</a>, <a class="el" href="elements_8cc_source.html#l00066">oomph::GeneralisedElement::add_internal_data()</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00512">Centre_displacement_data_pt</a>, <a class="el" href="the__data__structure_8txt_source.html#l00148">Data</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00560">Displacement_data_is_internal</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00557">Index_for_centre_displacement</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00499">Initial_centre_of_mass</a>, and <a class="el" href="geom__objects_8h_source.html#l00197">oomph::GeomObject::time_stepper_pt()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8cc_source.html#l00289">oomph::GeneralisedElement::add_external_data()</a>, <a class="el" href="elements_8cc_source.html#l00062">oomph::GeneralisedElement::add_internal_data()</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00508">Centre_displacement_data_pt</a>, <a class="el" href="the__data__structure_8txt_source.html#l00148">Data</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00556">Displacement_data_is_internal</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00553">Index_for_centre_displacement</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00495">Initial_centre_of_mass</a>, and <a class="el" href="geom__objects_8h_source.html#l00193">oomph::GeomObject::time_stepper_pt()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00122">ImmersedRigidBodyElement()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00118">ImmersedRigidBodyElement()</a>.</p>
 
 </div>
 </div>
@@ -1838,9 +1838,9 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Access to dimensionless "mass" shape parameter that must be set by hand for non polygonal shapes </p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00212">212</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00208">208</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00505">Mass</a>.</p>
+<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00501">Mass</a>.</p>
 
 </div>
 </div>
@@ -1869,9 +1869,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Access to dimensionless polar "moment of inertia" shape parameter. </p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00215">215</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00211">211</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00508">Moment_of_inertia</a>.</p>
+<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00504">Moment_of_inertia</a>.</p>
 
 </div>
 </div>
@@ -1902,7 +1902,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1GeomObject.html#a19d325347e19964e127fe124df56f251">oomph::GeomObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00374">374</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00370">370</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
 
 </div>
 </div>
@@ -1931,11 +1931,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Update the positions of the nodes in fluid elements adjacent to the rigid body, defined as being elements in the drag mesh. </p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00300">300</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00296">296</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00529">Drag_mesh_pt</a>, <a class="el" href="cfortran_8h_source.html#l00575">e</a>, <a class="el" href="mesh_8h_source.html#l00462">oomph::Mesh::element_pt()</a>, <a class="el" href="mesh_8h_source.html#l00587">oomph::Mesh::nelement()</a>, and <a class="el" href="elements_8cc_source.html#l04948">oomph::FiniteElement::node_update()</a>.</p>
+<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00525">Drag_mesh_pt</a>, <a class="el" href="cfortran_8h_source.html#l00571">e</a>, <a class="el" href="mesh_8h_source.html#l00458">oomph::Mesh::element_pt()</a>, <a class="el" href="mesh_8h_source.html#l00583">oomph::Mesh::nelement()</a>, and <a class="el" href="elements_8cc_source.html#l04944">oomph::FiniteElement::node_update()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00326">reset_after_external_fd()</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00337">reset_after_internal_fd()</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00319">update_in_external_fd()</a>, and <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00330">update_in_internal_fd()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00322">reset_after_external_fd()</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00333">reset_after_internal_fd()</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00315">update_in_external_fd()</a>, and <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00326">update_in_internal_fd()</a>.</p>
 
 </div>
 </div>
@@ -1958,9 +1958,9 @@ Additional Inherited Members</h2></td></tr>
 <p>Output position velocity and acceleration of centre of gravity. </p>
 <p>Output the position of the centre of gravity including velocities and accelerations </p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00120">120</a> of file <a class="el" href="immersed__rigid__body__elements_8cc_source.html">immersed_rigid_body_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00116">116</a> of file <a class="el" href="immersed__rigid__body__elements_8cc_source.html">immersed_rigid_body_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00512">Centre_displacement_data_pt</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00499">Initial_centre_of_mass</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00502">Initial_Phi</a>, <a class="el" href="timesteppers_8h_source.html#l00324">oomph::TimeStepper::time()</a>, <a class="el" href="timesteppers_8h_source.html#l00474">oomph::TimeStepper::time_derivative()</a>, <a class="el" href="geom__objects_8h_source.html#l00197">oomph::GeomObject::time_stepper_pt()</a>, <a class="el" href="nodes_8h_source.html#l00246">oomph::Data::time_stepper_pt()</a>, and <a class="el" href="nodes_8h_source.html#l00291">oomph::Data::value()</a>.</p>
+<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00508">Centre_displacement_data_pt</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00495">Initial_centre_of_mass</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00498">Initial_Phi</a>, <a class="el" href="timesteppers_8h_source.html#l00320">oomph::TimeStepper::time()</a>, <a class="el" href="timesteppers_8h_source.html#l00470">oomph::TimeStepper::time_derivative()</a>, <a class="el" href="geom__objects_8h_source.html#l00193">oomph::GeomObject::time_stepper_pt()</a>, <a class="el" href="nodes_8h_source.html#l00242">oomph::Data::time_stepper_pt()</a>, and <a class="el" href="nodes_8h_source.html#l00287">oomph::Data::value()</a>.</p>
 
 </div>
 </div>
@@ -1990,9 +1990,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Pin the i-th coordinate of the centre of mass. </p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00247">247</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00243">243</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00512">Centre_displacement_data_pt</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, and <a class="el" href="nodes_8h_source.html#l00383">oomph::Data::pin()</a>.</p>
+<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00508">Centre_displacement_data_pt</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, and <a class="el" href="nodes_8h_source.html#l00379">oomph::Data::pin()</a>.</p>
 
 </div>
 </div>
@@ -2021,9 +2021,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Pin the rotation angle. </p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00259">259</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00255">255</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00512">Centre_displacement_data_pt</a>, and <a class="el" href="nodes_8h_source.html#l00383">oomph::Data::pin()</a>.</p>
+<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00508">Centre_displacement_data_pt</a>, and <a class="el" href="nodes_8h_source.html#l00379">oomph::Data::pin()</a>.</p>
 
 </div>
 </div>
@@ -2073,9 +2073,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="classoomph_1_1ImmersedRigidBodyTriangleMeshPolygon.html#ad1bd014b31d75703384be201ab65e80f">oomph::ImmersedRigidBodyTriangleMeshPolygon</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00186">186</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00182">182</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00417">apply_rigid_body_motion()</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00517">Geom_object_pt</a>, and <a class="el" href="classoomph_1_1GeomObject.html#a0d04c9d4667817f3ef24bb660fd56065">oomph::GeomObject::position()</a>.</p>
+<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00413">apply_rigid_body_motion()</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00513">Geom_object_pt</a>, and <a class="el" href="classoomph_1_1GeomObject.html#a0d04c9d4667817f3ef24bb660fd56065">oomph::GeomObject::position()</a>.</p>
 
 </div>
 </div>
@@ -2119,11 +2119,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="classoomph_1_1ImmersedRigidBodyTriangleMeshPolygon.html#a29e3518f6fcdaeead14ae41f11e6fb5d">oomph::ImmersedRigidBodyTriangleMeshPolygon</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00178">178</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00174">174</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00417">apply_rigid_body_motion()</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00517">Geom_object_pt</a>, and <a class="el" href="classoomph_1_1GeomObject.html#a0d04c9d4667817f3ef24bb660fd56065">oomph::GeomObject::position()</a>.</p>
+<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00413">apply_rigid_body_motion()</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00513">Geom_object_pt</a>, and <a class="el" href="classoomph_1_1GeomObject.html#a0d04c9d4667817f3ef24bb660fd56065">oomph::GeomObject::position()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00050">dposition_dt()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00046">dposition_dt()</a>.</p>
 
 </div>
 </div>
@@ -2152,11 +2152,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Access function for the fluid Reynolds number. </p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00391">391</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00387">387</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00535">Re_pt</a>.</p>
+<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00531">Re_pt</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00300">get_residuals_rigid_body_generic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00296">get_residuals_rigid_body_generic()</a>.</p>
 
 </div>
 </div>
@@ -2185,11 +2185,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Access to the fluid inverse Froude number. </p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00404">404</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00400">400</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00541">ReInvFr_pt</a>.</p>
+<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00537">ReInvFr_pt</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00300">get_residuals_rigid_body_generic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00296">get_residuals_rigid_body_generic()</a>.</p>
 
 </div>
 </div>
@@ -2218,9 +2218,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Access function for pointer to the fluid inverse Froude number (dimensionless gravitational loading) </p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00401">401</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00397">397</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00541">ReInvFr_pt</a>.</p>
+<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00537">ReInvFr_pt</a>.</p>
 
 </div>
 </div>
@@ -2249,9 +2249,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Access function for the pointer to the fluid Reynolds number. </p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00388">388</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00384">384</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00535">Re_pt</a>.</p>
+<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00531">Re_pt</a>.</p>
 
 </div>
 </div>
@@ -2282,9 +2282,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1GeneralisedElement.html#a10210277ae4fa66b7701ff00d4dd9b14">oomph::GeneralisedElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00326">326</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00322">322</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00300">node_update_adjacent_fluid_elements()</a>.</p>
+<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00296">node_update_adjacent_fluid_elements()</a>.</p>
 
 </div>
 </div>
@@ -2315,9 +2315,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1GeneralisedElement.html#ab3e2e13d219c132488fb05e9596cb43f">oomph::GeneralisedElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00337">337</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00333">333</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00300">node_update_adjacent_fluid_elements()</a>.</p>
+<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00296">node_update_adjacent_fluid_elements()</a>.</p>
 
 </div>
 </div>
@@ -2349,7 +2349,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1GeneralisedElement.html#a027a9213e91b946346062adf96e26a85">oomph::GeneralisedElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00323">323</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00319">319</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
 
 </div>
 </div>
@@ -2381,7 +2381,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1GeneralisedElement.html#a89c6c5cf8b4d8b451caa124b346e5e8d">oomph::GeneralisedElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00334">334</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00330">330</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
 
 </div>
 </div>
@@ -2404,9 +2404,9 @@ Additional Inherited Members</h2></td></tr>
 <p>Function to set the drag mesh and add the appropriate load and geometric data as external data to the Rigid Body. </p>
 <p>Set the external drag mesh, which should consist of NavierStokesSurfaceDragTorqueElements and then read out the appropriate load and geometric data from those elements and set as external data for this element. </p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00205">205</a> of file <a class="el" href="immersed__rigid__body__elements_8cc_source.html">immersed_rigid_body_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00201">201</a> of file <a class="el" href="immersed__rigid__body__elements_8cc_source.html">immersed_rigid_body_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8cc_source.html#l00293">oomph::GeneralisedElement::add_external_data()</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00482">delete_external_hijacked_data()</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00356">drag_mesh_pt()</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00529">Drag_mesh_pt</a>, <a class="el" href="cfortran_8h_source.html#l00575">e</a>, <a class="el" href="mesh_8h_source.html#l00462">oomph::Mesh::element_pt()</a>, <a class="el" href="elements_8cc_source.html#l00365">oomph::GeneralisedElement::flush_external_data()</a>, <a class="el" href="elements_8h_source.html#l02656">oomph::FiniteElement::identify_geometric_data()</a>, <a class="el" href="classoomph_1_1FSIFluidElement.html#a13c5f835cddd1b78e6d2582733619300">oomph::FSIFluidElement::identify_load_data()</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00479">List_of_external_hijacked_data</a>, and <a class="el" href="mesh_8h_source.html#l00587">oomph::Mesh::nelement()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8cc_source.html#l00289">oomph::GeneralisedElement::add_external_data()</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00478">delete_external_hijacked_data()</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00352">drag_mesh_pt()</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00525">Drag_mesh_pt</a>, <a class="el" href="cfortran_8h_source.html#l00571">e</a>, <a class="el" href="mesh_8h_source.html#l00458">oomph::Mesh::element_pt()</a>, <a class="el" href="elements_8cc_source.html#l00361">oomph::GeneralisedElement::flush_external_data()</a>, <a class="el" href="elements_8h_source.html#l02652">oomph::FiniteElement::identify_geometric_data()</a>, <a class="el" href="classoomph_1_1FSIFluidElement.html#a13c5f835cddd1b78e6d2582733619300">oomph::FSIFluidElement::identify_load_data()</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00475">List_of_external_hijacked_data</a>, and <a class="el" href="mesh_8h_source.html#l00583">oomph::Mesh::nelement()</a>.</p>
 
 </div>
 </div>
@@ -2435,9 +2435,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Set the rotation of the object to be included. </p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00160">160</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00156">156</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00564">Include_geometric_rotation</a>.</p>
+<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00560">Include_geometric_rotation</a>.</p>
 
 </div>
 </div>
@@ -2466,11 +2466,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Access function for the fluid Strouhal number. </p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00397">397</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00393">393</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00538">St_pt</a>.</p>
+<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00534">St_pt</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00300">get_residuals_rigid_body_generic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00296">get_residuals_rigid_body_generic()</a>.</p>
 
 </div>
 </div>
@@ -2499,9 +2499,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Access function for the pointer to the fluid Strouhal number. </p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00394">394</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00390">390</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00538">St_pt</a>.</p>
+<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00534">St_pt</a>.</p>
 
 </div>
 </div>
@@ -2531,9 +2531,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Unpin the i-th coordinate of the centre of mass. </p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00253">253</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00249">249</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00512">Centre_displacement_data_pt</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, and <a class="el" href="nodes_8h_source.html#l00386">oomph::Data::unpin()</a>.</p>
+<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00508">Centre_displacement_data_pt</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, and <a class="el" href="nodes_8h_source.html#l00382">oomph::Data::unpin()</a>.</p>
 
 </div>
 </div>
@@ -2562,9 +2562,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Unpin the rotation angle. </p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00265">265</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00261">261</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00512">Centre_displacement_data_pt</a>, and <a class="el" href="nodes_8h_source.html#l00386">oomph::Data::unpin()</a>.</p>
+<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00508">Centre_displacement_data_pt</a>, and <a class="el" href="nodes_8h_source.html#l00382">oomph::Data::unpin()</a>.</p>
 
 </div>
 </div>
@@ -2593,9 +2593,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Set the rotation of the object to be ignored (only really useful if you have a circular shape) </p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00164">164</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00160">160</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00564">Include_geometric_rotation</a>.</p>
+<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00560">Include_geometric_rotation</a>.</p>
 
 </div>
 </div>
@@ -2627,9 +2627,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1GeneralisedElement.html#af740b8c507dde03700cff5d196e28019">oomph::GeneralisedElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00319">319</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00315">315</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00300">node_update_adjacent_fluid_elements()</a>.</p>
+<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00296">node_update_adjacent_fluid_elements()</a>.</p>
 
 </div>
 </div>
@@ -2661,9 +2661,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1GeneralisedElement.html#a0c94ccb2cad3bcf15f97a6e5a6dff90b">oomph::GeneralisedElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00330">330</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00326">326</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00300">node_update_adjacent_fluid_elements()</a>.</p>
+<p class="reference">References <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00296">node_update_adjacent_fluid_elements()</a>.</p>
 
 </div>
 </div>
@@ -2690,9 +2690,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p><a class="el" href="classoomph_1_1Data.html" title="A class that represents a collection of data; each Data object may contain many different individual ...">Data</a> for centre of gravity displacement. Values: 0: x-displ; 1: y-displ; 2: rotation angle. </p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00512">512</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00508">508</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00417">apply_rigid_body_motion()</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00219">centre_displacement_data_pt()</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00235">centre_of_gravity()</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00231">centre_rotation_angle()</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00223">centre_x_displacement()</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00227">centre_y_displacement()</a>, <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00050">dposition_dt()</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00378">geom_data_pt()</a>, <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00300">get_residuals_rigid_body_generic()</a>, <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00264">initialise()</a>, <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00120">output_centre_of_gravity()</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00247">pin_centre_of_mass_coordinate()</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00259">pin_rotation_angle()</a>, <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00548">oomph::ImmersedRigidBodyTriangleMeshPolygon::reset_reference_configuration()</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00253">unpin_centre_of_mass_coordinate()</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00265">unpin_rotation_angle()</a>, and <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00200">~ImmersedRigidBodyElement()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00413">apply_rigid_body_motion()</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00215">centre_displacement_data_pt()</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00231">centre_of_gravity()</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00227">centre_rotation_angle()</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00219">centre_x_displacement()</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00223">centre_y_displacement()</a>, <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00046">dposition_dt()</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00374">geom_data_pt()</a>, <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00296">get_residuals_rigid_body_generic()</a>, <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00260">initialise()</a>, <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00116">output_centre_of_gravity()</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00243">pin_centre_of_mass_coordinate()</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00255">pin_rotation_angle()</a>, <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00544">oomph::ImmersedRigidBodyTriangleMeshPolygon::reset_reference_configuration()</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00249">unpin_centre_of_mass_coordinate()</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00261">unpin_rotation_angle()</a>, and <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00196">~ImmersedRigidBodyElement()</a>.</p>
 
 </div>
 </div>
@@ -2719,7 +2719,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Static default value for gravity. </p>
 <p>Static default gravity direction vector. </p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00553">553</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00549">549</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
 
 </div>
 </div>
@@ -2746,7 +2746,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Static default value for physical constants. </p>
 <p>Static default value for physical constants Zero gives instantaneous force and torque balances &mdash; no solid intertia. </p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00547">547</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00543">543</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
 
 </div>
 </div>
@@ -2773,7 +2773,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Static default value for physical ratios. </p>
 <p>Static default value for physical ratio. </p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00550">550</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00546">546</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
 
 </div>
 </div>
@@ -2799,9 +2799,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Density ratio of the solid to the external fluid. </p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00544">544</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00540">540</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00410">density_ratio()</a>, and <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00407">density_ratio_pt()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00406">density_ratio()</a>, and <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00403">density_ratio_pt()</a>.</p>
 
 </div>
 </div>
@@ -2827,9 +2827,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Boolean flag to indicate whether data is internal. </p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00560">560</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00556">556</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00457">centre_displacement_local_eqn()</a>, <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00264">initialise()</a>, and <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00200">~ImmersedRigidBodyElement()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00453">centre_displacement_local_eqn()</a>, <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00260">initialise()</a>, and <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00196">~ImmersedRigidBodyElement()</a>.</p>
 
 </div>
 </div>
@@ -2855,9 +2855,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p><a class="el" href="classoomph_1_1Mesh.html" title="A general mesh class.">Mesh</a> containing face elements that allow the computation of the drag on the body. </p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00529">529</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00525">525</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00356">drag_mesh_pt()</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00363">flush_drag_mesh()</a>, <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00151">get_force_and_torque()</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00300">node_update_adjacent_fluid_elements()</a>, and <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00205">set_drag_mesh()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00352">drag_mesh_pt()</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00359">flush_drag_mesh()</a>, <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00147">get_force_and_torque()</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00296">node_update_adjacent_fluid_elements()</a>, and <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00201">set_drag_mesh()</a>.</p>
 
 </div>
 </div>
@@ -2883,9 +2883,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Function pointer to function that specifies external force. </p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00521">521</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00517">517</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00348">external_force_fct_pt()</a>, and <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00151">get_force_and_torque()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00344">external_force_fct_pt()</a>, and <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00147">get_force_and_torque()</a>.</p>
 
 </div>
 </div>
@@ -2911,9 +2911,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Function pointer to function that specifies external torque. </p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00525">525</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00521">521</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00352">external_torque_fct_pt()</a>, and <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00151">get_force_and_torque()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00348">external_torque_fct_pt()</a>, and <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00147">get_force_and_torque()</a>.</p>
 
 </div>
 </div>
@@ -2939,9 +2939,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>The direction of gravity. </p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00532">532</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00528">528</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00385">g()</a>, and <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00382">g_pt()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00381">g()</a>, and <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00378">g_pt()</a>.</p>
 
 </div>
 </div>
@@ -2967,9 +2967,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Underlying geometric object. </p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00517">517</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00513">513</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00050">dposition_dt()</a>, and <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00178">position()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00046">dposition_dt()</a>, and <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00174">position()</a>.</p>
 
 </div>
 </div>
@@ -2994,9 +2994,9 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Boolean to indicate that the rotation variable does not affect the boundary shape </p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00564">564</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00560">560</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00417">apply_rigid_body_motion()</a>, <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00050">dposition_dt()</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00160">set_geometric_rotation()</a>, and <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00164">unset_geometric_rotation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00413">apply_rigid_body_motion()</a>, <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00046">dposition_dt()</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00156">set_geometric_rotation()</a>, and <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00160">unset_geometric_rotation()</a>.</p>
 
 </div>
 </div>
@@ -3022,9 +3022,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Index for the data (internal or external) that contains the centre-of-gravity displacement. </p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00557">557</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00553">553</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00457">centre_displacement_local_eqn()</a>, and <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00264">initialise()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00453">centre_displacement_local_eqn()</a>, and <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00260">initialise()</a>.</p>
 
 </div>
 </div>
@@ -3050,9 +3050,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>X-coordinate of initial centre of gravity. </p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00499">499</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00495">495</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00417">apply_rigid_body_motion()</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00235">centre_of_gravity()</a>, <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00050">dposition_dt()</a>, <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00386">oomph::ImmersedRigidBodyTriangleMeshPolygon::ImmersedRigidBodyTriangleMeshPolygon()</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00170">initial_centre_of_mass()</a>, <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00264">initialise()</a>, <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00120">output_centre_of_gravity()</a>, and <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00548">oomph::ImmersedRigidBodyTriangleMeshPolygon::reset_reference_configuration()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00413">apply_rigid_body_motion()</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00231">centre_of_gravity()</a>, <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00046">dposition_dt()</a>, <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00382">oomph::ImmersedRigidBodyTriangleMeshPolygon::ImmersedRigidBodyTriangleMeshPolygon()</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00166">initial_centre_of_mass()</a>, <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00260">initialise()</a>, <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00116">output_centre_of_gravity()</a>, and <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00544">oomph::ImmersedRigidBodyTriangleMeshPolygon::reset_reference_configuration()</a>.</p>
 
 </div>
 </div>
@@ -3078,9 +3078,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Original rotation angle. </p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00502">502</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00498">498</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00386">oomph::ImmersedRigidBodyTriangleMeshPolygon::ImmersedRigidBodyTriangleMeshPolygon()</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00167">initial_phi()</a>, <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00120">output_centre_of_gravity()</a>, and <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00548">oomph::ImmersedRigidBodyTriangleMeshPolygon::reset_reference_configuration()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00382">oomph::ImmersedRigidBodyTriangleMeshPolygon::ImmersedRigidBodyTriangleMeshPolygon()</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00163">initial_phi()</a>, <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00116">output_centre_of_gravity()</a>, and <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00544">oomph::ImmersedRigidBodyTriangleMeshPolygon::reset_reference_configuration()</a>.</p>
 
 </div>
 </div>
@@ -3105,9 +3105,9 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Storage for the external data that is formed from hijacked data that must be deleted by this element </p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00479">479</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00475">475</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00482">delete_external_hijacked_data()</a>, and <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00205">set_drag_mesh()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00478">delete_external_hijacked_data()</a>, and <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00201">set_drag_mesh()</a>.</p>
 
 </div>
 </div>
@@ -3131,9 +3131,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00505">505</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00501">501</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00300">get_residuals_rigid_body_generic()</a>, <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00386">oomph::ImmersedRigidBodyTriangleMeshPolygon::ImmersedRigidBodyTriangleMeshPolygon()</a>, and <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00212">mass_shape()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00296">get_residuals_rigid_body_generic()</a>, <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00382">oomph::ImmersedRigidBodyTriangleMeshPolygon::ImmersedRigidBodyTriangleMeshPolygon()</a>, and <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00208">mass_shape()</a>.</p>
 
 </div>
 </div>
@@ -3159,9 +3159,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Polar moment of inertia of body. </p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00508">508</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00504">504</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00300">get_residuals_rigid_body_generic()</a>, <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00386">oomph::ImmersedRigidBodyTriangleMeshPolygon::ImmersedRigidBodyTriangleMeshPolygon()</a>, and <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00215">moment_of_inertia_shape()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00296">get_residuals_rigid_body_generic()</a>, <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00382">oomph::ImmersedRigidBodyTriangleMeshPolygon::ImmersedRigidBodyTriangleMeshPolygon()</a>, and <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00211">moment_of_inertia_shape()</a>.</p>
 
 </div>
 </div>
@@ -3187,9 +3187,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reynolds number of external fluid. </p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00535">535</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00531">531</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00391">re()</a>, and <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00388">re_pt()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00387">re()</a>, and <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00384">re_pt()</a>.</p>
 
 </div>
 </div>
@@ -3215,9 +3215,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reynolds number divided by Froude number of external fluid. </p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00541">541</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00537">537</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00404">re_invfr()</a>, and <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00401">re_invfr_pt()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00400">re_invfr()</a>, and <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00397">re_invfr_pt()</a>.</p>
 
 </div>
 </div>
@@ -3243,9 +3243,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Strouhal number of external fluid. </p>
 
-<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00538">538</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00534">534</a> of file <a class="el" href="immersed__rigid__body__elements_8h_source.html">immersed_rigid_body_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00397">st()</a>, and <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00394">st_pt()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00393">st()</a>, and <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00390">st_pt()</a>.</p>
 
 </div>
 </div>
@@ -3281,7 +3281,7 @@ Additional Inherited Members</h2></td></tr>
     <footer>
       <div class="container">
         <div class="text-muted" style="float:right;">Generated by <a href="http://www.doxygen.org/index.html">
-          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Tue Jul 6 2021 22:57:42
+          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Fri Jul 9 2021 20:52:48
         </div>
       </div>
     </footer>

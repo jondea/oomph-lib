@@ -65,7 +65,7 @@ void \mbox{\hyperlink{classoomph_1_1DenseDoubleMatrix_aab687b1136f0265434ada2684
 Class of matrices containing doubles, and stored as a \mbox{\hyperlink{classoomph_1_1DenseMatrix}{Dense\+Matrix$<$double$>$}}, but with solving functionality inherited from the abstract Double\+Matrix class. ~\newline
  
 
-Definition at line 1234 of file matrices.\+h.
+Definition at line 1230 of file matrices.\+h.
 
 
 
@@ -82,7 +82,7 @@ Constructor, set the default linear solver.
 
 Constructor, set the default linear solver to be the \mbox{\hyperlink{classoomph_1_1DenseLU}{Dense\+LU}} solver 
 
-Definition at line 146 of file matrices.\+cc.
+Definition at line 142 of file matrices.\+cc.
 
 
 
@@ -100,7 +100,7 @@ Constructor to build a square n by n matrix.
 
 Constructor to build a square n by n matrix. Set the default linear solver to be \mbox{\hyperlink{classoomph_1_1DenseLU}{Dense\+LU}} 
 
-Definition at line 155 of file matrices.\+cc.
+Definition at line 151 of file matrices.\+cc.
 
 
 
@@ -118,7 +118,7 @@ Constructor to build a matrix with n rows and m columns.
 
 Constructor to build a matrix with n rows and m columns. Set the default linear solver to be \mbox{\hyperlink{classoomph_1_1DenseLU}{Dense\+LU}} 
 
-Definition at line 166 of file matrices.\+cc.
+Definition at line 162 of file matrices.\+cc.
 
 
 
@@ -136,7 +136,7 @@ Constructor to build a matrix with n rows and m columns, with initial value init
 
 Constructor to build a matrix with n rows and m columns, with initial value initial\+\_\+val Set the default linear solver to be \mbox{\hyperlink{classoomph_1_1DenseLU}{Dense\+LU}} 
 
-Definition at line 178 of file matrices.\+cc.
+Definition at line 174 of file matrices.\+cc.
 
 
 
@@ -154,7 +154,7 @@ Broken copy constructor.
 
 
 
-Definition at line 1255 of file matrices.\+h.
+Definition at line 1251 of file matrices.\+h.
 
 
 
@@ -172,7 +172,7 @@ Destructor.
 
 Destructor delete the default linear solver. 
 
-Definition at line 189 of file matrices.\+cc.
+Definition at line 185 of file matrices.\+cc.
 
 
 
@@ -203,7 +203,7 @@ Determine eigenvalues and eigenvectors, using Jacobi rotations. Only for symmetr
 \item {\ttfamily eigen\+\_\+val}\mbox{[}i\mbox{]} is the i-\/th eigenvalue; same ordering as in eigenvectors 
 \end{DoxyItemize}
 
-Definition at line 231 of file matrices.\+cc.
+Definition at line 227 of file matrices.\+cc.
 
 
 
@@ -225,7 +225,7 @@ LU backsubstitution.
 
 Back substitute an LU decomposed matrix. 
 
-Definition at line 209 of file matrices.\+cc.
+Definition at line 205 of file matrices.\+cc.
 
 
 
@@ -247,7 +247,7 @@ LU backsubstitution.
 
 Back substitute an LU decomposed matrix. 
 
-Definition at line 218 of file matrices.\+cc.
+Definition at line 214 of file matrices.\+cc.
 
 
 
@@ -265,7 +265,7 @@ LU decomposition using \mbox{\hyperlink{classoomph_1_1DenseLU}{Dense\+LU}} (defa
 
 LU decompose a matrix, by using the default linear solver (\mbox{\hyperlink{classoomph_1_1DenseLU}{Dense\+LU}}) 
 
-Definition at line 199 of file matrices.\+cc.
+Definition at line 195 of file matrices.\+cc.
 
 
 
@@ -286,10 +286,9 @@ Referenced by oomph\+::\+D\+G\+Element\+::get\+\_\+inverse\+\_\+mass\+\_\+matrix
 For every row, find the maximum absolute value of the entries in this row. Set all values that are less than alpha times this maximum to zero and return the resulting matrix in reduced\+\_\+matrix. Note\+: Diagonal entries are retained regardless of their size. ~\newline
  
 
-For every row, find the maximum absolute value of the entries in this row. Set all values that are less than alpha times this maximum to zero and return the resulting matrix in reduced\+\_\+matrix. Note\+: Diagonal entries are retained regardless of their size. ~\newline
- 
+For every row, find the maximum absolute value of the entries in this row. Set all values that are less than alpha times this maximum to zero and return the resulting matrix in reduced\+\_\+matrix. Note\+: Diagonal entries are retained regardless of their size. 
 
-Definition at line 491 of file matrices.\+cc.
+Definition at line 487 of file matrices.\+cc.
 
 
 
@@ -307,7 +306,7 @@ Function to multiply this matrix by a \mbox{\hyperlink{classoomph_1_1DenseDouble
 
 Function to multiply this matrix by the \mbox{\hyperlink{classoomph_1_1DenseDoubleMatrix}{Dense\+Double\+Matrix}} matrix\+\_\+in. 
 
-Definition at line 533 of file matrices.\+cc.
+Definition at line 529 of file matrices.\+cc.
 
 
 
@@ -329,7 +328,7 @@ Implements \mbox{\hyperlink{classoomph_1_1DoubleMatrixBase_a78204eab557e0dc99618
 
 
 
-Definition at line 303 of file matrices.\+cc.
+Definition at line 299 of file matrices.\+cc.
 
 
 
@@ -351,7 +350,7 @@ Implements \mbox{\hyperlink{classoomph_1_1DoubleMatrixBase_a843d44405b70da1d96b4
 
 
 
-Definition at line 393 of file matrices.\+cc.
+Definition at line 389 of file matrices.\+cc.
 
 
 
@@ -373,7 +372,7 @@ Implements \mbox{\hyperlink{classoomph_1_1DoubleMatrixBase_a253feffbf1db1976cdd8
 
 
 
-Definition at line 1272 of file matrices.\+h.
+Definition at line 1268 of file matrices.\+h.
 
 
 
@@ -399,7 +398,7 @@ Implements \mbox{\hyperlink{classoomph_1_1DoubleMatrixBase_acdcd6e1ea2bf2380f1a2
 
 
 
-Definition at line 1269 of file matrices.\+h.
+Definition at line 1265 of file matrices.\+h.
 
 
 
@@ -421,7 +420,7 @@ Overload the non-\/const version of the round-\/bracket access operator for read
 
 
 
-Definition at line 1282 of file matrices.\+h.
+Definition at line 1278 of file matrices.\+h.
 
 
 
@@ -443,7 +442,7 @@ Implements \mbox{\hyperlink{classoomph_1_1DoubleMatrixBase_a20b85f0286f80464f42f
 
 
 
-Definition at line 1276 of file matrices.\+h.
+Definition at line 1272 of file matrices.\+h.
 
 
 
@@ -461,7 +460,7 @@ Broken assignment operator.
 
 
 
-Definition at line 1262 of file matrices.\+h.
+Definition at line 1258 of file matrices.\+h.
 
 
 

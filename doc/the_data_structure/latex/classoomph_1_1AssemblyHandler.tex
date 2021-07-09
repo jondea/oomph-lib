@@ -63,7 +63,7 @@ virtual \mbox{\hyperlink{classoomph_1_1AssemblyHandler_ab26633238200230ab57a20cc
 \doxysubsection{Detailed Description}
 A class that is used to define the functions used to assemble the elemental contributions to the residuals vector and Jacobian matrix that define the problem being solved. The main use of this class is to assemble and solve the augmented systems used in bifurcation detection and tracking. The default implementation merely calls the underlying elemental functions with no augmentation. 
 
-Definition at line 66 of file assembly\+\_\+handler.\+h.
+Definition at line 62 of file assembly\+\_\+handler.\+h.
 
 
 
@@ -80,7 +80,7 @@ Empty constructor.
 
 
 
-Definition at line 71 of file assembly\+\_\+handler.\+h.
+Definition at line 67 of file assembly\+\_\+handler.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1AssemblyHandler_ab26633238200230ab57a20cc49e731de}\label{classoomph_1_1AssemblyHandler_ab26633238200230ab57a20cc49e731de}} 
 \index{oomph::AssemblyHandler@{oomph::AssemblyHandler}!````~AssemblyHandler@{$\sim$AssemblyHandler}}
@@ -94,7 +94,7 @@ Empty virtual destructor.
 
 
 
-Definition at line 169 of file assembly\+\_\+handler.\+h.
+Definition at line 165 of file assembly\+\_\+handler.\+h.
 
 
 
@@ -115,7 +115,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1HopfHandler_a49f4d0a78ac46ea1412
 
 
 
-Definition at line 157 of file assembly\+\_\+handler.\+cc.
+Definition at line 153 of file assembly\+\_\+handler.\+cc.
 
 
 
@@ -137,7 +137,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1HopfHandler_a789de82e82adaac82b3
 
 
 
-Definition at line 137 of file assembly\+\_\+handler.\+h.
+Definition at line 133 of file assembly\+\_\+handler.\+h.
 
 
 
@@ -155,7 +155,7 @@ Return vector of pointers to dofs in the element elem\+\_\+pt.
 
 Get the vector of pointers to dofs in the element elem\+\_\+pt Direct call to the function in the element. 
 
-Definition at line 61 of file assembly\+\_\+handler.\+cc.
+Definition at line 57 of file assembly\+\_\+handler.\+cc.
 
 
 
@@ -173,7 +173,7 @@ Return vector of dofs at time level t in the element elem\+\_\+pt.
 
 Get the vector of dofs in the element elem\+\_\+pt at time level t Direct call to the function in the element. 
 
-Definition at line 53 of file assembly\+\_\+handler.\+cc.
+Definition at line 49 of file assembly\+\_\+handler.\+cc.
 
 
 
@@ -195,7 +195,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1HopfHandler_a9feb8087e8b9554164c
 
 
 
-Definition at line 78 of file assembly\+\_\+handler.\+cc.
+Definition at line 74 of file assembly\+\_\+handler.\+cc.
 
 
 
@@ -221,7 +221,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1ParallelResidualsHandler_adea071
 
 
 
-Definition at line 103 of file assembly\+\_\+handler.\+cc.
+Definition at line 99 of file assembly\+\_\+handler.\+cc.
 
 
 
@@ -243,7 +243,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1HopfHandler_a59fb2c41d850cfe1fdc
 
 
 
-Definition at line 127 of file assembly\+\_\+handler.\+cc.
+Definition at line 123 of file assembly\+\_\+handler.\+cc.
 
 
 
@@ -269,7 +269,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1HopfHandler_a2953368ecc48dc22f8e
 
 
 
-Definition at line 114 of file assembly\+\_\+handler.\+cc.
+Definition at line 110 of file assembly\+\_\+handler.\+cc.
 
 
 
@@ -295,7 +295,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1HopfHandler_a9d1ee586e6274cfa0ba
 
 
 
-Definition at line 179 of file assembly\+\_\+handler.\+cc.
+Definition at line 175 of file assembly\+\_\+handler.\+cc.
 
 
 
@@ -317,7 +317,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1HopfHandler_a74b0266ee15bcb294db
 
 
 
-Definition at line 142 of file assembly\+\_\+handler.\+cc.
+Definition at line 138 of file assembly\+\_\+handler.\+cc.
 
 
 
@@ -339,7 +339,7 @@ Compute the vectors that when taken as a dot product with other history values g
 
 Compute the vectors that when taken as a dot product with other history values give the inner product over the element. In other words if we call get\+\_\+inner\+\_\+product\+\_\+vectors(\{0,1\},output) output\mbox{[}0\mbox{]} will be a vector such that dofs.\+output\mbox{[}0\mbox{]} gives the inner product of current dofs with themselves. 
 
-Definition at line 215 of file assembly\+\_\+handler.\+cc.
+Definition at line 211 of file assembly\+\_\+handler.\+cc.
 
 
 
@@ -357,7 +357,7 @@ Compute the inner products of the given vector of pairs of history values over t
 
 ========================================================================== Compute the inner products of the given vector of pairs of history values over the element. The values of the index in the pair may be the same. 
 
-Definition at line 200 of file assembly\+\_\+handler.\+cc.
+Definition at line 196 of file assembly\+\_\+handler.\+cc.
 
 
 
@@ -380,7 +380,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1HopfHandler_ab36c50421f53accced0
 
 
 
-Definition at line 94 of file assembly\+\_\+handler.\+cc.
+Definition at line 90 of file assembly\+\_\+handler.\+cc.
 
 
 
@@ -406,7 +406,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1HopfHandler_a61a4006161da6532a9a
 
 
 
-Definition at line 86 of file assembly\+\_\+handler.\+cc.
+Definition at line 82 of file assembly\+\_\+handler.\+cc.
 
 
 
@@ -428,7 +428,7 @@ Return the t-\/th level of storage associated with the i-\/th (local) dof stored
 
 
 
-Definition at line 67 of file assembly\+\_\+handler.\+cc.
+Definition at line 63 of file assembly\+\_\+handler.\+cc.
 
 
 
@@ -450,7 +450,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1HopfHandler_a8d1b73ec4e9b8b27252
 
 
 
-Definition at line 46 of file assembly\+\_\+handler.\+cc.
+Definition at line 42 of file assembly\+\_\+handler.\+cc.
 
 
 
@@ -477,7 +477,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1PitchForkHandler_a23a67d7212e251
 
 
 
-Definition at line 165 of file assembly\+\_\+handler.\+h.
+Definition at line 161 of file assembly\+\_\+handler.\+h.
 
 
 

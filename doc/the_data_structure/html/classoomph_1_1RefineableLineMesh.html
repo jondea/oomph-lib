@@ -1081,7 +1081,7 @@ class oomph::RefineableLineMesh&lt; ELEMENT &gt;</h3>
 <p>Intermediate mesh class that implements the mesh adaptation functions specified in the RefineableMesh class for meshes that contain the refineable variant of <a class="el" href="classoomph_1_1QElement.html">QElement</a> s [The class ELEMENT provided as the template parameter must be of type <a class="el" href="classoomph_1_1RefineableQElement_3_011_01_4.html">RefineableQElement&lt;1&gt;</a>].</p>
 <p><a class="el" href="classoomph_1_1Mesh.html" title="A general mesh class.">Mesh</a> adaptation/refinement is implemented by <a class="el" href="classoomph_1_1BinaryTree.html">BinaryTree</a> procedures and any concrete implementation of this class needs to provide a <a class="el" href="classoomph_1_1BinaryTreeForest.html">BinaryTreeForest</a> representation of the initial (coarse) mesh. </p>
 
-<p class="definition">Definition at line <a class="el" href="refineable__line__mesh_8h_source.html#l00053">53</a> of file <a class="el" href="refineable__line__mesh_8h_source.html">refineable_line_mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="refineable__line__mesh_8h_source.html#l00049">49</a> of file <a class="el" href="refineable__line__mesh_8h_source.html">refineable_line_mesh.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a971ed8cade766ab0d19aa35c2276f771"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a971ed8cade766ab0d19aa35c2276f771">&#9670;&nbsp;</a></span>RefineableLineMesh() <span class="overload">[1/2]</span></h2>
@@ -1110,7 +1110,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Constructor: Set up static binary tree data. </p>
 
-<p class="definition">Definition at line <a class="el" href="refineable__line__mesh_8h_source.html#l00060">60</a> of file <a class="el" href="refineable__line__mesh_8h_source.html">refineable_line_mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="refineable__line__mesh_8h_source.html#l00056">56</a> of file <a class="el" href="refineable__line__mesh_8h_source.html">refineable_line_mesh.h</a>.</p>
 
 </div>
 </div>
@@ -1142,7 +1142,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Broken copy constructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="refineable__line__mesh_8h_source.html#l00068">68</a> of file <a class="el" href="refineable__line__mesh_8h_source.html">refineable_line_mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="refineable__line__mesh_8h_source.html#l00064">64</a> of file <a class="el" href="refineable__line__mesh_8h_source.html">refineable_line_mesh.h</a>.</p>
 
 </div>
 </div>
@@ -1173,7 +1173,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Destructor: </p>
 
-<p class="definition">Definition at line <a class="el" href="refineable__line__mesh_8h_source.html#l00080">80</a> of file <a class="el" href="refineable__line__mesh_8h_source.html">refineable_line_mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="refineable__line__mesh_8h_source.html#l00076">76</a> of file <a class="el" href="refineable__line__mesh_8h_source.html">refineable_line_mesh.h</a>.</p>
 
 </div>
 </div>
@@ -1206,7 +1206,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Broken assignment operator. </p>
 
-<p class="definition">Definition at line <a class="el" href="refineable__line__mesh_8h_source.html#l00074">74</a> of file <a class="el" href="refineable__line__mesh_8h_source.html">refineable_line_mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="refineable__line__mesh_8h_source.html#l00070">70</a> of file <a class="el" href="refineable__line__mesh_8h_source.html">refineable_line_mesh.h</a>.</p>
 
 </div>
 </div>
@@ -1236,9 +1236,9 @@ template&lt;class ELEMENT &gt; </div>
 </div><div class="memdoc">
 <p>Set up <a class="el" href="classoomph_1_1BinaryTreeForest.html">BinaryTreeForest</a>. Wipes any existing tree structure and regards the currently active elements as the root trees in the forest. </p>
 
-<p class="definition">Definition at line <a class="el" href="refineable__line__mesh_8h_source.html#l00091">91</a> of file <a class="el" href="refineable__line__mesh_8h_source.html">refineable_line_mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="refineable__line__mesh_8h_source.html#l00087">87</a> of file <a class="el" href="refineable__line__mesh_8h_source.html">refineable_line_mesh.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="one__d__mesh_8template_8h_source.html#l00135">oomph::RefineableOneDMesh&lt; oomph::SpectralPeriodicOrbitElement&lt; NNODE_1D &gt; &gt;::RefineableOneDMesh()</a>, and <a class="el" href="refineable__line__mesh_8h_source.html#l00084">oomph::RefineableLineMesh&lt; oomph::SpectralPeriodicOrbitElement&lt; NNODE_1D &gt; &gt;::setup_tree_forest()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="one__d__mesh_8template_8h_source.html#l00131">oomph::RefineableOneDMesh&lt; oomph::SpectralPeriodicOrbitElement&lt; NNODE_1D &gt; &gt;::RefineableOneDMesh()</a>, and <a class="el" href="refineable__line__mesh_8h_source.html#l00080">oomph::RefineableLineMesh&lt; oomph::SpectralPeriodicOrbitElement&lt; NNODE_1D &gt; &gt;::setup_tree_forest()</a>.</p>
 
 </div>
 </div>
@@ -1271,7 +1271,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Implements <a class="el" href="classoomph_1_1TreeBasedRefineableMeshBase.html#aab7cbaa680b2258f2b1eea5de6bbe605">oomph::TreeBasedRefineableMeshBase</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="refineable__line__mesh_8h_source.html#l00084">84</a> of file <a class="el" href="refineable__line__mesh_8h_source.html">refineable_line_mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="refineable__line__mesh_8h_source.html#l00080">80</a> of file <a class="el" href="refineable__line__mesh_8h_source.html">refineable_line_mesh.h</a>.</p>
 
 </div>
 </div>
@@ -1306,7 +1306,7 @@ template&lt;class ELEMENT &gt; </div>
     <footer>
       <div class="container">
         <div class="text-muted" style="float:right;">Generated by <a href="http://www.doxygen.org/index.html">
-          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Tue Jul 6 2021 22:58:58
+          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Fri Jul 9 2021 20:53:55
         </div>
       </div>
     </footer>

@@ -1673,7 +1673,7 @@ class oomph::BuoyantQCrouzeixRaviartElement&lt; DIM &gt;</h3>
 
 <p>A class that solves the Boussinesq approximation of the Navier&ndash;Stokes and energy equations by coupling two pre-existing classes. The <a class="el" href="classoomph_1_1QAdvectionDiffusionElement.html" title="QAdvectionDiffusionElement elements are linear/quadrilateral/brick-shaped Advection Diffusion element...">QAdvectionDiffusionElement</a> with bi-quadratic interpolation for the scalar variable (temperature) and <a class="el" href="classoomph_1_1QCrouzeixRaviartElement.html">QCrouzeixRaviartElement</a> which solves the Navier&ndash;Stokes equations using bi-quadratic interpolation for the velocities and a discontinuous bi-linear interpolation for the pressure. Note that we are free to choose the order in which we store the variables at the nodes. In this case we choose to store the variables in the order fluid velocities followed by temperature. We must, therefore, overload the function <a class="el" href="classoomph_1_1AdvectionDiffusionEquations.html#aadffa26c42be5d4a1156a7467de48fb8" title="Return the index at which the unknown value is stored. The default value, 0, is appropriate for singl...">AdvectionDiffusionEquations&lt;DIM&gt;::u_index_adv_diff()</a> to indicate that the temperature is stored at the DIM-th position not the 0-th. We do not need to overload the corresponding function in the NavierStokesEquations&lt;DIM&gt; class because the velocities are stored first. </p>
 
-<p class="definition">Definition at line <a class="el" href="boussinesq__elements_8h_source.html#l00071">71</a> of file <a class="el" href="boussinesq__elements_8h_source.html">boussinesq_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="boussinesq__elements_8h_source.html#l00067">67</a> of file <a class="el" href="boussinesq__elements_8h_source.html">boussinesq_elements.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a9651742d190071d973ed5c154341d82b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9651742d190071d973ed5c154341d82b">&#9670;&nbsp;</a></span>BuoyantQCrouzeixRaviartElement()</h2>
@@ -1702,9 +1702,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Constructor: call the underlying constructors and initialise the pointer to the Rayleigh number to point to the default value of 0.0. </p>
 
-<p class="definition">Definition at line <a class="el" href="boussinesq__elements_8h_source.html#l00089">89</a> of file <a class="el" href="boussinesq__elements_8h_source.html">boussinesq_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="boussinesq__elements_8h_source.html#l00085">85</a> of file <a class="el" href="boussinesq__elements_8h_source.html">boussinesq_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="boussinesq__elements_8h_source.html#l00082">oomph::BuoyantQCrouzeixRaviartElement&lt; DIM &gt;::Default_Physical_Constant_Value</a>, and <a class="el" href="boussinesq__elements_8h_source.html#l00079">oomph::BuoyantQCrouzeixRaviartElement&lt; DIM &gt;::Ra_pt</a>.</p>
+<p class="reference">References <a class="el" href="boussinesq__elements_8h_source.html#l00078">oomph::BuoyantQCrouzeixRaviartElement&lt; DIM &gt;::Default_Physical_Constant_Value</a>, and <a class="el" href="boussinesq__elements_8h_source.html#l00075">oomph::BuoyantQCrouzeixRaviartElement&lt; DIM &gt;::Ra_pt</a>.</p>
 
 </div>
 </div>
@@ -1761,9 +1761,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1AdvectionDiffusionEquations.html#acb1fcfb29911210ad7c0bc252f0ed665">oomph::AdvectionDiffusionEquations&lt; DIM &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="boussinesq__elements_8h_source.html#l00256">256</a> of file <a class="el" href="boussinesq__elements_8h_source.html">boussinesq_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="boussinesq__elements_8h_source.html#l00252">252</a> of file <a class="el" href="boussinesq__elements_8h_source.html">boussinesq_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l03064">oomph::FiniteElement::compute_error()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l03060">oomph::FiniteElement::compute_error()</a>.</p>
 
 </div>
 </div>
@@ -1825,9 +1825,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1AdvectionDiffusionEquations.html#a87c8c4e8ff5ea6e6dcb243ec83bb4fd2">oomph::AdvectionDiffusionEquations&lt; DIM &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="boussinesq__elements_8h_source.html#l00244">244</a> of file <a class="el" href="boussinesq__elements_8h_source.html">boussinesq_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="boussinesq__elements_8h_source.html#l00240">240</a> of file <a class="el" href="boussinesq__elements_8h_source.html">boussinesq_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l03064">oomph::FiniteElement::compute_error()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l03060">oomph::FiniteElement::compute_error()</a>.</p>
 
 </div>
 </div>
@@ -1853,7 +1853,7 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Set the default physical value to be zero. </p>
 
-<p class="definition">Definition at line <a class="el" href="boussinesq__elements_8h_source.html#l00704">704</a> of file <a class="el" href="boussinesq__elements_8h_source.html">boussinesq_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="boussinesq__elements_8h_source.html#l00700">700</a> of file <a class="el" href="boussinesq__elements_8h_source.html">boussinesq_elements.h</a>.</p>
 
 </div>
 </div>
@@ -1877,7 +1877,7 @@ template&lt;unsigned DIM&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="boussinesq__elements_8h_source.html#l00706">706</a> of file <a class="el" href="boussinesq__elements_8h_source.html">boussinesq_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="boussinesq__elements_8h_source.html#l00702">702</a> of file <a class="el" href="boussinesq__elements_8h_source.html">boussinesq_elements.h</a>.</p>
 
 </div>
 </div>
@@ -1910,9 +1910,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1AdvectionDiffusionEquations.html#aa635388e5e1139e0a1eae97ca89279d0">oomph::AdvectionDiffusionEquations&lt; DIM &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="boussinesq__elements_8h_source.html#l00115">115</a> of file <a class="el" href="boussinesq__elements_8h_source.html">boussinesq_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="boussinesq__elements_8h_source.html#l00111">111</a> of file <a class="el" href="boussinesq__elements_8h_source.html">boussinesq_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="advection__diffusion__elements_8h_source.html#l00136">oomph::AdvectionDiffusionEquations&lt; DIM &gt;::disable_ALE()</a>, and <a class="el" href="navier__stokes__elements_8h_source.html#l00860">oomph::NavierStokesEquations&lt; DIM &gt;::disable_ALE()</a>.</p>
+<p class="reference">References <a class="el" href="advection__diffusion__elements_8h_source.html#l00132">oomph::AdvectionDiffusionEquations&lt; DIM &gt;::disable_ALE()</a>, and <a class="el" href="navier__stokes__elements_8h_source.html#l00856">oomph::NavierStokesEquations&lt; DIM &gt;::disable_ALE()</a>.</p>
 
 </div>
 </div>
@@ -1945,9 +1945,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1AdvectionDiffusionEquations.html#a949dd5a3eb9803c993c1f4506cfd5d82">oomph::AdvectionDiffusionEquations&lt; DIM &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="boussinesq__elements_8h_source.html#l00123">123</a> of file <a class="el" href="boussinesq__elements_8h_source.html">boussinesq_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="boussinesq__elements_8h_source.html#l00119">119</a> of file <a class="el" href="boussinesq__elements_8h_source.html">boussinesq_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="advection__diffusion__elements_8h_source.html#l00146">oomph::AdvectionDiffusionEquations&lt; DIM &gt;::enable_ALE()</a>, and <a class="el" href="navier__stokes__elements_8h_source.html#l00869">oomph::NavierStokesEquations&lt; DIM &gt;::enable_ALE()</a>.</p>
+<p class="reference">References <a class="el" href="advection__diffusion__elements_8h_source.html#l00142">oomph::AdvectionDiffusionEquations&lt; DIM &gt;::enable_ALE()</a>, and <a class="el" href="navier__stokes__elements_8h_source.html#l00865">oomph::NavierStokesEquations&lt; DIM &gt;::enable_ALE()</a>.</p>
 
 </div>
 </div>
@@ -1991,9 +1991,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1AdvectionDiffusionEquations.html#a6ec1e0f92fa79998be9340ecfda4bcd5">oomph::AdvectionDiffusionEquations&lt; DIM &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="boussinesq__elements_8h_source.html#l00319">319</a> of file <a class="el" href="boussinesq__elements_8h_source.html">boussinesq_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="boussinesq__elements_8h_source.html#l00315">315</a> of file <a class="el" href="boussinesq__elements_8h_source.html">boussinesq_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l01714">oomph::FiniteElement::fill_in_contribution_to_jacobian()</a>, and <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l01710">oomph::FiniteElement::fill_in_contribution_to_jacobian()</a>, and <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>.</p>
 
 </div>
 </div>
@@ -2037,9 +2037,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1AdvectionDiffusionEquations.html#a6ec1e0f92fa79998be9340ecfda4bcd5">oomph::AdvectionDiffusionEquations&lt; DIM &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="boussinesq__elements_8h_source.html#l00483">483</a> of file <a class="el" href="boussinesq__elements_8h_source.html">boussinesq_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="boussinesq__elements_8h_source.html#l00479">479</a> of file <a class="el" href="boussinesq__elements_8h_source.html">boussinesq_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="advection__diffusion__elements_8h_source.html#l00413">oomph::AdvectionDiffusionEquations&lt; DIM &gt;::fill_in_contribution_to_jacobian()</a>, <a class="el" href="navier__stokes__elements_8h_source.html#l01207">oomph::NavierStokesEquations&lt; DIM &gt;::fill_in_contribution_to_jacobian()</a>, <a class="el" href="boussinesq__elements_8h_source.html#l00346">oomph::BuoyantQCrouzeixRaviartElement&lt; DIM &gt;::fill_in_off_diagonal_jacobian_blocks_by_fd()</a>, and <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>.</p>
+<p class="reference">References <a class="el" href="advection__diffusion__elements_8h_source.html#l00409">oomph::AdvectionDiffusionEquations&lt; DIM &gt;::fill_in_contribution_to_jacobian()</a>, <a class="el" href="navier__stokes__elements_8h_source.html#l01203">oomph::NavierStokesEquations&lt; DIM &gt;::fill_in_contribution_to_jacobian()</a>, <a class="el" href="boussinesq__elements_8h_source.html#l00342">oomph::BuoyantQCrouzeixRaviartElement&lt; DIM &gt;::fill_in_off_diagonal_jacobian_blocks_by_fd()</a>, and <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>.</p>
 
 </div>
 </div>
@@ -2083,9 +2083,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1AdvectionDiffusionEquations.html#a6ec1e0f92fa79998be9340ecfda4bcd5">oomph::AdvectionDiffusionEquations&lt; DIM &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="boussinesq__elements_8h_source.html#l00658">658</a> of file <a class="el" href="boussinesq__elements_8h_source.html">boussinesq_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="boussinesq__elements_8h_source.html#l00654">654</a> of file <a class="el" href="boussinesq__elements_8h_source.html">boussinesq_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="advection__diffusion__elements_8h_source.html#l00413">oomph::AdvectionDiffusionEquations&lt; DIM &gt;::fill_in_contribution_to_jacobian()</a>, <a class="el" href="navier__stokes__elements_8h_source.html#l01207">oomph::NavierStokesEquations&lt; DIM &gt;::fill_in_contribution_to_jacobian()</a>, <a class="el" href="boussinesq__elements_8h_source.html#l00528">oomph::BuoyantQCrouzeixRaviartElement&lt; DIM &gt;::fill_in_off_diagonal_jacobian_blocks_analytic()</a>, and <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>.</p>
+<p class="reference">References <a class="el" href="advection__diffusion__elements_8h_source.html#l00409">oomph::AdvectionDiffusionEquations&lt; DIM &gt;::fill_in_contribution_to_jacobian()</a>, <a class="el" href="navier__stokes__elements_8h_source.html#l01203">oomph::NavierStokesEquations&lt; DIM &gt;::fill_in_contribution_to_jacobian()</a>, <a class="el" href="boussinesq__elements_8h_source.html#l00524">oomph::BuoyantQCrouzeixRaviartElement&lt; DIM &gt;::fill_in_off_diagonal_jacobian_blocks_analytic()</a>, and <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>.</p>
 
 </div>
 </div>
@@ -2134,9 +2134,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1AdvectionDiffusionEquations.html#aed50fe00556434c01bc855766edeb564">oomph::AdvectionDiffusionEquations&lt; DIM &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="boussinesq__elements_8h_source.html#l00328">328</a> of file <a class="el" href="boussinesq__elements_8h_source.html">boussinesq_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="boussinesq__elements_8h_source.html#l00324">324</a> of file <a class="el" href="boussinesq__elements_8h_source.html">boussinesq_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8cc_source.html#l01281">oomph::GeneralisedElement::fill_in_contribution_to_jacobian_and_mass_matrix()</a>, and <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8cc_source.html#l01277">oomph::GeneralisedElement::fill_in_contribution_to_jacobian_and_mass_matrix()</a>, and <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>.</p>
 
 </div>
 </div>
@@ -2185,9 +2185,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1AdvectionDiffusionEquations.html#aed50fe00556434c01bc855766edeb564">oomph::AdvectionDiffusionEquations&lt; DIM &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="boussinesq__elements_8h_source.html#l00504">504</a> of file <a class="el" href="boussinesq__elements_8h_source.html">boussinesq_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="boussinesq__elements_8h_source.html#l00500">500</a> of file <a class="el" href="boussinesq__elements_8h_source.html">boussinesq_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="advection__diffusion__elements_8h_source.html#l00424">oomph::AdvectionDiffusionEquations&lt; DIM &gt;::fill_in_contribution_to_jacobian_and_mass_matrix()</a>, <a class="el" href="navier__stokes__elements_8h_source.html#l01217">oomph::NavierStokesEquations&lt; DIM &gt;::fill_in_contribution_to_jacobian_and_mass_matrix()</a>, <a class="el" href="boussinesq__elements_8h_source.html#l00346">oomph::BuoyantQCrouzeixRaviartElement&lt; DIM &gt;::fill_in_off_diagonal_jacobian_blocks_by_fd()</a>, and <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>.</p>
+<p class="reference">References <a class="el" href="advection__diffusion__elements_8h_source.html#l00420">oomph::AdvectionDiffusionEquations&lt; DIM &gt;::fill_in_contribution_to_jacobian_and_mass_matrix()</a>, <a class="el" href="navier__stokes__elements_8h_source.html#l01213">oomph::NavierStokesEquations&lt; DIM &gt;::fill_in_contribution_to_jacobian_and_mass_matrix()</a>, <a class="el" href="boussinesq__elements_8h_source.html#l00342">oomph::BuoyantQCrouzeixRaviartElement&lt; DIM &gt;::fill_in_off_diagonal_jacobian_blocks_by_fd()</a>, and <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>.</p>
 
 </div>
 </div>
@@ -2236,9 +2236,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1AdvectionDiffusionEquations.html#aed50fe00556434c01bc855766edeb564">oomph::AdvectionDiffusionEquations&lt; DIM &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="boussinesq__elements_8h_source.html#l00678">678</a> of file <a class="el" href="boussinesq__elements_8h_source.html">boussinesq_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="boussinesq__elements_8h_source.html#l00674">674</a> of file <a class="el" href="boussinesq__elements_8h_source.html">boussinesq_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="advection__diffusion__elements_8h_source.html#l00424">oomph::AdvectionDiffusionEquations&lt; DIM &gt;::fill_in_contribution_to_jacobian_and_mass_matrix()</a>, <a class="el" href="navier__stokes__elements_8h_source.html#l01217">oomph::NavierStokesEquations&lt; DIM &gt;::fill_in_contribution_to_jacobian_and_mass_matrix()</a>, <a class="el" href="boussinesq__elements_8h_source.html#l00528">oomph::BuoyantQCrouzeixRaviartElement&lt; DIM &gt;::fill_in_off_diagonal_jacobian_blocks_analytic()</a>, and <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>.</p>
+<p class="reference">References <a class="el" href="advection__diffusion__elements_8h_source.html#l00420">oomph::AdvectionDiffusionEquations&lt; DIM &gt;::fill_in_contribution_to_jacobian_and_mass_matrix()</a>, <a class="el" href="navier__stokes__elements_8h_source.html#l01213">oomph::NavierStokesEquations&lt; DIM &gt;::fill_in_contribution_to_jacobian_and_mass_matrix()</a>, <a class="el" href="boussinesq__elements_8h_source.html#l00524">oomph::BuoyantQCrouzeixRaviartElement&lt; DIM &gt;::fill_in_off_diagonal_jacobian_blocks_analytic()</a>, and <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>.</p>
 
 </div>
 </div>
@@ -2272,9 +2272,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1AdvectionDiffusionEquations.html#ae56ee6b085c75be438a598244c527fb5">oomph::AdvectionDiffusionEquations&lt; DIM &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="boussinesq__elements_8h_source.html#l00301">301</a> of file <a class="el" href="boussinesq__elements_8h_source.html">boussinesq_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="boussinesq__elements_8h_source.html#l00297">297</a> of file <a class="el" href="boussinesq__elements_8h_source.html">boussinesq_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="advection__diffusion__elements_8h_source.html#l00401">oomph::AdvectionDiffusionEquations&lt; DIM &gt;::fill_in_contribution_to_residuals()</a>, <a class="el" href="navier__stokes__elements_8h_source.html#l01196">oomph::NavierStokesEquations&lt; DIM &gt;::fill_in_contribution_to_residuals()</a>, and <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>.</p>
+<p class="reference">References <a class="el" href="advection__diffusion__elements_8h_source.html#l00397">oomph::AdvectionDiffusionEquations&lt; DIM &gt;::fill_in_contribution_to_residuals()</a>, <a class="el" href="navier__stokes__elements_8h_source.html#l01192">oomph::NavierStokesEquations&lt; DIM &gt;::fill_in_contribution_to_residuals()</a>, and <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>.</p>
 
 </div>
 </div>
@@ -2316,11 +2316,11 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Helper function to get the off-diagonal blocks of the Jacobian matrix analytically. </p>
 
-<p class="definition">Definition at line <a class="el" href="boussinesq__elements_8h_source.html#l00528">528</a> of file <a class="el" href="boussinesq__elements_8h_source.html">boussinesq_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="boussinesq__elements_8h_source.html#l00524">524</a> of file <a class="el" href="boussinesq__elements_8h_source.html">boussinesq_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="navier__stokes__elements_8h_source.html#l01884">oomph::QCrouzeixRaviartElement&lt; DIM &gt;::dshape_and_dtest_eulerian_at_knot_nst()</a>, <a class="el" href="navier__stokes__elements_8h_source.html#l00750">oomph::NavierStokesEquations&lt; DIM &gt;::g()</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="elements_8h_source.html#l01925">oomph::FiniteElement::integral_pt()</a>, <a class="el" href="elements_8h_source.html#l02163">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l01403">oomph::FiniteElement::nodal_local_eqn()</a>, <a class="el" href="classoomph_1_1Integral.html#a1a270de9d99a1fcf1d25a6c1017f65fa">oomph::Integral::nweight()</a>, <a class="el" href="advection__diffusion__elements_8h_source.html#l00319">oomph::AdvectionDiffusionEquations&lt; DIM &gt;::pe()</a>, <a class="el" href="boussinesq__elements_8h_source.html#l00109">oomph::BuoyantQCrouzeixRaviartElement&lt; DIM &gt;::ra()</a>, <a class="el" href="elements_8h_source.html#l02475">oomph::FiniteElement::raw_nodal_value()</a>, <a class="el" href="boussinesq__elements_8h_source.html#l00237">oomph::BuoyantQCrouzeixRaviartElement&lt; DIM &gt;::u_index_adv_diff()</a>, <a class="el" href="navier__stokes__elements_8h_source.html#l00824">oomph::NavierStokesEquations&lt; DIM &gt;::u_index_nst()</a>, <a class="el" href="quadtree_8h_source.html#l00060">oomph::QuadTreeNames::W</a>, and <a class="el" href="classoomph_1_1Integral.html#ac65335e2aab120b285b3d6c294507b06">oomph::Integral::weight()</a>.</p>
+<p class="reference">References <a class="el" href="navier__stokes__elements_8h_source.html#l01880">oomph::QCrouzeixRaviartElement&lt; DIM &gt;::dshape_and_dtest_eulerian_at_knot_nst()</a>, <a class="el" href="navier__stokes__elements_8h_source.html#l00746">oomph::NavierStokesEquations&lt; DIM &gt;::g()</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="elements_8h_source.html#l01921">oomph::FiniteElement::integral_pt()</a>, <a class="el" href="elements_8h_source.html#l02159">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l01399">oomph::FiniteElement::nodal_local_eqn()</a>, <a class="el" href="classoomph_1_1Integral.html#a1a270de9d99a1fcf1d25a6c1017f65fa">oomph::Integral::nweight()</a>, <a class="el" href="advection__diffusion__elements_8h_source.html#l00315">oomph::AdvectionDiffusionEquations&lt; DIM &gt;::pe()</a>, <a class="el" href="boussinesq__elements_8h_source.html#l00105">oomph::BuoyantQCrouzeixRaviartElement&lt; DIM &gt;::ra()</a>, <a class="el" href="elements_8h_source.html#l02471">oomph::FiniteElement::raw_nodal_value()</a>, <a class="el" href="boussinesq__elements_8h_source.html#l00233">oomph::BuoyantQCrouzeixRaviartElement&lt; DIM &gt;::u_index_adv_diff()</a>, <a class="el" href="navier__stokes__elements_8h_source.html#l00820">oomph::NavierStokesEquations&lt; DIM &gt;::u_index_nst()</a>, <a class="el" href="quadtree_8h_source.html#l00056">oomph::QuadTreeNames::W</a>, and <a class="el" href="classoomph_1_1Integral.html#ac65335e2aab120b285b3d6c294507b06">oomph::Integral::weight()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="boussinesq__elements_8h_source.html#l00658">oomph::BuoyantQCrouzeixRaviartElement&lt; DIM &gt;::fill_in_contribution_to_jacobian()</a>, and <a class="el" href="boussinesq__elements_8h_source.html#l00678">oomph::BuoyantQCrouzeixRaviartElement&lt; DIM &gt;::fill_in_contribution_to_jacobian_and_mass_matrix()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="boussinesq__elements_8h_source.html#l00654">oomph::BuoyantQCrouzeixRaviartElement&lt; DIM &gt;::fill_in_contribution_to_jacobian()</a>, and <a class="el" href="boussinesq__elements_8h_source.html#l00674">oomph::BuoyantQCrouzeixRaviartElement&lt; DIM &gt;::fill_in_contribution_to_jacobian_and_mass_matrix()</a>.</p>
 
 </div>
 </div>
@@ -2362,11 +2362,11 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Helper function to get the off-diagonal blocks of the Jacobian matrix by finite differences. </p>
 
-<p class="definition">Definition at line <a class="el" href="boussinesq__elements_8h_source.html#l00346">346</a> of file <a class="el" href="boussinesq__elements_8h_source.html">boussinesq_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="boussinesq__elements_8h_source.html#l00342">342</a> of file <a class="el" href="boussinesq__elements_8h_source.html">boussinesq_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l01181">oomph::GeneralisedElement::Default_fd_jacobian_step</a>, <a class="el" href="advection__diffusion__elements_8h_source.html#l00401">oomph::AdvectionDiffusionEquations&lt; DIM &gt;::fill_in_contribution_to_residuals()</a>, <a class="el" href="navier__stokes__elements_8h_source.html#l01196">oomph::NavierStokesEquations&lt; DIM &gt;::fill_in_contribution_to_residuals()</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, <a class="el" href="elements_8h_source.html#l00834">oomph::GeneralisedElement::ndof()</a>, <a class="el" href="elements_8h_source.html#l02163">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l01403">oomph::FiniteElement::nodal_local_eqn()</a>, <a class="el" href="elements_8h_source.html#l02126">oomph::FiniteElement::node_pt()</a>, <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>, <a class="el" href="boussinesq__elements_8h_source.html#l00237">oomph::BuoyantQCrouzeixRaviartElement&lt; DIM &gt;::u_index_adv_diff()</a>, <a class="el" href="navier__stokes__elements_8h_source.html#l00824">oomph::NavierStokesEquations&lt; DIM &gt;::u_index_nst()</a>, and <a class="el" href="nodes_8h_source.html#l00322">oomph::Data::value_pt()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l01177">oomph::GeneralisedElement::Default_fd_jacobian_step</a>, <a class="el" href="advection__diffusion__elements_8h_source.html#l00397">oomph::AdvectionDiffusionEquations&lt; DIM &gt;::fill_in_contribution_to_residuals()</a>, <a class="el" href="navier__stokes__elements_8h_source.html#l01192">oomph::NavierStokesEquations&lt; DIM &gt;::fill_in_contribution_to_residuals()</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, <a class="el" href="elements_8h_source.html#l00830">oomph::GeneralisedElement::ndof()</a>, <a class="el" href="elements_8h_source.html#l02159">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l01399">oomph::FiniteElement::nodal_local_eqn()</a>, <a class="el" href="elements_8h_source.html#l02122">oomph::FiniteElement::node_pt()</a>, <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>, <a class="el" href="boussinesq__elements_8h_source.html#l00233">oomph::BuoyantQCrouzeixRaviartElement&lt; DIM &gt;::u_index_adv_diff()</a>, <a class="el" href="navier__stokes__elements_8h_source.html#l00820">oomph::NavierStokesEquations&lt; DIM &gt;::u_index_nst()</a>, and <a class="el" href="nodes_8h_source.html#l00318">oomph::Data::value_pt()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="boussinesq__elements_8h_source.html#l00483">oomph::BuoyantQCrouzeixRaviartElement&lt; DIM &gt;::fill_in_contribution_to_jacobian()</a>, and <a class="el" href="boussinesq__elements_8h_source.html#l00504">oomph::BuoyantQCrouzeixRaviartElement&lt; DIM &gt;::fill_in_contribution_to_jacobian_and_mass_matrix()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="boussinesq__elements_8h_source.html#l00479">oomph::BuoyantQCrouzeixRaviartElement&lt; DIM &gt;::fill_in_contribution_to_jacobian()</a>, and <a class="el" href="boussinesq__elements_8h_source.html#l00500">oomph::BuoyantQCrouzeixRaviartElement&lt; DIM &gt;::fill_in_contribution_to_jacobian_and_mass_matrix()</a>.</p>
 
 </div>
 </div>
@@ -2429,9 +2429,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1NavierStokesEquations.html#a8a3f44daab0e804f2d9b03ab9a962440">oomph::NavierStokesEquations&lt; DIM &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="boussinesq__elements_8h_source.html#l00278">278</a> of file <a class="el" href="boussinesq__elements_8h_source.html">boussinesq_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="boussinesq__elements_8h_source.html#l00274">274</a> of file <a class="el" href="boussinesq__elements_8h_source.html">boussinesq_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="advection__diffusion__elements_8h_source.html#l00435">oomph::AdvectionDiffusionEquations&lt; DIM &gt;::interpolated_u_adv_diff()</a>, and <a class="el" href="boussinesq__elements_8h_source.html#l00109">oomph::BuoyantQCrouzeixRaviartElement&lt; DIM &gt;::ra()</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="advection__diffusion__elements_8h_source.html#l00431">oomph::AdvectionDiffusionEquations&lt; DIM &gt;::interpolated_u_adv_diff()</a>, and <a class="el" href="boussinesq__elements_8h_source.html#l00105">oomph::BuoyantQCrouzeixRaviartElement&lt; DIM &gt;::ra()</a>.</p>
 
 </div>
 </div>
@@ -2487,9 +2487,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1AdvectionDiffusionEquations.html#a32cb2f977b32fabfc23d1134749371ed">oomph::AdvectionDiffusionEquations&lt; DIM &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="boussinesq__elements_8h_source.html#l00264">264</a> of file <a class="el" href="boussinesq__elements_8h_source.html">boussinesq_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="boussinesq__elements_8h_source.html#l00260">260</a> of file <a class="el" href="boussinesq__elements_8h_source.html">boussinesq_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="navier__stokes__elements_8h_source.html#l01431">oomph::NavierStokesEquations&lt; DIM &gt;::interpolated_u_nst()</a>.</p>
+<p class="reference">References <a class="el" href="navier__stokes__elements_8h_source.html#l01427">oomph::NavierStokesEquations&lt; DIM &gt;::interpolated_u_nst()</a>.</p>
 
 </div>
 </div>
@@ -2522,7 +2522,7 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1AdvectionDiffusionEquations.html#a70205e9d39d7ff9660a53402d5636c1f">oomph::AdvectionDiffusionEquations&lt; DIM &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="boussinesq__elements_8h_source.html#l00133">133</a> of file <a class="el" href="boussinesq__elements_8h_source.html">boussinesq_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="boussinesq__elements_8h_source.html#l00129">129</a> of file <a class="el" href="boussinesq__elements_8h_source.html">boussinesq_elements.h</a>.</p>
 
 </div>
 </div>
@@ -2556,9 +2556,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1AdvectionDiffusionEquations.html#a063f08a2825608d32eaac5666c2ccec5">oomph::AdvectionDiffusionEquations&lt; DIM &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="boussinesq__elements_8h_source.html#l00210">210</a> of file <a class="el" href="boussinesq__elements_8h_source.html">boussinesq_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="boussinesq__elements_8h_source.html#l00206">206</a> of file <a class="el" href="boussinesq__elements_8h_source.html">boussinesq_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l02916">oomph::FiniteElement::output()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l02912">oomph::FiniteElement::output()</a>.</p>
 
 </div>
 </div>
@@ -2602,9 +2602,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1AdvectionDiffusionEquations.html#a03a096ff864ee53c8823b08e0d2f6091">oomph::AdvectionDiffusionEquations&lt; DIM &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="boussinesq__elements_8h_source.html#l00214">214</a> of file <a class="el" href="boussinesq__elements_8h_source.html">boussinesq_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="boussinesq__elements_8h_source.html#l00210">210</a> of file <a class="el" href="boussinesq__elements_8h_source.html">boussinesq_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l02916">oomph::FiniteElement::output()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l02912">oomph::FiniteElement::output()</a>.</p>
 
 </div>
 </div>
@@ -2638,9 +2638,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1AdvectionDiffusionEquations.html#a3016c7a56e7f7178b4d9ae8604d0c10b">oomph::AdvectionDiffusionEquations&lt; DIM &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="boussinesq__elements_8h_source.html#l00168">168</a> of file <a class="el" href="boussinesq__elements_8h_source.html">boussinesq_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="boussinesq__elements_8h_source.html#l00164">164</a> of file <a class="el" href="boussinesq__elements_8h_source.html">boussinesq_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l02916">oomph::FiniteElement::output()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l02912">oomph::FiniteElement::output()</a>.</p>
 
 </div>
 </div>
@@ -2685,9 +2685,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1AdvectionDiffusionEquations.html#ade5e445c7b99593a68fc8e42631d79be">oomph::AdvectionDiffusionEquations&lt; DIM &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="boussinesq__elements_8h_source.html#l00173">173</a> of file <a class="el" href="boussinesq__elements_8h_source.html">boussinesq_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="boussinesq__elements_8h_source.html#l00169">169</a> of file <a class="el" href="boussinesq__elements_8h_source.html">boussinesq_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l03010">oomph::FiniteElement::get_s_plot()</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="navier__stokes__elements_8h_source.html#l01561">oomph::NavierStokesEquations&lt; DIM &gt;::interpolated_p_nst()</a>, <a class="el" href="advection__diffusion__elements_8h_source.html#l00435">oomph::AdvectionDiffusionEquations&lt; DIM &gt;::interpolated_u_adv_diff()</a>, <a class="el" href="navier__stokes__elements_8h_source.html#l01431">oomph::NavierStokesEquations&lt; DIM &gt;::interpolated_u_nst()</a>, <a class="el" href="elements_8cc_source.html#l03881">oomph::FiniteElement::interpolated_x()</a>, <a class="el" href="elements_8h_source.html#l03049">oomph::FiniteElement::nplot_points()</a>, <a class="el" href="cfortran_8h_source.html#l00572">s</a>, <a class="el" href="elements_8h_source.html#l03022">oomph::FiniteElement::tecplot_zone_string()</a>, and <a class="el" href="elements_8h_source.html#l03035">oomph::FiniteElement::write_tecplot_zone_footer()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l03006">oomph::FiniteElement::get_s_plot()</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="navier__stokes__elements_8h_source.html#l01557">oomph::NavierStokesEquations&lt; DIM &gt;::interpolated_p_nst()</a>, <a class="el" href="advection__diffusion__elements_8h_source.html#l00431">oomph::AdvectionDiffusionEquations&lt; DIM &gt;::interpolated_u_adv_diff()</a>, <a class="el" href="navier__stokes__elements_8h_source.html#l01427">oomph::NavierStokesEquations&lt; DIM &gt;::interpolated_u_nst()</a>, <a class="el" href="elements_8cc_source.html#l03877">oomph::FiniteElement::interpolated_x()</a>, <a class="el" href="elements_8h_source.html#l03045">oomph::FiniteElement::nplot_points()</a>, <a class="el" href="cfortran_8h_source.html#l00568">s</a>, <a class="el" href="elements_8h_source.html#l03018">oomph::FiniteElement::tecplot_zone_string()</a>, and <a class="el" href="elements_8h_source.html#l03031">oomph::FiniteElement::write_tecplot_zone_footer()</a>.</p>
 
 </div>
 </div>
@@ -2743,9 +2743,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1AdvectionDiffusionEquations.html#affb6feff30ffb8617315e555e1bb7185">oomph::AdvectionDiffusionEquations&lt; DIM &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="boussinesq__elements_8h_source.html#l00226">226</a> of file <a class="el" href="boussinesq__elements_8h_source.html">boussinesq_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="boussinesq__elements_8h_source.html#l00222">222</a> of file <a class="el" href="boussinesq__elements_8h_source.html">boussinesq_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l02970">oomph::FiniteElement::output_fct()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l02966">oomph::FiniteElement::output_fct()</a>.</p>
 
 </div>
 </div>
@@ -2795,9 +2795,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1AdvectionDiffusionEquations.html#ab1d0f6bc8d3c9c9826ac1d71f1fd148f">oomph::AdvectionDiffusionEquations&lt; DIM &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="boussinesq__elements_8h_source.html#l00218">218</a> of file <a class="el" href="boussinesq__elements_8h_source.html">boussinesq_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="boussinesq__elements_8h_source.html#l00214">214</a> of file <a class="el" href="boussinesq__elements_8h_source.html">boussinesq_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l02970">oomph::FiniteElement::output_fct()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l02966">oomph::FiniteElement::output_fct()</a>.</p>
 
 </div>
 </div>
@@ -2828,11 +2828,11 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Access function for the Rayleigh number (const version) </p>
 
-<p class="definition">Definition at line <a class="el" href="boussinesq__elements_8h_source.html#l00109">109</a> of file <a class="el" href="boussinesq__elements_8h_source.html">boussinesq_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="boussinesq__elements_8h_source.html#l00105">105</a> of file <a class="el" href="boussinesq__elements_8h_source.html">boussinesq_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="boussinesq__elements_8h_source.html#l00079">oomph::BuoyantQCrouzeixRaviartElement&lt; DIM &gt;::Ra_pt</a>.</p>
+<p class="reference">References <a class="el" href="boussinesq__elements_8h_source.html#l00075">oomph::BuoyantQCrouzeixRaviartElement&lt; DIM &gt;::Ra_pt</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="boussinesq__elements_8h_source.html#l00528">oomph::BuoyantQCrouzeixRaviartElement&lt; DIM &gt;::fill_in_off_diagonal_jacobian_blocks_analytic()</a>, and <a class="el" href="boussinesq__elements_8h_source.html#l00278">oomph::BuoyantQCrouzeixRaviartElement&lt; DIM &gt;::get_body_force_nst()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="boussinesq__elements_8h_source.html#l00524">oomph::BuoyantQCrouzeixRaviartElement&lt; DIM &gt;::fill_in_off_diagonal_jacobian_blocks_analytic()</a>, and <a class="el" href="boussinesq__elements_8h_source.html#l00274">oomph::BuoyantQCrouzeixRaviartElement&lt; DIM &gt;::get_body_force_nst()</a>.</p>
 
 </div>
 </div>
@@ -2863,9 +2863,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Access function for the pointer to the Rayleigh number. </p>
 
-<p class="definition">Definition at line <a class="el" href="boussinesq__elements_8h_source.html#l00112">112</a> of file <a class="el" href="boussinesq__elements_8h_source.html">boussinesq_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="boussinesq__elements_8h_source.html#l00108">108</a> of file <a class="el" href="boussinesq__elements_8h_source.html">boussinesq_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="boussinesq__elements_8h_source.html#l00079">oomph::BuoyantQCrouzeixRaviartElement&lt; DIM &gt;::Ra_pt</a>.</p>
+<p class="reference">References <a class="el" href="boussinesq__elements_8h_source.html#l00075">oomph::BuoyantQCrouzeixRaviartElement&lt; DIM &gt;::Ra_pt</a>.</p>
 
 </div>
 </div>
@@ -2899,7 +2899,7 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1QCrouzeixRaviartElement.html#a025946afee7e1ff977fb24569c438fd0">oomph::QCrouzeixRaviartElement&lt; DIM &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="boussinesq__elements_8h_source.html#l00104">104</a> of file <a class="el" href="boussinesq__elements_8h_source.html">boussinesq_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="boussinesq__elements_8h_source.html#l00100">100</a> of file <a class="el" href="boussinesq__elements_8h_source.html">boussinesq_elements.h</a>.</p>
 
 <p class="reference">References <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>.</p>
 
@@ -2935,9 +2935,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1AdvectionDiffusionEquations.html#a37c30bb64389d12ffef51f046d846886">oomph::AdvectionDiffusionEquations&lt; DIM &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="boussinesq__elements_8h_source.html#l00161">161</a> of file <a class="el" href="boussinesq__elements_8h_source.html">boussinesq_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="boussinesq__elements_8h_source.html#l00157">157</a> of file <a class="el" href="boussinesq__elements_8h_source.html">boussinesq_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, and <a class="el" href="oomph__utilities_8h_source.html#l00196">oomph::StringConversion::to_string()</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, and <a class="el" href="oomph__utilities_8h_source.html#l00192">oomph::StringConversion::to_string()</a>.</p>
 
 </div>
 </div>
@@ -2987,7 +2987,7 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1AdvectionDiffusionEquations.html#a7e4c60334ef457e6155e84a9d24062cf">oomph::AdvectionDiffusionEquations&lt; DIM &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="boussinesq__elements_8h_source.html#l00147">147</a> of file <a class="el" href="boussinesq__elements_8h_source.html">boussinesq_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="boussinesq__elements_8h_source.html#l00143">143</a> of file <a class="el" href="boussinesq__elements_8h_source.html">boussinesq_elements.h</a>.</p>
 
 </div>
 </div>
@@ -3020,9 +3020,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1AdvectionDiffusionEquations.html#aadffa26c42be5d4a1156a7467de48fb8">oomph::AdvectionDiffusionEquations&lt; DIM &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="boussinesq__elements_8h_source.html#l00237">237</a> of file <a class="el" href="boussinesq__elements_8h_source.html">boussinesq_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="boussinesq__elements_8h_source.html#l00233">233</a> of file <a class="el" href="boussinesq__elements_8h_source.html">boussinesq_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="boussinesq__elements_8h_source.html#l00528">oomph::BuoyantQCrouzeixRaviartElement&lt; DIM &gt;::fill_in_off_diagonal_jacobian_blocks_analytic()</a>, and <a class="el" href="boussinesq__elements_8h_source.html#l00346">oomph::BuoyantQCrouzeixRaviartElement&lt; DIM &gt;::fill_in_off_diagonal_jacobian_blocks_by_fd()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="boussinesq__elements_8h_source.html#l00524">oomph::BuoyantQCrouzeixRaviartElement&lt; DIM &gt;::fill_in_off_diagonal_jacobian_blocks_analytic()</a>, and <a class="el" href="boussinesq__elements_8h_source.html#l00342">oomph::BuoyantQCrouzeixRaviartElement&lt; DIM &gt;::fill_in_off_diagonal_jacobian_blocks_by_fd()</a>.</p>
 
 </div>
 </div>
@@ -3054,9 +3054,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Unpin p_dof-th pressure dof. </p>
 
-<p class="definition">Definition at line <a class="el" href="boussinesq__elements_8h_source.html#l00096">96</a> of file <a class="el" href="boussinesq__elements_8h_source.html">boussinesq_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="boussinesq__elements_8h_source.html#l00092">92</a> of file <a class="el" href="boussinesq__elements_8h_source.html">boussinesq_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l00623">oomph::GeneralisedElement::internal_data_pt()</a>, <a class="el" href="navier__stokes__elements_8h_source.html#l01682">oomph::QCrouzeixRaviartElement&lt; DIM &gt;::P_nst_internal_index</a>, and <a class="el" href="nodes_8h_source.html#l00386">oomph::Data::unpin()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l00619">oomph::GeneralisedElement::internal_data_pt()</a>, <a class="el" href="navier__stokes__elements_8h_source.html#l01678">oomph::QCrouzeixRaviartElement&lt; DIM &gt;::P_nst_internal_index</a>, and <a class="el" href="nodes_8h_source.html#l00382">oomph::Data::unpin()</a>.</p>
 
 </div>
 </div>
@@ -3085,9 +3085,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>The static default value of the Rayleigh number. </p>
 
-<p class="definition">Definition at line <a class="el" href="boussinesq__elements_8h_source.html#l00082">82</a> of file <a class="el" href="boussinesq__elements_8h_source.html">boussinesq_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="boussinesq__elements_8h_source.html#l00078">78</a> of file <a class="el" href="boussinesq__elements_8h_source.html">boussinesq_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="boussinesq__elements_8h_source.html#l00089">oomph::BuoyantQCrouzeixRaviartElement&lt; DIM &gt;::BuoyantQCrouzeixRaviartElement()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="boussinesq__elements_8h_source.html#l00085">oomph::BuoyantQCrouzeixRaviartElement&lt; DIM &gt;::BuoyantQCrouzeixRaviartElement()</a>.</p>
 
 </div>
 </div>
@@ -3115,9 +3115,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Pointer to a private data member, the Rayleigh number. </p>
 
-<p class="definition">Definition at line <a class="el" href="boussinesq__elements_8h_source.html#l00079">79</a> of file <a class="el" href="boussinesq__elements_8h_source.html">boussinesq_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="boussinesq__elements_8h_source.html#l00075">75</a> of file <a class="el" href="boussinesq__elements_8h_source.html">boussinesq_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="boussinesq__elements_8h_source.html#l00089">oomph::BuoyantQCrouzeixRaviartElement&lt; DIM &gt;::BuoyantQCrouzeixRaviartElement()</a>, <a class="el" href="boussinesq__elements_8h_source.html#l00109">oomph::BuoyantQCrouzeixRaviartElement&lt; DIM &gt;::ra()</a>, and <a class="el" href="boussinesq__elements_8h_source.html#l00112">oomph::BuoyantQCrouzeixRaviartElement&lt; DIM &gt;::ra_pt()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="boussinesq__elements_8h_source.html#l00085">oomph::BuoyantQCrouzeixRaviartElement&lt; DIM &gt;::BuoyantQCrouzeixRaviartElement()</a>, <a class="el" href="boussinesq__elements_8h_source.html#l00105">oomph::BuoyantQCrouzeixRaviartElement&lt; DIM &gt;::ra()</a>, and <a class="el" href="boussinesq__elements_8h_source.html#l00108">oomph::BuoyantQCrouzeixRaviartElement&lt; DIM &gt;::ra_pt()</a>.</p>
 
 </div>
 </div>
@@ -3152,7 +3152,7 @@ template&lt;unsigned DIM&gt; </div>
     <footer>
       <div class="container">
         <div class="text-muted" style="float:right;">Generated by <a href="http://www.doxygen.org/index.html">
-          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Tue Jul 6 2021 22:55:55
+          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Fri Jul 9 2021 20:51:13
         </div>
       </div>
     </footer>

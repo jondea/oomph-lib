@@ -251,7 +251,7 @@ We non-\/dimensionalise the equations, using problem-\/specific reference quanti
 The non-\/dimensional form of the axisymmetric Navier-\/\+Stokes equations is then given by \[ R_{\rho} Re\left(St\frac{\partial u}{\partial t} + {u}\frac{\partial u}{\partial r} - \frac{{v}^2}{r} + {w}\frac{\partial u}{\partial z} \right) = B_r\left(r,z,t\right)+ R_\rho \frac{Re}{Fr} G_r + \frac{1}{r} \frac{\partial\left({r}\sigma_{rr}\right)}{\partial r} - \frac{\sigma_{\theta\theta}}{r} + \frac{\partial\sigma_{rz}}{\partial z}, \] \[ R_{\rho} Re\left(St\frac{\partial w}{\partial t} + {u}\frac{\partial w}{\partial r} + {w}\frac{\partial w}{\partial z} \right) = B_z\left(r,z,t\right)+ R_\rho \frac{Re}{Fr} G_z+ \frac{1}{r}\frac{\partial\left({r}\sigma_{zr}\right)}{\partial r} + \frac{\partial\sigma_{zz}}{\partial z}, \] \[ R_{\rho} Re\left(St\frac{\partial v}{\partial t} + {u}\frac{\partial v}{\partial r} + \frac{u v}{r} +{w}\frac{\partial v}{\partial z} \right)= B_\theta\left(r,z,t\right)+ R_\rho \frac{Re}{Fr} G_\theta+ \frac{1}{r}\frac{\partial\left({r}\sigma_{\theta r}\right)}{\partial r} + \frac{\sigma_{r\theta}}{r} + \frac{\partial\sigma_{\theta z}}{\partial z}, \] and \[ \frac{1}{r}\frac{\partial\left(ru\right)}{\partial r} + \frac{\partial w}{\partial z} = Q. \] Here the non-\/dimensional, symmetric stress tensor is defined as\+: \[ \sigma_{rr} = -p + 2R_\mu \frac{\partial u}{\partial r}, \qquad \sigma_{\theta\theta} = -p +2R_\mu \frac{u}{r}, \] \[ \sigma_{zz} = -p + 2R_\mu \frac{\partial w}{\partial z}, \qquad \sigma_{rz} = R_\mu \left(\frac{\partial u}{\partial z} + \frac{\partial w}{\partial r}\right), \] \[ \sigma_{\theta r} = R_\mu r \frac{\partial}{\partial r}\left(\frac{v}{r}\right), \qquad \sigma_{\theta z} = R_\mu \frac{\partial v}{\partial z}. \] and the dimensionless parameters \[ Re = \frac{UL\rho_{ref}}{\mu_{ref}}, \qquad St = \frac{L}{UT}, \qquad Fr = \frac{U^2}{gL}, \] are the Reynolds number, Strouhal number and Froude number respectively. $ R_\rho=\rho/\rho_{ref} $ and $ R_\mu(T) =\mu(T)/\mu_{ref}$ represent the ratios of the fluid\textquotesingle{}s density and its dynamic viscosity, relative to the density and viscosity values used to form the non-\/dimensional parameters (By default, $ R_\rho = R_\mu = 1 $; other values tend to be used in problems involving multiple fluids). ~\newline
  
 
-Definition at line 224 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 220 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -268,7 +268,7 @@ Constructor\+: N\+U\+LL the body force and source function.
 
 
 
-Definition at line 492 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 488 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -293,7 +293,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1FiniteElement_a73c79a1f1e5b1d3
 
 
 
-Definition at line 241 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
+Definition at line 237 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
 
 
 
@@ -315,7 +315,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1FiniteElement_a7f67853506dc73f
 
 
 
-Definition at line 172 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
+Definition at line 168 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
 
 
 
@@ -337,7 +337,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1FiniteElement_a782a540035dc31c
 
 
 
-Definition at line 1281 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 1277 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -355,7 +355,7 @@ Access function for the constitutive equation pointer.
 
 
 
-Definition at line 574 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 570 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -373,7 +373,7 @@ Density ratio for element\+: Element\textquotesingle{}s density relative to the 
 
 
 
-Definition at line 550 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 546 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -395,7 +395,7 @@ Pointer to Density ratio.
 
 
 
-Definition at line 553 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 549 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -421,7 +421,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1RefineableGeneralisedNewtonianAx
 
 
 
-Definition at line 1060 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 1056 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -443,7 +443,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1FiniteElement_a625ea6d3f9baccf
 
 
 
-Definition at line 642 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 638 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -461,7 +461,7 @@ Return integral of dissipation over element.
 
 
 
-Definition at line 595 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
+Definition at line 591 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
 
 
 
@@ -479,7 +479,7 @@ Return dissipation at local coordinate s.
 
 
 
-Definition at line 714 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
+Definition at line 710 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
 
 
 
@@ -543,7 +543,7 @@ i-\/th component of du/dt at local node n. Uses suitably interpolated value for 
 
 
 
-Definition at line 614 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 610 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -569,7 +569,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1FiniteElement_a92ef8967fa4e2d6
 
 
 
-Definition at line 651 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 647 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -587,7 +587,7 @@ Extrapolated strain-\/rate tensor\+: $ e_{ij} $ where $ i,j = r,z,\theta $ (in t
 
 
 
-Definition at line 705 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 701 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -605,7 +605,7 @@ Extrapolated strain-\/rate tensor\+: $ e_{ij} $ where $ i,j = r,z,\theta $ (in t
 
 Get strain-\/rate tensor\+: $ e_{ij} $ where $ i,j = r,z,\theta $ (in that order). Extrapolated from history values. 
 
-Definition at line 966 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
+Definition at line 962 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
 
 
 
@@ -627,7 +627,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1GeneralisedElement_a2d6e3c918e
 
 
 
-Definition at line 964 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 960 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -649,7 +649,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1GeneralisedElement_a90ee6ee39d
 
 
 
-Definition at line 952 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 948 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -671,7 +671,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1GeneralisedElement_a64d31806fc
 
 
 
-Definition at line 940 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 936 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -697,7 +697,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1RefineableGeneralisedNewtonianAx
 
 
 
-Definition at line 3889 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
+Definition at line 3885 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
 
 
 
@@ -719,7 +719,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1GeneralisedElement_a6ae09fc0d6
 
 
 
-Definition at line 907 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 903 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -737,7 +737,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1GeneralisedElement_a2b6294a730
 
 
 
-Definition at line 922 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 918 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -759,7 +759,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1GeneralisedElement_a310c97f515
 
 
 
-Definition at line 896 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 892 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -782,7 +782,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1RefineableGeneralisedNewtonianAx
 
 
 
-Definition at line 3200 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
+Definition at line 3196 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
 
 
 
@@ -810,7 +810,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1RefineableGeneralisedNewtonianAx
 
 
 
-Definition at line 1161 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
+Definition at line 1157 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
 
 
 
@@ -832,7 +832,7 @@ Referenced by fill\+\_\+in\+\_\+contribution\+\_\+to\+\_\+jacobian(), fill\+\_\+
 
 
 
-Definition at line 543 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 539 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -854,7 +854,7 @@ Pointer to \mbox{\hyperlink{classoomph_1_1Vector}{Vector}} of gravitational comp
 
 
 
-Definition at line 546 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 542 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -876,7 +876,7 @@ Calculate the body force fct at a given time and Eulerian position.
 
 
 
-Definition at line 344 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 340 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -898,7 +898,7 @@ Get gradient of body force term at (Eulerian) position x. Computed via function 
 
 
 
-Definition at line 366 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 362 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -928,7 +928,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1RefineableGeneralisedNewtonianAx
 
 
 
-Definition at line 2364 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
+Definition at line 2360 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
 
 
 
@@ -950,7 +950,7 @@ Implements \mbox{\hyperlink{classoomph_1_1NavierStokesElementWithDiagonalMassMat
 
 
 
-Definition at line 77 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
+Definition at line 73 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
 
 
 
@@ -968,7 +968,7 @@ Calculate the source fct at given time and Eulerian position.
 
 
 
-Definition at line 404 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 400 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -986,7 +986,7 @@ Referenced by oomph\+::\+Refineable\+Generalised\+Newtonian\+Axisymmetric\+Navie
 
 Get gradient of source term at (Eulerian) position x. Computed via function pointer (if set) or by finite differencing (default) 
 
-Definition at line 417 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 413 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1008,7 +1008,7 @@ Calculate the viscosity ratio relative to the viscosity used in the definition o
 
 
 
-Definition at line 455 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 451 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1030,7 +1030,7 @@ Return FE interpolated derivatives w.\+r.\+t. nodal coordinates X\+\_\+\{pq\} of
 
 
 
-Definition at line 1223 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 1219 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1044,7 +1044,7 @@ References oomph\+::\+Finite\+Element\+::d\+\_\+dshape\+\_\+eulerian\+\_\+dnodal
 
 Return FE interpolated derivatives of velocity component u\mbox{[}i\mbox{]} w.\+r.\+t spatial local coordinate direction s\mbox{[}j\mbox{]} at local coordinate s 
 
-Definition at line 1132 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 1128 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1058,7 +1058,7 @@ References oomph\+::\+Finite\+Element\+::dshape\+\_\+local(), i, oomph\+::\+Fini
 
 Return FE interpolated derivatives of velocity component u\mbox{[}i\mbox{]} w.\+r.\+t time at local coordinate s 
 
-Definition at line 1196 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 1192 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1072,7 +1072,7 @@ References du\+\_\+dt\+\_\+axi\+\_\+nst(), i, oomph\+::\+Finite\+Element\+::nnod
 
 Return FE interpolated derivatives of velocity component u\mbox{[}i\mbox{]} w.\+r.\+t spatial global coordinate direction x\mbox{[}j\mbox{]} at local coordinate s 
 
-Definition at line 1164 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 1160 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1090,7 +1090,7 @@ Return FE interpolated pressure at local coordinate s.
 
 
 
-Definition at line 1110 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 1106 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1112,7 +1112,7 @@ Return FE interpolated velocity u\mbox{[}i\mbox{]} at local coordinate s.
 
 
 
-Definition at line 1029 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 1025 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1130,7 +1130,7 @@ Return FE interpolated velocity u\mbox{[}i\mbox{]} at local coordinate s.
 
 
 
-Definition at line 1002 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 998 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1148,7 +1148,7 @@ Compute vector of FE interpolated velocity u at local coordinate s.
 
 
 
-Definition at line 977 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 973 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1170,7 +1170,7 @@ Get integral of kinetic energy over element.
 
 Get integral of kinetic energy over element\+: 
 
-Definition at line 1016 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
+Definition at line 1012 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
 
 
 
@@ -1190,7 +1190,7 @@ Get max. and min. strain rate invariant and visocosity over all integration poin
 Get max. and min. strain rate invariant and visocosity over all integration points in element ~\newline
  
 
-Definition at line 1111 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
+Definition at line 1107 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
 
 
 
@@ -1208,7 +1208,7 @@ Return the number of velocity components for use in general Fluid\+Interface cla
 
 
 
-Definition at line 610 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 606 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1GeneralisedNewtonianAxisymmetricNavierStokesEquations_a4c4c6c5ae937187b735e79451a0befbc}\label{classoomph_1_1GeneralisedNewtonianAxisymmetricNavierStokesEquations_a4c4c6c5ae937187b735e79451a0befbc}} 
 \index{oomph::GeneralisedNewtonianAxisymmetricNavierStokesEquations@{oomph::GeneralisedNewtonianAxisymmetricNavierStokesEquations}!npres\_axi\_nst@{npres\_axi\_nst}}
@@ -1244,7 +1244,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1FiniteElement_a865e2e5586552ba
 
 
 
-Definition at line 732 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 728 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1GeneralisedNewtonianAxisymmetricNavierStokesEquations_a34a51e3ad73df1ddca173e59a1404c90}\label{classoomph_1_1GeneralisedNewtonianAxisymmetricNavierStokesEquations_a34a51e3ad73df1ddca173e59a1404c90}} 
 \index{oomph::GeneralisedNewtonianAxisymmetricNavierStokesEquations@{oomph::GeneralisedNewtonianAxisymmetricNavierStokesEquations}!output@{output}}
@@ -1266,7 +1266,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1GeneralisedNewtonianAxisymmetric
 
 
 
-Definition at line 845 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 841 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1292,7 +1292,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1GeneralisedNewtonianAxisymmetric
 
 
 
-Definition at line 543 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
+Definition at line 539 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
 
 
 
@@ -1318,7 +1318,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1GeneralisedNewtonianAxisymmetric
 
 
 
-Definition at line 832 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 828 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1344,7 +1344,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1GeneralisedNewtonianAxisymmetric
 
 
 
-Definition at line 501 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
+Definition at line 497 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
 
 
 
@@ -1366,7 +1366,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1FiniteElement_a2a8426dccd57b92
 
 
 
-Definition at line 369 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
+Definition at line 365 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
 
 
 
@@ -1388,7 +1388,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1FiniteElement_a22b695c714f60ee
 
 
 
-Definition at line 310 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
+Definition at line 306 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
 
 
 
@@ -1407,7 +1407,7 @@ Output function\+: x,y,\mbox{[}z\mbox{]},u,v,\mbox{[}w\mbox{]} in tecplot format
 Output function\+: Velocities only ~\newline
  x,y,\mbox{[}z\mbox{]},u,v,\mbox{[}w\mbox{]} in tecplot format at specified previous timestep (t=0\+: present; t$>$0\+: previous timestep). Specified number of plot points in each coordinate direction. 
 
-Definition at line 430 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
+Definition at line 426 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
 
 
 
@@ -1465,7 +1465,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1GeneralisedNewtonianAxisymmetric
 
 
 
-Definition at line 661 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 657 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1491,7 +1491,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1FiniteElement_a8bf3f75b55d4e67
 
 
 
-Definition at line 811 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 807 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1509,7 +1509,7 @@ References i, interpolated\+\_\+p\+\_\+axi\+\_\+nst(), interpolated\+\_\+u\+\_\+
 
 Return pressure integrated over the element. 
 
-Definition at line 1063 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
+Definition at line 1059 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
 
 
 
@@ -1559,7 +1559,7 @@ Reynolds number.
 
 
 
-Definition at line 519 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 515 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1581,7 +1581,7 @@ Global inverse Froude number.
 
 
 
-Definition at line 531 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 527 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1603,7 +1603,7 @@ Pointer to global inverse Froude number.
 
 
 
-Definition at line 534 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 530 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1625,7 +1625,7 @@ Global Reynolds number multiplied by inverse Rossby number.
 
 
 
-Definition at line 537 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 533 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1647,7 +1647,7 @@ Pointer to global inverse Froude number.
 
 
 
-Definition at line 540 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 536 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1669,7 +1669,7 @@ Pointer to Reynolds number.
 
 
 
-Definition at line 525 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 521 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1691,7 +1691,7 @@ Product of Reynolds and Strouhal number (=Womersley number)
 
 
 
-Definition at line 522 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 518 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1713,7 +1713,7 @@ Pointer to product of Reynolds and Strouhal number (=Womersley number)
 
 
 
-Definition at line 528 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 524 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1739,7 +1739,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1FiniteElement_a49cc2d4f7ed5772
 
 
 
-Definition at line 782 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 778 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1761,7 +1761,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1FiniteElement_a02cf8832a5e2886
 
 
 
-Definition at line 739 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 735 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1779,7 +1779,7 @@ Strain-\/rate tensor\+: $ e_{ij} $ where $ i,j = r,z,\theta $ (in that order) at
 
 Get strain-\/rate tensor\+: $ e_{ij} $ where $ i,j = r,z,\theta $ (in that order) at a specific time 
 
-Definition at line 844 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
+Definition at line 840 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
 
 
 
@@ -1797,7 +1797,7 @@ Strain-\/rate tensor\+: $ e_{ij} $ where $ i,j = r,z,\theta $ (in that order)
 
 Get strain-\/rate tensor\+: $ e_{ij} $ where $ i,j = r,z,\theta $ (in that order) 
 
-Definition at line 743 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
+Definition at line 739 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
 
 
 
@@ -1819,7 +1819,7 @@ Compute traction (on the viscous scale) at local coordinate s for outer unit nor
 
 
 
-Definition at line 653 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
+Definition at line 649 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+cc.
 
 
 
@@ -1841,7 +1841,7 @@ Return the index at which the i-\/th unknown velocity component.
 
 is stored. The default value, i, is appropriate for single-\/physics problems. In derived multi-\/physics elements, this function should be overloaded to reflect the chosen storage scheme. Note that these equations require that the unknowns are always stored at the same indices at each node. 
 
-Definition at line 598 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 594 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1863,7 +1863,7 @@ Return the index at which the i-\/th unknown velocity component is stored with a
 
 
 
-Definition at line 605 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 601 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1881,7 +1881,7 @@ Switch to fully implict evaluation of non-\/\+Newtonian const eqn.
 
 
 
-Definition at line 578 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 574 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1899,7 +1899,7 @@ Use extrapolation for non-\/\+Newtonian const eqn.
 
 
 
-Definition at line 584 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 580 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1917,7 +1917,7 @@ Viscosity ratio for element\+: Element\textquotesingle{}s viscosity relative to 
 
 
 
-Definition at line 557 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 553 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1939,7 +1939,7 @@ Pointer to Viscosity Ratio.
 
 
 
-Definition at line 560 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 556 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1964,7 +1964,7 @@ Boolean flag to indicate if A\+LE formulation is disabled when the time-\/deriva
 
 
 
-Definition at line 297 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 293 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -1982,7 +1982,7 @@ Access function for the body-\/force pointer.
 
 
 
-Definition at line 563 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 559 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -2000,7 +2000,7 @@ Pointer to body force function.
 
 
 
-Definition at line 279 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 275 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -2018,7 +2018,7 @@ Pointer to the generalised Newtonian constitutive equation.
 
 
 
-Definition at line 288 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 284 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -2036,7 +2036,7 @@ Static default value for the gravity vector.
 
 Navier-\/\+Stokes equations default gravity vector. 
 
-Definition at line 241 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 237 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -2054,7 +2054,7 @@ Static default value for the physical constants (all initialised to zero)
 
 
 
-Definition at line 235 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 231 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -2072,7 +2072,7 @@ Static default value for the physical ratios (all are initialised to one)
 
 
 
-Definition at line 238 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 234 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -2090,7 +2090,7 @@ Pointer to the density ratio (relative to the density used in the definition of 
 
 
 
-Definition at line 257 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 253 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -2108,7 +2108,7 @@ Pointer to global gravity \mbox{\hyperlink{classoomph_1_1Vector}{Vector}}.
 
 
 
-Definition at line 276 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 272 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -2126,7 +2126,7 @@ Referenced by oomph\+::\+Refineable\+Generalised\+Newtonian\+Axisymmetric\+Navie
 
 Navier--Stokes equations static data. 
 
-Definition at line 514 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 510 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -2140,7 +2140,7 @@ Referenced by oomph\+::\+Refineable\+Generalised\+Newtonian\+Axisymmetric\+Navie
 
 Static boolean telling us whether we pre-\/multiply the pressure and continuity by the viscosity ratio 
 
-Definition at line 247 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 243 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -2158,7 +2158,7 @@ Static \char`\"{}magic\char`\"{} number that indicates that the pressure is not 
 
 
 
-Definition at line 232 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 228 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -2176,7 +2176,7 @@ Pointer to global Reynolds number.
 
 
 
-Definition at line 262 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 258 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -2195,7 +2195,7 @@ Pointer to global Reynolds number x inverse Froude number (= Bond number / Capil
 
 
 
-Definition at line 269 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 265 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -2213,7 +2213,7 @@ Pointer to global Reynolds number x inverse Rossby number (used when in a rotati
 
 
 
-Definition at line 273 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 269 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -2231,7 +2231,7 @@ Pointer to global Reynolds number x Strouhal number (=Womersley)
 
 
 
-Definition at line 265 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 261 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -2249,7 +2249,7 @@ Access function for the source-\/function pointer.
 
 
 
-Definition at line 569 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 565 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -2267,7 +2267,7 @@ Pointer to volumetric source function.
 
 
 
-Definition at line 284 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 280 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -2281,7 +2281,7 @@ Referenced by oomph\+::\+Refineable\+Generalised\+Newtonian\+Axisymmetric\+Navie
 
 
 
-Definition at line 292 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 288 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 
@@ -2299,7 +2299,7 @@ Pointer to the viscosity ratio (relative to the viscosity used in the definition
 
 
 
-Definition at line 253 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
+Definition at line 249 of file generalised\+\_\+newtonian\+\_\+axisym\+\_\+navier\+\_\+stokes\+\_\+elements.\+h.
 
 
 

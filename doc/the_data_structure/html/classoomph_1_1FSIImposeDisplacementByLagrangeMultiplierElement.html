@@ -1565,7 +1565,7 @@ class oomph::FSIImposeDisplacementByLagrangeMultiplierElement&lt; ELEMENT &gt;</
 
 <p>A class for elements that allow the imposition of a displacement constraint for bulk solid elements via a Lagrange multiplier. Prescribed displaced is obtained from an adjacent bulk solid element (rather than from a lower-dimensional <a class="el" href="classoomph_1_1GeomObject.html">GeomObject</a> as in the corresponding <a class="el" href="classoomph_1_1ImposeDisplacementByLagrangeMultiplierElement.html">ImposeDisplacementByLagrangeMultiplierElement</a> class. The present class is particularly suited for parallel FSI computations. <b>NOTE:</b> Currently (and for the foreseeable future) this element only works with bulk elements that do not have generalised degrees of freedom (so it won't work with Hermite-type elements, say). The additional functionality to deal with such elements could easily be added (once a a suitable test case is written). For now we simply throw errors if an attempt is made to use the element with an unsuitable bulk element. </p>
 
-<p class="definition">Definition at line <a class="el" href="solid__traction__elements_8h_source.html#l02559">2559</a> of file <a class="el" href="solid__traction__elements_8h_source.html">solid_traction_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solid__traction__elements_8h_source.html#l02555">2555</a> of file <a class="el" href="solid__traction__elements_8h_source.html">solid_traction_elements.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a7044be589f6889ce01e69010a4030748"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7044be589f6889ce01e69010a4030748">&#9670;&nbsp;</a></span>FSIImposeDisplacementByLagrangeMultiplierElement()</h2>
@@ -1617,9 +1617,9 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Constructor takes a "bulk" element and the index that identifies which face the <a class="el" href="classoomph_1_1FaceElement.html">FaceElement</a> is supposed to be attached to. The optional identifier can be used to distinguish the additional nodal values created by this element from thos created by other FaceElements. </p>
 
-<p class="definition">Definition at line <a class="el" href="solid__traction__elements_8h_source.html#l02586">2586</a> of file <a class="el" href="solid__traction__elements_8h_source.html">solid_traction_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solid__traction__elements_8h_source.html#l02582">2582</a> of file <a class="el" href="solid__traction__elements_8h_source.html">solid_traction_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l04311">oomph::FaceElement::add_additional_values()</a>, <a class="el" href="elements_8cc_source.html#l05005">oomph::FiniteElement::build_face_element()</a>, <a class="el" href="elements_8h_source.html#l02499">oomph::FiniteElement::dim()</a>, <a class="el" href="elements_8h_source.html#l04501">oomph::FaceElement::face_index()</a>, <a class="el" href="elements_8h_source.html#l02373">oomph::FiniteElement::has_hanging_nodes()</a>, <a class="el" href="solid__traction__elements_8h_source.html#l03067">oomph::FSIImposeDisplacementByLagrangeMultiplierElement&lt; ELEMENT &gt;::Id</a>, <a class="el" href="elements_8h_source.html#l02369">oomph::FiniteElement::nnodal_position_type()</a>, <a class="el" href="elements_8h_source.html#l02163">oomph::FiniteElement::nnode()</a>, and <a class="el" href="element__with__external__element_8h_source.html#l00189">oomph::ElementWithExternalElement::set_ninteraction()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l04307">oomph::FaceElement::add_additional_values()</a>, <a class="el" href="elements_8cc_source.html#l05001">oomph::FiniteElement::build_face_element()</a>, <a class="el" href="elements_8h_source.html#l02495">oomph::FiniteElement::dim()</a>, <a class="el" href="elements_8h_source.html#l04497">oomph::FaceElement::face_index()</a>, <a class="el" href="elements_8h_source.html#l02369">oomph::FiniteElement::has_hanging_nodes()</a>, <a class="el" href="solid__traction__elements_8h_source.html#l03063">oomph::FSIImposeDisplacementByLagrangeMultiplierElement&lt; ELEMENT &gt;::Id</a>, <a class="el" href="elements_8h_source.html#l02365">oomph::FiniteElement::nnodal_position_type()</a>, <a class="el" href="elements_8h_source.html#l02159">oomph::FiniteElement::nnode()</a>, and <a class="el" href="element__with__external__element_8h_source.html#l00185">oomph::ElementWithExternalElement::set_ninteraction()</a>.</p>
 
 </div>
 </div>
@@ -1664,9 +1664,9 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1ElementWithExternalElement.html#a2a1753bed2e822d399aa3525f1bdac4b">oomph::ElementWithExternalElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="solid__traction__elements_8h_source.html#l02574">2574</a> of file <a class="el" href="solid__traction__elements_8h_source.html">solid_traction_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solid__traction__elements_8h_source.html#l02570">2570</a> of file <a class="el" href="solid__traction__elements_8h_source.html">solid_traction_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="element__with__external__element_8cc_source.html#l00188">oomph::ElementWithExternalElement::describe_local_dofs()</a>, and <a class="el" href="elements_8cc_source.html#l01701">oomph::FiniteElement::describe_nodal_local_dofs()</a>.</p>
+<p class="reference">References <a class="el" href="element__with__external__element_8cc_source.html#l00184">oomph::ElementWithExternalElement::describe_local_dofs()</a>, and <a class="el" href="elements_8cc_source.html#l01697">oomph::FiniteElement::describe_nodal_local_dofs()</a>.</p>
 
 </div>
 </div>
@@ -1712,11 +1712,11 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Reimplemented in <a class="el" href="classoomph_1_1RefineableFSIImposeDisplacementByLagrangeMultiplierElement.html#a3c86bf6884cd7cfdfa8e7381fbd16fcf">oomph::RefineableFSIImposeDisplacementByLagrangeMultiplierElement&lt; ELEMENT &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="solid__traction__elements_8h_source.html#l02664">2664</a> of file <a class="el" href="solid__traction__elements_8h_source.html">solid_traction_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solid__traction__elements_8h_source.html#l02660">2660</a> of file <a class="el" href="solid__traction__elements_8h_source.html">solid_traction_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="solid__traction__elements_8h_source.html#l02806">oomph::FSIImposeDisplacementByLagrangeMultiplierElement&lt; ELEMENT &gt;::fill_in_generic_contribution_to_residuals_fsi_displ_lagr_multiplier()</a>, <a class="el" href="element__with__external__element_8h_source.html#l00329">oomph::ElementWithExternalElement::fill_in_jacobian_from_external_interaction_by_fd()</a>, and <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>.</p>
+<p class="reference">References <a class="el" href="solid__traction__elements_8h_source.html#l02802">oomph::FSIImposeDisplacementByLagrangeMultiplierElement&lt; ELEMENT &gt;::fill_in_generic_contribution_to_residuals_fsi_displ_lagr_multiplier()</a>, <a class="el" href="element__with__external__element_8h_source.html#l00325">oomph::ElementWithExternalElement::fill_in_jacobian_from_external_interaction_by_fd()</a>, and <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="solid__traction__elements_8h_source.html#l02680">oomph::FSIImposeDisplacementByLagrangeMultiplierElement&lt; ELEMENT &gt;::fill_in_contribution_to_jacobian_and_mass_matrix()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="solid__traction__elements_8h_source.html#l02676">oomph::FSIImposeDisplacementByLagrangeMultiplierElement&lt; ELEMENT &gt;::fill_in_contribution_to_jacobian_and_mass_matrix()</a>.</p>
 
 </div>
 </div>
@@ -1766,9 +1766,9 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1GeneralisedElement.html#a2b6294a730647cf865da94f2531466f8">oomph::GeneralisedElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="solid__traction__elements_8h_source.html#l02680">2680</a> of file <a class="el" href="solid__traction__elements_8h_source.html">solid_traction_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solid__traction__elements_8h_source.html#l02676">2676</a> of file <a class="el" href="solid__traction__elements_8h_source.html">solid_traction_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="solid__traction__elements_8h_source.html#l02664">oomph::FSIImposeDisplacementByLagrangeMultiplierElement&lt; ELEMENT &gt;::fill_in_contribution_to_jacobian()</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="elements_8h_source.html#l00834">oomph::GeneralisedElement::ndof()</a>, and <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>.</p>
+<p class="reference">References <a class="el" href="solid__traction__elements_8h_source.html#l02660">oomph::FSIImposeDisplacementByLagrangeMultiplierElement&lt; ELEMENT &gt;::fill_in_contribution_to_jacobian()</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="elements_8h_source.html#l00830">oomph::GeneralisedElement::ndof()</a>, and <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>.</p>
 
 </div>
 </div>
@@ -1804,9 +1804,9 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Reimplemented in <a class="el" href="classoomph_1_1RefineableFSIImposeDisplacementByLagrangeMultiplierElement.html#aa4b78afa54ddb638bfc9428b2b6fe860">oomph::RefineableFSIImposeDisplacementByLagrangeMultiplierElement&lt; ELEMENT &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="solid__traction__elements_8h_source.html#l02655">2655</a> of file <a class="el" href="solid__traction__elements_8h_source.html">solid_traction_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solid__traction__elements_8h_source.html#l02651">2651</a> of file <a class="el" href="solid__traction__elements_8h_source.html">solid_traction_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l00228">oomph::GeneralisedElement::Dummy_matrix</a>, <a class="el" href="solid__traction__elements_8h_source.html#l02806">oomph::FSIImposeDisplacementByLagrangeMultiplierElement&lt; ELEMENT &gt;::fill_in_generic_contribution_to_residuals_fsi_displ_lagr_multiplier()</a>, and <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l00224">oomph::GeneralisedElement::Dummy_matrix</a>, <a class="el" href="solid__traction__elements_8h_source.html#l02802">oomph::FSIImposeDisplacementByLagrangeMultiplierElement&lt; ELEMENT &gt;::fill_in_generic_contribution_to_residuals_fsi_displ_lagr_multiplier()</a>, and <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>.</p>
 
 </div>
 </div>
@@ -1855,11 +1855,11 @@ template&lt;class ELEMENT &gt; </div>
 <p>Helper function to compute the residuals and, if flag==1, the Jacobian <br  />
  </p>
 
-<p class="definition">Definition at line <a class="el" href="solid__traction__elements_8h_source.html#l02806">2806</a> of file <a class="el" href="solid__traction__elements_8h_source.html">solid_traction_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solid__traction__elements_8h_source.html#l02802">2802</a> of file <a class="el" href="solid__traction__elements_8h_source.html">solid_traction_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="the__data__structure_8txt.html#a26a1818885f7aebd0129ce36f6d391e8">a()</a>, <a class="el" href="elements_8h_source.html#l02499">oomph::FiniteElement::dim()</a>, <a class="el" href="elements_8cc_source.html#l03176">oomph::FiniteElement::dshape_local_at_knot()</a>, <a class="el" href="element__with__external__element_8h_source.html#l00146">oomph::ElementWithExternalElement::external_element_local_coord()</a>, <a class="el" href="element__with__external__element_8h_source.html#l00117">oomph::ElementWithExternalElement::external_element_pt()</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="solid__traction__elements_8h_source.html#l03067">oomph::FSIImposeDisplacementByLagrangeMultiplierElement&lt; ELEMENT &gt;::Id</a>, <a class="el" href="nodes_8h_source.html#l01924">oomph::BoundaryNodeBase::index_of_first_value_assigned_by_face_element()</a>, <a class="el" href="elements_8h_source.html#l01925">oomph::FiniteElement::integral_pt()</a>, <a class="el" href="elements_8cc_source.html#l03881">oomph::FiniteElement::interpolated_x()</a>, <a class="el" href="elements_8h_source.html#l03771">oomph::SolidFiniteElement::lagrangian_position()</a>, <a class="el" href="elements_8h_source.html#l02369">oomph::FiniteElement::nnodal_position_type()</a>, <a class="el" href="elements_8h_source.html#l02163">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l01403">oomph::FiniteElement::nodal_local_eqn()</a>, <a class="el" href="elements_8h_source.html#l02244">oomph::FiniteElement::nodal_position()</a>, <a class="el" href="elements_8h_source.html#l02126">oomph::FiniteElement::node_pt()</a>, <a class="el" href="classoomph_1_1Integral.html#a1a270de9d99a1fcf1d25a6c1017f65fa">oomph::Integral::nweight()</a>, <a class="el" href="elements_8h_source.html#l04011">oomph::SolidFiniteElement::position_local_eqn()</a>, <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>, <a class="el" href="nodes_8cc_source.html#l02328">oomph::Node::value()</a>, <a class="el" href="quadtree_8h_source.html#l00060">oomph::QuadTreeNames::W</a>, and <a class="el" href="classoomph_1_1Integral.html#ac65335e2aab120b285b3d6c294507b06">oomph::Integral::weight()</a>.</p>
+<p class="reference">References <a class="el" href="the__data__structure_8txt.html#a26a1818885f7aebd0129ce36f6d391e8">a()</a>, <a class="el" href="elements_8h_source.html#l02495">oomph::FiniteElement::dim()</a>, <a class="el" href="elements_8cc_source.html#l03172">oomph::FiniteElement::dshape_local_at_knot()</a>, <a class="el" href="element__with__external__element_8h_source.html#l00142">oomph::ElementWithExternalElement::external_element_local_coord()</a>, <a class="el" href="element__with__external__element_8h_source.html#l00113">oomph::ElementWithExternalElement::external_element_pt()</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="solid__traction__elements_8h_source.html#l03063">oomph::FSIImposeDisplacementByLagrangeMultiplierElement&lt; ELEMENT &gt;::Id</a>, <a class="el" href="nodes_8h_source.html#l01920">oomph::BoundaryNodeBase::index_of_first_value_assigned_by_face_element()</a>, <a class="el" href="elements_8h_source.html#l01921">oomph::FiniteElement::integral_pt()</a>, <a class="el" href="elements_8cc_source.html#l03877">oomph::FiniteElement::interpolated_x()</a>, <a class="el" href="elements_8h_source.html#l03767">oomph::SolidFiniteElement::lagrangian_position()</a>, <a class="el" href="elements_8h_source.html#l02365">oomph::FiniteElement::nnodal_position_type()</a>, <a class="el" href="elements_8h_source.html#l02159">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l01399">oomph::FiniteElement::nodal_local_eqn()</a>, <a class="el" href="elements_8h_source.html#l02240">oomph::FiniteElement::nodal_position()</a>, <a class="el" href="elements_8h_source.html#l02122">oomph::FiniteElement::node_pt()</a>, <a class="el" href="classoomph_1_1Integral.html#a1a270de9d99a1fcf1d25a6c1017f65fa">oomph::Integral::nweight()</a>, <a class="el" href="elements_8h_source.html#l04007">oomph::SolidFiniteElement::position_local_eqn()</a>, <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>, <a class="el" href="nodes_8cc_source.html#l02324">oomph::Node::value()</a>, <a class="el" href="quadtree_8h_source.html#l00056">oomph::QuadTreeNames::W</a>, and <a class="el" href="classoomph_1_1Integral.html#ac65335e2aab120b285b3d6c294507b06">oomph::Integral::weight()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="solid__traction__elements_8h_source.html#l02664">oomph::FSIImposeDisplacementByLagrangeMultiplierElement&lt; ELEMENT &gt;::fill_in_contribution_to_jacobian()</a>, and <a class="el" href="solid__traction__elements_8h_source.html#l02655">oomph::FSIImposeDisplacementByLagrangeMultiplierElement&lt; ELEMENT &gt;::fill_in_contribution_to_residuals()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="solid__traction__elements_8h_source.html#l02660">oomph::FSIImposeDisplacementByLagrangeMultiplierElement&lt; ELEMENT &gt;::fill_in_contribution_to_jacobian()</a>, and <a class="el" href="solid__traction__elements_8h_source.html#l02651">oomph::FSIImposeDisplacementByLagrangeMultiplierElement&lt; ELEMENT &gt;::fill_in_contribution_to_residuals()</a>.</p>
 
 </div>
 </div>
@@ -1894,9 +1894,9 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1GeneralisedElement.html#a069f59bfc3e607a5bebba52c6314d777">oomph::GeneralisedElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="solid__traction__elements_8h_source.html#l03028">3028</a> of file <a class="el" href="solid__traction__elements_8h_source.html">solid_traction_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solid__traction__elements_8h_source.html#l03024">3024</a> of file <a class="el" href="solid__traction__elements_8h_source.html">solid_traction_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l02499">oomph::FiniteElement::dim()</a>, <a class="el" href="elements_8h_source.html#l00709">oomph::GeneralisedElement::eqn_number()</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="solid__traction__elements_8h_source.html#l03067">oomph::FSIImposeDisplacementByLagrangeMultiplierElement&lt; ELEMENT &gt;::Id</a>, <a class="el" href="nodes_8h_source.html#l01924">oomph::BoundaryNodeBase::index_of_first_value_assigned_by_face_element()</a>, <a class="el" href="elements_8h_source.html#l02163">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l01403">oomph::FiniteElement::nodal_local_eqn()</a>, and <a class="el" href="elements_8h_source.html#l02126">oomph::FiniteElement::node_pt()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l02495">oomph::FiniteElement::dim()</a>, <a class="el" href="elements_8h_source.html#l00705">oomph::GeneralisedElement::eqn_number()</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="solid__traction__elements_8h_source.html#l03063">oomph::FSIImposeDisplacementByLagrangeMultiplierElement&lt; ELEMENT &gt;::Id</a>, <a class="el" href="nodes_8h_source.html#l01920">oomph::BoundaryNodeBase::index_of_first_value_assigned_by_face_element()</a>, <a class="el" href="elements_8h_source.html#l02159">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l01399">oomph::FiniteElement::nodal_local_eqn()</a>, and <a class="el" href="elements_8h_source.html#l02122">oomph::FiniteElement::node_pt()</a>.</p>
 
 </div>
 </div>
@@ -1929,9 +1929,9 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1GeneralisedElement.html#a0c6037a870597b35dcf1c780710b9a56">oomph::GeneralisedElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="solid__traction__elements_8h_source.html#l03016">3016</a> of file <a class="el" href="solid__traction__elements_8h_source.html">solid_traction_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solid__traction__elements_8h_source.html#l03012">3012</a> of file <a class="el" href="solid__traction__elements_8h_source.html">solid_traction_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l02499">oomph::FiniteElement::dim()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l02495">oomph::FiniteElement::dim()</a>.</p>
 
 </div>
 </div>
@@ -1965,9 +1965,9 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1FiniteElement.html#a2ad98a3d2ef4999f1bef62c0ff13f2a7">oomph::FiniteElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="solid__traction__elements_8h_source.html#l02795">2795</a> of file <a class="el" href="solid__traction__elements_8h_source.html">solid_traction_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solid__traction__elements_8h_source.html#l02791">2791</a> of file <a class="el" href="solid__traction__elements_8h_source.html">solid_traction_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="solid__traction__elements_8h_source.html#l02703">oomph::FSIImposeDisplacementByLagrangeMultiplierElement&lt; ELEMENT &gt;::output()</a>.</p>
+<p class="reference">References <a class="el" href="solid__traction__elements_8h_source.html#l02699">oomph::FSIImposeDisplacementByLagrangeMultiplierElement&lt; ELEMENT &gt;::output()</a>.</p>
 
 </div>
 </div>
@@ -2011,11 +2011,11 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1FiniteElement.html#afa9d9b2670f999b43e6679c9dd28c457">oomph::FiniteElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="solid__traction__elements_8h_source.html#l02703">2703</a> of file <a class="el" href="solid__traction__elements_8h_source.html">solid_traction_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solid__traction__elements_8h_source.html#l02699">2699</a> of file <a class="el" href="solid__traction__elements_8h_source.html">solid_traction_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l02499">oomph::FiniteElement::dim()</a>, <a class="el" href="elements_8h_source.html#l03010">oomph::FiniteElement::get_s_plot()</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="solid__traction__elements_8h_source.html#l03067">oomph::FSIImposeDisplacementByLagrangeMultiplierElement&lt; ELEMENT &gt;::Id</a>, <a class="el" href="nodes_8h_source.html#l01924">oomph::BoundaryNodeBase::index_of_first_value_assigned_by_face_element()</a>, <a class="el" href="elements_8h_source.html#l02369">oomph::FiniteElement::nnodal_position_type()</a>, <a class="el" href="elements_8h_source.html#l02163">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l02244">oomph::FiniteElement::nodal_position()</a>, <a class="el" href="elements_8h_source.html#l02126">oomph::FiniteElement::node_pt()</a>, <a class="el" href="elements_8h_source.html#l03049">oomph::FiniteElement::nplot_points()</a>, <a class="el" href="cfortran_8h_source.html#l00572">s</a>, <a class="el" href="classoomph_1_1FiniteElement.html#a58a25b6859ddd43b7bfe64a19fee5023">oomph::FiniteElement::shape()</a>, <a class="el" href="elements_8h_source.html#l03022">oomph::FiniteElement::tecplot_zone_string()</a>, <a class="el" href="nodes_8cc_source.html#l02328">oomph::Node::value()</a>, and <a class="el" href="elements_8h_source.html#l04758">oomph::SolidFaceElement::zeta_nodal()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l02495">oomph::FiniteElement::dim()</a>, <a class="el" href="elements_8h_source.html#l03006">oomph::FiniteElement::get_s_plot()</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="solid__traction__elements_8h_source.html#l03063">oomph::FSIImposeDisplacementByLagrangeMultiplierElement&lt; ELEMENT &gt;::Id</a>, <a class="el" href="nodes_8h_source.html#l01920">oomph::BoundaryNodeBase::index_of_first_value_assigned_by_face_element()</a>, <a class="el" href="elements_8h_source.html#l02365">oomph::FiniteElement::nnodal_position_type()</a>, <a class="el" href="elements_8h_source.html#l02159">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l02240">oomph::FiniteElement::nodal_position()</a>, <a class="el" href="elements_8h_source.html#l02122">oomph::FiniteElement::node_pt()</a>, <a class="el" href="elements_8h_source.html#l03045">oomph::FiniteElement::nplot_points()</a>, <a class="el" href="cfortran_8h_source.html#l00568">s</a>, <a class="el" href="classoomph_1_1FiniteElement.html#a58a25b6859ddd43b7bfe64a19fee5023">oomph::FiniteElement::shape()</a>, <a class="el" href="elements_8h_source.html#l03018">oomph::FiniteElement::tecplot_zone_string()</a>, <a class="el" href="nodes_8cc_source.html#l02324">oomph::Node::value()</a>, and <a class="el" href="elements_8h_source.html#l04754">oomph::SolidFaceElement::zeta_nodal()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="solid__traction__elements_8h_source.html#l02795">oomph::FSIImposeDisplacementByLagrangeMultiplierElement&lt; ELEMENT &gt;::output()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="solid__traction__elements_8h_source.html#l02791">oomph::FSIImposeDisplacementByLagrangeMultiplierElement&lt; ELEMENT &gt;::output()</a>.</p>
 
 </div>
 </div>
@@ -2044,9 +2044,9 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Lagrange Id. </p>
 
-<p class="definition">Definition at line <a class="el" href="solid__traction__elements_8h_source.html#l03067">3067</a> of file <a class="el" href="solid__traction__elements_8h_source.html">solid_traction_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="solid__traction__elements_8h_source.html#l03063">3063</a> of file <a class="el" href="solid__traction__elements_8h_source.html">solid_traction_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="solid__traction__elements_8h_source.html#l02806">oomph::FSIImposeDisplacementByLagrangeMultiplierElement&lt; ELEMENT &gt;::fill_in_generic_contribution_to_residuals_fsi_displ_lagr_multiplier()</a>, <a class="el" href="solid__traction__elements_8h_source.html#l02586">oomph::FSIImposeDisplacementByLagrangeMultiplierElement&lt; ELEMENT &gt;::FSIImposeDisplacementByLagrangeMultiplierElement()</a>, <a class="el" href="solid__traction__elements_8h_source.html#l03028">oomph::FSIImposeDisplacementByLagrangeMultiplierElement&lt; ELEMENT &gt;::get_dof_numbers_for_unknowns()</a>, <a class="el" href="solid__traction__elements_8h_source.html#l02703">oomph::FSIImposeDisplacementByLagrangeMultiplierElement&lt; ELEMENT &gt;::output()</a>, and <a class="el" href="solid__traction__elements_8h_source.html#l03168">oomph::RefineableFSIImposeDisplacementByLagrangeMultiplierElement&lt; ELEMENT &gt;::refineable_fill_in_generic_contribution_to_residuals_fsi_displ_lagr_multiplier()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="solid__traction__elements_8h_source.html#l02802">oomph::FSIImposeDisplacementByLagrangeMultiplierElement&lt; ELEMENT &gt;::fill_in_generic_contribution_to_residuals_fsi_displ_lagr_multiplier()</a>, <a class="el" href="solid__traction__elements_8h_source.html#l02582">oomph::FSIImposeDisplacementByLagrangeMultiplierElement&lt; ELEMENT &gt;::FSIImposeDisplacementByLagrangeMultiplierElement()</a>, <a class="el" href="solid__traction__elements_8h_source.html#l03024">oomph::FSIImposeDisplacementByLagrangeMultiplierElement&lt; ELEMENT &gt;::get_dof_numbers_for_unknowns()</a>, <a class="el" href="solid__traction__elements_8h_source.html#l02699">oomph::FSIImposeDisplacementByLagrangeMultiplierElement&lt; ELEMENT &gt;::output()</a>, and <a class="el" href="solid__traction__elements_8h_source.html#l03164">oomph::RefineableFSIImposeDisplacementByLagrangeMultiplierElement&lt; ELEMENT &gt;::refineable_fill_in_generic_contribution_to_residuals_fsi_displ_lagr_multiplier()</a>.</p>
 
 </div>
 </div>
@@ -2081,7 +2081,7 @@ template&lt;class ELEMENT &gt; </div>
     <footer>
       <div class="container">
         <div class="text-muted" style="float:right;">Generated by <a href="http://www.doxygen.org/index.html">
-          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Tue Jul 6 2021 22:57:24
+          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Fri Jul 9 2021 20:52:33
         </div>
       </div>
     </footer>

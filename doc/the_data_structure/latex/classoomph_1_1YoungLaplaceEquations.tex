@@ -109,7 +109,7 @@ unsigned \mbox{\hyperlink{classoomph_1_1YoungLaplaceEquations_ab64b10fcc80fe799f
 \doxysubsection{Detailed Description}
 A class for all isoparametric elements that solve the Young\+Laplace equations. \[ div (\frac{1}{W} \nabla u) = \kappa \] with \[ W^2=1+\|\nabla u\|^2 \] These equations can either be solved in the above (cartesian) form, or in a parametric representation using the method of spines. See the theory write-\/up in the documentation for details. This class contains the generic maths. \mbox{\hyperlink{classoomph_1_1Shape}{Shape}} functions, geometric mapping etc. must get implemented in derived class. 
 
-Definition at line 69 of file young\+\_\+laplace\+\_\+elements.\+h.
+Definition at line 65 of file young\+\_\+laplace\+\_\+elements.\+h.
 
 
 
@@ -126,7 +126,7 @@ Function pointer to \char`\"{}spine base\char`\"{} function.
 
 
 
-Definition at line 76 of file young\+\_\+laplace\+\_\+elements.\+h.
+Definition at line 72 of file young\+\_\+laplace\+\_\+elements.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1YoungLaplaceEquations_a97448cfb2f6361e986d363d9e4463f9f}\label{classoomph_1_1YoungLaplaceEquations_a97448cfb2f6361e986d363d9e4463f9f}} 
 \index{oomph::YoungLaplaceEquations@{oomph::YoungLaplaceEquations}!SpineFctPt@{SpineFctPt}}
@@ -140,7 +140,7 @@ Function pointer to \char`\"{}spine\char`\"{} function.
 
 
 
-Definition at line 81 of file young\+\_\+laplace\+\_\+elements.\+h.
+Definition at line 77 of file young\+\_\+laplace\+\_\+elements.\+h.
 
 
 
@@ -153,7 +153,7 @@ Definition at line 81 of file young\+\_\+laplace\+\_\+elements.\+h.
 
 Constructor\+: Initialise pointers to N\+U\+LL, so by default prescribed kappa evaluates to zero, and no spines are used. 
 
-Definition at line 87 of file young\+\_\+laplace\+\_\+elements.\+h.
+Definition at line 83 of file young\+\_\+laplace\+\_\+elements.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1YoungLaplaceEquations_a5002b4fe54384d6a393c8af4b8dc8a4c}\label{classoomph_1_1YoungLaplaceEquations_a5002b4fe54384d6a393c8af4b8dc8a4c}} 
 \index{oomph::YoungLaplaceEquations@{oomph::YoungLaplaceEquations}!YoungLaplaceEquations@{YoungLaplaceEquations}}
@@ -167,7 +167,7 @@ Broken copy constructor.
 
 
 
-Definition at line 92 of file young\+\_\+laplace\+\_\+elements.\+h.
+Definition at line 88 of file young\+\_\+laplace\+\_\+elements.\+h.
 
 
 
@@ -189,7 +189,7 @@ Helper fct\+: Allocate storage for a vector of vectors of doubles to v(n\+\_\+ro
 
 
 
-Definition at line 343 of file young\+\_\+laplace\+\_\+elements.\+h.
+Definition at line 339 of file young\+\_\+laplace\+\_\+elements.\+h.
 
 
 
@@ -219,7 +219,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1FiniteElement_a73c79a1f1e5b1d3
 
 
 
-Definition at line 567 of file young\+\_\+laplace\+\_\+elements.\+cc.
+Definition at line 563 of file young\+\_\+laplace\+\_\+elements.\+cc.
 
 
 
@@ -241,7 +241,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1FiniteElement_a7f67853506dc73f
 
 
 
-Definition at line 144 of file young\+\_\+laplace\+\_\+elements.\+h.
+Definition at line 140 of file young\+\_\+laplace\+\_\+elements.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1YoungLaplaceEquations_abca184b7f327333dc4284096d94e4771}\label{classoomph_1_1YoungLaplaceEquations_abca184b7f327333dc4284096d94e4771}} 
 \index{oomph::YoungLaplaceEquations@{oomph::YoungLaplaceEquations}!cross\_product@{cross\_product}}
@@ -255,7 +255,7 @@ Cross-\/product\+: v\+\_\+cross= v1 x v2.
 
 
 
-Definition at line 400 of file young\+\_\+laplace\+\_\+elements.\+h.
+Definition at line 396 of file young\+\_\+laplace\+\_\+elements.\+h.
 
 
 
@@ -275,7 +275,7 @@ Get exact position vector to meniscus. Get spines values
 
 Global Eulerian cooordinates
 
-Definition at line 53 of file young\+\_\+laplace\+\_\+elements.\+cc.
+Definition at line 49 of file young\+\_\+laplace\+\_\+elements.\+cc.
 
 
 
@@ -303,7 +303,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1GeneralisedElement_a310c97f515
 
 
 
-Definition at line 144 of file young\+\_\+laplace\+\_\+elements.\+cc.
+Definition at line 140 of file young\+\_\+laplace\+\_\+elements.\+cc.
 
 
 
@@ -321,7 +321,7 @@ Get flux\+: flux\mbox{[}i\mbox{]} = du/dx\+\_\+i\+: Mainly used for error estima
 
 
 
-Definition at line 212 of file young\+\_\+laplace\+\_\+elements.\+h.
+Definition at line 208 of file young\+\_\+laplace\+\_\+elements.\+h.
 
 
 
@@ -343,7 +343,7 @@ Get curvature.
 
 No kappa has been set\+: return zero (the default)
 
-Definition at line 196 of file young\+\_\+laplace\+\_\+elements.\+h.
+Definition at line 192 of file young\+\_\+laplace\+\_\+elements.\+h.
 
 
 
@@ -365,7 +365,7 @@ Get spine vector field\+: Defaults to standard cartesian representation if no sp
 
 
 
-Definition at line 273 of file young\+\_\+laplace\+\_\+elements.\+h.
+Definition at line 269 of file young\+\_\+laplace\+\_\+elements.\+h.
 
 
 
@@ -387,7 +387,7 @@ Get spine base vector field\+: Defaults to standard cartesian representation if 
 
 
 
-Definition at line 245 of file young\+\_\+laplace\+\_\+elements.\+h.
+Definition at line 241 of file young\+\_\+laplace\+\_\+elements.\+h.
 
 
 
@@ -409,7 +409,7 @@ Return FE representation of function value u(s) at local coordinate s.
 
 
 
-Definition at line 313 of file young\+\_\+laplace\+\_\+elements.\+h.
+Definition at line 309 of file young\+\_\+laplace\+\_\+elements.\+h.
 
 
 
@@ -431,7 +431,7 @@ Access function\+: Pointer \mbox{\hyperlink{classoomph_1_1Data}{Data}} object th
 
 
 
-Definition at line 157 of file young\+\_\+laplace\+\_\+elements.\+h.
+Definition at line 153 of file young\+\_\+laplace\+\_\+elements.\+h.
 
 
 
@@ -453,7 +453,7 @@ Broken assignment operator.
 
 
 
-Definition at line 98 of file young\+\_\+laplace\+\_\+elements.\+h.
+Definition at line 94 of file young\+\_\+laplace\+\_\+elements.\+h.
 
 
 
@@ -479,7 +479,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1QYoungLaplaceElement_acd3dd1655f
 
 
 
-Definition at line 109 of file young\+\_\+laplace\+\_\+elements.\+h.
+Definition at line 105 of file young\+\_\+laplace\+\_\+elements.\+h.
 
 
 
@@ -505,7 +505,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1QYoungLaplaceElement_a4cbc12fd3e
 
 
 
-Definition at line 408 of file young\+\_\+laplace\+\_\+elements.\+cc.
+Definition at line 404 of file young\+\_\+laplace\+\_\+elements.\+cc.
 
 
 
@@ -531,7 +531,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1QYoungLaplaceElement_adfb6168982
 
 
 
-Definition at line 128 of file young\+\_\+laplace\+\_\+elements.\+h.
+Definition at line 124 of file young\+\_\+laplace\+\_\+elements.\+h.
 
 \mbox{\Hypertarget{classoomph_1_1YoungLaplaceEquations_a7938b426803efb21be5d7b7e78be16c5}\label{classoomph_1_1YoungLaplaceEquations_a7938b426803efb21be5d7b7e78be16c5}} 
 \index{oomph::YoungLaplaceEquations@{oomph::YoungLaplaceEquations}!output\_fct@{output\_fct}}
@@ -555,7 +555,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1QYoungLaplaceElement_a617863102f
 
 
 
-Definition at line 511 of file young\+\_\+laplace\+\_\+elements.\+cc.
+Definition at line 507 of file young\+\_\+laplace\+\_\+elements.\+cc.
 
 
 
@@ -583,7 +583,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1FiniteElement_a1d33f53e2b2813f
 
 
 
-Definition at line 98 of file young\+\_\+laplace\+\_\+elements.\+cc.
+Definition at line 94 of file young\+\_\+laplace\+\_\+elements.\+cc.
 
 
 
@@ -605,7 +605,7 @@ Scalar product between two vectors.
 
 
 
-Definition at line 387 of file young\+\_\+laplace\+\_\+elements.\+h.
+Definition at line 383 of file young\+\_\+laplace\+\_\+elements.\+h.
 
 
 
@@ -627,7 +627,7 @@ Multiply a vector by a scalar.
 
 
 
-Definition at line 360 of file young\+\_\+laplace\+\_\+elements.\+h.
+Definition at line 356 of file young\+\_\+laplace\+\_\+elements.\+h.
 
 
 
@@ -653,7 +653,7 @@ Reimplemented from \mbox{\hyperlink{classoomph_1_1FiniteElement_af94c5a5e22175d5
 
 
 
-Definition at line 380 of file young\+\_\+laplace\+\_\+elements.\+cc.
+Definition at line 376 of file young\+\_\+laplace\+\_\+elements.\+cc.
 
 
 
@@ -671,7 +671,7 @@ Set curvature data (and add it to the element\textquotesingle{}s external \mbox{
 
 
 
-Definition at line 176 of file young\+\_\+laplace\+\_\+elements.\+h.
+Definition at line 172 of file young\+\_\+laplace\+\_\+elements.\+h.
 
 
 
@@ -693,7 +693,7 @@ Access function to function pointer that specifies spine base vector field.
 
 
 
-Definition at line 168 of file young\+\_\+laplace\+\_\+elements.\+h.
+Definition at line 164 of file young\+\_\+laplace\+\_\+elements.\+h.
 
 
 
@@ -715,7 +715,7 @@ Access function to function pointer that specifies spine vector field.
 
 
 
-Definition at line 173 of file young\+\_\+laplace\+\_\+elements.\+h.
+Definition at line 169 of file young\+\_\+laplace\+\_\+elements.\+h.
 
 
 
@@ -737,7 +737,7 @@ Referenced by oomph\+::\+Refineable\+Young\+Laplace\+Equations\+::further\+\_\+b
 
 
 
-Definition at line 374 of file young\+\_\+laplace\+\_\+elements.\+h.
+Definition at line 370 of file young\+\_\+laplace\+\_\+elements.\+h.
 
 
 
@@ -755,7 +755,7 @@ Referenced by oomph\+::\+Refineable\+Young\+Laplace\+Equations\+::fill\+\_\+in\+
 
 Access function\+: Nodal function value at local node n Uses suitably interpolated value for hanging nodes. 
 
-Definition at line 105 of file young\+\_\+laplace\+\_\+elements.\+h.
+Definition at line 101 of file young\+\_\+laplace\+\_\+elements.\+h.
 
 
 
@@ -777,7 +777,7 @@ Get the local equation number of the (one and only) unknown stored at local node
 
 
 
-Definition at line 436 of file young\+\_\+laplace\+\_\+elements.\+h.
+Definition at line 432 of file young\+\_\+laplace\+\_\+elements.\+h.
 
 
 
@@ -799,7 +799,7 @@ Use spines or not? (Based on availability of function pointers to to spine and s
 
 
 
-Definition at line 161 of file young\+\_\+laplace\+\_\+elements.\+h.
+Definition at line 157 of file young\+\_\+laplace\+\_\+elements.\+h.
 
 
 
@@ -821,7 +821,7 @@ Vectorial sum of two vectors.
 
 
 
-Definition at line 420 of file young\+\_\+laplace\+\_\+elements.\+h.
+Definition at line 416 of file young\+\_\+laplace\+\_\+elements.\+h.
 
 
 
@@ -846,7 +846,7 @@ Index of Kappa\+\_\+pt in the element\textquotesingle{}s storage of external \mb
 
 
 
-Definition at line 440 of file young\+\_\+laplace\+\_\+elements.\+h.
+Definition at line 436 of file young\+\_\+laplace\+\_\+elements.\+h.
 
 
 
@@ -864,7 +864,7 @@ Pointer to \mbox{\hyperlink{classoomph_1_1Data}{Data}} item that stores kappa as
 
 
 
-Definition at line 454 of file young\+\_\+laplace\+\_\+elements.\+h.
+Definition at line 450 of file young\+\_\+laplace\+\_\+elements.\+h.
 
 
 
@@ -882,7 +882,7 @@ Pointer to spine base function\+:
 
 
 
-Definition at line 443 of file young\+\_\+laplace\+\_\+elements.\+h.
+Definition at line 439 of file young\+\_\+laplace\+\_\+elements.\+h.
 
 
 
@@ -900,7 +900,7 @@ Pointer to spine function\+:
 
 
 
-Definition at line 446 of file young\+\_\+laplace\+\_\+elements.\+h.
+Definition at line 442 of file young\+\_\+laplace\+\_\+elements.\+h.
 
 
 

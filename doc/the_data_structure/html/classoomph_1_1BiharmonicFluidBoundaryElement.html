@@ -1117,7 +1117,7 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Point equation element used to impose the traction free edge (i.e. du/dn = 0) on the boundary when dt/ds_n != 0. The following equation is implemented : du/ds_n = dt/ds_n * ds_t/dt * du/dt. The bulk biharmonic elements on the boundary must be hijackable and the du/ds_n and d2u/ds_nds_t boundary DOFs hijacked when these elements are applied. At any node where dt/ds_n = 0 we can impose du/ds_n = 0 and d2u/ds_nds_t = 0 using pinning - see <a class="el" href="classoomph_1_1BiharmonicFluidProblem.html#a1cc57555bbd0ceef1d93010c133ac597" title="Impose a traction free edge - i.e. v_t = 0 or dpsi/dn = 0. In general dpsi/dn = 0 can only be imposed...">BiharmonicFluidProblem::impose_traction_free_edge()</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="biharmonic__problem_8h_source.html#l00324">324</a> of file <a class="el" href="biharmonic__problem_8h_source.html">biharmonic_problem.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="biharmonic__problem_8h_source.html#l00320">320</a> of file <a class="el" href="biharmonic__problem_8h_source.html">biharmonic_problem.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a7753395db6939adf4c2ebf5b7d251cef"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7753395db6939adf4c2ebf5b7d251cef">&#9670;&nbsp;</a></span>BiharmonicFluidBoundaryElement()</h2>
@@ -1153,9 +1153,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="biharmonic__problem_8h_source.html#l00331">331</a> of file <a class="el" href="biharmonic__problem_8h_source.html">biharmonic_problem.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="biharmonic__problem_8h_source.html#l00327">327</a> of file <a class="el" href="biharmonic__problem_8h_source.html">biharmonic_problem.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l02126">oomph::FiniteElement::node_pt()</a>, and <a class="el" href="biharmonic__problem_8h_source.html#l00405">S_fixed_index</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l02122">oomph::FiniteElement::node_pt()</a>, and <a class="el" href="biharmonic__problem_8h_source.html#l00401">S_fixed_index</a>.</p>
 
 </div>
 </div>
@@ -1210,7 +1210,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1FiniteElement.html#a73c79a1f1e5b1d334757812a6bbd58ff">oomph::FiniteElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="biharmonic__problem_8h_source.html#l00363">363</a> of file <a class="el" href="biharmonic__problem_8h_source.html">biharmonic_problem.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="biharmonic__problem_8h_source.html#l00359">359</a> of file <a class="el" href="biharmonic__problem_8h_source.html">biharmonic_problem.h</a>.</p>
 
 </div>
 </div>
@@ -1252,9 +1252,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1GeneralisedElement.html#a6ae09fc0d68e4309ac1b03583d252845">oomph::GeneralisedElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="biharmonic__problem_8h_source.html#l00384">384</a> of file <a class="el" href="biharmonic__problem_8h_source.html">biharmonic_problem.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="biharmonic__problem_8h_source.html#l00380">380</a> of file <a class="el" href="biharmonic__problem_8h_source.html">biharmonic_problem.h</a>.</p>
 
-<p class="reference">References <a class="el" href="biharmonic__problem_8cc_source.html#l00402">fill_in_generic_residual_contribution_biharmonic_boundary()</a>, and <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>.</p>
+<p class="reference">References <a class="el" href="biharmonic__problem_8cc_source.html#l00398">fill_in_generic_residual_contribution_biharmonic_boundary()</a>, and <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>.</p>
 
 </div>
 </div>
@@ -1286,9 +1286,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1GeneralisedElement.html#a310c97f515e8504a48179c0e72c550d7">oomph::GeneralisedElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="biharmonic__problem_8h_source.html#l00370">370</a> of file <a class="el" href="biharmonic__problem_8h_source.html">biharmonic_problem.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="biharmonic__problem_8h_source.html#l00366">366</a> of file <a class="el" href="biharmonic__problem_8h_source.html">biharmonic_problem.h</a>.</p>
 
-<p class="reference">References <a class="el" href="biharmonic__problem_8cc_source.html#l00402">fill_in_generic_residual_contribution_biharmonic_boundary()</a>, and <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>.</p>
+<p class="reference">References <a class="el" href="biharmonic__problem_8cc_source.html#l00398">fill_in_generic_residual_contribution_biharmonic_boundary()</a>, and <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>.</p>
 
 </div>
 </div>
@@ -1334,11 +1334,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Computes the elemental residual vector and the elemental jacobian matrix if JFLAG = 0 Imposes the equations : du/ds_n = dt/ds_n * ds_t/dt * du/dt. </p>
 
-<p class="definition">Definition at line <a class="el" href="biharmonic__problem_8cc_source.html#l00402">402</a> of file <a class="el" href="biharmonic__problem_8cc_source.html">biharmonic_problem.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="biharmonic__problem_8cc_source.html#l00398">398</a> of file <a class="el" href="biharmonic__problem_8cc_source.html">biharmonic_problem.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l00731">oomph::GeneralisedElement::local_eqn_number()</a>, <a class="el" href="elements_8h_source.html#l01403">oomph::FiniteElement::nodal_local_eqn()</a>, <a class="el" href="elements_8h_source.html#l02126">oomph::FiniteElement::node_pt()</a>, <a class="el" href="biharmonic__problem_8h_source.html#l00405">S_fixed_index</a>, <a class="el" href="nodes_8cc_source.html#l02328">oomph::Node::value()</a>, and <a class="el" href="nodes_8h_source.html#l01054">oomph::Node::x_gen()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l00727">oomph::GeneralisedElement::local_eqn_number()</a>, <a class="el" href="elements_8h_source.html#l01399">oomph::FiniteElement::nodal_local_eqn()</a>, <a class="el" href="elements_8h_source.html#l02122">oomph::FiniteElement::node_pt()</a>, <a class="el" href="biharmonic__problem_8h_source.html#l00401">S_fixed_index</a>, <a class="el" href="nodes_8cc_source.html#l02324">oomph::Node::value()</a>, and <a class="el" href="nodes_8h_source.html#l01050">oomph::Node::x_gen()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="biharmonic__problem_8h_source.html#l00384">fill_in_contribution_to_jacobian()</a>, and <a class="el" href="biharmonic__problem_8h_source.html#l00370">fill_in_contribution_to_residuals()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="biharmonic__problem_8h_source.html#l00380">fill_in_contribution_to_jacobian()</a>, and <a class="el" href="biharmonic__problem_8h_source.html#l00366">fill_in_contribution_to_residuals()</a>.</p>
 
 </div>
 </div>
@@ -1370,7 +1370,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1FiniteElement.html#a72cddd09f8ddbee1a20a1ff404c6943e">oomph::FiniteElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="biharmonic__problem_8h_source.html#l00355">355</a> of file <a class="el" href="biharmonic__problem_8h_source.html">biharmonic_problem.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="biharmonic__problem_8h_source.html#l00351">351</a> of file <a class="el" href="biharmonic__problem_8h_source.html">biharmonic_problem.h</a>.</p>
 
 </div>
 </div>
@@ -1412,7 +1412,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1FiniteElement.html#adfaee690bb0608f03320eeb9d110d48c">oomph::FiniteElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="biharmonic__problem_8h_source.html#l00359">359</a> of file <a class="el" href="biharmonic__problem_8h_source.html">biharmonic_problem.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="biharmonic__problem_8h_source.html#l00355">355</a> of file <a class="el" href="biharmonic__problem_8h_source.html">biharmonic_problem.h</a>.</p>
 
 </div>
 </div>
@@ -1444,7 +1444,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1FiniteElement.html#a2ad98a3d2ef4999f1bef62c0ff13f2a7">oomph::FiniteElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="biharmonic__problem_8h_source.html#l00343">343</a> of file <a class="el" href="biharmonic__problem_8h_source.html">biharmonic_problem.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="biharmonic__problem_8h_source.html#l00339">339</a> of file <a class="el" href="biharmonic__problem_8h_source.html">biharmonic_problem.h</a>.</p>
 
 </div>
 </div>
@@ -1486,7 +1486,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1FiniteElement.html#afa9d9b2670f999b43e6679c9dd28c457">oomph::FiniteElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="biharmonic__problem_8h_source.html#l00347">347</a> of file <a class="el" href="biharmonic__problem_8h_source.html">biharmonic_problem.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="biharmonic__problem_8h_source.html#l00343">343</a> of file <a class="el" href="biharmonic__problem_8h_source.html">biharmonic_problem.h</a>.</p>
 
 </div>
 </div>
@@ -1526,7 +1526,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Output function &ndash; does nothing. </p>
 
-<p class="definition">Definition at line <a class="el" href="biharmonic__problem_8h_source.html#l00351">351</a> of file <a class="el" href="biharmonic__problem_8h_source.html">biharmonic_problem.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="biharmonic__problem_8h_source.html#l00347">347</a> of file <a class="el" href="biharmonic__problem_8h_source.html">biharmonic_problem.h</a>.</p>
 
 </div>
 </div>
@@ -1551,9 +1551,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="biharmonic__problem_8h_source.html#l00405">405</a> of file <a class="el" href="biharmonic__problem_8h_source.html">biharmonic_problem.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="biharmonic__problem_8h_source.html#l00401">401</a> of file <a class="el" href="biharmonic__problem_8h_source.html">biharmonic_problem.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="biharmonic__problem_8h_source.html#l00331">BiharmonicFluidBoundaryElement()</a>, and <a class="el" href="biharmonic__problem_8cc_source.html#l00402">fill_in_generic_residual_contribution_biharmonic_boundary()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="biharmonic__problem_8h_source.html#l00327">BiharmonicFluidBoundaryElement()</a>, and <a class="el" href="biharmonic__problem_8cc_source.html#l00398">fill_in_generic_residual_contribution_biharmonic_boundary()</a>.</p>
 
 </div>
 </div>
@@ -1589,7 +1589,7 @@ Additional Inherited Members</h2></td></tr>
     <footer>
       <div class="container">
         <div class="text-muted" style="float:right;">Generated by <a href="http://www.doxygen.org/index.html">
-          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Tue Jul 6 2021 22:55:48
+          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Fri Jul 9 2021 20:51:06
         </div>
       </div>
     </footer>

@@ -652,7 +652,7 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="classoomph_1_1Preconditioner.html" title="Preconditioner base class. Gives an interface to call all other preconditioners through and stores th...">Preconditioner</a> for FSI problems with pseudo-elastic fluid node updates. Note: <a class="el" href="classoomph_1_1NavierStokesSchurComplementPreconditioner.html" title="The least-squares commutator (LSC; formerly BFBT) Navier Stokes preconditioner. It uses blocks corres...">NavierStokesSchurComplementPreconditioner</a> is applied to the Navier Stokes subsidiary system. Default solid preconditioner is <a class="el" href="classoomph_1_1SuperLUPreconditioner.html" title="An interface to allow SuperLU to be used as an (exact) Preconditioner.">SuperLUPreconditioner</a>. <b>Enumeration</b> of Elastic DOF types in the Pseudo-Elastic Elements The method get_dof_types_for_unknowns() must be implemented such that DOFs subject be Lagrange multiplier and DOFs NOT subject to Lagrange multiplier have different labels. For example in a 3D problem there are 6 DOF types and the following labelling must be implemented: 0 - x displacement (without lagr mult traction) 1 - y displacement (without lagr mult traction) 2 - z displacement (without lagr mult traction) 3 - x displacement (with lagr mult traction) 4 - y displacement (with lagr mult traction) 5 - z displacement (with lagr mult traction) </p>
 
-<p class="definition">Definition at line <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00064">64</a> of file <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html">pseudo_elastic_fsi_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00060">60</a> of file <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html">pseudo_elastic_fsi_preconditioner.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aa3132ef3e4ecd57adf64da72e84b5d9d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa3132ef3e4ecd57adf64da72e84b5d9d">&#9670;&nbsp;</a></span>PseudoElasticFSIPreconditioner() <span class="overload">[1/2]</span></h2>
@@ -690,9 +690,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>constructor - just set defaults. Specify the spatial dimension of the fluid and a (non-const) problem pointer needed for the underlying <a class="el" href="classoomph_1_1NavierStokesSchurComplementPreconditioner.html" title="The least-squares commutator (LSC; formerly BFBT) Navier Stokes preconditioner. It uses blocks corres...">NavierStokesSchurComplementPreconditioner</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00073">73</a> of file <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html">pseudo_elastic_fsi_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00069">69</a> of file <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html">pseudo_elastic_fsi_preconditioner.h</a>.</p>
 
-<p class="reference">References <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00251">Fluid_and_pseudo_elastic_mesh_pt</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00239">Fluid_pseudo_elastic_matvec_pt</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00257">Lagrange_multiplier_mesh_pt</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00248">Lagrange_solid_matvec_pt</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00221">Navier_stokes_preconditioner_pt</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00225">Navier_stokes_schur_complement_preconditioner_pt</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00218">Pseudo_elastic_preconditioner_pt</a>, <a class="el" href="block__preconditioner_8h_source.html#l02888">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::set_nmesh()</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00242">Solid_fluid_matvec_pt</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00254">Solid_mesh_pt</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00228">Solid_preconditioner_pt</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00245">Solid_pseudo_elastic_matvec_pt</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00265">Use_navier_stokes_schur_complement_preconditioner</a>, and <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00232">Using_default_solid_preconditioner</a>.</p>
+<p class="reference">References <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00247">Fluid_and_pseudo_elastic_mesh_pt</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00235">Fluid_pseudo_elastic_matvec_pt</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00253">Lagrange_multiplier_mesh_pt</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00244">Lagrange_solid_matvec_pt</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00217">Navier_stokes_preconditioner_pt</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00221">Navier_stokes_schur_complement_preconditioner_pt</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00214">Pseudo_elastic_preconditioner_pt</a>, <a class="el" href="block__preconditioner_8h_source.html#l02884">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::set_nmesh()</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00238">Solid_fluid_matvec_pt</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00250">Solid_mesh_pt</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00224">Solid_preconditioner_pt</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00241">Solid_pseudo_elastic_matvec_pt</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00261">Use_navier_stokes_schur_complement_preconditioner</a>, and <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00228">Using_default_solid_preconditioner</a>.</p>
 
 </div>
 </div>
@@ -719,9 +719,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00109">109</a> of file <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html">pseudo_elastic_fsi_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00105">105</a> of file <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html">pseudo_elastic_fsi_preconditioner.h</a>.</p>
 
-<p class="reference">References <a class="el" href="pseudo__elastic__fsi__preconditioner_8cc_source.html#l00038">clean_up_memory()</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00239">Fluid_pseudo_elastic_matvec_pt</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00248">Lagrange_solid_matvec_pt</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00221">Navier_stokes_preconditioner_pt</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00225">Navier_stokes_schur_complement_preconditioner_pt</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00218">Pseudo_elastic_preconditioner_pt</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00242">Solid_fluid_matvec_pt</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00228">Solid_preconditioner_pt</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00245">Solid_pseudo_elastic_matvec_pt</a>, and <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00232">Using_default_solid_preconditioner</a>.</p>
+<p class="reference">References <a class="el" href="pseudo__elastic__fsi__preconditioner_8cc_source.html#l00034">clean_up_memory()</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00235">Fluid_pseudo_elastic_matvec_pt</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00244">Lagrange_solid_matvec_pt</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00217">Navier_stokes_preconditioner_pt</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00221">Navier_stokes_schur_complement_preconditioner_pt</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00214">Pseudo_elastic_preconditioner_pt</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00238">Solid_fluid_matvec_pt</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00224">Solid_preconditioner_pt</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00241">Solid_pseudo_elastic_matvec_pt</a>, and <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00228">Using_default_solid_preconditioner</a>.</p>
 
 </div>
 </div>
@@ -751,9 +751,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Broken copy constructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00135">135</a> of file <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html">pseudo_elastic_fsi_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00131">131</a> of file <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html">pseudo_elastic_fsi_preconditioner.h</a>.</p>
 
-<p class="reference">References <a class="el" href="oomph__utilities_8cc_source.html#l00218">oomph::BrokenCopy::broken_copy()</a>.</p>
+<p class="reference">References <a class="el" href="oomph__utilities_8cc_source.html#l00214">oomph::BrokenCopy::broken_copy()</a>.</p>
 
 </div>
 </div>
@@ -786,11 +786,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1Preconditioner.html#a46c31c416829bedcd9db238431262027">oomph::Preconditioner</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="pseudo__elastic__fsi__preconditioner_8cc_source.html#l00038">38</a> of file <a class="el" href="pseudo__elastic__fsi__preconditioner_8cc_source.html">pseudo_elastic_fsi_preconditioner.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pseudo__elastic__fsi__preconditioner_8cc_source.html#l00034">34</a> of file <a class="el" href="pseudo__elastic__fsi__preconditioner_8cc_source.html">pseudo_elastic_fsi_preconditioner.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="matrix__vector__product_8h_source.html#l00090">oomph::MatrixVectorProduct::clean_up_memory()</a>, <a class="el" href="preconditioner_8h_source.html#l00155">oomph::Preconditioner::clean_up_memory()</a>, <a class="el" href="pseudo__elastic__preconditioner_8cc_source.html#l00537">oomph::PseudoElasticPreconditioner::clean_up_memory()</a>, <a class="el" href="navier__stokes__preconditioners_8cc_source.html#l01684">oomph::NavierStokesSchurComplementPreconditioner::clean_up_memory()</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00239">Fluid_pseudo_elastic_matvec_pt</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00248">Lagrange_solid_matvec_pt</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00221">Navier_stokes_preconditioner_pt</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00225">Navier_stokes_schur_complement_preconditioner_pt</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00218">Pseudo_elastic_preconditioner_pt</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00242">Solid_fluid_matvec_pt</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00228">Solid_preconditioner_pt</a>, and <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00245">Solid_pseudo_elastic_matvec_pt</a>.</p>
+<p class="reference">References <a class="el" href="matrix__vector__product_8h_source.html#l00086">oomph::MatrixVectorProduct::clean_up_memory()</a>, <a class="el" href="preconditioner_8h_source.html#l00151">oomph::Preconditioner::clean_up_memory()</a>, <a class="el" href="pseudo__elastic__preconditioner_8cc_source.html#l00533">oomph::PseudoElasticPreconditioner::clean_up_memory()</a>, <a class="el" href="navier__stokes__preconditioners_8cc_source.html#l01680">oomph::NavierStokesSchurComplementPreconditioner::clean_up_memory()</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00235">Fluid_pseudo_elastic_matvec_pt</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00244">Lagrange_solid_matvec_pt</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00217">Navier_stokes_preconditioner_pt</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00221">Navier_stokes_schur_complement_preconditioner_pt</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00214">Pseudo_elastic_preconditioner_pt</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00238">Solid_fluid_matvec_pt</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00224">Solid_preconditioner_pt</a>, and <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00241">Solid_pseudo_elastic_matvec_pt</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pseudo__elastic__fsi__preconditioner_8cc_source.html#l00056">setup()</a>, and <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00109">~PseudoElasticFSIPreconditioner()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pseudo__elastic__fsi__preconditioner_8cc_source.html#l00052">setup()</a>, and <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00105">~PseudoElasticFSIPreconditioner()</a>.</p>
 
 </div>
 </div>
@@ -819,9 +819,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Call to use the <a class="el" href="classoomph_1_1SuperLUPreconditioner.html" title="An interface to allow SuperLU to be used as an (exact) Preconditioner.">SuperLUPreconditioner</a> is used for the Navier Stokes subsidiary system. </p>
 
-<p class="definition">Definition at line <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00211">211</a> of file <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html">pseudo_elastic_fsi_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00207">207</a> of file <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html">pseudo_elastic_fsi_preconditioner.h</a>.</p>
 
-<p class="reference">References <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00265">Use_navier_stokes_schur_complement_preconditioner</a>.</p>
+<p class="reference">References <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00261">Use_navier_stokes_schur_complement_preconditioner</a>.</p>
 
 </div>
 </div>
@@ -851,9 +851,9 @@ Additional Inherited Members</h2></td></tr>
 <p>Call to use the Navier Stokes Schur complement preconditioner. <br  />
  </p>
 
-<p class="definition">Definition at line <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00206">206</a> of file <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html">pseudo_elastic_fsi_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00202">202</a> of file <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html">pseudo_elastic_fsi_preconditioner.h</a>.</p>
 
-<p class="reference">References <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00265">Use_navier_stokes_schur_complement_preconditioner</a>.</p>
+<p class="reference">References <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00261">Use_navier_stokes_schur_complement_preconditioner</a>.</p>
 
 </div>
 </div>
@@ -882,9 +882,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Access function to the Navier Stokes Schur complement preconditioner. </p>
 
-<p class="definition">Definition at line <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00199">199</a> of file <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html">pseudo_elastic_fsi_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00195">195</a> of file <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html">pseudo_elastic_fsi_preconditioner.h</a>.</p>
 
-<p class="reference">References <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00225">Navier_stokes_schur_complement_preconditioner_pt</a>.</p>
+<p class="reference">References <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00221">Navier_stokes_schur_complement_preconditioner_pt</a>.</p>
 
 </div>
 </div>
@@ -926,9 +926,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classoomph_1_1Preconditioner.html#ace1199369e4465cd2b9a34884bb64ec8">oomph::Preconditioner</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="pseudo__elastic__fsi__preconditioner_8cc_source.html#l00286">286</a> of file <a class="el" href="pseudo__elastic__fsi__preconditioner_8cc_source.html">pseudo_elastic_fsi_preconditioner.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pseudo__elastic__fsi__preconditioner_8cc_source.html#l00282">282</a> of file <a class="el" href="pseudo__elastic__fsi__preconditioner_8cc_source.html">pseudo_elastic_fsi_preconditioner.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="double__vector_8cc_source.html#l00040">oomph::DoubleVector::build()</a>, and <a class="el" href="double__vector_8h_source.html#l00150">oomph::DoubleVector::clear()</a>.</p>
+<p class="reference">References <a class="el" href="double__vector_8cc_source.html#l00036">oomph::DoubleVector::build()</a>, and <a class="el" href="double__vector_8h_source.html#l00146">oomph::DoubleVector::clear()</a>.</p>
 
 </div>
 </div>
@@ -957,9 +957,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Access function to the pseudo elastic subsidiary preconditioner. </p>
 
-<p class="definition">Definition at line <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00192">192</a> of file <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html">pseudo_elastic_fsi_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00188">188</a> of file <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html">pseudo_elastic_fsi_preconditioner.h</a>.</p>
 
-<p class="reference">References <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00218">Pseudo_elastic_preconditioner_pt</a>.</p>
+<p class="reference">References <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00214">Pseudo_elastic_preconditioner_pt</a>.</p>
 
 </div>
 </div>
@@ -989,9 +989,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>specify the mesh containing the combined fluid/pseudo solid elements </p>
 
-<p class="definition">Definition at line <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00161">161</a> of file <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html">pseudo_elastic_fsi_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00157">157</a> of file <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html">pseudo_elastic_fsi_preconditioner.h</a>.</p>
 
-<p class="reference">References <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00251">Fluid_and_pseudo_elastic_mesh_pt</a>, and <a class="el" href="block__preconditioner_8h_source.html#l01805">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::mesh_pt()</a>.</p>
+<p class="reference">References <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00247">Fluid_and_pseudo_elastic_mesh_pt</a>, and <a class="el" href="block__preconditioner_8h_source.html#l01801">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::mesh_pt()</a>.</p>
 
 </div>
 </div>
@@ -1021,9 +1021,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>specify the mesh containing the lagrange multiplier elements </p>
 
-<p class="definition">Definition at line <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00173">173</a> of file <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html">pseudo_elastic_fsi_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00169">169</a> of file <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html">pseudo_elastic_fsi_preconditioner.h</a>.</p>
 
-<p class="reference">References <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00257">Lagrange_multiplier_mesh_pt</a>, and <a class="el" href="block__preconditioner_8h_source.html#l01805">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::mesh_pt()</a>.</p>
+<p class="reference">References <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00253">Lagrange_multiplier_mesh_pt</a>, and <a class="el" href="block__preconditioner_8h_source.html#l01801">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::mesh_pt()</a>.</p>
 
 </div>
 </div>
@@ -1053,9 +1053,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>specify the mesh containing the solid elements </p>
 
-<p class="definition">Definition at line <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00167">167</a> of file <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html">pseudo_elastic_fsi_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00163">163</a> of file <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html">pseudo_elastic_fsi_preconditioner.h</a>.</p>
 
-<p class="reference">References <a class="el" href="block__preconditioner_8h_source.html#l01805">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::mesh_pt()</a>, and <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00254">Solid_mesh_pt</a>.</p>
+<p class="reference">References <a class="el" href="block__preconditioner_8h_source.html#l01801">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::mesh_pt()</a>, and <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00250">Solid_mesh_pt</a>.</p>
 
 </div>
 </div>
@@ -1085,9 +1085,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>speicify a non default solid preconditioner. This preconditioner will not delete it </p>
 
-<p class="definition">Definition at line <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00180">180</a> of file <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html">pseudo_elastic_fsi_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00176">176</a> of file <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html">pseudo_elastic_fsi_preconditioner.h</a>.</p>
 
-<p class="reference">References <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00228">Solid_preconditioner_pt</a>, and <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00232">Using_default_solid_preconditioner</a>.</p>
+<p class="reference">References <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00224">Solid_preconditioner_pt</a>, and <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00228">Using_default_solid_preconditioner</a>.</p>
 
 </div>
 </div>
@@ -1118,9 +1118,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classoomph_1_1Preconditioner.html#af4886f4efe510e5c9b0eb19422943588">oomph::Preconditioner</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="pseudo__elastic__fsi__preconditioner_8cc_source.html#l00056">56</a> of file <a class="el" href="pseudo__elastic__fsi__preconditioner_8cc_source.html">pseudo_elastic_fsi_preconditioner.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pseudo__elastic__fsi__preconditioner_8cc_source.html#l00052">52</a> of file <a class="el" href="pseudo__elastic__fsi__preconditioner_8cc_source.html">pseudo_elastic_fsi_preconditioner.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="block__preconditioner_8cc_source.html#l02437">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::block_setup()</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8cc_source.html#l00038">clean_up_memory()</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00260">Dim</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00251">Fluid_and_pseudo_elastic_mesh_pt</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00239">Fluid_pseudo_elastic_matvec_pt</a>, <a class="el" href="block__preconditioner_8h_source.html#l00692">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::get_block()</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00257">Lagrange_multiplier_mesh_pt</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00248">Lagrange_solid_matvec_pt</a>, <a class="el" href="block__preconditioner_8h_source.html#l00535">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::matrix_pt()</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00221">Navier_stokes_preconditioner_pt</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00225">Navier_stokes_schur_complement_preconditioner_pt</a>, <a class="el" href="block__preconditioner_8h_source.html#l02068">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::ndof_types_in_mesh()</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00218">Pseudo_elastic_preconditioner_pt</a>, <a class="el" href="block__preconditioner_8h_source.html#l02903">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::set_mesh()</a>, <a class="el" href="classoomph_1_1Preconditioner.html#af4886f4efe510e5c9b0eb19422943588">oomph::Preconditioner::setup()</a>, <a class="el" href="block__preconditioner_8h_source.html#l02429">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::setup_matrix_vector_product()</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00242">Solid_fluid_matvec_pt</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00254">Solid_mesh_pt</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00236">Solid_preconditioner_is_block_preconditioner</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00228">Solid_preconditioner_pt</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00245">Solid_pseudo_elastic_matvec_pt</a>, <a class="el" href="block__preconditioner_8cc_source.html#l02330">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::turn_into_subsidiary_block_preconditioner()</a>, <a class="el" href="block__preconditioner_8cc_source.html#l02330">oomph::BlockPreconditioner&lt; MATRIX &gt;::turn_into_subsidiary_block_preconditioner()</a>, and <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00265">Use_navier_stokes_schur_complement_preconditioner</a>.</p>
+<p class="reference">References <a class="el" href="block__preconditioner_8cc_source.html#l02433">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::block_setup()</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8cc_source.html#l00034">clean_up_memory()</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00256">Dim</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00247">Fluid_and_pseudo_elastic_mesh_pt</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00235">Fluid_pseudo_elastic_matvec_pt</a>, <a class="el" href="block__preconditioner_8h_source.html#l00688">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::get_block()</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00253">Lagrange_multiplier_mesh_pt</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00244">Lagrange_solid_matvec_pt</a>, <a class="el" href="block__preconditioner_8h_source.html#l00531">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::matrix_pt()</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00217">Navier_stokes_preconditioner_pt</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00221">Navier_stokes_schur_complement_preconditioner_pt</a>, <a class="el" href="block__preconditioner_8h_source.html#l02064">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::ndof_types_in_mesh()</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00214">Pseudo_elastic_preconditioner_pt</a>, <a class="el" href="block__preconditioner_8h_source.html#l02899">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::set_mesh()</a>, <a class="el" href="classoomph_1_1Preconditioner.html#af4886f4efe510e5c9b0eb19422943588">oomph::Preconditioner::setup()</a>, <a class="el" href="block__preconditioner_8h_source.html#l02425">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::setup_matrix_vector_product()</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00238">Solid_fluid_matvec_pt</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00250">Solid_mesh_pt</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00232">Solid_preconditioner_is_block_preconditioner</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00224">Solid_preconditioner_pt</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00241">Solid_pseudo_elastic_matvec_pt</a>, <a class="el" href="block__preconditioner_8cc_source.html#l02326">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::turn_into_subsidiary_block_preconditioner()</a>, <a class="el" href="block__preconditioner_8cc_source.html#l02326">oomph::BlockPreconditioner&lt; MATRIX &gt;::turn_into_subsidiary_block_preconditioner()</a>, and <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00261">Use_navier_stokes_schur_complement_preconditioner</a>.</p>
 
 </div>
 </div>
@@ -1147,9 +1147,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>the dimension of the fluid </p>
 
-<p class="definition">Definition at line <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00260">260</a> of file <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html">pseudo_elastic_fsi_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00256">256</a> of file <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html">pseudo_elastic_fsi_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pseudo__elastic__fsi__preconditioner_8cc_source.html#l00056">setup()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pseudo__elastic__fsi__preconditioner_8cc_source.html#l00052">setup()</a>.</p>
 
 </div>
 </div>
@@ -1175,9 +1175,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p><a class="el" href="classoomph_1_1Mesh.html" title="A general mesh class.">Mesh</a> containing the combined fluid and pseudo solid element. </p>
 
-<p class="definition">Definition at line <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00251">251</a> of file <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html">pseudo_elastic_fsi_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00247">247</a> of file <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html">pseudo_elastic_fsi_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00073">PseudoElasticFSIPreconditioner()</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00161">set_fluid_and_pseudo_elastic_mesh_pt()</a>, and <a class="el" href="pseudo__elastic__fsi__preconditioner_8cc_source.html#l00056">setup()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00069">PseudoElasticFSIPreconditioner()</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00157">set_fluid_and_pseudo_elastic_mesh_pt()</a>, and <a class="el" href="pseudo__elastic__fsi__preconditioner_8cc_source.html#l00052">setup()</a>.</p>
 
 </div>
 </div>
@@ -1203,9 +1203,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>fluid onto pseudosolid matrix vector operator </p>
 
-<p class="definition">Definition at line <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00239">239</a> of file <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html">pseudo_elastic_fsi_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00235">235</a> of file <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html">pseudo_elastic_fsi_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pseudo__elastic__fsi__preconditioner_8cc_source.html#l00038">clean_up_memory()</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00073">PseudoElasticFSIPreconditioner()</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8cc_source.html#l00056">setup()</a>, and <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00109">~PseudoElasticFSIPreconditioner()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pseudo__elastic__fsi__preconditioner_8cc_source.html#l00034">clean_up_memory()</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00069">PseudoElasticFSIPreconditioner()</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8cc_source.html#l00052">setup()</a>, and <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00105">~PseudoElasticFSIPreconditioner()</a>.</p>
 
 </div>
 </div>
@@ -1231,9 +1231,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p><a class="el" href="classoomph_1_1Mesh.html" title="A general mesh class.">Mesh</a> containing the lagrange multiplier elements. </p>
 
-<p class="definition">Definition at line <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00257">257</a> of file <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html">pseudo_elastic_fsi_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00253">253</a> of file <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html">pseudo_elastic_fsi_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00073">PseudoElasticFSIPreconditioner()</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00173">set_lagrange_multiplier_mesh_pt()</a>, and <a class="el" href="pseudo__elastic__fsi__preconditioner_8cc_source.html#l00056">setup()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00069">PseudoElasticFSIPreconditioner()</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00169">set_lagrange_multiplier_mesh_pt()</a>, and <a class="el" href="pseudo__elastic__fsi__preconditioner_8cc_source.html#l00052">setup()</a>.</p>
 
 </div>
 </div>
@@ -1257,9 +1257,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00248">248</a> of file <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html">pseudo_elastic_fsi_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00244">244</a> of file <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html">pseudo_elastic_fsi_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pseudo__elastic__fsi__preconditioner_8cc_source.html#l00038">clean_up_memory()</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00073">PseudoElasticFSIPreconditioner()</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8cc_source.html#l00056">setup()</a>, and <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00109">~PseudoElasticFSIPreconditioner()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pseudo__elastic__fsi__preconditioner_8cc_source.html#l00034">clean_up_memory()</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00069">PseudoElasticFSIPreconditioner()</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8cc_source.html#l00052">setup()</a>, and <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00105">~PseudoElasticFSIPreconditioner()</a>.</p>
 
 </div>
 </div>
@@ -1285,9 +1285,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>pointer to the navier stokes precondtioner </p>
 
-<p class="definition">Definition at line <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00221">221</a> of file <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html">pseudo_elastic_fsi_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00217">217</a> of file <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html">pseudo_elastic_fsi_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pseudo__elastic__fsi__preconditioner_8cc_source.html#l00038">clean_up_memory()</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00073">PseudoElasticFSIPreconditioner()</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8cc_source.html#l00056">setup()</a>, and <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00109">~PseudoElasticFSIPreconditioner()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pseudo__elastic__fsi__preconditioner_8cc_source.html#l00034">clean_up_memory()</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00069">PseudoElasticFSIPreconditioner()</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8cc_source.html#l00052">setup()</a>, and <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00105">~PseudoElasticFSIPreconditioner()</a>.</p>
 
 </div>
 </div>
@@ -1313,9 +1313,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Navier Stokes Schur complement preconditioner. </p>
 
-<p class="definition">Definition at line <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00225">225</a> of file <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html">pseudo_elastic_fsi_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00221">221</a> of file <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html">pseudo_elastic_fsi_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pseudo__elastic__fsi__preconditioner_8cc_source.html#l00038">clean_up_memory()</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00199">navier_stokes_schur_complement_preconditioner_pt()</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00073">PseudoElasticFSIPreconditioner()</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8cc_source.html#l00056">setup()</a>, and <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00109">~PseudoElasticFSIPreconditioner()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pseudo__elastic__fsi__preconditioner_8cc_source.html#l00034">clean_up_memory()</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00195">navier_stokes_schur_complement_preconditioner_pt()</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00069">PseudoElasticFSIPreconditioner()</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8cc_source.html#l00052">setup()</a>, and <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00105">~PseudoElasticFSIPreconditioner()</a>.</p>
 
 </div>
 </div>
@@ -1341,9 +1341,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>pointer to the pseudo solid preconditioner </p>
 
-<p class="definition">Definition at line <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00218">218</a> of file <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html">pseudo_elastic_fsi_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00214">214</a> of file <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html">pseudo_elastic_fsi_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pseudo__elastic__fsi__preconditioner_8cc_source.html#l00038">clean_up_memory()</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00192">pseudo_elastic_preconditioner_pt()</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00073">PseudoElasticFSIPreconditioner()</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8cc_source.html#l00056">setup()</a>, and <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00109">~PseudoElasticFSIPreconditioner()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pseudo__elastic__fsi__preconditioner_8cc_source.html#l00034">clean_up_memory()</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00188">pseudo_elastic_preconditioner_pt()</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00069">PseudoElasticFSIPreconditioner()</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8cc_source.html#l00052">setup()</a>, and <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00105">~PseudoElasticFSIPreconditioner()</a>.</p>
 
 </div>
 </div>
@@ -1369,9 +1369,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>solid onto fluid matrix vector operatio </p>
 
-<p class="definition">Definition at line <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00242">242</a> of file <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html">pseudo_elastic_fsi_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00238">238</a> of file <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html">pseudo_elastic_fsi_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pseudo__elastic__fsi__preconditioner_8cc_source.html#l00038">clean_up_memory()</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00073">PseudoElasticFSIPreconditioner()</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8cc_source.html#l00056">setup()</a>, and <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00109">~PseudoElasticFSIPreconditioner()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pseudo__elastic__fsi__preconditioner_8cc_source.html#l00034">clean_up_memory()</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00069">PseudoElasticFSIPreconditioner()</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8cc_source.html#l00052">setup()</a>, and <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00105">~PseudoElasticFSIPreconditioner()</a>.</p>
 
 </div>
 </div>
@@ -1397,9 +1397,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p><a class="el" href="classoomph_1_1Mesh.html" title="A general mesh class.">Mesh</a> containing the solid elements. </p>
 
-<p class="definition">Definition at line <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00254">254</a> of file <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html">pseudo_elastic_fsi_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00250">250</a> of file <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html">pseudo_elastic_fsi_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00073">PseudoElasticFSIPreconditioner()</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00167">set_solid_mesh_pt()</a>, and <a class="el" href="pseudo__elastic__fsi__preconditioner_8cc_source.html#l00056">setup()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00069">PseudoElasticFSIPreconditioner()</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00163">set_solid_mesh_pt()</a>, and <a class="el" href="pseudo__elastic__fsi__preconditioner_8cc_source.html#l00052">setup()</a>.</p>
 
 </div>
 </div>
@@ -1425,9 +1425,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>boolean flag to indicate whether the Solid preconditioner is a block preconditioner </p>
 
-<p class="definition">Definition at line <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00236">236</a> of file <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html">pseudo_elastic_fsi_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00232">232</a> of file <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html">pseudo_elastic_fsi_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pseudo__elastic__fsi__preconditioner_8cc_source.html#l00056">setup()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pseudo__elastic__fsi__preconditioner_8cc_source.html#l00052">setup()</a>.</p>
 
 </div>
 </div>
@@ -1453,9 +1453,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>pointer to the solid preconditioner </p>
 
-<p class="definition">Definition at line <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00228">228</a> of file <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html">pseudo_elastic_fsi_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00224">224</a> of file <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html">pseudo_elastic_fsi_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pseudo__elastic__fsi__preconditioner_8cc_source.html#l00038">clean_up_memory()</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00073">PseudoElasticFSIPreconditioner()</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00180">set_solid_preconditioner()</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8cc_source.html#l00056">setup()</a>, and <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00109">~PseudoElasticFSIPreconditioner()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pseudo__elastic__fsi__preconditioner_8cc_source.html#l00034">clean_up_memory()</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00069">PseudoElasticFSIPreconditioner()</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00176">set_solid_preconditioner()</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8cc_source.html#l00052">setup()</a>, and <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00105">~PseudoElasticFSIPreconditioner()</a>.</p>
 
 </div>
 </div>
@@ -1481,9 +1481,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>solid onto pseudo solid matrix vector operatio </p>
 
-<p class="definition">Definition at line <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00245">245</a> of file <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html">pseudo_elastic_fsi_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00241">241</a> of file <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html">pseudo_elastic_fsi_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pseudo__elastic__fsi__preconditioner_8cc_source.html#l00038">clean_up_memory()</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00073">PseudoElasticFSIPreconditioner()</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8cc_source.html#l00056">setup()</a>, and <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00109">~PseudoElasticFSIPreconditioner()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pseudo__elastic__fsi__preconditioner_8cc_source.html#l00034">clean_up_memory()</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00069">PseudoElasticFSIPreconditioner()</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8cc_source.html#l00052">setup()</a>, and <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00105">~PseudoElasticFSIPreconditioner()</a>.</p>
 
 </div>
 </div>
@@ -1509,9 +1509,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>If true the Navier Stokes Schur complement preconditioner is used. Otherwise <a class="el" href="classoomph_1_1SuperLUPreconditioner.html" title="An interface to allow SuperLU to be used as an (exact) Preconditioner.">SuperLUPreconditioner</a> is used for the Navier Stokes subsidiary system. </p>
 
-<p class="definition">Definition at line <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00265">265</a> of file <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html">pseudo_elastic_fsi_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00261">261</a> of file <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html">pseudo_elastic_fsi_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00211">disable_navier_stokes_schur_complement_preconditioner()</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00206">enable_navier_stokes_schur_complement_preconditioner()</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00073">PseudoElasticFSIPreconditioner()</a>, and <a class="el" href="pseudo__elastic__fsi__preconditioner_8cc_source.html#l00056">setup()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00207">disable_navier_stokes_schur_complement_preconditioner()</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00202">enable_navier_stokes_schur_complement_preconditioner()</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00069">PseudoElasticFSIPreconditioner()</a>, and <a class="el" href="pseudo__elastic__fsi__preconditioner_8cc_source.html#l00052">setup()</a>.</p>
 
 </div>
 </div>
@@ -1537,9 +1537,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>boolean flag to indicate whether default Solid preconditioner is used </p>
 
-<p class="definition">Definition at line <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00232">232</a> of file <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html">pseudo_elastic_fsi_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00228">228</a> of file <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html">pseudo_elastic_fsi_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00073">PseudoElasticFSIPreconditioner()</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00180">set_solid_preconditioner()</a>, and <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00109">~PseudoElasticFSIPreconditioner()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00069">PseudoElasticFSIPreconditioner()</a>, <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00176">set_solid_preconditioner()</a>, and <a class="el" href="pseudo__elastic__fsi__preconditioner_8h_source.html#l00105">~PseudoElasticFSIPreconditioner()</a>.</p>
 
 </div>
 </div>
@@ -1575,7 +1575,7 @@ Additional Inherited Members</h2></td></tr>
     <footer>
       <div class="container">
         <div class="text-muted" style="float:right;">Generated by <a href="http://www.doxygen.org/index.html">
-          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Tue Jul 6 2021 22:58:28
+          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Fri Jul 9 2021 20:53:27
         </div>
       </div>
     </footer>

@@ -608,7 +608,7 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Biharmonic <a class="el" href="classoomph_1_1Preconditioner.html" title="Preconditioner base class. Gives an interface to call all other preconditioners through and stores th...">Preconditioner</a> - for two dimensional problems. </p>
 
-<p class="definition">Definition at line <a class="el" href="biharmonic__preconditioner_8h_source.html#l00095">95</a> of file <a class="el" href="biharmonic__preconditioner_8h_source.html">biharmonic_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="biharmonic__preconditioner_8h_source.html#l00091">91</a> of file <a class="el" href="biharmonic__preconditioner_8h_source.html">biharmonic_preconditioner.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a0cd4b515f53dfa4a84a5ce78e555ff9e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0cd4b515f53dfa4a84a5ce78e555ff9e">&#9670;&nbsp;</a></span>BiharmonicPreconditioner() <span class="overload">[1/2]</span></h2>
@@ -635,9 +635,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Constructor - by default inexact preconditioning is used. </p>
 
-<p class="definition">Definition at line <a class="el" href="biharmonic__preconditioner_8h_source.html#l00101">101</a> of file <a class="el" href="biharmonic__preconditioner_8h_source.html">biharmonic_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="biharmonic__preconditioner_8h_source.html#l00097">97</a> of file <a class="el" href="biharmonic__preconditioner_8h_source.html">biharmonic_preconditioner.h</a>.</p>
 
-<p class="reference">References <a class="el" href="biharmonic__preconditioner_8h_source.html#l00191">Bulk_element_mesh_pt</a>, <a class="el" href="biharmonic__preconditioner_8h_source.html#l00188">Hijacked_sub_block_preconditioner_pt</a>, <a class="el" href="biharmonic__preconditioner_8h_source.html#l00179">Preconditioner_type</a>, <a class="el" href="block__preconditioner_8h_source.html#l02888">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::set_nmesh()</a>, <a class="el" href="biharmonic__preconditioner_8h_source.html#l00182">Sub_preconditioner_1_pt</a>, and <a class="el" href="biharmonic__preconditioner_8h_source.html#l00185">Sub_preconditioner_2_pt</a>.</p>
+<p class="reference">References <a class="el" href="biharmonic__preconditioner_8h_source.html#l00187">Bulk_element_mesh_pt</a>, <a class="el" href="biharmonic__preconditioner_8h_source.html#l00184">Hijacked_sub_block_preconditioner_pt</a>, <a class="el" href="biharmonic__preconditioner_8h_source.html#l00175">Preconditioner_type</a>, <a class="el" href="block__preconditioner_8h_source.html#l02884">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::set_nmesh()</a>, <a class="el" href="biharmonic__preconditioner_8h_source.html#l00178">Sub_preconditioner_1_pt</a>, and <a class="el" href="biharmonic__preconditioner_8h_source.html#l00181">Sub_preconditioner_2_pt</a>.</p>
 
 </div>
 </div>
@@ -666,9 +666,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>destructor - cleans up preconditioners and delete matrices </p>
 
-<p class="definition">Definition at line <a class="el" href="biharmonic__preconditioner_8h_source.html#l00122">122</a> of file <a class="el" href="biharmonic__preconditioner_8h_source.html">biharmonic_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="biharmonic__preconditioner_8h_source.html#l00118">118</a> of file <a class="el" href="biharmonic__preconditioner_8h_source.html">biharmonic_preconditioner.h</a>.</p>
 
-<p class="reference">References <a class="el" href="biharmonic__preconditioner_8h_source.html#l00128">clean_up_memory()</a>.</p>
+<p class="reference">References <a class="el" href="biharmonic__preconditioner_8h_source.html#l00124">clean_up_memory()</a>.</p>
 
 </div>
 </div>
@@ -698,9 +698,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Broken copy constructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="biharmonic__preconditioner_8h_source.html#l00137">137</a> of file <a class="el" href="biharmonic__preconditioner_8h_source.html">biharmonic_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="biharmonic__preconditioner_8h_source.html#l00133">133</a> of file <a class="el" href="biharmonic__preconditioner_8h_source.html">biharmonic_preconditioner.h</a>.</p>
 
-<p class="reference">References <a class="el" href="oomph__utilities_8cc_source.html#l00218">oomph::BrokenCopy::broken_copy()</a>.</p>
+<p class="reference">References <a class="el" href="oomph__utilities_8cc_source.html#l00214">oomph::BrokenCopy::broken_copy()</a>.</p>
 
 </div>
 </div>
@@ -730,9 +730,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Access function to the mesh pt for the bulk elements. The mesh should only contain BiharmonicElement&lt;2&gt; and <a class="el" href="classoomph_1_1Hijacked.html" title="Hijacked elements are elements in which one or more Data values that affect the element&#39;s residuals,...">Hijacked</a>&lt;BiharmonicElement&lt;2&gt; &gt; elements. </p>
 
-<p class="definition">Definition at line <a class="el" href="biharmonic__preconditioner_8h_source.html#l00167">167</a> of file <a class="el" href="biharmonic__preconditioner_8h_source.html">biharmonic_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="biharmonic__preconditioner_8h_source.html#l00163">163</a> of file <a class="el" href="biharmonic__preconditioner_8h_source.html">biharmonic_preconditioner.h</a>.</p>
 
-<p class="reference">References <a class="el" href="biharmonic__preconditioner_8h_source.html#l00191">Bulk_element_mesh_pt</a>.</p>
+<p class="reference">References <a class="el" href="biharmonic__preconditioner_8h_source.html#l00187">Bulk_element_mesh_pt</a>.</p>
 
 </div>
 </div>
@@ -763,11 +763,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1Preconditioner.html#a46c31c416829bedcd9db238431262027">oomph::Preconditioner</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="biharmonic__preconditioner_8h_source.html#l00128">128</a> of file <a class="el" href="biharmonic__preconditioner_8h_source.html">biharmonic_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="biharmonic__preconditioner_8h_source.html#l00124">124</a> of file <a class="el" href="biharmonic__preconditioner_8h_source.html">biharmonic_preconditioner.h</a>.</p>
 
-<p class="reference">References <a class="el" href="biharmonic__preconditioner_8h_source.html#l00188">Hijacked_sub_block_preconditioner_pt</a>, <a class="el" href="biharmonic__preconditioner_8h_source.html#l00182">Sub_preconditioner_1_pt</a>, and <a class="el" href="biharmonic__preconditioner_8h_source.html#l00185">Sub_preconditioner_2_pt</a>.</p>
+<p class="reference">References <a class="el" href="biharmonic__preconditioner_8h_source.html#l00184">Hijacked_sub_block_preconditioner_pt</a>, <a class="el" href="biharmonic__preconditioner_8h_source.html#l00178">Sub_preconditioner_1_pt</a>, and <a class="el" href="biharmonic__preconditioner_8h_source.html#l00181">Sub_preconditioner_2_pt</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="biharmonic__preconditioner_8cc_source.html#l00114">setup()</a>, and <a class="el" href="biharmonic__preconditioner_8h_source.html#l00122">~BiharmonicPreconditioner()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="biharmonic__preconditioner_8cc_source.html#l00110">setup()</a>, and <a class="el" href="biharmonic__preconditioner_8h_source.html#l00118">~BiharmonicPreconditioner()</a>.</p>
 
 </div>
 </div>
@@ -797,9 +797,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Broken assignment operator. </p>
 
-<p class="definition">Definition at line <a class="el" href="biharmonic__preconditioner_8h_source.html#l00143">143</a> of file <a class="el" href="biharmonic__preconditioner_8h_source.html">biharmonic_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="biharmonic__preconditioner_8h_source.html#l00139">139</a> of file <a class="el" href="biharmonic__preconditioner_8h_source.html">biharmonic_preconditioner.h</a>.</p>
 
-<p class="reference">References <a class="el" href="oomph__utilities_8cc_source.html#l00201">oomph::BrokenCopy::broken_assign()</a>.</p>
+<p class="reference">References <a class="el" href="oomph__utilities_8cc_source.html#l00197">oomph::BrokenCopy::broken_assign()</a>.</p>
 
 </div>
 </div>
@@ -842,9 +842,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classoomph_1_1Preconditioner.html#ace1199369e4465cd2b9a34884bb64ec8">oomph::Preconditioner</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="biharmonic__preconditioner_8cc_source.html#l00253">253</a> of file <a class="el" href="biharmonic__preconditioner_8cc_source.html">biharmonic_preconditioner.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="biharmonic__preconditioner_8cc_source.html#l00249">249</a> of file <a class="el" href="biharmonic__preconditioner_8cc_source.html">biharmonic_preconditioner.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="double__vector_8h_source.html#l00150">oomph::DoubleVector::clear()</a>, <a class="el" href="block__preconditioner_8cc_source.html#l04136">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::get_block_vector()</a>, <a class="el" href="biharmonic__preconditioner_8h_source.html#l00188">Hijacked_sub_block_preconditioner_pt</a>, <a class="el" href="double__vector_8cc_source.html#l00120">oomph::DoubleVector::initialise()</a>, <a class="el" href="block__preconditioner_8h_source.html#l01691">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::nblock_types()</a>, <a class="el" href="classoomph_1_1Preconditioner.html#ace1199369e4465cd2b9a34884bb64ec8">oomph::Preconditioner::preconditioner_solve()</a>, <a class="el" href="block__preconditioner_8cc_source.html#l04436">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::return_block_vector()</a>, <a class="el" href="biharmonic__preconditioner_8h_source.html#l00182">Sub_preconditioner_1_pt</a>, and <a class="el" href="biharmonic__preconditioner_8h_source.html#l00185">Sub_preconditioner_2_pt</a>.</p>
+<p class="reference">References <a class="el" href="double__vector_8h_source.html#l00146">oomph::DoubleVector::clear()</a>, <a class="el" href="block__preconditioner_8cc_source.html#l04132">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::get_block_vector()</a>, <a class="el" href="biharmonic__preconditioner_8h_source.html#l00184">Hijacked_sub_block_preconditioner_pt</a>, <a class="el" href="double__vector_8cc_source.html#l00116">oomph::DoubleVector::initialise()</a>, <a class="el" href="block__preconditioner_8h_source.html#l01687">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::nblock_types()</a>, <a class="el" href="classoomph_1_1Preconditioner.html#ace1199369e4465cd2b9a34884bb64ec8">oomph::Preconditioner::preconditioner_solve()</a>, <a class="el" href="block__preconditioner_8cc_source.html#l04432">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::return_block_vector()</a>, <a class="el" href="biharmonic__preconditioner_8h_source.html#l00178">Sub_preconditioner_1_pt</a>, and <a class="el" href="biharmonic__preconditioner_8h_source.html#l00181">Sub_preconditioner_2_pt</a>.</p>
 
 </div>
 </div>
@@ -882,9 +882,9 @@ Additional Inherited Members</h2></td></tr>
 <li>3 : block diagonal (3x3)+(1x1) </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="biharmonic__preconditioner_8h_source.html#l00159">159</a> of file <a class="el" href="biharmonic__preconditioner_8h_source.html">biharmonic_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="biharmonic__preconditioner_8h_source.html#l00155">155</a> of file <a class="el" href="biharmonic__preconditioner_8h_source.html">biharmonic_preconditioner.h</a>.</p>
 
-<p class="reference">References <a class="el" href="biharmonic__preconditioner_8h_source.html#l00179">Preconditioner_type</a>.</p>
+<p class="reference">References <a class="el" href="biharmonic__preconditioner_8h_source.html#l00175">Preconditioner_type</a>.</p>
 
 </div>
 </div>
@@ -917,9 +917,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classoomph_1_1Preconditioner.html#af4886f4efe510e5c9b0eb19422943588">oomph::Preconditioner</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="biharmonic__preconditioner_8cc_source.html#l00114">114</a> of file <a class="el" href="biharmonic__preconditioner_8cc_source.html">biharmonic_preconditioner.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="biharmonic__preconditioner_8cc_source.html#l00110">110</a> of file <a class="el" href="biharmonic__preconditioner_8cc_source.html">biharmonic_preconditioner.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="block__preconditioner_8cc_source.html#l02437">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::block_setup()</a>, <a class="el" href="biharmonic__preconditioner_8h_source.html#l00191">Bulk_element_mesh_pt</a>, <a class="el" href="biharmonic__preconditioner_8h_source.html#l00128">clean_up_memory()</a>, <a class="el" href="block__preconditioner_8h_source.html#l00692">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::get_block()</a>, <a class="el" href="biharmonic__preconditioner_8h_source.html#l00188">Hijacked_sub_block_preconditioner_pt</a>, <a class="el" href="block__preconditioner_8h_source.html#l00535">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::matrix_pt()</a>, <a class="el" href="block__preconditioner_8h_source.html#l01691">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::nblock_types()</a>, <a class="el" href="oomph__definitions_8cc_source.html#l00326">oomph::oomph_info</a>, <a class="el" href="biharmonic__preconditioner_8h_source.html#l00179">Preconditioner_type</a>, <a class="el" href="block__preconditioner_8h_source.html#l02903">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::set_mesh()</a>, <a class="el" href="preconditioner_8h_source.html#l00102">oomph::Preconditioner::setup()</a>, <a class="el" href="biharmonic__preconditioner_8h_source.html#l00182">Sub_preconditioner_1_pt</a>, and <a class="el" href="biharmonic__preconditioner_8h_source.html#l00185">Sub_preconditioner_2_pt</a>.</p>
+<p class="reference">References <a class="el" href="block__preconditioner_8cc_source.html#l02433">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::block_setup()</a>, <a class="el" href="biharmonic__preconditioner_8h_source.html#l00187">Bulk_element_mesh_pt</a>, <a class="el" href="biharmonic__preconditioner_8h_source.html#l00124">clean_up_memory()</a>, <a class="el" href="block__preconditioner_8h_source.html#l00688">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::get_block()</a>, <a class="el" href="biharmonic__preconditioner_8h_source.html#l00184">Hijacked_sub_block_preconditioner_pt</a>, <a class="el" href="block__preconditioner_8h_source.html#l00531">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::matrix_pt()</a>, <a class="el" href="block__preconditioner_8h_source.html#l01687">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::nblock_types()</a>, <a class="el" href="oomph__definitions_8cc_source.html#l00322">oomph::oomph_info</a>, <a class="el" href="biharmonic__preconditioner_8h_source.html#l00175">Preconditioner_type</a>, <a class="el" href="block__preconditioner_8h_source.html#l02899">oomph::BlockPreconditioner&lt; CRDoubleMatrix &gt;::set_mesh()</a>, <a class="el" href="preconditioner_8h_source.html#l00098">oomph::Preconditioner::setup()</a>, <a class="el" href="biharmonic__preconditioner_8h_source.html#l00178">Sub_preconditioner_1_pt</a>, and <a class="el" href="biharmonic__preconditioner_8h_source.html#l00181">Sub_preconditioner_2_pt</a>.</p>
 
 </div>
 </div>
@@ -946,9 +946,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>the bulk element mesh pt </p>
 
-<p class="definition">Definition at line <a class="el" href="biharmonic__preconditioner_8h_source.html#l00191">191</a> of file <a class="el" href="biharmonic__preconditioner_8h_source.html">biharmonic_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="biharmonic__preconditioner_8h_source.html#l00187">187</a> of file <a class="el" href="biharmonic__preconditioner_8h_source.html">biharmonic_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="biharmonic__preconditioner_8h_source.html#l00101">BiharmonicPreconditioner()</a>, <a class="el" href="biharmonic__preconditioner_8h_source.html#l00167">bulk_element_mesh_pt()</a>, and <a class="el" href="biharmonic__preconditioner_8cc_source.html#l00114">setup()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="biharmonic__preconditioner_8h_source.html#l00097">BiharmonicPreconditioner()</a>, <a class="el" href="biharmonic__preconditioner_8h_source.html#l00163">bulk_element_mesh_pt()</a>, and <a class="el" href="biharmonic__preconditioner_8cc_source.html#l00110">setup()</a>.</p>
 
 </div>
 </div>
@@ -974,9 +974,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p><a class="el" href="classoomph_1_1Preconditioner.html" title="Preconditioner base class. Gives an interface to call all other preconditioners through and stores th...">Preconditioner</a> the diagonal block associated with hijacked elements. </p>
 
-<p class="definition">Definition at line <a class="el" href="biharmonic__preconditioner_8h_source.html#l00188">188</a> of file <a class="el" href="biharmonic__preconditioner_8h_source.html">biharmonic_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="biharmonic__preconditioner_8h_source.html#l00184">184</a> of file <a class="el" href="biharmonic__preconditioner_8h_source.html">biharmonic_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="biharmonic__preconditioner_8h_source.html#l00101">BiharmonicPreconditioner()</a>, <a class="el" href="biharmonic__preconditioner_8h_source.html#l00128">clean_up_memory()</a>, <a class="el" href="biharmonic__preconditioner_8cc_source.html#l00253">preconditioner_solve()</a>, and <a class="el" href="biharmonic__preconditioner_8cc_source.html#l00114">setup()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="biharmonic__preconditioner_8h_source.html#l00097">BiharmonicPreconditioner()</a>, <a class="el" href="biharmonic__preconditioner_8h_source.html#l00124">clean_up_memory()</a>, <a class="el" href="biharmonic__preconditioner_8cc_source.html#l00249">preconditioner_solve()</a>, and <a class="el" href="biharmonic__preconditioner_8cc_source.html#l00110">setup()</a>.</p>
 
 </div>
 </div>
@@ -1009,9 +1009,9 @@ Additional Inherited Members</h2></td></tr>
 <li>3 : block diagonal (3x3)+(1x1) </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="biharmonic__preconditioner_8h_source.html#l00179">179</a> of file <a class="el" href="biharmonic__preconditioner_8h_source.html">biharmonic_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="biharmonic__preconditioner_8h_source.html#l00175">175</a> of file <a class="el" href="biharmonic__preconditioner_8h_source.html">biharmonic_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="biharmonic__preconditioner_8h_source.html#l00101">BiharmonicPreconditioner()</a>, <a class="el" href="biharmonic__preconditioner_8h_source.html#l00159">preconditioner_type()</a>, and <a class="el" href="biharmonic__preconditioner_8cc_source.html#l00114">setup()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="biharmonic__preconditioner_8h_source.html#l00097">BiharmonicPreconditioner()</a>, <a class="el" href="biharmonic__preconditioner_8h_source.html#l00155">preconditioner_type()</a>, and <a class="el" href="biharmonic__preconditioner_8cc_source.html#l00110">setup()</a>.</p>
 
 </div>
 </div>
@@ -1037,9 +1037,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Exact <a class="el" href="classoomph_1_1Preconditioner.html" title="Preconditioner base class. Gives an interface to call all other preconditioners through and stores th...">Preconditioner</a> Pointer. </p>
 
-<p class="definition">Definition at line <a class="el" href="biharmonic__preconditioner_8h_source.html#l00182">182</a> of file <a class="el" href="biharmonic__preconditioner_8h_source.html">biharmonic_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="biharmonic__preconditioner_8h_source.html#l00178">178</a> of file <a class="el" href="biharmonic__preconditioner_8h_source.html">biharmonic_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="biharmonic__preconditioner_8h_source.html#l00101">BiharmonicPreconditioner()</a>, <a class="el" href="biharmonic__preconditioner_8h_source.html#l00128">clean_up_memory()</a>, <a class="el" href="biharmonic__preconditioner_8cc_source.html#l00253">preconditioner_solve()</a>, and <a class="el" href="biharmonic__preconditioner_8cc_source.html#l00114">setup()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="biharmonic__preconditioner_8h_source.html#l00097">BiharmonicPreconditioner()</a>, <a class="el" href="biharmonic__preconditioner_8h_source.html#l00124">clean_up_memory()</a>, <a class="el" href="biharmonic__preconditioner_8cc_source.html#l00249">preconditioner_solve()</a>, and <a class="el" href="biharmonic__preconditioner_8cc_source.html#l00110">setup()</a>.</p>
 
 </div>
 </div>
@@ -1065,9 +1065,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Inexact <a class="el" href="classoomph_1_1Preconditioner.html" title="Preconditioner base class. Gives an interface to call all other preconditioners through and stores th...">Preconditioner</a> Pointer. </p>
 
-<p class="definition">Definition at line <a class="el" href="biharmonic__preconditioner_8h_source.html#l00185">185</a> of file <a class="el" href="biharmonic__preconditioner_8h_source.html">biharmonic_preconditioner.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="biharmonic__preconditioner_8h_source.html#l00181">181</a> of file <a class="el" href="biharmonic__preconditioner_8h_source.html">biharmonic_preconditioner.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="biharmonic__preconditioner_8h_source.html#l00101">BiharmonicPreconditioner()</a>, <a class="el" href="biharmonic__preconditioner_8h_source.html#l00128">clean_up_memory()</a>, <a class="el" href="biharmonic__preconditioner_8cc_source.html#l00253">preconditioner_solve()</a>, and <a class="el" href="biharmonic__preconditioner_8cc_source.html#l00114">setup()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="biharmonic__preconditioner_8h_source.html#l00097">BiharmonicPreconditioner()</a>, <a class="el" href="biharmonic__preconditioner_8h_source.html#l00124">clean_up_memory()</a>, <a class="el" href="biharmonic__preconditioner_8cc_source.html#l00249">preconditioner_solve()</a>, and <a class="el" href="biharmonic__preconditioner_8cc_source.html#l00110">setup()</a>.</p>
 
 </div>
 </div>
@@ -1103,7 +1103,7 @@ Additional Inherited Members</h2></td></tr>
     <footer>
       <div class="container">
         <div class="text-muted" style="float:right;">Generated by <a href="http://www.doxygen.org/index.html">
-          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Tue Jul 6 2021 22:55:48
+          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Fri Jul 9 2021 20:51:07
         </div>
       </div>
     </footer>

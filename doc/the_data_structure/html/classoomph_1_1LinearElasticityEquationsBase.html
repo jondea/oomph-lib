@@ -1194,7 +1194,7 @@ class oomph::LinearElasticityEquationsBase&lt; DIM &gt;</h3>
 
 <p>A base class for elements that solve the equations of linear elasticity in Cartesian coordinates. Combines a few generic functions that are shared by <a class="el" href="classoomph_1_1LinearElasticityEquations.html">LinearElasticityEquations</a> and LinearElasticityEquationsWithPressure (hierher: The latter don't exist yet but will be written as soon as somebody needs them...) </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__elasticity__elements_8h_source.html#l00060">60</a> of file <a class="el" href="linear__elasticity__elements_8h_source.html">linear_elasticity_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__elasticity__elements_8h_source.html#l00056">56</a> of file <a class="el" href="linear__elasticity__elements_8h_source.html">linear_elasticity_elements.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="ada2fc7aa2569c35e28982f93a0749903"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ada2fc7aa2569c35e28982f93a0749903">&#9670;&nbsp;</a></span>BodyForceFctPt</h2>
@@ -1213,7 +1213,7 @@ template&lt;unsigned DIM&gt; </div>
 <p>Function pointer to function that specifies the body force as a function of the Cartesian coordinates and time FCT(t,x,b) &ndash; x and b are Vectors! <br  />
  </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__elasticity__elements_8h_source.html#l00162">162</a> of file <a class="el" href="linear__elasticity__elements_8h_source.html">linear_elasticity_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__elasticity__elements_8h_source.html#l00158">158</a> of file <a class="el" href="linear__elasticity__elements_8h_source.html">linear_elasticity_elements.h</a>.</p>
 
 </div>
 </div>
@@ -1245,7 +1245,7 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Constructor: Set null pointers for constitutive law and for isotropic growth function. Set physical parameter values to default values, switch on inertia and set body force to zero. </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__elasticity__elements_8h_source.html#l00169">169</a> of file <a class="el" href="linear__elasticity__elements_8h_source.html">linear_elasticity_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__elasticity__elements_8h_source.html#l00165">165</a> of file <a class="el" href="linear__elasticity__elements_8h_source.html">linear_elasticity_elements.h</a>.</p>
 
 </div>
 </div>
@@ -1288,9 +1288,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Evaluate body force at Eulerian coordinate x at present time (returns zero vector if no body force function pointer has been set) </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__elasticity__elements_8h_source.html#l00243">243</a> of file <a class="el" href="linear__elasticity__elements_8h_source.html">linear_elasticity_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__elasticity__elements_8h_source.html#l00239">239</a> of file <a class="el" href="linear__elasticity__elements_8h_source.html">linear_elasticity_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="linear__elasticity__elements_8h_source.html#l00340">oomph::LinearElasticityEquationsBase&lt; DIM &gt;::Body_force_fct_pt</a>, <a class="el" href="elements_8h_source.html#l02499">oomph::FiniteElement::dim()</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, <a class="el" href="elements_8h_source.html#l02126">oomph::FiniteElement::node_pt()</a>, <a class="el" href="timesteppers_8h_source.html#l00130">oomph::Time::time()</a>, <a class="el" href="timesteppers_8h_source.html#l00540">oomph::TimeStepper::time_pt()</a>, and <a class="el" href="nodes_8h_source.html#l00246">oomph::Data::time_stepper_pt()</a>.</p>
+<p class="reference">References <a class="el" href="linear__elasticity__elements_8h_source.html#l00336">oomph::LinearElasticityEquationsBase&lt; DIM &gt;::Body_force_fct_pt</a>, <a class="el" href="elements_8h_source.html#l02495">oomph::FiniteElement::dim()</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, <a class="el" href="elements_8h_source.html#l02122">oomph::FiniteElement::node_pt()</a>, <a class="el" href="timesteppers_8h_source.html#l00126">oomph::Time::time()</a>, <a class="el" href="timesteppers_8h_source.html#l00536">oomph::TimeStepper::time_pt()</a>, and <a class="el" href="nodes_8h_source.html#l00242">oomph::Data::time_stepper_pt()</a>.</p>
 
 </div>
 </div>
@@ -1321,11 +1321,11 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Access function: Pointer to body force function. </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__elasticity__elements_8h_source.html#l00190">190</a> of file <a class="el" href="linear__elasticity__elements_8h_source.html">linear_elasticity_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__elasticity__elements_8h_source.html#l00186">186</a> of file <a class="el" href="linear__elasticity__elements_8h_source.html">linear_elasticity_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="linear__elasticity__elements_8h_source.html#l00340">oomph::LinearElasticityEquationsBase&lt; DIM &gt;::Body_force_fct_pt</a>.</p>
+<p class="reference">References <a class="el" href="linear__elasticity__elements_8h_source.html#l00336">oomph::LinearElasticityEquationsBase&lt; DIM &gt;::Body_force_fct_pt</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="refineable__linear__elasticity__elements_8h_source.html#l00157">oomph::RefineableLinearElasticityEquations&lt; DIM &gt;::further_build()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="refineable__linear__elasticity__elements_8h_source.html#l00153">oomph::RefineableLinearElasticityEquations&lt; DIM &gt;::further_build()</a>.</p>
 
 </div>
 </div>
@@ -1356,9 +1356,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Access function: Pointer to body force function (const version) </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__elasticity__elements_8h_source.html#l00193">193</a> of file <a class="el" href="linear__elasticity__elements_8h_source.html">linear_elasticity_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__elasticity__elements_8h_source.html#l00189">189</a> of file <a class="el" href="linear__elasticity__elements_8h_source.html">linear_elasticity_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="linear__elasticity__elements_8h_source.html#l00340">oomph::LinearElasticityEquationsBase&lt; DIM &gt;::Body_force_fct_pt</a>.</p>
+<p class="reference">References <a class="el" href="linear__elasticity__elements_8h_source.html#l00336">oomph::LinearElasticityEquationsBase&lt; DIM &gt;::Body_force_fct_pt</a>.</p>
 
 </div>
 </div>
@@ -1400,9 +1400,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>d^2u/dt^2 at local node n </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__elasticity__elements_8h_source.html#l00071">71</a> of file <a class="el" href="linear__elasticity__elements_8h_source.html">linear_elasticity_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__elasticity__elements_8h_source.html#l00067">67</a> of file <a class="el" href="linear__elasticity__elements_8h_source.html">linear_elasticity_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="timesteppers_8h_source.html#l00375">oomph::TimeStepper::is_steady()</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, <a class="el" href="elements_8h_source.html#l02487">oomph::FiniteElement::nodal_value()</a>, <a class="el" href="elements_8h_source.html#l02126">oomph::FiniteElement::node_pt()</a>, <a class="el" href="timesteppers_8h_source.html#l00562">oomph::TimeStepper::ntstorage()</a>, <a class="el" href="cfortran_8h_source.html#l00572">t</a>, <a class="el" href="geom__objects_8h_source.html#l00197">oomph::GeomObject::time_stepper_pt()</a>, <a class="el" href="nodes_8h_source.html#l00246">oomph::Data::time_stepper_pt()</a>, <a class="el" href="linear__elasticity__elements_8h_source.html#l00067">oomph::LinearElasticityEquationsBase&lt; DIM &gt;::u_index_linear_elasticity()</a>, and <a class="el" href="timesteppers_8h_source.html#l00557">oomph::TimeStepper::weight()</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="timesteppers_8h_source.html#l00371">oomph::TimeStepper::is_steady()</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, <a class="el" href="elements_8h_source.html#l02483">oomph::FiniteElement::nodal_value()</a>, <a class="el" href="elements_8h_source.html#l02122">oomph::FiniteElement::node_pt()</a>, <a class="el" href="timesteppers_8h_source.html#l00558">oomph::TimeStepper::ntstorage()</a>, <a class="el" href="cfortran_8h_source.html#l00568">t</a>, <a class="el" href="geom__objects_8h_source.html#l00193">oomph::GeomObject::time_stepper_pt()</a>, <a class="el" href="nodes_8h_source.html#l00242">oomph::Data::time_stepper_pt()</a>, <a class="el" href="linear__elasticity__elements_8h_source.html#l00063">oomph::LinearElasticityEquationsBase&lt; DIM &gt;::u_index_linear_elasticity()</a>, and <a class="el" href="timesteppers_8h_source.html#l00553">oomph::TimeStepper::weight()</a>.</p>
 
 </div>
 </div>
@@ -1433,9 +1433,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Switch off solid inertia. </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__elasticity__elements_8h_source.html#l00200">200</a> of file <a class="el" href="linear__elasticity__elements_8h_source.html">linear_elasticity_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__elasticity__elements_8h_source.html#l00196">196</a> of file <a class="el" href="linear__elasticity__elements_8h_source.html">linear_elasticity_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="linear__elasticity__elements_8h_source.html#l00337">oomph::LinearElasticityEquationsBase&lt; DIM &gt;::Unsteady</a>.</p>
+<p class="reference">References <a class="el" href="linear__elasticity__elements_8h_source.html#l00333">oomph::LinearElasticityEquationsBase&lt; DIM &gt;::Unsteady</a>.</p>
 
 </div>
 </div>
@@ -1489,9 +1489,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Access function to the entries in the elasticity tensor. </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__elasticity__elements_8h_source.html#l00177">177</a> of file <a class="el" href="linear__elasticity__elements_8h_source.html">linear_elasticity_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__elasticity__elements_8h_source.html#l00173">173</a> of file <a class="el" href="linear__elasticity__elements_8h_source.html">linear_elasticity_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="linear__elasticity__elements_8h_source.html#l00331">oomph::LinearElasticityEquationsBase&lt; DIM &gt;::Elasticity_tensor_pt</a>, and <a class="el" href="cfortran_8h_source.html#l00607">i</a>.</p>
+<p class="reference">References <a class="el" href="linear__elasticity__elements_8h_source.html#l00327">oomph::LinearElasticityEquationsBase&lt; DIM &gt;::Elasticity_tensor_pt</a>, and <a class="el" href="cfortran_8h_source.html#l00603">i</a>.</p>
 
 </div>
 </div>
@@ -1522,11 +1522,11 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Return the pointer to the elasticity_tensor. </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__elasticity__elements_8h_source.html#l00174">174</a> of file <a class="el" href="linear__elasticity__elements_8h_source.html">linear_elasticity_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__elasticity__elements_8h_source.html#l00170">170</a> of file <a class="el" href="linear__elasticity__elements_8h_source.html">linear_elasticity_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="linear__elasticity__elements_8h_source.html#l00331">oomph::LinearElasticityEquationsBase&lt; DIM &gt;::Elasticity_tensor_pt</a>.</p>
+<p class="reference">References <a class="el" href="linear__elasticity__elements_8h_source.html#l00327">oomph::LinearElasticityEquationsBase&lt; DIM &gt;::Elasticity_tensor_pt</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="refineable__linear__elasticity__elements_8h_source.html#l00157">oomph::RefineableLinearElasticityEquations&lt; DIM &gt;::further_build()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="refineable__linear__elasticity__elements_8h_source.html#l00153">oomph::RefineableLinearElasticityEquations&lt; DIM &gt;::further_build()</a>.</p>
 
 </div>
 </div>
@@ -1557,9 +1557,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Switch on solid inertia. </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__elasticity__elements_8h_source.html#l00197">197</a> of file <a class="el" href="linear__elasticity__elements_8h_source.html">linear_elasticity_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__elasticity__elements_8h_source.html#l00193">193</a> of file <a class="el" href="linear__elasticity__elements_8h_source.html">linear_elasticity_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="linear__elasticity__elements_8h_source.html#l00337">oomph::LinearElasticityEquationsBase&lt; DIM &gt;::Unsteady</a>.</p>
+<p class="reference">References <a class="el" href="linear__elasticity__elements_8h_source.html#l00333">oomph::LinearElasticityEquationsBase&lt; DIM &gt;::Unsteady</a>.</p>
 
 </div>
 </div>
@@ -1594,9 +1594,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1GeneralisedElement.html#a069f59bfc3e607a5bebba52c6314d777">oomph::GeneralisedElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="linear__elasticity__elements_8h_source.html#l00287">287</a> of file <a class="el" href="linear__elasticity__elements_8h_source.html">linear_elasticity_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__elasticity__elements_8h_source.html#l00283">283</a> of file <a class="el" href="linear__elasticity__elements_8h_source.html">linear_elasticity_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l00709">oomph::GeneralisedElement::eqn_number()</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, <a class="el" href="elements_8h_source.html#l02163">oomph::FiniteElement::nnode()</a>, and <a class="el" href="elements_8h_source.html#l01403">oomph::FiniteElement::nodal_local_eqn()</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l00705">oomph::GeneralisedElement::eqn_number()</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, <a class="el" href="elements_8h_source.html#l02159">oomph::FiniteElement::nnode()</a>, and <a class="el" href="elements_8h_source.html#l01399">oomph::FiniteElement::nodal_local_eqn()</a>.</p>
 
 </div>
 </div>
@@ -1632,11 +1632,11 @@ template&lt;unsigned DIM&gt; </div>
 <p>Compute the strain tensor at local coordinate s. </p>
 <p>Now fill in the entries of the strain tensor</p>
 
-<p class="definition">Definition at line <a class="el" href="linear__elasticity__elements_8cc_source.html#l00053">53</a> of file <a class="el" href="linear__elasticity__elements_8cc_source.html">linear_elasticity_elements.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__elasticity__elements_8cc_source.html#l00049">49</a> of file <a class="el" href="linear__elasticity__elements_8cc_source.html">linear_elasticity_elements.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="matrices_8h_source.html#l00507">oomph::DenseMatrix&lt; T &gt;::ncol()</a>, <a class="el" href="matrices_8h_source.html#l00504">oomph::DenseMatrix&lt; T &gt;::nrow()</a>, and <a class="el" href="cfortran_8h_source.html#l00572">s</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="matrices_8h_source.html#l00503">oomph::DenseMatrix&lt; T &gt;::ncol()</a>, <a class="el" href="matrices_8h_source.html#l00500">oomph::DenseMatrix&lt; T &gt;::nrow()</a>, and <a class="el" href="cfortran_8h_source.html#l00568">s</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="refineable__linear__elasticity__elements_8h_source.html#l00112">oomph::RefineableLinearElasticityEquations&lt; DIM &gt;::get_Z2_flux()</a>, and <a class="el" href="Tlinear__elasticity__elements_8h_source.html#l00145">oomph::TLinearElasticityElement&lt; DIM, NNODE_1D &gt;::get_Z2_flux()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="refineable__linear__elasticity__elements_8h_source.html#l00108">oomph::RefineableLinearElasticityEquations&lt; DIM &gt;::get_Z2_flux()</a>, and <a class="el" href="Tlinear__elasticity__elements_8h_source.html#l00141">oomph::TLinearElasticityElement&lt; DIM, NNODE_1D &gt;::get_Z2_flux()</a>.</p>
 
 </div>
 </div>
@@ -1720,9 +1720,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Return FE interpolated displacement u[i] at local coordinate s. </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__elasticity__elements_8h_source.html#l00131">131</a> of file <a class="el" href="linear__elasticity__elements_8h_source.html">linear_elasticity_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__elasticity__elements_8h_source.html#l00127">127</a> of file <a class="el" href="linear__elasticity__elements_8h_source.html">linear_elasticity_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="the__data__structure_8txt.html#a5448c72da3359c7796cf0c5f800732a1">interpolated_u()</a>, <a class="el" href="elements_8h_source.html#l02163">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l02487">oomph::FiniteElement::nodal_value()</a>, <a class="el" href="cfortran_8h_source.html#l00572">s</a>, <a class="el" href="classoomph_1_1FiniteElement.html#a58a25b6859ddd43b7bfe64a19fee5023">oomph::FiniteElement::shape()</a>, and <a class="el" href="linear__elasticity__elements_8h_source.html#l00067">oomph::LinearElasticityEquationsBase&lt; DIM &gt;::u_index_linear_elasticity()</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="the__data__structure_8txt.html#a5448c72da3359c7796cf0c5f800732a1">interpolated_u()</a>, <a class="el" href="elements_8h_source.html#l02159">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l02483">oomph::FiniteElement::nodal_value()</a>, <a class="el" href="cfortran_8h_source.html#l00568">s</a>, <a class="el" href="classoomph_1_1FiniteElement.html#a58a25b6859ddd43b7bfe64a19fee5023">oomph::FiniteElement::shape()</a>, and <a class="el" href="linear__elasticity__elements_8h_source.html#l00063">oomph::LinearElasticityEquationsBase&lt; DIM &gt;::u_index_linear_elasticity()</a>.</p>
 
 </div>
 </div>
@@ -1764,11 +1764,11 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Compute vector of FE interpolated displacement u at local coordinate s. </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__elasticity__elements_8h_source.html#l00101">101</a> of file <a class="el" href="linear__elasticity__elements_8h_source.html">linear_elasticity_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__elasticity__elements_8h_source.html#l00097">97</a> of file <a class="el" href="linear__elasticity__elements_8h_source.html">linear_elasticity_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="elements_8h_source.html#l02163">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l02487">oomph::FiniteElement::nodal_value()</a>, <a class="el" href="cfortran_8h_source.html#l00572">s</a>, <a class="el" href="classoomph_1_1FiniteElement.html#a58a25b6859ddd43b7bfe64a19fee5023">oomph::FiniteElement::shape()</a>, and <a class="el" href="linear__elasticity__elements_8h_source.html#l00067">oomph::LinearElasticityEquationsBase&lt; DIM &gt;::u_index_linear_elasticity()</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="elements_8h_source.html#l02159">oomph::FiniteElement::nnode()</a>, <a class="el" href="elements_8h_source.html#l02483">oomph::FiniteElement::nodal_value()</a>, <a class="el" href="cfortran_8h_source.html#l00568">s</a>, <a class="el" href="classoomph_1_1FiniteElement.html#a58a25b6859ddd43b7bfe64a19fee5023">oomph::FiniteElement::shape()</a>, and <a class="el" href="linear__elasticity__elements_8h_source.html#l00063">oomph::LinearElasticityEquationsBase&lt; DIM &gt;::u_index_linear_elasticity()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="refineable__linear__elasticity__elements_8h_source.html#l00096">oomph::RefineableLinearElasticityEquations&lt; DIM &gt;::get_interpolated_values()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="refineable__linear__elasticity__elements_8h_source.html#l00092">oomph::RefineableLinearElasticityEquations&lt; DIM &gt;::get_interpolated_values()</a>.</p>
 
 </div>
 </div>
@@ -1799,11 +1799,11 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Access function to flag that switches inertia on/off (const version) </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__elasticity__elements_8h_source.html#l00203">203</a> of file <a class="el" href="linear__elasticity__elements_8h_source.html">linear_elasticity_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__elasticity__elements_8h_source.html#l00199">199</a> of file <a class="el" href="linear__elasticity__elements_8h_source.html">linear_elasticity_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="linear__elasticity__elements_8h_source.html#l00337">oomph::LinearElasticityEquationsBase&lt; DIM &gt;::Unsteady</a>.</p>
+<p class="reference">References <a class="el" href="linear__elasticity__elements_8h_source.html#l00333">oomph::LinearElasticityEquationsBase&lt; DIM &gt;::Unsteady</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="refineable__linear__elasticity__elements_8h_source.html#l00157">oomph::RefineableLinearElasticityEquations&lt; DIM &gt;::further_build()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="refineable__linear__elasticity__elements_8h_source.html#l00153">oomph::RefineableLinearElasticityEquations&lt; DIM &gt;::further_build()</a>.</p>
 
 </div>
 </div>
@@ -1834,9 +1834,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Access function for timescale ratio (nondim density) </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__elasticity__elements_8h_source.html#l00184">184</a> of file <a class="el" href="linear__elasticity__elements_8h_source.html">linear_elasticity_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__elasticity__elements_8h_source.html#l00180">180</a> of file <a class="el" href="linear__elasticity__elements_8h_source.html">linear_elasticity_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="linear__elasticity__elements_8h_source.html#l00334">oomph::LinearElasticityEquationsBase&lt; DIM &gt;::Lambda_sq_pt</a>.</p>
+<p class="reference">References <a class="el" href="linear__elasticity__elements_8h_source.html#l00330">oomph::LinearElasticityEquationsBase&lt; DIM &gt;::Lambda_sq_pt</a>.</p>
 
 </div>
 </div>
@@ -1867,11 +1867,11 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Access function for pointer to timescale ratio (nondim density) </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__elasticity__elements_8h_source.html#l00187">187</a> of file <a class="el" href="linear__elasticity__elements_8h_source.html">linear_elasticity_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__elasticity__elements_8h_source.html#l00183">183</a> of file <a class="el" href="linear__elasticity__elements_8h_source.html">linear_elasticity_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="linear__elasticity__elements_8h_source.html#l00334">oomph::LinearElasticityEquationsBase&lt; DIM &gt;::Lambda_sq_pt</a>.</p>
+<p class="reference">References <a class="el" href="linear__elasticity__elements_8h_source.html#l00330">oomph::LinearElasticityEquationsBase&lt; DIM &gt;::Lambda_sq_pt</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="refineable__linear__elasticity__elements_8h_source.html#l00157">oomph::RefineableLinearElasticityEquations&lt; DIM &gt;::further_build()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="refineable__linear__elasticity__elements_8h_source.html#l00153">oomph::RefineableLinearElasticityEquations&lt; DIM &gt;::further_build()</a>.</p>
 
 </div>
 </div>
@@ -1904,7 +1904,7 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1GeneralisedElement.html#a0c6037a870597b35dcf1c780710b9a56">oomph::GeneralisedElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="linear__elasticity__elements_8h_source.html#l00275">275</a> of file <a class="el" href="linear__elasticity__elements_8h_source.html">linear_elasticity_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__elasticity__elements_8h_source.html#l00271">271</a> of file <a class="el" href="linear__elasticity__elements_8h_source.html">linear_elasticity_elements.h</a>.</p>
 
 </div>
 </div>
@@ -1935,9 +1935,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Pin the element's redundant solid pressures (needed for refinement) </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__elasticity__elements_8h_source.html#l00206">206</a> of file <a class="el" href="linear__elasticity__elements_8h_source.html">linear_elasticity_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__elasticity__elements_8h_source.html#l00202">202</a> of file <a class="el" href="linear__elasticity__elements_8h_source.html">linear_elasticity_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="linear__elasticity__elements_8h_source.html#l00218">oomph::LinearElasticityEquationsBase&lt; DIM &gt;::pin_redundant_nodal_solid_pressures()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="linear__elasticity__elements_8h_source.html#l00214">oomph::LinearElasticityEquationsBase&lt; DIM &gt;::pin_redundant_nodal_solid_pressures()</a>.</p>
 
 </div>
 </div>
@@ -1974,9 +1974,9 @@ template&lt;unsigned DIM&gt; </div>
 <p>which is empty by default and should be implemented for elements with nodal solid pressure degrees of freedom <br  />
  (e.g. linear elasticity elements with continuous pressure interpolation.) </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__elasticity__elements_8h_source.html#l00218">218</a> of file <a class="el" href="linear__elasticity__elements_8h_source.html">linear_elasticity_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__elasticity__elements_8h_source.html#l00214">214</a> of file <a class="el" href="linear__elasticity__elements_8h_source.html">linear_elasticity_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00575">e</a>, and <a class="el" href="linear__elasticity__elements_8h_source.html#l00206">oomph::LinearElasticityEquationsBase&lt; DIM &gt;::pin_elemental_redundant_nodal_solid_pressures()</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00571">e</a>, and <a class="el" href="linear__elasticity__elements_8h_source.html#l00202">oomph::LinearElasticityEquationsBase&lt; DIM &gt;::pin_elemental_redundant_nodal_solid_pressures()</a>.</p>
 
 </div>
 </div>
@@ -2008,11 +2008,11 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Return the index at which the i-th unknown displacement component is stored. The default value, i, is appropriate for single-physics problems. </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__elasticity__elements_8h_source.html#l00067">67</a> of file <a class="el" href="linear__elasticity__elements_8h_source.html">linear_elasticity_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__elasticity__elements_8h_source.html#l00063">63</a> of file <a class="el" href="linear__elasticity__elements_8h_source.html">linear_elasticity_elements.h</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="linear__elasticity__elements_8h_source.html#l00071">oomph::LinearElasticityEquationsBase&lt; DIM &gt;::d2u_dt2_linear_elasticity()</a>, <a class="el" href="refineable__linear__elasticity__elements_8h_source.html#l00067">oomph::RefineableLinearElasticityEquations&lt; DIM &gt;::get_interpolated_values()</a>, and <a class="el" href="linear__elasticity__elements_8h_source.html#l00101">oomph::LinearElasticityEquationsBase&lt; DIM &gt;::interpolated_u_linear_elasticity()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="linear__elasticity__elements_8h_source.html#l00067">oomph::LinearElasticityEquationsBase&lt; DIM &gt;::d2u_dt2_linear_elasticity()</a>, <a class="el" href="refineable__linear__elasticity__elements_8h_source.html#l00063">oomph::RefineableLinearElasticityEquations&lt; DIM &gt;::get_interpolated_values()</a>, and <a class="el" href="linear__elasticity__elements_8h_source.html#l00097">oomph::LinearElasticityEquationsBase&lt; DIM &gt;::interpolated_u_linear_elasticity()</a>.</p>
 
 </div>
 </div>
@@ -2041,9 +2041,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Pointer to body force function. </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__elasticity__elements_8h_source.html#l00340">340</a> of file <a class="el" href="linear__elasticity__elements_8h_source.html">linear_elasticity_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__elasticity__elements_8h_source.html#l00336">336</a> of file <a class="el" href="linear__elasticity__elements_8h_source.html">linear_elasticity_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="linear__elasticity__elements_8h_source.html#l00243">oomph::LinearElasticityEquationsBase&lt; DIM &gt;::body_force()</a>, <a class="el" href="linear__elasticity__elements_8h_source.html#l00190">oomph::LinearElasticityEquationsBase&lt; DIM &gt;::body_force_fct_pt()</a>, and <a class="el" href="refineable__linear__elasticity__elements_8h_source.html#l00157">oomph::RefineableLinearElasticityEquations&lt; DIM &gt;::further_build()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="linear__elasticity__elements_8h_source.html#l00239">oomph::LinearElasticityEquationsBase&lt; DIM &gt;::body_force()</a>, <a class="el" href="linear__elasticity__elements_8h_source.html#l00186">oomph::LinearElasticityEquationsBase&lt; DIM &gt;::body_force_fct_pt()</a>, and <a class="el" href="refineable__linear__elasticity__elements_8h_source.html#l00153">oomph::RefineableLinearElasticityEquations&lt; DIM &gt;::further_build()</a>.</p>
 
 </div>
 </div>
@@ -2071,7 +2071,7 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Static default value for timescale ratio (1.0 &ndash; for natural scaling) </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__elasticity__elements_8h_source.html#l00343">343</a> of file <a class="el" href="linear__elasticity__elements_8h_source.html">linear_elasticity_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__elasticity__elements_8h_source.html#l00339">339</a> of file <a class="el" href="linear__elasticity__elements_8h_source.html">linear_elasticity_elements.h</a>.</p>
 
 </div>
 </div>
@@ -2099,9 +2099,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Pointer to the elasticity tensor. </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__elasticity__elements_8h_source.html#l00331">331</a> of file <a class="el" href="linear__elasticity__elements_8h_source.html">linear_elasticity_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__elasticity__elements_8h_source.html#l00327">327</a> of file <a class="el" href="linear__elasticity__elements_8h_source.html">linear_elasticity_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="linear__elasticity__elements_8h_source.html#l00177">oomph::LinearElasticityEquationsBase&lt; DIM &gt;::E()</a>, <a class="el" href="linear__elasticity__elements_8h_source.html#l00174">oomph::LinearElasticityEquationsBase&lt; DIM &gt;::elasticity_tensor_pt()</a>, and <a class="el" href="refineable__linear__elasticity__elements_8h_source.html#l00157">oomph::RefineableLinearElasticityEquations&lt; DIM &gt;::further_build()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="linear__elasticity__elements_8h_source.html#l00173">oomph::LinearElasticityEquationsBase&lt; DIM &gt;::E()</a>, <a class="el" href="linear__elasticity__elements_8h_source.html#l00170">oomph::LinearElasticityEquationsBase&lt; DIM &gt;::elasticity_tensor_pt()</a>, and <a class="el" href="refineable__linear__elasticity__elements_8h_source.html#l00153">oomph::RefineableLinearElasticityEquations&lt; DIM &gt;::further_build()</a>.</p>
 
 </div>
 </div>
@@ -2129,9 +2129,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Timescale ratio (non-dim. density) </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__elasticity__elements_8h_source.html#l00334">334</a> of file <a class="el" href="linear__elasticity__elements_8h_source.html">linear_elasticity_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__elasticity__elements_8h_source.html#l00330">330</a> of file <a class="el" href="linear__elasticity__elements_8h_source.html">linear_elasticity_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="refineable__linear__elasticity__elements_8h_source.html#l00157">oomph::RefineableLinearElasticityEquations&lt; DIM &gt;::further_build()</a>, <a class="el" href="linear__elasticity__elements_8h_source.html#l00184">oomph::LinearElasticityEquationsBase&lt; DIM &gt;::lambda_sq()</a>, and <a class="el" href="linear__elasticity__elements_8h_source.html#l00187">oomph::LinearElasticityEquationsBase&lt; DIM &gt;::lambda_sq_pt()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="refineable__linear__elasticity__elements_8h_source.html#l00153">oomph::RefineableLinearElasticityEquations&lt; DIM &gt;::further_build()</a>, <a class="el" href="linear__elasticity__elements_8h_source.html#l00180">oomph::LinearElasticityEquationsBase&lt; DIM &gt;::lambda_sq()</a>, and <a class="el" href="linear__elasticity__elements_8h_source.html#l00183">oomph::LinearElasticityEquationsBase&lt; DIM &gt;::lambda_sq_pt()</a>.</p>
 
 </div>
 </div>
@@ -2159,9 +2159,9 @@ template&lt;unsigned DIM&gt; </div>
 
 <p>Flag that switches inertia on/off. </p>
 
-<p class="definition">Definition at line <a class="el" href="linear__elasticity__elements_8h_source.html#l00337">337</a> of file <a class="el" href="linear__elasticity__elements_8h_source.html">linear_elasticity_elements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linear__elasticity__elements_8h_source.html#l00333">333</a> of file <a class="el" href="linear__elasticity__elements_8h_source.html">linear_elasticity_elements.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="linear__elasticity__elements_8h_source.html#l00200">oomph::LinearElasticityEquationsBase&lt; DIM &gt;::disable_inertia()</a>, <a class="el" href="linear__elasticity__elements_8h_source.html#l00197">oomph::LinearElasticityEquationsBase&lt; DIM &gt;::enable_inertia()</a>, <a class="el" href="refineable__linear__elasticity__elements_8h_source.html#l00157">oomph::RefineableLinearElasticityEquations&lt; DIM &gt;::further_build()</a>, and <a class="el" href="linear__elasticity__elements_8h_source.html#l00203">oomph::LinearElasticityEquationsBase&lt; DIM &gt;::is_inertia_enabled()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="linear__elasticity__elements_8h_source.html#l00196">oomph::LinearElasticityEquationsBase&lt; DIM &gt;::disable_inertia()</a>, <a class="el" href="linear__elasticity__elements_8h_source.html#l00193">oomph::LinearElasticityEquationsBase&lt; DIM &gt;::enable_inertia()</a>, <a class="el" href="refineable__linear__elasticity__elements_8h_source.html#l00153">oomph::RefineableLinearElasticityEquations&lt; DIM &gt;::further_build()</a>, and <a class="el" href="linear__elasticity__elements_8h_source.html#l00199">oomph::LinearElasticityEquationsBase&lt; DIM &gt;::is_inertia_enabled()</a>.</p>
 
 </div>
 </div>
@@ -2197,7 +2197,7 @@ template&lt;unsigned DIM&gt; </div>
     <footer>
       <div class="container">
         <div class="text-muted" style="float:right;">Generated by <a href="http://www.doxygen.org/index.html">
-          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Tue Jul 6 2021 22:57:46
+          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Fri Jul 9 2021 20:52:52
         </div>
       </div>
     </footer>

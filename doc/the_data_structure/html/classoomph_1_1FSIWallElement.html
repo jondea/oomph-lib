@@ -1500,7 +1500,7 @@ Additional Inherited Members</h2></td></tr>
 <p> For other wall/fluid element combinations the definition of <img class="formulaInl" alt="$ Q $" src="form_45.png"/> will differ &ndash; check the documentation and/or implementation to see which parameters are used to non-dimensionalise the stresses in the respective elements!</p>
 <p>The function FSIWallElement::fluid_load_vector(...) computes the fluid traction on the wall on the wall stress-scale. This function may be called in the get_load (say) function of a specific <a class="el" href="classoomph_1_1FSIWallElement.html" title="This is a base class for all SolidFiniteElements that participate in FSI computations....">FSIWallElement</a> to add the fluid load to the other tractions that may already be applied to the element by other means. By default a stress-ratio of <img class="formulaInl" alt="$ Q = 1 $" src="form_283.png"/> is used but this may be overwritten with the access function <a class="el" href="classoomph_1_1FSIWallElement.html#ab407513775b5250b016ab91fa98dc1a0" title="Return a pointer the ratio of stress scales used to non-dimensionalise the fluid and solid equations.">FSIWallElement::q_pt()</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="fsi_8h_source.html#l00210">210</a> of file <a class="el" href="fsi_8h_source.html">fsi.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fsi_8h_source.html#l00206">206</a> of file <a class="el" href="fsi_8h_source.html">fsi.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae27388763fb781afa1d620fad111f234"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae27388763fb781afa1d620fad111f234">&#9670;&nbsp;</a></span>FSIWallElement() <span class="overload">[1/2]</span></h2>
@@ -1527,7 +1527,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Constructor. Note that element is not fully-functional until its <a class="el" href="classoomph_1_1FSIWallElement.html#a487a050241512f3979c4d67bb40b2a63" title="Setup: Assign storage – pass the Eulerian dimension of the &quot;adjacent&quot; fluid elements and the number o...">setup_fsi_wall_element()</a> function has been called! </p>
 
-<p class="definition">Definition at line <a class="el" href="fsi_8h_source.html#l00232">232</a> of file <a class="el" href="fsi_8h_source.html">fsi.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fsi_8h_source.html#l00228">228</a> of file <a class="el" href="fsi_8h_source.html">fsi.h</a>.</p>
 
 </div>
 </div>
@@ -1557,9 +1557,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Broken copy constructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="fsi_8h_source.html#l00236">236</a> of file <a class="el" href="fsi_8h_source.html">fsi.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fsi_8h_source.html#l00232">232</a> of file <a class="el" href="fsi_8h_source.html">fsi.h</a>.</p>
 
-<p class="reference">References <a class="el" href="oomph__utilities_8cc_source.html#l00218">oomph::BrokenCopy::broken_copy()</a>.</p>
+<p class="reference">References <a class="el" href="oomph__utilities_8cc_source.html#l00214">oomph::BrokenCopy::broken_copy()</a>.</p>
 
 </div>
 </div>
@@ -1588,7 +1588,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Empty virtual destructor for safety. </p>
 
-<p class="definition">Definition at line <a class="el" href="fsi_8h_source.html#l00248">248</a> of file <a class="el" href="fsi_8h_source.html">fsi.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fsi_8h_source.html#l00244">244</a> of file <a class="el" href="fsi_8h_source.html">fsi.h</a>.</p>
 
 </div>
 </div>
@@ -1631,9 +1631,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1ElementWithExternalElement.html#a2a1753bed2e822d399aa3525f1bdac4b">oomph::ElementWithExternalElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="fsi_8cc_source.html#l00084">84</a> of file <a class="el" href="fsi_8cc_source.html">fsi.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fsi_8cc_source.html#l00080">80</a> of file <a class="el" href="fsi_8cc_source.html">fsi.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="nodes_8cc_source.html#l00905">oomph::Data::describe_dofs()</a>, <a class="el" href="elements_8cc_source.html#l01682">oomph::FiniteElement::describe_local_dofs()</a>, <a class="el" href="elements_8cc_source.html#l06729">oomph::SolidFiniteElement::describe_solid_local_dofs()</a>, <a class="el" href="element__with__external__element_8h_source.html#l00492">oomph::ElementWithExternalElement::External_interaction_field_data_pt</a>, <a class="el" href="element__with__external__element_8h_source.html#l00496">oomph::ElementWithExternalElement::External_interaction_geometric_data_pt</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="element__with__external__element_8h_source.html#l00211">oomph::ElementWithExternalElement::nexternal_interaction_field_data()</a>, <a class="el" href="element__with__external__element_8h_source.html#l00234">oomph::ElementWithExternalElement::nexternal_interaction_geometric_data()</a>, and <a class="el" href="oomph__definitions_8cc_source.html#l00293">oomph::Global_string_for_annotation::string()</a>.</p>
+<p class="reference">References <a class="el" href="nodes_8cc_source.html#l00901">oomph::Data::describe_dofs()</a>, <a class="el" href="elements_8cc_source.html#l01678">oomph::FiniteElement::describe_local_dofs()</a>, <a class="el" href="elements_8cc_source.html#l06725">oomph::SolidFiniteElement::describe_solid_local_dofs()</a>, <a class="el" href="element__with__external__element_8h_source.html#l00488">oomph::ElementWithExternalElement::External_interaction_field_data_pt</a>, <a class="el" href="element__with__external__element_8h_source.html#l00492">oomph::ElementWithExternalElement::External_interaction_geometric_data_pt</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="element__with__external__element_8h_source.html#l00207">oomph::ElementWithExternalElement::nexternal_interaction_field_data()</a>, <a class="el" href="element__with__external__element_8h_source.html#l00230">oomph::ElementWithExternalElement::nexternal_interaction_geometric_data()</a>, and <a class="el" href="oomph__definitions_8cc_source.html#l00289">oomph::Global_string_for_annotation::string()</a>.</p>
 
 </div>
 </div>
@@ -1662,9 +1662,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Call this function to ignore shear stress component of load when calculating the Jacobian, i.e. to ignore fluid velocity <a class="el" href="classoomph_1_1Data.html" title="A class that represents a collection of data; each Data object may contain many different individual ...">Data</a> in the <a class="el" href="classoomph_1_1FSIFluidElement.html" title="The FSIFluidElement class is a base class for all fluid finite elements that apply a load (traction) ...">FSIFluidElement</a> and "far away" geometric <a class="el" href="classoomph_1_1Data.html" title="A class that represents a collection of data; each Data object may contain many different individual ...">Data</a> that affects nodal positions in the <a class="el" href="classoomph_1_1FSIFluidElement.html" title="The FSIFluidElement class is a base class for all fluid finite elements that apply a load (traction) ...">FSIFluidElement</a>, also to bypass node updates in the <a class="el" href="classoomph_1_1FSIFluidElement.html" title="The FSIFluidElement class is a base class for all fluid finite elements that apply a load (traction) ...">FSIFluidElement</a>. This functionality is provided to allow the user to deem the coupling to the shear stress component of the fluid equations to be irrelevant. </p>
 
-<p class="definition">Definition at line <a class="el" href="fsi_8h_source.html#l00314">314</a> of file <a class="el" href="fsi_8h_source.html">fsi.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fsi_8h_source.html#l00310">310</a> of file <a class="el" href="fsi_8h_source.html">fsi.h</a>.</p>
 
-<p class="reference">References <a class="el" href="fsi_8h_source.html#l00553">Ignore_shear_stress_in_jacobian</a>.</p>
+<p class="reference">References <a class="el" href="fsi_8h_source.html#l00549">Ignore_shear_stress_in_jacobian</a>.</p>
 
 </div>
 </div>
@@ -1685,9 +1685,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Allow element to be loaded by fluid on both sides. (Resizes containers for lookup schemes and initialises data associated with elements at the "back" of the <a class="el" href="classoomph_1_1FSIWallElement.html" title="This is a base class for all SolidFiniteElements that participate in FSI computations....">FSIWallElement</a> to NULL. </p>
 
-<p class="definition">Definition at line <a class="el" href="fsi_8cc_source.html#l00142">142</a> of file <a class="el" href="fsi_8cc_source.html">fsi.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fsi_8cc_source.html#l00138">138</a> of file <a class="el" href="fsi_8cc_source.html">fsi.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="fsi_8h_source.html#l00541">Only_front_is_loaded_by_fluid</a>, and <a class="el" href="element__with__external__element_8h_source.html#l00189">oomph::ElementWithExternalElement::set_ninteraction()</a>.</p>
+<p class="reference">References <a class="el" href="fsi_8h_source.html#l00537">Only_front_is_loaded_by_fluid</a>, and <a class="el" href="element__with__external__element_8h_source.html#l00185">oomph::ElementWithExternalElement::set_ninteraction()</a>.</p>
 
 </div>
 </div>
@@ -1715,9 +1715,9 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Call thi function to re-enable calculation of the shear stress componnent of load when calculating the Jacobian (the default) </p>
 
-<p class="definition">Definition at line <a class="el" href="fsi_8h_source.html#l00319">319</a> of file <a class="el" href="fsi_8h_source.html">fsi.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fsi_8h_source.html#l00315">315</a> of file <a class="el" href="fsi_8h_source.html">fsi.h</a>.</p>
 
-<p class="reference">References <a class="el" href="fsi_8h_source.html#l00553">Ignore_shear_stress_in_jacobian</a>.</p>
+<p class="reference">References <a class="el" href="fsi_8h_source.html#l00549">Ignore_shear_stress_in_jacobian</a>.</p>
 
 </div>
 </div>
@@ -1746,9 +1746,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Do not include any external data that affects the load in the computation of element's Jacobian matrix. This functionality is provided to allow the "user" to deem the coupling to the fluid equations to be irrelevant and to facilitate the solution of a auxiliary solids-only problems, e.g. during the assignment of initial conditions for a time-dependent FSI problem. </p>
 
-<p class="definition">Definition at line <a class="el" href="fsi_8h_source.html#l00296">296</a> of file <a class="el" href="fsi_8h_source.html">fsi.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fsi_8h_source.html#l00292">292</a> of file <a class="el" href="fsi_8h_source.html">fsi.h</a>.</p>
 
-<p class="reference">References <a class="el" href="element__with__external__element_8h_source.html#l00485">oomph::ElementWithExternalElement::Add_external_interaction_data</a>.</p>
+<p class="reference">References <a class="el" href="element__with__external__element_8h_source.html#l00481">oomph::ElementWithExternalElement::Add_external_interaction_data</a>.</p>
 
 </div>
 </div>
@@ -1791,9 +1791,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="classoomph_1_1RefineableFSISolidTractionElement.html#a886a6bcb5722c9535f6f78ccefdc0646">oomph::RefineableFSISolidTractionElement&lt; ELEMENT, DIM &gt;</a>, <a class="el" href="classoomph_1_1FSISolidTractionElement.html#a789bdb99ca30e3c7b56adab5be79a59d">oomph::FSISolidTractionElement&lt; ELEMENT, DIM &gt;</a>, and <a class="el" href="classoomph_1_1FSIDiagHermiteShellElement.html#a5e48d1c0291cf16cacaa8b42112efe90">oomph::FSIDiagHermiteShellElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="fsi_8h_source.html#l00330">330</a> of file <a class="el" href="fsi_8h_source.html">fsi.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fsi_8h_source.html#l00326">326</a> of file <a class="el" href="fsi_8h_source.html">fsi.h</a>.</p>
 
-<p class="reference">References <a class="el" href="elements_8h_source.html#l00360">oomph::GeneralisedElement::fill_in_contribution_to_residuals()</a>, <a class="el" href="elements_8cc_source.html#l07081">oomph::SolidFiniteElement::fill_in_jacobian_for_newmark_accel()</a>, <a class="el" href="elements_8cc_source.html#l01158">oomph::GeneralisedElement::fill_in_jacobian_from_external_by_fd()</a>, <a class="el" href="element__with__external__element_8h_source.html#l00329">oomph::ElementWithExternalElement::fill_in_jacobian_from_external_interaction_by_fd()</a>, <a class="el" href="elements_8cc_source.html#l01064">oomph::GeneralisedElement::fill_in_jacobian_from_internal_by_fd()</a>, <a class="el" href="elements_8cc_source.html#l03583">oomph::FiniteElement::fill_in_jacobian_from_nodal_by_fd()</a>, <a class="el" href="elements_8cc_source.html#l06839">oomph::SolidFiniteElement::fill_in_jacobian_from_solid_position_by_fd()</a>, <a class="el" href="elements_8h_source.html#l00977">oomph::GeneralisedElement::get_residuals()</a>, <a class="el" href="elements_8h_source.html#l00834">oomph::GeneralisedElement::ndof()</a>, <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>, and <a class="el" href="elements_8h_source.html#l04179">oomph::SolidFiniteElement::Solve_for_consistent_newmark_accel_flag</a>.</p>
+<p class="reference">References <a class="el" href="elements_8h_source.html#l00356">oomph::GeneralisedElement::fill_in_contribution_to_residuals()</a>, <a class="el" href="elements_8cc_source.html#l07077">oomph::SolidFiniteElement::fill_in_jacobian_for_newmark_accel()</a>, <a class="el" href="elements_8cc_source.html#l01154">oomph::GeneralisedElement::fill_in_jacobian_from_external_by_fd()</a>, <a class="el" href="element__with__external__element_8h_source.html#l00325">oomph::ElementWithExternalElement::fill_in_jacobian_from_external_interaction_by_fd()</a>, <a class="el" href="elements_8cc_source.html#l01060">oomph::GeneralisedElement::fill_in_jacobian_from_internal_by_fd()</a>, <a class="el" href="elements_8cc_source.html#l03579">oomph::FiniteElement::fill_in_jacobian_from_nodal_by_fd()</a>, <a class="el" href="elements_8cc_source.html#l06835">oomph::SolidFiniteElement::fill_in_jacobian_from_solid_position_by_fd()</a>, <a class="el" href="elements_8h_source.html#l00973">oomph::GeneralisedElement::get_residuals()</a>, <a class="el" href="elements_8h_source.html#l00830">oomph::GeneralisedElement::ndof()</a>, <a class="el" href="the__data__structure_8txt.html#a1400a973def57b85051cfe1070be1810">residuals()</a>, and <a class="el" href="elements_8h_source.html#l04175">oomph::SolidFiniteElement::Solve_for_consistent_newmark_accel_flag</a>.</p>
 
 </div>
 </div>
@@ -1843,11 +1843,11 @@ Additional Inherited Members</h2></td></tr>
 <p>Get the contribution to the load vector provided by the adjacent fluid element: Pass number of integration point in solid element, and the unit normal vector (pointing into the fluid on the "front" of the <a class="el" href="classoomph_1_1FSIWallElement.html" title="This is a base class for all SolidFiniteElements that participate in FSI computations....">FSIWallElement</a>) and return the load vector. Note that the load is non-dimensionalised on the wall-stress scale, i.e. it is obtained by computing the traction (on the fluid stress-scale) from the adjacent fluid element and then multiplying it by the stress-scale-ratio <img class="formulaInl" alt="$ Q. $" src="form_280.png"/>. <br  />
  If element is loaded on both sides, the fluid load computed from the reverse element is <b>subtracted</b>, because it's computed with the same normal vector. </p>
 
-<p class="definition">Definition at line <a class="el" href="fsi_8cc_source.html#l00166">166</a> of file <a class="el" href="fsi_8cc_source.html">fsi.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fsi_8cc_source.html#l00162">162</a> of file <a class="el" href="fsi_8cc_source.html">fsi.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="fsi_8h_source.html#l00228">Dont_warn_about_missing_adjacent_fluid_elements</a>, <a class="el" href="element__with__external__element_8h_source.html#l00146">oomph::ElementWithExternalElement::external_element_local_coord()</a>, <a class="el" href="element__with__external__element_8h_source.html#l00117">oomph::ElementWithExternalElement::external_element_pt()</a>, <a class="el" href="classoomph_1_1FSIFluidElement.html#acf10e6a716b5e0f743579dfce32e9294">oomph::FSIFluidElement::get_load()</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="quadtree_8h_source.html#l00060">oomph::QuadTreeNames::N</a>, <a class="el" href="fsi_8h_source.html#l00541">Only_front_is_loaded_by_fluid</a>, and <a class="el" href="fsi_8h_source.html#l00263">q()</a>.</p>
+<p class="reference">References <a class="el" href="fsi_8h_source.html#l00224">Dont_warn_about_missing_adjacent_fluid_elements</a>, <a class="el" href="element__with__external__element_8h_source.html#l00142">oomph::ElementWithExternalElement::external_element_local_coord()</a>, <a class="el" href="element__with__external__element_8h_source.html#l00113">oomph::ElementWithExternalElement::external_element_pt()</a>, <a class="el" href="classoomph_1_1FSIFluidElement.html#acf10e6a716b5e0f743579dfce32e9294">oomph::FSIFluidElement::get_load()</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="quadtree_8h_source.html#l00056">oomph::QuadTreeNames::N</a>, <a class="el" href="fsi_8h_source.html#l00537">Only_front_is_loaded_by_fluid</a>, and <a class="el" href="fsi_8h_source.html#l00259">q()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="solid__traction__elements_8h_source.html#l00864">oomph::FSISolidTractionElement&lt; ELEMENT, DIM &gt;::get_traction()</a>, <a class="el" href="beam__elements_8h_source.html#l00403">oomph::FSIHermiteBeamElement::load_vector()</a>, <a class="el" href="shell__elements_8h_source.html#l00508">oomph::FSIDiagHermiteShellElement::load_vector()</a>, and <a class="el" href="shell__elements_8h_source.html#l00424">oomph::FSIDiagHermiteShellElement::load_vector_for_rate_of_work_computation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="solid__traction__elements_8h_source.html#l00860">oomph::FSISolidTractionElement&lt; ELEMENT, DIM &gt;::get_traction()</a>, <a class="el" href="beam__elements_8h_source.html#l00399">oomph::FSIHermiteBeamElement::load_vector()</a>, <a class="el" href="shell__elements_8h_source.html#l00504">oomph::FSIDiagHermiteShellElement::load_vector()</a>, and <a class="el" href="shell__elements_8h_source.html#l00420">oomph::FSIDiagHermiteShellElement::load_vector_for_rate_of_work_computation()</a>.</p>
 
 </div>
 </div>
@@ -1890,9 +1890,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1ElementWithExternalElement.html#aa6bbfc084b5f4654cc7f8c61a6f7a81b">oomph::ElementWithExternalElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="fsi_8cc_source.html#l00286">286</a> of file <a class="el" href="fsi_8cc_source.html">fsi.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fsi_8cc_source.html#l00282">282</a> of file <a class="el" href="fsi_8cc_source.html">fsi.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="classoomph_1_1FSIFluidElement.html#a13c5f835cddd1b78e6d2582733619300">oomph::FSIFluidElement::identify_load_data()</a>, <a class="el" href="classoomph_1_1FSIFluidElement.html#af8e0805b769b7d111eb71f223fc83df8">oomph::FSIFluidElement::identify_pressure_data()</a>, <a class="el" href="fsi_8h_source.html#l00553">Ignore_shear_stress_in_jacobian</a>, and <a class="el" href="element__with__external__element_8h_source.html#l00193">oomph::ElementWithExternalElement::ninteraction()</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="classoomph_1_1FSIFluidElement.html#a13c5f835cddd1b78e6d2582733619300">oomph::FSIFluidElement::identify_load_data()</a>, <a class="el" href="classoomph_1_1FSIFluidElement.html#af8e0805b769b7d111eb71f223fc83df8">oomph::FSIFluidElement::identify_pressure_data()</a>, <a class="el" href="fsi_8h_source.html#l00549">Ignore_shear_stress_in_jacobian</a>, and <a class="el" href="element__with__external__element_8h_source.html#l00189">oomph::ElementWithExternalElement::ninteraction()</a>.</p>
 
 </div>
 </div>
@@ -1935,9 +1935,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1ElementWithExternalElement.html#a47aa0ca3b37d885d8432815c3418b769">oomph::ElementWithExternalElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="fsi_8cc_source.html#l00323">323</a> of file <a class="el" href="fsi_8cc_source.html">fsi.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fsi_8cc_source.html#l00319">319</a> of file <a class="el" href="fsi_8cc_source.html">fsi.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="fsi_8h_source.html#l00553">Ignore_shear_stress_in_jacobian</a>, and <a class="el" href="element__with__external__element_8h_source.html#l00193">oomph::ElementWithExternalElement::ninteraction()</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="fsi_8h_source.html#l00549">Ignore_shear_stress_in_jacobian</a>, and <a class="el" href="element__with__external__element_8h_source.html#l00189">oomph::ElementWithExternalElement::ninteraction()</a>.</p>
 
 </div>
 </div>
@@ -1966,9 +1966,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Include all external fluid data that affects the load in the computation of the element's Jacobian matrix. </p>
 
-<p class="definition">Definition at line <a class="el" href="fsi_8h_source.html#l00301">301</a> of file <a class="el" href="fsi_8h_source.html">fsi.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fsi_8h_source.html#l00297">297</a> of file <a class="el" href="fsi_8h_source.html">fsi.h</a>.</p>
 
-<p class="reference">References <a class="el" href="element__with__external__element_8h_source.html#l00485">oomph::ElementWithExternalElement::Add_external_interaction_data</a>, and <a class="el" href="fsi_8h_source.html#l00553">Ignore_shear_stress_in_jacobian</a>.</p>
+<p class="reference">References <a class="el" href="element__with__external__element_8h_source.html#l00481">oomph::ElementWithExternalElement::Add_external_interaction_data</a>, and <a class="el" href="fsi_8h_source.html#l00549">Ignore_shear_stress_in_jacobian</a>.</p>
 
 </div>
 </div>
@@ -1990,11 +1990,11 @@ Additional Inherited Members</h2></td></tr>
 <p>Update the nodal positions in all fluid elements that affect the traction on this <a class="el" href="classoomph_1_1FSIWallElement.html" title="This is a base class for all SolidFiniteElements that participate in FSI computations....">FSIWallElement</a>. </p>
 <p>Update the nodal positions in all fluid elements that affect the traction on this <a class="el" href="classoomph_1_1FSIWallElement.html" title="This is a base class for all SolidFiniteElements that participate in FSI computations....">FSIWallElement</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="fsi_8cc_source.html#l00236">236</a> of file <a class="el" href="fsi_8cc_source.html">fsi.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fsi_8cc_source.html#l00232">232</a> of file <a class="el" href="fsi_8cc_source.html">fsi.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="element__with__external__element_8h_source.html#l00117">oomph::ElementWithExternalElement::external_element_pt()</a>, <a class="el" href="elements_8h_source.html#l01925">oomph::FiniteElement::integral_pt()</a>, <a class="el" href="elements_8cc_source.html#l04948">oomph::FiniteElement::node_update()</a>, <a class="el" href="classoomph_1_1Integral.html#a1a270de9d99a1fcf1d25a6c1017f65fa">oomph::Integral::nweight()</a>, and <a class="el" href="fsi_8h_source.html#l00541">Only_front_is_loaded_by_fluid</a>.</p>
+<p class="reference">References <a class="el" href="element__with__external__element_8h_source.html#l00113">oomph::ElementWithExternalElement::external_element_pt()</a>, <a class="el" href="elements_8h_source.html#l01921">oomph::FiniteElement::integral_pt()</a>, <a class="el" href="elements_8cc_source.html#l04944">oomph::FiniteElement::node_update()</a>, <a class="el" href="classoomph_1_1Integral.html#a1a270de9d99a1fcf1d25a6c1017f65fa">oomph::Integral::nweight()</a>, and <a class="el" href="fsi_8h_source.html#l00537">Only_front_is_loaded_by_fluid</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="fsi_8h_source.html#l00392">reset_after_external_fd()</a>, <a class="el" href="fsi_8h_source.html#l00435">reset_after_external_interaction_field_fd()</a>, <a class="el" href="fsi_8h_source.html#l00457">reset_after_external_interaction_geometric_fd()</a>, <a class="el" href="fsi_8h_source.html#l00370">reset_after_internal_fd()</a>, <a class="el" href="fsi_8h_source.html#l00414">reset_after_nodal_fd()</a>, <a class="el" href="fsi_8h_source.html#l00479">reset_after_solid_position_fd()</a>, <a class="el" href="fsi_8h_source.html#l00380">update_in_external_fd()</a>, <a class="el" href="fsi_8h_source.html#l00423">update_in_external_interaction_field_fd()</a>, <a class="el" href="fsi_8h_source.html#l00445">update_in_external_interaction_geometric_fd()</a>, <a class="el" href="fsi_8h_source.html#l00358">update_in_internal_fd()</a>, <a class="el" href="fsi_8h_source.html#l00402">update_in_nodal_fd()</a>, and <a class="el" href="fsi_8h_source.html#l00467">update_in_solid_position_fd()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="fsi_8h_source.html#l00388">reset_after_external_fd()</a>, <a class="el" href="fsi_8h_source.html#l00431">reset_after_external_interaction_field_fd()</a>, <a class="el" href="fsi_8h_source.html#l00453">reset_after_external_interaction_geometric_fd()</a>, <a class="el" href="fsi_8h_source.html#l00366">reset_after_internal_fd()</a>, <a class="el" href="fsi_8h_source.html#l00410">reset_after_nodal_fd()</a>, <a class="el" href="fsi_8h_source.html#l00475">reset_after_solid_position_fd()</a>, <a class="el" href="fsi_8h_source.html#l00376">update_in_external_fd()</a>, <a class="el" href="fsi_8h_source.html#l00419">update_in_external_interaction_field_fd()</a>, <a class="el" href="fsi_8h_source.html#l00441">update_in_external_interaction_geometric_fd()</a>, <a class="el" href="fsi_8h_source.html#l00354">update_in_internal_fd()</a>, <a class="el" href="fsi_8h_source.html#l00398">update_in_nodal_fd()</a>, and <a class="el" href="fsi_8h_source.html#l00463">update_in_solid_position_fd()</a>.</p>
 
 </div>
 </div>
@@ -2023,11 +2023,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Is the element exposed to (and hence loaded by) fluid only on its "front"? True by default. This flag is set to false if the <a class="el" href="classoomph_1_1FSIWallElement.html" title="This is a base class for all SolidFiniteElements that participate in FSI computations....">FSIWallElement</a> is immersed in fluid in which case each integration point is loaded by two adjacent fluid elements, one at the "front" and one at the "back". This is a read-only function &ndash; the ability have loading from both sides must be enabled by a call to <a class="el" href="classoomph_1_1FSIWallElement.html#a0dc3efdeb5d0abf0ba473c0145652358" title="Allow element to be loaded by fluid on both sides. (Resizes containers for lookup schemes and initial...">FSIWallElement::enable_fluid_loading_on_both_sides()</a>;. </p>
 
-<p class="definition">Definition at line <a class="el" href="fsi_8h_source.html#l00285">285</a> of file <a class="el" href="fsi_8h_source.html">fsi.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fsi_8h_source.html#l00281">281</a> of file <a class="el" href="fsi_8h_source.html">fsi.h</a>.</p>
 
-<p class="reference">References <a class="el" href="fsi_8h_source.html#l00541">Only_front_is_loaded_by_fluid</a>.</p>
+<p class="reference">References <a class="el" href="fsi_8h_source.html#l00537">Only_front_is_loaded_by_fluid</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="fsi_8h_source.html#l00751">oomph::FSI_functions::doc_fsi()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="fsi_8h_source.html#l00747">oomph::FSI_functions::doc_fsi()</a>.</p>
 
 </div>
 </div>
@@ -2057,9 +2057,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Broken assignment operator. </p>
 
-<p class="definition">Definition at line <a class="el" href="fsi_8h_source.html#l00242">242</a> of file <a class="el" href="fsi_8h_source.html">fsi.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fsi_8h_source.html#l00238">238</a> of file <a class="el" href="fsi_8h_source.html">fsi.h</a>.</p>
 
-<p class="reference">References <a class="el" href="oomph__utilities_8cc_source.html#l00201">oomph::BrokenCopy::broken_assign()</a>.</p>
+<p class="reference">References <a class="el" href="oomph__utilities_8cc_source.html#l00197">oomph::BrokenCopy::broken_assign()</a>.</p>
 
 </div>
 </div>
@@ -2089,11 +2089,11 @@ Additional Inherited Members</h2></td></tr>
 <p>Return the ratio of the stress scales used to non-dimensionalise the fluid and solid equations. E.g. <img class="formulaInl" alt="$ Q = \mu U/(LE) $" src="form_284.png"/> if the fluid mechanics stresses (pressures) are scaled on the viscous scale <img class="formulaInl" alt="$ \mu U / L$" src="form_281.png"/> and the solid mechanics stresses on the solid's Young's modulus <img class="formulaInl" alt="$ E $" src="form_0.png"/>. <br  />
  </p>
 
-<p class="definition">Definition at line <a class="el" href="fsi_8h_source.html#l00263">263</a> of file <a class="el" href="fsi_8h_source.html">fsi.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fsi_8h_source.html#l00259">259</a> of file <a class="el" href="fsi_8h_source.html">fsi.h</a>.</p>
 
-<p class="reference">References <a class="el" href="fsi_8h_source.html#l00546">Q_pt</a>.</p>
+<p class="reference">References <a class="el" href="fsi_8h_source.html#l00542">Q_pt</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="fsi_8cc_source.html#l00166">fluid_load_vector()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="fsi_8cc_source.html#l00162">fluid_load_vector()</a>.</p>
 
 </div>
 </div>
@@ -2122,9 +2122,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Return a pointer the ratio of stress scales used to non-dimensionalise the fluid and solid equations. </p>
 
-<p class="definition">Definition at line <a class="el" href="fsi_8h_source.html#l00267">267</a> of file <a class="el" href="fsi_8h_source.html">fsi.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fsi_8h_source.html#l00263">263</a> of file <a class="el" href="fsi_8h_source.html">fsi.h</a>.</p>
 
-<p class="reference">References <a class="el" href="fsi_8h_source.html#l00546">Q_pt</a>.</p>
+<p class="reference">References <a class="el" href="fsi_8h_source.html#l00542">Q_pt</a>.</p>
 
 </div>
 </div>
@@ -2155,9 +2155,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1GeneralisedElement.html#a10210277ae4fa66b7701ff00d4dd9b14">oomph::GeneralisedElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="fsi_8h_source.html#l00392">392</a> of file <a class="el" href="fsi_8h_source.html">fsi.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fsi_8h_source.html#l00388">388</a> of file <a class="el" href="fsi_8h_source.html">fsi.h</a>.</p>
 
-<p class="reference">References <a class="el" href="fsi_8h_source.html#l00553">Ignore_shear_stress_in_jacobian</a>, and <a class="el" href="fsi_8cc_source.html#l00236">node_update_adjacent_fluid_elements()</a>.</p>
+<p class="reference">References <a class="el" href="fsi_8h_source.html#l00549">Ignore_shear_stress_in_jacobian</a>, and <a class="el" href="fsi_8cc_source.html#l00232">node_update_adjacent_fluid_elements()</a>.</p>
 
 </div>
 </div>
@@ -2188,9 +2188,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1ElementWithExternalElement.html#a3852c0042b81305b0488fc67f37ad632">oomph::ElementWithExternalElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="fsi_8h_source.html#l00435">435</a> of file <a class="el" href="fsi_8h_source.html">fsi.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fsi_8h_source.html#l00431">431</a> of file <a class="el" href="fsi_8h_source.html">fsi.h</a>.</p>
 
-<p class="reference">References <a class="el" href="fsi_8h_source.html#l00553">Ignore_shear_stress_in_jacobian</a>, and <a class="el" href="fsi_8cc_source.html#l00236">node_update_adjacent_fluid_elements()</a>.</p>
+<p class="reference">References <a class="el" href="fsi_8h_source.html#l00549">Ignore_shear_stress_in_jacobian</a>, and <a class="el" href="fsi_8cc_source.html#l00232">node_update_adjacent_fluid_elements()</a>.</p>
 
 </div>
 </div>
@@ -2221,9 +2221,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1ElementWithExternalElement.html#a902a29b3e23a6fb6a6b06e672162a578">oomph::ElementWithExternalElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="fsi_8h_source.html#l00457">457</a> of file <a class="el" href="fsi_8h_source.html">fsi.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fsi_8h_source.html#l00453">453</a> of file <a class="el" href="fsi_8h_source.html">fsi.h</a>.</p>
 
-<p class="reference">References <a class="el" href="fsi_8h_source.html#l00553">Ignore_shear_stress_in_jacobian</a>, and <a class="el" href="fsi_8cc_source.html#l00236">node_update_adjacent_fluid_elements()</a>.</p>
+<p class="reference">References <a class="el" href="fsi_8h_source.html#l00549">Ignore_shear_stress_in_jacobian</a>, and <a class="el" href="fsi_8cc_source.html#l00232">node_update_adjacent_fluid_elements()</a>.</p>
 
 </div>
 </div>
@@ -2254,9 +2254,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1GeneralisedElement.html#ab3e2e13d219c132488fb05e9596cb43f">oomph::GeneralisedElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="fsi_8h_source.html#l00370">370</a> of file <a class="el" href="fsi_8h_source.html">fsi.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fsi_8h_source.html#l00366">366</a> of file <a class="el" href="fsi_8h_source.html">fsi.h</a>.</p>
 
-<p class="reference">References <a class="el" href="fsi_8h_source.html#l00553">Ignore_shear_stress_in_jacobian</a>, and <a class="el" href="fsi_8cc_source.html#l00236">node_update_adjacent_fluid_elements()</a>.</p>
+<p class="reference">References <a class="el" href="fsi_8h_source.html#l00549">Ignore_shear_stress_in_jacobian</a>, and <a class="el" href="fsi_8cc_source.html#l00232">node_update_adjacent_fluid_elements()</a>.</p>
 
 </div>
 </div>
@@ -2287,9 +2287,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1FiniteElement.html#a913ae545a274b3631f249e410075e081">oomph::FiniteElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="fsi_8h_source.html#l00414">414</a> of file <a class="el" href="fsi_8h_source.html">fsi.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fsi_8h_source.html#l00410">410</a> of file <a class="el" href="fsi_8h_source.html">fsi.h</a>.</p>
 
-<p class="reference">References <a class="el" href="fsi_8h_source.html#l00553">Ignore_shear_stress_in_jacobian</a>, and <a class="el" href="fsi_8cc_source.html#l00236">node_update_adjacent_fluid_elements()</a>.</p>
+<p class="reference">References <a class="el" href="fsi_8h_source.html#l00549">Ignore_shear_stress_in_jacobian</a>, and <a class="el" href="fsi_8cc_source.html#l00232">node_update_adjacent_fluid_elements()</a>.</p>
 
 </div>
 </div>
@@ -2320,9 +2320,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1SolidFiniteElement.html#afab2124e079912fe9bf39bf9df8a42c2">oomph::SolidFiniteElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="fsi_8h_source.html#l00479">479</a> of file <a class="el" href="fsi_8h_source.html">fsi.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fsi_8h_source.html#l00475">475</a> of file <a class="el" href="fsi_8h_source.html">fsi.h</a>.</p>
 
-<p class="reference">References <a class="el" href="fsi_8h_source.html#l00553">Ignore_shear_stress_in_jacobian</a>, and <a class="el" href="fsi_8cc_source.html#l00236">node_update_adjacent_fluid_elements()</a>.</p>
+<p class="reference">References <a class="el" href="fsi_8h_source.html#l00549">Ignore_shear_stress_in_jacobian</a>, and <a class="el" href="fsi_8cc_source.html#l00232">node_update_adjacent_fluid_elements()</a>.</p>
 
 </div>
 </div>
@@ -2354,7 +2354,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1GeneralisedElement.html#a027a9213e91b946346062adf96e26a85">oomph::GeneralisedElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="fsi_8h_source.html#l00389">389</a> of file <a class="el" href="fsi_8h_source.html">fsi.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fsi_8h_source.html#l00385">385</a> of file <a class="el" href="fsi_8h_source.html">fsi.h</a>.</p>
 
 </div>
 </div>
@@ -2386,7 +2386,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1ElementWithExternalElement.html#a4ee53afaf9a09c5e2e5cbc488ca7cd7f">oomph::ElementWithExternalElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="fsi_8h_source.html#l00432">432</a> of file <a class="el" href="fsi_8h_source.html">fsi.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fsi_8h_source.html#l00428">428</a> of file <a class="el" href="fsi_8h_source.html">fsi.h</a>.</p>
 
 </div>
 </div>
@@ -2418,7 +2418,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1ElementWithExternalElement.html#a2bc7a069b01795d9c8036fb81e8b319d">oomph::ElementWithExternalElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="fsi_8h_source.html#l00454">454</a> of file <a class="el" href="fsi_8h_source.html">fsi.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fsi_8h_source.html#l00450">450</a> of file <a class="el" href="fsi_8h_source.html">fsi.h</a>.</p>
 
 </div>
 </div>
@@ -2450,7 +2450,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1GeneralisedElement.html#a89c6c5cf8b4d8b451caa124b346e5e8d">oomph::GeneralisedElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="fsi_8h_source.html#l00367">367</a> of file <a class="el" href="fsi_8h_source.html">fsi.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fsi_8h_source.html#l00363">363</a> of file <a class="el" href="fsi_8h_source.html">fsi.h</a>.</p>
 
 </div>
 </div>
@@ -2482,7 +2482,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1FiniteElement.html#a6d2bd49de1b5a4d49fe6ca53d95b3f5c">oomph::FiniteElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="fsi_8h_source.html#l00411">411</a> of file <a class="el" href="fsi_8h_source.html">fsi.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fsi_8h_source.html#l00407">407</a> of file <a class="el" href="fsi_8h_source.html">fsi.h</a>.</p>
 
 </div>
 </div>
@@ -2514,7 +2514,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1SolidFiniteElement.html#a99e4613b1ac5f202c837c0e556f7b917">oomph::SolidFiniteElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="fsi_8h_source.html#l00476">476</a> of file <a class="el" href="fsi_8h_source.html">fsi.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fsi_8h_source.html#l00472">472</a> of file <a class="el" href="fsi_8h_source.html">fsi.h</a>.</p>
 
 </div>
 </div>
@@ -2547,11 +2547,11 @@ Additional Inherited Members</h2></td></tr>
 <p>Setup: Assign storage &ndash; pass the Eulerian dimension of the "adjacent" fluid elements and the number of local coordinates required to parametrise the wall element. E.g. for a FSIKirchhoffLoveBeam, bounding a 2D fluid domain ndim_fluid=2 and nlagr_solid=1. </p>
 <p>Compete build of element: Assign storage &ndash; pass the Eulerian dimension of the "adjacent" fluid elements and the number of local coordinates required to parametrise the wall element. E.g. for a FSIKirchhoffLoveBeam, bounding a 2D fluid domain ndim_fluid=2 and nlagr_solid=1. Note that, by default, we're only providing storage for fluid loading on the "front" of the element. Call <a class="el" href="classoomph_1_1FSIWallElement.html#a0dc3efdeb5d0abf0ba473c0145652358" title="Allow element to be loaded by fluid on both sides. (Resizes containers for lookup schemes and initial...">FSIWallElement::enable_fluid_loading_on_both_sides()</a> to enable fluid loading on the back, too. </p>
 
-<p class="definition">Definition at line <a class="el" href="fsi_8cc_source.html#l00124">124</a> of file <a class="el" href="fsi_8cc_source.html">fsi.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fsi_8cc_source.html#l00120">120</a> of file <a class="el" href="fsi_8cc_source.html">fsi.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="element__with__external__element_8h_source.html#l00189">oomph::ElementWithExternalElement::set_ninteraction()</a>, and <a class="el" href="geom__objects_8h_source.html#l00188">oomph::GeomObject::set_nlagrangian_and_ndim()</a>.</p>
+<p class="reference">References <a class="el" href="element__with__external__element_8h_source.html#l00185">oomph::ElementWithExternalElement::set_ninteraction()</a>, and <a class="el" href="geom__objects_8h_source.html#l00184">oomph::GeomObject::set_nlagrangian_and_ndim()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="shell__elements_8h_source.html#l00459">oomph::FSIDiagHermiteShellElement::FSIDiagHermiteShellElement()</a>, <a class="el" href="beam__elements_8h_source.html#l00368">oomph::FSIHermiteBeamElement::FSIHermiteBeamElement()</a>, and <a class="el" href="solid__traction__elements_8h_source.html#l00811">oomph::FSISolidTractionElement&lt; ELEMENT, DIM &gt;::FSISolidTractionElement()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="shell__elements_8h_source.html#l00455">oomph::FSIDiagHermiteShellElement::FSIDiagHermiteShellElement()</a>, <a class="el" href="beam__elements_8h_source.html#l00364">oomph::FSIHermiteBeamElement::FSIHermiteBeamElement()</a>, and <a class="el" href="solid__traction__elements_8h_source.html#l00807">oomph::FSISolidTractionElement&lt; ELEMENT, DIM &gt;::FSISolidTractionElement()</a>.</p>
 
 </div>
 </div>
@@ -2583,9 +2583,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1GeneralisedElement.html#af740b8c507dde03700cff5d196e28019">oomph::GeneralisedElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="fsi_8h_source.html#l00380">380</a> of file <a class="el" href="fsi_8h_source.html">fsi.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fsi_8h_source.html#l00376">376</a> of file <a class="el" href="fsi_8h_source.html">fsi.h</a>.</p>
 
-<p class="reference">References <a class="el" href="fsi_8h_source.html#l00553">Ignore_shear_stress_in_jacobian</a>, and <a class="el" href="fsi_8cc_source.html#l00236">node_update_adjacent_fluid_elements()</a>.</p>
+<p class="reference">References <a class="el" href="fsi_8h_source.html#l00549">Ignore_shear_stress_in_jacobian</a>, and <a class="el" href="fsi_8cc_source.html#l00232">node_update_adjacent_fluid_elements()</a>.</p>
 
 </div>
 </div>
@@ -2617,9 +2617,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1ElementWithExternalElement.html#ae8dac1e4db8e6833fda1150583ce5a21">oomph::ElementWithExternalElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="fsi_8h_source.html#l00423">423</a> of file <a class="el" href="fsi_8h_source.html">fsi.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fsi_8h_source.html#l00419">419</a> of file <a class="el" href="fsi_8h_source.html">fsi.h</a>.</p>
 
-<p class="reference">References <a class="el" href="fsi_8h_source.html#l00553">Ignore_shear_stress_in_jacobian</a>, and <a class="el" href="fsi_8cc_source.html#l00236">node_update_adjacent_fluid_elements()</a>.</p>
+<p class="reference">References <a class="el" href="fsi_8h_source.html#l00549">Ignore_shear_stress_in_jacobian</a>, and <a class="el" href="fsi_8cc_source.html#l00232">node_update_adjacent_fluid_elements()</a>.</p>
 
 </div>
 </div>
@@ -2651,9 +2651,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1ElementWithExternalElement.html#ab34f7db5cb5a473c6f5552f34af4a651">oomph::ElementWithExternalElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="fsi_8h_source.html#l00445">445</a> of file <a class="el" href="fsi_8h_source.html">fsi.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fsi_8h_source.html#l00441">441</a> of file <a class="el" href="fsi_8h_source.html">fsi.h</a>.</p>
 
-<p class="reference">References <a class="el" href="fsi_8h_source.html#l00553">Ignore_shear_stress_in_jacobian</a>, and <a class="el" href="fsi_8cc_source.html#l00236">node_update_adjacent_fluid_elements()</a>.</p>
+<p class="reference">References <a class="el" href="fsi_8h_source.html#l00549">Ignore_shear_stress_in_jacobian</a>, and <a class="el" href="fsi_8cc_source.html#l00232">node_update_adjacent_fluid_elements()</a>.</p>
 
 </div>
 </div>
@@ -2685,9 +2685,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1GeneralisedElement.html#a0c94ccb2cad3bcf15f97a6e5a6dff90b">oomph::GeneralisedElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="fsi_8h_source.html#l00358">358</a> of file <a class="el" href="fsi_8h_source.html">fsi.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fsi_8h_source.html#l00354">354</a> of file <a class="el" href="fsi_8h_source.html">fsi.h</a>.</p>
 
-<p class="reference">References <a class="el" href="fsi_8h_source.html#l00553">Ignore_shear_stress_in_jacobian</a>, and <a class="el" href="fsi_8cc_source.html#l00236">node_update_adjacent_fluid_elements()</a>.</p>
+<p class="reference">References <a class="el" href="fsi_8h_source.html#l00549">Ignore_shear_stress_in_jacobian</a>, and <a class="el" href="fsi_8cc_source.html#l00232">node_update_adjacent_fluid_elements()</a>.</p>
 
 </div>
 </div>
@@ -2719,9 +2719,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1FiniteElement.html#a4557238570f3252942df237986998118">oomph::FiniteElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="fsi_8h_source.html#l00402">402</a> of file <a class="el" href="fsi_8h_source.html">fsi.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fsi_8h_source.html#l00398">398</a> of file <a class="el" href="fsi_8h_source.html">fsi.h</a>.</p>
 
-<p class="reference">References <a class="el" href="fsi_8h_source.html#l00553">Ignore_shear_stress_in_jacobian</a>, and <a class="el" href="fsi_8cc_source.html#l00236">node_update_adjacent_fluid_elements()</a>.</p>
+<p class="reference">References <a class="el" href="fsi_8h_source.html#l00549">Ignore_shear_stress_in_jacobian</a>, and <a class="el" href="fsi_8cc_source.html#l00232">node_update_adjacent_fluid_elements()</a>.</p>
 
 </div>
 </div>
@@ -2753,9 +2753,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1SolidFiniteElement.html#a84d5c177b27570c35dd7693b913c00a5">oomph::SolidFiniteElement</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="fsi_8h_source.html#l00467">467</a> of file <a class="el" href="fsi_8h_source.html">fsi.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fsi_8h_source.html#l00463">463</a> of file <a class="el" href="fsi_8h_source.html">fsi.h</a>.</p>
 
-<p class="reference">References <a class="el" href="fsi_8h_source.html#l00553">Ignore_shear_stress_in_jacobian</a>, and <a class="el" href="fsi_8cc_source.html#l00236">node_update_adjacent_fluid_elements()</a>.</p>
+<p class="reference">References <a class="el" href="fsi_8h_source.html#l00549">Ignore_shear_stress_in_jacobian</a>, and <a class="el" href="fsi_8cc_source.html#l00232">node_update_adjacent_fluid_elements()</a>.</p>
 
 </div>
 </div>
@@ -2783,7 +2783,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Static default value for the ratio of stress scales used in the fluid and solid equations (default is 1.0) </p>
 <p>Static default value for the ratio of stress scales used in the fluid and solid equations (default is 1.0) </p>
 
-<p class="definition">Definition at line <a class="el" href="fsi_8h_source.html#l00534">534</a> of file <a class="el" href="fsi_8h_source.html">fsi.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fsi_8h_source.html#l00530">530</a> of file <a class="el" href="fsi_8h_source.html">fsi.h</a>.</p>
 
 </div>
 </div>
@@ -2810,9 +2810,9 @@ Additional Inherited Members</h2></td></tr>
 <p>Static flag that allows the suppression of warning messages. </p>
 <p>Flag that allows the suppression of warning messages. </p>
 
-<p class="definition">Definition at line <a class="el" href="fsi_8h_source.html#l00228">228</a> of file <a class="el" href="fsi_8h_source.html">fsi.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fsi_8h_source.html#l00224">224</a> of file <a class="el" href="fsi_8h_source.html">fsi.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="fsi_8cc_source.html#l00166">fluid_load_vector()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="fsi_8cc_source.html#l00162">fluid_load_vector()</a>.</p>
 
 </div>
 </div>
@@ -2839,9 +2839,9 @@ Additional Inherited Members</h2></td></tr>
 <p>Set this flag to true to ignore shear stress component of load when calculating the Jacobian, i.e. to ignore fluid velocity <a class="el" href="classoomph_1_1Data.html" title="A class that represents a collection of data; each Data object may contain many different individual ...">Data</a> in the <a class="el" href="classoomph_1_1FSIFluidElement.html" title="The FSIFluidElement class is a base class for all fluid finite elements that apply a load (traction) ...">FSIFluidElement</a> and "far away" geometric <a class="el" href="classoomph_1_1Data.html" title="A class that represents a collection of data; each Data object may contain many different individual ...">Data</a> that affects nodal positions in the <a class="el" href="classoomph_1_1FSIFluidElement.html" title="The FSIFluidElement class is a base class for all fluid finite elements that apply a load (traction) ...">FSIFluidElement</a>, also to bypass node updates in the <a class="el" href="classoomph_1_1FSIFluidElement.html" title="The FSIFluidElement class is a base class for all fluid finite elements that apply a load (traction) ...">FSIFluidElement</a>. <br  />
  </p>
 
-<p class="definition">Definition at line <a class="el" href="fsi_8h_source.html#l00553">553</a> of file <a class="el" href="fsi_8h_source.html">fsi.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fsi_8h_source.html#l00549">549</a> of file <a class="el" href="fsi_8h_source.html">fsi.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="fsi_8h_source.html#l00314">disable_shear_stress_in_jacobian()</a>, <a class="el" href="fsi_8h_source.html#l00319">enable_shear_stress_in_jacobian()</a>, <a class="el" href="fsi_8cc_source.html#l00286">identify_all_field_data_for_external_interaction()</a>, <a class="el" href="fsi_8cc_source.html#l00323">identify_all_geometric_data_for_external_interaction()</a>, <a class="el" href="fsi_8h_source.html#l00301">include_external_load_data()</a>, <a class="el" href="fsi_8h_source.html#l00392">reset_after_external_fd()</a>, <a class="el" href="fsi_8h_source.html#l00435">reset_after_external_interaction_field_fd()</a>, <a class="el" href="fsi_8h_source.html#l00457">reset_after_external_interaction_geometric_fd()</a>, <a class="el" href="fsi_8h_source.html#l00370">reset_after_internal_fd()</a>, <a class="el" href="fsi_8h_source.html#l00414">reset_after_nodal_fd()</a>, <a class="el" href="fsi_8h_source.html#l00479">reset_after_solid_position_fd()</a>, <a class="el" href="fsi_8h_source.html#l00380">update_in_external_fd()</a>, <a class="el" href="fsi_8h_source.html#l00423">update_in_external_interaction_field_fd()</a>, <a class="el" href="fsi_8h_source.html#l00445">update_in_external_interaction_geometric_fd()</a>, <a class="el" href="fsi_8h_source.html#l00358">update_in_internal_fd()</a>, <a class="el" href="fsi_8h_source.html#l00402">update_in_nodal_fd()</a>, and <a class="el" href="fsi_8h_source.html#l00467">update_in_solid_position_fd()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="fsi_8h_source.html#l00310">disable_shear_stress_in_jacobian()</a>, <a class="el" href="fsi_8h_source.html#l00315">enable_shear_stress_in_jacobian()</a>, <a class="el" href="fsi_8cc_source.html#l00282">identify_all_field_data_for_external_interaction()</a>, <a class="el" href="fsi_8cc_source.html#l00319">identify_all_geometric_data_for_external_interaction()</a>, <a class="el" href="fsi_8h_source.html#l00297">include_external_load_data()</a>, <a class="el" href="fsi_8h_source.html#l00388">reset_after_external_fd()</a>, <a class="el" href="fsi_8h_source.html#l00431">reset_after_external_interaction_field_fd()</a>, <a class="el" href="fsi_8h_source.html#l00453">reset_after_external_interaction_geometric_fd()</a>, <a class="el" href="fsi_8h_source.html#l00366">reset_after_internal_fd()</a>, <a class="el" href="fsi_8h_source.html#l00410">reset_after_nodal_fd()</a>, <a class="el" href="fsi_8h_source.html#l00475">reset_after_solid_position_fd()</a>, <a class="el" href="fsi_8h_source.html#l00376">update_in_external_fd()</a>, <a class="el" href="fsi_8h_source.html#l00419">update_in_external_interaction_field_fd()</a>, <a class="el" href="fsi_8h_source.html#l00441">update_in_external_interaction_geometric_fd()</a>, <a class="el" href="fsi_8h_source.html#l00354">update_in_internal_fd()</a>, <a class="el" href="fsi_8h_source.html#l00398">update_in_nodal_fd()</a>, and <a class="el" href="fsi_8h_source.html#l00463">update_in_solid_position_fd()</a>.</p>
 
 </div>
 </div>
@@ -2867,9 +2867,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Is the element exposed to (and hence loaded by) fluid only on its "front"? True by default. This flag is set to false if the <a class="el" href="classoomph_1_1FSIWallElement.html" title="This is a base class for all SolidFiniteElements that participate in FSI computations....">FSIWallElement</a> is immersed in fluid in which case each integration point is loaded by two adjacent fluid elements, one at the "front" and one at the "back". </p>
 
-<p class="definition">Definition at line <a class="el" href="fsi_8h_source.html#l00541">541</a> of file <a class="el" href="fsi_8h_source.html">fsi.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fsi_8h_source.html#l00537">537</a> of file <a class="el" href="fsi_8h_source.html">fsi.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="fsi_8cc_source.html#l00142">enable_fluid_loading_on_both_sides()</a>, <a class="el" href="fsi_8cc_source.html#l00166">fluid_load_vector()</a>, <a class="el" href="fsi_8cc_source.html#l00236">node_update_adjacent_fluid_elements()</a>, and <a class="el" href="fsi_8h_source.html#l00285">only_front_is_loaded_by_fluid()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="fsi_8cc_source.html#l00138">enable_fluid_loading_on_both_sides()</a>, <a class="el" href="fsi_8cc_source.html#l00162">fluid_load_vector()</a>, <a class="el" href="fsi_8cc_source.html#l00232">node_update_adjacent_fluid_elements()</a>, and <a class="el" href="fsi_8h_source.html#l00281">only_front_is_loaded_by_fluid()</a>.</p>
 
 </div>
 </div>
@@ -2895,9 +2895,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Pointer to the ratio, <img class="formulaInl" alt="$ Q $" src="form_45.png"/> , of the stress used to non-dimensionalise the fluid stresses to the stress used to non-dimensionalise the solid stresses. </p>
 
-<p class="definition">Definition at line <a class="el" href="fsi_8h_source.html#l00546">546</a> of file <a class="el" href="fsi_8h_source.html">fsi.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fsi_8h_source.html#l00542">542</a> of file <a class="el" href="fsi_8h_source.html">fsi.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="fsi_8h_source.html#l00263">q()</a>, and <a class="el" href="fsi_8h_source.html#l00267">q_pt()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="fsi_8h_source.html#l00259">q()</a>, and <a class="el" href="fsi_8h_source.html#l00263">q_pt()</a>.</p>
 
 </div>
 </div>
@@ -2933,7 +2933,7 @@ Additional Inherited Members</h2></td></tr>
     <footer>
       <div class="container">
         <div class="text-muted" style="float:right;">Generated by <a href="http://www.doxygen.org/index.html">
-          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Tue Jul 6 2021 22:57:25
+          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Fri Jul 9 2021 20:52:34
         </div>
       </div>
     </footer>

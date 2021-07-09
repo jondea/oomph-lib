@@ -813,7 +813,7 @@ class oomph::ThinLayerBrickOnTetMesh&lt; ELEMENT &gt;</h3>
 
 <p>Brick mesh layer built on top of a given tet mesh. Typically used in FSI problems where the tet mesh is the fluid mesh and this mesh acts as the solid mesh that surrounds the FSI interface. </p>
 
-<p class="definition">Definition at line <a class="el" href="thin__layer__brick__on__tet__mesh_8template_8h_source.html#l00046">46</a> of file <a class="el" href="thin__layer__brick__on__tet__mesh_8template_8h_source.html">thin_layer_brick_on_tet_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="thin__layer__brick__on__tet__mesh_8template_8h_source.html#l00042">42</a> of file <a class="el" href="thin__layer__brick__on__tet__mesh_8template_8h_source.html">thin_layer_brick_on_tet_mesh.template.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="aed34f7d1e9a5c6b5f3e220cb5bdf4550"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aed34f7d1e9a5c6b5f3e220cb5bdf4550">&#9670;&nbsp;</a></span>ThicknessFctPt</h2>
@@ -831,7 +831,7 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Function pointer to function that specifies the wall thickness as a fct of the coordinates of the inner surface. </p>
 
-<p class="definition">Definition at line <a class="el" href="thin__layer__brick__on__tet__mesh_8template_8h_source.html#l00053">53</a> of file <a class="el" href="thin__layer__brick__on__tet__mesh_8template_8h_source.html">thin_layer_brick_on_tet_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="thin__layer__brick__on__tet__mesh_8template_8h_source.html#l00049">49</a> of file <a class="el" href="thin__layer__brick__on__tet__mesh_8template_8h_source.html">thin_layer_brick_on_tet_mesh.template.h</a>.</p>
 
 </div>
 </div>
@@ -890,9 +890,9 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Constructor: Specify (quadratic) tet mesh, boundary IDs of boundary on which the current mesh is to be erected (in an FSI context this boundary tends to be the FSI boundary of the fluid mesh. Also specify the uniform thickness of layer, and the number of element layers. The vectors stored in in_out_boundary_ids contain the boundary IDs of the other boundaries in the tet mesh. In an FSI context these typically identify the in/outflow boundaries in the fluid mesh. The boundary enumeration of the current mesh follows the one of the underlying fluid mesh: The enumeration of the FSI boundary matches (to enable the setup of the FSI matching); the "in/outflow" faces in this mesh inherit the same enumeration as the in/outflow faces in the underlying fluid mesh. Finally, the "outer" boundary gets its own boundary ID. Timestepper defaults to steady pseudo-timestepper. </p>
 
-<p class="definition">Definition at line <a class="el" href="thin__layer__brick__on__tet__mesh_8template_8cc_source.html#l00059">59</a> of file <a class="el" href="thin__layer__brick__on__tet__mesh_8template_8cc_source.html">thin_layer_brick_on_tet_mesh.template.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="thin__layer__brick__on__tet__mesh_8template_8cc_source.html#l00055">55</a> of file <a class="el" href="thin__layer__brick__on__tet__mesh_8template_8cc_source.html">thin_layer_brick_on_tet_mesh.template.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="mesh_8cc_source.html#l00246">oomph::Mesh::add_boundary_node()</a>, <a class="el" href="mesh_8h_source.html#l00201">oomph::Mesh::Boundary_coordinate_exists</a>, <a class="el" href="mesh_8h_source.html#l00102">oomph::Mesh::Boundary_element_pt</a>, <a class="el" href="mesh_8h_source.html#l00814">oomph::Mesh::boundary_element_pt()</a>, <a class="el" href="mesh_8h_source.html#l00497">oomph::Mesh::boundary_node_pt()</a>, <a class="el" href="cfortran_8h_source.html#l00575">e</a>, <a class="el" href="mesh_8h_source.html#l00197">oomph::Mesh::Element_pt</a>, <a class="el" href="mesh_8h_source.html#l00462">oomph::Mesh::element_pt()</a>, <a class="el" href="mesh_8h_source.html#l00106">oomph::Mesh::Face_index_at_boundary</a>, <a class="el" href="mesh_8h_source.html#l00870">oomph::Mesh::face_index_at_boundary()</a>, <a class="el" href="mesh_8h_source.html#l00477">oomph::Mesh::finite_element_pt()</a>, <a class="el" href="thin__layer__brick__on__tet__mesh_8template_8h_source.html#l00108">oomph::ThinLayerBrickOnTetMesh&lt; ELEMENT &gt;::FSI_boundary_id</a>, <a class="el" href="nodes_8h_source.html#l01283">oomph::Node::get_boundaries_pt()</a>, <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="thin__layer__brick__on__tet__mesh_8template_8h_source.html#l00097">oomph::ThinLayerBrickOnTetMesh&lt; ELEMENT &gt;::in_out_boundary_id()</a>, <a class="el" href="thin__layer__brick__on__tet__mesh_8template_8h_source.html#l00116">oomph::ThinLayerBrickOnTetMesh&lt; ELEMENT &gt;::In_out_boundary_id</a>, <a class="el" href="elements_8h_source.html#l04411">oomph::FaceElement::interpolated_x()</a>, <a class="el" href="elements_8cc_source.html#l04567">oomph::FiniteElement::interpolated_zeta()</a>, <a class="el" href="mesh_8h_source.html#l00098">oomph::Mesh::Lookup_for_elements_next_boundary_is_setup</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, <a class="el" href="mesh_8h_source.html#l00852">oomph::Mesh::nboundary_element()</a>, <a class="el" href="mesh_8h_source.html#l00809">oomph::Mesh::nboundary_node()</a>, <a class="el" href="mesh_8h_source.html#l02672">oomph::Edge::node1_pt()</a>, <a class="el" href="mesh_8h_source.html#l02675">oomph::Edge::node2_pt()</a>, <a class="el" href="mesh_8h_source.html#l00194">oomph::Mesh::Node_pt</a>, <a class="el" href="elements_8h_source.html#l02126">oomph::FiniteElement::node_pt()</a>, <a class="el" href="elements_8h_source.html#l04493">oomph::FaceElement::normal_sign()</a>, <a class="el" href="thin__layer__brick__on__tet__mesh_8template_8h_source.html#l00112">oomph::ThinLayerBrickOnTetMesh&lt; ELEMENT &gt;::Outer_boundary_id</a>, <a class="el" href="elements_8cc_source.html#l05876">oomph::FaceElement::outer_unit_normal()</a>, <a class="el" href="nodes_8cc_source.html#l02413">oomph::Node::position()</a>, <a class="el" href="cfortran_8h_source.html#l00572">s</a>, <a class="el" href="elements_8h_source.html#l04366">oomph::FaceElement::set_boundary_number_in_bulk_mesh()</a>, <a class="el" href="nodes_8cc_source.html#l02315">oomph::Node::set_coordinates_on_boundary()</a>, <a class="el" href="mesh_8h_source.html#l00505">oomph::Mesh::set_nboundary()</a>, <a class="el" href="thin__layer__brick__on__tet__mesh_8template_8h_source.html#l00120">oomph::ThinLayerBrickOnTetMesh&lt; ELEMENT &gt;::Thickness_fct_pt</a>, and <a class="el" href="nodes_8h_source.html#l00994">oomph::Node::x()</a>.</p>
+<p class="reference">References <a class="el" href="mesh_8cc_source.html#l00242">oomph::Mesh::add_boundary_node()</a>, <a class="el" href="mesh_8h_source.html#l00197">oomph::Mesh::Boundary_coordinate_exists</a>, <a class="el" href="mesh_8h_source.html#l00098">oomph::Mesh::Boundary_element_pt</a>, <a class="el" href="mesh_8h_source.html#l00810">oomph::Mesh::boundary_element_pt()</a>, <a class="el" href="mesh_8h_source.html#l00493">oomph::Mesh::boundary_node_pt()</a>, <a class="el" href="cfortran_8h_source.html#l00571">e</a>, <a class="el" href="mesh_8h_source.html#l00193">oomph::Mesh::Element_pt</a>, <a class="el" href="mesh_8h_source.html#l00458">oomph::Mesh::element_pt()</a>, <a class="el" href="mesh_8h_source.html#l00102">oomph::Mesh::Face_index_at_boundary</a>, <a class="el" href="mesh_8h_source.html#l00866">oomph::Mesh::face_index_at_boundary()</a>, <a class="el" href="mesh_8h_source.html#l00473">oomph::Mesh::finite_element_pt()</a>, <a class="el" href="thin__layer__brick__on__tet__mesh_8template_8h_source.html#l00104">oomph::ThinLayerBrickOnTetMesh&lt; ELEMENT &gt;::FSI_boundary_id</a>, <a class="el" href="nodes_8h_source.html#l01279">oomph::Node::get_boundaries_pt()</a>, <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="thin__layer__brick__on__tet__mesh_8template_8h_source.html#l00093">oomph::ThinLayerBrickOnTetMesh&lt; ELEMENT &gt;::in_out_boundary_id()</a>, <a class="el" href="thin__layer__brick__on__tet__mesh_8template_8h_source.html#l00112">oomph::ThinLayerBrickOnTetMesh&lt; ELEMENT &gt;::In_out_boundary_id</a>, <a class="el" href="elements_8h_source.html#l04407">oomph::FaceElement::interpolated_x()</a>, <a class="el" href="elements_8cc_source.html#l04563">oomph::FiniteElement::interpolated_zeta()</a>, <a class="el" href="mesh_8h_source.html#l00094">oomph::Mesh::Lookup_for_elements_next_boundary_is_setup</a>, <a class="el" href="the__data__structure_8txt_source.html#l00582">n</a>, <a class="el" href="mesh_8h_source.html#l00848">oomph::Mesh::nboundary_element()</a>, <a class="el" href="mesh_8h_source.html#l00805">oomph::Mesh::nboundary_node()</a>, <a class="el" href="mesh_8h_source.html#l02668">oomph::Edge::node1_pt()</a>, <a class="el" href="mesh_8h_source.html#l02671">oomph::Edge::node2_pt()</a>, <a class="el" href="mesh_8h_source.html#l00190">oomph::Mesh::Node_pt</a>, <a class="el" href="elements_8h_source.html#l02122">oomph::FiniteElement::node_pt()</a>, <a class="el" href="elements_8h_source.html#l04489">oomph::FaceElement::normal_sign()</a>, <a class="el" href="thin__layer__brick__on__tet__mesh_8template_8h_source.html#l00108">oomph::ThinLayerBrickOnTetMesh&lt; ELEMENT &gt;::Outer_boundary_id</a>, <a class="el" href="elements_8cc_source.html#l05872">oomph::FaceElement::outer_unit_normal()</a>, <a class="el" href="nodes_8cc_source.html#l02409">oomph::Node::position()</a>, <a class="el" href="cfortran_8h_source.html#l00568">s</a>, <a class="el" href="elements_8h_source.html#l04362">oomph::FaceElement::set_boundary_number_in_bulk_mesh()</a>, <a class="el" href="nodes_8cc_source.html#l02311">oomph::Node::set_coordinates_on_boundary()</a>, <a class="el" href="mesh_8h_source.html#l00501">oomph::Mesh::set_nboundary()</a>, <a class="el" href="thin__layer__brick__on__tet__mesh_8template_8h_source.html#l00116">oomph::ThinLayerBrickOnTetMesh&lt; ELEMENT &gt;::Thickness_fct_pt</a>, and <a class="el" href="nodes_8h_source.html#l00990">oomph::Node::x()</a>.</p>
 
 </div>
 </div>
@@ -924,9 +924,9 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Access functions to the <a class="el" href="classoomph_1_1Vector.html">Vector</a> of oomph-lib boundary ids that make up boundary on which the mesh was erected (typically the FSI interface in an FSI problem) </p>
 
-<p class="definition">Definition at line <a class="el" href="thin__layer__brick__on__tet__mesh_8template_8h_source.html#l00081">81</a> of file <a class="el" href="thin__layer__brick__on__tet__mesh_8template_8h_source.html">thin_layer_brick_on_tet_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="thin__layer__brick__on__tet__mesh_8template_8h_source.html#l00077">77</a> of file <a class="el" href="thin__layer__brick__on__tet__mesh_8template_8h_source.html">thin_layer_brick_on_tet_mesh.template.h</a>.</p>
 
-<p class="reference">References <a class="el" href="thin__layer__brick__on__tet__mesh_8template_8h_source.html#l00108">oomph::ThinLayerBrickOnTetMesh&lt; ELEMENT &gt;::FSI_boundary_id</a>.</p>
+<p class="reference">References <a class="el" href="thin__layer__brick__on__tet__mesh_8template_8h_source.html#l00104">oomph::ThinLayerBrickOnTetMesh&lt; ELEMENT &gt;::FSI_boundary_id</a>.</p>
 
 </div>
 </div>
@@ -958,11 +958,11 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Access function to the vector containing the ids of the oomph-lib mesh boundaries that make up the specified in/outflow boundaries as specified in constructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="thin__layer__brick__on__tet__mesh_8template_8h_source.html#l00097">97</a> of file <a class="el" href="thin__layer__brick__on__tet__mesh_8template_8h_source.html">thin_layer_brick_on_tet_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="thin__layer__brick__on__tet__mesh_8template_8h_source.html#l00093">93</a> of file <a class="el" href="thin__layer__brick__on__tet__mesh_8template_8h_source.html">thin_layer_brick_on_tet_mesh.template.h</a>.</p>
 
-<p class="reference">References <a class="el" href="thin__layer__brick__on__tet__mesh_8template_8h_source.html#l00116">oomph::ThinLayerBrickOnTetMesh&lt; ELEMENT &gt;::In_out_boundary_id</a>.</p>
+<p class="reference">References <a class="el" href="thin__layer__brick__on__tet__mesh_8template_8h_source.html#l00112">oomph::ThinLayerBrickOnTetMesh&lt; ELEMENT &gt;::In_out_boundary_id</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="thin__layer__brick__on__tet__mesh_8template_8cc_source.html#l00059">oomph::ThinLayerBrickOnTetMesh&lt; ELEMENT &gt;::ThinLayerBrickOnTetMesh()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="thin__layer__brick__on__tet__mesh_8template_8cc_source.html#l00055">oomph::ThinLayerBrickOnTetMesh&lt; ELEMENT &gt;::ThinLayerBrickOnTetMesh()</a>.</p>
 
 </div>
 </div>
@@ -993,9 +993,9 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Boundary ID of the "outer" surface &ndash; in an FSI context this is the non-wetted tube surface at a distance h_thick from the FSI surface. </p>
 
-<p class="definition">Definition at line <a class="el" href="thin__layer__brick__on__tet__mesh_8template_8h_source.html#l00089">89</a> of file <a class="el" href="thin__layer__brick__on__tet__mesh_8template_8h_source.html">thin_layer_brick_on_tet_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="thin__layer__brick__on__tet__mesh_8template_8h_source.html#l00085">85</a> of file <a class="el" href="thin__layer__brick__on__tet__mesh_8template_8h_source.html">thin_layer_brick_on_tet_mesh.template.h</a>.</p>
 
-<p class="reference">References <a class="el" href="thin__layer__brick__on__tet__mesh_8template_8h_source.html#l00112">oomph::ThinLayerBrickOnTetMesh&lt; ELEMENT &gt;::Outer_boundary_id</a>.</p>
+<p class="reference">References <a class="el" href="thin__layer__brick__on__tet__mesh_8template_8h_source.html#l00108">oomph::ThinLayerBrickOnTetMesh&lt; ELEMENT &gt;::Outer_boundary_id</a>.</p>
 
 </div>
 </div>
@@ -1024,9 +1024,9 @@ template&lt;class ELEMENT &gt; </div>
 
 <p><a class="el" href="classoomph_1_1Vector.html">Vector</a> of oomph-lib boundary ids that make up boundary on which the mesh was erected (typically the FSI interface in an FSI problem) </p>
 
-<p class="definition">Definition at line <a class="el" href="thin__layer__brick__on__tet__mesh_8template_8h_source.html#l00108">108</a> of file <a class="el" href="thin__layer__brick__on__tet__mesh_8template_8h_source.html">thin_layer_brick_on_tet_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="thin__layer__brick__on__tet__mesh_8template_8h_source.html#l00104">104</a> of file <a class="el" href="thin__layer__brick__on__tet__mesh_8template_8h_source.html">thin_layer_brick_on_tet_mesh.template.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="thin__layer__brick__on__tet__mesh_8template_8h_source.html#l00081">oomph::ThinLayerBrickOnTetMesh&lt; ELEMENT &gt;::fsi_boundary_id()</a>, and <a class="el" href="thin__layer__brick__on__tet__mesh_8template_8cc_source.html#l00059">oomph::ThinLayerBrickOnTetMesh&lt; ELEMENT &gt;::ThinLayerBrickOnTetMesh()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="thin__layer__brick__on__tet__mesh_8template_8h_source.html#l00077">oomph::ThinLayerBrickOnTetMesh&lt; ELEMENT &gt;::fsi_boundary_id()</a>, and <a class="el" href="thin__layer__brick__on__tet__mesh_8template_8cc_source.html#l00055">oomph::ThinLayerBrickOnTetMesh&lt; ELEMENT &gt;::ThinLayerBrickOnTetMesh()</a>.</p>
 
 </div>
 </div>
@@ -1054,9 +1054,9 @@ template&lt;class ELEMENT &gt; </div>
 
 <p><a class="el" href="classoomph_1_1Vector.html">Vector</a> of vectors containing the ids of the oomph-lib mesh boundaries that make up the specified in/outflow boundaries. </p>
 
-<p class="definition">Definition at line <a class="el" href="thin__layer__brick__on__tet__mesh_8template_8h_source.html#l00116">116</a> of file <a class="el" href="thin__layer__brick__on__tet__mesh_8template_8h_source.html">thin_layer_brick_on_tet_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="thin__layer__brick__on__tet__mesh_8template_8h_source.html#l00112">112</a> of file <a class="el" href="thin__layer__brick__on__tet__mesh_8template_8h_source.html">thin_layer_brick_on_tet_mesh.template.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="thin__layer__brick__on__tet__mesh_8template_8h_source.html#l00097">oomph::ThinLayerBrickOnTetMesh&lt; ELEMENT &gt;::in_out_boundary_id()</a>, and <a class="el" href="thin__layer__brick__on__tet__mesh_8template_8cc_source.html#l00059">oomph::ThinLayerBrickOnTetMesh&lt; ELEMENT &gt;::ThinLayerBrickOnTetMesh()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="thin__layer__brick__on__tet__mesh_8template_8h_source.html#l00093">oomph::ThinLayerBrickOnTetMesh&lt; ELEMENT &gt;::in_out_boundary_id()</a>, and <a class="el" href="thin__layer__brick__on__tet__mesh_8template_8cc_source.html#l00055">oomph::ThinLayerBrickOnTetMesh&lt; ELEMENT &gt;::ThinLayerBrickOnTetMesh()</a>.</p>
 
 </div>
 </div>
@@ -1084,9 +1084,9 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Boundary ID of the "outer" surface &ndash; the non-wetted tube surface at a distance h_thick from the FSI surface. </p>
 
-<p class="definition">Definition at line <a class="el" href="thin__layer__brick__on__tet__mesh_8template_8h_source.html#l00112">112</a> of file <a class="el" href="thin__layer__brick__on__tet__mesh_8template_8h_source.html">thin_layer_brick_on_tet_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="thin__layer__brick__on__tet__mesh_8template_8h_source.html#l00108">108</a> of file <a class="el" href="thin__layer__brick__on__tet__mesh_8template_8h_source.html">thin_layer_brick_on_tet_mesh.template.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="thin__layer__brick__on__tet__mesh_8template_8h_source.html#l00089">oomph::ThinLayerBrickOnTetMesh&lt; ELEMENT &gt;::outer_boundary_id()</a>, and <a class="el" href="thin__layer__brick__on__tet__mesh_8template_8cc_source.html#l00059">oomph::ThinLayerBrickOnTetMesh&lt; ELEMENT &gt;::ThinLayerBrickOnTetMesh()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="thin__layer__brick__on__tet__mesh_8template_8h_source.html#l00085">oomph::ThinLayerBrickOnTetMesh&lt; ELEMENT &gt;::outer_boundary_id()</a>, and <a class="el" href="thin__layer__brick__on__tet__mesh_8template_8cc_source.html#l00055">oomph::ThinLayerBrickOnTetMesh&lt; ELEMENT &gt;::ThinLayerBrickOnTetMesh()</a>.</p>
 
 </div>
 </div>
@@ -1114,9 +1114,9 @@ template&lt;class ELEMENT &gt; </div>
 
 <p>Function pointer to function that specifies the wall thickness as a fct of the coordinates of the inner surface. </p>
 
-<p class="definition">Definition at line <a class="el" href="thin__layer__brick__on__tet__mesh_8template_8h_source.html#l00120">120</a> of file <a class="el" href="thin__layer__brick__on__tet__mesh_8template_8h_source.html">thin_layer_brick_on_tet_mesh.template.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="thin__layer__brick__on__tet__mesh_8template_8h_source.html#l00116">116</a> of file <a class="el" href="thin__layer__brick__on__tet__mesh_8template_8h_source.html">thin_layer_brick_on_tet_mesh.template.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="thin__layer__brick__on__tet__mesh_8template_8cc_source.html#l00059">oomph::ThinLayerBrickOnTetMesh&lt; ELEMENT &gt;::ThinLayerBrickOnTetMesh()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="thin__layer__brick__on__tet__mesh_8template_8cc_source.html#l00055">oomph::ThinLayerBrickOnTetMesh&lt; ELEMENT &gt;::ThinLayerBrickOnTetMesh()</a>.</p>
 
 </div>
 </div>
@@ -1152,7 +1152,7 @@ template&lt;class ELEMENT &gt; </div>
     <footer>
       <div class="container">
         <div class="text-muted" style="float:right;">Generated by <a href="http://www.doxygen.org/index.html">
-          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Tue Jul 6 2021 22:59:49
+          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Fri Jul 9 2021 20:54:39
         </div>
       </div>
     </footer>

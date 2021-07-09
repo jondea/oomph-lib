@@ -95,7 +95,7 @@ class oomph\+::\+My\+Shell\+Equations$<$ D\+I\+M, N\+N\+O\+D\+E\+\_\+1\+D $>$}
 
 A class for all subparametric elements that solve the linear shell equations. This contains the generic maths. Shape functions, geometric mapping etc. must get implemented in derived class. 
 
-Definition at line 179 of file unstructured\+\_\+clamped\+\_\+square\+\_\+plate.\+cc.
+Definition at line 175 of file unstructured\+\_\+clamped\+\_\+square\+\_\+plate.\+cc.
 
 
 
@@ -114,7 +114,7 @@ Function pointer to gradient of source function fct(x,g(x)) -- x is a Vector! ~\
 
 
 
-Definition at line 191 of file unstructured\+\_\+clamped\+\_\+square\+\_\+plate.\+cc.
+Definition at line 187 of file unstructured\+\_\+clamped\+\_\+square\+\_\+plate.\+cc.
 
 \mbox{\Hypertarget{classoomph_1_1MyShellEquations_a056d2488b6e65787f5c9935a321b7a9b}\label{classoomph_1_1MyShellEquations_a056d2488b6e65787f5c9935a321b7a9b}} 
 \index{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$@{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$}!SourceFctPt@{SourceFctPt}}
@@ -130,7 +130,7 @@ Function pointer to source function fct(x,f(x)) -- x is a Vector! ~\newline
 
 
 
-Definition at line 186 of file unstructured\+\_\+clamped\+\_\+square\+\_\+plate.\+cc.
+Definition at line 182 of file unstructured\+\_\+clamped\+\_\+square\+\_\+plate.\+cc.
 
 
 
@@ -148,7 +148,7 @@ Constructor (must initialise the Source\+\_\+fct\+\_\+pt to null)
 
 
 
-Definition at line 196 of file unstructured\+\_\+clamped\+\_\+square\+\_\+plate.\+cc.
+Definition at line 192 of file unstructured\+\_\+clamped\+\_\+square\+\_\+plate.\+cc.
 
 \mbox{\Hypertarget{classoomph_1_1MyShellEquations_af92d9d503350b3c84d309b1e70911e27}\label{classoomph_1_1MyShellEquations_af92d9d503350b3c84d309b1e70911e27}} 
 \index{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$@{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$}!MyShellEquations@{MyShellEquations}}
@@ -163,7 +163,7 @@ Broken copy constructor.
 
 
 
-Definition at line 200 of file unstructured\+\_\+clamped\+\_\+square\+\_\+plate.\+cc.
+Definition at line 196 of file unstructured\+\_\+clamped\+\_\+square\+\_\+plate.\+cc.
 
 
 
@@ -183,7 +183,7 @@ Validate against exact solution
 
 Solution is provided via function pointer. Plot error at a given number of plot points. 
 
-Definition at line 1516 of file unstructured\+\_\+clamped\+\_\+square\+\_\+plate.\+cc.
+Definition at line 1512 of file unstructured\+\_\+clamped\+\_\+square\+\_\+plate.\+cc.
 
 
 
@@ -202,7 +202,7 @@ Dummy, time dependent error checker.
 
 
 
-Definition at line 260 of file unstructured\+\_\+clamped\+\_\+square\+\_\+plate.\+cc.
+Definition at line 256 of file unstructured\+\_\+clamped\+\_\+square\+\_\+plate.\+cc.
 
 \mbox{\Hypertarget{classoomph_1_1MyShellEquations_af8f15f0d678c85535bbc3390399dafdd}\label{classoomph_1_1MyShellEquations_af8f15f0d678c85535bbc3390399dafdd}} 
 \index{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$@{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$}!d2shape\_and\_d2test\_eulerian\_at\_knot\_shell@{d2shape\_and\_d2test\_eulerian\_at\_knot\_shell}}
@@ -269,7 +269,7 @@ Add the element\textquotesingle{}s contribution to its residual vector (wrapper)
 
 
 
-Definition at line 312 of file unstructured\+\_\+clamped\+\_\+square\+\_\+plate.\+cc.
+Definition at line 308 of file unstructured\+\_\+clamped\+\_\+square\+\_\+plate.\+cc.
 
 \mbox{\Hypertarget{classoomph_1_1MyShellEquations_a39b639b46ce1b2fcd53465b02da47f78}\label{classoomph_1_1MyShellEquations_a39b639b46ce1b2fcd53465b02da47f78}} 
 \index{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$@{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$}!fill\_in\_generic\_residual\_contribution\_shell@{fill\_in\_generic\_residual\_contribution\_shell}}
@@ -287,7 +287,7 @@ initialise tensors to zero
 
 find residuals for the first and second directions
 
-Definition at line 756 of file unstructured\+\_\+clamped\+\_\+square\+\_\+plate.\+cc.
+Definition at line 752 of file unstructured\+\_\+clamped\+\_\+square\+\_\+plate.\+cc.
 
 
 
@@ -302,7 +302,7 @@ virtual void \mbox{\hyperlink{classoomph_1_1MyShellEquations}{oomph\+::\+My\+She
 
 Get source term at (Eulerian) position x. This function is virtual to allow overloading in multi-\/physics problems where the strength of the source function might be determined by another system of equations. 
 
-Definition at line 291 of file unstructured\+\_\+clamped\+\_\+square\+\_\+plate.\+cc.
+Definition at line 287 of file unstructured\+\_\+clamped\+\_\+square\+\_\+plate.\+cc.
 
 
 
@@ -321,7 +321,7 @@ Return FE representation of function value u(s) at local coordinate s.
 
 Add the element\textquotesingle{}s contribution to its residual vector and element Jacobian matrix (wrapper) initialise tensors to zero
 
-Definition at line 334 of file unstructured\+\_\+clamped\+\_\+square\+\_\+plate.\+cc.
+Definition at line 330 of file unstructured\+\_\+clamped\+\_\+square\+\_\+plate.\+cc.
 
 
 
@@ -340,7 +340,7 @@ C\+\_\+style output with default number of plot points.
 
 
 
-Definition at line 224 of file unstructured\+\_\+clamped\+\_\+square\+\_\+plate.\+cc.
+Definition at line 220 of file unstructured\+\_\+clamped\+\_\+square\+\_\+plate.\+cc.
 
 \mbox{\Hypertarget{classoomph_1_1MyShellEquations_adc1fcb6052b2cd07efe4d7d841ed6723}\label{classoomph_1_1MyShellEquations_adc1fcb6052b2cd07efe4d7d841ed6723}} 
 \index{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$@{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$}!output@{output}}
@@ -359,7 +359,7 @@ x,y,u or x,y,z,u
 
 nplot points in each coordinate direction 
 
-Definition at line 1418 of file unstructured\+\_\+clamped\+\_\+square\+\_\+plate.\+cc.
+Definition at line 1414 of file unstructured\+\_\+clamped\+\_\+square\+\_\+plate.\+cc.
 
 
 
@@ -378,7 +378,7 @@ Output with default number of plot points.
 
 
 
-Definition at line 213 of file unstructured\+\_\+clamped\+\_\+square\+\_\+plate.\+cc.
+Definition at line 209 of file unstructured\+\_\+clamped\+\_\+square\+\_\+plate.\+cc.
 
 \mbox{\Hypertarget{classoomph_1_1MyShellEquations_ad4ad93d1ef0640f5ded693e0bc46aeb6}\label{classoomph_1_1MyShellEquations_ad4ad93d1ef0640f5ded693e0bc46aeb6}} 
 \index{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$@{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$}!output@{output}}
@@ -397,7 +397,7 @@ x,y,u or x,y,z,u
 
 nplot points in each coordinate direction 
 
-Definition at line 1365 of file unstructured\+\_\+clamped\+\_\+square\+\_\+plate.\+cc.
+Definition at line 1361 of file unstructured\+\_\+clamped\+\_\+square\+\_\+plate.\+cc.
 
 
 
@@ -420,7 +420,7 @@ Reimplemented in \mbox{\hyperlink{classoomph_1_1BellShellElement_a5589f860978d78
 
 
 
-Definition at line 241 of file unstructured\+\_\+clamped\+\_\+square\+\_\+plate.\+cc.
+Definition at line 237 of file unstructured\+\_\+clamped\+\_\+square\+\_\+plate.\+cc.
 
 \mbox{\Hypertarget{classoomph_1_1MyShellEquations_a882f6447d8e204962a3f2a350c6315c4}\label{classoomph_1_1MyShellEquations_a882f6447d8e204962a3f2a350c6315c4}} 
 \index{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$@{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$}!output\_fct@{output\_fct}}
@@ -439,7 +439,7 @@ Solution is provided via function pointer. Plot at a given number of plot points
 
 x,y,u\+\_\+exact or x,y,z,u\+\_\+exact 
 
-Definition at line 1458 of file unstructured\+\_\+clamped\+\_\+square\+\_\+plate.\+cc.
+Definition at line 1454 of file unstructured\+\_\+clamped\+\_\+square\+\_\+plate.\+cc.
 
 
 
@@ -458,7 +458,7 @@ Self-\/test\+: Return 0 for OK.
 
 
 
-Definition at line 1332 of file unstructured\+\_\+clamped\+\_\+square\+\_\+plate.\+cc.
+Definition at line 1328 of file unstructured\+\_\+clamped\+\_\+square\+\_\+plate.\+cc.
 
 \mbox{\Hypertarget{classoomph_1_1MyShellEquations_a1ade98830b556492e11aef07cf34d3ed}\label{classoomph_1_1MyShellEquations_a1ade98830b556492e11aef07cf34d3ed}} 
 \index{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$@{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$}!source\_fct\_gradient\_pt@{source\_fct\_gradient\_pt}}
@@ -473,7 +473,7 @@ Access function\+: Pointer to gradient of source function.
 
 
 
-Definition at line 277 of file unstructured\+\_\+clamped\+\_\+square\+\_\+plate.\+cc.
+Definition at line 273 of file unstructured\+\_\+clamped\+\_\+square\+\_\+plate.\+cc.
 
 \mbox{\Hypertarget{classoomph_1_1MyShellEquations_aeb57d576c45c382206c6af6b8b06b575}\label{classoomph_1_1MyShellEquations_aeb57d576c45c382206c6af6b8b06b575}} 
 \index{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$@{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$}!source\_fct\_gradient\_pt@{source\_fct\_gradient\_pt}}
@@ -488,7 +488,7 @@ Access function\+: Pointer to gradient source function. Const version.
 
 
 
-Definition at line 281 of file unstructured\+\_\+clamped\+\_\+square\+\_\+plate.\+cc.
+Definition at line 277 of file unstructured\+\_\+clamped\+\_\+square\+\_\+plate.\+cc.
 
 \mbox{\Hypertarget{classoomph_1_1MyShellEquations_a8aee1d7092584b9ad7095dfd905f5893}\label{classoomph_1_1MyShellEquations_a8aee1d7092584b9ad7095dfd905f5893}} 
 \index{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$@{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$}!source\_fct\_pt@{source\_fct\_pt}}
@@ -503,7 +503,7 @@ Access function\+: Pointer to source function.
 
 
 
-Definition at line 271 of file unstructured\+\_\+clamped\+\_\+square\+\_\+plate.\+cc.
+Definition at line 267 of file unstructured\+\_\+clamped\+\_\+square\+\_\+plate.\+cc.
 
 \mbox{\Hypertarget{classoomph_1_1MyShellEquations_a3cf0287a7fcc34f88c011805ae18fdcb}\label{classoomph_1_1MyShellEquations_a3cf0287a7fcc34f88c011805ae18fdcb}} 
 \index{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$@{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$}!source\_fct\_pt@{source\_fct\_pt}}
@@ -518,7 +518,7 @@ Access function\+: Pointer to source function. Const version.
 
 
 
-Definition at line 274 of file unstructured\+\_\+clamped\+\_\+square\+\_\+plate.\+cc.
+Definition at line 270 of file unstructured\+\_\+clamped\+\_\+square\+\_\+plate.\+cc.
 
 \mbox{\Hypertarget{classoomph_1_1MyShellEquations_a983c9be2c162eccec2f41c391722f0aa}\label{classoomph_1_1MyShellEquations_a983c9be2c162eccec2f41c391722f0aa}} 
 \index{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$@{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$}!u\_index\_shell@{u\_index\_shell}}
@@ -533,7 +533,7 @@ Return the index at which the unknown value is stored. In derived multi-\/physic
 
 
 
-Definition at line 210 of file unstructured\+\_\+clamped\+\_\+square\+\_\+plate.\+cc.
+Definition at line 206 of file unstructured\+\_\+clamped\+\_\+square\+\_\+plate.\+cc.
 
 \mbox{\Hypertarget{classoomph_1_1MyShellEquations_acf40f3e2413d4640be3ba3664b8d0426}\label{classoomph_1_1MyShellEquations_acf40f3e2413d4640be3ba3664b8d0426}} 
 \index{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$@{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$}!undeformed\_midplane\_pt@{undeformed\_midplane\_pt}}
@@ -548,7 +548,7 @@ Access function\+: Undeformed shell.
 
 
 
-Definition at line 285 of file unstructured\+\_\+clamped\+\_\+square\+\_\+plate.\+cc.
+Definition at line 281 of file unstructured\+\_\+clamped\+\_\+square\+\_\+plate.\+cc.
 
 
 
@@ -566,7 +566,7 @@ Pointer to wall thickness.
 
 
 
-Definition at line 503 of file unstructured\+\_\+clamped\+\_\+square\+\_\+plate.\+cc.
+Definition at line 499 of file unstructured\+\_\+clamped\+\_\+square\+\_\+plate.\+cc.
 
 \mbox{\Hypertarget{classoomph_1_1MyShellEquations_a6201b3eced8396c6e2246df94c946537}\label{classoomph_1_1MyShellEquations_a6201b3eced8396c6e2246df94c946537}} 
 \index{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$@{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$}!Lambda\_sq\_pt@{Lambda\_sq\_pt}}
@@ -581,7 +581,7 @@ Pointer to Timescale ratio.
 
 
 
-Definition at line 506 of file unstructured\+\_\+clamped\+\_\+square\+\_\+plate.\+cc.
+Definition at line 502 of file unstructured\+\_\+clamped\+\_\+square\+\_\+plate.\+cc.
 
 \mbox{\Hypertarget{classoomph_1_1MyShellEquations_a909b1e9608109048d446f86ca3c7d02d}\label{classoomph_1_1MyShellEquations_a909b1e9608109048d446f86ca3c7d02d}} 
 \index{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$@{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$}!Sigma0\_pt@{Sigma0\_pt}}
@@ -596,7 +596,7 @@ Pointer to axial prestress.
 
 
 
-Definition at line 500 of file unstructured\+\_\+clamped\+\_\+square\+\_\+plate.\+cc.
+Definition at line 496 of file unstructured\+\_\+clamped\+\_\+square\+\_\+plate.\+cc.
 
 \mbox{\Hypertarget{classoomph_1_1MyShellEquations_ab45cb2cb03c75c4410fa4288f9a8be90}\label{classoomph_1_1MyShellEquations_ab45cb2cb03c75c4410fa4288f9a8be90}} 
 \index{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$@{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$}!Source\_fct\_gradient\_pt@{Source\_fct\_gradient\_pt}}
@@ -611,7 +611,7 @@ Pointer to gradient of source function.
 
 
 
-Definition at line 494 of file unstructured\+\_\+clamped\+\_\+square\+\_\+plate.\+cc.
+Definition at line 490 of file unstructured\+\_\+clamped\+\_\+square\+\_\+plate.\+cc.
 
 \mbox{\Hypertarget{classoomph_1_1MyShellEquations_a60988a3591e836a2afecf416d1287985}\label{classoomph_1_1MyShellEquations_a60988a3591e836a2afecf416d1287985}} 
 \index{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$@{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$}!Source\_fct\_pt@{Source\_fct\_pt}}
@@ -626,7 +626,7 @@ Pointer to source function\+:
 
 
 
-Definition at line 491 of file unstructured\+\_\+clamped\+\_\+square\+\_\+plate.\+cc.
+Definition at line 487 of file unstructured\+\_\+clamped\+\_\+square\+\_\+plate.\+cc.
 
 \mbox{\Hypertarget{classoomph_1_1MyShellEquations_acf0107874213e70145eae84dfb3d4b5a}\label{classoomph_1_1MyShellEquations_acf0107874213e70145eae84dfb3d4b5a}} 
 \index{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$@{oomph::MyShellEquations$<$ DIM, NNODE\_1D $>$}!Undeformed\_midplane\_pt@{Undeformed\_midplane\_pt}}
@@ -641,7 +641,7 @@ Pointer to undeformed shell\+:
 
 
 
-Definition at line 497 of file unstructured\+\_\+clamped\+\_\+square\+\_\+plate.\+cc.
+Definition at line 493 of file unstructured\+\_\+clamped\+\_\+square\+\_\+plate.\+cc.
 
 
 

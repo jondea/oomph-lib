@@ -299,7 +299,7 @@ Private Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class defining a closed polygon for the Triangle mesh generation. </p>
 
-<p class="definition">Definition at line <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html#l01337">1337</a> of file <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html">unstructured_two_d_mesh_geometry_base.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html#l01333">1333</a> of file <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html">unstructured_two_d_mesh_geometry_base.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a665856c97e10c29a096af4349fc953e8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a665856c97e10c29a096af4349fc953e8">&#9670;&nbsp;</a></span>TriangleMeshPolygon()</h2>
@@ -336,9 +336,9 @@ Private Attributes</h2></td></tr>
 <p>Constructor: Specify vector of pointers to <a class="el" href="classoomph_1_1TriangleMeshCurveSection.html">TriangleMeshCurveSection</a> that define the boundary of the segments of the polygon. Each <a class="el" href="classoomph_1_1TriangleMeshCurveSection.html">TriangleMeshCurveSection</a> has its own boundary ID and can contain multiple (straight-line) segments. For consistency across the various uses of this class, we insist that the closed boundary is represented by at least two separate <a class="el" href="classoomph_1_1TriangleMeshCurveSection.html">TriangleMeshCurveSection</a> whose joint vertices must be specified in both. (This is to allow the setup of unique boundary coordinate(s) around the polygon.) This may seem slightly annoying in cases where a polygon really only represents a single boundary, but... Note: The specified vector of pointers must consist of only <a class="el" href="classoomph_1_1TriangleMeshPolyLine.html" title="Class defining a polyline for use in Triangle Mesh generation.">TriangleMeshPolyLine</a> elements. There is a checking on the PARANOID mode for this constraint. </p>
 <p>Constructor: Specify vector of pointers to <a class="el" href="classoomph_1_1TriangleMeshCurveSection.html">TriangleMeshCurveSection</a> that define the boundary of the segments of the polygon. Each <a class="el" href="classoomph_1_1TriangleMeshCurveSection.html">TriangleMeshCurveSection</a> has its own boundary ID and can contain multiple (straight-line) segments. For consistency across the various uses of this class, we insist that the closed boundary is represented by at least two separate <a class="el" href="classoomph_1_1TriangleMeshCurveSection.html">TriangleMeshCurveSection</a> whose joint vertices must be specified in both. (This is to allow the setup of unique boundary coordinate(s) around the polygon.) This may seem slightly annoying in cases where a polygon really only represents a single boundary, but... Note: The specified vector of pointers must consist of only <a class="el" href="classoomph_1_1TriangleMeshPolyLine.html" title="Class defining a polyline for use in Triangle Mesh generation.">TriangleMeshPolyLine</a> elements. There is a checking on the PARANOID mode for this constraint </p>
 
-<p class="definition">Definition at line <a class="el" href="unstructured__two__d__mesh__geometry__base_8cc_source.html#l01598">1598</a> of file <a class="el" href="unstructured__two__d__mesh__geometry__base_8cc_source.html">unstructured_two_d_mesh_geometry_base.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="unstructured__two__d__mesh__geometry__base_8cc_source.html#l01594">1594</a> of file <a class="el" href="unstructured__two__d__mesh__geometry__base_8cc_source.html">unstructured_two_d_mesh_geometry_base.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>, <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html#l01322">oomph::TriangleMeshClosedCurve::Internal_point_pt</a>, <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html#l01369">npolyline()</a>, <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html#l00831">oomph::TriangleMeshPolyLine::nvertex()</a>, <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html#l01372">polyline_pt()</a>, <a class="el" href="unstructured__two__d__mesh__geometry__base_8cc_source.html#l01107">oomph::ToleranceForVertexMismatchInPolygons::Tolerable_error</a>, and <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html#l00844">oomph::TriangleMeshPolyLine::vertex_coordinate()</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>, <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html#l01318">oomph::TriangleMeshClosedCurve::Internal_point_pt</a>, <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html#l01365">npolyline()</a>, <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html#l00827">oomph::TriangleMeshPolyLine::nvertex()</a>, <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html#l01368">polyline_pt()</a>, <a class="el" href="unstructured__two__d__mesh__geometry__base_8cc_source.html#l01103">oomph::ToleranceForVertexMismatchInPolygons::Tolerable_error</a>, and <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html#l00840">oomph::TriangleMeshPolyLine::vertex_coordinate()</a>.</p>
 
 </div>
 </div>
@@ -367,7 +367,7 @@ Private Attributes</h2></td></tr>
 
 <p>Empty virtual destructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html#l01362">1362</a> of file <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html">unstructured_two_d_mesh_geometry_base.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html#l01358">1358</a> of file <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html">unstructured_two_d_mesh_geometry_base.h</a>.</p>
 
 </div>
 </div>
@@ -397,9 +397,9 @@ Private Attributes</h2></td></tr>
 
 <p>Test whether curve can update reference. </p>
 
-<p class="definition">Definition at line <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html#l01452">1452</a> of file <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html">unstructured_two_d_mesh_geometry_base.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html#l01448">1448</a> of file <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html">unstructured_two_d_mesh_geometry_base.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="triangle__mesh_8template_8cc_source.html#l36208">oomph::RefineableTriangleMesh&lt; ELEMENT &gt;::surface_remesh_for_inner_hole_boundaries()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="triangle__mesh_8template_8cc_source.html#l36204">oomph::RefineableTriangleMesh&lt; ELEMENT &gt;::surface_remesh_for_inner_hole_boundaries()</a>.</p>
 
 </div>
 </div>
@@ -428,7 +428,7 @@ Private Attributes</h2></td></tr>
 
 <p>Disable re-distribution of polyline segments in the curve between different boundaries during adaptation. </p>
 
-<p class="definition">Definition at line <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html#l01448">1448</a> of file <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html">unstructured_two_d_mesh_geometry_base.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html#l01444">1444</a> of file <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html">unstructured_two_d_mesh_geometry_base.h</a>.</p>
 
 </div>
 </div>
@@ -457,7 +457,7 @@ Private Attributes</h2></td></tr>
 
 <p>Enable re-distribution of polyline segments in the curve between different boundaries during adaptation. </p>
 
-<p class="definition">Definition at line <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html#l01443">1443</a> of file <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html">unstructured_two_d_mesh_geometry_base.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html#l01439">1439</a> of file <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html">unstructured_two_d_mesh_geometry_base.h</a>.</p>
 
 </div>
 </div>
@@ -486,7 +486,7 @@ Private Attributes</h2></td></tr>
 
 <p>Test whether the polygon is fixed or not. </p>
 
-<p class="definition">Definition at line <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html#l01476">1476</a> of file <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html">unstructured_two_d_mesh_geometry_base.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html#l01472">1472</a> of file <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html">unstructured_two_d_mesh_geometry_base.h</a>.</p>
 
 </div>
 </div>
@@ -515,9 +515,9 @@ Private Attributes</h2></td></tr>
 
 <p>Is re-distribution of polyline segments in the curve between different boundaries during adaptation enabled? </p>
 
-<p class="definition">Definition at line <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html#l01438">1438</a> of file <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html">unstructured_two_d_mesh_geometry_base.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html#l01434">1434</a> of file <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html">unstructured_two_d_mesh_geometry_base.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="triangle__mesh_8template_8cc_source.html#l35635">oomph::RefineableTriangleMesh&lt; ELEMENT &gt;::get_face_mesh_representation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="triangle__mesh_8template_8cc_source.html#l35631">oomph::RefineableTriangleMesh&lt; ELEMENT &gt;::get_face_mesh_representation()</a>.</p>
 
 </div>
 </div>
@@ -548,9 +548,9 @@ Private Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classoomph_1_1TriangleMeshCurve.html#af0b316414dd4a848b8bdfe314e5200ea">oomph::TriangleMeshCurve</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html#l01365">1365</a> of file <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html">unstructured_two_d_mesh_geometry_base.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html#l01361">1361</a> of file <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html">unstructured_two_d_mesh_geometry_base.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00548">oomph::ImmersedRigidBodyTriangleMeshPolygon::reset_reference_configuration()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00544">oomph::ImmersedRigidBodyTriangleMeshPolygon::reset_reference_configuration()</a>.</p>
 
 </div>
 </div>
@@ -579,9 +579,9 @@ Private Attributes</h2></td></tr>
 
 <p>Number of constituent polylines. </p>
 
-<p class="definition">Definition at line <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html#l01369">1369</a> of file <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html">unstructured_two_d_mesh_geometry_base.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html#l01365">1365</a> of file <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html">unstructured_two_d_mesh_geometry_base.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="triangle__mesh_8template_8cc_source.html#l31602">oomph::RefineableTriangleMesh&lt; ELEMENT &gt;::add_vertices_for_non_deletion()</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00740">oomph::ImmersedRigidBodyTriangleMeshPolygon::assign_zeta()</a>, <a class="el" href="triangle__mesh_8template_8cc_source.html#l32761">oomph::RefineableTriangleMesh&lt; ELEMENT &gt;::create_temporary_boundary_connections()</a>, <a class="el" href="triangle__mesh_8template_8cc_source.html#l35635">oomph::RefineableTriangleMesh&lt; ELEMENT &gt;::get_face_mesh_representation()</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00643">oomph::ImmersedRigidBodyTriangleMeshPolygon::get_initial_position()</a>, <a class="el" href="triangle__mesh_8template_8cc_source.html#l32888">oomph::RefineableTriangleMesh&lt; ELEMENT &gt;::restore_boundary_connections()</a>, <a class="el" href="triangle__mesh_8template_8cc_source.html#l36208">oomph::RefineableTriangleMesh&lt; ELEMENT &gt;::surface_remesh_for_inner_hole_boundaries()</a>, <a class="el" href="unstructured__two__d__mesh__geometry__base_8cc_source.html#l01598">TriangleMeshPolygon()</a>, <a class="el" href="triangle__mesh_8template_8cc_source.html#l40981">oomph::RefineableTriangleMesh&lt; ELEMENT &gt;::update_polygon_after_restart()</a>, <a class="el" href="triangle__mesh_8template_8cc_source.html#l37425">oomph::RefineableTriangleMesh&lt; ELEMENT &gt;::update_polygon_using_elements_area()</a>, and <a class="el" href="triangle__mesh_8template_8cc_source.html#l33880">oomph::RefineableTriangleMesh&lt; ELEMENT &gt;::update_polygon_using_face_mesh()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="triangle__mesh_8template_8cc_source.html#l31598">oomph::RefineableTriangleMesh&lt; ELEMENT &gt;::add_vertices_for_non_deletion()</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00736">oomph::ImmersedRigidBodyTriangleMeshPolygon::assign_zeta()</a>, <a class="el" href="triangle__mesh_8template_8cc_source.html#l32757">oomph::RefineableTriangleMesh&lt; ELEMENT &gt;::create_temporary_boundary_connections()</a>, <a class="el" href="triangle__mesh_8template_8cc_source.html#l35631">oomph::RefineableTriangleMesh&lt; ELEMENT &gt;::get_face_mesh_representation()</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00639">oomph::ImmersedRigidBodyTriangleMeshPolygon::get_initial_position()</a>, <a class="el" href="triangle__mesh_8template_8cc_source.html#l32884">oomph::RefineableTriangleMesh&lt; ELEMENT &gt;::restore_boundary_connections()</a>, <a class="el" href="triangle__mesh_8template_8cc_source.html#l36204">oomph::RefineableTriangleMesh&lt; ELEMENT &gt;::surface_remesh_for_inner_hole_boundaries()</a>, <a class="el" href="unstructured__two__d__mesh__geometry__base_8cc_source.html#l01594">TriangleMeshPolygon()</a>, <a class="el" href="triangle__mesh_8template_8cc_source.html#l40977">oomph::RefineableTriangleMesh&lt; ELEMENT &gt;::update_polygon_after_restart()</a>, <a class="el" href="triangle__mesh_8template_8cc_source.html#l37421">oomph::RefineableTriangleMesh&lt; ELEMENT &gt;::update_polygon_using_elements_area()</a>, and <a class="el" href="triangle__mesh_8template_8cc_source.html#l33876">oomph::RefineableTriangleMesh&lt; ELEMENT &gt;::update_polygon_using_face_mesh()</a>.</p>
 
 </div>
 </div>
@@ -610,7 +610,7 @@ Private Attributes</h2></td></tr>
 
 <p>Return vector of boundary ids of associated polylines. </p>
 
-<p class="definition">Definition at line <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html#l01422">1422</a> of file <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html">unstructured_two_d_mesh_geometry_base.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html#l01418">1418</a> of file <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html">unstructured_two_d_mesh_geometry_base.h</a>.</p>
 
 </div>
 </div>
@@ -640,9 +640,9 @@ Private Attributes</h2></td></tr>
 
 <p>Pointer to i-th constituent polyline. </p>
 
-<p class="definition">Definition at line <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html#l01397">1397</a> of file <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html">unstructured_two_d_mesh_geometry_base.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html#l01393">1393</a> of file <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html">unstructured_two_d_mesh_geometry_base.h</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>.</p>
 
 </div>
 </div>
@@ -672,11 +672,11 @@ Private Attributes</h2></td></tr>
 
 <p>Pointer to i-th constituent polyline. </p>
 
-<p class="definition">Definition at line <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html#l01372">1372</a> of file <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html">unstructured_two_d_mesh_geometry_base.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html#l01368">1368</a> of file <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html">unstructured_two_d_mesh_geometry_base.h</a>.</p>
 
-<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00607">i</a>.</p>
+<p class="reference">References <a class="el" href="cfortran_8h_source.html#l00603">i</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="triangle__mesh_8template_8cc_source.html#l31602">oomph::RefineableTriangleMesh&lt; ELEMENT &gt;::add_vertices_for_non_deletion()</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00740">oomph::ImmersedRigidBodyTriangleMeshPolygon::assign_zeta()</a>, <a class="el" href="triangle__mesh_8template_8cc_source.html#l32761">oomph::RefineableTriangleMesh&lt; ELEMENT &gt;::create_temporary_boundary_connections()</a>, <a class="el" href="triangle__mesh_8template_8cc_source.html#l35635">oomph::RefineableTriangleMesh&lt; ELEMENT &gt;::get_face_mesh_representation()</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00643">oomph::ImmersedRigidBodyTriangleMeshPolygon::get_initial_position()</a>, <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00386">oomph::ImmersedRigidBodyTriangleMeshPolygon::ImmersedRigidBodyTriangleMeshPolygon()</a>, <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00548">oomph::ImmersedRigidBodyTriangleMeshPolygon::reset_reference_configuration()</a>, <a class="el" href="triangle__mesh_8template_8cc_source.html#l32888">oomph::RefineableTriangleMesh&lt; ELEMENT &gt;::restore_boundary_connections()</a>, <a class="el" href="triangle__mesh_8template_8cc_source.html#l36208">oomph::RefineableTriangleMesh&lt; ELEMENT &gt;::surface_remesh_for_inner_hole_boundaries()</a>, <a class="el" href="unstructured__two__d__mesh__geometry__base_8cc_source.html#l01598">TriangleMeshPolygon()</a>, <a class="el" href="triangle__mesh_8template_8cc_source.html#l40981">oomph::RefineableTriangleMesh&lt; ELEMENT &gt;::update_polygon_after_restart()</a>, <a class="el" href="triangle__mesh_8template_8cc_source.html#l37425">oomph::RefineableTriangleMesh&lt; ELEMENT &gt;::update_polygon_using_elements_area()</a>, and <a class="el" href="triangle__mesh_8template_8cc_source.html#l33880">oomph::RefineableTriangleMesh&lt; ELEMENT &gt;::update_polygon_using_face_mesh()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="triangle__mesh_8template_8cc_source.html#l31598">oomph::RefineableTriangleMesh&lt; ELEMENT &gt;::add_vertices_for_non_deletion()</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00736">oomph::ImmersedRigidBodyTriangleMeshPolygon::assign_zeta()</a>, <a class="el" href="triangle__mesh_8template_8cc_source.html#l32757">oomph::RefineableTriangleMesh&lt; ELEMENT &gt;::create_temporary_boundary_connections()</a>, <a class="el" href="triangle__mesh_8template_8cc_source.html#l35631">oomph::RefineableTriangleMesh&lt; ELEMENT &gt;::get_face_mesh_representation()</a>, <a class="el" href="immersed__rigid__body__elements_8h_source.html#l00639">oomph::ImmersedRigidBodyTriangleMeshPolygon::get_initial_position()</a>, <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00382">oomph::ImmersedRigidBodyTriangleMeshPolygon::ImmersedRigidBodyTriangleMeshPolygon()</a>, <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00544">oomph::ImmersedRigidBodyTriangleMeshPolygon::reset_reference_configuration()</a>, <a class="el" href="triangle__mesh_8template_8cc_source.html#l32884">oomph::RefineableTriangleMesh&lt; ELEMENT &gt;::restore_boundary_connections()</a>, <a class="el" href="triangle__mesh_8template_8cc_source.html#l36204">oomph::RefineableTriangleMesh&lt; ELEMENT &gt;::surface_remesh_for_inner_hole_boundaries()</a>, <a class="el" href="unstructured__two__d__mesh__geometry__base_8cc_source.html#l01594">TriangleMeshPolygon()</a>, <a class="el" href="triangle__mesh_8template_8cc_source.html#l40977">oomph::RefineableTriangleMesh&lt; ELEMENT &gt;::update_polygon_after_restart()</a>, <a class="el" href="triangle__mesh_8template_8cc_source.html#l37421">oomph::RefineableTriangleMesh&lt; ELEMENT &gt;::update_polygon_using_elements_area()</a>, and <a class="el" href="triangle__mesh_8template_8cc_source.html#l33876">oomph::RefineableTriangleMesh&lt; ELEMENT &gt;::update_polygon_using_face_mesh()</a>.</p>
 
 </div>
 </div>
@@ -707,9 +707,9 @@ Private Attributes</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="classoomph_1_1ImmersedRigidBodyTriangleMeshPolygon.html#a784cda6e03ad1a083de8b03d14102876">oomph::ImmersedRigidBodyTriangleMeshPolygon</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html#l01457">1457</a> of file <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html">unstructured_two_d_mesh_geometry_base.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html#l01453">1453</a> of file <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html">unstructured_two_d_mesh_geometry_base.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="triangle__mesh_8template_8cc_source.html#l36208">oomph::RefineableTriangleMesh&lt; ELEMENT &gt;::surface_remesh_for_inner_hole_boundaries()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="triangle__mesh_8template_8cc_source.html#l36204">oomph::RefineableTriangleMesh&lt; ELEMENT &gt;::surface_remesh_for_inner_hole_boundaries()</a>.</p>
 
 </div>
 </div>
@@ -738,7 +738,7 @@ Private Attributes</h2></td></tr>
 
 <p>Set the polygon to be fixed. </p>
 
-<p class="definition">Definition at line <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html#l01479">1479</a> of file <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html">unstructured_two_d_mesh_geometry_base.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html#l01475">1475</a> of file <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html">unstructured_two_d_mesh_geometry_base.h</a>.</p>
 
 </div>
 </div>
@@ -767,7 +767,7 @@ Private Attributes</h2></td></tr>
 
 <p>Set the polygon to be allowed to move (default) </p>
 
-<p class="definition">Definition at line <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html#l01482">1482</a> of file <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html">unstructured_two_d_mesh_geometry_base.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html#l01478">1478</a> of file <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html">unstructured_two_d_mesh_geometry_base.h</a>.</p>
 
 </div>
 </div>
@@ -794,9 +794,9 @@ Private Attributes</h2></td></tr>
 
 <p>Boolean flag to indicate whether the polygon can update its own reference configuration after it has moved i.e. if it is upgraded to a rigid body rather than being a free surface (default false) </p>
 
-<p class="definition">Definition at line <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html#l01493">1493</a> of file <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html">unstructured_two_d_mesh_geometry_base.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html#l01489">1489</a> of file <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html">unstructured_two_d_mesh_geometry_base.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00386">oomph::ImmersedRigidBodyTriangleMeshPolygon::ImmersedRigidBodyTriangleMeshPolygon()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="immersed__rigid__body__elements_8cc_source.html#l00382">oomph::ImmersedRigidBodyTriangleMeshPolygon::ImmersedRigidBodyTriangleMeshPolygon()</a>.</p>
 
 </div>
 </div>
@@ -822,7 +822,7 @@ Private Attributes</h2></td></tr>
 
 <p>Is re-distribution of polyline segments between different boundaries during adaptation enabled? (Default: false) </p>
 
-<p class="definition">Definition at line <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html#l01488">1488</a> of file <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html">unstructured_two_d_mesh_geometry_base.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html#l01484">1484</a> of file <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html">unstructured_two_d_mesh_geometry_base.h</a>.</p>
 
 </div>
 </div>
@@ -848,7 +848,7 @@ Private Attributes</h2></td></tr>
 
 <p>Boolean flag to indicate whether the polygon can move (default false because if it doesn't move this will just lead to wasted work) </p>
 
-<p class="definition">Definition at line <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html#l01500">1500</a> of file <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html">unstructured_two_d_mesh_geometry_base.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html#l01496">1496</a> of file <a class="el" href="unstructured__two__d__mesh__geometry__base_8h_source.html">unstructured_two_d_mesh_geometry_base.h</a>.</p>
 
 </div>
 </div>
@@ -884,7 +884,7 @@ Private Attributes</h2></td></tr>
     <footer>
       <div class="container">
         <div class="text-muted" style="float:right;">Generated by <a href="http://www.doxygen.org/index.html">
-          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Tue Jul 6 2021 22:59:58
+          <img style="height:18px;" class="footer-img" src="doxygen.png" alt="doxygen"></a> on Fri Jul 9 2021 20:54:46
         </div>
       </div>
     </footer>
